@@ -1,0 +1,90 @@
+diff --git a/vlnverse/agent/__init__.py b/vlnverse/agent/__init__.py
+index ceaf828..0ca4bc5 100644
+--- a/vlnverse/agent/__init__.py
++++ b/vlnverse/agent/__init__.py
+@@ -1,10 +1,13 @@
++"""Agent registry; load baseline implementations only when requested."""
++import importlib
+ from vlnverse.agent.base import Agent
+-from vlnverse.agent.cma_agent import CmaAgent
+-from vlnverse.agent.internvla_n1_agent import InternVLAN1Agent
+-from vlnverse.agent.rdp_agent import RdpAgent
+-from vlnverse.agent.seq2seq_agent import Seq2SeqAgent
+-
+-from vlnverse.agent.cma_clip_agent import CmaCLIPAgent
+-from vlnverse.agent.seq2seq_clip_agent import Seq2SeqCLIPAgent
+-
+-__all__ = ['Agent', 'CmaAgent', 'RdpAgent', 'Seq2SeqAgent', 'InternVLAN1Agent', 'CmaClipAgent', 'Seq2SeqClipAgent']
++_BASELINES = {'cma': ('cma_agent', 'CmaAgent'), 'rdp': ('rdp_agent', 'RdpAgent'), 'seq2seq': ('seq2seq_agent', 'Seq2SeqAgent'), 'internvla_n1': ('internvla_n1_agent', 'InternVLAN1Agent'), 'cma_clip': ('cma_clip_agent', 'CmaCLIPAgent'), 'seq2seq_clip': ('seq2seq_clip_agent', 'Seq2SeqCLIPAgent')}
++def load_agent(name):
++    if name in _BASELINES:
++        importlib.import_module('vlnverse.agent.' + _BASELINES[name][0])
++def __getattr__(name):
++    for module, class_name in _BASELINES.values():
++        if name == class_name:
++            return getattr(importlib.import_module('vlnverse.agent.' + module), name)
++    raise AttributeError(name)
++__all__ = ['Agent'] + [value[1] for value in _BASELINES.values()]
+diff --git a/vlnverse/agent/base.py b/vlnverse/agent/base.py
+index 5619173..9417003 100644
+--- a/vlnverse/agent/base.py
++++ b/vlnverse/agent/base.py
+@@ -31,4 +31,6 @@ class Agent:
+         """
+         Init a agent instance from a config.
+         """
++        from vlnverse.agent import load_agent
++        load_agent(config.model_name)
+         return cls.agents[config.model_name](config)
+diff --git a/vlnverse/configs/evaluator/default_config.py b/vlnverse/configs/evaluator/default_config.py
+index c1e1be9..991f062 100644
+--- a/vlnverse/configs/evaluator/default_config.py
++++ b/vlnverse/configs/evaluator/default_config.py
+@@ -303,6 +303,11 @@ def get_config(evaluator_cfg: EvalCfg):
+     elif evaluator_cfg.agent.model_name == 'seq2seq_clip':
+         model_settings = seq2seq_clip_cfg.model_dump()
+ 
++    elif evaluator_cfg.agent.model_name in ['streamvln_rgb', 'janusvln']:
++        model_settings = {}
++    else:
++        raise ValueError(f'Unknown model: {evaluator_cfg.agent.model_name}')
++
+     model_settings.update(evaluator_cfg.agent.model_settings)
+     evaluator_cfg.agent.model_settings = model_settings
+ 
+diff --git a/vlnverse/evaluator/vln_pe_evaluator.py b/vlnverse/evaluator/vln_pe_evaluator.py
+index 144d81b..db3a1cd 100644
+--- a/vlnverse/evaluator/vln_pe_evaluator.py
++++ b/vlnverse/evaluator/vln_pe_evaluator.py
+@@ -44,7 +44,7 @@ def transform_action_batch(origin, flash=False):
+ class VlnPeEvaluator(Evaluator):
+     def __init__(self, config: EvalCfg):
+         self.task_name = config.task.task_name
+-        if not Path(get_lmdb_path(self.task_name)).exists():
++        if not (Path(get_lmdb_path(self.task_name)) / 'sample_data.lmdb' / 'data.mdb').exists():
+             split_data(config.dataset)
+         self.result_logger = ResultLogger(config.dataset)
+         common_log_util.init(self.task_name)
+diff --git a/vlnverse/projects/internutopia_vln_extension/sensors/vln_camera.py b/vlnverse/projects/internutopia_vln_extension/sensors/vln_camera.py
+index 9716e78..e3ee43c 100644
+--- a/vlnverse/projects/internutopia_vln_extension/sensors/vln_camera.py
++++ b/vlnverse/projects/internutopia_vln_extension/sensors/vln_camera.py
+@@ -27,16 +27,10 @@ class VLNCamera(BaseSensor):
+         output_data = {}
+         output_data['rgba'] = self._camera.get_rgba()
+         if output_data['rgba'].shape[0] != self.config.resolution[1]:
+-            output_data['rgba'] = np.random.randint(
+-                0, 256, (self.config.resolution[1], self.config.resolution[0], 4), dtype=np.uint8
+-            )
+-            log.error("rgba shape wrong, use random one!!!")
++            raise RuntimeError('Simulator returned invalid RGB; refusing synthetic fallback')
+         output_data['depth'] = self._camera.get_distance_to_image_plane()
+         if output_data['depth'].shape[0] != self.config.resolution[1]:
+-            output_data['depth'] = np.random.uniform(
+-                0, 256, size=(self.config.resolution[1], self.config.resolution[0])
+-            ).astype(np.float32)
+-            log.error("depth shape wrong, use random one!!!")
++            raise RuntimeError('Simulator returned invalid depth; refusing synthetic fallback')
+         return self._make_ordered(output_data)
+ 
+     def post_reset(self):

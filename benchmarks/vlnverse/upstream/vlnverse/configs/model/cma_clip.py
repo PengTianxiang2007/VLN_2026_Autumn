@@ -1,0 +1,86 @@
+from .base_encoders import (
+    DepthEncoder,
+    InstructionEncoder,
+    ModelCfg,
+    ProgressMonitor,
+    RgbEncoder,
+    StateEncoder,
+    TextEncoder,
+)
+
+cma_clip_cfg = ModelCfg(
+    policy_name='CMA_Policy',
+    max_step=200,
+    len_traj_act=4,
+    text_encoder=TextEncoder(
+        load_model=True,
+        max_length=248,
+        update_text_encoder=False,
+        type='clip-long',
+        model_name='clip-long',
+        model_path='checkpoints/clip-long/longclip-B.pt',
+        num_l_layers=6,
+        hidden_size=512,
+        vocab_size=50265,
+        embedding_size=512,
+        sot_token=49406,
+        eot_token=49407,
+        pad_token=0,
+    ),
+    rgb_encoder=RgbEncoder(cnn_type='TorchVisionResNet50', output_size=256, trainable=False),
+    depth_encoder=DepthEncoder(
+        cnn_type='VlnResnetDepthEncoder',
+        output_size=128,
+        backbone='resnet50',
+        ddppo_checkpoint='checkpoints/ddppo-models/gibson-4plus-mp3d-train-val-test-resnet50.pth',
+        trainable=False,
+    ),
+    state_encoder=StateEncoder(
+        hidden_size=512,
+        rnn_type='GRU',
+        num_recurrent_layers=2,
+    ),
+    progress_monitor=ProgressMonitor(
+        use=True,
+        alpha=1.0,
+    ),
+)
+
+cma_clip_eval_cfg = ModelCfg(
+    policy_name='CMA_Policy',
+    ablate_instruction=False,
+    ablate_depth=False,
+    ablate_rgb=False,
+    normalize_rgb=False,
+    text_encoder=TextEncoder(
+        load_model=True,
+        max_length=248,
+        update_text_encoder=False,
+        type='clip-long',
+        model_name='clip-long',
+        model_path='checkpoints/clip-long/longclip-B.pt',
+        num_l_layers=6,
+        hidden_size=512,
+        vocab_size=50265,
+        embedding_size=512,
+        sot_token=49406,
+        eot_token=49407,
+        pad_token=0,
+    ),
+    rgb_encoder=RgbEncoder(cnn_type='TorchVisionResNet50', output_size=256, trainable=False),
+    depth_encoder=DepthEncoder(
+        cnn_type='VlnResnetDepthEncoder',
+        output_size=128,
+        backbone='resnet50',
+        ddppo_checkpoint='checkpoints/ddppo-models/gibson-4plus-mp3d-train-val-test-resnet50.pth',
+        trainable=False,
+    ),
+    state_encoder=StateEncoder(
+        hidden_size=512,
+        rnn_type='GRU',
+    ),
+    progress_monitor=ProgressMonitor(
+        use=False,
+        alpha=1.0,
+    ),
+)

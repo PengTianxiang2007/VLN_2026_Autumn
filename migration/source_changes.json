@@ -1,0 +1,62 @@
+{
+  "source_commit": "860e200ce253826fc9c9e951dfc46879cd010f9a",
+  "copied_files": 1385,
+  "unchanged_files": 1374,
+  "changes": [
+    {
+      "path": "backbone/janusvln/scripts/janusvln_eval.sh",
+      "source_sha256": "a981cbd7f1b76fb90d7f4413a91f3d336654f1df086205069cbfabb13c2ae821",
+      "migrated_sha256": "f386d4d27156024b970c443802bc4db7fb59b091f8181c89d37309c0bb5d7e89"
+    },
+    {
+      "path": "backbone/janusvln/scripts/setup_eval_uv.sh",
+      "source_sha256": "a867775a0061a08cbe1647750eee47930353715bf3f49612a4f683c6ff07871b",
+      "migrated_sha256": "c1887fceeba4a8321ed913031dba8fd054e535322ef2747323ac5ab4a745c65e"
+    },
+    {
+      "path": "backbone/streamvln/scripts/complete_r2r_weights.sh",
+      "source_sha256": "b9562bb6915342e75355acdb0b1b8b926df9e95addfba1f9019c45aae4a3a60d",
+      "migrated_sha256": "95e65d3bef82b574d7d06be593d1da2fb11cf4ad7d1530f99a3e23312eaa6318"
+    },
+    {
+      "path": "backbone/streamvln/scripts/setup_r2r_uv.sh",
+      "source_sha256": "35e6c8e400d3222a71608cdf15df03b1e8b3d7e1699828964987b077ead9327b",
+      "migrated_sha256": "3e4187c4c97314084537a5a1c7741025ee10530e7ffa220f4595bbc5d91851ce"
+    },
+    {
+      "path": "backbone/streamvln/scripts/streamvln_eval_r2r.sh",
+      "source_sha256": "35c2bde241b5280075b93010743cef5f300edc76681434713f3d2e566c0cce33",
+      "migrated_sha256": "70b82aeaa912c280ed8cf922986a9260f47f2c3cceb2689572a019865462010a"
+    },
+    {
+      "path": "backbone/streamvln/scripts/streamvln_eval_rxr.sh",
+      "source_sha256": "3baa52cbfca39783dc9a21976b980af62c3972aa259add211713c245e43cc65e",
+      "migrated_sha256": "d0444f27a771450c17b200db178a9f50c69da5840231f35e7c6773142a76f7f3"
+    },
+    {
+      "path": "benchmarks/vlnverse/runner/extract_runtime.py",
+      "source_sha256": "15aab93702266236399563d1e6d102ddefec83adae433d07bc7140c771a13c7d",
+      "migrated_sha256": "ca3f53c094818c3265e084b2d2f75a91599d1ec26502a06c9bb7e25301e4ebbe"
+    },
+    {
+      "path": "benchmarks/vlnverse/runner/run_eval.sh",
+      "source_sha256": "18e21ccfbc86d0cb330e5daa1b74b9d96fd0ef0b14b9276df15dcc50358bf756",
+      "migrated_sha256": "1fef41e04c47c5211cc5a0a608eb0147e2425c460e0adafa4db48d9574822dfb"
+    },
+    {
+      "path": "benchmarks/vlnverse/runner/run_full.py",
+      "source_sha256": "313e92d550d1b9f354e94688f2d06f86ebc2f06783fc472f9f8a7a3910602887",
+      "migrated_sha256": "d9a934e5605dfb4f29885302052cbbcd68a3a6528227d3158642089d8f256b6f"
+    },
+    {
+      "path": "benchmarks/vlnverse/runner/run_smoke.py",
+      "source_sha256": "4edf15ba896295fb695cf1aa657edc2b13f5f5ac393412cd506065de8f28e627",
+      "migrated_sha256": "5bf76d6b590d0a917e6addc5441b84f06b7106209b2435a4ecfb3673f9a96dd8"
+    },
+    {
+      "path": "benchmarks/vlnverse/runner/setup_uv.sh",
+      "source_sha256": "6010ba0802dfa02f46d3e529502f83887f03f9eb0996b2b6e626a66d42a71d1a",
+      "migrated_sha256": "0edb22fa899a935a4d2a5fbb6757a1fc110d2f93a45c17f836340440042ba44e"
+    }
+  ]
+}
