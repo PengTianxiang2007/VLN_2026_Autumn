@@ -17,8 +17,12 @@ def main():
     forbidden = str(args.forbid_root.resolve())
     errors = []
     interpreters = {}
-    for model in ['streamvln', 'janusvln']:
-        env = ROOT / 'backbone' / model / '.venv'
+    environments = [
+        ('streamvln', ROOT / 'backbone/streamvln/.venv', '3.9'),
+        ('janusvln', ROOT / 'backbone/janusvln/.venv', '3.9'),
+        ('vlnverse', ROOT / 'benchmarks/vlnverse/.venv', '3.10'),
+    ]
+    for model, env, version in environments:
         if env.is_symlink():
             errors.append('Environment must be an independent directory: ' + str(env))
         pending = [env]
@@ -27,11 +31,16 @@ def main():
                 for entry in entries:
                     path = Path(entry.path)
                     if entry.is_symlink():
-                        if forbidden in str(path.resolve()):
+                        resolved = str(path.resolve())
+                        if forbidden in resolved:
                             errors.append('Old symlink: ' + str(path))
+                        if resolved.startswith('/tmp/'):
+                            errors.append('Temporary runtime dependency: ' + str(path))
+                        if not path.exists():
+                            errors.append('Broken environment symlink: ' + str(path))
                     elif entry.is_dir(follow_symlinks=False) and entry.name != '__pycache__':
                         pending.append(path)
-        site = env / 'lib/python3.9/site-packages'
+        site = env / ('lib/python' + version + '/site-packages')
         paths = [env / 'pyvenv.cfg', *list((env / 'bin').iterdir())]
         for pattern in ['*.pth', '*.egg-link', '__editable__*finder.py', '*.dist-info/direct_url.json']:
             paths.extend(site.glob(pattern))
@@ -46,6 +55,8 @@ def main():
                                                   env=dict(os.environ, PYTHONDONTWRITEBYTECODE='1', PYTHONPATH='')))
         if forbidden in json.dumps(info):
             errors.append('Interpreter still depends on old project: ' + model)
+        if not Path(info['base_prefix']).is_relative_to(ROOT):
+            errors.append('Base Python is outside the project: ' + model)
         interpreters[model] = info
     report = dict(passed=not errors, forbidden_root=forbidden, interpreters=interpreters, errors=errors)
     args.output.parent.mkdir(parents=True, exist_ok=True)

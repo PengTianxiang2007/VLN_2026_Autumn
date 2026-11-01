@@ -1,0 +1,73 @@
+{
+  "launch": {
+    "arguments": {
+      "backbone": "streamvln",
+      "benchmark": "rxr",
+      "gpu": 0,
+      "sim_gpu": null,
+      "episodes": 1,
+      "mode": "physical",
+      "output": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/validation/streamvln_rxr",
+      "resume": null,
+      "dry_run": false,
+      "preflight_only": false,
+      "allow_shared_gpu": true
+    },
+    "command": [
+      "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/backbone/streamvln/.venv/bin/python",
+      "-m",
+      "torch.distributed.run",
+      "--standalone",
+      "--nproc_per_node=1",
+      "streamvln/streamvln_eval_rxr.py",
+      "--model_path",
+      "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/models/StreamVLN_R2R_v1_3",
+      "--habitat_config_path",
+      "config/vln_rxr.yaml",
+      "--eval_split",
+      "val_unseen",
+      "--output_path",
+      "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/validation/streamvln_rxr",
+      "--max_eval_episodes",
+      "1"
+    ],
+    "cwd": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/backbone/streamvln",
+    "model_python": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/backbone/streamvln/.venv/bin/python",
+    "output": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/validation/streamvln_rxr",
+    "gpu": {
+      "gpu": 0,
+      "free_mib": 48500,
+      "existing_processes": []
+    },
+    "git_commit": "ea9567a96cc70f716af0dfca7b72abba942503b6",
+    "started_at": "2026-11-01T13:24:18.253442+00:00",
+    "exit_code": 0,
+    "finished_at": "2026-11-01T13:25:41.556458+00:00"
+  },
+  "validation": {
+    "passed": true,
+    "episodes": 1,
+    "summary": {
+      "sucs_all": 1.0,
+      "spls_all": 0.8586316261416997,
+      "oss_all": 1.0,
+      "ones_all": 0.6016009449958801,
+      "ndtws_all": 0.8430026769638062,
+      "length": 1
+    }
+  },
+  "episodes": [
+    {
+      "scene_id": "2azQ1b91cZZ",
+      "episode_id": "4",
+      "success": 1.0,
+      "spl": 0.8586316261416997,
+      "os": 1.0,
+      "ne": 0.6016009449958801,
+      "ndtw": 0.84300265680409,
+      "language": "en-IN",
+      "steps": 41,
+      "episode_instruction": "You are facing towards the steps, climb down the steps. And turn right you can find a open door, just beside the closed door. Walk near to the open door and enter the door and walk onto the mat. And walk straight till the globe and the books and stand in front of it. This is the end point and you have reached the destination. \n\n"
+    }
+  ]
+}

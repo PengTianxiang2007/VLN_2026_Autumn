@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "backbone": "streamvln",
+  "python": "3.9.25 (main, Oct 31 2025, 23:00:23) \n[Clang 21.1.4 ]",
+  "torch": "2.1.2+cu121",
+  "transformers": "4.45.1",
+  "flash_attention": "2.7.0.post2",
+  "habitat": "0.2.4",
+  "habitat_sim": "0.2.4",
+  "source_imports": {
+    "llava": "backbone/streamvln/llava/__init__.py",
+    "model.stream_video_vln": "backbone/streamvln/streamvln/model/stream_video_vln.py",
+    "streamvln_eval": "backbone/streamvln/streamvln/streamvln_eval.py",
+    "streamvln_eval_rxr": "backbone/streamvln/streamvln/streamvln_eval_rxr.py",
+    "habitat": "benchmarks/habitat_ce/habitat-lab-v0.2.4/habitat-lab/habitat/__init__.py",
+    "habitat_baselines": "benchmarks/habitat_ce/habitat-lab-v0.2.4/habitat-baselines/habitat_baselines/__init__.py"
+  },
+  "datasets": {
+    "r2r": {
+      "episodes": 1839,
+      "scenes": 11
+    },
+    "rxr": {
+      "episodes": 3669,
+      "scenes": 11
+    }
+  },
+  "vlnverse_adapter_import": true,
+  "checkpoint": {
+    "path": "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/models/StreamVLN_R2R_v1_3",
+    "model_type": "llava",
+    "tokenizer_size": 151646,
+    "shards": 4
+  }
+}

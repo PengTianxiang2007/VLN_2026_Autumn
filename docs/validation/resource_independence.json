@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "resource_roots": {
+    "models/StreamVLN_R2R_v1_3": "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/models/StreamVLN_R2R_v1_3",
+    "models/JanusVLN_Extra": "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/models/JanusVLN_Extra",
+    "models/siglip-so400m-patch14-384": "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/models/siglip-so400m-patch14-384",
+    "assets/StreamVLN/r2r": "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/assets/StreamVLN/r2r",
+    "assets/StreamVLN/rxr": "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/assets/StreamVLN/rxr",
+    "assets/StreamVLN/mp3d": "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/assets/StreamVLN/mp3d",
+    "assets/VLNVerse/scenes": "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/assets/VLNVerse/scenes",
+    "assets/VLNVerse/data": "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/assets/VLNVerse/data",
+    "assets/VLNVerse/Embodiments": "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/assets/VLNVerse/Embodiments"
+  },
+  "symlink_count": 19,
+  "old_project_links": []
+}

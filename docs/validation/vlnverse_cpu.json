@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "python": "3.10.15 (tags/v3.10.15-dirty:ffee63f, Oct  8 2024, 18:53:10) [GCC 7.3.1 20180303 (Red Hat 7.3.1-5)]",
+  "executable": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/benchmarks/vlnverse/.venv/bin/python",
+  "base_prefix": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/isaac45/kit/python",
+  "torch": "2.5.1+cu118",
+  "cuda": "11.8",
+  "imports": {
+    "torch": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/benchmarks/vlnverse/.venv/lib/python3.10/site-packages/torch/__init__.py",
+    "torchvision": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/benchmarks/vlnverse/.venv/lib/python3.10/site-packages/torchvision/__init__.py",
+    "numpy": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/benchmarks/vlnverse/.venv/lib/python3.10/site-packages/numpy/__init__.py",
+    "cv2": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/benchmarks/vlnverse/.venv/lib/python3.10/site-packages/cv2/__init__.py",
+    "scipy": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/benchmarks/vlnverse/.venv/lib/python3.10/site-packages/scipy/__init__.py",
+    "numba": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/benchmarks/vlnverse/.venv/lib/python3.10/site-packages/numba/__init__.py",
+    "quaternion": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/benchmarks/vlnverse/.venv/lib/python3.10/site-packages/quaternion/__init__.py",
+    "ray": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/benchmarks/vlnverse/.venv/lib/python3.10/site-packages/ray/__init__.py",
+    "internutopia": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/benchmarks/vlnverse/.venv/lib/python3.10/site-packages/internutopia/__init__.py",
+    "pydantic": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/benchmarks/vlnverse/.venv/lib/python3.10/site-packages/pydantic/__init__.py",
+    "lmdb": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/benchmarks/vlnverse/.venv/lib/python3.10/site-packages/lmdb/__init__.py",
+    "msgpack_numpy": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/benchmarks/vlnverse/.venv/lib/python3.10/site-packages/msgpack_numpy.py",
+    "vlnverse": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/benchmarks/vlnverse/upstream/vlnverse/__init__.py"
+  },
+  "versions": {
+    "internutopia": "2.2.1",
+    "ray": "2.47.1",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "numba": "0.60.0",
+    "opencv-python-headless": "4.9.0.80",
+    "rsl-rl-lib": "2.2.1"
+  }
+}

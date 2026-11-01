@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "processes": [
+    {
+      "role": "janusvln_agent",
+      "pid": 2708270,
+      "gpu": 0,
+      "used_memory_mib": 28694
+    },
+    {
+      "role": "vlnverse_simulator",
+      "pid": 2711287,
+      "gpu": 1,
+      "used_memory_mib": 5651
+    }
+  ]
+}

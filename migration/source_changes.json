@@ -46,7 +46,7 @@
     {
       "path": "benchmarks/vlnverse/runner/run_full.py",
       "source_sha256": "313e92d550d1b9f354e94688f2d06f86ebc2f06783fc472f9f8a7a3910602887",
-      "migrated_sha256": "d9a934e5605dfb4f29885302052cbbcd68a3a6528227d3158642089d8f256b6f"
+      "migrated_sha256": "9c709343195177e97e62b884103fe1c422ef637f916cd24c9b91730ba23e7d69"
     },
     {
       "path": "benchmarks/vlnverse/runner/run_smoke.py",
@@ -56,7 +56,7 @@
     {
       "path": "benchmarks/vlnverse/runner/setup_uv.sh",
       "source_sha256": "6010ba0802dfa02f46d3e529502f83887f03f9eb0996b2b6e626a66d42a71d1a",
-      "migrated_sha256": "0edb22fa899a935a4d2a5fbb6757a1fc110d2f93a45c17f836340440042ba44e"
+      "migrated_sha256": "209e2a0bc4336357f5bf6dc75c8caba715c78d67540a5b07ad398566364b1d36"
     }
   ]
 }

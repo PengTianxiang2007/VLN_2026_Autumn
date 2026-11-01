@@ -1,0 +1,83 @@
+{
+  "passed": true,
+  "launch": {
+    "backbone": "streamvln",
+    "benchmark": "vlnverse",
+    "mode": "physical",
+    "episodes": 1,
+    "command": [
+      "/usr/bin/python3",
+      "scripts/evaluate.py",
+      "--backbone",
+      "streamvln",
+      "--benchmark",
+      "vlnverse",
+      "--gpu",
+      "0",
+      "--allow-shared-gpu",
+      "--episodes",
+      "1"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 1214.3
+  },
+  "run": {
+    "method": "StreamVLN",
+    "mode": "physical",
+    "run_id": "peng_fine_streamvln_physical_20261101_135005",
+    "dataset": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/vlnverse/streamvln/results/peng_fine_streamvln_physical_20261101_135005/dataset/fine",
+    "episode_ids": [
+      "kujiale_0272_26_1"
+    ],
+    "gpu": 0,
+    "sim_gpu": 0,
+    "model_action_cap": null,
+    "physics_tick_cap": 25000,
+    "camera_resolution": [
+      640,
+      480
+    ],
+    "warm_up_step": 500
+  },
+  "result": {
+    "status": "complete",
+    "method": "StreamVLN",
+    "mode": "physical",
+    "expected_episodes": 1,
+    "official_result": {
+      "val_unseen": {
+        "Count": 1,
+        "TL": 14.1333,
+        "FR": 0.0,
+        "StR": 0.0,
+        "NE": 7.9308,
+        "OS": 0.0,
+        "SR": 0.0,
+        "SPL": 0.0
+      }
+    },
+    "official_result_path": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/benchmarks/vlnverse/upstream/logs/peng_fine_streamvln_physical_20261101_135005/kujiale_result.json",
+    "run_id": "peng_fine_streamvln_physical_20261101_135005",
+    "model_gpu": 0,
+    "sim_gpu": 0
+  },
+  "progress": {
+    "completed": 1,
+    "expected": 1,
+    "last_chunk": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/vlnverse/streamvln/results/peng_fine_streamvln_physical_20261101_135005/chunk_1793541005715987621",
+    "exit_code": 0
+  },
+  "trace": {
+    "actions": 211,
+    "generated_calls": 53,
+    "forced_smoke_stop": false,
+    "last_action": 0,
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "first_rgb_std": 33.164320351508394,
+    "max_model_cuda_reserved_mib": 19974.0
+  }
+}

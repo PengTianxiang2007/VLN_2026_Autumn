@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "exit_code": 0,
+  "output": "Using Python 3.10.15 environment at: benchmarks/vlnverse/.venv\nChecked 126 packages in 878ms\nAll installed packages are compatible\n"
+}

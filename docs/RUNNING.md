@@ -32,6 +32,8 @@ python3 scripts/evaluate.py --backbone streamvln --benchmark vlnverse --gpu 0 --
 python3 scripts/evaluate.py --backbone janusvln --benchmark vlnverse --gpu 0 --episodes 1
 ```
 
+模型与仿真分卡时使用 `--gpu 0 --sim-gpu 1`；这也是本次 JanusVLN 物理导航验证的配置。
+
 默认 H1 physical 模式，25,000 physics ticks、500 warm-up ticks、640×480 RGB。
 模型动作不额外截断，采用官方终止与评分规则。--mode flash 使用 500 ticks 的 flash
 协议；两种模式的成绩分别记录，不能合并。可加 --sim-gpu 指定另一张已协调的 GPU。

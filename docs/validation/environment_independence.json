@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "forbidden_root": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_TTA2026_Autumn",
+  "interpreters": {
+    "streamvln": {
+      "executable": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/backbone/streamvln/.venv/bin/python",
+      "prefix": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/backbone/streamvln/.venv",
+      "base_prefix": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/python/cpython-3.9.25-linux-x86_64-gnu",
+      "path": [
+        "",
+        "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/python/cpython-3.9.25-linux-x86_64-gnu/lib/python39.zip",
+        "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/python/cpython-3.9.25-linux-x86_64-gnu/lib/python3.9",
+        "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/python/cpython-3.9.25-linux-x86_64-gnu/lib/python3.9/lib-dynload",
+        "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/backbone/streamvln/.venv/lib/python3.9/site-packages",
+        "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/backbone/streamvln/.venv/lib/python3.9/site-packages/habitat_sim-0.2.4-py3.9-linux-x86_64.egg"
+      ]
+    },
+    "janusvln": {
+      "executable": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/backbone/janusvln/.venv/bin/python",
+      "prefix": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/backbone/janusvln/.venv",
+      "base_prefix": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/python/cpython-3.9.25-linux-x86_64-gnu",
+      "path": [
+        "",
+        "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/python/cpython-3.9.25-linux-x86_64-gnu/lib/python39.zip",
+        "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/python/cpython-3.9.25-linux-x86_64-gnu/lib/python3.9",
+        "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/python/cpython-3.9.25-linux-x86_64-gnu/lib/python3.9/lib-dynload",
+        "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/backbone/janusvln/.venv/lib/python3.9/site-packages",
+        "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/backbone/janusvln/src",
+        "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/backbone/janusvln/.venv/lib/python3.9/site-packages/habitat_sim-0.2.4-py3.9-linux-x86_64.egg"
+      ]
+    },
+    "vlnverse": {
+      "executable": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/benchmarks/vlnverse/.venv/bin/python",
+      "prefix": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/benchmarks/vlnverse/.venv",
+      "base_prefix": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/isaac45/kit/python",
+      "path": [
+        "",
+        "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/isaac45/kit/python/lib/python310.zip",
+        "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/isaac45/kit/python/lib/python3.10",
+        "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/isaac45/kit/python/lib/python3.10/lib-dynload",
+        "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/benchmarks/vlnverse/.venv/lib/python3.10/site-packages"
+      ]
+    }
+  },
+  "errors": []
+}

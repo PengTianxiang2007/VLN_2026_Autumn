@@ -121,7 +121,7 @@ def main():
     locks=[]
     for path in [*[Path('/tmp')/f'peng_vlnverse_gpu_{gpu}.lock' for gpu in sorted({a.gpu,a.sim_gpu})],output/'run.lock']:
         lock=path.open('a'); fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB); locks.append(lock)
-    # Official LMDB and other potentially large caches live under Resource_Peng.
+    # Keep run-specific LMDB and caches inside this project's output directory.
     storage=output/'storage'
     storage.mkdir(parents=True,exist_ok=True)
     sample_target=storage/'samples'; sample_target.mkdir(exist_ok=True)

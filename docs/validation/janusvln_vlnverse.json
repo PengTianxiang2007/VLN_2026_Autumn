@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "launch": {
+    "backbone": "janusvln",
+    "benchmark": "vlnverse",
+    "mode": "physical",
+    "episodes": 1,
+    "command": [
+      "/usr/bin/python3",
+      "scripts/evaluate.py",
+      "--backbone",
+      "janusvln",
+      "--benchmark",
+      "vlnverse",
+      "--gpu",
+      "0",
+      "--sim-gpu",
+      "1",
+      "--allow-shared-gpu",
+      "--episodes",
+      "1"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 426.2
+  },
+  "run": {
+    "method": "JanusVLN",
+    "mode": "physical",
+    "run_id": "peng_fine_janusvln_physical_20261101_141135",
+    "dataset": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/vlnverse/janusvln/results/peng_fine_janusvln_physical_20261101_141135/dataset/fine",
+    "episode_ids": [
+      "kujiale_0272_26_1"
+    ],
+    "gpu": 0,
+    "sim_gpu": 1,
+    "model_action_cap": null,
+    "physics_tick_cap": 25000,
+    "camera_resolution": [
+      640,
+      480
+    ],
+    "warm_up_step": 500
+  },
+  "result": {
+    "status": "complete",
+    "method": "JanusVLN",
+    "mode": "physical",
+    "expected_episodes": 1,
+    "official_result": {
+      "val_unseen": {
+        "Count": 1,
+        "TL": 6.2277,
+        "FR": 0.0,
+        "StR": 0.0,
+        "NE": 0.9415,
+        "OS": 1.0,
+        "SR": 1.0,
+        "SPL": 0.7627
+      }
+    },
+    "official_result_path": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/benchmarks/vlnverse/upstream/logs/peng_fine_janusvln_physical_20261101_141135/kujiale_result.json",
+    "run_id": "peng_fine_janusvln_physical_20261101_141135",
+    "model_gpu": 0,
+    "sim_gpu": 1
+  },
+  "progress": {
+    "completed": 1,
+    "expected": 1,
+    "last_chunk": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/vlnverse/janusvln/results/peng_fine_janusvln_physical_20261101_141135/chunk_1793542296192327288",
+    "exit_code": 0
+  },
+  "trace": {
+    "actions": 57,
+    "generated_calls": 57,
+    "forced_smoke_stop": false,
+    "last_action": 0,
+    "rgb_shape": [
+      480,
+      640,
+      3
+    ],
+    "first_rgb_std": 33.05483587313209,
+    "max_model_cuda_reserved_mib": 37628.0
+  }
+}

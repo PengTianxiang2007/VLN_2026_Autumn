@@ -1,0 +1,105 @@
+{
+  "date": "2026-11-01",
+  "passed": true,
+  "scope": "one complete episode per route; VLNVerse physical",
+  "routes": [
+    {
+      "backbone": "streamvln",
+      "benchmark": "r2r",
+      "passed": true,
+      "episodes": 1,
+      "exit_code": 0,
+      "metrics": {
+        "sucs_all": 0.0,
+        "spls_all": 0.0,
+        "oss_all": 1.0,
+        "ones_all": 3.368576765060425,
+        "length": 1
+      },
+      "receipt": "streamvln_r2r.json"
+    },
+    {
+      "backbone": "streamvln",
+      "benchmark": "rxr",
+      "passed": true,
+      "episodes": 1,
+      "exit_code": 0,
+      "metrics": {
+        "sucs_all": 1.0,
+        "spls_all": 0.8586316261416997,
+        "oss_all": 1.0,
+        "ones_all": 0.6016009449958801,
+        "ndtws_all": 0.8430026769638062,
+        "length": 1
+      },
+      "receipt": "streamvln_rxr.json"
+    },
+    {
+      "backbone": "streamvln",
+      "benchmark": "vlnverse",
+      "passed": true,
+      "episodes": 1,
+      "exit_code": 0,
+      "metrics": {
+        "Count": 1,
+        "TL": 14.1333,
+        "FR": 0.0,
+        "StR": 0.0,
+        "NE": 7.9308,
+        "OS": 0.0,
+        "SR": 0.0,
+        "SPL": 0.0
+      },
+      "receipt": "streamvln_vlnverse.json"
+    },
+    {
+      "backbone": "janusvln",
+      "benchmark": "r2r",
+      "passed": true,
+      "episodes": 1,
+      "exit_code": 0,
+      "metrics": {
+        "sucs_all": 1.0,
+        "spls_all": 0.9483960286011391,
+        "oss_all": 1.0,
+        "ones_all": 0.4221639037132263,
+        "length": 1
+      },
+      "receipt": "janusvln_r2r.json"
+    },
+    {
+      "backbone": "janusvln",
+      "benchmark": "rxr",
+      "passed": true,
+      "episodes": 1,
+      "exit_code": 0,
+      "metrics": {
+        "sucs_all": 1.0,
+        "spls_all": 1.0,
+        "oss_all": 1.0,
+        "ones_all": 1.0267648696899414,
+        "length": 1,
+        "ndtws_all": 0.9102117475230246
+      },
+      "receipt": "janusvln_rxr.json"
+    },
+    {
+      "backbone": "janusvln",
+      "benchmark": "vlnverse",
+      "passed": true,
+      "episodes": 1,
+      "exit_code": 0,
+      "metrics": {
+        "Count": 1,
+        "TL": 6.2277,
+        "FR": 0.0,
+        "StR": 0.0,
+        "NE": 0.9415,
+        "OS": 1.0,
+        "SR": 1.0,
+        "SPL": 0.7627
+      },
+      "receipt": "janusvln_vlnverse.json"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "command": [
+    "/usr/bin/python3",
+    "scripts/evaluate.py",
+    "--backbone",
+    "janusvln",
+    "--benchmark",
+    "vlnverse",
+    "--gpu",
+    "0",
+    "--sim-gpu",
+    "1",
+    "--allow-shared-gpu",
+    "--episodes",
+    "1",
+    "--preflight-only"
+  ],
+  "exit_code": 0,
+  "output": "{\n  \"arguments\": {\n    \"backbone\": \"janusvln\",\n    \"benchmark\": \"vlnverse\",\n    \"gpu\": 0,\n    \"sim_gpu\": 1,\n    \"episodes\": 1,\n    \"mode\": \"physical\",\n    \"output\": null,\n    \"resume\": null,\n    \"dry_run\": false,\n    \"preflight_only\": true,\n    \"allow_shared_gpu\": true\n  },\n  \"command\": [\n    \"/usr/bin/python3\",\n    \"/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/benchmarks/vlnverse/runner/run_full.py\",\n    \"--method\",\n    \"JanusVLN\",\n    \"--gpu\",\n    \"0\",\n    \"--mode\",\n    \"physical\",\n    \"--limit-episodes\",\n    \"1\",\n    \"--sim-gpu\",\n    \"1\",\n    \"--preflight-only\"\n  ],\n  \"cwd\": \"/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn\",\n  \"model_python\": \"/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/backbone/janusvln/.venv/bin/python\",\n  \"output\": \"/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/vlnverse\"\n}\n{\"status\": \"preflight_passed\", \"method\": \"JanusVLN\", \"mode\": \"physical\", \"episodes\": 1, \"scenes\": 1, \"gpu\": 0, \"sim_gpu\": 1}\n"
+}

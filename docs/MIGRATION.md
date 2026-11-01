@@ -1,7 +1,8 @@
 # 初始迁移
 
 来源：同级 VLN_TTA2026_Autumn，提交 `860e200ce253826fc9c9e951dfc46879cd010f9a`。
-原项目保持不变；此项目使用独立 Git 历史，初始化后以标签保存可回到的初始状态。
+原项目保持不变；此项目使用独立 Git 历史，`initial-20261101` 标签保存通过迁移验证的
+初始状态。新项目尚未配置 GitHub 远程仓库。
 
 迁入两个 backbone 的源码、R2R/RxR evaluator、VLNVerse adapter、Habitat 0.2.4、
 VLNVerse 上游及运行组件。保留原生模型训练相关源文件以维持上游包完整性，但本次只验证推理。
@@ -15,7 +16,7 @@ VLNVerse 上游及运行组件。保留原生模型训练相关源文件以维�
 
 两套已配置的模型环境及 Python 3.9 被独立复制，随后校正绝对路径和可编辑安装。
 本项目不靠指向旧目录的软链接运行。VLNVerse 原 /tmp 环境已不存在，因此使用已有
-Isaac 4.5 安装包和 Torch wheel 恢复独立仿真环境，持久保存在本项目。
+Isaac 4.5 安装包及其内置 Torch/CUDA 库恢复独立仿真环境，持久保存在本项目。
 共享 Resource_Peng 中的权重、数据、场景仍直接复用。
 
 历史 backbone README 中可能包含原机器路径、旧状态和历史成绩；当前使用依据为根 README

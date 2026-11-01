@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "forbidden_root": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_TTA2026_Autumn",
+  "processes": [
+    {
+      "role": "streamvln_agent",
+      "pid": 2624229,
+      "old_library_mappings": [],
+      "old_environment_variables": [],
+      "passed": true,
+      "informational_old_references": [
+        "OLDPWD"
+      ]
+    },
+    {
+      "role": "vlnverse_simulator",
+      "pid": 2626350,
+      "old_library_mappings": [],
+      "old_environment_variables": [],
+      "passed": true,
+      "informational_old_references": []
+    },
+    {
+      "role": "janusvln_agent",
+      "pid": 2708270,
+      "old_library_mappings": [],
+      "old_environment_variables": [],
+      "informational_old_references": [
+        "OLDPWD"
+      ],
+      "passed": true
+    }
+  ],
+  "note": "OLDPWD is shell directory history, not an import, library or runtime search path."
+}

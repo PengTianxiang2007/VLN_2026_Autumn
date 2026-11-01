@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "backbone": "janusvln",
+  "python": "3.9.25 (main, Oct 31 2025, 23:00:23) \n[Clang 21.1.4 ]",
+  "torch": "2.5.1+cu124",
+  "transformers": "4.50.0",
+  "flash_attention": "2.7.1.post4",
+  "habitat": "0.2.4",
+  "habitat_sim": "0.2.4",
+  "source_imports": {
+    "qwen_vl.model.modeling_qwen2_5_vl": "backbone/janusvln/src/qwen_vl/model/modeling_qwen2_5_vl.py",
+    "evaluation": "backbone/janusvln/src/evaluation.py",
+    "habitat": "benchmarks/habitat_ce/habitat-lab-v0.2.4/habitat-lab/habitat/__init__.py",
+    "habitat_baselines": "benchmarks/habitat_ce/habitat-lab-v0.2.4/habitat-baselines/habitat_baselines/__init__.py"
+  },
+  "datasets": {
+    "r2r": {
+      "episodes": 1839,
+      "scenes": 11
+    },
+    "rxr": {
+      "episodes": 3669,
+      "scenes": 11
+    }
+  },
+  "vlnverse_adapter_import": true,
+  "checkpoint": {
+    "path": "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/models/JanusVLN_Extra",
+    "model_type": "qwen2_5_vl",
+    "tokenizer_size": 151665,
+    "shards": 4
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "launch": {
+    "arguments": {
+      "backbone": "janusvln",
+      "benchmark": "r2r",
+      "gpu": 0,
+      "sim_gpu": null,
+      "episodes": 1,
+      "mode": "physical",
+      "output": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/validation/janusvln_r2r",
+      "resume": null,
+      "dry_run": false,
+      "preflight_only": false,
+      "allow_shared_gpu": true
+    },
+    "command": [
+      "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/backbone/janusvln/.venv/bin/python",
+      "-m",
+      "torch.distributed.run",
+      "--standalone",
+      "--nproc_per_node=1",
+      "src/evaluation.py",
+      "--model_path",
+      "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/models/JanusVLN_Extra",
+      "--habitat_config_path",
+      "config/vln_r2r.yaml",
+      "--eval_split",
+      "val_unseen",
+      "--output_path",
+      "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/validation/janusvln_r2r",
+      "--episode_limit",
+      "1"
+    ],
+    "cwd": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/backbone/janusvln",
+    "model_python": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/backbone/janusvln/.venv/bin/python",
+    "output": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/validation/janusvln_r2r",
+    "gpu": {
+      "gpu": 0,
+      "free_mib": 42427,
+      "existing_processes": [
+        "GPU-6c2d66a6-4fd9-ec44-7286-8a1104d21fe7, 2516521"
+      ]
+    },
+    "git_commit": "ea9567a96cc70f716af0dfca7b72abba942503b6",
+    "started_at": "2026-11-01T13:25:42.039972+00:00",
+    "exit_code": 0,
+    "finished_at": "2026-11-01T13:45:10.979763+00:00"
+  },
+  "validation": {
+    "passed": true,
+    "episodes": 1,
+    "summary": {
+      "sucs_all": 1.0,
+      "spls_all": 0.9483960286011391,
+      "oss_all": 1.0,
+      "ones_all": 0.4221639037132263,
+      "length": 1
+    }
+  },
+  "episodes": [
+    {
+      "scene_id": "2azQ1b91cZZ",
+      "episode_id": 10,
+      "success": 1.0,
+      "spl": 0.9483960286011391,
+      "os": 1.0,
+      "ne": 0.4221639037132263,
+      "steps": 35,
+      "episode_instruction": "Walk into the living room and keep walking straight past the living room. Then walk into the entrance under the balcony. Wait in the entrance to the other room. "
+    }
+  ]
+}

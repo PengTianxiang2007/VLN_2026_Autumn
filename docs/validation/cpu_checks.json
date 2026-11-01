@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "exit_code": 0,
+  "command": [
+    "/usr/bin/python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "syntax_checked": [
+    "scripts/evaluate.py",
+    "scripts/check_environment.py",
+    "scripts/audit_independence.py",
+    "scripts/bootstrap_isaac_ml.py",
+    "scripts/restore_isaac.py",
+    "core/paths.py",
+    "benchmarks/vlnverse/runner/run_full.py"
+  ],
+  "output": "test_both_vlnverse_routes_preserve_mode_and_complete_episode_subset (test_launch.LaunchTests.test_both_vlnverse_routes_preserve_mode_and_complete_episode_subset) ... ok\ntest_four_habitat_routes_use_correct_evaluator_and_limit (test_launch.LaunchTests.test_four_habitat_routes_use_correct_evaluator_and_limit) ... ok\ntest_full_split_does_not_add_episode_cap (test_launch.LaunchTests.test_full_split_does_not_add_episode_cap) ... ok\ntest_incompatible_arguments_are_rejected (test_launch.LaunchTests.test_incompatible_arguments_are_rejected) ... ok\ntest_result_check_rejects_partial_or_nonfinite_metrics (test_launch.LaunchTests.test_result_check_rejects_partial_or_nonfinite_metrics) ... ok\ntest_source_precedence_does_not_inherit_old_pythonpath (test_launch.LaunchTests.test_source_precedence_does_not_inherit_old_pythonpath) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.007s\n\nOK\n"
+}

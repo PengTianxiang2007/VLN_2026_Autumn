@@ -10,7 +10,7 @@
 | JanusVLN Extra | backbone/janusvln/.venv | Python 3.9.25、Torch 2.5.1+cu124、Transformers 4.50.0、FlashAttention 2.7.1.post4 |
 | Python 3.9 | .runtime/python/cpython-3.9.25-linux-x86_64-gnu | 两套模型环境的基础解释器 |
 | uv | .runtime/tools/bin/uv | 已有工具的独立副本 |
-| VLNVerse | benchmarks/vlnverse/.venv | Python 3.10，仿真与模型依赖分开 |
+| VLNVerse | benchmarks/vlnverse/.venv | Python 3.10.15、Torch 2.5.1+cu118，仿真与模型依赖分开 |
 | Isaac Sim | .runtime/isaac45 | 4.5.0，项目私有运行时 |
 
 环境与运行时不加入 Git。仅克隆 Git 仓库不会得到这些二进制目录；本机现有目录已经包含。
@@ -45,12 +45,20 @@ VLNVerse fine val_unseen 为 825 条；这些是数据规模，不代表本次�
 ```bash
 python3 scripts/check_environment.py --backbone streamvln --output outputs/checks/streamvln.json
 python3 scripts/check_environment.py --backbone janusvln --output outputs/checks/janusvln.json
+python3 scripts/audit_independence.py --forbid-root ../VLN_TTA2026_Autumn --output outputs/checks/independence.json
 ```
+
+`migration/*_requirements.lock.txt` 保存已安装版本快照；`docs/validation/` 保存迁移时的
+检查结果。独立性检查覆盖三套 venv、基础 Python、软链接和可编辑安装配置。
+VLNVerse 恢复脚本会使用版本快照作为约束，保留本次验证的依赖组合。
 
 只有环境确实丢失时才使用 `bash scripts/setup.sh streamvln|janusvln|vlnverse`。
 模型安装脚本使用迁入的 Habitat 源码；独立 venv 不合并版本。
 Isaac 缺失时用 `python3 scripts/restore_isaac.py` 从已有 4.5 安装包恢复，默认落到
 .runtime/isaac45，不依赖 /tmp，也不改服务器系统 Isaac。
+`scripts/bootstrap_isaac_ml.py` 复用该运行时自带的 Torch/CUDA 与同版本 OpenCV 库，避免重复下载；
+库链接全部指向新项目内部。仿真依赖固定 Torch 2.5.1+cu118、Torchvision 0.20.1+cu118
+和 rsl-rl-lib 2.2.1，防止恢复时被间接依赖升级到不同框架。
 
 可显式覆盖 `STREAMVLN_VENV`、`JANUSVLN_VENV`、`VLNVERSE_VENV` 和 `PENG_ISAAC_ROOT`。
 默认配置已独立；不要继承指向旧项目的同名环境变量。`VLN_OUTPUT_ROOT` 可更改结果根目录。
