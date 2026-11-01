@@ -1,0 +1,197 @@
+{
+  "completed_at": "2026-11-01T16:10:25.968148+00:00",
+  "deleted_targets": [
+    "/mnt/nas/gezuhao/PengTianxiang/.codex/worktrees/781b/VLN_TTA2026_Autumn",
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_TTA2026_Autumn",
+    "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/evaluations/VLNVerse/StreamVLN/peng_fine_streamvln_physical_20261002_170241",
+    "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/evaluations/VLNVerse/StreamVLN/peng_fine_streamvln_physical_20261003_094136",
+    "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/evaluations/VLNVerse/JanusVLN/peng_fine_janusvln_physical_20261004_062822"
+  ],
+  "removed_allocated_bytes_estimate": 234067789312,
+  "space_accounting": "Pre-deletion allocated blocks, deduplicated by inode, less moved original assets; not a server-wide free-space delta.",
+  "retained_assets_directory": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_retained_assets/tta_cleanup_20261101",
+  "retained_original_files": 1132,
+  "retained_original_allocated_bytes": 20112207872,
+  "retained_unique_weight_snapshots": 4401,
+  "asset_verification": {
+    "passed": true,
+    "checked_at": "2026-11-01T16:12:00.499788+00:00",
+    "moved_files_verified": 1132,
+    "original_inode_and_size_unchanged": true,
+    "unique_weight_snapshots_verified": 4401,
+    "snapshot_tensor_sha256_verified": true,
+    "trajectory_weight_mappings": 5935,
+    "manifest": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_retained_assets/tta_cleanup_20261101/manifest.json"
+  },
+  "protected_roots": [
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn",
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_retained_assets/tta_cleanup_20261101",
+    "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/models",
+    "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/assets",
+    "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/software"
+  ],
+  "protected_roots_unchanged": true,
+  "initial_tag_commit": "58eb23b62e4800dfe05983ddd1ae9d6028597acc",
+  "initial_tag_unchanged": true,
+  "github_remote_modified": false,
+  "post_deletion_validation": {
+    "passed": true,
+    "checked_at": "2026-11-01T16:11:09.667889+00:00",
+    "old_targets_absent": true,
+    "initial_tag_commit": "58eb23b62e4800dfe05983ddd1ae9d6028597acc",
+    "checks": {
+      "independence": {
+        "exit_code": 0,
+        "started_at": "2026-11-01T16:10:26.655053+00:00",
+        "finished_at": "2026-11-01T16:10:52.478380+00:00",
+        "log": "outputs/cleanup_20261101/independence.log",
+        "result": {
+          "passed": true,
+          "forbidden_root": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_TTA2026_Autumn",
+          "interpreters": {
+            "streamvln": {
+              "executable": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/backbone/streamvln/.venv/bin/python",
+              "prefix": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/backbone/streamvln/.venv",
+              "base_prefix": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/python/cpython-3.9.25-linux-x86_64-gnu",
+              "path": [
+                "",
+                "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/python/cpython-3.9.25-linux-x86_64-gnu/lib/python39.zip",
+                "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/python/cpython-3.9.25-linux-x86_64-gnu/lib/python3.9",
+                "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/python/cpython-3.9.25-linux-x86_64-gnu/lib/python3.9/lib-dynload",
+                "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/backbone/streamvln/.venv/lib/python3.9/site-packages",
+                "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/backbone/streamvln/.venv/lib/python3.9/site-packages/habitat_sim-0.2.4-py3.9-linux-x86_64.egg"
+              ]
+            },
+            "janusvln": {
+              "executable": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/backbone/janusvln/.venv/bin/python",
+              "prefix": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/backbone/janusvln/.venv",
+              "base_prefix": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/python/cpython-3.9.25-linux-x86_64-gnu",
+              "path": [
+                "",
+                "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/python/cpython-3.9.25-linux-x86_64-gnu/lib/python39.zip",
+                "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/python/cpython-3.9.25-linux-x86_64-gnu/lib/python3.9",
+                "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/python/cpython-3.9.25-linux-x86_64-gnu/lib/python3.9/lib-dynload",
+                "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/backbone/janusvln/.venv/lib/python3.9/site-packages",
+                "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/backbone/janusvln/src",
+                "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/backbone/janusvln/.venv/lib/python3.9/site-packages/habitat_sim-0.2.4-py3.9-linux-x86_64.egg"
+              ]
+            },
+            "vlnverse": {
+              "executable": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/benchmarks/vlnverse/.venv/bin/python",
+              "prefix": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/benchmarks/vlnverse/.venv",
+              "base_prefix": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/isaac45/kit/python",
+              "path": [
+                "",
+                "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/isaac45/kit/python/lib/python310.zip",
+                "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/isaac45/kit/python/lib/python3.10",
+                "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/isaac45/kit/python/lib/python3.10/lib-dynload",
+                "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/benchmarks/vlnverse/.venv/lib/python3.10/site-packages"
+              ]
+            }
+          },
+          "errors": []
+        }
+      },
+      "streamvln": {
+        "exit_code": 0,
+        "started_at": "2026-11-01T16:10:26.654550+00:00",
+        "finished_at": "2026-11-01T16:11:02.295210+00:00",
+        "log": "outputs/cleanup_20261101/streamvln.log",
+        "result": {
+          "passed": true,
+          "backbone": "streamvln",
+          "python": "3.9.25 (main, Oct 31 2025, 23:00:23) \n[Clang 21.1.4 ]",
+          "torch": "2.1.2+cu121",
+          "transformers": "4.45.1",
+          "flash_attention": "2.7.0.post2",
+          "habitat": "0.2.4",
+          "habitat_sim": "0.2.4",
+          "source_imports": {
+            "llava": "backbone/streamvln/llava/__init__.py",
+            "model.stream_video_vln": "backbone/streamvln/streamvln/model/stream_video_vln.py",
+            "streamvln_eval": "backbone/streamvln/streamvln/streamvln_eval.py",
+            "streamvln_eval_rxr": "backbone/streamvln/streamvln/streamvln_eval_rxr.py",
+            "habitat": "benchmarks/habitat_ce/habitat-lab-v0.2.4/habitat-lab/habitat/__init__.py",
+            "habitat_baselines": "benchmarks/habitat_ce/habitat-lab-v0.2.4/habitat-baselines/habitat_baselines/__init__.py"
+          },
+          "datasets": {
+            "r2r": {
+              "episodes": 1839,
+              "scenes": 11
+            },
+            "rxr": {
+              "episodes": 3669,
+              "scenes": 11
+            }
+          },
+          "vlnverse_adapter_import": true,
+          "checkpoint": {
+            "path": "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/models/StreamVLN_R2R_v1_3",
+            "model_type": "llava",
+            "tokenizer_size": 151646,
+            "shards": 4
+          }
+        }
+      },
+      "vlnverse_imports": {
+        "exit_code": 0,
+        "started_at": "2026-11-01T16:10:52.483533+00:00",
+        "finished_at": "2026-11-01T16:11:02.377075+00:00",
+        "log": "outputs/cleanup_20261101/vlnverse_imports.log",
+        "result": {
+          "passed": true,
+          "python": "3.10.15 (tags/v3.10.15-dirty:ffee63f, Oct  8 2024, 18:53:10) [GCC 7.3.1 20180303 (Red Hat 7.3.1-5)]",
+          "base_prefix": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/isaac45/kit/python",
+          "torch": "2.5.1+cu118",
+          "opencv": "4.9.0",
+          "imports": {
+            "torch": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/isaac45/exts/omni.isaac.ml_archive/pip_prebundle/torch/__init__.py",
+            "cv2": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/isaac45/exts/omni.pip.compute/pip_prebundle/cv2/__init__.py",
+            "internutopia": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/benchmarks/vlnverse/.venv/lib/python3.10/site-packages/internutopia/__init__.py"
+          },
+          "gpu_simulation_started": false
+        }
+      },
+      "janusvln": {
+        "exit_code": 0,
+        "started_at": "2026-11-01T16:10:26.654842+00:00",
+        "finished_at": "2026-11-01T16:11:09.663115+00:00",
+        "log": "outputs/cleanup_20261101/janusvln.log",
+        "result": {
+          "passed": true,
+          "backbone": "janusvln",
+          "python": "3.9.25 (main, Oct 31 2025, 23:00:23) \n[Clang 21.1.4 ]",
+          "torch": "2.5.1+cu124",
+          "transformers": "4.50.0",
+          "flash_attention": "2.7.1.post4",
+          "habitat": "0.2.4",
+          "habitat_sim": "0.2.4",
+          "source_imports": {
+            "qwen_vl.model.modeling_qwen2_5_vl": "backbone/janusvln/src/qwen_vl/model/modeling_qwen2_5_vl.py",
+            "evaluation": "backbone/janusvln/src/evaluation.py",
+            "habitat": "benchmarks/habitat_ce/habitat-lab-v0.2.4/habitat-lab/habitat/__init__.py",
+            "habitat_baselines": "benchmarks/habitat_ce/habitat-lab-v0.2.4/habitat-baselines/habitat_baselines/__init__.py"
+          },
+          "datasets": {
+            "r2r": {
+              "episodes": 1839,
+              "scenes": 11
+            },
+            "rxr": {
+              "episodes": 3669,
+              "scenes": 11
+            }
+          },
+          "vlnverse_adapter_import": true,
+          "checkpoint": {
+            "path": "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/models/JanusVLN_Extra",
+            "model_type": "qwen2_5_vl",
+            "tokenizer_size": 151665,
+            "shards": 4
+          }
+        }
+      }
+    },
+    "deletion_receipt": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_retained_assets/tta_cleanup_20261101/deletion.json"
+  }
+}
