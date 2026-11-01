@@ -129,6 +129,9 @@ class VLNPEMetrics(BaseMetric):
         self.metrics['steps'] = self.sim_step
 
         self.metrics['episode_id'] = self.path_data['episode_id']  # episode ID
+        for key in ('reproduction_run_seed', 'reproduction_episode_seed'):
+            if key in self.path_data:
+                self.metrics[key] = self.path_data[key]
         self.metrics['trajectory_id'] = self.path_data['trajectory_id']  # trajectory ID
         self.metrics['fail_reason'] = self.fail_reason
         self.metrics['reference_path'] = self.path_data.get('reference_path', [])

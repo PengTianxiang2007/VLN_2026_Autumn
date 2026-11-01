@@ -10,11 +10,18 @@ sys.path[:0] = [str(REPO / 'streamvln'), str(REPO)]
 from streamvln.streamvln_agent import VLNEvaluator
 from model.stream_video_vln import StreamVLNForCausalLM
 import transformers
+from core.seeding import configured_seed, episode_seed, seed_model_libraries
 
 class NavigationAgent:
     def __init__(self, checkpoint):
         self.checkpoint = checkpoint
-        torch.manual_seed(42)
+        self.experiment_seed = configured_seed()
+        self.current_episode_id = None
+        self.current_episode_seed = None
+        if self.experiment_seed is None:
+            torch.manual_seed(42)
+        else:
+            seed_model_libraries(self.experiment_seed)
         tokenizer = transformers.AutoTokenizer.from_pretrained(checkpoint, model_max_length=4096, padding_side='right', local_files_only=True)
         config = transformers.AutoConfig.from_pretrained(checkpoint, local_files_only=True)
         model = StreamVLNForCausalLM.from_pretrained(checkpoint, config=config, attn_implementation='flash_attention_2', torch_dtype=torch.bfloat16, low_cpu_mem_usage=False, local_files_only=True)
@@ -28,7 +35,11 @@ class NavigationAgent:
         self.pending = []
         self.calls = 0
 
-    def reset(self):
+    def reset(self, episode_id=None):
+        if self.experiment_seed is not None and episode_id is not None:
+            self.current_episode_id = episode_id
+            self.current_episode_seed = episode_seed(self.experiment_seed, episode_id)
+            seed_model_libraries(self.current_episode_seed)
         self.evaluator.reset_memory()
         self.pending = []
         assert self.evaluator.step_id == 0 and self.evaluator.past_key_values is None

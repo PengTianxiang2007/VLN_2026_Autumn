@@ -10,11 +10,12 @@ export OMNI_KIT_ALLOW_ROOT=1
 export NO_PROXY=127.0.0.1,localhost
 export no_proxy="$NO_PROXY"
 # Simulator writes caches/logs only to this task's directories.
-export XDG_CACHE_HOME="$runner/cache"
-export XDG_CONFIG_HOME="$runner/config"
-export XDG_DATA_HOME="$runner/share"
+cache_root=${VLN_SIM_CACHE_ROOT:-$runner}
+export XDG_CACHE_HOME="$cache_root/cache"
+export XDG_CONFIG_HOME="$cache_root/config"
+export XDG_DATA_HOME="$cache_root/share"
 mkdir -p "$XDG_CACHE_HOME" "$XDG_CONFIG_HOME" "$XDG_DATA_HOME"
-export PYTHONPATH="$benchmark"
+export PYTHONPATH="$benchmark:$project"
 export LD_LIBRARY_PATH="${LD_LIBRARY_PATH:-}"
 export CARB_APP_PATH="$isaac_root/kit"
 export ISAAC_PATH="$isaac_root"

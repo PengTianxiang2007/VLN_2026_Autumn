@@ -21,6 +21,14 @@ def arguments(**values):
 
 
 class LaunchTests(unittest.TestCase):
+    def test_seed_and_complete_scenes_reach_vlnverse_runner(self):
+        command, _, _, _ = launcher.build_command(arguments(benchmark='vlnverse', episodes=0, seed=0,
+            scenes=['kujiale_0036'], run_id='peng_fine_test', allow_shared_gpu=True))
+        self.assertEqual(command[command.index('--seed')+1], '0')
+        self.assertEqual(command[command.index('--scenes')+1], 'kujiale_0036')
+        self.assertIn('--allow-shared-gpu', command)
+        with self.assertRaises(ValueError): launcher.build_command(arguments(seed=0))
+
     def test_four_habitat_routes_use_correct_evaluator_and_limit(self):
         for backbone in ['streamvln', 'janusvln']:
             for benchmark in ['r2r', 'rxr']:

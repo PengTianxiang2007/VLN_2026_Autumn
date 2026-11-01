@@ -17,6 +17,7 @@ from vlnverse.projects.dataloader.resumable import ResumablePathKeyDataloader
 from vlnverse.utils import common_log_util, progress_log_multi_util
 from vlnverse.utils.common_log_util import common_logger as log
 from vlnverse.utils.visualize_util import VisualizeUtil
+from core.seeding import configured_seed, episode_seed
 
 
 class runner_status_code(Enum):
@@ -43,6 +44,11 @@ def transform_action_batch(origin, flash=False):
 @Evaluator.register('vln_pe')
 class VlnPeEvaluator(Evaluator):
     def __init__(self, config: EvalCfg):
+        self.run_seed = configured_seed()
+        if self.run_seed is not None:
+            if config.task.task_settings['env_num'] != 1 or config.task.task_settings['proc_num'] != 1:
+                raise ValueError('Seeded reproduction requires one environment and one process.')
+            set_seed_model(self.run_seed)
         self.task_name = config.task.task_name
         if not (Path(get_lmdb_path(self.task_name)) / 'sample_data.lmdb' / 'data.mdb').exists():
             split_data(config.dataset)
@@ -86,7 +92,8 @@ class VlnPeEvaluator(Evaluator):
         config.agent.model_settings.update({'env_num': self.env_num, 'proc_num': self.proc_num})
         self.robot_name = config.task.robot_name
         super().__init__(config)
-        set_seed_model(0)
+        if self.run_seed is None:
+            set_seed_model(0)
         self.data_collector = DataCollector(self.dataloader.lmdb_path)
         self.robot_flash = config.task.robot_flash
         self.save_to_json = config.eval_settings['save_to_json']
@@ -116,6 +123,14 @@ class VlnPeEvaluator(Evaluator):
 
     def now_path_key(self, info):
         return info.data['path_key']
+
+    def reset_seeded_agent(self, reset_infos, indices):
+        if self.run_seed is None:
+            self.agent.reset(indices)
+            return
+        episode_ids = [reset_infos[i].data['episode_id'] for i in indices]
+        seeds = [episode_seed(self.run_seed, episode_id) for episode_id in episode_ids]
+        self.agent.reset(indices, episode_ids=episode_ids, episode_seeds=seeds)
 
     def _obs_remove_robot_name(self, obs):
         obs = [
@@ -192,7 +207,7 @@ class VlnPeEvaluator(Evaluator):
     def terminate_ops(self, obs_ls, reset_infos, terminated_ls):
         finish_warmup_ls = (self.runner_status == runner_status_code.WARM_UP) & [ob['finish_action'] for ob in obs_ls]
         if np.logical_or.reduce(finish_warmup_ls):
-            self.agent.reset(np.where(finish_warmup_ls)[0].tolist())
+            self.reset_seeded_agent(reset_infos, np.where(finish_warmup_ls)[0].tolist())
             self.runner_status[finish_warmup_ls] = runner_status_code.NORMAL
             log.debug(f'env{np.where(finish_warmup_ls)[0].tolist()}: states switch to NORMAL.')
         # if no need reset, return False
@@ -307,6 +322,8 @@ class VlnPeEvaluator(Evaluator):
         log.info('start new episode!')
 
         obs = self.warm_up()
+        if self.run_seed is not None:
+            self.reset_seeded_agent(reset_info, [i for i, info in enumerate(reset_info) if info is not None])
         self.fake_obs = obs[0][self.robot_name]
         action = [{self.robot_name: {'stand_still': []}} for _ in range(self.env_num * self.proc_num)]
         obs = self._obs_remove_robot_name(obs)

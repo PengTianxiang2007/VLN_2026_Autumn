@@ -45,6 +45,10 @@ progress.json、result.json、storage 中的 LMDB。子集任务清单也保存�
 不会向共享数据目录写入新的验证数据。终端打印 RUN_ID；可加 --resume RUN_ID 续跑。
 runner 只清理自己启动的子进程，完整恢复仍须检查原输出状态。
 
+StreamVLN 完整场景五 seed 复现见 [scene250 方案](STREAMVLN_VLNVERSE_SCENE250.md)。
+VLNVerse 入口支持 `--scenes SCENE_ID ... --seed N --run-id ID`；选择完整场景时必须保持
+`--episodes 0`。`--resume ID` 会校验原有种子、scene 清单与标注内容。
+
 ## CPU 检查
 
 ```bash

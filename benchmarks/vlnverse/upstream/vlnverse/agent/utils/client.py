@@ -39,10 +39,17 @@ class AgentClient:
 
         return response.json()['action']
 
-    def reset(self, reset_index: Optional[List] = None) -> None:
+    def reset(self, reset_index: Optional[List] = None, episode_ids=None, episode_seeds=None) -> None:
+        payload = ResetRequest(reset_index=reset_index).model_dump(mode='json')
+        if episode_ids is not None:
+            payload.update(episode_ids=episode_ids, episode_seeds=episode_seeds)
         response = requests.post(
             url=f'{self.base_url}/agent/{self.agent_name}/reset',
-            json=ResetRequest(reset_index=reset_index).model_dump(mode='json'),
+            json=payload,
             headers={'Content-Type': 'application/json'},
         )
         response.raise_for_status()
+        if episode_ids is not None:
+            proof = response.json()
+            if proof.get('episode_id') != episode_ids[0] or proof.get('episode_seed') != episode_seeds[0]:
+                raise RuntimeError('Agent did not acknowledge the expected episode seed.')

@@ -6,12 +6,19 @@ from vlnverse.projects.internutopia_vln_extension.configs.tasks.vln_eval_task im
 )
 
 from .utils import DoneChecker
+from core.seeding import configured_seed, episode_seed
 
 
 @BaseTask.register('VLNEvalTask')
 class VLNEvalTask(BaseTask):
     def __init__(self, config: VLNEvalTaskCfg, scene):
-        set_seed(0)
+        run_seed = configured_seed()
+        seed = 0 if run_seed is None else episode_seed(run_seed, config.data['episode_id'])
+        set_seed(seed)
+        if run_seed is not None:
+            config.data['reproduction_run_seed'] = run_seed
+            config.data['reproduction_episode_seed'] = seed
+            print(f'EPISODE_SEED episode={config.data["episode_id"]} run_seed={run_seed} episode_seed={seed}', flush=True)
         super().__init__(config, scene)
         self.step_count = 0
         self.data = config.data

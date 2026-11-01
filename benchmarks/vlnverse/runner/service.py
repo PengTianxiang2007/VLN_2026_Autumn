@@ -1,10 +1,11 @@
 """Loopback-only stdlib HTTP implementation of the official Agent wire protocol."""
-import argparse, base64, importlib.util, json, pickle, time, traceback
+import argparse, base64, importlib.util, inspect, json, pickle, time, traceback, sys
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
 import numpy as np
 import torch
 from PIL import Image
+from core.seeding import configured_seed, episode_seed
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--method', choices=['StreamVLN', 'JanusVLN'], required=True)
@@ -21,6 +22,9 @@ spec = importlib.util.spec_from_file_location('peng_navigation_adapter', adapter
 module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(module)
 agent = module.NavigationAgent(args.checkpoint)
+model_source = str(Path(inspect.getfile(type(agent.evaluator.model))).resolve()) if args.method == 'StreamVLN' else None
+if configured_seed() is not None and not Path(model_source).is_relative_to(Path(__file__).resolve().parents[3]):
+    raise RuntimeError('Seeded run imported model code outside its frozen project.')
 steps = 0
 resets = 0
 trace = []
@@ -42,14 +46,31 @@ class Handler(BaseHTTPRequestHandler):
             if self.path == '/agent/init':
                 self.respond({'status': 'success', 'agent_name': body['agent_config']['model_name']}, 201)
             elif self.path.endswith('/reset'):
-                agent.reset(); steps = 0; resets += 1
-                self.respond({'status': 'success'})
+                episode_ids = body.get('episode_ids')
+                if episode_ids is not None:
+                    if args.method != 'StreamVLN' or len(episode_ids) != 1 or configured_seed() is None:
+                        raise ValueError('Seeded reset requires one StreamVLN episode.')
+                    expected = episode_seed(configured_seed(), episode_ids[0])
+                    if body.get('episode_seeds') != [expected]:
+                        raise ValueError('Model and simulator episode seeds do not match.')
+                    agent.reset(episode_id=episode_ids[0])
+                else:
+                    agent.reset()
+                steps = 0; resets += 1
+                proof = {'status': 'success', 'run_seed': configured_seed(),
+                         'episode_id': getattr(agent, 'current_episode_id', None),
+                         'episode_seed': getattr(agent, 'current_episode_seed', None)}
+                with (args.output / 'seed_resets.jsonl').open('a') as f:
+                    f.write(json.dumps(proof) + '\n')
+                self.respond(proof)
             elif self.path.endswith('/step'):
                 observations = pickle.loads(base64.b64decode(body['observation']))
                 if len(observations) != 1: raise ValueError('Smoke supports exactly one environment')
                 observation = observations[0]
                 rgb = np.asarray(observation['rgb'])
                 instruction = observation['instruction']
+                if configured_seed() is not None and getattr(agent, 'current_episode_id', None) is None:
+                    raise RuntimeError('A seeded episode reset is required before inference.')
                 if rgb.dtype != np.uint8 or rgb.ndim != 3 or rgb.shape[2] != 3: raise ValueError('Invalid RGB')
                 # Valid dark/uniform observations must reach the original model.
                 # Keep RGB statistics in the trace, without rejecting by content.
@@ -67,6 +88,8 @@ class Handler(BaseHTTPRequestHandler):
                     action, detail = agent.step(rgb, instruction)
                 if action not in (0,1,2,3): raise ValueError(f'Invalid action {action}')
                 record = {'episode_reset': resets, 'step': steps, 'action': action, 'forced_smoke_stop': forced_stop, 'elapsed_seconds': time.time()-started, 'rgb_shape': list(rgb.shape), 'rgb_std': float(rgb.std()), **detail}
+                record.update(run_seed=configured_seed(), episode_id=getattr(agent, 'current_episode_id', None),
+                              episode_seed=getattr(agent, 'current_episode_seed', None))
                 record.update(cuda_allocated_mib=round(torch.cuda.memory_allocated()/1024**2,1),cuda_reserved_mib=round(torch.cuda.memory_reserved()/1024**2,1),cuda_peak_allocated_mib=round(torch.cuda.max_memory_allocated()/1024**2,1))
                 trace.append(record)
                 if args.compact_trace:
@@ -83,6 +106,7 @@ class Handler(BaseHTTPRequestHandler):
             self.respond({'error': error}, 500)
 
 server = HTTPServer(('127.0.0.1', args.port), Handler)
-(args.output / 'ready.json').write_text(json.dumps({'port': server.server_port, 'method': args.method}))
+(args.output / 'ready.json').write_text(json.dumps({'port': server.server_port, 'method': args.method,
+    'adapter_path': str(adapter), 'model_source_path': model_source, 'python': sys.executable, 'run_seed': configured_seed()}))
 print(f'AGENT_READY port={server.server_port}', flush=True)
 server.serve_forever()
