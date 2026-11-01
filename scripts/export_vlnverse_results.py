@@ -24,7 +24,9 @@ def export_run(run):
     rows = []
     try:
         with database.begin() as txn:
-            keys = {key.decode() for key, _ in txn.cursor() if key != b'timestamp_'}
+            # split_data stores its rank assignment in the same LMDB as scores.
+            metadata_keys = {b'timestamp_', b'eval_rank_0'}
+            keys = {key.decode() for key, _ in txn.cursor() if key not in metadata_keys}
             if keys != set(expected):
                 raise ValueError('Completed LMDB keys differ from the frozen task list.')
             for key, episode in expected.items():
