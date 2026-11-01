@@ -140,8 +140,9 @@ def collect(campaign, manifest):
 
 
 def eligible_gpus(rows, allowed, busy):
-    return [row['index'] for row in rows if (allowed is None or row['index'] in allowed)
-            and row['index'] not in busy and row['free_mib'] >= 34000 and row['utilization'] <= 15]
+    eligible = [row['index'] for row in rows if (allowed is None or row['index'] in allowed)
+                and row['index'] not in busy and row['free_mib'] >= 34000 and row['utilization'] <= 15]
+    return sorted(eligible, key=allowed.index) if allowed is not None else eligible
 
 
 def gpu_rows():

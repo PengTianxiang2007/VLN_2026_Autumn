@@ -47,6 +47,8 @@ H1 physical：640×480 RGB、500 warm-up ticks、25000 physics ticks 上限。
 只有空闲显存至少 34000 MiB、连续两次检查利用率不高于 15% 的卡才接收新任务，
 同时要求主机可用内存至少 64 GiB。组内每次仿真重启前仍检查显存。
 资源不足时队列等待；程序错误会记录失败并停止本队列，保留已评分任务。
+CUDA 设备可见性和 Isaac Vulkan 的物理设备编号分别配置：模型/物理使用所选卡的
+CUDA 映射，渲染通过 `--/renderer/activeGpu` 显式绑定同一张物理卡，禁用跨卡渲染。
 runner 原有内存预算机制在 episode 边界重启，以 LMDB 跳过已评分任务。
 崩溃未完成的任务使用同一 seed 重试；已有有效评分不重跑、不挑选最好成绩。
 首个完整 scene 必须通过 ID、数量、种子与评分核验后，才会自动进入余下 49 组。
@@ -59,7 +61,7 @@ python3 <campaign>/code/scripts/reproduce_streamvln_vlnverse.py run --campaign <
 python3 scripts/reproduce_streamvln_vlnverse.py status --campaign <campaign>
 ```
 
-只有协调后才可指定 `--allow-shared-gpu`，不停止其他用户进程。可用 `--gpus 0 1` 限制卡范围。
+只有协调后才可指定 `--allow-shared-gpu`，不停止其他用户进程。可用 `--gpus 0 1` 限制卡范围和优先顺序。
 恢复使用同一 `run` 命令，完成的 scene 跳过，未完成的 run 由保存的清单和种子继续。
 若需要修改运行代码，保留本次快照及结果，明确记录新版本，不混合不同实现的成绩。
 

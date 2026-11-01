@@ -22,6 +22,7 @@ class ReproductionTests(unittest.TestCase):
         self.assertEqual(module.eligible_gpus(rows,None,set()),[0,3])
         self.assertEqual(module.eligible_gpus(rows,None,{0}),[3])
         self.assertEqual(module.eligible_gpus(rows,[0],set()),[0])
+        self.assertEqual(module.eligible_gpus(rows,[3,0],set()),[3,0])
 
     def setUp(self):
         self.episodes = [dict(episode_id='a1', scan='a', instruction='left'),

@@ -161,7 +161,8 @@ def main():
         env.update(VLN_EVAL_SEED=str(a.seed),PYTHONHASHSEED=str(a.seed))
     env.update(CUDA_VISIBLE_DEVICES=str(a.gpu),OMP_NUM_THREADS='4',MKL_NUM_THREADS='4',OPENBLAS_NUM_THREADS='4',HF_HUB_OFFLINE='1',TRANSFORMERS_OFFLINE='1',PYTHONDONTWRITEBYTECODE='1',NO_PROXY='127.0.0.1,localhost',no_proxy='127.0.0.1,localhost',VLN_RSS_BUDGET_MIB=str(a.rss_budget_mib))
     if a.method=='JanusVLN': env['PYTORCH_CUDA_ALLOC_CONF']='expandable_segments:True'
-    eval_env=env.copy(); eval_env['CUDA_VISIBLE_DEVICES']=str(a.sim_gpu)
+    eval_env=env.copy()
+    eval_env.update(CUDA_VISIBLE_DEVICES=str(a.sim_gpu),VLN_SIM_RENDER_GPU=str(a.sim_gpu))
     checkpoint=RESOURCE/'models'/('StreamVLN_R2R_v1_3' if a.method=='StreamVLN' else 'JanusVLN_Extra')
     opener=urllib.request.build_opener(urllib.request.ProxyHandler({}))
     server=evaluator=None; failures=0

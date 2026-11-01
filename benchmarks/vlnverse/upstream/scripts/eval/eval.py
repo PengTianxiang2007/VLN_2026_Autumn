@@ -1,4 +1,5 @@
 import sys
+import os
 
 sys.path.append('.')
 
@@ -32,6 +33,14 @@ def load_eval_cfg(config_path, attr_name='eval_cfg'):
 
 def main():
     args = parse_args()
+    # Vulkan enumerates physical adapters independently of CUDA_VISIBLE_DEVICES.
+    # Append after our argparse call; SimulationApp forwards these flags to Kit.
+    render_gpu = os.environ.get('VLN_SIM_RENDER_GPU')
+    if render_gpu is not None:
+        render_gpu = int(render_gpu)
+        if render_gpu < 0:
+            raise ValueError('Invalid physical renderer GPU')
+        sys.argv.extend([f'--/renderer/activeGpu={render_gpu}', '--/renderer/multiGpu/enabled=False'])
     evaluator_cfg = load_eval_cfg(args.config, attr_name='eval_cfg')
     cfg = get_config(evaluator_cfg)
     print(cfg)
