@@ -9,6 +9,7 @@ sys.path.insert(0,str(PROJECT))
 from core.paths import output_root, model_python, resource_root, model_environment, simulation_python, isaac_root
 from core.seeding import SEED_SCHEME
 from core.vlnverse_reproduction import digest_json, select_complete_scenes, verify_resume
+from core.vlnverse_review import review_settings
 from scripts.evaluate import check_gpu
 RESOURCE=resource_root()
 ASSETS=RESOURCE/'assets/VLNVerse'
@@ -25,7 +26,7 @@ def cleanup(process):
     except subprocess.TimeoutExpired:
         os.killpg(process.pid,signal.SIGKILL); process.wait(timeout=10)
 
-def write_config(path,method,port,task,dataset,mode):
+def write_config(path,method,port,task,dataset,mode,review=None):
     model='streamvln_rgb' if method=='StreamVLN' else 'janusvln'
     ckpt='StreamVLN_R2R_v1_3' if method=='StreamVLN' else 'JanusVLN_Extra'
     # Official defaults: 25k physics ticks; the official fine flash configs use 500 ticks.
@@ -38,7 +39,7 @@ eval_cfg=EvalCfg(
  env=EnvCfg(env_type='vln_pe',env_settings={{'headless':True,'use_fabric':False}}),
  task=TaskCfg(task_name={task!r},task_settings={{'env_num':1,'proc_num':1,'use_distributed':False,'max_step':{max_step},'warm_up_step':500}},scene=SceneCfg(scene_type='kujiale',scene_data_dir=resource+'/assets/VLNVerse/scenes'),robot_name='h1',robot_flash={mode=='flash'},flash_collision=False,robot_usd_path=resource+'/assets/VLNVerse/Embodiments/vln-pe/h1/h1_vln_pointcloud.usd',camera_resolution=[640,480],camera_prim_path='torso_link/h1_pano_camera_0'),
  dataset=EvalDatasetCfg(dataset_type='kujiale',dataset_settings={{'base_data_dir':{str(dataset)!r},'split_data_types':['val_unseen'],'filter_stairs':False}}),
- eval_settings={{'save_to_json':True,'vis_output':False}},
+ eval_settings={{'save_to_json':True,'vis_output':False,'review_output':{review!r}}},
 )
 """)
 
@@ -94,6 +95,9 @@ def main():
         if done.get('status')=='complete' and done['official_result']['val_unseen']['Count']==len(episodes):
             print(json.dumps({'status':'already_complete','result':str(output/'result.json'),'episodes':len(episodes)}),flush=True)
             return
+    review=review_settings(output_root(),a.seed,a.method)
+    if a.resume and meta.get('review_visualization') != review:
+        raise RuntimeError('Resume visualization policy differs from the original run.')
     python=model_python(a.method.lower())
     runtime=isaac_root()
     sim_python=simulation_python()
@@ -136,7 +140,7 @@ def main():
         meta={'method':a.method,'mode':a.mode,'run_id':run_id,'dataset':str(dataset),'episode_ids':episodes,'gpu':a.gpu,'sim_gpu':a.sim_gpu,'model_action_cap':None,'physics_tick_cap':25000 if a.mode=='physical' else 500,'camera_resolution':[640,480],'warm_up_step':500}
         meta.update(seed=a.seed,seed_scheme=SEED_SCHEME if a.seed is not None else None,
                     scenes=needed_scenes,complete_scenes=bool(a.scenes),dataset_sha256=digest_json(selected),
-                    code_commit=os.environ.get('VLN_CODE_COMMIT'))
+                    code_commit=os.environ.get('VLN_CODE_COMMIT'),review_visualization=review)
         atomic_json(output/'run.json',meta)
     locks=[]
     for path in [*[Path('/tmp')/f'peng_vlnverse_gpu_{gpu}.lock' for gpu in sorted({a.gpu,a.sim_gpu})],output/'run.lock']:
@@ -191,7 +195,7 @@ def main():
             req=urllib.request.Request(f'http://127.0.0.1:{port}/agent/{a.method}/reset',data=b'{"reset_index":null}',headers={'Content-Type':'application/json'})
             with opener.open(req,timeout=60) as response: assert json.load(response)['status']=='success'
             config=chunk_dir/'eval_config.py'
-            write_config(config,a.method,port,run_id,dataset,a.mode)
+            write_config(config,a.method,port,run_id,dataset,a.mode,review)
             with (chunk_dir/'evaluator.log').open('w') as log:
                 evaluator=subprocess.Popen(['bash',str(RUNNER/'run_eval.sh'),str(config)],env=eval_env,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)
             atomic_json(output/'owned_processes.json',{'agent_pid':server.pid,'evaluator_pid':evaluator.pid,'gpu':a.gpu,'sim_gpu':a.sim_gpu,'launcher_pid':os.getpid(),'launcher_start_ticks':Path('/proc/self/stat').read_text().split()[21],'chunk':str(chunk_dir)})

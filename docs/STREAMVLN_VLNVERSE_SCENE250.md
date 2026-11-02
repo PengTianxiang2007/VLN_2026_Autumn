@@ -67,8 +67,9 @@ python3 scripts/reproduce_streamvln_vlnverse.py status --campaign <campaign>
 
 ## 结果与体积控制
 
-每条任务最多保存两张初始 RGB，保留紧凑动作 JSONL、位姿轨迹、指标和恢复所需 LMDB。
-关闭全程可视化，不保存视频、逐帧 RGB 或模型大张量。
+默认每条任务最多保存两张初始 RGB，保留紧凑动作 JSONL、位姿轨迹、指标和恢复所需 LMDB。
+2026-11-02 用户追加要求：为 seed 2、3 各完整 250 条任务启用可视化，用于后续错误分析。
+其余 seed 继续使用默认记录。具体文件格式和入口见 [可视化复盘说明](VLNVERSE_VISUALIZATION.md)。
 目录内 `status.json` 是即时状态，`first_scene_gate.json` 是首场景验收，`episodes.csv` 是
 已完整验收场景的逐任务结果，`summary.json` 保存逐场景/逐 seed 指标。
 五个 seed 全部完成后才计算跨 seed 均值和样本标准差（n=5，ddof=1）。

@@ -63,6 +63,11 @@ class VlnPeEvaluator(Evaluator):
         )
         self.vis_output = config.eval_settings['vis_output']
         self.visualize_util = VisualizeUtil(self.task_name, fps=6)
+        self.review = None
+        if config.eval_settings.get('review_output'):
+            from core.vlnverse_review import EpisodeReview
+            self.review = EpisodeReview(config.eval_settings['review_output'], self.task_name,
+                                        config.dataset.dataset_settings['base_data_dir'])
 
         # generate episode
         episodes = generate_episode(self.dataloader, config)
@@ -225,6 +230,8 @@ class VlnPeEvaluator(Evaluator):
                     result=obs['metrics'][list(obs['metrics'].keys())[0]][0]['fail_reason'],
                     info=obs['metrics'][list(obs['metrics'].keys())[0]][0],
                 )  # save data to dataset
+                if self.review:
+                    self.review.finish(self.now_path_key(reset_info), obs['metrics'][list(obs['metrics'].keys())[0]][0])
                 # log data
                 progress_log_multi_util.trace_end(
                     trajectory_id=self.now_path_key(reset_info),
@@ -284,6 +291,8 @@ class VlnPeEvaluator(Evaluator):
         for reset_info in new_reset_infos:
             if reset_info is None:
                 continue
+            if self.review:
+                self.review.start(self.now_path_key(reset_info))
             progress_log_multi_util.trace_start(
                 trajectory_id=self.now_path_key(reset_info),
             )
@@ -311,6 +320,8 @@ class VlnPeEvaluator(Evaluator):
         for info in reset_info:
             if info is None:
                 continue
+            if self.review:
+                self.review.start(self.now_path_key(info))
             progress_log_multi_util.trace_start(
                 trajectory_id=self.now_path_key(info),
             )
@@ -335,9 +346,18 @@ class VlnPeEvaluator(Evaluator):
         self.runner_status[[info is None for info in reset_info]] = runner_status_code.TERMINATED
 
         while self.env.is_running():
-
+            review_observations = obs if self.review else None
             obs, action = self.get_action(obs, action)
+            if self.review:
+                for index, (ob, info, act) in enumerate(zip(review_observations, reset_info, action)):
+                    if info is not None and self.runner_status[index] == runner_status_code.NORMAL:
+                        self.review.observe(self.now_path_key(info), ob, act[self.robot_name])
             obs, terminated = self.env_step(action)
+            if self.review:
+                # Capture before terminate_ops resets the environment / episode ID.
+                for index, (ob, info, ended) in enumerate(zip(obs, reset_info, terminated)):
+                    if ended and info is not None and self.runner_status[index] != runner_status_code.TERMINATED:
+                        self.review.observe(self.now_path_key(info), ob, {}, terminal=True)
             env_term, reset_info = self.terminate_ops(obs, reset_info, terminated)
             if env_term:
                 break
