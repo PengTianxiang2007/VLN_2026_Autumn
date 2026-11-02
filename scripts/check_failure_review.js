@@ -18,7 +18,7 @@ class Element {
   play(){this.paused=false;return Promise.resolve()}
   getBoundingClientRect(){return{left:0,top:0,width:900,height:560}}
 }
-for(const match of page.matchAll(/<([\w-]+)\b[^>]*\bid="([^"]+)"[^>]*>/g)){const e=new Element(match[1]);e.id=match[2];elements.set(e.id,e)}
+for(const match of page.matchAll(/<([\w-]+)\b[^>]*\bid="([^"]+)"[^>]*>/g)){const e=new Element(match[1]);e.id=match[2];e.checked=/\bchecked\b/.test(match[0]);elements.set(e.id,e)}
 const document=new Element('document');
 document.getElementById=id=>{assert(elements.has(id),'Missing DOM ID '+id);return elements.get(id)};
 document.createElement=tag=>new Element(tag);document.createElementNS=(_,tag)=>new Element(tag);
@@ -32,8 +32,15 @@ const run=code=>vm.runInContext(code,context),$=id=>elements.get(id),checks=[];
 (async()=>{
   assert.equal(run('rows.length'),25);assert.equal(run('filtered.length'),25);assert.equal($('case-list').children.length,25);checks.push('25 cases load and initial case renders');
   for(let i=0;i<25;i++){run(`show(rows[${i}]);setFrame(current.frames-1,true)`);assert.equal(run('currentFrame'),run('current.frames-1'));assert(Number.isFinite(Number($('current-point').getAttribute('cx'))));assert($('instruction').textContent.length>10);assert($('model-output').textContent.length>0)}checks.push('all 25 cases render, reach final frame and show task/model text');
-  $('tag-filter').value='left_goal';await $('tag-filter').emit('input');assert.equal(run('filtered.length'),8);
-  $('tag-filter').value='near_goal';await $('tag-filter').emit('input');assert.equal(run('filtered.length'),9);
+  if(run('!!rows[0].seed_results')){
+    assert.equal($('seed-results').children.length,3);
+    for(const row of $('seed-results').children){assert.equal(row.children[1].textContent,'0');assert.equal(row.children[5].textContent,'未到达目标');assert.equal(row.children[6].textContent,'STOP')}
+    $('show-seed-0').checked=false;await $('show-seed-0').emit('change');assert.equal($('seed-track-0').style.display,'none');
+    $('show-seed-0').checked=true;await $('show-seed-0').emit('change');assert.equal($('seed-track-0').style.display,'');
+    assert.equal(Number($('scene-count').textContent),9);checks.push('three-seed result table and independent trajectory visibility');
+  }
+  $('tag-filter').value='left_goal';await $('tag-filter').emit('input');assert.equal(run('filtered.length'),run("rows.filter(r=>r.category==='left_goal').length"));
+  $('tag-filter').value='near_goal';await $('tag-filter').emit('input');assert.equal(run('filtered.length'),run("rows.filter(r=>r.category==='near_goal').length"));
   $('tag-filter').value='';$('scene-filter').value='kujiale_0234';await $('scene-filter').emit('input');assert.equal(run('filtered.length'),3);
   $('scene-filter').value='';$('search').value='__no_such_case__';await $('search').emit('input');assert($('viewer').hidden);assert(!$('empty').hidden);
   $('search').value='';await $('search').emit('input');assert.equal(run('filtered.length'),25);checks.push('scene, phenomenon and empty-result filters');

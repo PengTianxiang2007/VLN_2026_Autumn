@@ -1,4 +1,4 @@
-"""Export 25 scored seed-2 non-fall/non-stuck failures for offline review."""
+"""Export scored failures, optionally requiring failure in every requested seed."""
 import argparse
 import base64
 from collections import Counter, defaultdict
@@ -23,36 +23,96 @@ def write_json(path, data):
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
 
 
-def prepare(campaign, output):
+def joint_failure_ids(scores, required_seeds):
+    """Keep the same episode only when every requested seed has a normal failure."""
+    common = set.intersection(*(set(scores[seed]) for seed in required_seeds))
+    return {episode for episode in common if all(
+        float(scores[seed][episode]['info']['success']) == 0 and
+        scores[seed][episode]['fail_reason'] == 'not_reach_goal'
+        for seed in required_seeds)}
+
+
+def select_diverse_cases(eligible, count=25):
+    groups = defaultdict(list)
+    for row in eligible.values(): groups[row['scene']].append(row)
+    if len(eligible) < count: raise ValueError(f'Only {len(eligible)} eligible tasks; need {count}')
+    quota = {s:min(2,len(g)) for s,g in groups.items()}
+    if sum(quota.values()) > count: raise ValueError('Too many scenes for the requested coverage')
+    order = sorted(groups, key=lambda s:(-len(groups[s]),s))
+    while sum(quota.values()) < count:
+        for scene in order:
+            if quota[scene] < len(groups[scene]): quota[scene] += 1
+            if sum(quota.values()) == count: break
+    selected = []
+    for scene in sorted(groups):
+        remaining = sorted(groups[scene], key=lambda r:(r['metrics']['NE'],r['episode_id']))
+        passed_goal = [r for r in remaining if r['metrics']['osr'] == 1]
+        first = passed_goal[-1] if passed_goal else remaining[0]
+        remaining.remove(first); chosen = [first]
+        if quota[scene] >= 2:
+            not_passed = [r for r in remaining if r['metrics']['osr'] == 0]
+            second = not_passed[0] if passed_goal and not_passed else remaining[-1]
+            remaining.remove(second); chosen.append(second)
+        while len(chosen) < quota[scene]: chosen.append(remaining.pop(len(remaining)//2))
+        selected.extend(chosen)
+    return selected
+
+
+def prepare(campaign, output, required_seeds=(0,1,2)):
     import lmdb
     import msgpack_numpy
 
+    required_seeds = sorted(set(required_seeds))
+    if 2 not in required_seeds: raise ValueError('The recorded video seed 2 must be included')
+    campaign_manifest = json.loads((campaign/'manifest.json').read_text())
+    scores = {seed:{} for seed in required_seeds}
+    runs = {}
+    for unit in campaign_manifest['units']:
+        seed = unit['seed']
+        if seed not in scores: continue
+        run = campaign/'runs/vlnverse/streamvln/results'/unit['run_id']
+        if not (run/'result.json').exists(): continue
+        assert json.loads((run/'result.json').read_text())['status'] == 'complete'
+        assert json.loads((run/'validation.json').read_text())['passed']
+        meta = json.loads((run/'run.json').read_text())
+        assert meta['seed'] == seed
+        runs[(seed, unit['scene'])] = (run, meta)
+        database = lmdb.open(str(run/'storage/samples/sample_data.lmdb'),readonly=True,lock=False)
+        try:
+            with database.begin() as txn:
+                for key,value in txn.cursor():
+                    if key in (b'timestamp_',b'eval_rank_0'): continue
+                    record = msgpack_numpy.unpackb(value); info = record['info']
+                    assert info['reproduction_run_seed'] == seed
+                    episode = info['episode_id']
+                    assert episode in meta['episode_ids'] and episode not in scores[seed]
+                    record['_source'] = dict(run_id=unit['run_id'],scene=unit['scene'],lmdb=str(run/'storage/samples/sample_data.lmdb'),
+                        key=key.decode(),record_sha256=hashlib.sha256(value).hexdigest(),dataset_sha256=meta['dataset_sha256'])
+                    scores[seed][episode] = record
+        finally: database.close()
+    qualifying = joint_failure_ids(scores,required_seeds)
     source = campaign / 'visualization'
     index_bytes = (source/'index.jsonl').read_bytes()
     rows = [json.loads(line) for line in index_bytes.splitlines() if line.strip()]
-    eligible = {r['episode_id']: r for r in rows if r['seed'] == 2 and r['status'] == 'complete'
+    eligible = {r['episode_id']: r for r in rows if r['episode_id'] in qualifying and r['seed'] == 2 and r['status'] == 'complete'
                 and r['fail_reason'] == 'not_reach_goal' and r['metrics']['success'] == 0}
-    groups = defaultdict(list)
-    for row in eligible.values():
-        groups[row['scene']].append(row)
-    assert len(groups) == 10 and all(len(group) >= 2 for group in groups.values())
-    extra = set(sorted(groups, key=lambda s: (-len(groups[s]), s))[:5])
-    selected = []
-    for scene in sorted(groups):
-        remaining = sorted(groups[scene], key=lambda r: (r['metrics']['NE'], r['episode_id']))
-        passed_goal = [r for r in remaining if r['metrics']['osr'] == 1]
-        first = passed_goal[-1] if passed_goal else remaining[0]
-        remaining.remove(first)
-        not_passed = [r for r in remaining if r['metrics']['osr'] == 0]
-        second = (not_passed[0] if passed_goal and not_passed else remaining[-1])
-        remaining.remove(second)
-        chosen = [first, second]
-        if scene in extra:
-            chosen.append(remaining[len(remaining)//2])
-        selected.extend(chosen)
+    selected = select_diverse_cases(eligible)
     assert len(selected) == len({r['episode_id'] for r in selected}) == 25
     output.mkdir(parents=True, exist_ok=False)
     cases = []
+    trace_cache = {}
+    def episode_trace(run, episode):
+        if run not in trace_cache:
+            by_episode = {}
+            for tracefile in sorted((run/'storage/chunks').glob('*/agent_trace.jsonl'),reverse=True):
+                chunk_traces = defaultdict(list)
+                for line in tracefile.read_text().splitlines():
+                    if line:
+                        t = json.loads(line); chunk_traces[t['episode_id']].append(t)
+                for identity, trace in chunk_traces.items():
+                    if identity not in by_episode: by_episode[identity] = (trace,tracefile)
+            trace_cache[run] = by_episode
+        return trace_cache[run][episode]
     for number, row in enumerate(selected, 1):
         directory = output/'cases'/f'{number:02d}_{row["episode_id"]}'
         directory.mkdir(parents=True)
@@ -62,18 +122,7 @@ def prepare(campaign, output):
         assert case['status'] == 'complete' and len(steps) == case['frames']
         assert [s['frame'] for s in steps] == list(range(case['frames']))
         run = campaign/'runs/vlnverse/streamvln/results'/row['run_id']
-        database = lmdb.open(str(run/'storage/samples/sample_data.lmdb'), readonly=True, lock=False)
-        matched = []
-        try:
-            with database.begin() as txn:
-                for key, value in txn.cursor():
-                    if key in (b'timestamp_', b'eval_rank_0'): continue
-                    record = msgpack_numpy.unpackb(value)
-                    if record['info']['episode_id'] == row['episode_id']: matched.append(record)
-        finally:
-            database.close()
-        assert len(matched) == 1
-        official = matched[0]
+        official = scores[2][row['episode_id']]
         info = official['info']
         assert info['reproduction_run_seed'] == 2 and float(info['success']) == 0
         assert official['fail_reason'] == 'not_reach_goal'
@@ -81,22 +130,33 @@ def prepare(campaign, output):
         for key, value in case['metrics'].items():
             assert math.isclose(float(info[key]), value, abs_tol=1e-6), (case['episode_id'], key)
         assert float(info['success_distance']) == 3
-        generations = []
-        model_actions = []
-        trace_source = None
-        for tracefile in sorted((run/'storage/chunks').glob('*/agent_trace.jsonl'), reverse=True):
-            trace = [json.loads(line) for line in tracefile.read_text().splitlines() if line]
-            trace = [t for t in trace if t['episode_id'] == case['episode_id']]
-            if not trace: continue
-            assert all(t['run_seed'] == 2 and not t['forced_smoke_stop'] for t in trace)
-            if len(trace) != case['actions']: continue
+        seed_results = {}
+        for seed in required_seeds:
+            record = scores[seed][case['episode_id']]; seed_info = record['info']
+            seed_run, meta = runs[(seed,case['scene'])]
+            trace, tracefile = episode_trace(seed_run,case['episode_id'])
+            assert trace and [t['step'] for t in trace] == list(range(len(trace)))
+            assert all(t['run_seed']==seed and t['episode_seed']==seed_info['reproduction_episode_seed']
+                       and not t['forced_smoke_stop'] for t in trace)
             assert trace[-1]['action'] == 0
-            model_actions = [t['action'] for t in trace]
-            generations = [dict(step=t['step'], output=t.get('output'), seconds=t.get('generation_seconds'))
-                           for t in trace if t.get('generated')]
-            trace_source = str(tracefile)
-            break
-        assert model_actions, 'Missing complete model-action trace: ' + case['episode_id']
+            assert record['fail_reason']=='not_reach_goal' and float(seed_info['success'])==0
+            # The simulator lifts annotation Z=0 to robot height (1.05 m).
+            # Navigation scoring and the review map use XY; compare that plane.
+            assert len(seed_info['reference_path']) == len(case['reference_path'])
+            assert all(math.dist(a[:2],b[:2]) < 1e-6
+                       for a,b in zip(seed_info['reference_path'],case['reference_path']))
+            assert record['_source']['dataset_sha256'] == official['_source']['dataset_sha256']
+            seed_results[str(seed)] = dict(seed=seed,success=float(seed_info['success']),
+                NE=float(seed_info['NE']),OS=float(seed_info['osr']),SPL=float(seed_info['spl']),
+                TL=float(seed_info['TL']),fail_reason=record['fail_reason'],
+                episode_seed=int(seed_info['reproduction_episode_seed']),actions=len(trace),last_model_action=trace[-1]['action'],
+                pred_path=seed_info['pred_path'],source_trace=str(tracefile),source=record['_source'])
+            if seed == 2:
+                assert len(trace) == case['actions']
+                model_actions = [t['action'] for t in trace]
+                generations = [dict(step=t['step'], output=t.get('output'), seconds=t.get('generation_seconds'))
+                               for t in trace if t.get('generated')]
+                trace_source = str(tracefile)
         goal = case['reference_path'][-1][:2]
         for step in steps:
             action = step['action']
@@ -110,7 +170,7 @@ def prepare(campaign, output):
             category, tag = 'near_goal', '接近目标但未到达'
         else:
             category, tag = 'missed_goal', '未进入目标范围'
-        case.update(number=number, category=category, tag=tag,
+        case.update(number=number, category=category, tag=tag,required_seeds=required_seeds,seed_results=seed_results,
                     closest_frame=closest['frame'], closest_recorded_distance=closest['distance_xy'],
                     turn_fraction=sum(a in (2,3) for a in model_actions)/len(model_actions),
                     steps=steps, generations=generations,
@@ -124,11 +184,12 @@ def prepare(campaign, output):
         shutil.copy2(source/row['steps'], directory/'source_steps.jsonl')
         write_json(directory/'case.json', case)
         cases.append(case)
-    manifest = dict(created_at=datetime.now(timezone.utc).isoformat(), campaign=str(campaign), seed=2,
+    manifest = dict(created_at=datetime.now(timezone.utc).isoformat(), campaign=str(campaign), seed=2,video_seed=2,
+        required_seeds=required_seeds,scored_counts={s:len(v) for s,v in scores.items()},qualifying_episode_ids=sorted(qualifying),
         candidate_count=len(eligible), selected_count=25, scene_counts=dict(Counter(c['scene'] for c in cases)),
         category_counts=dict(Counter(c['tag'] for c in cases)),
-        selection='2 per scene; third in five scenes with the most eligible cases; diversify OS/NE. Not a random sample.',
-        filter=dict(seed=2,status='complete',success=0,fail_reason='not_reach_goal'),
+        selection='Cover all eligible scenes, start with two per scene; allocate remaining slots by candidate count; diversify video-seed OS/NE. Not a random sample.',
+        filter=dict(required_seeds=required_seeds,video_seed=2,status='complete',success_in_every_seed=0,fail_reason_in_every_seed='not_reach_goal'),
         source_index_sha256=hashlib.sha256(index_bytes).hexdigest(),
         fps=6, note='One recorded action observation per frame; playback is not real-time physics.',
         cases=cases)
@@ -170,13 +231,19 @@ def render(output):
         regular = ImageFont.truetype(str(font_dir/'NVIDIASans_Rg.ttf'),21)
         small = ImageFont.truetype(str(font_dir/'NVIDIASans_Rg.ttf'),18)
         draw.text((25,14),f"CASE {case['number']:02d} / 25  |  SEED 2  |  {case['episode_id']}",font=bold,fill='#f0f5fa')
-        draw.text((25,49),f"NOT REACHED  |  NE {case['metrics']['NE']:.2f} m  |  OS {int(case['metrics']['osr'])}  |  {case['actions']} actions",font=small,fill='#ffbc78')
+        if len(case.get('required_seeds',[2])) > 1:
+            distances = ' / '.join(f"S{s} {case['seed_results'][str(s)]['NE']:.2f}m" for s in case['required_seeds'])
+            label = f'ALL {len(case["required_seeds"])} SEEDS FAILED, NORMAL STOP  |  NE: '+distances+'  |  VIDEO: SEED 2'
+        else:
+            label = f"NOT REACHED  |  NE {case['metrics']['NE']:.2f} m  |  OS {int(case['metrics']['osr'])}  |  {case['actions']} actions"
+        assert small.getlength(label)<=1230
+        draw.text((25,49),label,font=small,fill='#ffbc78')
         draw.text((25,739),'TASK / ORIGINAL INSTRUCTION',font=bold,fill='#73d9cb')
         lines = wrap_pixels(case['instruction'],regular,1230)
         assert len(lines)<=8,(case['episode_id'],len(lines))
         for index,line in enumerate(lines):
             draw.text((25,780+index*25),line,font=regular,fill='#e8edf4')
-        draw.text((25,1010),english_tags[case['category']]+'  |  6 action frames/s; not real-time speed',font=small,fill='#9cacc1')
+        draw.text((25,1010),'VIDEO SEED 2: '+english_tags[case['category']]+'  |  6 action frames/s; not real-time speed',font=small,fill='#9cacc1')
         overlay = directory/'video_labels.png'; banner.save(overlay)
         command = [ffmpeg,'-hide_banner','-loglevel','error','-nostdin','-y','-threads','1',
             '-i',case['source_video'],'-i',str(overlay),'-filter_complex_threads','1',
@@ -215,7 +282,7 @@ def build_html(output):
     payload = []
     keys = ['number','episode_id','scene','instruction','fps','frames','actions','metrics','category','tag',
             'reference_path','pred_path','steps','generations','closest_frame','closest_recorded_distance',
-            'turn_fraction','video','detail']
+            'turn_fraction','video','detail','seed_results','required_seeds']
     for case in manifest['cases']:
         assert case['fail_reason'] == 'not_reach_goal' and case['metrics']['success'] == 0
         case.update(annotations[case['episode_id']])
@@ -227,19 +294,25 @@ def build_html(output):
             stream = io.BytesIO(); poster.convert('RGB').save(stream,format='JPEG',quality=80)
         row['thumbnail'] = 'data:image/jpeg;base64,'+base64.b64encode(stream.getvalue()).decode()
         payload.append(row)
-    bundle_id = hashlib.sha256('\n'.join(c['episode_id'] for c in manifest['cases']).encode()).hexdigest()[:16]
+    bundle_id = hashlib.sha256((str(manifest['required_seeds'])+'\n'+'\n'.join(c['episode_id'] for c in manifest['cases'])).encode()).hexdigest()[:16]
     data = dict(bundle_id=bundle_id,created_at=datetime.now(timezone.utc).isoformat(),
-                candidate_count=manifest['candidate_count'],cases=payload)
+                candidate_count=manifest['candidate_count'],required_seeds=manifest['required_seeds'],video_seed=2,cases=payload)
     template = (ROOT/'core/failure_cases_review.html').read_text()
     embedded = json.dumps(data,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c')
     (output/'index.html').write_text(template.replace('__CASE_DATA__',embedded))
-    fields=['case','scene','episode_id','phenomenon','NE_m','OS','actions','task_title','instruction_zh','instruction_en','video']
+    fields=['case','scene','episode_id','video_seed','phenomenon_seed2','NE_seed2_m','OS_seed2','actions_seed2','task_title','instruction_zh','instruction_en','video']
     with (output/'cases.csv').open('w',encoding='utf-8-sig',newline='') as stream:
         writer=csv.DictWriter(stream,fieldnames=fields); writer.writeheader()
         for c in manifest['cases']:
-            writer.writerow(dict(case=c['number'],scene=c['scene'],episode_id=c['episode_id'],phenomenon=c['tag'],
-                NE_m=c['metrics']['NE'],OS=c['metrics']['osr'],actions=c['actions'],task_title=c['task_title'],
+            writer.writerow(dict(case=c['number'],scene=c['scene'],episode_id=c['episode_id'],video_seed=2,phenomenon_seed2=c['tag'],
+                NE_seed2_m=c['metrics']['NE'],OS_seed2=c['metrics']['osr'],actions_seed2=c['actions'],task_title=c['task_title'],
                 instruction_zh=c['instruction_zh'],instruction_en=c['instruction'],video=c['video']))
+    comparison_fields=['case','episode_id','scene','seed','success','NE','OS','SPL','TL','fail_reason','actions','last_model_action','episode_seed']
+    with (output/'three_seed_scores.csv').open('w',encoding='utf-8-sig',newline='') as stream:
+        writer=csv.DictWriter(stream,fieldnames=comparison_fields,extrasaction='ignore'); writer.writeheader()
+        for case in manifest['cases']:
+            for result in case['seed_results'].values():
+                writer.writerow(dict(result,case=case['number'],episode_id=case['episode_id'],scene=case['scene']))
     readme = '''StreamVLN / VLNVerse：seed 2 的 25 个失败案例
 
 打开方式
@@ -280,6 +353,14 @@ cases/*/case.json：完整案例、逐帧位置和动作、模型生成与原始
 cases/*/source_case.json、source_steps.jsonl：导出时复制的原始可视化记录。
 生成过程只读取已完成录像和评分；没有改动实验代码、原始录像、模型或数据集，也没有重跑导航。
 '''
+    scope='、'.join(str(s) for s in manifest['required_seeds'])
+    readme=readme.replace('seed 2 的 25 个失败案例',f'seed {scope} 共同失败的 25 个任务（视频来自 seed 2）')
+    readme=readme.replace('全部为已完成的 seed 2 任务，官方 success=0，fail_reason=not_reach_goal，模型最终动作是 STOP。',
+        f'每个任务在 seed {scope} 中均已完成，且每次官方 success=0、fail_reason=not_reach_goal、模型最终动作都是 STOP。')
+    readme=readme.replace('每个 scene 至少 2 条，共 10 个 scene、25 条。',f"本次覆盖 {len(manifest['scene_counts'])} 个有合格候选的 scene，共 25 个任务。")
+    readme=readme.replace('8 条曾进入目标范围后离开、9 条接近目标但未到达、8 条未进入目标范围。',
+        '视频 seed 2 的现象分布：'+'，'.join(f'{n} 条{tag}' for tag,n in manifest['category_counts'].items())+'。')
+    readme+=f'\n各 seed 核验\nthree_seed_scores.csv 保存 25 个任务 × {len(manifest["required_seeds"])} 个 seed 的逐次结果。\nHTML 可对照各 seed 的完整轨迹；只有 seed 2 的位置随视频时间更新。\nseed 0、1 当时没有录制视频，本包的全部录像来自 seed 2。\n'
     (output/'README.txt').write_text(readme)
     manifest.update(bundle_id=bundle_id,html_created_at=data['created_at'])
     write_json(output/'selection.json',manifest)
@@ -291,11 +372,12 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('action',choices=['prepare','render','html'])
     parser.add_argument('--campaign',type=Path)
+    parser.add_argument('--require-seeds',type=int,nargs='+',default=[0,1,2],help='Every listed seed must have SR=0 and normal STOP')
     parser.add_argument('--output',type=Path,required=True)
     args=parser.parse_args()
     if args.action=='prepare':
         if not args.campaign: parser.error('--campaign required for prepare')
-        prepare(args.campaign.resolve(),args.output.resolve())
+        prepare(args.campaign.resolve(),args.output.resolve(),args.require_seeds)
     elif args.action=='render': render(args.output.resolve())
     else: build_html(args.output.resolve())
 
