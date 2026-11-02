@@ -1,4 +1,5 @@
 """Loopback-only stdlib HTTP implementation of the official Agent wire protocol."""
+import faulthandler
 import argparse, base64, importlib.util, inspect, json, pickle, time, traceback, sys
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
@@ -20,8 +21,15 @@ args.output.mkdir(parents=True, exist_ok=True)
 adapter = Path(__file__).resolve().parents[3] / "backbone" / args.method.lower() / "vlnverse/adapter.py"
 spec = importlib.util.spec_from_file_location('peng_navigation_adapter', adapter)
 module = importlib.util.module_from_spec(spec)
-spec.loader.exec_module(module)
-agent = module.NavigationAgent(args.checkpoint)
+faulthandler.enable()
+faulthandler.dump_traceback_later(120, repeat=True)
+print('MODEL_STARTUP_BEGIN', flush=True)
+try:
+    spec.loader.exec_module(module)
+    agent = module.NavigationAgent(args.checkpoint)
+finally:
+    faulthandler.cancel_dump_traceback_later()
+print('MODEL_STARTUP_COMPLETE', flush=True)
 model_source = str(Path(inspect.getfile(type(agent.evaluator.model))).resolve()) if args.method == 'StreamVLN' else None
 if configured_seed() is not None and not Path(model_source).is_relative_to(Path(__file__).resolve().parents[3]):
     raise RuntimeError('Seeded run imported model code outside its frozen project.')

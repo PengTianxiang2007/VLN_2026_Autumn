@@ -22,6 +22,7 @@ sys.path.insert(0, str(PROJECT))
 from core.paths import resource_root, model_python, simulation_python, isaac_root
 from core.vlnverse_reproduction import make_manifest, verify_rows, summarize_complete_seeds, METRICS
 from core.seeding import SEED_SCHEME
+from core.vlnverse_runtime import placement, retry_delay
 from scripts.evaluate import check_gpu
 
 
@@ -177,6 +178,9 @@ def run(campaign, gpus, max_workers, allow_shared):
     fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
     active = {}
     steady = {}
+    recovery_path = campaign / 'recovery.json'
+    recovery = json.loads(recovery_path.read_text()) if recovery_path.exists() else {'failures':{},'blocked':{},'separate_scenes':['kujiale_0234']}
+    retry_at = {}
     def stop(signum, frame):
         raise KeyboardInterrupt
     signal.signal(signal.SIGTERM, stop)
@@ -184,7 +188,7 @@ def run(campaign, gpus, max_workers, allow_shared):
         signal.signal(signal.SIGHUP, stop)
     try:
         summary = collect(campaign, manifest)
-        pending = [i for i, unit in enumerate(manifest['units']) if not (run_path(manifest, unit)/'result.json').exists()]
+        pending = [i for i, unit in enumerate(manifest['units']) if not (run_path(manifest, unit)/'result.json').exists() and unit['run_id'] not in recovery['blocked']]
         gate = campaign / 'first_scene_gate.json'
         if 0 not in pending and not gate.exists():
             first = manifest['units'][0]
@@ -199,7 +203,26 @@ def run(campaign, gpus, max_workers, allow_shared):
                 worker['log'].close()
                 del active[index]
                 if process.returncode:
-                    raise RuntimeError(f'Unit exited {process.returncode}; preserving results: {worker["log_path"]}')
+                    unit = manifest['units'][index]
+                    failure_file = run_path(manifest, unit) / 'failure.json'
+                    failure = json.loads(failure_file.read_text()) if failure_file.exists() else {'kind':'unclassified'}
+                    run_id = unit['run_id']
+                    failures = recovery['failures'].get(run_id, 0) + 1
+                    recovery['failures'][run_id] = failures
+                    if failure['kind'] == 'gpu_oom' and unit['scene'] not in recovery['separate_scenes']:
+                        recovery['separate_scenes'].append(unit['scene'])
+                    delay = retry_delay(failure['kind'], failures)
+                    event = dict(event='unit_retry' if delay is not None else 'unit_blocked', run_id=run_id, failures=failures, failure=failure, log=worker['log_path'])
+                    if delay is None:
+                        recovery['blocked'][run_id] = event
+                    else:
+                        pending.append(index)
+                        retry_at[index] = time.monotonic() + delay
+                    write_json(recovery_path, recovery)
+                    with (campaign/'recovery_events.jsonl').open('a') as events:
+                        events.write(json.dumps(event)+'\n')
+                    print(json.dumps(event), flush=True)
+                    continue
                 unit = manifest['units'][index]
                 path = run_path(manifest, unit)
                 summary = collect(campaign, manifest)
@@ -211,22 +234,28 @@ def run(campaign, gpus, max_workers, allow_shared):
                 print(json.dumps(dict(event='unit_complete', seed=unit['seed'], scene=unit['scene'],
                     completed_units=summary['completed_units'], completed_episode_runs=summary['completed_episode_runs'])), flush=True)
             rows = gpu_rows()
-            candidates = eligible_gpus(rows, gpus, {worker['gpu'] for worker in active.values()})
-            steady = {gpu: steady.get(gpu, 0)+1 for gpu in candidates}
-            ready = [gpu for gpu in candidates if steady[gpu] >= 2]
-            while pending and ready and len(active) < max_workers and available_memory_mib() >= 65536:
-                if not gate.exists() and (active or pending[0] != 0):
-                    break
-                gpu = ready.pop(0)
+            busy = {g for worker in active.values() for g in (worker['gpu'], worker['sim_gpu'])}
+            # Require two consecutive low-load observations for each GPU.
+            available = [r for r in rows if r['index'] not in busy and r['utilization'] <= 15]
+            steady = {r['index']:steady.get(r['index'],0)+1 for r in available}
+            ready_rows = [r for r in available if steady[r['index']] >= 2]
+            for index in list(pending):
+                if len(active) >= max_workers or available_memory_mib() < 65536: break
+                if time.monotonic() < retry_at.get(index,0): continue
+                if not gate.exists() and (active or index != 0): continue
+                pair = placement(ready_rows, gpus, busy, manifest['units'][index]['scene'] in recovery['separate_scenes'])
+                if pair is None: continue
+                gpu, sim_gpu = pair
                 try:
-                    check_gpu(gpu, 34000, allow_shared)
+                    check_gpu(gpu, 25000 if gpu != sim_gpu else 34000, allow_shared)
+                    if sim_gpu != gpu: check_gpu(sim_gpu,40000,allow_shared)
                 except RuntimeError:
                     continue
-                index = pending.pop(0)
+                pending.remove(index)
                 unit = manifest['units'][index]
                 path = run_path(manifest, unit)
                 command = [sys.executable, str(snapshot / 'scripts/evaluate.py'), '--backbone', 'streamvln',
-                           '--benchmark', 'vlnverse', '--gpu', str(gpu), '--episodes', '0', '--mode', 'physical',
+                           '--benchmark', 'vlnverse', '--gpu', str(gpu), '--sim-gpu', str(sim_gpu), '--episodes', '0', '--mode', 'physical',
                            '--seed', str(unit['seed']), '--scenes', unit['scene']]
                 command += ['--resume' if (path / 'run.json').exists() else '--run-id', unit['run_id']]
                 if allow_shared:
@@ -234,11 +263,15 @@ def run(campaign, gpus, max_workers, allow_shared):
                 log_path = launch_dir / f'{unit["run_id"]}_{time.time_ns()}.log'
                 log = log_path.open('w')
                 worker_env = env.copy()
-                if gpu != 0:
-                    worker_env['VLN_SIM_CACHE_ROOT'] = str(campaign / 'sim_cache' / f'gpu_{gpu}')
+                if sim_gpu != 0:
+                    worker_env['VLN_SIM_CACHE_ROOT'] = str(campaign / 'sim_cache' / f'gpu_{sim_gpu}')
+                # Preserve prior failure evidence; do not mistake it for a new failure.
+                failure_file = path / 'failure.json'
+                if failure_file.exists():
+                    failure_file.rename(path / f'failure_{time.time_ns()}.json')
                 process = subprocess.Popen(command, cwd=snapshot, env=worker_env, stdout=log,
                                            stderr=subprocess.STDOUT, start_new_session=True)
-                active[index] = dict(process=process, log=log, log_path=str(log_path), gpu=gpu)
+                active[index] = dict(process=process, log=log, log_path=str(log_path), gpu=gpu, sim_gpu=sim_gpu)
                 print(json.dumps(dict(event='unit_started', seed=unit['seed'], scene=unit['scene'],
                     expected=unit['expected'], run_id=unit['run_id'], gpu=gpu, pid=process.pid)), flush=True)
                 # Re-read GPU/RAM availability before admitting another model load.
@@ -251,12 +284,12 @@ def run(campaign, gpus, max_workers, allow_shared):
                     current = json.loads(official.read_text())['val_unseen']['Count'] if official.exists() else 0
                 except (ValueError, KeyError):
                     current = 0
-                workers.append(dict(**unit, gpu=worker['gpu'], pid=worker['process'].pid,
+                workers.append(dict(**unit, gpu=worker['gpu'], sim_gpu=worker['sim_gpu'], pid=worker['process'].pid,
                                     log=worker['log_path'], completed=current))
             status.update(status='running' if active else 'waiting_for_resources', workers=workers,
                           completed_episode_runs=summary['completed_episode_runs']+sum(w['completed'] for w in workers),
                           validated_episode_runs=summary['completed_episode_runs'], completed_units=summary['completed_units'],
-                          pending_units=len(pending), available_memory_mib=available_memory_mib(),
+                          pending_units=len(pending), blocked_units=recovery['blocked'], available_memory_mib=available_memory_mib(),
                           gpu_snapshot=rows, first_scene_passed=gate.exists(), updated_at=now())
             write_json(campaign / 'status.json', status)
             if pending or active:

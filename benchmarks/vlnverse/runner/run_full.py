@@ -8,6 +8,7 @@ import sys
 sys.path.insert(0,str(PROJECT))
 from core.paths import output_root, model_python, resource_root, model_environment, simulation_python, isaac_root
 from core.seeding import SEED_SCHEME
+from core.vlnverse_runtime import OOM_MARKERS, failure_kind
 from core.vlnverse_reproduction import digest_json, select_complete_scenes, verify_resume
 from core.vlnverse_review import review_settings
 from scripts.evaluate import check_gpu
@@ -182,6 +183,7 @@ def main():
             chunk_dir=output/chunk_name
             chunk_dir.symlink_to(chunk_storage,target_is_directory=True)
             start_count=count()
+            atomic_json(chunk_dir/'execution.json', {'model_gpu':a.gpu,'sim_gpu':a.sim_gpu,'seed':a.seed,'started_at':time.time()})
             with (chunk_dir/'agent.log').open('w') as log:
                 server=subprocess.Popen([str(python),'-u',str(RUNNER/'service.py'),'--method',a.method,'--checkpoint',str(checkpoint),'--output',str(chunk_dir),'--smoke-steps','0','--compact-trace','--save-rgb','2'],env=env,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)
             atomic_json(output/'owned_processes.json',{'agent_pid':server.pid,'gpu':a.gpu,'sim_gpu':a.sim_gpu,'launcher_pid':os.getpid(),'launcher_start_ticks':Path('/proc/self/stat').read_text().split()[21],'chunk':str(chunk_dir)})
@@ -200,7 +202,19 @@ def main():
                 evaluator=subprocess.Popen(['bash',str(RUNNER/'run_eval.sh'),str(config)],env=eval_env,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)
             atomic_json(output/'owned_processes.json',{'agent_pid':server.pid,'evaluator_pid':evaluator.pid,'gpu':a.gpu,'sim_gpu':a.sim_gpu,'launcher_pid':os.getpid(),'launcher_start_ticks':Path('/proc/self/stat').read_text().split()[21],'chunk':str(chunk_dir)})
             print(f'CHUNK_START {chunk_dir.name} completed={start_count}/{len(episodes)}',flush=True)
+            scanned_bytes=0
+            scan_tail=''
             while evaluator.poll() is None:
+                with (chunk_dir/'evaluator.log').open('r',errors='replace') as stream:
+                    stream.seek(scanned_bytes)
+                    while True:
+                        block=stream.read(65536)
+                        if not block: break
+                        scan_tail=(scan_tail+block)
+                        if any(marker in scan_tail for marker in OOM_MARKERS):
+                            raise RuntimeError('Out of GPU memory in simulator; retry with separate model/simulator GPUs')
+                        scan_tail=scan_tail[-128:]
+                    scanned_bytes=stream.tell()
                 if server.poll() is not None: raise RuntimeError('Model service exited during evaluation')
                 newest=max((chunk_dir/'agent.log').stat().st_mtime,(chunk_dir/'evaluator.log').stat().st_mtime)
                 if time.time()-newest>900:
@@ -225,6 +239,9 @@ def main():
         atomic_json(output/'result.json',{'status':'complete','method':a.method,'mode':a.mode,'expected_episodes':len(episodes),'official_result':result,'official_result_path':str(results_file),'run_id':run_id,'model_gpu':a.gpu,'sim_gpu':a.sim_gpu})
         atomic_json(method_dir/'latest_eval.json',{'run_id':run_id,'output':str(output),'result':str(output/'result.json')})
         print(json.dumps({'status':'complete','result':str(output/'result.json')}),flush=True)
+    except Exception as error:
+        atomic_json(output/'failure.json', {'kind':failure_kind(str(error)), 'error':str(error), 'time':time.time(), 'gpu':a.gpu, 'sim_gpu':a.sim_gpu})
+        raise
     finally:
         cleanup(evaluator); cleanup(server)
         atomic_json(output/'owned_processes.json',{'status':'stopped','gpu':a.gpu,'sim_gpu':a.sim_gpu})
