@@ -13,6 +13,35 @@ queue=importlib.util.module_from_spec(spec); spec.loader.exec_module(queue)
 
 
 class QueueRecoveryTests(unittest.TestCase):
+    def test_parallel_admission_is_limited_by_ram_and_worker_cap(self):
+        self.assertTrue(queue.can_admit_worker(2,8,250000))
+        self.assertFalse(queue.can_admit_worker(3,8,250000))
+        self.assertFalse(queue.can_admit_worker(2,2,250000))
+        self.assertFalse(queue.can_admit_worker(0,8,65535))
+
+    def test_progress_keeps_paused_partial_results_without_double_counting(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory)
+            units=[dict(run_id=s,expected=25) for s in ('complete','paused','active')]
+            manifest=dict(runtime_env={'VLN_OUTPUT_ROOT':str(root/'runs')},units=units)
+            completed=queue.run_path(manifest,units[0]); completed.mkdir(parents=True)
+            (completed/'result.json').write_text('{}')
+            for run_id,count in [('complete',25),('paused',6),('active',1)]:
+                log=root/'benchmarks/vlnverse/upstream/logs'/run_id/'kujiale_result.json'
+                log.parent.mkdir(parents=True)
+                log.write_text(json.dumps({'val_unseen':{'Count':count}}))
+            counts=queue.partial_counts(manifest,root)
+            self.assertEqual(counts,{'paused':6,'active':1})
+            # A worker can publish result.json just before collect() sees it.
+            active=queue.run_path(manifest,units[2]); active.mkdir(parents=True)
+            (active/'result.json').write_text('{}')
+            self.assertEqual(queue.partial_counts(manifest,root,completed={'complete'}),counts)
+            (active/'result.json').unlink()
+            log.write_text('{')
+            self.assertEqual(queue.partial_counts(manifest,root,counts),counts)
+            log.write_text('{"val_unseen":{"Count":26}}')
+            with self.assertRaisesRegex(RuntimeError,'Invalid partial'): queue.partial_counts(manifest,root)
+
     def run_failure(self, kind, phase, persistent=False, early=False):
         with tempfile.TemporaryDirectory() as directory:
             campaign=Path(directory); clock=[0]; attempts=[]; finished=set()
@@ -47,7 +76,8 @@ class QueueRecoveryTests(unittest.TestCase):
                     return self.returncode
 
             def collect(*args):
-                return dict(completed_units=len(finished),completed_episode_runs=len(finished),complete=False)
+                return dict(completed_units=len(finished),completed_episode_runs=len(finished),
+                            completed_run_ids=list(finished),complete=False)
             def sleep(seconds): clock[0]+=seconds
             handlers={s:signal.getsignal(s) for s in (signal.SIGTERM,signal.SIGHUP)}
             try:

@@ -111,6 +111,7 @@ def run_path(manifest, unit):
 
 def collect(campaign, manifest):
     rows, scene_results = [], []
+    completed_run_ids = []
     completed_units = 0
     for unit in manifest['units']:
         path = run_path(manifest, unit)
@@ -127,8 +128,10 @@ def collect(campaign, manifest):
         rows.extend(group)
         scene_results.append(dict(seed=unit['seed'], scene=unit['scene'], Count=len(group), **means))
         completed_units += 1
+        completed_run_ids.append(unit['run_id'])
     summary = summarize_complete_seeds(rows, manifest)
-    summary.update(completed_units=completed_units, expected_units=50, scenes=scene_results, updated_at=now())
+    summary.update(completed_units=completed_units, completed_run_ids=completed_run_ids,
+                   expected_units=50, scenes=scene_results, updated_at=now())
     write_json(campaign / 'summary.json', summary)
     if rows:
         fields = ['run_seed','scene','episode_id','episode_seed',*METRICS,'steps','fail_reason','run_id']
@@ -160,6 +163,32 @@ def available_memory_mib():
     return 0
 
 
+def partial_counts(manifest, snapshot, previous=None, completed=None):
+    """Include scored episodes in pending/blocked scenes, not just active workers."""
+    counts = {}
+    for unit in manifest['units']:
+        counted = unit['run_id'] in completed if completed is not None else (run_path(manifest, unit)/'result.json').exists()
+        if counted:
+            continue
+        run_id = unit['run_id']
+        official = snapshot/'benchmarks/vlnverse/upstream/logs'/run_id/'kujiale_result.json'
+        try:
+            count = json.loads(official.read_text())['val_unseen']['Count'] if official.exists() else 0
+        except (ValueError, KeyError):
+            # The upstream JSON writer is not atomic. Retain the last good read.
+            count = (previous or {}).get(run_id, 0)
+        if not isinstance(count, int) or not 0 <= count <= unit['expected']:
+            raise RuntimeError('Invalid partial episode count: ' + run_id)
+        counts[run_id] = count
+    return counts
+
+
+def can_admit_worker(active_count, maximum, free_memory_mib):
+    # Conservatively retain 64 GiB per group for loading/scene-growth headroom.
+    # Existing usage is already reflected in MemAvailable; do not evict jobs.
+    return active_count < maximum and free_memory_mib >= 65536 * (active_count + 1)
+
+
 def run(campaign, gpus, max_workers, allow_shared):
     manifest = json.loads((campaign / 'manifest.json').read_text())
     snapshot = Path(manifest['code_root'])
@@ -177,6 +206,7 @@ def run(campaign, gpus, max_workers, allow_shared):
     lock = (campaign / 'campaign.lock').open('a')
     fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
     active = {}
+    partial = {}
     steady = {}
     recovery_path = campaign / 'recovery.json'
     recovery = json.loads(recovery_path.read_text()) if recovery_path.exists() else {'failures':{},'blocked':{},'separate_scenes':['kujiale_0234']}
@@ -245,7 +275,7 @@ def run(campaign, gpus, max_workers, allow_shared):
             steady = {r['index']:steady.get(r['index'],0)+1 for r in available}
             ready_rows = [r for r in available if steady[r['index']] >= 2]
             for index in list(pending):
-                if len(active) >= max_workers or available_memory_mib() < 65536: break
+                if not can_admit_worker(len(active), max_workers, available_memory_mib()): break
                 if time.monotonic() < retry_at.get(index,0): continue
                 if not gate.exists() and (active or index != 0): continue
                 pair = placement(ready_rows, gpus, busy, manifest['units'][index]['scene'] in recovery['separate_scenes'])
@@ -281,18 +311,15 @@ def run(campaign, gpus, max_workers, allow_shared):
                     expected=unit['expected'], run_id=unit['run_id'], gpu=gpu, pid=process.pid)), flush=True)
                 # Re-read GPU/RAM availability before admitting another model load.
                 break
+            partial = partial_counts(manifest, snapshot, partial, set(summary['completed_run_ids']))
             workers = []
             for index, worker in active.items():
                 unit = manifest['units'][index]
-                official = snapshot / 'benchmarks/vlnverse/upstream/logs' / unit['run_id'] / 'kujiale_result.json'
-                try:
-                    current = json.loads(official.read_text())['val_unseen']['Count'] if official.exists() else 0
-                except (ValueError, KeyError):
-                    current = 0
                 workers.append(dict(**unit, gpu=worker['gpu'], sim_gpu=worker['sim_gpu'], pid=worker['process'].pid,
-                                    log=worker['log_path'], completed=current))
+                                    log=worker['log_path'], completed=partial.get(unit['run_id'],unit['expected'])))
             status.update(status='running' if active else 'waiting_for_resources', workers=workers,
-                          completed_episode_runs=summary['completed_episode_runs']+sum(w['completed'] for w in workers),
+                          completed_episode_runs=summary['completed_episode_runs']+sum(partial.values()),
+                          partial_episode_runs_by_unit=partial,
                           validated_episode_runs=summary['completed_episode_runs'], completed_units=summary['completed_units'],
                           pending_units=len(pending), blocked_units=recovery['blocked'], available_memory_mib=available_memory_mib(),
                           gpu_snapshot=rows, first_scene_passed=gate.exists(), updated_at=now())
@@ -324,7 +351,8 @@ def main():
     parser.add_argument('--campaign', type=Path, required=True)
     parser.add_argument('--fingerprints', type=Path)
     parser.add_argument('--gpus', type=int, nargs='+', help='Allowed GPU indices; default all visible cards')
-    parser.add_argument('--max-workers', type=int, default=2)
+    parser.add_argument('--max-workers', type=int, default=8,
+                        help='Upper bound; live GPU availability and host RAM further limit concurrency')
     parser.add_argument('--allow-shared-gpu', action='store_true')
     args = parser.parse_args()
     if args.max_workers < 1 or (args.gpus is not None and any(g < 0 for g in args.gpus)):
