@@ -22,7 +22,7 @@ sys.path.insert(0, str(PROJECT))
 from core.paths import resource_root, model_python, simulation_python, isaac_root
 from core.vlnverse_reproduction import make_manifest, verify_rows, summarize_complete_seeds, METRICS
 from core.seeding import SEED_SCHEME
-from core.vlnverse_runtime import placement, retry_delay
+from core.vlnverse_runtime import placement, retry_delay, worker_failure, needs_separate_gpus
 from scripts.evaluate import check_gpu
 
 
@@ -205,11 +205,16 @@ def run(campaign, gpus, max_workers, allow_shared):
                 if process.returncode:
                     unit = manifest['units'][index]
                     failure_file = run_path(manifest, unit) / 'failure.json'
-                    failure = json.loads(failure_file.read_text()) if failure_file.exists() else {'kind':'unclassified'}
+                    failure = worker_failure(failure_file, worker['log_path'], process.returncode)
+                    if not failure_file.exists():
+                        # Do not create the run directory before run.json: a fresh
+                        # runner deliberately refuses to overwrite existing dirs.
+                        write_json(Path(worker['log_path']).with_suffix('.failure.json'),
+                                   dict(failure, time=time.time(), gpu=worker['gpu'], sim_gpu=worker['sim_gpu']))
                     run_id = unit['run_id']
                     failures = recovery['failures'].get(run_id, 0) + 1
                     recovery['failures'][run_id] = failures
-                    if failure['kind'] == 'gpu_oom' and unit['scene'] not in recovery['separate_scenes']:
+                    if needs_separate_gpus(failure) and unit['scene'] not in recovery['separate_scenes']:
                         recovery['separate_scenes'].append(unit['scene'])
                     delay = retry_delay(failure['kind'], failures)
                     event = dict(event='unit_retry' if delay is not None else 'unit_blocked', run_id=run_id, failures=failures, failure=failure, log=worker['log_path'])

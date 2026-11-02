@@ -8,7 +8,7 @@ import sys
 sys.path.insert(0,str(PROJECT))
 from core.paths import output_root, model_python, resource_root, model_environment, simulation_python, isaac_root
 from core.seeding import SEED_SCHEME
-from core.vlnverse_runtime import OOM_MARKERS, failure_kind
+from core.vlnverse_runtime import RuntimeFailure, OOMLogMonitor, failure_record, wait_for_model_ready
 from core.vlnverse_reproduction import digest_json, select_complete_scenes, verify_resume
 from core.vlnverse_review import review_settings
 from scripts.evaluate import check_gpu
@@ -187,12 +187,7 @@ def main():
             with (chunk_dir/'agent.log').open('w') as log:
                 server=subprocess.Popen([str(python),'-u',str(RUNNER/'service.py'),'--method',a.method,'--checkpoint',str(checkpoint),'--output',str(chunk_dir),'--smoke-steps','0','--compact-trace','--save-rgb','2'],env=env,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)
             atomic_json(output/'owned_processes.json',{'agent_pid':server.pid,'gpu':a.gpu,'sim_gpu':a.sim_gpu,'launcher_pid':os.getpid(),'launcher_start_ticks':Path('/proc/self/stat').read_text().split()[21],'chunk':str(chunk_dir)})
-            deadline=time.monotonic()+900
-            while not (chunk_dir/'ready.json').exists():
-                if server.poll() is not None: raise RuntimeError('Model service failed; see '+str(chunk_dir/'agent.log'))
-                if time.monotonic()>deadline: raise TimeoutError('Model loading timeout')
-                time.sleep(2)
-            port=json.loads((chunk_dir/'ready.json').read_text())['port']
+            port=wait_for_model_ready(server,chunk_dir)['port']
             # Explicit post-load reset; official evaluator resets again between episodes.
             req=urllib.request.Request(f'http://127.0.0.1:{port}/agent/{a.method}/reset',data=b'{"reset_index":null}',headers={'Content-Type':'application/json'})
             with opener.open(req,timeout=60) as response: assert json.load(response)['status']=='success'
@@ -202,24 +197,20 @@ def main():
                 evaluator=subprocess.Popen(['bash',str(RUNNER/'run_eval.sh'),str(config)],env=eval_env,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)
             atomic_json(output/'owned_processes.json',{'agent_pid':server.pid,'evaluator_pid':evaluator.pid,'gpu':a.gpu,'sim_gpu':a.sim_gpu,'launcher_pid':os.getpid(),'launcher_start_ticks':Path('/proc/self/stat').read_text().split()[21],'chunk':str(chunk_dir)})
             print(f'CHUNK_START {chunk_dir.name} completed={start_count}/{len(episodes)}',flush=True)
-            scanned_bytes=0
-            scan_tail=''
+            model_oom=OOMLogMonitor(chunk_dir/'agent.log','model_inference')
+            simulator_oom=OOMLogMonitor(chunk_dir/'evaluator.log','simulator')
             while evaluator.poll() is None:
-                with (chunk_dir/'evaluator.log').open('r',errors='replace') as stream:
-                    stream.seek(scanned_bytes)
-                    while True:
-                        block=stream.read(65536)
-                        if not block: break
-                        scan_tail=(scan_tail+block)
-                        if any(marker in scan_tail for marker in OOM_MARKERS):
-                            raise RuntimeError('Out of GPU memory in simulator; retry with separate model/simulator GPUs')
-                        scan_tail=scan_tail[-128:]
-                    scanned_bytes=stream.tell()
-                if server.poll() is not None: raise RuntimeError('Model service exited during evaluation')
+                model_oom.check()
+                simulator_oom.check()
+                if server.poll() is not None:
+                    raise RuntimeFailure('Model service exited during evaluation','model_inference',chunk_dir/'agent.log',server.returncode)
                 newest=max((chunk_dir/'agent.log').stat().st_mtime,(chunk_dir/'evaluator.log').stat().st_mtime)
                 if time.time()-newest>900:
                     cleanup(evaluator); break
                 time.sleep(5)
+            # A process may emit its OOM and exit between two poll iterations.
+            model_oom.check()
+            simulator_oom.check()
             rc=evaluator.returncode
             cleanup(evaluator); evaluator=None
             cleanup(server); server=None
@@ -240,7 +231,7 @@ def main():
         atomic_json(method_dir/'latest_eval.json',{'run_id':run_id,'output':str(output),'result':str(output/'result.json')})
         print(json.dumps({'status':'complete','result':str(output/'result.json')}),flush=True)
     except Exception as error:
-        atomic_json(output/'failure.json', {'kind':failure_kind(str(error)), 'error':str(error), 'time':time.time(), 'gpu':a.gpu, 'sim_gpu':a.sim_gpu})
+        atomic_json(output/'failure.json', dict(failure_record(error), time=time.time(), gpu=a.gpu, sim_gpu=a.sim_gpu))
         raise
     finally:
         cleanup(evaluator); cleanup(server)
