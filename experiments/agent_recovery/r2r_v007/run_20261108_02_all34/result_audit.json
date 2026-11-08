@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "expected_samples": 34,
+  "responses": 34,
+  "unique_response_ids": 34,
+  "requests_reconstructed": 34,
+  "prompt_matches_current_best": true,
+  "raw_instructions_unchanged": true,
+  "peak_overlapping_worker_request_intervals": 34,
+  "workers_exited": true,
+  "navigation_executed": false,
+  "prior_seven_identical_outputs": 7
+}

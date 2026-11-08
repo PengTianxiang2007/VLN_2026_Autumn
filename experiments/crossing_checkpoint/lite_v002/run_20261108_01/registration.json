@@ -1,0 +1,42 @@
+{
+  "baseline_hashes": {
+    "baseline_predictions.json": "e9738d6dc9cfce8e0ce580eadf0f8f0c2143a30d2116b7ca17cfb90c3153f9fb",
+    "baseline_audit.json": "1a2c9c95a18c7b355cb3444cf4efc608ebb88c07c0c096842b704b507e626a2c",
+    "baseline_translations.json": "ccbf06f0439f5fbf59d61515cf48dac3ba2585cc48a987522b6e4dfc041ff2b6",
+    "baseline_prompt_en.txt": "0b862baa63a3fd0b0919129ab54804514d7e696048d488477dda4d6fdb411dc2"
+  },
+  "created_at": "2026-11-08T08:40:51.154335+00:00",
+  "git_head": "0a805dfcf4457f80300822abb4eff7cabba43aae",
+  "source_hashes": {
+    "scripts/export_crossing_lite_v002.py": "0a9bb1f78896e16dfff057e84f1bdbcd86a95fbff0c18014f12e66c51a153619",
+    "core/crossing_lite_v002_review.js": "0ff1e269f1c1557cbe94fa6f51fdf44fb72bbbcdbdafc94131121c877f9411ad",
+    "scripts/check_crossing_lite_v002.cjs": "3653156c0c1c2401656bef3164dcd236a52f9000e869630c0a48eb19cc0aef7b",
+    "scripts/check_crossing_robot_marker.cjs": "c25a27a5fbcd074694620da6187c086cef073c4f9aea4f6bd96e15eb58b9ce27",
+    "scripts/export_crossing_lite_full.py": "1c1eba8363699ee82e79d0bd9bdbc8eff2335bf8c4d2493db918cdfdaf3bdece",
+    "core/crossing_lite_full_review.js": "b2e551c1e3627862fdfc0b43215ad943f468bdd3fdb2feda666e4fafb67d73dc",
+    "scripts/crossing_lite_v002_finish.py": "5d7dccd3f65e6a2624aaf37c555ef219f8f6319535df713a2306fe8dcde0e404",
+    "scripts/check_crossing_lite_full.cjs": "5731a88f36ea0c677a896e250db619cf9815b81fdfe34ed60b9f0882af7c0ef2",
+    "core/crossing_lite.py": "d9c935782cc17d7f7c2d72031955fc034c83d5133b76fef050bb76774a7dd604",
+    "scripts/run_crossing_lite_v002.py": "dba9c9988497f22d4d1276fe4b438bd30747794997bdb0a4f96fe58bf8aafdb9",
+    "scripts/export_crossing_lite.py": "3a0f8af319038e404a2aaa551321058226373a20ee4facdb9979cde9cd9cfab1",
+    "core/crossing_lite_review.js": "3767e65692a90b6feb8ffca4612b1260344880801cdbf166700ec656b124d12d",
+    "scripts/check_crossing_lite.cjs": "d6c53d059e0c5793b4467b4fc804685d290361c9e52179765814488dbcb8277b",
+    "scripts/export_crossing_iteration.py": "ca9d5fb6b27afc32ed076014b3555be24033c77ef93c932c0f9310071b90a96f",
+    "core/crossing_campaign_template.html": "f8d325b018305b22c1a4049127e9354f4690ee00162e008cd2e6f890b6cb3033",
+    "core/crossing_campaign_panel.html": "a5549388f1cf241ee6746cb2b8ec279f8eeaaa922353ebd065763af5c955d961",
+    "core/crossing_visualization_template.json": "b83d7428d9f14be90d4b81a3581edc2ca84e0b8b6d7d7f1796f66e86a9ef7cc4",
+    "core/agent_route_choice.py": "7c318758fbd973de3e88882b87bf8b78916e515c15a1ea3f49ab8b1b0731732f",
+    "scripts/run_crossing_local_batch.py": "3e928d605e3eebb103accb0c2976679093c8feb3c7b4397f908ca80e20562b11",
+    "scripts/test_crossing_single_gpu.py": "bfad9553e6752c51148f62d8fd6b1afac12748a9b49ab95e22efc79dc025d937"
+  },
+  "prompt_sha256": "83846db946da63344a5cc9dba2f890e7935d485db85df75acca8d12b1f4993a1",
+  "protocol_sha256": "ba231c1ff1437a6b867ef6c3426fa4d654c897ab944bb9b62c65a6bde44be337",
+  "task_hashes": {
+    "tasks_0.json": "8ac8ab26b53f6fa546f568079364c52498b1d2ff68bc7a62ebee5d767f73bfdd",
+    "tasks_1.json": "35658b0a4fac36bb5edb6cdae0e6c82b17a4bcdf185b8d01d093eb13c3a94e56",
+    "tasks_2.json": "5064f0f5d394b09a41f841218fd9181b536ef7f51f1e63f74fd510977c3b9566",
+    "tasks_3.json": "eb2b0f9c2a295f96ec83f9e72f911f1087db31fea5bb84f02a6ad1f14bc406b0"
+  },
+  "selection_sha256": "e37e12f6144529a9e6aac6acf8b9cd0e19b5d957e5b35fea05e3186335b51752",
+  "expected_calls": 1824
+}

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "cases": 7,
+  "prompt_exact_v005": true,
+  "image_hashes_match": true,
+  "multimodal_requests": true,
+  "credentials_in_payload": false,
+  "model_calls": 0
+}

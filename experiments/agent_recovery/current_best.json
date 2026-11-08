@@ -1,0 +1,28 @@
+{
+  "version": "r2r_v007",
+  "status": "current_best_user_selected",
+  "selected_at": "2026-11-08T05:25:58.288504+00:00",
+  "selection_basis": "用户明确要求保留v007并标记为当前最优prompt；依据七例生成指令审阅，不代表导航成功率最优。",
+  "prompt_en": "experiments/agent_recovery/r2r_v007/prompt_en.txt",
+  "prompt_zh": "experiments/agent_recovery/r2r_v007/prompt_zh.txt",
+  "run": "experiments/agent_recovery/r2r_v007/run_20261108_01",
+  "instructions": "outputs/agent_recovery/r2r_v007/run_20261108_01/instructions.json",
+  "model": "deepseek-flash",
+  "sample_ids": [
+    "sample_17",
+    "sample_18",
+    "sample_19",
+    "sample_20",
+    "sample_28",
+    "sample_29",
+    "sample_34"
+  ],
+  "sha256": {
+    "experiments/agent_recovery/r2r_v007/prompt_en.txt": "771b7294d75712f9e1d579729b0ff44a9fcb95bdc5c1fc16761965a8940fee0f",
+    "experiments/agent_recovery/r2r_v007/prompt_zh.txt": "7be3500b3260d1ebdfe55e4ca085ea0b5a8dc694c3412cb2e2bcd09729586aad",
+    "outputs/agent_recovery/r2r_v007/run_20261108_01/instructions.json": "07f7febc7b657e441037c499ad8121c92ceb61815944108f2906b60425a3ca14"
+  },
+  "navigation_validated": false,
+  "known_limitation": "sample_34前进范围仍不明确。",
+  "automatic_run_authorized": false
+}

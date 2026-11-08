@@ -1,0 +1,17 @@
+{
+  "supervisor_pid": 2524971,
+  "command": [
+    "python3",
+    "-B",
+    "scripts/run_entrance_correction_commands.py",
+    "--prepared",
+    "experiments/agent_recovery/r2r_v005/run_20261107_01",
+    "--output",
+    "outputs/agent_recovery/r2r_v005/run_20261107_01",
+    "--gpu",
+    "-1",
+    "--allow-shared-gpu",
+    "--resource-wait-seconds",
+    "86400"
+  ]
+}

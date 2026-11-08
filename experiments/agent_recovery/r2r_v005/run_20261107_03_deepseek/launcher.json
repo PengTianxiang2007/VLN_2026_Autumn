@@ -1,0 +1,14 @@
+{
+  "supervisor_pid": 2542551,
+  "command": [
+    "/usr/bin/python3",
+    "-B",
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/scripts/run_deepseek_correction_commands.py",
+    "--worker",
+    "--prepared",
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/experiments/agent_recovery/r2r_v005/run_20261107_03_deepseek",
+    "--output",
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/agent_recovery/r2r_v005/run_20261107_03_deepseek"
+  ],
+  "credential_transport": "hidden terminal input then anonymous stdin pipe"
+}

@@ -1,0 +1,33 @@
+{
+  "tag": "qwen35_4b_draft04_dev3",
+  "created_at": "2026-11-05T11:17:44.435903+00:00",
+  "git_head": "0a805dfcf4457f80300822abb4eff7cabba43aae",
+  "model": "Qwen3.5-4B",
+  "model_path": "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/models/Qwen3.5-4B",
+  "served_model": "crossing-qwen35-4b",
+  "gpu": 0,
+  "gpu_memory_utilization": 0.5,
+  "concurrency": 3,
+  "thinking": false,
+  "development": [
+    "kujiale_0036_10_0",
+    "kujiale_0113_1_4",
+    "kujiale_0208_21_4"
+  ],
+  "expected_model_calls": 168,
+  "inference_stride": 1,
+  "source": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/crossing_checkpoint/v005/run_20261105_02/versions/qwen35_4b_draft04_dev3",
+  "prompt_version": "crossing-v005-region-choice-draft04",
+  "prompt_sha256": "f463d355334491baa4be25dec576f4a4ae937377c31b9ca593e9c21094d40df1",
+  "seed": 2,
+  "request_seed_rule": "unchanged sha256 episode/frame/20261103",
+  "documentation": [
+    "experiments/crossing_checkpoint/v005/run_20261105_02/README.md",
+    "outputs/crossing_checkpoint/v005/run_20261105_02/README.md",
+    "experiments/crossing_checkpoint/v005/README.md",
+    "experiments/crossing_checkpoint/README.md",
+    "experiments/README.md",
+    "docs/STATUS.md"
+  ],
+  "download_report": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/crossing_checkpoint/v005/run_20261105_02/exports/final/visualization/crossing_review_offline.html"
+}

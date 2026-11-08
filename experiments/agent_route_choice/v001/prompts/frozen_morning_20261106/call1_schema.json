@@ -1,0 +1,81 @@
+{
+  "type": "object",
+  "properties": {
+    "view_summary": {
+      "type": "string"
+    },
+    "branches": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "direction": {
+            "enum": [
+              "front",
+              "front_left",
+              "left",
+              "back_left",
+              "back",
+              "back_right",
+              "right",
+              "front_right",
+              "unclear"
+            ]
+          },
+          "landmark": {
+            "type": "string"
+          },
+          "destination_hypothesis": {
+            "type": "string"
+          },
+          "incoming": {
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "direction",
+          "landmark",
+          "destination_hypothesis",
+          "incoming",
+          "evidence_ids"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 8
+    },
+    "coverage": {
+      "enum": [
+        "complete",
+        "partial",
+        "insufficient"
+      ]
+    },
+    "uncertainties": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "view_summary",
+    "branches",
+    "coverage",
+    "uncertainties"
+  ],
+  "additionalProperties": false
+}

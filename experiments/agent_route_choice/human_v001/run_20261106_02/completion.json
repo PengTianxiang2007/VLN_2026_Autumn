@@ -1,0 +1,31 @@
+{
+  "phase": "blocked_account",
+  "model": "glm-5.3-flash",
+  "started_at": "2026-11-06T15:12:46.237426+00:00",
+  "supervisor_pid": 85776,
+  "expected_samples": 34,
+  "expected_max_calls": 68,
+  "concurrency": 10,
+  "credential_on_disk": false,
+  "html_generated": false,
+  "semantic_accuracy": "pending_review",
+  "updated_at": "2026-11-06T15:12:48.666006+00:00",
+  "processed_samples": 1,
+  "protocol_valid_samples": 0,
+  "saved_responses": 0,
+  "samples_with_two_responses": 0,
+  "raw_selected": 0,
+  "raw_insufficient": 0,
+  "network_attempts": 1,
+  "network_errors": 1,
+  "active_workers": [
+    85788
+  ],
+  "queued_samples": 33,
+  "finished_samples": 0,
+  "audited_requests": 1,
+  "error": "AccountBlocked: GLM account unavailable: {\"code\": \"1113\", \"message\": \"余额不足或无可用资源包,请充值。\"}",
+  "finished_at": "2026-11-06T15:12:48.621716+00:00",
+  "workers_exited": true,
+  "output": "outputs/agent_route_choice/human_v001/run_20261106_02/glm"
+}

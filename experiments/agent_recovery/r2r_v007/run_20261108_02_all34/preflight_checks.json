@@ -1,0 +1,284 @@
+{
+  "passed": true,
+  "samples": 34,
+  "trajectories": 33,
+  "checks": [
+    {
+      "sample_id": "sample_01",
+      "checkpoint_frame": 37,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": null,
+      "upstream_issues": []
+    },
+    {
+      "sample_id": "sample_02",
+      "checkpoint_frame": 13,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": null,
+      "upstream_issues": []
+    },
+    {
+      "sample_id": "sample_03",
+      "checkpoint_frame": 0,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": null,
+      "upstream_issues": []
+    },
+    {
+      "sample_id": "sample_04",
+      "checkpoint_frame": 0,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": null,
+      "upstream_issues": []
+    },
+    {
+      "sample_id": "sample_05",
+      "checkpoint_frame": 23,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": null,
+      "upstream_issues": []
+    },
+    {
+      "sample_id": "sample_06",
+      "checkpoint_frame": 10,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": null,
+      "upstream_issues": []
+    },
+    {
+      "sample_id": "sample_07",
+      "checkpoint_frame": 70,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": null,
+      "upstream_issues": []
+    },
+    {
+      "sample_id": "sample_08",
+      "checkpoint_frame": 22,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": null,
+      "upstream_issues": []
+    },
+    {
+      "sample_id": "sample_09",
+      "checkpoint_frame": 66,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": null,
+      "upstream_issues": []
+    },
+    {
+      "sample_id": "sample_10",
+      "checkpoint_frame": 6,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": null,
+      "upstream_issues": []
+    },
+    {
+      "sample_id": "sample_11",
+      "checkpoint_frame": 7,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": null,
+      "upstream_issues": [
+        "Upstream inventory has properties wrapper; branch values read unchanged from it."
+      ]
+    },
+    {
+      "sample_id": "sample_12",
+      "checkpoint_frame": 34,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": null,
+      "upstream_issues": []
+    },
+    {
+      "sample_id": "sample_13",
+      "checkpoint_frame": 13,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": null,
+      "upstream_issues": []
+    },
+    {
+      "sample_id": "sample_14",
+      "checkpoint_frame": 0,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": null,
+      "upstream_issues": []
+    },
+    {
+      "sample_id": "sample_15",
+      "checkpoint_frame": 2,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": null,
+      "upstream_issues": []
+    },
+    {
+      "sample_id": "sample_16",
+      "checkpoint_frame": 14,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": null,
+      "upstream_issues": []
+    },
+    {
+      "sample_id": "sample_17",
+      "checkpoint_frame": 66,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": true,
+      "upstream_issues": []
+    },
+    {
+      "sample_id": "sample_18",
+      "checkpoint_frame": 15,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": true,
+      "upstream_issues": []
+    },
+    {
+      "sample_id": "sample_19",
+      "checkpoint_frame": 117,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": true,
+      "upstream_issues": []
+    },
+    {
+      "sample_id": "sample_20",
+      "checkpoint_frame": 6,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": true,
+      "upstream_issues": []
+    },
+    {
+      "sample_id": "sample_21",
+      "checkpoint_frame": 0,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": null,
+      "upstream_issues": []
+    },
+    {
+      "sample_id": "sample_22",
+      "checkpoint_frame": 32,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": null,
+      "upstream_issues": []
+    },
+    {
+      "sample_id": "sample_23",
+      "checkpoint_frame": 61,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": null,
+      "upstream_issues": []
+    },
+    {
+      "sample_id": "sample_24",
+      "checkpoint_frame": 49,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": null,
+      "upstream_issues": []
+    },
+    {
+      "sample_id": "sample_25",
+      "checkpoint_frame": 34,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": null,
+      "upstream_issues": []
+    },
+    {
+      "sample_id": "sample_26",
+      "checkpoint_frame": 31,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": null,
+      "upstream_issues": []
+    },
+    {
+      "sample_id": "sample_27",
+      "checkpoint_frame": 63,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": null,
+      "upstream_issues": []
+    },
+    {
+      "sample_id": "sample_28",
+      "checkpoint_frame": 34,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": true,
+      "upstream_issues": []
+    },
+    {
+      "sample_id": "sample_29",
+      "checkpoint_frame": 39,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": true,
+      "upstream_issues": []
+    },
+    {
+      "sample_id": "sample_30",
+      "checkpoint_frame": 14,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": null,
+      "upstream_issues": []
+    },
+    {
+      "sample_id": "sample_31",
+      "checkpoint_frame": 36,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": null,
+      "upstream_issues": [
+        "Upstream instruction quotation failed exact-match validation; selected branch is preserved; original task/quotation not sent in this run."
+      ]
+    },
+    {
+      "sample_id": "sample_32",
+      "checkpoint_frame": 12,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": null,
+      "upstream_issues": []
+    },
+    {
+      "sample_id": "sample_33",
+      "checkpoint_frame": 37,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": null,
+      "upstream_issues": []
+    },
+    {
+      "sample_id": "sample_34",
+      "checkpoint_frame": 0,
+      "image_hash_passed": true,
+      "prompt_matches_current_best": true,
+      "previous_seven_request_identical": true,
+      "upstream_issues": []
+    }
+  ],
+  "model_calls": 0
+}

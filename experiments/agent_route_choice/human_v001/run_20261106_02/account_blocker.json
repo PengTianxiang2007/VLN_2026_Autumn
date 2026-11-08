@@ -1,0 +1,22 @@
+{
+  "at": "2026-11-06T15:14:23.939237+00:00",
+  "phase": "blocked_account",
+  "http_status": 429,
+  "provider_code": "1113",
+  "reason": "余额不足或无可用资源包，请充值。",
+  "network_attempts": 1,
+  "received_model_responses": 0,
+  "parallel_pool_started": false,
+  "supervisor_exited": true,
+  "first_worker_exited": true,
+  "credential_cleanup": {
+    "at": "2026-11-06T15:12:48.526085+00:00",
+    "credential_on_disk": false,
+    "matching_files": [],
+    "workers_exited": true,
+    "core_dumps_disabled": true,
+    "scope": "No key in argv/environment/files; anonymous stdin pipe and process memory; workers exited."
+  },
+  "html_generated": false,
+  "remaining_samples_not_attempted": 33
+}

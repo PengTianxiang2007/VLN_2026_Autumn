@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-06T15:12:45.665885+00:00",
+  "supervisor_pid": 85776,
+  "command": [
+    "/usr/bin/python3",
+    "-B",
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/scripts/run_human_route_choice_glm.py",
+    "--worker",
+    "--prepared",
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/agent_route_choice/human_v001/preparation_20261106_01",
+    "--output",
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/agent_route_choice/human_v001/run_20261106_02/glm",
+    "--registration",
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/experiments/agent_route_choice/human_v001/run_20261106_02/registration.json",
+    "--config",
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/experiments/agent_route_choice/human_v001/run_20261106_02/model.json"
+  ],
+  "credential_delivery": "anonymous stdin pipe",
+  "credential_on_disk": false
+}

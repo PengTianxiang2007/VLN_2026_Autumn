@@ -1,0 +1,10 @@
+{
+  "samples": 10,
+  "response_count": 20,
+  "valid_samples": 2,
+  "selected": 3,
+  "insufficient": 7,
+  "no_second": 0,
+  "new_stage1_calls": 0,
+  "stage2_responses": 10
+}

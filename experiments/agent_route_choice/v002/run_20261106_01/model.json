@@ -1,0 +1,23 @@
+{
+  "backend": "qwen_local",
+  "model": "route-choice-qwen27b-v002",
+  "model_path": "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/models/Qwen3.8-27B-FP8",
+  "architecture_from_config": "Qwen3_5ForConditionalGeneration",
+  "python": ".runtime/crossing_vllm27/bin/python",
+  "weight_quantization": "fp8",
+  "max_tokens": 8192,
+  "seed": 20261106,
+  "thinking": false,
+  "request_timeout_seconds": 300,
+  "request_deadline_seconds": 1200,
+  "max_network_attempts": 2,
+  "concurrency": 1,
+  "tensor_parallel_size": 1,
+  "minimum_host_memory_gib": 64,
+  "max_model_len": 32768,
+  "gpu_memory_utilization": 0.85,
+  "max_images": 16,
+  "reasoning_parser": "qwen3",
+  "response_format": "json_schema",
+  "semantic_retry": false
+}

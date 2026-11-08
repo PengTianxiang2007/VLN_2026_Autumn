@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "sample_id": "sample_17",
+      "only_prompt_differs": true,
+      "image_sha256": "f0c63bf9683ce342d5317808e59e8bee48517270db9f327337ad3ef8c638f82c"
+    },
+    {
+      "sample_id": "sample_18",
+      "only_prompt_differs": true,
+      "image_sha256": "4eb09a4ac268ae409c86cc30869be7a59d9f05f89db89bb73c1c2a00d35bc30d"
+    },
+    {
+      "sample_id": "sample_19",
+      "only_prompt_differs": true,
+      "image_sha256": "70cb6d12ad78b9ecc5da5cfa6436dc7b9b34387beec1e56b0974ec34104afd60"
+    },
+    {
+      "sample_id": "sample_20",
+      "only_prompt_differs": true,
+      "image_sha256": "5da521c4e53d760a1f1436f011cb403dc5bd4d3101d0c033397694526a9b6409"
+    },
+    {
+      "sample_id": "sample_28",
+      "only_prompt_differs": true,
+      "image_sha256": "82e74ea28cdcf3304dc2cdeb7054300810961f6951a1ed0a05c85ee629a9a320"
+    },
+    {
+      "sample_id": "sample_29",
+      "only_prompt_differs": true,
+      "image_sha256": "4af99062e565767e22e6537675a6b306ecc3649488a83a6dc9770d9a1043a9be"
+    },
+    {
+      "sample_id": "sample_34",
+      "only_prompt_differs": true,
+      "image_sha256": "26f96014bd2a2c7cd279fa9aa8100e1a2144c88077c020ee0410f518c33a9dfa"
+    }
+  ],
+  "model_calls": 0,
+  "credential_on_disk": false
+}

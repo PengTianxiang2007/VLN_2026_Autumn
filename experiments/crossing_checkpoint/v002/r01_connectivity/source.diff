@@ -1,0 +1,33 @@
+--- baseline/core/crossing_checkpoint.py
++++ r01/core/crossing_checkpoint.py
+@@ -10,7 +10,7 @@
+ import math
+ 
+ 
+-PROMPT_VERSION = 'crossing-v1-schema2'
++PROMPT_VERSION = 'crossing-v002-r01-connectivity'
+ SYSTEM_PROMPT = """You observe a walking robot's indoor navigation, one action at a time.
+ Your ONLY task is to detect route-choice locations (crossings) and describe the observable choices.
+ A crossing is a compact decision area where, EXCLUDING the route the robot arrived from,
+@@ -21,6 +21,21 @@
+ A large furniture obstacle CAN form a crossing when it splits the walking space into
+ two distinct, visibly traversable onward passages; merely seeing different sides of
+ an object does not establish two routes. Do not invent exits hidden outside observed views.
++
++
++Apply the definition by route connectivity, NOT by a stereotypical junction shape.
++A straight continuation PLUS an accessible open side doorway or side passage are TWO
++onward routes after excluding the incoming path. A traversable opening into a room
++can be a branch even without a door frame. Do not reject it merely because the main
++corridor continues straight, one route looks dominant, or the destinations are different
++functional areas. Conversely, two views into the same uninterrupted walking passage
++are not two routes; require distinct traversable openings or separated passages.
++Before deciding status, enumerate the visibly supported passages and exclude the
++incoming route using observed motion. Check that the final decision agrees with this
++count. If two distinct onward routes are accessible HERE, report crossing even when
++there is no T or cross shape. If those choices are still beyond a narrow approach,
++report crossing AHEAD rather than claiming they are already HERE. A closed door must
++not erase other open routes. Never assume an unseen opening or a passable furniture gap.
+ 
+ Images are labelled with navigation-action indices and ordered from past to current. The
+ last image is the current observation BEFORE the next action. Listed actions have ALREADY

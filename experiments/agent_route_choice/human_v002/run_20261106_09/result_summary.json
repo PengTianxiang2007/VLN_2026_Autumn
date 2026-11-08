@@ -1,0 +1,52 @@
+{
+  "observed": {
+    "observed_branch_id": "B1",
+    "observed_direction": "front",
+    "evidence_ids": [
+      "F0022",
+      "F0023",
+      "F0024",
+      "F0025",
+      "F0026",
+      "F0028",
+      "F0030"
+    ],
+    "visual_description": "The robot moves forward along the central white corridor. The kitchen opening on the left and the living room opening on the right remain visible on the periphery but are not entered. The camera advances steadily, bringing the bench and the end of the hallway closer while maintaining a straight trajectory down the corridor.",
+    "confidence": "high",
+    "uncertainties": []
+  },
+  "choice": {
+    "status": "selected",
+    "wrong_branch_id": "B1",
+    "wrong_branch_evidence_ids": [
+      "F0022",
+      "F0023",
+      "F0024",
+      "F0025",
+      "F0026",
+      "F0028",
+      "F0030"
+    ],
+    "error_reason": "The previous attempt continued straight down the central white corridor, passing the kitchen and living room openings without entering them.",
+    "instruction_evidence": [
+      "Walk forward in the hallway, passing a painting on your left.",
+      "Continue straight, passing a doorway to a kitchen on your right.",
+      "At the end of the hallway, turn right to enter the living room."
+    ],
+    "excluded_branch_ids": [
+      "B1"
+    ],
+    "selected_branch_id": "B3",
+    "selected_direction": "right",
+    "route_description": "Turn right into the living room area, passing the potted plant and entering the space with the grey sectional sofa and yellow cushions.",
+    "selection_evidence_ids": [
+      "F0022",
+      "F0024",
+      "F0026"
+    ],
+    "confidence": "medium",
+    "uncertainties": [
+      "The instruction mentions a kitchen on the right, but the visual evidence shows the kitchen on the left and the living room on the right. The selection follows the visual layout of the living room entrance."
+    ]
+  }
+}

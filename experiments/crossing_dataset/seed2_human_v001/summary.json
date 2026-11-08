@@ -1,0 +1,14 @@
+{
+  "episodes": 61,
+  "failure_episodes": 34,
+  "success_episodes": 27,
+  "scenes": 10,
+  "crossing_events": 128,
+  "ordinary_crossing_events": 94,
+  "wrong_choice_events": 34,
+  "episodes_with_wrong_choice": 33,
+  "frames": 5439,
+  "eligible_observations": 5378,
+  "excluded_episodes": 8,
+  "frame_zero_events": 12
+}

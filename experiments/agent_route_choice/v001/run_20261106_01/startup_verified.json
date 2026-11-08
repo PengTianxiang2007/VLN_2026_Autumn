@@ -1,0 +1,42 @@
+{
+  "verified_at": "2026-11-06T04:12:16.684165+00:00",
+  "qwen32b": {
+    "phase": "startup_verified_background_handoff",
+    "supervisor_pid": 3194485,
+    "server_pid": 3194661,
+    "gpus": [
+      0,
+      3
+    ],
+    "prepared": "preparation_20261106_04",
+    "verified_sample": "sample_01",
+    "verified_calls": 2,
+    "branch_inventory_sha256": "68c863f96bab580021ce257198f35affafa0d2bcff38b19eed23f5afcc6ec17f",
+    "call2_contains_exact_call1_inventory": true,
+    "fresh_system_user_request": true,
+    "answer_files": {
+      "call1_answer.json": "18c0a21b3c2046274f2b6a619417b7acfce670e74be10acef191bfec94aea5f2",
+      "call2_answer.json": "904f5ffbd77aa0a2eae86b854f087bc46ceaf91ea046fce9c4975ee483ecf976"
+    },
+    "model_decision_status": "selected",
+    "semantic_correctness": "not_yet_reviewed",
+    "last_observed_completed_samples": 1,
+    "last_observed_current_sample": "sample_02",
+    "manual_tracking_stops_now": true
+  },
+  "glm": {
+    "phase": "blocked_account_credit",
+    "provider_code": "1113",
+    "provider_message": "余额不足或无可用资源包,请充值。",
+    "requested_concurrency": 10,
+    "valid_responses": 0,
+    "workers_stopped": true,
+    "waiting_for": "account credit or replacement key"
+  },
+  "completion_behavior": [
+    "save all request and answer records",
+    "export offline HTML and review template",
+    "clean owned Qwen service and record GPU snapshot",
+    "append final result to experiment README and status/index"
+  ]
+}

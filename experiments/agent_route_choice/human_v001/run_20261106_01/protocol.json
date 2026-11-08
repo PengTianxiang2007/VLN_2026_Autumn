@@ -1,0 +1,67 @@
+{
+  "protocol_id": "agent-route-choice-v001-human34",
+  "prompt_revision": "02_crossing_definition_permissive_branches_english_output",
+  "prompt_language": "English",
+  "description_output_language": "English",
+  "chinese_prompt_files": "review translations only; never sent to the models",
+  "state": "authorized_to_run_20261106_no_html",
+  "launch_update": "User authorized starting ten cases: local Qwen3-VL-32B-Instruct and GLM with ten independent processes; stop manual monitoring after valid startup evidence.",
+  "cohort_manifest": "cohort.json",
+  "cohort_size": 34,
+  "navigation_seed": 2,
+  "source_policy": "All ten use their original seed2 recorded attempt, not later Oracle reruns.",
+  "reset_mode": "offline_virtual_return_to_recorded_decision_frame",
+  "checkpoint_selection": "Exact human wrong-choice frame; no snapping",
+  "error_endpoint": "Original short_segment 1.2m arc-length rule, then last genuine RGB at or before its endpoint",
+  "context_window_observations": 16,
+  "checkpoint_context_images": 4,
+  "wrong_attempt_images": 4,
+  "approach_action_limit": 32,
+  "image_sampling": "Uniform by observation index, including both interval endpoints; no model-based frame selection.",
+  "rgb_crop": [
+    0,
+    0,
+    640,
+    480
+  ],
+  "expected_video_size": [
+    960,
+    640
+  ],
+  "calls_per_sample_per_model": 2,
+  "expected_calls_per_model": 20,
+  "expected_calls_both_models": 40,
+  "call1_inputs": [
+    "checkpoint RGB",
+    "pre-checkpoint RGB context",
+    "past action commands"
+  ],
+  "call2_inputs": [
+    "same checkpoint context",
+    "task instruction",
+    "same-model call1 inventory",
+    "past wrong-attempt RGB and commands"
+  ],
+  "excluded_from_requests": [
+    "map",
+    "GPS",
+    "reference route",
+    "manual branch labels",
+    "review rationale",
+    "final success",
+    "future successful Oracle route",
+    "another model's answer"
+  ],
+  "evaluation": "Semantic branch correctness remains pending review; no automatic correct-route labels",
+  "primary_metric": "Pending semantic review; raw protocol completion is not accuracy",
+  "secondary_metrics": [
+    "inventory includes correct and wrong routes",
+    "wrong branch identified correctly",
+    "error explanation supported",
+    "joint wrong-identification and correct-selection",
+    "decision coverage"
+  ],
+  "scope": "Conditioned on a previously marked crossing and a known erroneous attempt; no crossing detection, physical reset, action execution or final navigation success evaluation.",
+  "html_requested": false,
+  "panoramas": false
+}

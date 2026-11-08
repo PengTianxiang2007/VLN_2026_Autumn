@@ -1,0 +1,298 @@
+[
+  {
+    "sample_id": "sample_17",
+    "episode_id": "kujiale_0232_23_2",
+    "checkpoint_frame": 66,
+    "image_path": "images/sample_17.png",
+    "image_sha256": "f0c63bf9683ce342d5317808e59e8bee48517270db9f327337ad3ef8c638f82c",
+    "image_source": "outputs/agent_route_choice/human_v002/run_20261107_01/images/sample_17/F0066.png",
+    "choice_source": "outputs/agent_route_choice/human_v002/run_20261107_01/cases/sample_17/call2_answer.json",
+    "choice_sha256": "ecc8e899e5fcaf8eaf55483af33e1a7748141f8d6b3f30726233f0f444053ae3",
+    "choice": {
+      "status": "selected",
+      "wrong_branch_id": "B1",
+      "wrong_branch_evidence_ids": [
+        "F0066",
+        "F0067",
+        "F0068",
+        "F0069",
+        "F0070",
+        "F0072",
+        "F0074"
+      ],
+      "error_reason": "The previous attempt moved forward into the room with the desk and chair, which is not the correct path according to the instruction.",
+      "instruction_evidence": [
+        "Walk straight down the hallway, passing a bathroom on your right and an open doorway to a bedroom on your left."
+      ],
+      "excluded_branch_ids": [
+        "B1"
+      ],
+      "selected_branch_id": "B2",
+      "selected_direction": "left",
+      "route_description": "Turn left to enter the bedroom through the open doorway on the left side of the hallway.",
+      "selection_evidence_ids": [
+        "F0066",
+        "F0068"
+      ],
+      "confidence": "medium",
+      "uncertainties": [
+        "The instruction mentions passing a bedroom, but the current view is at the bedroom entrance. It is unclear if the robot should enter or just pass by."
+      ]
+    }
+  },
+  {
+    "sample_id": "sample_18",
+    "episode_id": "kujiale_0232_2_4",
+    "checkpoint_frame": 15,
+    "image_path": "images/sample_18.png",
+    "image_sha256": "4eb09a4ac268ae409c86cc30869be7a59d9f05f89db89bb73c1c2a00d35bc30d",
+    "image_source": "outputs/agent_route_choice/human_v002/run_20261107_01/images/sample_18/F0015.png",
+    "choice_source": "outputs/agent_route_choice/human_v002/run_20261107_01/cases/sample_18/call2_answer.json",
+    "choice_sha256": "cdd6e8083b043849d0b42b1f5b303748f59f212b3102515f1123665f5bd97300",
+    "choice": {
+      "status": "selected",
+      "wrong_branch_id": "B1",
+      "wrong_branch_evidence_ids": [
+        "F0015",
+        "F0016",
+        "F0017",
+        "F0018",
+        "F0019",
+        "F0021"
+      ],
+      "error_reason": "The previous attempt moved forward into the room with the TV and chair, which contradicts the instruction to continue straight down the hallway past the bedroom entrance.",
+      "instruction_evidence": [
+        "Walk straight down the hallway, passing a bathroom on your right and a framed picture on your left, as the floor transitions from wood to dark grey tiles.",
+        "Continue straight past a bedroom entrance on your left."
+      ],
+      "excluded_branch_ids": [
+        "B1"
+      ],
+      "selected_branch_id": "B2",
+      "selected_direction": "left",
+      "route_description": "Turn left into the bedroom entrance visible on the left side of the hallway, which contains a bed and curtains, to follow the path past the bedroom area.",
+      "selection_evidence_ids": [
+        "F0015",
+        "F0011",
+        "F0013"
+      ],
+      "confidence": "low",
+      "uncertainties": [
+        "The instruction says to 'pass' the bedroom, but B1 is excluded and B3 is a bathroom, making B2 the only remaining plausible branch in the inventory."
+      ]
+    }
+  },
+  {
+    "sample_id": "sample_19",
+    "episode_id": "kujiale_0232_68_1",
+    "checkpoint_frame": 117,
+    "image_path": "images/sample_19.png",
+    "image_sha256": "70cb6d12ad78b9ecc5da5cfa6436dc7b9b34387beec1e56b0974ec34104afd60",
+    "image_source": "outputs/agent_route_choice/human_v002/run_20261107_01/images/sample_19/F0117.png",
+    "choice_source": "outputs/agent_route_choice/human_v002/run_20261107_01/cases/sample_19/call2_answer.json",
+    "choice_sha256": "b4fe5748ff9cf5e3550788094f436f9dce0f0594a3d2d2b6429248ab7ee59e17",
+    "choice": {
+      "status": "selected",
+      "wrong_branch_id": "B2",
+      "wrong_branch_evidence_ids": [
+        "F0117",
+        "F0118",
+        "F0119",
+        "F0121",
+        "F0123",
+        "F0126"
+      ],
+      "error_reason": "The previous attempt turned left into the bedroom, but the instruction requires continuing straight down the hallway to find the correct bedroom entrance.",
+      "instruction_evidence": [
+        "Walk straight into the hallway",
+        "Continue straight past an open doorway leading to a bathroom on your right",
+        "Turn left through the next doorway to enter the bedroom"
+      ],
+      "excluded_branch_ids": [
+        "B2"
+      ],
+      "selected_branch_id": "B1",
+      "selected_direction": "front",
+      "route_description": "Proceed straight down the hallway, passing the bedroom doorway on the left, to continue towards the next section of the corridor.",
+      "selection_evidence_ids": [
+        "F0117",
+        "F0119",
+        "F0121"
+      ],
+      "confidence": "medium",
+      "uncertainties": [
+        "The specific landmarks mentioned in the instruction (framed plant pictures, storage unit) are not clearly visible in the current view, but the instruction to 'walk straight' strongly implies continuing forward rather than turning into the visible side rooms."
+      ]
+    }
+  },
+  {
+    "sample_id": "sample_20",
+    "episode_id": "kujiale_0232_72_1",
+    "checkpoint_frame": 6,
+    "image_path": "images/sample_20.png",
+    "image_sha256": "5da521c4e53d760a1f1436f011cb403dc5bd4d3101d0c033397694526a9b6409",
+    "image_source": "outputs/agent_route_choice/human_v002/run_20261107_01/images/sample_20/F0006.png",
+    "choice_source": "outputs/agent_route_choice/human_v002/run_20261107_01/cases/sample_20/call2_answer.json",
+    "choice_sha256": "abf01a180aa7094877850637785958bdd6a5f6aa8e4a75dcc4ae48424602bae6",
+    "choice": {
+      "status": "selected",
+      "wrong_branch_id": "B1",
+      "wrong_branch_evidence_ids": [
+        "F0006",
+        "F0007",
+        "F0008",
+        "F0009",
+        "F0010",
+        "F0012",
+        "F0014"
+      ],
+      "error_reason": "The previous attempt moved forward into the wood-floored corridor, which is the physically traversed route but is marked as the wrong branch for this replacement task.",
+      "instruction_evidence": [
+        "Walk forward into the hallway.",
+        "Proceed straight, passing a bathroom on your left.",
+        "Continue straight, passing a brown pillar on your right as you enter an open living area."
+      ],
+      "excluded_branch_ids": [
+        "B1"
+      ],
+      "selected_branch_id": "B3",
+      "selected_direction": "right",
+      "route_description": "Turn right into the opening marked by the wooden frame/pillar on the right side of the hallway, moving away from the bathroom entrance on the left.",
+      "selection_evidence_ids": [
+        "F0006",
+        "F0016"
+      ],
+      "confidence": "low",
+      "uncertainties": [
+        "The specific destination of the right-side branch is not fully visible in the current view.",
+        "The instruction describes a straight path, but the locked exclusion forces a deviation to the only remaining branch."
+      ]
+    }
+  },
+  {
+    "sample_id": "sample_28",
+    "episode_id": "kujiale_0240_7_0",
+    "checkpoint_frame": 34,
+    "image_path": "images/sample_28.png",
+    "image_sha256": "82e74ea28cdcf3304dc2cdeb7054300810961f6951a1ed0a05c85ee629a9a320",
+    "image_source": "outputs/agent_route_choice/human_v002/run_20261107_01/images/sample_28/F0034.png",
+    "choice_source": "outputs/agent_route_choice/human_v002/run_20261107_01/cases/sample_28/call2_answer.json",
+    "choice_sha256": "7aef29120f668cec156b9575a887e013f0a9488372e09408258117cce9c17645",
+    "choice": {
+      "status": "selected",
+      "wrong_branch_id": "B1",
+      "wrong_branch_evidence_ids": [
+        "F0034",
+        "F0035",
+        "F0036",
+        "F0038",
+        "F0040",
+        "F0043"
+      ],
+      "error_reason": "The previous attempt moved forward into the bedroom doorway, which is a dead end and does not lead to the living room.",
+      "instruction_evidence": [
+        "Turn right to enter the hallway.",
+        "Walk straight down the hallway, passing a bathroom on your left and a bedroom also on your left.",
+        "Continue past the kitchen and dining table on your right, then enter the living room straight ahead."
+      ],
+      "excluded_branch_ids": [
+        "B1"
+      ],
+      "selected_branch_id": "B2",
+      "selected_direction": "right",
+      "route_description": "Turn right to enter the hallway, passing the bathroom and bedroom on the left and the dining area on the right, continuing straight ahead into the living room.",
+      "selection_evidence_ids": [
+        "F0034",
+        "F0036",
+        "F0038"
+      ],
+      "confidence": "medium",
+      "uncertainties": [
+        "The exact path to the living room is not fully visible from the current junction, but the instruction implies a straight path past the dining area."
+      ]
+    }
+  },
+  {
+    "sample_id": "sample_29",
+    "episode_id": "kujiale_0240_8_4",
+    "checkpoint_frame": 39,
+    "image_path": "images/sample_29.png",
+    "image_sha256": "4af99062e565767e22e6537675a6b306ecc3649488a83a6dc9770d9a1043a9be",
+    "image_source": "outputs/agent_route_choice/human_v002/run_20261107_01/images/sample_29/F0039.png",
+    "choice_source": "outputs/agent_route_choice/human_v002/run_20261107_01/cases/sample_29/call2_answer.json",
+    "choice_sha256": "a377f8d5c03521716557abe00df9a46f4278d032264438d0520555633316262e",
+    "choice": {
+      "status": "selected",
+      "wrong_branch_id": "B1",
+      "wrong_branch_evidence_ids": [
+        "F0039",
+        "F0040",
+        "F0041",
+        "F0042",
+        "F0043",
+        "F0044",
+        "F0045",
+        "F0046"
+      ],
+      "error_reason": "The previous attempt continued straight down the central corridor, moving away from the dining area and kitchen required by the instruction.",
+      "instruction_evidence": [
+        "turn left into the dining area",
+        "passing the dining table on your right",
+        "Continue into the kitchen"
+      ],
+      "excluded_branch_ids": [
+        "B1"
+      ],
+      "selected_branch_id": "B2",
+      "selected_direction": "left",
+      "route_description": "Turn left into the open doorway on the left wall of the corridor, which leads into the dining and kitchen area.",
+      "selection_evidence_ids": [
+        "F0039",
+        "F0041",
+        "F0043"
+      ],
+      "confidence": "medium",
+      "uncertainties": [
+        "The exact destination of the room through the left doorway is not visible."
+      ]
+    }
+  },
+  {
+    "sample_id": "sample_34",
+    "episode_id": "kujiale_0257_8_1",
+    "checkpoint_frame": 0,
+    "image_path": "images/sample_34.png",
+    "image_sha256": "26f96014bd2a2c7cd279fa9aa8100e1a2144c88077c020ee0410f518c33a9dfa",
+    "image_source": "outputs/agent_route_choice/human_v002/run_20261107_01/images/sample_34/F0000.png",
+    "choice_source": "outputs/agent_route_choice/human_v002/run_20261107_01/cases/sample_34/call2_answer.json",
+    "choice_sha256": "9eba2c04459f34e114124ccc776a0a8119a12a10a27cfd0a4cc13eb13b72228e",
+    "choice": {
+      "status": "selected",
+      "wrong_branch_id": "B2",
+      "wrong_branch_evidence_ids": [
+        "F0000",
+        "F0002",
+        "F0004",
+        "F0006",
+        "F0010"
+      ],
+      "error_reason": "The previous attempt turned left into the bedroom area with the washing machine, which contradicts the instruction to keep the lake view on the right and walk straight through the corridor.",
+      "instruction_evidence": [
+        "Walk straight through the tiled corridor, keeping the large windows and the view of the lake on your right."
+      ],
+      "excluded_branch_ids": [
+        "B2"
+      ],
+      "selected_branch_id": "B1",
+      "selected_direction": "front",
+      "route_description": "Proceed straight ahead along the tiled corridor, keeping the large glass windows and the view of the lake on the right side, moving towards the glass door at the end of the path.",
+      "selection_evidence_ids": [
+        "F0000"
+      ],
+      "confidence": "high",
+      "uncertainties": [
+        "The exact destination beyond the glass door at the end of the corridor is not visible."
+      ]
+    }
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "supervisor_pid": 1908790,
+  "command": [
+    "python3",
+    "-B",
+    "scripts/run_local_correction_commands.py",
+    "--prepared",
+    "experiments/agent_recovery/r2r_v003/run_20261107_01",
+    "--output",
+    "outputs/agent_recovery/r2r_v003/run_20261107_01",
+    "--gpu",
+    "0",
+    "--allow-shared-gpu"
+  ]
+}

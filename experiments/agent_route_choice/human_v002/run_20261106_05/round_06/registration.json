@@ -1,0 +1,24 @@
+{
+  "sample_ids": [
+    "sample_01"
+  ],
+  "sample_offsets_from_annotation": [
+    -4,
+    -2,
+    0,
+    2,
+    4,
+    6,
+    10
+  ],
+  "decision_shift_frames": 0,
+  "stage": 1,
+  "request_seed_base": 20261106,
+  "navigation_seed": 2,
+  "authorization": "User explicitly requested small incremental prompt relaxations on sample_01 only until the visually suggested right passage is included; retain every prompt/output.",
+  "development_target": "Evaluate generic threshold relaxation on the authorized single case; no scene-specific location/object instruction.",
+  "keep_service_alive": true,
+  "revision": 6,
+  "previous_prompt": "prompts/05_general_relax_en.txt",
+  "prompt_policy": "User rejected rounds01-03 as scene-targeted overfitting. Restart from preserved original; change only one general evidence-threshold sentence."
+}

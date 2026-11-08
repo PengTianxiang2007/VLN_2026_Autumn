@@ -1,0 +1,16 @@
+{
+  "purpose": "user_authorized_standby",
+  "keep_alive": true,
+  "gpu": 0,
+  "output": "outputs/model_services/qwen27b_gpu0_20261106_01",
+  "git_head": "0a805dfcf4457f80300822abb4eff7cabba43aae",
+  "source_sha256": {
+    "scripts/serve_qwen27b_standby.py": "008f073edd551f9588a09e967fcbcc124aa4dc297f64767e4417adc6c983a4bb",
+    "scripts/run_human_route_choice.py": "9f4af11f3cc81fca1365c08e5e0f6ed4fb6f27bebb94427079496f1b3b0c7fe6",
+    "scripts/run_agent_route_choice.py": "d49d5623337d99f6063f445933d4cbf2a7466a101e278ef089b386f17a0c297a",
+    "scripts/run_crossing_local_batch.py": "3e928d605e3eebb103accb0c2976679093c8feb3c7b4397f908ca80e20562b11",
+    "scripts/test_crossing_single_gpu.py": "bfad9553e6752c51148f62d8fd6b1afac12748a9b49ab95e22efc79dc025d937",
+    "scripts/serve_crossing_vlm.py": "5b27bf55db7d6db431f6012c16bfc276cfda4701576d0545f278bb7e5ec2030d",
+    "core/agent_route_choice.py": "7c318758fbd973de3e88882b87bf8b78916e515c15a1ea3f49ab8b1b0731732f"
+  }
+}

@@ -1,0 +1,9 @@
+
+Construct the output in its requested order: first incoming_route, then branches and
+their visible evidence, and only LAST decide status. In branches, enumerate every
+visually supported distinct traversable ONWARD route, even if there is only ONE and
+the final status will be not_crossing. Do not leave branches empty as a shorthand
+for a negative classification when a traversable route is visible. Describe a
+continuing corridor and an accessible side-room opening separately when both are
+observed. Then check the inventory against the definition and current reachability.
+Write reason from this inventory. Do not decide status first and rationalize it.

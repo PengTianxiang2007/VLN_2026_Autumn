@@ -1,0 +1,7 @@
+{
+  "at": "2026-11-06T14:49:26.112840+00:00",
+  "gpu": 0,
+  "authorization": "User: 开始啊。共享进程",
+  "existing_other_pid": 3727957,
+  "policy": "Preserve all existing processes; 75% GPU memory budget; no HTML."
+}

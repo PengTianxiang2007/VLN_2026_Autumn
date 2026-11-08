@@ -1,0 +1,16 @@
+{
+  "at": "2026-11-08T05:52:15.837217+00:00",
+  "git_commit": "0a805dfcf4457f80300822abb4eff7cabba43aae",
+  "source_hashes": {
+    "scripts/serve_qwen4b_standby.py": "c9b4190124a175fe58a3a7762b5d38d3bfdc0467d218e54988b1693fce0f53b4",
+    "scripts/run_human_route_choice.py": "25bbaee707647012070d6026b72a1652c9a9402a434601da62cf1b6378e4f226",
+    "scripts/run_crossing_local_batch.py": "3e928d605e3eebb103accb0c2976679093c8feb3c7b4397f908ca80e20562b11",
+    "scripts/test_crossing_single_gpu.py": "bfad9553e6752c51148f62d8fd6b1afac12748a9b49ab95e22efc79dc025d937",
+    "core/agent_route_choice.py": "7c318758fbd973de3e88882b87bf8b78916e515c15a1ea3f49ab8b1b0731732f"
+  },
+  "status": "authorized_start_preparation",
+  "gpu0_release_executed": true,
+  "service_started": false,
+  "auto_review_rejection": "Stopping ljh service rejected: missing owner/administrator authorization; shared-server disruption risk.",
+  "authorization_update": "User confirmed administrator or owner-authorized stopping authority after review clarification; exact API PID SIGTERM approved and sent."
+}

@@ -1,0 +1,8 @@
+Convert the selected route below into a short R2R-style navigation instruction for StreamVLN.
+
+The robot starts at the recovery point with its original heading, and its previous memory has been cleared. Write a self-contained instruction that tells it how to enter the selected branch. Preserve the selected direction and route meaning, use concise action language, and do not add unsupported details.
+
+Output only the navigation instruction, without explanations or branch IDs.
+
+Selected direction: {selected_direction}
+Route description: {route_description}

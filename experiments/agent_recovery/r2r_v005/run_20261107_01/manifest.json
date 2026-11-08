@@ -1,0 +1,36 @@
+{
+  "git_commit": "0a805dfcf4457f80300822abb4eff7cabba43aae",
+  "source_hashes": {
+    "scripts/run_entrance_correction_commands.py": "3122fda4ffb014f6da8fa320717d3ba6009614046f3cdcffd008e43b10502394",
+    "scripts/run_human_route_choice.py": "25bbaee707647012070d6026b72a1652c9a9402a434601da62cf1b6378e4f226",
+    "scripts/run_agent_route_choice.py": "d49d5623337d99f6063f445933d4cbf2a7466a101e278ef089b386f17a0c297a",
+    "scripts/run_crossing_local_batch.py": "3e928d605e3eebb103accb0c2976679093c8feb3c7b4397f908ca80e20562b11",
+    "scripts/serve_crossing_vlm.py": "5b27bf55db7d6db431f6012c16bfc276cfda4701576d0545f278bb7e5ec2030d",
+    "scripts/test_crossing_single_gpu.py": "bfad9553e6752c51148f62d8fd6b1afac12748a9b49ab95e22efc79dc025d937",
+    "core/agent_route_choice.py": "7c318758fbd973de3e88882b87bf8b78916e515c15a1ea3f49ab8b1b0731732f"
+  },
+  "prepared_hashes": {
+    "prompt_en.txt": "7ba0d977581495c279345d9683d6d923e0ae2f3058550cd2a92510992375f2c1",
+    "prompt_zh.txt": "3e77035ab9b14f32d05f61d60460a27c4eb9a5afb7fe761cc959dc03988f8dc1",
+    "samples.json": "7f895819dbb025c3ed86d3bf33041f3a9a8152d28d68166701db1d3c2caecabc",
+    "model.json": "d1294b1a6a971c6e009a5e5654c5854347bcad5ac1fc3cbf387861d414062e43",
+    "images/sample_17.png": "f0c63bf9683ce342d5317808e59e8bee48517270db9f327337ad3ef8c638f82c",
+    "images/sample_18.png": "4eb09a4ac268ae409c86cc30869be7a59d9f05f89db89bb73c1c2a00d35bc30d",
+    "images/sample_19.png": "70cb6d12ad78b9ecc5da5cfa6436dc7b9b34387beec1e56b0974ec34104afd60",
+    "images/sample_20.png": "5da521c4e53d760a1f1436f011cb403dc5bd4d3101d0c033397694526a9b6409",
+    "images/sample_28.png": "82e74ea28cdcf3304dc2cdeb7054300810961f6951a1ed0a05c85ee629a9a320",
+    "images/sample_29.png": "4af99062e565767e22e6537675a6b306ecc3649488a83a6dc9770d9a1043a9be",
+    "images/sample_34.png": "26f96014bd2a2c7cd279fa9aa8100e1a2144c88077c020ee0410f518c33a9dfa"
+  },
+  "sample_order": [
+    "sample_17",
+    "sample_18",
+    "sample_19",
+    "sample_20",
+    "sample_28",
+    "sample_29",
+    "sample_34"
+  ],
+  "resource_wait_seconds": 86400,
+  "input_protocol": "C RGB + selected direction + unchanged selected branch landmark field; no original instruction, route_description or destination_hypothesis"
+}

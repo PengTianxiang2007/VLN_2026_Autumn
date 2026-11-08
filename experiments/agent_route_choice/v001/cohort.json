@@ -1,0 +1,16 @@
+{
+  "cohort": "original_oracle_pilot10_in_original_order",
+  "episode_ids": [
+    "kujiale_0208_21_4",
+    "kujiale_0240_8_4",
+    "kujiale_0232_23_2",
+    "kujiale_0234_34_4",
+    "kujiale_0123_fix_30_2",
+    "kujiale_0234_27_4",
+    "kujiale_0113_18_1",
+    "kujiale_0207_60_4",
+    "kujiale_0036_3_2",
+    "kujiale_0036_0_0"
+  ],
+  "selection_note": "Fixed before model calls. Original seed2 runs all have a reviewed wrong-route segment; later checkpoint_action10 reruns are not substituted."
+}

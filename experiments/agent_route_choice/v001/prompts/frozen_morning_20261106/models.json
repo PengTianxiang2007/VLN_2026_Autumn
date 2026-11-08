@@ -1,0 +1,35 @@
+{
+  "glm": {
+    "backend": "glm",
+    "model": "glm-5.3-flash",
+    "endpoint": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+    "reasoning_effort": "low",
+    "max_tokens": 32768,
+    "request_timeout_seconds": 60,
+    "request_deadline_seconds": 300,
+    "max_network_attempts": 3,
+    "concurrency": 10,
+    "batch_deadline_seconds": 3600,
+    "credential": "read with getpass or stdin at explicit run time; never serialized"
+  },
+  "qwen32b": {
+    "backend": "qwen_local",
+    "model": "route-choice-qwen32b",
+    "model_path": "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/models/Qwen3-VL-32B-Instruct",
+    "python": ".runtime/crossing_vllm27/bin/python",
+    "max_tokens": 8192,
+    "seed": 20261106,
+    "thinking": false,
+    "request_timeout_seconds": 120,
+    "request_deadline_seconds": 600,
+    "max_network_attempts": 2,
+    "concurrency": 1,
+    "tensor_parallel_size": 2,
+    "minimum_host_memory_gib": 96,
+    "batch_deadline_seconds": 14400,
+    "max_model_len": 32768,
+    "gpu_memory_utilization": 0.9,
+    "max_images": 8,
+    "gpu": "select only after fresh process ownership and resource checks"
+  }
+}

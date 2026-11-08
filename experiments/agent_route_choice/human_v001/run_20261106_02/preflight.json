@@ -1,0 +1,21 @@
+{
+  "at": "2026-11-06T15:12:04.077609+00:00",
+  "git_head": "0a805dfcf4457f80300822abb4eff7cabba43aae",
+  "code_sha256": {
+    "scripts/run_human_route_choice_glm.py": "bdb2761119f80201f01fe62f2e6952333e370c6aa81b49f2b451947456a4ce20",
+    "scripts/run_agent_route_choice.py": "d49d5623337d99f6063f445933d4cbf2a7466a101e278ef089b386f17a0c297a",
+    "scripts/run_human_route_choice.py": "9f4af11f3cc81fca1365c08e5e0f6ed4fb6f27bebb94427079496f1b3b0c7fe6",
+    "scripts/prepare_human_route_choice.py": "577517fc4a3ce296ff8f007b8ac2943ab1f624ede8a8bf38d5958a7b316bdcaa",
+    "core/agent_route_choice.py": "7c318758fbd973de3e88882b87bf8b78916e515c15a1ea3f49ab8b1b0731732f",
+    "tests/test_human_route_choice_glm.py": "7ba9afad72055a2a5f238a03ad90f4e2cc354baf45010e032e1a0898e51b73fd"
+  },
+  "prepared": "outputs/agent_route_choice/human_v001/preparation_20261106_01",
+  "prepared_manifest_sha256": "eb83c28e464ffa65c03c233d47c1ba8fb9599f59b1604a5af47959ba533acc87",
+  "samples": 34,
+  "max_calls": 68,
+  "concurrency": 10,
+  "model": "glm-5.3-flash",
+  "cpu_checks_passed": 4,
+  "credential_on_disk": false,
+  "html_requested": false
+}

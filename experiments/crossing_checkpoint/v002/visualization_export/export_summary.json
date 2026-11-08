@@ -1,0 +1,67 @@
+{
+  "completed_at": "2026-11-05T04:17:43.746487+00:00",
+  "report": "outputs/crossing_checkpoint/dev5_val15/run_20261104_01/exports/run_20261105_03/crossing_v002_dev5_val15_offline.html",
+  "bytes": 52917753,
+  "mib": 50.47,
+  "html_sha256": "eb9cff5c701770f001d2746014965ed8f507667ac461a443ef7316d06fda8ac2",
+  "runs": 4,
+  "unique_episodes": 20,
+  "observations": 1791,
+  "images": 1217,
+  "lossless_image_pool": true,
+  "original_reports_unchanged": true,
+  "previous_export_unchanged": true,
+  "previous_export": "run_20261105_02",
+  "payload_hashes_match_previous_export": true,
+  "embedded_font": {
+    "source": "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/assets/fonts/wqy_microhei_20261105/wqy-microhei.ttc",
+    "source_sha256": "2420e8078af796b19a3f6ef13de527a1a91c1e7171eea115926c614ced1009b3",
+    "subset_sha256": "040b8bac9a08174410ee1c0bf5b01c6af701498f54890fb7bd751e955a6689e0",
+    "subset_bytes": 185272,
+    "required_han_count": 809,
+    "missing_han": [],
+    "license": "Apache-2.0",
+    "license_sha256": "aee4111b1e01dd3d36514ee7d1e5b144f45e72f4dba83045bb9ff6e47fa4e680"
+  },
+  "browser_verification": {
+    "passed": true,
+    "browser": "133.0.6943.0",
+    "scope": "Playback relocation and synchronized sliders",
+    "case_version_views": 30,
+    "actual_mouse_drag_both_sliders": true,
+    "play_pause_step_event_and_version_sync": true,
+    "drag_pauses_playback": true,
+    "layouts": [
+      {
+        "width": 1600,
+        "height": 1000,
+        "map_gap": 10,
+        "image_gap": 10,
+        "overflow": 0
+      },
+      {
+        "width": 1366,
+        "height": 900,
+        "map_gap": 10,
+        "image_gap": 10,
+        "overflow": 0
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "map_gap": 10,
+        "image_gap": 10,
+        "overflow": 0
+      }
+    ],
+    "page_errors": 0,
+    "external_requests": 0,
+    "html_sha256": "eb9cff5c701770f001d2746014965ed8f507667ac461a443ef7316d06fda8ac2"
+  },
+  "local_links_checked": 50,
+  "missing_links": [],
+  "desktop_and_mobile_screenshots_visually_reviewed": true,
+  "model_or_simulation_started": false,
+  "change": "Map playback moved directly below map; synchronized slider added directly below RGB.",
+  "verification_source_sha256": "8c159aa7e8d2ec4ebc7bdfe4063c496a3edf63d64fb7043824c57e2fc97f1c27"
+}

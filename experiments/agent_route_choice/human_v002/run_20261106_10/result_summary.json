@@ -1,0 +1,107 @@
+{
+  "summary": {
+    "samples": 10,
+    "response_count": 30,
+    "stage2_responses": 10,
+    "observed_route_responses": 10,
+    "new_stage1_calls": 0,
+    "new_calls": 20,
+    "valid_samples": 9,
+    "selected": 10,
+    "insufficient": 0,
+    "no_second": 0,
+    "stage2_valid": 10
+  },
+  "cases": [
+    {
+      "sample_id": "sample_01",
+      "episode_id": "kujiale_0036_0_0",
+      "observed": "B1",
+      "observed_direction": "front",
+      "selected": "B2",
+      "selected_direction": "back",
+      "confidence": "low"
+    },
+    {
+      "sample_id": "sample_02",
+      "episode_id": "kujiale_0036_11_0",
+      "observed": "B1",
+      "observed_direction": "front_right",
+      "selected": "B2",
+      "selected_direction": "right",
+      "confidence": "high"
+    },
+    {
+      "sample_id": "sample_05",
+      "episode_id": "kujiale_0036_50_1",
+      "observed": "B1",
+      "observed_direction": "left",
+      "selected": "B2",
+      "selected_direction": "right",
+      "confidence": "low"
+    },
+    {
+      "sample_id": "sample_06",
+      "episode_id": "kujiale_0036_52_4",
+      "observed": "B2",
+      "observed_direction": "front",
+      "selected": "B3",
+      "selected_direction": "right",
+      "confidence": "medium"
+    },
+    {
+      "sample_id": "sample_07",
+      "episode_id": "kujiale_0113_18_1",
+      "observed": "B1",
+      "observed_direction": "left",
+      "selected": "B2",
+      "selected_direction": "front",
+      "confidence": "high"
+    },
+    {
+      "sample_id": "sample_08",
+      "episode_id": "kujiale_0113_1_4",
+      "observed": "B1",
+      "observed_direction": "front",
+      "selected": "B3",
+      "selected_direction": "right",
+      "confidence": "medium"
+    },
+    {
+      "sample_id": "sample_09",
+      "episode_id": "kujiale_0123_fix_17_3",
+      "observed": "B1",
+      "observed_direction": "front",
+      "selected": "B2",
+      "selected_direction": "right",
+      "confidence": "medium"
+    },
+    {
+      "sample_id": "sample_10",
+      "episode_id": "kujiale_0123_fix_19_3",
+      "observed": "B2",
+      "observed_direction": "left",
+      "selected": "B1",
+      "selected_direction": "front_right",
+      "confidence": "medium"
+    },
+    {
+      "sample_id": "sample_11",
+      "episode_id": "kujiale_0123_fix_30_2",
+      "observed": "B2",
+      "observed_direction": "right",
+      "selected": "B1",
+      "selected_direction": "left",
+      "confidence": "medium"
+    },
+    {
+      "sample_id": "sample_23",
+      "episode_id": "kujiale_0234_31_4",
+      "observed": "B2",
+      "observed_direction": "left",
+      "selected": "B1",
+      "selected_direction": "front",
+      "confidence": "high"
+    }
+  ]
+}

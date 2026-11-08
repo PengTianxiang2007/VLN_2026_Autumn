@@ -1,0 +1,16 @@
+Based on the current image and the selected direction, write a clear, specific navigation instruction that takes the robot from its current position into the selected branch.
+
+The selected direction refers to the branch to take at the immediate fork, not a doorway to find in that direction after proceeding along another route. First locate the selected branch in the image, then describe the necessary movement and turn.
+
+If the robot can already turn into the branch from its current position, describe that turn directly. Add forward movement only when approaching the entrance is actually necessary. Do not send the robot along an unselected branch first to look for a side entrance farther ahead.
+
+The entrance description is only an aid to identification. If it does not match the selected branch in the image, do not use it to add a detour, movement past landmarks, or a search for a farther doorway.
+
+Make the action and target entrance explicit, for example, "Turn left and enter the room on the left." If the entrance is actually a little ahead, you can say, "Move forward a little, then turn right through the doorway on the right." These examples illustrate wording only; they do not mean that forward movement or turning is always required.
+
+Describe only the short movement needed to make this branch choice, ending just inside the selected branch. Do not plan the subsequent route. Do not invent distances, landmarks, or extra actions.
+
+Output only the English navigation instruction, without explanations.
+
+Selected direction: {selected_direction}
+Local description of the selected entrance: {selected_entrance_description}

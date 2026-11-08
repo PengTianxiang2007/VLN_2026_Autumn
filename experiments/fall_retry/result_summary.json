@@ -1,0 +1,41 @@
+{
+  "updated_at": "2026-11-03T07:48:30.075781+00:00",
+  "cohort": 41,
+  "reset_expected": 41,
+  "replay_expected": 40,
+  "replay_inapplicable": 1,
+  "complete": true,
+  "protocol": "One retry per condition, seed 2; replay uses new observations and original action prefix, not historical physics-state restoration.",
+  "requested_direct_rollback_test_completed": false,
+  "requested_experiment_complete": false,
+  "replay_interpretation": "Historical-action prefix replay only; does not answer the requested direct-rollback experiment.",
+  "protocol_correction": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/experiments/fall41_seed2_20261103/protocol_correction.json",
+  "correction_recorded_at": "2026-11-03T07:48:29.072858+00:00",
+  "reset": {
+    "validated_completed": 41,
+    "falls": 19,
+    "fall_percent_of_completed": 46.34146341463415,
+    "successes": 10
+  },
+  "replay": {
+    "validated_completed": 40,
+    "falls": 22,
+    "fall_percent_of_completed": 55.0,
+    "successes": 6
+  },
+  "replay_reached_checkpoint": {
+    "episodes": 33,
+    "falls": 16,
+    "falls_within_next_10_actions": 6,
+    "no_proposal_mismatch_in_prefix": 4
+  },
+  "replay_checkpoint_within_0_5m": {
+    "episodes": 19,
+    "falls": 12,
+    "falls_within_next_10_actions": 6,
+    "no_proposal_mismatch_in_prefix": 4
+  },
+  "replay_falls_before_checkpoint": 6,
+  "direct_rollback_followup_status": "cancelled_by_user",
+  "direct_rollback_cancelled_at": "2026-11-03T07:50:24.994657+00:00"
+}

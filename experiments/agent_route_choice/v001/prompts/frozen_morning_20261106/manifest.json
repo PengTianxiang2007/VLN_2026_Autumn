@@ -1,0 +1,153 @@
+{
+  "baseline_id": "agent-route-choice-v001-morning-20261106",
+  "status": "frozen_user_requested",
+  "preserved_at": "2026-11-06T15:57:38.494183+00:00",
+  "source_prepared": "outputs/agent_route_choice/v001/preparation_20261106_04",
+  "source_prepared_manifest_sha256": "bfcf53f8d54a8e4dffd012ebdedafd94746d3f120381f32a26a5df33586643c3",
+  "source_run": "outputs/agent_route_choice/v001/run_20261106_01/qwen32b",
+  "source_run_manifest_sha256": "5f5b2a806998cbfe3719610f438c3a8bb06f176c5cd2443e92e6054c7af4b8a7",
+  "prompt_revision": "02_crossing_definition_permissive_branches_english_output",
+  "files": {
+    "01_inventory_en.txt": {
+      "source": "outputs/agent_route_choice/v001/preparation_20261106_04/prompts/01_inventory_en.txt",
+      "sha256": "4158810002f6ad317be921e85e845bc192c27a8588af1957cd0827b09984af9e",
+      "bytes": 3681
+    },
+    "01_inventory_zh.txt": {
+      "source": "outputs/agent_route_choice/v001/preparation_20261106_04/prompts/01_inventory_zh.txt",
+      "sha256": "0c3e5477e8c739ced70d1356e86b150bc2fce0e1324106fd7830453eaacb3173",
+      "bytes": 3180
+    },
+    "02_choose_en.txt": {
+      "source": "outputs/agent_route_choice/v001/preparation_20261106_04/prompts/02_choose_en.txt",
+      "sha256": "c7ec532635286fd0fa58a996a75d7835a20a2f873891031278515fb40c3a1e9e",
+      "bytes": 2359
+    },
+    "02_choose_zh.txt": {
+      "source": "outputs/agent_route_choice/v001/preparation_20261106_04/prompts/02_choose_zh.txt",
+      "sha256": "dd4cd118039615d7484d9656eb524f66bf167b5dfe915d0f75ec4d585dab32d0",
+      "bytes": 1985
+    },
+    "protocol.json": {
+      "source": "outputs/agent_route_choice/v001/preparation_20261106_04/protocol.json",
+      "sha256": "7c50ed85ba452973c257ef683a2c65132a24bd380c8890fe39d1e8babbb79bfd"
+    },
+    "models.json": {
+      "source": "outputs/agent_route_choice/v001/preparation_20261106_04/models.json",
+      "sha256": "01bae00a445037ec244b0d53cdd421c6b13da2f59b933b962d817b0b9b70f24b"
+    },
+    "call1_schema.json": {
+      "sha256": "4509fe341a9141f15c61dca5f4763aeb2dfbcde7b03ae97ae88ae2568992eff0",
+      "source": "extracted from actual morning request previews; all ten identical for this stage"
+    },
+    "call2_schema.json": {
+      "sha256": "30e78f485bf8b7a3926a2434059374be77b7626da42b2de58755c8d08c779c23",
+      "source": "extracted from actual morning request previews; all ten identical for this stage"
+    }
+  },
+  "verified_requests": [
+    {
+      "path": "outputs/agent_route_choice/v001/run_20261106_01/qwen32b/cases/sample_01/call1_request.json",
+      "sha256": "c4b87a3abcddcb5a6e38784abf2eac12a7ad5ba9bda30e60702f2c99a6dbc98b",
+      "stage": 1
+    },
+    {
+      "path": "outputs/agent_route_choice/v001/run_20261106_01/qwen32b/cases/sample_02/call1_request.json",
+      "sha256": "b0e3efb03e04bf4358c1cc170c408515a4b4a22e26ff05d2bb7facfa748076c8",
+      "stage": 1
+    },
+    {
+      "path": "outputs/agent_route_choice/v001/run_20261106_01/qwen32b/cases/sample_03/call1_request.json",
+      "sha256": "e82b43f392e0c0027074c0e915eeee124cd7892b13159c8f5e9b8aa1b7766876",
+      "stage": 1
+    },
+    {
+      "path": "outputs/agent_route_choice/v001/run_20261106_01/qwen32b/cases/sample_04/call1_request.json",
+      "sha256": "c16462565790c1e9474194076bd68dd193f8b5f4b19d58f0003a5765cf779df3",
+      "stage": 1
+    },
+    {
+      "path": "outputs/agent_route_choice/v001/run_20261106_01/qwen32b/cases/sample_05/call1_request.json",
+      "sha256": "7d31bcdacef9f2c15969b9d64bf49b651f20e13081bb5125306ec21a5cac2b8d",
+      "stage": 1
+    },
+    {
+      "path": "outputs/agent_route_choice/v001/run_20261106_01/qwen32b/cases/sample_06/call1_request.json",
+      "sha256": "a0c6b61d24a73f68310f0b2d353bdcb5c3e7e0c2da15abcadb587f5f49a49d36",
+      "stage": 1
+    },
+    {
+      "path": "outputs/agent_route_choice/v001/run_20261106_01/qwen32b/cases/sample_07/call1_request.json",
+      "sha256": "25cac6c2636dbeb483130675c1be6f34732729a0c20bab73a29ca620b4139871",
+      "stage": 1
+    },
+    {
+      "path": "outputs/agent_route_choice/v001/run_20261106_01/qwen32b/cases/sample_08/call1_request.json",
+      "sha256": "c5c64597b8db45bf974395b294dba4b7b68f8e41e7a6e49063dc67b9e9927316",
+      "stage": 1
+    },
+    {
+      "path": "outputs/agent_route_choice/v001/run_20261106_01/qwen32b/cases/sample_09/call1_request.json",
+      "sha256": "6fc823a05aee7f75676644645e6bf05f0798842f5347162df9b09d0c825436bf",
+      "stage": 1
+    },
+    {
+      "path": "outputs/agent_route_choice/v001/run_20261106_01/qwen32b/cases/sample_10/call1_request.json",
+      "sha256": "8cb22f72ca25588fa8450f0d7f4c32d126874994a3dbb16698edc6de2b1ee91f",
+      "stage": 1
+    },
+    {
+      "path": "outputs/agent_route_choice/v001/run_20261106_01/qwen32b/cases/sample_01/call2_request.json",
+      "sha256": "fda14e0b3f1fa74ff4c63c22aeaf194f2e9ce4d268806e0b5a98a8a546a97de1",
+      "stage": 2
+    },
+    {
+      "path": "outputs/agent_route_choice/v001/run_20261106_01/qwen32b/cases/sample_02/call2_request.json",
+      "sha256": "af82f56d09cb3943a1b3d3bd02980e0ec39a80da9bb936920acbaadd255e3c52",
+      "stage": 2
+    },
+    {
+      "path": "outputs/agent_route_choice/v001/run_20261106_01/qwen32b/cases/sample_03/call2_request.json",
+      "sha256": "45c570bd56eb47426fe6e52da886d792e6782ef70ff8cf5c49c86f879c747d7c",
+      "stage": 2
+    },
+    {
+      "path": "outputs/agent_route_choice/v001/run_20261106_01/qwen32b/cases/sample_04/call2_request.json",
+      "sha256": "3086a210b37a9d0c6a0c33c6d9841a7e5d690c7015453ed443a5eadf6e6f22fe",
+      "stage": 2
+    },
+    {
+      "path": "outputs/agent_route_choice/v001/run_20261106_01/qwen32b/cases/sample_05/call2_request.json",
+      "sha256": "232028a2f8393a7c84ed8a384afae0a21c7db6acee0541cf2337fea9e32e53ad",
+      "stage": 2
+    },
+    {
+      "path": "outputs/agent_route_choice/v001/run_20261106_01/qwen32b/cases/sample_06/call2_request.json",
+      "sha256": "e299a18c4a13b104963f99a74f1d44c0ac4c3480e1e16febb66c5defe510d0ef",
+      "stage": 2
+    },
+    {
+      "path": "outputs/agent_route_choice/v001/run_20261106_01/qwen32b/cases/sample_07/call2_request.json",
+      "sha256": "ef8ef2805a88a8451187dcefffa0f9650bed7330dfd954060c9ff9c2b605a14a",
+      "stage": 2
+    },
+    {
+      "path": "outputs/agent_route_choice/v001/run_20261106_01/qwen32b/cases/sample_08/call2_request.json",
+      "sha256": "8f2af15f9461480f01d16cafde19a80bf34fe15a5476c52621bed17e21423011",
+      "stage": 2
+    },
+    {
+      "path": "outputs/agent_route_choice/v001/run_20261106_01/qwen32b/cases/sample_09/call2_request.json",
+      "sha256": "b155e4a694bf61593d083be5fd9d720f8f3c466afde37fd7b5a31221dd088301",
+      "stage": 2
+    },
+    {
+      "path": "outputs/agent_route_choice/v001/run_20261106_01/qwen32b/cases/sample_10/call2_request.json",
+      "sha256": "098920c2882726d059326c09cbe3e07c9f6d5f6a9adbf34593275939e284ad90",
+      "stage": 2
+    }
+  ],
+  "preservation_git_head": "0a805dfcf4457f80300822abb4eff7cabba43aae",
+  "git_note": "HEAD at archival time only; historical code provenance remains in source manifests. Working tree is not clean.",
+  "policy": "Preserve original prompts and outputs; make evening optimizations in human_v002 or a later independent version. Historical launch authorization is not a new launch instruction."
+}

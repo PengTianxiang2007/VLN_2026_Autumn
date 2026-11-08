@@ -1,0 +1,58 @@
+{
+  "run": "run_20261104_01",
+  "finished_at_utc": "2026-11-04 15:29 UTC",
+  "git_head_at_prepare": "0a805dfcf4457f80300822abb4eff7cabba43aae",
+  "protocol": "semantic_delay_paired_v002",
+  "seed": 2,
+  "groups": {
+    "short": {
+      "completed": 10,
+      "expected": 10,
+      "successes": 6,
+      "triggered": 8,
+      "interventions": 15,
+      "untriggered_successes": 0
+    },
+    "medium": {
+      "completed": 10,
+      "expected": 10,
+      "successes": 5,
+      "triggered": 7,
+      "interventions": 9,
+      "untriggered_successes": 0
+    },
+    "long": {
+      "completed": 10,
+      "expected": 10,
+      "successes": 5,
+      "triggered": 7,
+      "interventions": 9,
+      "untriggered_successes": 0
+    }
+  },
+  "fully_triggered_pairs": {
+    "episode_ids": [
+      "kujiale_0208_21_4",
+      "kujiale_0240_8_4",
+      "kujiale_0232_23_2",
+      "kujiale_0234_34_4",
+      "kujiale_0123_fix_30_2",
+      "kujiale_0234_27_4",
+      "kujiale_0036_3_2"
+    ],
+    "count": 7,
+    "successes": {
+      "short": 5,
+      "medium": 5,
+      "long": 5
+    }
+  },
+  "completed_tasks": 10,
+  "group_results": 30,
+  "actual_corrected_branches": 22,
+  "untriggered_results": 8,
+  "memory_proofs_verified": 33,
+  "restore_proofs_verified": 22,
+  "artifacts": "../../../outputs/oracle_crossing/paired_delay10/run_20261104_01/",
+  "note": "Groups include shared untriggered terminal outcomes; paired efficacy uses the seven fully triggered tasks. Later corrections are allowed. Simulated delay excludes human review and loading time."
+}

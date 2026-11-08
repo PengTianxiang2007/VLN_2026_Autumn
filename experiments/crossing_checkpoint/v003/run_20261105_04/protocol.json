@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "created_at": "2026-11-05T08:43:47.322972+00:00",
+  "seed": 2,
+  "sample_seed": 20261103,
+  "prompt_version": "crossing-v003-region-choice-draft03",
+  "model_selection": "User selected Qwen3.8-27B-FP8; method iterations use this fixed model, no 32B comparison.",
+  "development": [],
+  "validation": [
+    "kujiale_0123_fix_30_2",
+    "kujiale_0207_12_1",
+    "kujiale_0232_65_2",
+    "kujiale_0234_56_3",
+    "kujiale_0240_30_3",
+    "kujiale_0257_11_2"
+  ],
+  "development_scenes": [],
+  "validation_scenes": [
+    "kujiale_0123_fix",
+    "kujiale_0207",
+    "kujiale_0232",
+    "kujiale_0234",
+    "kujiale_0240",
+    "kujiale_0257"
+  ],
+  "source_index_sha256": "4bef17cc970d8efb95e16e86628040b1245f3b9cfb9d1fa557cee75954744e3b",
+  "source_map_report_sha256": "f0de53510f81d623ab7aaa7d623a675c71b3149744c9f96deec248e042a1cc17",
+  "fixed_reference_sha256": "d42614dc9f11953c60eb0b9d30cebc10f5be8ac7c267b36e6b8b92b0dca404bb",
+  "source_screening_rule": "Normal STOP; >=20 frames; robot z>=0.55m; XY extent>=2m; <6 consecutive ineffective forward attempts; <=25% ineffective forward (<0.035m) actions.",
+  "input_policy": "RGB only, native 640x480 crop; last 8 available observations; actions strictly before current observation; visual checkpoint memory. No map, GPS, reference path, outcome or future frames.",
+  "checkpoint_policy": {
+    "confirmations": 2,
+    "window": 3,
+    "close_after_absent": 3,
+    "anchor": "confirmation_frame",
+    "future_backdating": false
+  },
+  "evaluation": {
+    "reference": "Previously marked 55 scene crossings; geometric prior, not independent human gold.",
+    "entry_radius_m": 0.7,
+    "exit_radius_m": 1.2,
+    "approach_radius_m": 1.5,
+    "primary_match_radius_m": 1.0,
+    "sensitivity_radii_m": [
+      0.7,
+      1.0,
+      1.5
+    ],
+    "matching": "One prediction per encountered crossing visit; repeated detections penalized.",
+    "timing": "Actions relative to closest approach, not certified pre-choice timing.",
+    "validation_gate": {
+      "precision": 0.85,
+      "recall": 0.8,
+      "duplicate_fraction": 0.1
+    }
+  },
+  "crossing_definition": "At least two onward choices toward different areas, excluding incoming; partial visual cues may support a branch inference.",
+  "selection_rule": "One shortest valid trajectory per existing validation scene, tie broken by episode id; no prediction-score or crossing-count selection.",
+  "stopping": {
+    "precision_target": 0.85,
+    "recall_target": 0.8,
+    "max_modifications": 0,
+    "plateau_rounds": 3,
+    "minimum_f1_improvement": 0.02,
+    "max_wall_seconds_after_ready": 28800,
+    "request_retries": 1,
+    "request_timeout_seconds": 600,
+    "require_evidence_before_each_change": true,
+    "reserve_validation_time": false
+  },
+  "parent_protocol_sha256": "d70b4b73878eb11ce63ecf142e54d8cbd9c4e01abf69f888a6ae0838fd54e311",
+  "inference_schedule": {
+    "stride": 1,
+    "offset": 0,
+    "anchor": "original navigation-action frame index",
+    "retain_all_rgb_history": true,
+    "retain_all_executed_actions": true,
+    "tracker_updates": "only on actual model responses; no synthetic predictions"
+  },
+  "authorization": "User explicitly confirmed six additional new cases, excluding the previous three; same draft03, every step, fixed six only."
+}

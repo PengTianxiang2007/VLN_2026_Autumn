@@ -1,0 +1,10 @@
+Based on the current image and the selected direction, write a short, clear English navigation instruction for the robot to take the selected branch immediately ahead.
+
+Include only the actions needed to make this branch choice. If the robot can turn directly, tell it to turn directly. Specify forward movement only if approaching the branch is actually necessary. Complete this branch choice without adding instructions to enter a room or continue along the branch.
+
+For example: "Turn left at the doorway on the left." or "Move forward to the fork, then turn right." Determine the actual actions from the image; do not copy the examples.
+
+Output only the navigation instruction, without explanations.
+
+Selected direction: {selected_direction}
+Local description of the branch: {selected_entrance_description}

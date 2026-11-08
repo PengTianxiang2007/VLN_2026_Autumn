@@ -1,0 +1,53 @@
+{
+  "status": "complete",
+  "finished_at": "2026-11-05T10:40:48.502818+00:00",
+  "verified_at": "2026-11-05T10:43:20.725280+00:00",
+  "model": "glm-5.3-flash",
+  "reasoning_effort": "low",
+  "concurrency": 10,
+  "inference_stride": 1,
+  "completed_cases": 10,
+  "completed_observations": 588,
+  "metrics": {
+    "tp": 8,
+    "fp": 11,
+    "fn": 12,
+    "confirmed_predictions": 19,
+    "reference_encounters": 20,
+    "duplicate_predictions": 2,
+    "precision": 0.42105263157894735,
+    "recall": 0.4,
+    "f1": 0.41025641025641024
+  },
+  "visualization": {
+    "tag": "glm53flash_draft03_10",
+    "split": "development",
+    "created_at": "2026-11-05T10:40:44.585698+00:00",
+    "template_id": "crossing-review-v1",
+    "report": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/crossing_checkpoint/v004/run_20261105_04/exports/final/visualization/crossing_review_offline.html",
+    "html_sha256": "8a8b3d0ef83bf1f74795207fbbd786e3af76e8873b9eb5f959c831cdcc6e4c06",
+    "audited_report": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/crossing_checkpoint/v004/run_20261105_04/exports/final/audited_report/crossing_dev8_review.html",
+    "export_manifest": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/crossing_checkpoint/v004/run_20261105_04/exports/final/visualization/export_manifest.json",
+    "compared_tags": [
+      "glm53flash_draft03_10"
+    ],
+    "scores_sha256": "8d8041a2a5a33b97bda7ae6f6d3e80beb82faf484e9cbb2c4d1269d62d5045d3"
+  },
+  "remote_request_audit": {
+    "passed": true,
+    "verified_requests": 588,
+    "reasoning_effort": "low",
+    "credential_required": false
+  },
+  "credential_cleanup": {
+    "supervisor_exited": true,
+    "files_checked": 300,
+    "credential_pattern_matches": 0,
+    "credential_written_by_design": false
+  },
+  "limitations": [
+    "Existing mixed development/previous-validation samples; not fresh blind validation.",
+    "Uniform low-effort results; prior max-effort failed runs excluded.",
+    "Geometric map-proximity matching, not visibility-certified crossing accuracy."
+  ]
+}

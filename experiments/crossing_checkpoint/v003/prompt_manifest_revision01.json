@@ -1,0 +1,36 @@
+{
+  "prepared_at": "2026-11-05T05:02:31.357710+00:00",
+  "candidate_id": "crossing-v003-region-choice-draft",
+  "status": "prompt_prepared_not_evaluated",
+  "user_requested_scope": "Write candidate prompt and provide new/previous Chinese translations; do not start evaluation.",
+  "prepared_from_git_head": "0a805dfcf4457f80300822abb4eff7cabba43aae",
+  "source_files": {
+    "baseline": {
+      "path": "outputs/crossing_checkpoint/dev5_val15/run_20261104_01/versions/baseline/core/crossing_checkpoint.py",
+      "source_sha256": "2779a94fa7c60919b109b81b42c446366ad878e6eaf7dae95dfcf19ebee5974d",
+      "prompt_sha256": "08b5c32be0afa9b6a18b74c8efd207cfc102dd9a92a9c5ac17c979f747752554"
+    },
+    "r02": {
+      "path": "outputs/crossing_checkpoint/dev5_val15/run_20261104_01/versions/r02_inventory_first/core/crossing_checkpoint.py",
+      "source_sha256": "7636e9bbc88e8ff96aed5e0fff9d6f7562edaa8dbf7cab1338e8e48bf6c82d15",
+      "prompt_sha256": "903fae9df6316a4ebcc3579d38187bf33a47359fbb54910fee6c7178f76ebf4d"
+    }
+  },
+  "candidate_files": {
+    "previous_baseline_en.txt": "08b5c32be0afa9b6a18b74c8efd207cfc102dd9a92a9c5ac17c979f747752554",
+    "previous_baseline_zh.txt": "0a65e1d333ca9f15b9ab6af98f09709e02ba42be15a209bda813ce610e3cf9f9",
+    "previous_r02_en.txt": "903fae9df6316a4ebcc3579d38187bf33a47359fbb54910fee6c7178f76ebf4d",
+    "previous_r02_zh.txt": "884876fcf8bffcc809fdae1de15c1938e35026a5d0a23bcb147343db59b30132",
+    "prompt_en.txt": "4e396719a98e1b97f126d577a45e22cd2e32d0b7543074b37d409fc6f7857037",
+    "prompt_zh.txt": "8eb6576d9f3c45f5a42f62960caa7d1a8aca93bfdb579a780e247631ad95f24b"
+  },
+  "comparison_baseline": "crossing-v1-schema2",
+  "latest_tested_but_not_selected": "crossing-v002-r02-inventory-first",
+  "baseline_temporal_tracking_and_output_paragraphs_preserved": true,
+  "runtime_system_prompt_still_baseline": true,
+  "runtime_code_changed": false,
+  "response_schema_changed": false,
+  "evaluation_started": false,
+  "model_or_simulation_started": false,
+  "new_measurements": null
+}

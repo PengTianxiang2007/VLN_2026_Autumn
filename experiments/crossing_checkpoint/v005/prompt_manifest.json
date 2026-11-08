@@ -1,0 +1,24 @@
+{
+  "version": "crossing-v005-region-choice-draft04",
+  "created_at": "2026-11-05T11:10:10.335510+00:00",
+  "git_head": "0a805dfcf4457f80300822abb4eff7cabba43aae",
+  "parent_prompt_sha256": "efca53a7c341a7717096e8d730f09fc21ee7d4fae93688849a884281f37273dc",
+  "prompt_en_sha256": "f463d355334491baa4be25dec576f4a4ae937377c31b9ca593e9c21094d40df1",
+  "prompt_zh_sha256": "f7e3458db218d1380db9c7624e99bed172393ca1f7b0fc964068fd44241b1814",
+  "changes": [
+    "Plausible distinct destination spaces suffice without confirming room interiors",
+    "Partial side opening plus forward route favors crossing/medium",
+    "Remove repeated generic insufficient-evidence sentence"
+  ],
+  "evidence": [
+    "Qwen draft03 kujiale_0123_fix_30_2 frames5/7: dismissed partial openings",
+    "Qwen draft03 kujiale_0232_65_2 frames23/25: denied corridor plus side doorway despite recognizing both"
+  ],
+  "runtime_unchanged": [
+    "response schema",
+    "history sampling",
+    "checkpoint tracker",
+    "location judgment",
+    "scoring"
+  ]
+}

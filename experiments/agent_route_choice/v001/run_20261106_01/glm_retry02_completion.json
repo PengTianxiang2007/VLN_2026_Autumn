@@ -1,0 +1,17 @@
+{
+  "model": "glm",
+  "phase": "interrupted",
+  "completed_samples": 0,
+  "expected_samples": 10,
+  "request_counts": {
+    "logical_requests_prepared": 10,
+    "provider_responses_saved": 0,
+    "provider_attempts_logged": 20
+  },
+  "gpu_released": null,
+  "workers_exited": true,
+  "artifacts_ready": true,
+  "finished_at": "2026-11-06T03:59:32.676940+00:00",
+  "output": "outputs/agent_route_choice/v001/run_20261106_01/glm_retry02",
+  "semantic_accuracy": "pending_review"
+}

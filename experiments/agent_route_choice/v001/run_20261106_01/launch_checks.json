@@ -1,0 +1,78 @@
+{
+  "checked_at": "2026-11-06T03:52:22.250625+00:00",
+  "unchanged_from_preparation03": {
+    "dataset.json": true,
+    "evaluation_only.json": true,
+    "cohort.json": true,
+    "prompts/01_inventory_en.txt": true,
+    "prompts/02_choose_en.txt": true
+  },
+  "cpu_tests": 24,
+  "models": [
+    "glm",
+    "qwen32b"
+  ],
+  "dry_runs": "both passed; zero requests",
+  "gpu_snapshot_before_launch": [
+    {
+      "index": 0,
+      "used_mib": 0,
+      "free_mib": 48520,
+      "utilization": 0,
+      "compute_process_present": false
+    },
+    {
+      "index": 1,
+      "used_mib": 25521,
+      "free_mib": 22999,
+      "utilization": 0,
+      "compute_process_present": true
+    },
+    {
+      "index": 2,
+      "used_mib": 35965,
+      "free_mib": 12555,
+      "utilization": 100,
+      "compute_process_present": true
+    },
+    {
+      "index": 3,
+      "used_mib": 0,
+      "free_mib": 48520,
+      "utilization": 0,
+      "compute_process_present": false
+    },
+    {
+      "index": 4,
+      "used_mib": 15383,
+      "free_mib": 33137,
+      "utilization": 100,
+      "compute_process_present": true
+    },
+    {
+      "index": 5,
+      "used_mib": 29196,
+      "free_mib": 19324,
+      "utilization": 100,
+      "compute_process_present": true
+    },
+    {
+      "index": 6,
+      "used_mib": 29011,
+      "free_mib": 19509,
+      "utilization": 100,
+      "compute_process_present": true
+    },
+    {
+      "index": 7,
+      "used_mib": 0,
+      "free_mib": 48520,
+      "utilization": 0,
+      "compute_process_present": false
+    }
+  ],
+  "selected_gpus": [
+    0,
+    3
+  ]
+}

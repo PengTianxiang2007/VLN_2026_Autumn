@@ -1,0 +1,19 @@
+{
+  "samples": 10,
+  "received_responses": 20,
+  "inventory_valid": 10,
+  "original_protocol_valid": 0,
+  "review_protocol_valid": 9,
+  "model_selected": 0,
+  "model_insufficient": 10,
+  "branch_total": 38,
+  "finished_at": "2026-11-06T08:19:27.459413+00:00",
+  "gpu_released": true,
+  "network_attempts": 20,
+  "network_errors": 0,
+  "posthoc_model_calls": 0,
+  "semantic_accuracy": "not_established",
+  "html": "outputs/agent_route_choice/v002/run_20261106_01/exports/run_20261106_01/crossing_v002_qwen27b_zh.html",
+  "html_sha256": "1297434a99e86d2423ff08b88e1c7e158cdef5599c87bb18b6574e63ff25bdea",
+  "browser_validation_passed": true
+}

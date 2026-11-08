@@ -1,0 +1,19 @@
+{
+  "at": "2026-11-06T14:37:49.525140+00:00",
+  "samples": 34,
+  "unique_events": 34,
+  "input_images": 256,
+  "pixel_checks_passed": true,
+  "cpu_tests_passed": 34,
+  "frame_zero_events": 5,
+  "model_shards_present": 66,
+  "prompt_hashes": {
+    "01_inventory_en.txt": "4158810002f6ad317be921e85e845bc192c27a8588af1957cd0827b09984af9e",
+    "02_choose_en.txt": "c7ec532635286fd0fa58a996a75d7835a20a2f873891031278515fb40c3a1e9e"
+  },
+  "core_hash": "7c318758fbd973de3e88882b87bf8b78916e515c15a1ea3f49ab8b1b0731732f",
+  "preparation_manifest_sha256": "eb83c28e464ffa65c03c233d47c1ba8fb9599f59b1604a5af47959ba533acc87",
+  "html_generated": false,
+  "model_calls": 0,
+  "resource_status": "awaiting_shared_gpu_choice"
+}

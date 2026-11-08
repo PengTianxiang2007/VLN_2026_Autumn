@@ -1,0 +1,9 @@
+Turn the selected branch direction into the smallest immediate correction command for StreamVLN.
+
+The robot is already at the correction point. Correct only its immediate direction. Do not describe the route beyond the turn, name a destination, or add entering a room, passing landmarks, or completing the original task. Do not add forward movement after a turn unless explicitly required by the input.
+
+Use one short command: left → "Turn left."; right → "Turn right."; front → "Go straight a little."
+
+Output only the command.
+
+Selected direction: {selected_direction}

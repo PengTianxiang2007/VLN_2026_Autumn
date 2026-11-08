@@ -1,0 +1,11 @@
+{
+  "purpose": "Visualization-only repair: current robot position follows playback",
+  "git_head": "0a805dfcf4457f80300822abb4eff7cabba43aae",
+  "source_hashes": {
+    "core/crossing_lite_full_review.js": "b2e551c1e3627862fdfc0b43215ad943f468bdd3fdb2feda666e4fafb67d73dc",
+    "scripts/check_crossing_robot_marker.cjs": "c25a27a5fbcd074694620da6187c086cef073c4f9aea4f6bd96e15eb58b9ce27"
+  },
+  "model_calls": 0,
+  "parent_export": "exports/final",
+  "original_inference_manifest_unchanged": true
+}

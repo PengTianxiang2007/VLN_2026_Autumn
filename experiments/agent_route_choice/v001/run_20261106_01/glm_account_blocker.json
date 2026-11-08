@@ -1,0 +1,12 @@
+{
+  "at": "2026-11-06T04:00:19.015746+00:00",
+  "model": "glm",
+  "blocker": "provider_account_no_balance_or_resource_package",
+  "provider_error_code": "1113",
+  "provider_message": "余额不足或无可用资源包,请充值。",
+  "no_valid_answers": true,
+  "original_run": "outputs/agent_route_choice/v001/run_20261106_01/glm",
+  "retry_run": "outputs/agent_route_choice/v001/run_20261106_01/glm_retry02",
+  "action": "stopped owned retry supervisor; waiting for user account credit or replacement key",
+  "qwen": "continues independently; GPU 0,3; supervisor 3194485"
+}

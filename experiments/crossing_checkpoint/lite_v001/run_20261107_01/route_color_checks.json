@@ -1,0 +1,37 @@
+{
+  "color_checks": {
+    "passed": true,
+    "palette": [
+      "#bde5cf",
+      "#8bd3ac",
+      "#4fb982",
+      "#20965e",
+      "#006d3a"
+    ],
+    "monotone_luminance": true,
+    "gray_missing": true,
+    "source_frame_not_destination": true,
+    "actual_canvas_strokes": true,
+    "prefix_causality": true,
+    "synthetic_fixture_only": true,
+    "no_model_calls": true
+  },
+  "preview_checks": {
+    "passed": true,
+    "cases": 30,
+    "frames": 2589,
+    "positions": 156,
+    "valid": 0,
+    "groups": {
+      "failure": 10,
+      "success": 20
+    },
+    "dual_sliders": true,
+    "causal_history": true,
+    "raw_answers": true,
+    "review_export": true,
+    "mobile": true,
+    "external_requests": 0,
+    "page_errors": 0
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "sample_ids": [
+    "sample_01",
+    "sample_02",
+    "sample_05",
+    "sample_06",
+    "sample_07",
+    "sample_08",
+    "sample_09",
+    "sample_10",
+    "sample_11",
+    "sample_23"
+  ],
+  "decision_shift_frames": 10,
+  "sample_offsets_from_annotation": [
+    -4,
+    3,
+    6,
+    10
+  ],
+  "stage": 1,
+  "planned_calls": 10,
+  "source_navigation_seed": 2,
+  "request_seed_base": 20261106,
+  "prompt": "unchanged frozen morning v001 English stage-one prompt",
+  "service_state": "outputs/model_services/qwen27b_gpu0_20261106_01/service.json",
+  "keep_service_alive": true,
+  "output": "outputs/agent_route_choice/human_v002/run_20261106_03",
+  "authorization": "User corrected sampling to C-4,C+3,C+6,C+10 while prior batch was in flight; rerun the same ten cases and export HTML.",
+  "limitation": "Changes decision time P to C+10; this is not causal inference at original annotation frame C. No guarantee that temporal window alone explains model differences."
+}

@@ -1,0 +1,49 @@
+{
+  "created_at": "2026-11-05T06:17:49.487811+00:00",
+  "tag": "v003_region_choice_stride1_dev3",
+  "git_head": "0a805dfcf4457f80300822abb4eff7cabba43aae",
+  "parent_campaign": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/crossing_checkpoint/v003/run_20261105_01",
+  "development": [
+    "kujiale_0036_10_0",
+    "kujiale_0113_1_4",
+    "kujiale_0208_21_4"
+  ],
+  "per_case_calls": {
+    "kujiale_0036_10_0": 58,
+    "kujiale_0113_1_4": 70,
+    "kujiale_0208_21_4": 40
+  },
+  "expected_model_calls": 168,
+  "previous_dense_calls": 168,
+  "reference_visits": 8,
+  "prompt_sha256": "54ab928263fefa2684d9317550e59cfdbf72d2febd42d5c804beb53296cea851",
+  "inference_stride": 1,
+  "seed": 2,
+  "request_seed_rule": "unchanged: sha256(episode:original_frame:20261103)",
+  "model": "Qwen3.8-27B-FP8",
+  "gpu": 0,
+  "concurrency": 1,
+  "source_hashes": {
+    "scripts/test_crossing_single_gpu.py": "c9342b698b3eb2d4a090396fdce9f21a048de095817413566bbae1dbbd0988e0",
+    "scripts/preview_crossing_checkpoint.py": "f00de8444ab9a86f69460c4676c8404320cf63699eebc7f07c0b65140dccfe0d",
+    "scripts/build_crossing_review.py": "2e7e7eb0d568ec0740eb2815713a8757d696afbbd7d10519a05e667de090a032",
+    "scripts/export_crossing_iteration.py": "d4c36af69ef89b3efcb0b0a892332fef198a05098d2efaa5cac88342040246a2",
+    "scripts/export_crossing_campaign.py": "99f8575f7269ffe7eef1bcf5f684c2c5eca3144dc74a61c63e99adf2124659d1",
+    "scripts/analyze_crossing_checkpoint.py": "3d9238b7b3730183ae7ad2cb8a73f31c839a0835a80d9f984ea88b25cbcde866",
+    "core/crossing_campaign_template.html": "f8d325b018305b22c1a4049127e9354f4690ee00162e008cd2e6f890b6cb3033",
+    "core/crossing_campaign_panel.html": "a5549388f1cf241ee6746cb2b8ec279f8eeaaa922353ebd065763af5c955d961",
+    "core/crossing_campaign.js": "49bd44ac0aa408afe60abeb2c701105000e90c5ac77cb40642102e13151c80f8",
+    "core/crossing_visualization_template.json": "b83d7428d9f14be90d4b81a3581edc2ca84e0b8b6d7d7f1796f66e86a9ef7cc4",
+    "tests/test_crossing_stride.py": "1286a58cf809a1cabd1bb707dd5bf3ac1ce34f9aa32fd8cfbd818e766d9503e4",
+    "core/crossing_checkpoint_review.html": "0c78f253c2dc52623a9bcb07fe4259d05d47f321836ad3bb5b651800716d6074"
+  },
+  "documentation": [
+    "experiments/crossing_checkpoint/v003/run_20261105_02/README.md",
+    "outputs/crossing_checkpoint/v003/run_20261105_02/README.md",
+    "experiments/crossing_checkpoint/v003/README.md",
+    "experiments/crossing_checkpoint/README.md",
+    "experiments/README.md",
+    "docs/STATUS.md"
+  ],
+  "documentation_marker": "CROSSING_V003_DEV3_STRIDE1_STATUS"
+}

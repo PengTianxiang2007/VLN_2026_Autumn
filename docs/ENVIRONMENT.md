@@ -63,3 +63,14 @@ Isaac 缺失时用 `python3 scripts/restore_isaac.py` 从已有 4.5 安装包恢
 
 可显式覆盖 `STREAMVLN_VENV`、`JANUSVLN_VENV`、`VLNVERSE_VENV` 和 `PENG_ISAAC_ROOT`。
 默认配置已独立；不要继承指向旧项目的同名环境变量。`VLN_OUTPUT_ROOT` 可更改结果根目录。
+
+## 资源存放规则（用户明确要求，2026-11-04）
+
+以后下载的模型权重、数据集、场景、机器人资源等，统一存放在
+`/mnt/nas/gezuhao/shared_dataset/Resource_Peng/`，不得将实际资源下载到本仓库。
+权重放 `models/<模型名称>/`；数据集、场景、机器人资源放 `assets/<项目或数据集>/`。
+下载时显式指定上述目标路径；工具需要下载缓存时也将资源缓存指定到该目录下，
+避免默认缓存把权重或数据写入仓库。代码、配置和说明保留在仓库，实验产物放 `outputs/`，
+已有运行环境不迁移。不要覆盖已有同名资源，不得删除他人的文件、模型权重或数据集。
+27B 权重已迁至 `Resource_Peng/models/Qwen3.8-27B-FP8/`；
+仓库 `.runtime/models/Qwen3.8-27B-FP8` 仅保留兼容软链接，历史命令仍可用。

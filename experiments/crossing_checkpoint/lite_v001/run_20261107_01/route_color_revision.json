@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-11-07T03:38:42.031982+00:00",
+  "authorization": "User requires overhead route coloring from light to dark by original per-step suspicion score",
+  "scope": "Visualization only; prompt, inputs, inference source, worker processes and raw answers unchanged",
+  "file": "core/crossing_lite_review.js",
+  "before_sha256": "3aa5ce55a76d51a439a795e448ef9c033934135d9d5fb86b1c23928026f782b0",
+  "after_sha256": "3767e65692a90b6feb8ffca4612b1260344880801cdbf166700ec656b124d12d",
+  "source_snapshot": "outputs/crossing_checkpoint/lite_v001/run_20261107_01/export_revisions/score_route_colors_20261107_01/crossing_lite_review.js",
+  "manifest_before_sha256": "19e463d8373474ca037305eddb194258d1b6c3fb9a5ffa468c3f745ee0e9cbd4",
+  "palette": {
+    "1": "#bde5cf",
+    "2": "#8bd3ac",
+    "3": "#4fb982",
+    "4": "#20965e",
+    "5": "#006d3a",
+    "unknown": "#929aa4"
+  },
+  "segment_policy": "t -> t+1 colored using valid score at observation t before that action; unknown is gray dashed; stationary frames are colored dots"
+}

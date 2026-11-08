@@ -1,0 +1,880 @@
+{
+  "schema": 1,
+  "language": "zh-CN",
+  "created_at": "2026-11-06T04:41:27.266948+00:00",
+  "source_run_manifest_sha256": "5f5b2a806998cbfe3719610f438c3a8bb06f176c5cd2443e92e6054c7af4b8a7",
+  "translator": "Codex assistant; translation of recorded responses, no new model requests",
+  "policy": "Translate prose only; preserve all IDs, direction enums, evidence IDs, confidence and selections. Preserve original mistakes and contradictions. Translation does not constitute correctness review.",
+  "cases": {
+    "sample_01": {
+      "instruction_source_sha256": "f81327d007fefa053a6a4f948cbe26e964d8be075672cdcd413bdeb83ec38e92",
+      "instruction_zh": "右转，让电视和电视柜保持在你的右侧。向前穿过门口进入下一个房间。继续直行，经过右侧的一把棕色椅子和左侧的一盆植物，在窗前停下。",
+      "calls": {
+        "1": {
+          "source_response_sha256": "af43272d685a60bee1ecaeaf5e7d6a081139553d92c4de081fe3e2dc7b944ee9",
+          "answer_zh": {
+            "view_summary": "当前视角位于一处明亮、简约室内空间的分岔点，地面为浅色木地板，墙面为白色。机器人靠近带电视和搁架的电视墙，面向一条走廊，前方可以看到两个门口。这里似乎是起居区向带有分支的走廊过渡的位置。",
+            "branches": [
+              {
+                "id": "B1",
+                "direction": "front_left",
+                "landmark": "电视墙左侧的门口",
+                "destination_hypothesis": "左侧的房间或走廊；根据狭窄开口及其纵深，可能是卧室或浴室。",
+                "incoming": "no",
+                "evidence_ids": [
+                  "F0004",
+                  "F0007",
+                  "F0011"
+                ]
+              },
+              {
+                "id": "B2",
+                "direction": "front_right",
+                "landmark": "电视墙右侧的门口",
+                "destination_hypothesis": "右侧的房间或走廊；可见的开口及其纵深表明，可能是卧室或杂用空间。",
+                "incoming": "no",
+                "evidence_ids": [
+                  "F0004",
+                  "F0007",
+                  "F0011"
+                ]
+              },
+              {
+                "id": "B3",
+                "direction": "back",
+                "landmark": "带有电视和搁架的电视墙",
+                "destination_hypothesis": "较早画面中看到的、带沙发和茶几的起居区。",
+                "incoming": "yes",
+                "evidence_ids": [
+                  "F0000"
+                ]
+              }
+            ],
+            "coverage": "complete",
+            "uncertainties": [
+              "从当前画面无法确定B1和B2后方房间的具体用途。",
+              "前方走廊的纵深和全貌没有完全显露，但门口明显可以通行。"
+            ]
+          }
+        },
+        "2": {
+          "source_response_sha256": "9c5e8d46b0ea3857f1ad36edceaceb01909145c7e382cf63ff0c0216027e06e4",
+          "answer_zh": {
+            "status": "selected",
+            "wrong_branch_id": "B2",
+            "wrong_branch_evidence_ids": [
+              "F0012",
+              "F0015",
+              "F0018",
+              "F0021"
+            ],
+            "error_reason": "上次尝试在存档点右转，沿电视墙右侧的走廊前进，进入了带洗手台和镜子的空间。这不符合任务要求：经过右侧的棕色椅子和左侧的盆栽，然后在窗前停下。这条路线通向浴室或杂用区域，而非任务描述的房间。",
+            "instruction_evidence": [
+              "右转，让电视和电视柜保持在你的右侧。向前穿过门口进入下一个房间。继续直行，经过右侧的一把棕色椅子和左侧的一盆植物，在窗前停下。"
+            ],
+            "excluded_branch_ids": [
+              "B2"
+            ],
+            "selected_branch_id": "B1",
+            "selected_direction": "front_left",
+            "route_description": "向左前方行进，穿过电视墙左侧的门口，进入一个房间；预计在到达窗户之前，会遇到棕色椅子和盆栽。",
+            "selection_evidence_ids": [
+              "F0004",
+              "F0007",
+              "F0011"
+            ],
+            "confidence": "high",
+            "uncertainties": [
+              "当前画面看不到棕色椅子和盆栽的具体外观，但任务指令及B1的方向暗示它们位于该处。"
+            ]
+          }
+        }
+      }
+    },
+    "sample_02": {
+      "instruction_source_sha256": "4634a93797ea2b3dd8c3c68640fb2dbf58083103b50a7035d103baa2e32eec90",
+      "instruction_zh": "从走廊左转进入餐区。直行，让餐桌保持在右侧。继续进入厨房，在带水槽的台面前停下。",
+      "calls": {
+        "1": {
+          "source_response_sha256": "471306ff291a35d25d5805f92a081f8e646aa1e0109ffe98dfc5e552b7da004b",
+          "answer_zh": {
+            "view_summary": "当前画面显示一个明亮的开放式空间。左侧为餐区，有一张白色桌子、四把椅子和壁挂搁架。右侧可见部分白色沙发，说明那里可能是起居区。正前方延伸出一条长走廊，墙边挂有装框画作，远端是一扇关闭的门。地面光滑且反光，墙壁为白色，整体风格简约。",
+            "branches": [
+              {
+                "id": "B1",
+                "direction": "front",
+                "landmark": "两侧有装框画作、通向一扇关闭房门的走廊",
+                "destination_hypothesis": "通向其他房间或出口的走廊或入口区域。",
+                "incoming": "no",
+                "evidence_ids": [
+                  "F0030",
+                  "F0035",
+                  "F0040",
+                  "F0045"
+                ]
+              },
+              {
+                "id": "B2",
+                "direction": "left",
+                "landmark": "带四把椅子的餐桌和壁挂搁架",
+                "destination_hypothesis": "餐区，或与餐区相邻的厨房。",
+                "incoming": "no",
+                "evidence_ids": [
+                  "F0030",
+                  "F0035",
+                  "F0040",
+                  "F0045"
+                ]
+              },
+              {
+                "id": "B3",
+                "direction": "right",
+                "landmark": "带靠垫的白色沙发和一段矮白色隔断",
+                "destination_hypothesis": "起居区或休息区。",
+                "incoming": "no",
+                "evidence_ids": [
+                  "F0040",
+                  "F0045"
+                ]
+              }
+            ],
+            "coverage": "complete",
+            "uncertainties": [
+              "走廊尽头房间（B1）的确切用途未确认，可能是储物间、浴室或杂用空间。",
+              "厨房区域（B2）只露出一部分，从当前视角无法看到其完整范围和布局。",
+              "起居区（B3）仅部分可见，沙发后方空间的完整范围未确认。"
+            ]
+          }
+        },
+        "2": {
+          "source_response_sha256": "2edccebdd9c38a86f428c497104191f18354bd16a347c5a667936d56faa7f094",
+          "answer_zh": {
+            "status": "selected",
+            "wrong_branch_id": "B1",
+            "wrong_branch_evidence_ids": [
+              "F0046",
+              "F0048",
+              "F0049",
+              "F0051"
+            ],
+            "error_reason": "上次尝试沿走廊直行（B1），而没有按指令左转进入餐区。F0046至F0051显示机器人沿着挂有装框画作、尽头有门的走廊前进，这与B1相符，却与任务第一步“左转进入餐区”相矛盾。",
+            "instruction_evidence": [
+              "从走廊左转进入餐区。"
+            ],
+            "excluded_branch_ids": [
+              "B1"
+            ],
+            "selected_branch_id": "B2",
+            "selected_direction": "left",
+            "route_description": "从走廊左转进入餐区，那里可见一张白色餐桌、四把椅子和壁挂搁架。随后直行，让餐桌保持在右侧，向厨房前进。",
+            "selection_evidence_ids": [
+              "F0030",
+              "F0035",
+              "F0040",
+              "F0045"
+            ],
+            "confidence": "high",
+            "uncertainties": [
+              "从当前视角无法完整看到餐区之后厨房的具体布局。"
+            ]
+          }
+        }
+      }
+    },
+    "sample_03": {
+      "instruction_source_sha256": "9e793336cc26897d7212d8c1f88b6c3e29f4c54e046b9cb66fdd269449b6d8ac",
+      "instruction_zh": "从带衣柜的房间左转进入走廊。沿走廊直行，经过右侧的浴室和左侧通向卧室的敞开门口。穿过走廊尽头敞开的拱门，进入客厅。向前走，经过左侧的沙发和电视，朝左侧敞开的门口前进。从这个门口进入阳光房，然后左转。在客厅的沙发前停下，让大窗户保持在右侧。",
+      "calls": {
+        "1": {
+          "source_response_sha256": "b7c3681b3e5bb9f5ee3be03439efa487497a925d5530e48ddc99fa4430d89200",
+          "answer_zh": {
+            "view_summary": "当前视角位于一处走廊交汇点，可以看到通向不同房间的多个门口。走廊铺有浅灰色地砖，墙壁为白色。左侧可见卧室的一部分，包括床和窗帘。正前方可见一个带书桌、椅子和电视的房间，可能是书房或起居区。右侧门口通向一个墙面铺砖的空间，可能是浴室或杂用区域。机器人经过一连串转弯和前进动作，从当前正前方的反方向到达此处。",
+            "branches": [
+              {
+                "id": "B1",
+                "direction": "left",
+                "landmark": "能看到床和窗帘的敞开门口",
+                "destination_hypothesis": "卧室。",
+                "incoming": "no",
+                "evidence_ids": [
+                  "F0060",
+                  "F0065",
+                  "F0070"
+                ]
+              },
+              {
+                "id": "B2",
+                "direction": "front",
+                "landmark": "能看到书桌、椅子和电视的敞开门口",
+                "destination_hypothesis": "书房或起居区。",
+                "incoming": "no",
+                "evidence_ids": [
+                  "F0060",
+                  "F0065",
+                  "F0070",
+                  "F0075"
+                ]
+              },
+              {
+                "id": "B3",
+                "direction": "right",
+                "landmark": "墙面铺砖、可见部分水槽或固定设施的门口",
+                "destination_hypothesis": "浴室或杂用间。",
+                "incoming": "no",
+                "evidence_ids": [
+                  "F0060",
+                  "F0065",
+                  "F0070"
+                ]
+              },
+              {
+                "id": "B4",
+                "direction": "back",
+                "landmark": "当前位置后方延伸、此前经过的走廊",
+                "destination_hypothesis": "此前经过的走廊段。",
+                "incoming": "yes",
+                "evidence_ids": [
+                  "F0060",
+                  "F0065",
+                  "F0070"
+                ]
+              }
+            ],
+            "coverage": "complete",
+            "uncertainties": [
+              "正前方房间的具体用途尚未完全确认，可能是书房，也可能是起居区。",
+              "右侧房间是浴室还是杂用间，是根据墙砖和局部可见的固定设施推断的。"
+            ]
+          }
+        },
+        "2": {
+          "source_response_sha256": "fa1891743bba4efb62951bb5e9a441589946dcf6bcc614e442abd6827d331391",
+          "answer_zh": {
+            "status": "selected",
+            "wrong_branch_id": "B2",
+            "wrong_branch_evidence_ids": [
+              "F0076",
+              "F0078",
+              "F0080",
+              "F0082"
+            ],
+            "error_reason": "上次尝试直行进入带电视和书桌的房间（B2），这不是任务要求的路线。任务要求沿走廊前进，经过右侧浴室和左侧卧室，然后穿过尽头敞开的拱门进入客厅。进入正前方房间（B2）偏离了这条路线，不能通向客厅。",
+            "instruction_evidence": [
+              "沿走廊直行，经过右侧的浴室和左侧通向卧室的敞开门口。",
+              "穿过走廊尽头敞开的拱门，进入客厅。"
+            ],
+            "excluded_branch_ids": [
+              "B2"
+            ],
+            "selected_branch_id": "B1",
+            "selected_direction": "left",
+            "route_description": "左转，进入能看到床和窗帘的敞开门口，这条路通向卧室。这是正确路线，因为它符合沿走廊前进时经过左侧卧室敞开门口的指令。",
+            "selection_evidence_ids": [
+              "F0060",
+              "F0065",
+              "F0070"
+            ],
+            "confidence": "high",
+            "uncertainties": []
+          }
+        }
+      }
+    },
+    "sample_04": {
+      "instruction_source_sha256": "951cea9eea4ef1ff3f5f4d1f538235a0026d0c002f0a8199f23693f573944f46",
+      "instruction_zh": "右转进入走廊，左侧有一幅带绿色画框的画，右侧墙上挂着四幅装框画作。沿走廊直行，经过左侧的一盆高大植物和右侧的开放式厨房。穿过正前方的门口进入卧室。朝左侧的床走去，在床右侧的床头柜旁停下。",
+      "calls": {
+        "1": {
+          "source_response_sha256": "0fd0fab2526896d04f768a71b5091f62f23694d52d5fe73e4fd5ee1c208136a2",
+          "answer_zh": {
+            "view_summary": "当前视角位于一处转角交汇点，室内明亮简约，白墙配浅色木地板。左侧墙上可见一块带有两个圆形元素的竖向装饰板。右侧墙上排列着四幅装框画作。可以看到两个不同的门口：左侧门口通向一个能看到椅子和窗户的房间；右前方门口通向一条铺木地板的走廊，其后可瞥见卧室。根据接近此处的动作，机器人是从右前方走廊到达的。",
+            "branches": [
+              {
+                "id": "B1",
+                "direction": "left",
+                "landmark": "内部能看到椅子和窗户的门口",
+                "destination_hypothesis": "带椅子和窗户的小房间或休息区，可能是书房或休闲室。",
+                "incoming": "no",
+                "evidence_ids": [
+                  "F0052",
+                  "F0057"
+                ]
+              },
+              {
+                "id": "B2",
+                "direction": "front_right",
+                "landmark": "通向走廊的门口，里面能看到木地板及后方卧室的一部分",
+                "destination_hypothesis": "通向卧室或起居区的走廊。",
+                "incoming": "yes",
+                "evidence_ids": [
+                  "F0042",
+                  "F0047",
+                  "F0052",
+                  "F0057"
+                ]
+              }
+            ],
+            "coverage": "complete",
+            "uncertainties": [
+              "左侧房间（B1）的具体用途尚未确认，虽然可见椅子和窗户。",
+              "右前方走廊（B2）及其后卧室的全貌并未完全显露，但延伸路线明显可以通行。"
+            ]
+          }
+        },
+        "2": {
+          "source_response_sha256": "0ae2476a8e53b099033fee4b14943302eb86143de7ac8d8a30609e13a0aa4701",
+          "answer_zh": {
+            "status": "selected",
+            "wrong_branch_id": "B1",
+            "wrong_branch_evidence_ids": [
+              "F0058",
+              "F0060",
+              "F0062",
+              "F0064"
+            ],
+            "error_reason": "上次尝试进入左侧门口（B1），该处通向带椅子和窗户的房间。但任务要求右转进入一条走廊，左侧有一幅带绿色画框的画，右侧有四幅装框画作。错误路线进入了另一个房间，而不是指定的走廊。",
+            "instruction_evidence": [
+              "右转进入走廊，左侧有一幅带绿色画框的画，右侧墙上挂着四幅装框画作。"
+            ],
+            "excluded_branch_ids": [
+              "B1"
+            ],
+            "selected_branch_id": "B2",
+            "selected_direction": "front_right",
+            "route_description": "向右前方进入通向卧室的走廊，那里左侧有一幅带绿色画框的画，右侧有四幅装框画作，与任务描述一致。",
+            "selection_evidence_ids": [
+              "F0042",
+              "F0047",
+              "F0052",
+              "F0057"
+            ],
+            "confidence": "high",
+            "uncertainties": []
+          }
+        }
+      }
+    },
+    "sample_05": {
+      "instruction_source_sha256": "951710ee2ed2ecb7fb5a62e3b23d066fb051e3af7e9a9d6cb317601c4a43d31a",
+      "instruction_zh": "右转，经过左侧的白色衣柜，然后进入前方走廊。沿走廊直行，经过两侧敞开的门口。进入走廊尽头的大房间。左转，让带椅子的餐桌保持在右侧，在前方墙上的深色门前停下。",
+      "calls": {
+        "1": {
+          "source_response_sha256": "abcb0191a9044fe5120473afe9acc594d33eefe03d2084b585bc5cdd75b48435",
+          "answer_zh": {
+            "view_summary": "当前画面（F0018）显示一条通向卧室的狭窄走廊。卧室右侧有床，左侧有高大的黑色衣柜，远端窗户被白色窗帘遮住。地面是浅色木地板，墙壁为白色。从较早画面（F0003、F0008、F0013）可以看出，机器人从较宽的走廊或交汇点右转到达此处，左侧可见一个通向其他区域的门口。",
+            "branches": [
+              {
+                "id": "B1",
+                "direction": "left",
+                "landmark": "F0003和F0008中可见的门口",
+                "destination_hypothesis": "左侧的走廊或房间，可能是走廊或另一间卧室，如F0003和F0008所示。",
+                "incoming": "no",
+                "evidence_ids": [
+                  "F0003",
+                  "F0008"
+                ]
+              },
+              {
+                "id": "B2",
+                "direction": "front",
+                "landmark": "F0013和F0018中可见、带床和窗帘的卧室",
+                "destination_hypothesis": "带床及被窗帘遮挡的窗户的卧室区域。",
+                "incoming": "no",
+                "evidence_ids": [
+                  "F0013",
+                  "F0018"
+                ]
+              },
+              {
+                "id": "B3",
+                "direction": "right",
+                "landmark": "F0018中的墙边及相邻空间的局部",
+                "destination_hypothesis": "右侧可能延续为走廊或相邻房间；虽然看不清，但地面延伸到了墙边之外。",
+                "incoming": "no",
+                "evidence_ids": [
+                  "F0018"
+                ]
+              },
+              {
+                "id": "B4",
+                "direction": "back",
+                "landmark": "机器人到达时经过的路线，见F0013和F0008",
+                "destination_hypothesis": "机器人此前右转进入此区域时所在的走廊或交汇点。",
+                "incoming": "yes",
+                "evidence_ids": [
+                  "F0013",
+                  "F0008"
+                ]
+              }
+            ],
+            "coverage": "complete",
+            "uncertainties": [
+              "右侧空间（B3）的具体性质未完全显露，F0018中只能看到局部墙边和延续的地面。",
+              "F0003和F0008中，左侧门口（B1）门槛之后的空间没有完全显露，因此其具体用途（如卧室、浴室或走廊）不确定。"
+            ]
+          }
+        },
+        "2": {
+          "source_response_sha256": "17f457b0d1601dfe2dffb9b9edfd91d7d1b181f01609548ee4aff03c4db44329",
+          "answer_zh": {
+            "status": "selected",
+            "wrong_branch_id": "B2",
+            "wrong_branch_evidence_ids": [
+              "F0019",
+              "F0027"
+            ],
+            "error_reason": "上次尝试向前进入卧室（B2），这与指令相矛盾：右转，经过左侧白色衣柜，然后进入前方走廊。这个卧室并非任务所描述的走廊。",
+            "instruction_evidence": [
+              "右转，经过左侧的白色衣柜，然后进入前方走廊。",
+              "沿走廊直行，经过两侧敞开的门口。"
+            ],
+            "excluded_branch_ids": [
+              "B2"
+            ],
+            "selected_branch_id": "B1",
+            "selected_direction": "left",
+            "route_description": "从当前位置左转，进入F0003和F0008中可见的门口。该门口通向走廊，符合任务中右转、经过衣柜后进入走廊的要求。",
+            "selection_evidence_ids": [
+              "F0003",
+              "F0008"
+            ],
+            "confidence": "high",
+            "uncertainties": [
+              "左侧门口（B1）之后空间的具体性质未完全显露，但根据任务指令以及F0003和F0008中可见的走廊，它与走廊的判断相符。"
+            ]
+          }
+        }
+      }
+    },
+    "sample_06": {
+      "instruction_source_sha256": "f1152577e00ceb3013dcb7d0f148d9f18568a91fbe8d2d1ae4a6ea616184b7fb",
+      "instruction_zh": "从当前位置右转，经过左侧的装饰架和电视。继续直行，进入右侧门口，让嵌入式衣柜保持在左侧。向前进入铺有浅色地毯的开放走廊，经过右侧的墙面装饰画。沿走廊继续直行，经过左侧的厨房和餐区。右转进入下一个房间，穿过门口时经过左侧的一盆大型植物。直行进入客厅，经过右侧的电视柜，在带蓝色和黄色靠枕的沙发前停下。",
+      "calls": {
+        "1": {
+          "source_response_sha256": "89f1997a26edfe2084a5a2ff4b0fd4e48edd03a5f69094cc91166167f82f2d87",
+          "answer_zh": {
+            "view_summary": "当前画面（F0059）中，右侧是带洗手池、马桶和淋浴区的浴室，左侧有一个敞开的门口，通向走廊或相邻房间。浴室铺白色瓷砖，相邻区域铺木地板。洗手池上方的镜子映出了走廊的一部分。画面表明，这里可能是浴室和另一空间的交汇处。",
+            "branches": [
+              {
+                "id": "B1",
+                "direction": "left",
+                "landmark": "后方可见木地板的敞开门口",
+                "destination_hypothesis": "走廊或相邻房间，可能通向起居区或另一间卧室。",
+                "incoming": "no",
+                "evidence_ids": [
+                  "F0059"
+                ]
+              },
+              {
+                "id": "B2",
+                "direction": "front",
+                "landmark": "浴室洗手池和马桶区域",
+                "destination_hypothesis": "浴室内部，即淋浴和马桶区域。",
+                "incoming": "no",
+                "evidence_ids": [
+                  "F0059",
+                  "F0054"
+                ]
+              },
+              {
+                "id": "B3",
+                "direction": "front_right",
+                "landmark": "带窗户的淋浴区",
+                "destination_hypothesis": "浴室内的淋浴隔间。",
+                "incoming": "no",
+                "evidence_ids": [
+                  "F0059",
+                  "F0054"
+                ]
+              },
+              {
+                "id": "B4",
+                "direction": "back",
+                "landmark": "带床和床头柜的卧室",
+                "destination_hypothesis": "卧室，即此前所在的空间。",
+                "incoming": "yes",
+                "evidence_ids": [
+                  "F0044",
+                  "F0049"
+                ]
+              }
+            ],
+            "coverage": "complete",
+            "uncertainties": [
+              "B1（左侧门口）的确切去向未完全可见，可能通向走廊或另一个房间，但全貌被遮挡。",
+              "B3（右前方）是浴室内部的延续，而非独立房间，但它代表一个不同的导航选择，即淋浴区。"
+            ]
+          }
+        },
+        "2": {
+          "source_response_sha256": "0065554692a2c787aceccf3de2e279a44b393b7a2ddd52e8ed1ca38a0fee4b64",
+          "answer_zh": {
+            "status": "selected",
+            "wrong_branch_id": "B4",
+            "wrong_branch_evidence_ids": [
+              "F0044",
+              "F0049",
+              "F0060",
+              "F0067",
+              "F0075",
+              "F0082"
+            ],
+            "error_reason": "上次尝试返回了卧室（B4），而没有按指令从浴室交汇处继续向前。任务要求从当前位置右转，经过左侧的装饰架和电视；这意味着应从浴室向前进入走廊，而不是返回卧室。",
+            "instruction_evidence": [
+              "从当前位置右转，经过左侧的装饰架和电视。"
+            ],
+            "excluded_branch_ids": [
+              "B4"
+            ],
+            "selected_branch_id": "B1",
+            "selected_direction": "left",
+            "route_description": "向左穿过后方可见木地板的敞开门口，进入走廊或相邻房间。这符合从当前位置右转的指令——从浴室的视角看，即向左转入走廊——然后继续朝左侧的装饰架和电视前进。",
+            "selection_evidence_ids": [
+              "F0059"
+            ],
+            "confidence": "high",
+            "uncertainties": [
+              "B1（左侧门口）的确切去向未完全可见，可能通向走廊或另一个房间，但全貌被遮挡。"
+            ]
+          }
+        }
+      }
+    },
+    "sample_07": {
+      "instruction_source_sha256": "59225fc408430d529c8528ef73488337957ad87c23f5fc7f2c34b994906add25",
+      "instruction_zh": "向前走，让挂有电视的墙保持在左侧，带沙发的客厅保持在右侧。继续直行，经过左侧的装饰屏风，朝前方餐厅走去。到达开口处时，左转进入走廊。直行，经过右侧的画，进入卧室。继续向卧室内前进，让电视保持在左侧，在床前停下，床头柜位于床的右侧。",
+      "calls": {
+        "1": {
+          "source_response_sha256": "c0635a181e0a30b73a10d5f2d25c7f96c5b4a2dbe2c7a0803dfea7e6f15bd03e",
+          "answer_zh": {
+            "view_summary": "当前视角位于一处交汇点，走廊左侧通向卧室，右侧通向餐区。透过宽阔门口可以看到卧室，里面有一张铺深色盖毯的床和一个壁灯。餐区有圆桌、椅子和吊灯。走廊左侧墙上挂着一幅大型花卉画。地面从走廊的大理石过渡为卧室中颜色较浅的地板。",
+            "branches": [
+              {
+                "id": "B1",
+                "direction": "left",
+                "landmark": "通向卧室、能看到床和壁灯的门口",
+                "destination_hypothesis": "带床、床头柜和窗户的卧室。",
+                "incoming": "no",
+                "evidence_ids": [
+                  "F0063",
+                  "F0068",
+                  "F0073",
+                  "F0078"
+                ]
+              },
+              {
+                "id": "B2",
+                "direction": "front_right",
+                "landmark": "通向餐区的开放通道，可见圆桌和吊灯",
+                "destination_hypothesis": "通向厨房和起居空间的餐区。",
+                "incoming": "no",
+                "evidence_ids": [
+                  "F0063",
+                  "F0068",
+                  "F0073"
+                ]
+              },
+              {
+                "id": "B3",
+                "direction": "front",
+                "landmark": "向前延伸、铺大理石地面并带有墙柱的走廊",
+                "destination_hypothesis": "通向其他房间或区域的走廊或入口区域。",
+                "incoming": "unknown",
+                "evidence_ids": [
+                  "F0063",
+                  "F0068",
+                  "F0073"
+                ]
+              }
+            ],
+            "coverage": "complete",
+            "uncertainties": [
+              "餐区之后的具体布局没有完全显露，厨房或起居区的完整范围不确定。",
+              "从当前视角无法清楚识别来路，但来路可能就是机器人接近时经过的走廊。"
+            ]
+          }
+        },
+        "2": {
+          "source_response_sha256": "4bf93e04d920888abcf31104fd9836506165ac618450fdea8bbabfa6aba7e403",
+          "answer_zh": {
+            "status": "selected",
+            "wrong_branch_id": "B1",
+            "wrong_branch_evidence_ids": [
+              "F0079",
+              "F0082",
+              "F0084",
+              "F0087"
+            ],
+            "error_reason": "上次尝试到达开口后立即进入卧室，这与指令相矛盾：应先左转进入走廊，经过画作后再进入卧室。F0079至F0087这一系列画面显示机器人向卧室内部前进，表明走了错误支路。",
+            "instruction_evidence": [
+              "到达开口处时，左转进入走廊。",
+              "直行，经过右侧的画，进入卧室。"
+            ],
+            "excluded_branch_ids": [
+              "B1"
+            ],
+            "selected_branch_id": "B1",
+            "selected_direction": "left",
+            "route_description": "从当前存档点左转进入走廊，经过右侧的大型花卉画，然后直行，从可见门口进入卧室。",
+            "selection_evidence_ids": [
+              "F0063",
+              "F0068",
+              "F0073",
+              "F0078"
+            ],
+            "confidence": "high",
+            "uncertainties": [
+              "餐区之后的具体布局没有完全显露，厨房或起居区的完整范围不确定。"
+            ]
+          }
+        }
+      }
+    },
+    "sample_08": {
+      "instruction_source_sha256": "cd569e403a0f9d78c36858e7f960a7a4e234dc051abddacce736de3d3da0f1a1",
+      "instruction_zh": "沿走廊直行，经过右侧的卧室门口。继续向前，经过左侧的书房区域。经过左侧搁架时，右转进入餐厅。朝餐桌走去，让餐桌保持在左侧。然后右转进入厨房。直行进入厨房，在窗户正下方的水槽前停下。",
+      "calls": {
+        "1": {
+          "source_response_sha256": "0c43196f2c2a33aaa7771079b578ad46dd6ceaf89755ed1d5d52229b34099830",
+          "answer_zh": {
+            "view_summary": "当前画面（F0013）显示一间卧室，左侧有床和木质床头柜，远端有深色窗帘和窗户，右侧是一面空白白墙。接近时的动作包含多次左转后前进，说明机器人似乎从左侧进入了这个房间。空间光线充足，床上方可见吊灯。地面为浅色木地板，墙面为白色，床后方则是一面带图案的装饰墙。",
+            "branches": [
+              {
+                "id": "B1",
+                "direction": "front",
+                "landmark": "房间远端的窗户",
+                "destination_hypothesis": "玻璃门和外面可见的绿植暗示，这里可能是阳台或室外区域。",
+                "incoming": "no",
+                "evidence_ids": [
+                  "F0013",
+                  "F0009"
+                ]
+              },
+              {
+                "id": "B2",
+                "direction": "left",
+                "landmark": "床和带图案的装饰墙",
+                "destination_hypothesis": "卧室空间的延续，或床后的侧向通道，可能通向相邻区域或壁橱。",
+                "incoming": "yes",
+                "evidence_ids": [
+                  "F0013",
+                  "F0009",
+                  "F0000"
+                ]
+              },
+              {
+                "id": "B3",
+                "direction": "back_left",
+                "landmark": "较早画面中可见的两面墙之间的狭窄开口",
+                "destination_hypothesis": "根据接近路线及F0000画面推断，这是一条通向其他房间或区域的走廊。",
+                "incoming": "yes",
+                "evidence_ids": [
+                  "F0000",
+                  "F0004",
+                  "F0009"
+                ]
+              }
+            ],
+            "coverage": "complete",
+            "uncertainties": [
+              "窗户后方空间（B1）的具体性质未完全显露，可能是阳台或玻璃围合的露台。",
+              "房间左侧（B2）可能有壁橱或侧向通道，但F0013中看不到明确的开口。",
+              "左后方路线（B3）是根据接近路线及较早画面推断的；F0013中无法直接看到，但F0000和F0009提供了支持。"
+            ]
+          }
+        },
+        "2": {
+          "source_response_sha256": "ce9524d32b883e4397fd960ad8c4e0d12c0c70251e79c2a087b51d34cfbb27ac",
+          "answer_zh": {
+            "status": "selected",
+            "wrong_branch_id": "B2",
+            "wrong_branch_evidence_ids": [
+              "F0014",
+              "F0016",
+              "F0019",
+              "F0021"
+            ],
+            "error_reason": "上次尝试到达存档点后继续深入卧室，朝床和带图案的装饰墙移动，这与沿走廊继续向前的任务指令相矛盾。任务要求经过右侧卧室门口，再前往左侧的书房区域，而不是进入卧室。",
+            "instruction_evidence": [
+              "沿走廊直行，经过右侧的卧室门口。",
+              "继续向前，经过左侧的书房区域。"
+            ],
+            "excluded_branch_ids": [
+              "B2"
+            ],
+            "selected_branch_id": "B3",
+            "selected_direction": "back_left",
+            "route_description": "向左后方转，朝较早画面中两面墙之间的狭窄开口退出卧室，回到走廊。这符合经过卧室门口后沿走廊继续向前的任务要求。",
+            "selection_evidence_ids": [
+              "F0000",
+              "F0004",
+              "F0009"
+            ],
+            "confidence": "high",
+            "uncertainties": [
+              "窗户后方空间（B1）的具体性质未完全显露，可能是阳台或玻璃围合的露台。",
+              "房间左侧（B2）可能有壁橱或侧向通道，但F0013中看不到明确的开口。"
+            ]
+          }
+        }
+      }
+    },
+    "sample_09": {
+      "instruction_source_sha256": "f8b9091ccbda57d79abbb68b9e5007636431be4eb400e68a83f4009649f4ffe0",
+      "instruction_zh": "左转进入卧室，经过左侧的电视和右侧的床。在左侧带镜子的梳妆台前停下。",
+      "calls": {
+        "1": {
+          "source_response_sha256": "70dbb2ee4d16ad5fc24dd97847d32de7c0da46cb302e541e2b380d25749f8345",
+          "answer_zh": {
+            "view_summary": "当前画面（F0010）显示一个起居区，里面有沙发、茶几、电视柜，以及带窗帘的大镜子或窗户。空间明亮，采用现代设计。机器人从一条通向浴室的走廊经过一连串左转和前进动作到达此处，较早画面中可以看到浴室。当前位置似乎是通向起居区的走廊或入口末端，当前画面中没有立即可见的出口或分支。",
+            "branches": [
+              {
+                "id": "B1",
+                "direction": "left",
+                "landmark": "F0003和F0000中可见的木质门框",
+                "destination_hypothesis": "通向浴室或相邻房间的走廊。",
+                "incoming": "yes",
+                "evidence_ids": [
+                  "F0000",
+                  "F0003"
+                ]
+              },
+              {
+                "id": "B2",
+                "direction": "front_left",
+                "landmark": "通向沙发和茶几的开放空间",
+                "destination_hypothesis": "带座椅及影音设施的客厅区域。",
+                "incoming": "no",
+                "evidence_ids": [
+                  "F0007",
+                  "F0010"
+                ]
+              },
+              {
+                "id": "B3",
+                "direction": "front_right",
+                "landmark": "电视柜以及挂有屏幕的墙面",
+                "destination_hypothesis": "客厅的延伸部分或相邻影音区域。",
+                "incoming": "no",
+                "evidence_ids": [
+                  "F0007",
+                  "F0010"
+                ]
+              }
+            ],
+            "coverage": "complete",
+            "uncertainties": [
+              "可见客厅之外的具体布局未确认；F0010中看不到明确的门口或通道。",
+              "左侧支路（B1）是根据较早画面推断的；从F0010无法直接看到当前能否通行，但动作序列和此前图像提供了支持。"
+            ]
+          }
+        },
+        "2": {
+          "source_response_sha256": "10c4b5f9f8fe6ef7d68a291d1220458fbc7c927bcc7794506f0e359dfb5c9782",
+          "answer_zh": {
+            "status": "selected",
+            "wrong_branch_id": "B2",
+            "wrong_branch_evidence_ids": [
+              "F0011",
+              "F0013",
+              "F0015",
+              "F0017"
+            ],
+            "error_reason": "上次尝试向前进入客厅（B2），而没有按指令左转进入卧室。F0011至F0017显示机器人继续在起居区内移动，经过电视和沙发，这与进入卧室、经过左侧电视和右侧床的指令相矛盾。",
+            "instruction_evidence": [
+              "左转进入卧室，经过左侧的电视和右侧的床。"
+            ],
+            "excluded_branch_ids": [
+              "B2"
+            ],
+            "selected_branch_id": "B1",
+            "selected_direction": "left",
+            "route_description": "从当前位置左转，进入通向卧室的走廊，其线索是较早画面（F0000、F0003）中可见的木质门框。这条路线符合左转进入卧室的指令。",
+            "selection_evidence_ids": [
+              "F0000",
+              "F0003"
+            ],
+            "confidence": "high",
+            "uncertainties": [
+              "当前画面看不到B1门框之后的具体布局，但动作序列和此前图像支持该处可以到达。"
+            ]
+          }
+        }
+      }
+    },
+    "sample_10": {
+      "instruction_source_sha256": "5d6601bff21f229eec90d551af67dbe728512dd0d84ee9e05f4c21c7d72dc095",
+      "instruction_zh": "直行穿过门口进入客厅，经过左侧的沙发和茶几，以及右侧的电视。右转穿过下一个门口。继续直行进入卧室，让电视保持在左侧，在床和窗户前停下。",
+      "calls": {
+        "1": {
+          "source_response_sha256": "4d2ae04da00c7e4f6c7d317b286e6da92b45ae604f6dd1f5749824b589a96137",
+          "answer_zh": {
+            "view_summary": "当前画面（F0043）显示一个明亮的起居区，里面有沙发、茶几、扶手椅和电视柜。空间开阔，并向带窗帘的窗户延伸。机器人从较早画面（F0028、F0033、F0038）中可见的门口进入此房间，目前已完全位于起居区内。从这一视角看不到其他明显的门口或通道。",
+            "branches": [
+              {
+                "id": "B1",
+                "direction": "back",
+                "landmark": "通向起居区外的门口",
+                "destination_hypothesis": "机器人进入时经过的走廊或相邻房间。",
+                "incoming": "yes",
+                "evidence_ids": [
+                  "F0028",
+                  "F0033",
+                  "F0038"
+                ]
+              },
+              {
+                "id": "B2",
+                "direction": "front",
+                "landmark": "带白色窗帘的窗户",
+                "destination_hypothesis": "阳台或室外区域（如果可通行），或者起居空间向窗户方向的延续。",
+                "incoming": "no",
+                "evidence_ids": [
+                  "F0043"
+                ]
+              }
+            ],
+            "coverage": "complete",
+            "uncertainties": [
+              "窗户区域（B2）可能通向室外空间，但当前画面中没有明确的门或出入口证据。",
+              "当前画面中没有其他可见门口或通道，因此无法有把握地识别更多支路。"
+            ]
+          }
+        },
+        "2": {
+          "source_response_sha256": "08d5b15ee1b01eca0201d0b37bd141233778d2495c91a99107ea2cb8f54a86ce",
+          "answer_zh": {
+            "status": "selected",
+            "wrong_branch_id": "B2",
+            "wrong_branch_evidence_ids": [
+              "F0044",
+              "F0046",
+              "F0047",
+              "F0049"
+            ],
+            "error_reason": "上次尝试朝窗户方向前进（B2），但任务要求经过客厅后右转进入卧室。朝窗户移动不符合右转进入下一个门口的指令。",
+            "instruction_evidence": [
+              "右转穿过下一个门口。",
+              "继续直行进入卧室，让电视保持在左侧，在床和窗户前停下。"
+            ],
+            "excluded_branch_ids": [
+              "B2"
+            ],
+            "selected_branch_id": "B1",
+            "selected_direction": "back",
+            "route_description": "通过离开起居区的门口（B1）返回，重新调整朝向，对准右侧的下一个门口，以符合任务要求。",
+            "selection_evidence_ids": [
+              "F0028",
+              "F0033",
+              "F0038"
+            ],
+            "confidence": "high",
+            "uncertainties": [
+              "窗户区域（B2）可能通向室外空间，但当前画面中没有明确的门或出入口证据。"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

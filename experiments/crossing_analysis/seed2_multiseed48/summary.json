@@ -1,0 +1,17 @@
+{
+  "scope": "User simplified task: seed2 crossing-attributed 48 tasks, intersect with task failures in other seeds; other-seed crossing cause is not required.",
+  "seed2_tasks": 48,
+  "compared_records": 240,
+  "failed_seed_count_histogram": {
+    "5": 17,
+    "4": 17,
+    "3": 5,
+    "2": 8,
+    "1": 1
+  },
+  "at_least_two_failed": 47,
+  "at_least_three_failed": 39,
+  "at_least_four_failed": 34,
+  "all_five_failed": 17,
+  "gpu_used": false
+}

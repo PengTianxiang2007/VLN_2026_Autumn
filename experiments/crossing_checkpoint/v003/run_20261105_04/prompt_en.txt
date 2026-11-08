@@ -1,0 +1,90 @@
+You observe a walking robot's indoor navigation, one action at a time.
+Your ONLY task is to detect route-choice nodes (crossings) and describe the observable choices.
+
+A crossing is ONE location where the robot has at least TWO distinct onward choices
+that are directly visible or reasonably inferred from visual cues to be traversable
+and lead toward DIFFERENT spatial areas,
+EXCLUDING the route the robot arrived from. Areas can be separate rooms, a living
+area, a kitchen, a bathroom, or distinct corridor branches. The essential question
+is: "At this node, can the robot choose between going toward different areas?"
+
+Count a branch when the supplied views provide enough evidence to reasonably infer
+a traversable route toward another area, EVEN IF ONLY A SMALL PART is visible due
+to the viewing angle or occlusion. A partly exposed opening, a glimpse of a side
+passage, or floor space continuing behind a wall can support this inference.
+You do NOT need to see the full doorway, the full passage, or the destination room.
+A clearly visible forward route plus a partly visible but inferable side branch
+toward another area can satisfy the crossing definition. Do not reject a branch
+merely because its visual evidence is small or inconspicuous. A branch inferred
+from such visible cues is supported evidence, not an invented unseen exit.
+
+Use a slightly more permissive evidence threshold: one concrete visual cue can
+support a plausible second route toward another area, unless the supplied views
+show it to be blocked, the incoming route, or a duplicate of the same route.
+When that cue makes a second route plausible but not fully verified, prefer
+crossing with confidence=medium over not_crossing or uncertain.
+Being inside a room or open area is not itself a reason to reject a crossing;
+assess the onward choices at that location.
+
+The exact room name need not be known: two
+separate rooms can count even if both are bedrooms or their functions are unknown.
+Describe the visible cue and the supported inference instead of guessing the
+name or contents of an unseen room. Different
+direction words or different room labels alone do not establish different branches.
+
+Use this decision procedure:
+1. Identify the candidate node and the incoming route from the supplied views and
+   executed actions. Do not count the incoming route again as an onward choice.
+2. Identify the choices available FROM THAT SAME NODE. For each choice, describe
+   the passage, the area it leads toward, and the visual evidence supporting it.
+   Do not combine entrances encountered at different positions along a corridor
+   into one node. Do not count the passage before a doorway and the room beyond
+   that same doorway as two choices.
+3. If at least two supported choices lead toward different areas, identify a
+   crossing, including when one or more choices are inferred from partial visual
+   evidence. If the observations clearly establish fewer than two onward choices,
+   report not_crossing. Use uncertain only when the available cues do not support
+   a reasonable inference about the number, traversability, or distinctness of
+   the choices. Limited visibility alone is not a reason to output uncertain.
+4. Locate the node relative to the robot. Use here only when those choices are
+   available from the robot's current position. A branching node visible farther
+   along a single approach passage is ahead, not here.
+
+Set confidence according to how strongly the observed cues support the judgment.
+Do not automatically set confidence=low merely because only part of a branch is
+visible when that evidence is enough to reasonably infer the branch.
+
+Example: at a corridor opening, the robot can go forward toward the kitchen,
+left toward the living room, or right toward the bathroom. This location is a
+crossing. Continuing straight toward one area and entering a side doorway toward
+another area also forms a crossing. The robot does not have to turn, and the node
+does not have to look like a T-junction or a crossroads.
+
+A single corridor, a forced bend, or a doorway with only one onward choice is
+not a crossing. Closed doors, mirrors, tiny furniture gaps, and completely unseen
+exits with no supporting visual cues are not available choices. Merely walking on either side of furniture
+and returning to the same area is not enough to establish a crossing: the choices
+must lead toward different areas supported by the observations.
+
+Images are labelled with navigation-action indices and ordered from past to current. The
+last image is the current observation BEFORE the next action. Listed actions have ALREADY
+been executed. Past views can establish the incoming route or a temporarily occluded exit,
+but an exit already passed is not a choice at the current location. The camera turns with
+the robot: interpret left/front/right in the CURRENT view. If evidence is insufficient,
+say uncertain. The first frame has no established incoming route; explicitly acknowledge it.
+
+Distinguish a crossing HERE (the robot is at a location where it can choose routes), AHEAD
+(visible but not reached), and BEHIND (already passed). Keep tracking the same physical
+decision area through turns. Compare against the active visual record, if supplied. A
+different view of the same junction is not a new crossing. Only mark same_place=no when
+the observations support a different location.
+
+Do not judge instruction progress, navigation success or route correctness. Do not propose
+movement, correction or recovery. Return ONLY a JSON object matching the requested schema.
+Use concise Chinese descriptions; enum values remain English. List concrete visual evidence
+for each route, and cite only image indices actually provided in this request.
+In each branch's landmark field, state the destination area or its visible description
+together with the supporting entrance or passage. In reason, briefly state whether
+the supported branch-area pairs satisfy the crossing definition.
+For a partly visible branch, describe the actual visible cue and state that the
+branch or destination area is inferred; do not describe unseen details as observed facts.

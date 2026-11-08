@@ -1,0 +1,88 @@
+{
+  "completed_at": "2026-11-05T04:49:20.113500+00:00",
+  "template_id": "crossing-review-v1",
+  "git_head": "0a805dfcf4457f80300822abb4eff7cabba43aae",
+  "source_sha256": {
+    "AGENTS.md": "f52b9a0d280f0aa928ae03e003bf0b05e88c6c96dbabfa0304f9648f3e36b398",
+    "core/crossing_campaign_template.html": "09fa87d61ad0e9cbd5576718b9bd1fdc56f6474b21ee98547cdeb6cf8fd5462e",
+    "core/crossing_campaign_panel.html": "a5549388f1cf241ee6746cb2b8ec279f8eeaaa922353ebd065763af5c955d961",
+    "core/crossing_campaign.js": "49bd44ac0aa408afe60abeb2c701105000e90c5ac77cb40642102e13151c80f8",
+    "core/crossing_visualization_template.json": "b83d7428d9f14be90d4b81a3581edc2ca84e0b8b6d7d7f1796f66e86a9ef7cc4",
+    "scripts/export_crossing_campaign.py": "ed3b7d587ea64d6609151bba4b5c86cf260c70ab20ffeecaefb6060d5a3d4d88",
+    "scripts/export_crossing_iteration.py": "d4c36af69ef89b3efcb0b0a892332fef198a05098d2efaa5cac88342040246a2",
+    "scripts/build_crossing_review.py": "61782e737601ed9ff344c54eb927c296bde6290655e4ef48fe877a22b349fbc4",
+    "scripts/test_crossing_single_gpu.py": "0ebbee5ec68f0d16ce5e30dbe3be1c39f54a0040aaf58378b4a8b36890d4b013",
+    "scripts/run_crossing_development.py": "1f92e26c5da93bbf1472d9b785bc10877728628505aa82678ae10c9bad1fa526",
+    "scripts/check_crossing_campaign.cjs": "8ef3dcd0ce3ee388055ccf62d2048cbb865e64680f6e3bc5e8cc8deb5860b2b8",
+    "docs/CROSSING_VISUALIZATION_TEMPLATE.md": "cd1e17a56cd24a02b444a3df9a9c7028e4b642201f07c001bd965b4f2bc6cb22",
+    "docs/CROSSING_CHECKPOINT.md": "31558672b34a8deed79dffd35c6afb6debe242ad5ee7fd6681af5541d963f9d3",
+    "docs/CODE_LAYOUT.md": "dad28d82f5f3322c0ba5120b252023fdd92806d41eb02a7d11754e2f38cb07f0",
+    "docs/STATUS.md": "15d941ed6266b780fe1ae870c6b7c1b2e9efed63d23c21823ff3a4a14c81a4b6",
+    "README_CROSSING_CHECKPOINT.md": "b5f5db889dbc168cd7adbeff3da7e36dbbec98a2e8c51300a5f45ccf24bc03bc",
+    "experiments/README.md": "b9c154287358eba30863fb651b1b2a891f32d75a790b77d7dafe9b718ad7de84",
+    "experiments/crossing_checkpoint/README.md": "1eff6205e7bc0608772acacc21c9f9722d068fa79d76beaaa605810127430f5f",
+    "experiments/crossing_checkpoint/visualization_template/README.md": "60a8a2e9b9a3b9b6cef544aa0a3ca3a1640bd74016cd6135add16a897a5223f1",
+    "experiments/crossing_checkpoint/v002/visualization_export/README.md": "2fdba7752842c044fe30512f934109b14d515893b94be688266571c38c3a135c"
+  },
+  "cpu_checks": {
+    "existing_crossing_tests_passed": 16,
+    "python_syntax_passed": true,
+    "existing_export_overwrite_rejected": true
+  },
+  "browser": {
+    "passed": true,
+    "browser": "133.0.6943.0",
+    "runs": 4,
+    "case_version_views": 30,
+    "unique_episodes": 20,
+    "causal_observations": 1791,
+    "event_jumps": 76,
+    "annotation_jumps": 196,
+    "bookmarks": 7,
+    "same_frame_version_switch": true,
+    "isolated_notes_and_export": true,
+    "play_pause_seek_keyboard": true,
+    "layer_toggles": true,
+    "image_enlargement": true,
+    "mobile_no_overflow": true,
+    "embedded_chinese_font_loaded": true,
+    "external_requests": 0,
+    "page_errors": 0,
+    "html_sha256": "b4b34f29d8acdc211d564ac2d40c3e579b76dd38efaace01e2e2e18c17a55188"
+  },
+  "single_and_two_version_browser": [
+    {
+      "name": "single_iteration_02",
+      "versions": 1,
+      "passed": true,
+      "actual_drag_both_sliders": true,
+      "dynamic_counts": true,
+      "absent_validation_and_bookmarks_hidden": true,
+      "external_requests": 0,
+      "page_errors": 0
+    },
+    {
+      "name": "two_iterations",
+      "versions": 2,
+      "passed": true,
+      "actual_drag_both_sliders": true,
+      "dynamic_counts": true,
+      "absent_validation_and_bookmarks_hidden": true,
+      "external_requests": 0,
+      "page_errors": 0
+    }
+  ],
+  "original_html_and_four_payload_hashes_unchanged": true,
+  "automatic_entrypoint_verified_on_existing_baseline_and_r01": true,
+  "gpu_completion_hooks_live_tested": false,
+  "model_or_simulation_started": false,
+  "initial_failed_export": "single_iteration",
+  "initial_failure": "Python3.9 math.dist differed by one ULP; kept strict equality and reused original Python3.10 audit interpreter.",
+  "successful_export_directories": [
+    "single_iteration_02",
+    "two_iterations",
+    "four_versions"
+  ],
+  "local_links_checked": 53,
+  "missing_links": []
+}

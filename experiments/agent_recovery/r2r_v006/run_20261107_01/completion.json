@@ -1,0 +1,25 @@
+{
+  "phase": "complete",
+  "supervisor_pid": 2570826,
+  "started_at": "2026-11-07T16:41:56.622603+00:00",
+  "model": "deepseek-flash",
+  "concurrency": 7,
+  "expected_calls": 7,
+  "completed": 7,
+  "credential_on_disk": false,
+  "navigation_executed": false,
+  "simulation_started": false,
+  "updated_at": "2026-11-07T16:42:04.566564+00:00",
+  "worker_pids": [
+    2570830,
+    2570831,
+    2570832,
+    2570833,
+    2570834,
+    2570835,
+    2570837
+  ],
+  "semantic_review": "pending",
+  "workers_exited": true,
+  "finished_at": "2026-11-07T16:42:04.566548+00:00"
+}

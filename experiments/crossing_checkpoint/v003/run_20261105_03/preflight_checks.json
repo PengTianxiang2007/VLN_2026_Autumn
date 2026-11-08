@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-05T07:40:02.213429+00:00",
+  "prompt_sha256_verified": true,
+  "only_prompt_and_version_changed_in_detector": true,
+  "inputs_cases_maps_identical_to_previous_three_case_run": true,
+  "planned_calls": 168,
+  "inference_stride": 1,
+  "export_destination": "exports/final",
+  "previous_protocol_preserved": true
+}

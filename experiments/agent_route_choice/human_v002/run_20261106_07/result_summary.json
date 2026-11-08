@@ -1,0 +1,85 @@
+{
+  "summary": {
+    "samples": 10,
+    "response_count": 20,
+    "valid_samples": 9,
+    "stage2_valid": 10,
+    "selected": 10,
+    "insufficient": 0,
+    "no_second": 0,
+    "new_stage1_calls": 0,
+    "stage2_responses": 10
+  },
+  "choices": [
+    {
+      "sample_id": "sample_01",
+      "wrong": null,
+      "selected": "B1",
+      "direction": "front",
+      "confidence": "medium"
+    },
+    {
+      "sample_id": "sample_02",
+      "wrong": "B1",
+      "selected": "B2",
+      "direction": "right",
+      "confidence": "high"
+    },
+    {
+      "sample_id": "sample_05",
+      "wrong": "B1",
+      "selected": "B2",
+      "direction": "right",
+      "confidence": "medium"
+    },
+    {
+      "sample_id": "sample_06",
+      "wrong": null,
+      "selected": "B3",
+      "direction": "right",
+      "confidence": "medium"
+    },
+    {
+      "sample_id": "sample_07",
+      "wrong": "B1",
+      "selected": "B2",
+      "direction": "front",
+      "confidence": "high"
+    },
+    {
+      "sample_id": "sample_08",
+      "wrong": "B3",
+      "selected": "B1",
+      "direction": "front",
+      "confidence": "high"
+    },
+    {
+      "sample_id": "sample_09",
+      "wrong": "B1",
+      "selected": "B2",
+      "direction": "right",
+      "confidence": "medium"
+    },
+    {
+      "sample_id": "sample_10",
+      "wrong": "B2",
+      "selected": "B1",
+      "direction": "front_right",
+      "confidence": "high"
+    },
+    {
+      "sample_id": "sample_11",
+      "wrong": "B2",
+      "selected": "B1",
+      "direction": "left",
+      "confidence": "medium"
+    },
+    {
+      "sample_id": "sample_23",
+      "wrong": "B2",
+      "selected": "B1",
+      "direction": "front",
+      "confidence": "medium"
+    }
+  ]
+}

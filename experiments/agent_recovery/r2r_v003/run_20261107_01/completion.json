@@ -1,0 +1,18 @@
+{
+  "phase": "complete",
+  "supervisor_pid": 1908790,
+  "gpu": 0,
+  "started_at": "2026-11-07T10:06:04.754689+00:00",
+  "expected_calls": 7,
+  "completed": 7,
+  "navigation_executed": false,
+  "simulation_started": false,
+  "updated_at": "2026-11-07T10:13:32.768486+00:00",
+  "server_pid": 1909055,
+  "base_url": "http://127.0.0.1:46559/v1",
+  "current_sample": "sample_34",
+  "semantic_review": "pending",
+  "instructions_file": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/agent_recovery/r2r_v003/run_20261107_01/instructions.json",
+  "gpu_released": true,
+  "finished_at": "2026-11-07T10:13:32.768480+00:00"
+}

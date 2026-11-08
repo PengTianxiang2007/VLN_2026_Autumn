@@ -1,0 +1,131 @@
+{
+  "at": "2026-11-06T15:03:13.786191+00:00",
+  "scope": "Model loading and complete two-call transport/request validation; protocol validity separately reported",
+  "sample_id": "sample_01",
+  "checks": [
+    {
+      "call": 1,
+      "exact_request_hash_verified": true,
+      "actual_first_answer_passed": false,
+      "finish_reason": "stop"
+    },
+    {
+      "call": 2,
+      "exact_request_hash_verified": true,
+      "actual_first_answer_passed": true,
+      "finish_reason": "stop"
+    }
+  ],
+  "first_sample_status": {
+    "phase": "failed",
+    "error_type": "ValueError",
+    "error": "Expected a bounded text field",
+    "finished_at": "2026-11-06T15:01:27.191441+00:00"
+  },
+  "first_sample_raw_decision": "insufficient_evidence",
+  "first_sample_empty_route_description": false,
+  "snapshot_status": {
+    "phase": "running",
+    "supervisor_pid": 44492,
+    "started_at": "2026-11-06T14:49:26.771886+00:00",
+    "gpu": 0,
+    "expected_samples": 34,
+    "expected_max_calls": 68,
+    "html_generated": false,
+    "semantic_accuracy": "pending_review",
+    "updated_at": "2026-11-06T15:02:51.747136+00:00",
+    "server_pid": 44834,
+    "base_url": "http://127.0.0.1:59403/v1",
+    "current_sample": "sample_04",
+    "processed_samples": 3,
+    "protocol_valid_samples": 1,
+    "saved_responses": 6,
+    "samples_with_two_responses": 3,
+    "raw_selected": 0,
+    "raw_insufficient": 3,
+    "network_attempts": 6,
+    "network_errors": 0
+  },
+  "supervisor": {
+    "pid": 44492,
+    "ppid": 1,
+    "session": 44492,
+    "start": "124555525",
+    "state": "S",
+    "cmdline": "/usr/bin/python3 -B scripts/run_human_route_choice.py --prepared outputs/agent_route_choice/human_v001/preparation_20261106_01 --output /mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/agent_route_choice/human_v001/run_20261106_01/qwen27b --registration /mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/experiments/agent_route_choice/human_v001/run_20261106_01/registration.json --gpu 0 --allow-shared-gpu ",
+    "cwd": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn"
+  },
+  "server": {
+    "pid": 44834,
+    "ppid": 44492,
+    "session": 44834,
+    "start": "124556939",
+    "state": "S",
+    "cmdline": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/crossing_vllm27/bin/python -B -m vllm.entrypoints.openai.api_server --model /mnt/nas/gezuhao/shared_dataset/Resource_Peng/models/Qwen3.8-27B-FP8 --served-model-name route-choice-human34-qwen27b --host 127.0.0.1 --port 59403 --dtype bfloat16 --tensor-parallel-size 1 --cpu-offload-gb 0 --gpu-memory-utilization 0.75 --max-model-len 32768 --max-num-seqs 1 --max-num-batched-tokens 4096 --limit-mm-per-prompt {\"image\":8,\"video\":0} --mm-processor-kwargs {\"max_pixels\":307200} --enforce-eager --no-enable-log-requests --seed 20261106 --reasoning-parser qwen3 ",
+    "cwd": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn"
+  },
+  "gpu": {
+    "time": "2026-11-06T15:03:14.019388+00:00",
+    "gpus": [
+      {
+        "index": 0,
+        "total_mib": 49140,
+        "used_mib": 41425,
+        "free_mib": 7095,
+        "utilization": 0
+      },
+      {
+        "index": 1,
+        "total_mib": 49140,
+        "used_mib": 34726,
+        "free_mib": 13794,
+        "utilization": 100
+      },
+      {
+        "index": 2,
+        "total_mib": 49140,
+        "used_mib": 35966,
+        "free_mib": 12554,
+        "utilization": 100
+      },
+      {
+        "index": 3,
+        "total_mib": 49140,
+        "used_mib": 32614,
+        "free_mib": 15906,
+        "utilization": 100
+      },
+      {
+        "index": 4,
+        "total_mib": 49140,
+        "used_mib": 32590,
+        "free_mib": 15930,
+        "utilization": 100
+      },
+      {
+        "index": 5,
+        "total_mib": 49140,
+        "used_mib": 29196,
+        "free_mib": 19324,
+        "utilization": 0
+      },
+      {
+        "index": 6,
+        "total_mib": 49140,
+        "used_mib": 29012,
+        "free_mib": 19508,
+        "utilization": 50
+      },
+      {
+        "index": 7,
+        "total_mib": 49140,
+        "used_mib": 32614,
+        "free_mib": 15906,
+        "utilization": 100
+      }
+    ],
+    "compute_apps": "3727957, GPU-6c2d66a6-4fd9-ec44-7286-8a1104d21fe7, 3990, /mnt/nas/gezuhao/huangyinuo/code/aspire/aspire/.venv-sam3/bin/python\n56852, GPU-6c2d66a6-4fd9-ec44-7286-8a1104d21fe7, 37420, VLLM::EngineCore\n3065229, GPU-81f2bbf7-8c36-b090-a97f-a70f6c91976b, 25508, /mnt/nas/gezuhao/chenziyuan/code/ego-prediction/gazeflow-novelty/04-multi-resolution/05-multilevel-resolution-routing/runtime/env/bin/python\n47697, GPU-81f2bbf7-8c36-b090-a97f-a70f6c91976b, 8586, /mnt/nas/gezuhao/wanghaoyuan/openpi/.venv/bin/python\n3065232, GPU-408b9b03-b522-bbab-b534-58e867943180, 35954, /mnt/nas/gezuhao/chenziyuan/code/ego-prediction/gazeflow-novelty/04-multi-resolution/05-multilevel-resolution-routing/runtime/env/bin/python\n3280622, GPU-7208258d-5b7f-a531-a9d8-94f3e7fbcd4e, 32602, /mnt/nas/gezuhao/chenziyuan/code/ego-prediction/gazeflow-novelty/03-motion-source-conditioning/02-head-gaze-joint-attention/runtime/env/bin/python\n2620982, GPU-1e8fc262-fe93-4baa-7361-3d247c4a2bb4, 32574, /mnt/nas/gezuhao/chenziyuan/code/ego-prediction/gazeflow-novelty/03-motion-source-conditioning/01-head-motion-cross-attention/wotrans/runtime/env/bin/python\n3061868, GPU-fbcbcabe-1883-0673-39e1-87a057769c9d, 29174, /mnt/nas/gezuhao/chenziyuan/code/ego-prediction/gazeflow-novelty/04-multi-resolution/07-token-preserving-coordinate-decoder/runtime/env-l20-4/bin/python\n3061869, GPU-c7283a70-c8a4-a841-c829-7b701719ae64, 28990, /mnt/nas/gezuhao/chenziyuan/code/ego-prediction/gazeflow-novelty/04-multi-resolution/07-token-preserving-coordinate-decoder/runtime/env-l20-4/bin/python\n3280623, GPU-a5b0d78d-f77f-3f27-6770-2b5fb0579196, 32602, /mnt/nas/gezuhao/chenziyuan/code/ego-prediction/gazeflow-novelty/03-motion-source-conditioning/02-head-gaze-joint-attention/runtime/env/bin/python\n"
+  },
+  "html_generated": false,
+  "no_further_active_monitoring": true
+}

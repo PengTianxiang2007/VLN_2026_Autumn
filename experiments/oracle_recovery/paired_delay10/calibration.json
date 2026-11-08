@@ -1,0 +1,252 @@
+{
+  "kujiale_0208_21_4": {
+    "crossing_id": "C04",
+    "source_video": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/reproduction/streamvln_scene250_5seeds_20261101_v2/visualization/seed_2/kujiale_0208/kujiale_0208_21_4/attempt_1793601458920107569/navigation.mp4",
+    "source_steps_sha256": "fab4461589fcbe7bc30bbeb207da8086f9b8b905ec1bcdd74043d1b396d681bf",
+    "evidence": "Assistant visually inspected 12-frame historical RGB contact sheet; anchors are examples, never trigger frame numbers.",
+    "stages": {
+      "onset": {
+        "semantic_criterion": "错选餐厅北侧走廊，而非左侧客厅窗方向",
+        "historical_example_action": 11
+      },
+      "short": {
+        "semantic_criterion": "越过餐桌岔口，朝窄走廊/门洞方向实际推进",
+        "historical_example_action": 16
+      },
+      "medium": {
+        "semantic_criterion": "沿窄走廊持续深入，洗手台/镜子一带取代客厅窗路线",
+        "historical_example_action": 25
+      },
+      "long": {
+        "semantic_criterion": "进入走廊远端卧室门口，床或卧室内部可见",
+        "historical_example_action": 37
+      }
+    },
+    "live_rule": "Confirm actual movement into wrong branch using current/history RGB and map. If live route differs, document homologous semantic evidence or leave stage untriggered. Do not wait past native terminal."
+  },
+  "kujiale_0240_8_4": {
+    "crossing_id": "C02",
+    "source_video": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/reproduction/streamvln_scene250_5seeds_20261101_v2/visualization/seed_2/kujiale_0240/kujiale_0240_8_4/attempt_1793604675966400364/navigation.mp4",
+    "source_steps_sha256": "accb19cf39727c08336f60f74630809ec5c9edf03607a6e713f002a24f591b03",
+    "evidence": "Assistant visually inspected 12-frame historical RGB contact sheet; anchors are examples, never trigger frame numbers.",
+    "stages": {
+      "onset": {
+        "semantic_criterion": "错过厨房分支，继续朝非厨房通道移动",
+        "historical_example_action": 45
+      },
+      "short": {
+        "semantic_criterion": "餐桌退到身后，进入窄走廊口",
+        "historical_example_action": 49
+      },
+      "medium": {
+        "semantic_criterion": "已沿挂画/墙板通道深入，厨房和水槽方向留在后方",
+        "historical_example_action": 54
+      },
+      "long": {
+        "semantic_criterion": "逼近通道末端门，当前场景明确不是厨房水槽",
+        "historical_example_action": 58
+      }
+    },
+    "live_rule": "Confirm actual movement into wrong branch using current/history RGB and map. If live route differs, document homologous semantic evidence or leave stage untriggered. Do not wait past native terminal."
+  },
+  "kujiale_0232_23_2": {
+    "crossing_id": "C03",
+    "source_video": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/reproduction/streamvln_scene250_5seeds_20261101_v2/visualization/seed_2/kujiale_0232/kujiale_0232_23_2/attempt_1793600534960854620/navigation.mp4",
+    "source_steps_sha256": "0a59d7a56330d973fbd2b2b1d1e7b5cb0bd30dbab06cbb7883fb9a2d460f3970",
+    "evidence": "Assistant visually inspected 12-frame historical RGB contact sheet; anchors are examples, never trigger frame numbers.",
+    "stages": {
+      "onset": {
+        "semantic_criterion": "在客厅岔口继续走向卧室门而非客厅",
+        "historical_example_action": 75
+      },
+      "short": {
+        "semantic_criterion": "跨过错误卧室门槛，床和电视空间可见",
+        "historical_example_action": 79
+      },
+      "medium": {
+        "semantic_criterion": "沿床边深入房间，客厅分支已在身后",
+        "historical_example_action": 87
+      },
+      "long": {
+        "semantic_criterion": "逼近卧室窗/椅子一带，床确认错误房间语义",
+        "historical_example_action": 95
+      }
+    },
+    "live_rule": "Confirm actual movement into wrong branch using current/history RGB and map. If live route differs, document homologous semantic evidence or leave stage untriggered. Do not wait past native terminal."
+  },
+  "kujiale_0234_34_4": {
+    "crossing_id": "C02",
+    "source_video": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/reproduction/streamvln_scene250_5seeds_20261101_v2/visualization/seed_2/kujiale_0234/kujiale_0234_34_4/attempt_1793619725099128396/navigation.mp4",
+    "source_steps_sha256": "27e3b16fde4843e58f52fa7dbcfa728921df4ac9ceb5fc3ae0c72bb0d9dc21c9",
+    "evidence": "Assistant visually inspected 12-frame historical RGB contact sheet; anchors are examples, never trigger frame numbers.",
+    "stages": {
+      "onset": {
+        "semantic_criterion": "从公共走廊错选通往东北卧室的方向",
+        "historical_example_action": 57
+      },
+      "short": {
+        "semantic_criterion": "通过错误门口，朝带床的空间实际推进",
+        "historical_example_action": 62
+      },
+      "medium": {
+        "semantic_criterion": "进入带床和电视的东北卧室并沿床侧继续走",
+        "historical_example_action": 75
+      },
+      "long": {
+        "semantic_criterion": "到床头/床侧深处，仍未走向南侧目标房间",
+        "historical_example_action": 89
+      }
+    },
+    "live_rule": "Confirm actual movement into wrong branch using current/history RGB and map. If live route differs, document homologous semantic evidence or leave stage untriggered. Do not wait past native terminal."
+  },
+  "kujiale_0123_fix_30_2": {
+    "crossing_id": "C02",
+    "source_video": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/reproduction/streamvln_scene250_5seeds_20261101_v2/visualization/seed_2/kujiale_0123_fix/kujiale_0123_fix_30_2/attempt_1793593675291004146/navigation.mp4",
+    "source_steps_sha256": "57092ce1ae4a8d0b9071a8b92e1eca48bcf8f2c06132ed70f1e437a0d6737d9a",
+    "evidence": "Assistant visually inspected 12-frame historical RGB contact sheet; anchors are examples, never trigger frame numbers.",
+    "stages": {
+      "onset": {
+        "semantic_criterion": "偏入侧卧室而非沿长走廊去开放房间",
+        "historical_example_action": 18
+      },
+      "short": {
+        "semantic_criterion": "已向床尾方向推进，错误卧室布局完整可见",
+        "historical_example_action": 22
+      },
+      "medium": {
+        "semantic_criterion": "继续接近床脚/床侧，未回到长走廊",
+        "historical_example_action": 25
+      },
+      "long": {
+        "semantic_criterion": "在床前停滞或继续观察卧室，持续缺少目标开放区域/餐桌；仍须在原STOP之前",
+        "historical_example_action": 30
+      }
+    },
+    "live_rule": "Confirm actual movement into wrong branch using current/history RGB and map. If live route differs, document homologous semantic evidence or leave stage untriggered. Do not wait past native terminal."
+  },
+  "kujiale_0234_27_4": {
+    "crossing_id": "C01",
+    "source_video": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/reproduction/streamvln_scene250_5seeds_20261101_v2/visualization/seed_2/kujiale_0234/kujiale_0234_27_4/attempt_1793619159826646867/navigation.mp4",
+    "source_steps_sha256": "e3d6e87882a129d85c3199cc595948b116e6f4f39d019a4658ef9559158e6292",
+    "evidence": "Assistant visually inspected 12-frame historical RGB contact sheet; anchors are examples, never trigger frame numbers.",
+    "stages": {
+      "onset": {
+        "semantic_criterion": "从门厅方向转入东北卧室，未沿走廊去客厅",
+        "historical_example_action": 59
+      },
+      "short": {
+        "semantic_criterion": "向衣柜/电视卧室空间实际推进，非仅原地转头",
+        "historical_example_action": 70
+      },
+      "medium": {
+        "semantic_criterion": "沿床与电视之间通道深入错误卧室",
+        "historical_example_action": 81
+      },
+      "long": {
+        "semantic_criterion": "到卧室窗帘/床远端，客厅路线已远离当前语义区域",
+        "historical_example_action": 89
+      }
+    },
+    "live_rule": "Confirm actual movement into wrong branch using current/history RGB and map. If live route differs, document homologous semantic evidence or leave stage untriggered. Do not wait past native terminal."
+  },
+  "kujiale_0113_18_1": {
+    "crossing_id": "C04",
+    "source_video": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/reproduction/streamvln_scene250_5seeds_20261101_v2/visualization/seed_2/kujiale_0113/kujiale_0113_18_1/attempt_1793588978777348305/navigation.mp4",
+    "source_steps_sha256": "5f166c3103ce184078c75bfd4cdbcf94de00914cf370b7b461857fd8b1e54e02",
+    "evidence": "Assistant visually inspected 12-frame historical RGB contact sheet; anchors are examples, never trigger frame numbers.",
+    "stages": {
+      "onset": {
+        "semantic_criterion": "经过装饰画后进入错误侧的卧室门",
+        "historical_example_action": 78
+      },
+      "short": {
+        "semantic_criterion": "实际跨入错误卧室，床和灰窗显现",
+        "historical_example_action": 80
+      },
+      "medium": {
+        "semantic_criterion": "沿床脚深入，错误房间布局持续确认",
+        "historical_example_action": 86
+      },
+      "long": {
+        "semantic_criterion": "逼近床侧/床头，目标另一侧卧室的路线仍未执行",
+        "historical_example_action": 92
+      }
+    },
+    "live_rule": "Confirm actual movement into wrong branch using current/history RGB and map. If live route differs, document homologous semantic evidence or leave stage untriggered. Do not wait past native terminal."
+  },
+  "kujiale_0207_60_4": {
+    "crossing_id": "C06",
+    "source_video": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/reproduction/streamvln_scene250_5seeds_20261101_v2/visualization/seed_2/kujiale_0207/kujiale_0207_60_4/attempt_1793592707668156698/navigation.mp4",
+    "source_steps_sha256": "6741398021a533646494cd621f602772eede7206303481b56fc45b7fbbe6082d",
+    "evidence": "Assistant visually inspected 12-frame historical RGB contact sheet; anchors are examples, never trigger frame numbers.",
+    "stages": {
+      "onset": {
+        "semantic_criterion": "从走廊错选进入卧室而非餐厅厨房方向",
+        "historical_example_action": 13
+      },
+      "short": {
+        "semantic_criterion": "跨入有红色花纹墙、床的房间并向内走",
+        "historical_example_action": 20
+      },
+      "medium": {
+        "semantic_criterion": "越过床脚，持续沿床侧深入错误房间",
+        "historical_example_action": 26
+      },
+      "long": {
+        "semantic_criterion": "接近卧室窗帘/梳妆柜区域，餐厅厨房目标明显冲突",
+        "historical_example_action": 38
+      }
+    },
+    "live_rule": "Confirm actual movement into wrong branch using current/history RGB and map. If live route differs, document homologous semantic evidence or leave stage untriggered. Do not wait past native terminal."
+  },
+  "kujiale_0036_3_2": {
+    "crossing_id": "C03",
+    "source_video": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/reproduction/streamvln_scene250_5seeds_20261101_v2/visualization/seed_2/kujiale_0036/kujiale_0036_3_2/attempt_1793587078053513512/navigation.mp4",
+    "source_steps_sha256": "09a8625c2fec985114eb8cc7ce9b5be6b93dde55a21adc861573f327935af21b",
+    "evidence": "Assistant visually inspected 12-frame historical RGB contact sheet; anchors are examples, never trigger frame numbers.",
+    "stages": {
+      "onset": {
+        "semantic_criterion": "已错过左转卧室，沿沙发茶几方向实际前进",
+        "historical_example_action": 10
+      },
+      "short": {
+        "semantic_criterion": "继续走入沙发与电视之间的客厅支路，卧室入口留在身后",
+        "historical_example_action": 14
+      },
+      "medium": {
+        "semantic_criterion": "到客厅窗前/茶几外侧并开始绕行，仍未进入卧室",
+        "historical_example_action": 22
+      },
+      "long": {
+        "semantic_criterion": "绕回餐桌/厨房公共区域，空间语义已明显不同于卧室梳妆台",
+        "historical_example_action": 41
+      }
+    },
+    "live_rule": "Confirm actual movement into wrong branch using current/history RGB and map. If live route differs, document homologous semantic evidence or leave stage untriggered. Do not wait past native terminal."
+  },
+  "kujiale_0036_0_0": {
+    "crossing_id": "C03",
+    "source_video": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/reproduction/streamvln_scene250_5seeds_20261101_v2/visualization/seed_2/kujiale_0036/kujiale_0036_0_0/attempt_1793589652511182220/navigation.mp4",
+    "source_steps_sha256": "c66fb7d61c188853830120af097f18ccb2c7a69805ab8a28f4ab89b52a691809",
+    "evidence": "Assistant visually inspected 12-frame historical RGB contact sheet; anchors are examples, never trigger frame numbers.",
+    "stages": {
+      "onset": {
+        "semantic_criterion": "在应转向卧室门处继续向客厅内部移动",
+        "historical_example_action": 43
+      },
+      "short": {
+        "semantic_criterion": "已走过门口决策区，沿电视与沙发之间直行",
+        "historical_example_action": 46
+      },
+      "medium": {
+        "semantic_criterion": "越过茶几侧边并持续接近客厅窗，卧室方向在后方",
+        "historical_example_action": 54
+      },
+      "long": {
+        "semantic_criterion": "到客厅窗前或落地窗边，仍无进入目标卧室的证据",
+        "historical_example_action": 59
+      }
+    },
+    "live_rule": "Confirm actual movement into wrong branch using current/history RGB and map. If live route differs, document homologous semantic evidence or leave stage untriggered. Do not wait past native terminal."
+  }
+}

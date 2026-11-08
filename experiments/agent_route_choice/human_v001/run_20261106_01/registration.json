@@ -1,0 +1,18 @@
+{
+  "experiment_dir": "experiments/agent_route_choice/human_v001/run_20261106_01",
+  "samples": 34,
+  "episodes": 33,
+  "planned_max_calls": 68,
+  "source_navigation_seed": 2,
+  "request_seed_base": 20261106,
+  "html_requested": false,
+  "panoramas": false,
+  "authorization": "User explicitly requested execution of no-panorama morning v001 on human annotations using local Qwen27B; no HTML; stop active monitoring after normal startup.",
+  "documentation": [
+    "experiments/agent_route_choice/human_v001/run_20261106_01/README.md",
+    "experiments/agent_route_choice/human_v001/README.md",
+    "experiments/agent_route_choice/README.md",
+    "experiments/README.md",
+    "docs/STATUS.md"
+  ]
+}

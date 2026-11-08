@@ -1,0 +1,28 @@
+{
+  "created_at": "2026-11-07T03:27:21.584892+00:00",
+  "git_head": "0a805dfcf4457f80300822abb4eff7cabba43aae",
+  "source_hashes": {
+    "core/crossing_lite.py": "d9c935782cc17d7f7c2d72031955fc034c83d5133b76fef050bb76774a7dd604",
+    "scripts/run_crossing_lite.py": "4505244a8bb38a48e806a97c808d1e519380e9996bf4efe3a90a967b9746723c",
+    "scripts/export_crossing_lite.py": "3a0f8af319038e404a2aaa551321058226373a20ee4facdb9979cde9cd9cfab1",
+    "core/crossing_lite_review.js": "3aa5ce55a76d51a439a795e448ef9c033934135d9d5fb86b1c23928026f782b0",
+    "scripts/check_crossing_lite.cjs": "d6c53d059e0c5793b4467b4fc804685d290361c9e52179765814488dbcb8277b",
+    "scripts/export_crossing_iteration.py": "ca9d5fb6b27afc32ed076014b3555be24033c77ef93c932c0f9310071b90a96f",
+    "core/crossing_campaign_template.html": "f8d325b018305b22c1a4049127e9354f4690ee00162e008cd2e6f890b6cb3033",
+    "core/crossing_campaign_panel.html": "a5549388f1cf241ee6746cb2b8ec279f8eeaaa922353ebd065763af5c955d961",
+    "core/crossing_visualization_template.json": "b83d7428d9f14be90d4b81a3581edc2ca84e0b8b6d7d7f1796f66e86a9ef7cc4",
+    "core/agent_route_choice.py": "7c318758fbd973de3e88882b87bf8b78916e515c15a1ea3f49ab8b1b0731732f",
+    "scripts/run_crossing_local_batch.py": "3e928d605e3eebb103accb0c2976679093c8feb3c7b4397f908ca80e20562b11",
+    "scripts/test_crossing_single_gpu.py": "bfad9553e6752c51148f62d8fd6b1afac12748a9b49ab95e22efc79dc025d937"
+  },
+  "prompt_sha256": "0b862baa63a3fd0b0919129ab54804514d7e696048d488477dda4d6fdb411dc2",
+  "protocol_sha256": "7934e99c7864ccb14dd357eb3b2358931cdf261cfd2c7777311bfdce1c4a0acb",
+  "task_hashes": {
+    "tasks_0.json": "7d628f19b80fdd5a9e9c65373b6c51501ea520590524159caa8171e71f7b2a28",
+    "tasks_1.json": "04ee62cc13f6617413f97e2a7f72254d9ae158227ddbeec6b37a96cea56da41f",
+    "tasks_2.json": "648d9af40953996b8513fa11a9224c00c2062e880a29e89558e244961023af8b",
+    "tasks_3.json": "510c9b83ea4a227813178e0df9423aeccf7a0768bb700c81d63d18aad170e99c"
+  },
+  "selection_sha256": "b25e50bf57ef819e03cc04bb31b40fe0a2970739996ac16ec538dc081ec51ac3",
+  "expected_calls": 2559
+}

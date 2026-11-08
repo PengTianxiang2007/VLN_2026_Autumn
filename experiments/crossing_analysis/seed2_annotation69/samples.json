@@ -1,0 +1,768 @@
+[
+  {
+    "episode_id": "kujiale_0036_0_0",
+    "scene": "kujiale_0036",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "episode_id": "kujiale_0036_11_0",
+    "scene": "kujiale_0036",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      2,
+      3
+    ]
+  },
+  {
+    "episode_id": "kujiale_0036_3_2",
+    "scene": "kujiale_0036",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0036_43_0",
+    "scene": "kujiale_0036",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0036_50_1",
+    "scene": "kujiale_0036",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0036_52_4",
+    "scene": "kujiale_0036",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0036_7_2",
+    "scene": "kujiale_0036",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0113_18_1",
+    "scene": "kujiale_0113",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0113_1_4",
+    "scene": "kujiale_0113",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0123_fix_13_3",
+    "scene": "kujiale_0123_fix",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0123_fix_17_3",
+    "scene": "kujiale_0123_fix",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0123_fix_19_3",
+    "scene": "kujiale_0123_fix",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0123_fix_30_2",
+    "scene": "kujiale_0123_fix",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0123_fix_43_3",
+    "scene": "kujiale_0123_fix",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0207_41_0",
+    "scene": "kujiale_0207",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "episode_id": "kujiale_0207_60_4",
+    "scene": "kujiale_0207",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "episode_id": "kujiale_0208_21_4",
+    "scene": "kujiale_0208",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0232_13_0",
+    "scene": "kujiale_0232",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0232_23_2",
+    "scene": "kujiale_0232",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0232_2_4",
+    "scene": "kujiale_0232",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0232_33_1",
+    "scene": "kujiale_0232",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0232_68_1",
+    "scene": "kujiale_0232",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0232_72_1",
+    "scene": "kujiale_0232",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0232_9_3",
+    "scene": "kujiale_0232",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0234_23_1",
+    "scene": "kujiale_0234",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0234_27_4",
+    "scene": "kujiale_0234",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0234_28_3",
+    "scene": "kujiale_0234",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0234_31_4",
+    "scene": "kujiale_0234",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "episode_id": "kujiale_0234_34_4",
+    "scene": "kujiale_0234",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0234_55_1",
+    "scene": "kujiale_0234",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0234_58_1",
+    "scene": "kujiale_0234",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0234_63_3",
+    "scene": "kujiale_0234",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "episode_id": "kujiale_0240_7_0",
+    "scene": "kujiale_0240",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0240_8_4",
+    "scene": "kujiale_0240",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0257_4_3",
+    "scene": "kujiale_0257",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0257_73_4",
+    "scene": "kujiale_0257",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0257_82_4",
+    "scene": "kujiale_0257",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0257_8_1",
+    "scene": "kujiale_0257",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "episode_id": "kujiale_0259_55_0",
+    "scene": "kujiale_0259",
+    "seed": 2,
+    "group": "failure",
+    "failed_seeds": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0036_18_3",
+    "scene": "kujiale_0036",
+    "seed": 2,
+    "group": "success",
+    "failed_seeds": []
+  },
+  {
+    "episode_id": "kujiale_0036_30_3",
+    "scene": "kujiale_0036",
+    "seed": 2,
+    "group": "success",
+    "failed_seeds": [
+      1
+    ]
+  },
+  {
+    "episode_id": "kujiale_0036_36_4",
+    "scene": "kujiale_0036",
+    "seed": 2,
+    "group": "success",
+    "failed_seeds": [
+      1,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0113_46_4",
+    "scene": "kujiale_0113",
+    "seed": 2,
+    "group": "success",
+    "failed_seeds": []
+  },
+  {
+    "episode_id": "kujiale_0113_62_4",
+    "scene": "kujiale_0113",
+    "seed": 2,
+    "group": "success",
+    "failed_seeds": [
+      0,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0113_66_1",
+    "scene": "kujiale_0113",
+    "seed": 2,
+    "group": "success",
+    "failed_seeds": [
+      3
+    ]
+  },
+  {
+    "episode_id": "kujiale_0123_fix_15_3",
+    "scene": "kujiale_0123_fix",
+    "seed": 2,
+    "group": "success",
+    "failed_seeds": [
+      0,
+      1,
+      3
+    ]
+  },
+  {
+    "episode_id": "kujiale_0123_fix_1_3",
+    "scene": "kujiale_0123_fix",
+    "seed": 2,
+    "group": "success",
+    "failed_seeds": [
+      0,
+      1,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0123_fix_44_3",
+    "scene": "kujiale_0123_fix",
+    "seed": 2,
+    "group": "success",
+    "failed_seeds": [
+      0,
+      1
+    ]
+  },
+  {
+    "episode_id": "kujiale_0207_12_1",
+    "scene": "kujiale_0207",
+    "seed": 2,
+    "group": "success",
+    "failed_seeds": []
+  },
+  {
+    "episode_id": "kujiale_0207_14_4",
+    "scene": "kujiale_0207",
+    "seed": 2,
+    "group": "success",
+    "failed_seeds": [
+      0,
+      1,
+      3
+    ]
+  },
+  {
+    "episode_id": "kujiale_0207_78_1",
+    "scene": "kujiale_0207",
+    "seed": 2,
+    "group": "success",
+    "failed_seeds": [
+      0,
+      1,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0208_27_3",
+    "scene": "kujiale_0208",
+    "seed": 2,
+    "group": "success",
+    "failed_seeds": [
+      0
+    ]
+  },
+  {
+    "episode_id": "kujiale_0208_36_3",
+    "scene": "kujiale_0208",
+    "seed": 2,
+    "group": "success",
+    "failed_seeds": [
+      0,
+      1,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0208_4_1",
+    "scene": "kujiale_0208",
+    "seed": 2,
+    "group": "success",
+    "failed_seeds": [
+      0
+    ]
+  },
+  {
+    "episode_id": "kujiale_0232_12_1",
+    "scene": "kujiale_0232",
+    "seed": 2,
+    "group": "success",
+    "failed_seeds": [
+      0,
+      1
+    ]
+  },
+  {
+    "episode_id": "kujiale_0232_40_4",
+    "scene": "kujiale_0232",
+    "seed": 2,
+    "group": "success",
+    "failed_seeds": []
+  },
+  {
+    "episode_id": "kujiale_0232_64_0",
+    "scene": "kujiale_0232",
+    "seed": 2,
+    "group": "success",
+    "failed_seeds": [
+      0,
+      1,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0234_33_2",
+    "scene": "kujiale_0234",
+    "seed": 2,
+    "group": "success",
+    "failed_seeds": [
+      0,
+      3
+    ]
+  },
+  {
+    "episode_id": "kujiale_0234_5_4",
+    "scene": "kujiale_0234",
+    "seed": 2,
+    "group": "success",
+    "failed_seeds": [
+      3
+    ]
+  },
+  {
+    "episode_id": "kujiale_0234_7_4",
+    "scene": "kujiale_0234",
+    "seed": 2,
+    "group": "success",
+    "failed_seeds": [
+      0,
+      3
+    ]
+  },
+  {
+    "episode_id": "kujiale_0240_0_0",
+    "scene": "kujiale_0240",
+    "seed": 2,
+    "group": "success",
+    "failed_seeds": []
+  },
+  {
+    "episode_id": "kujiale_0240_30_3",
+    "scene": "kujiale_0240",
+    "seed": 2,
+    "group": "success",
+    "failed_seeds": [
+      0,
+      1,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0240_5_3",
+    "scene": "kujiale_0240",
+    "seed": 2,
+    "group": "success",
+    "failed_seeds": [
+      0,
+      1,
+      3
+    ]
+  },
+  {
+    "episode_id": "kujiale_0257_11_2",
+    "scene": "kujiale_0257",
+    "seed": 2,
+    "group": "success",
+    "failed_seeds": [
+      0,
+      3
+    ]
+  },
+  {
+    "episode_id": "kujiale_0257_13_4",
+    "scene": "kujiale_0257",
+    "seed": 2,
+    "group": "success",
+    "failed_seeds": [
+      0,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0257_62_0",
+    "scene": "kujiale_0257",
+    "seed": 2,
+    "group": "success",
+    "failed_seeds": []
+  },
+  {
+    "episode_id": "kujiale_0259_11_0",
+    "scene": "kujiale_0259",
+    "seed": 2,
+    "group": "success",
+    "failed_seeds": []
+  },
+  {
+    "episode_id": "kujiale_0259_26_1",
+    "scene": "kujiale_0259",
+    "seed": 2,
+    "group": "success",
+    "failed_seeds": [
+      0,
+      3,
+      4
+    ]
+  },
+  {
+    "episode_id": "kujiale_0259_64_1",
+    "scene": "kujiale_0259",
+    "seed": 2,
+    "group": "success",
+    "failed_seeds": [
+      3
+    ]
+  }
+]

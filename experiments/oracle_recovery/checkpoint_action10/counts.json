@@ -1,0 +1,15 @@
+{
+  "requested_cases": 10,
+  "valid_pairs": 7,
+  "technical_failures": 1,
+  "untriggered": 2,
+  "paired_final_success": {
+    "streamvln": 2.0,
+    "oracle_actions": 5.0
+  },
+  "paired_local_correct": {
+    "streamvln": 1,
+    "oracle_actions": 7
+  },
+  "pending": 0
+}

@@ -1,0 +1,723 @@
+[
+  {
+    "episode_id": "kujiale_0208_21_4",
+    "audit": {
+      "same_saved_pose": true,
+      "same_policy_hash": true,
+      "stabilized_pair_gap_m": 0.0002698902527768787,
+      "saved_goal_distance_m": 6.90565037000761
+    },
+    "technical_failure": null,
+    "streamvln": {
+      "episode_id": "kujiale_0208_21_4",
+      "arm": "streamvln",
+      "status": "complete",
+      "triggered": true,
+      "metrics": {
+        "NE": 8.177307722379613,
+        "success": 0.0,
+        "osr": 0.0,
+        "spl": 0.0,
+        "TL": 5.258071286614695,
+        "steps": 2201,
+        "fail_reason": "not_reach_goal"
+      },
+      "interventions": [],
+      "source_trunk": null,
+      "actions": 34,
+      "physics_ticks": 1702,
+      "local_choice": {
+        "choice": "wrong",
+        "reason": "恢复后再次连续朝北通道推进，累计约1米，当前洗手台和两侧卧室门主导画面，未向西进入指令要求的客厅窗方向；再次选择了同一错误支路，后续让原模型自然结束。",
+        "action_index": 16,
+        "request": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0208_21_4/streamvln/review_0016/request.json"
+      },
+      "external_actions": 0,
+      "error": {
+        "action_index": 16,
+        "physics_ticks": 801,
+        "response": {
+          "request_id": "kujiale_0208_21_4_trunk_16",
+          "decision": "error",
+          "reason": "连续实际向北进入卧室及洗手台之间的通道，已从存档的y=-5.03推进到-3.60，越过应向西穿过客厅的分支；画面是卧室门与洗手台而非通向窗前的客厅路线，确认错选后启动配对。"
+        },
+        "request": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0208_21_4/trunk/review_0016/request.json"
+      },
+      "checkpoint": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0208_21_4/snapshot_checkpoint.pkl",
+      "protocol": "actual_checkpoint_action_pair_v1"
+    },
+    "oracle_actions": {
+      "episode_id": "kujiale_0208_21_4",
+      "arm": "oracle_actions",
+      "status": "complete",
+      "triggered": true,
+      "metrics": {
+        "NE": 0.75725605984193,
+        "success": 1.0,
+        "osr": 1.0,
+        "spl": 0.9207872391791603,
+        "TL": 9.231231318515407,
+        "steps": 3801,
+        "fail_reason": "success"
+      },
+      "interventions": [],
+      "source_trunk": null,
+      "actions": 66,
+      "physics_ticks": 3302,
+      "local_choice": {
+        "choice": "correct",
+        "reason": "通过2次左转和6次前进，从真实存档实际走到西侧客厅通路x=8.86、y=-4.75；电视在右，错误北支路已留在身后，与参考路线一致。局部选路正确，交回原模型继续完成任务，不再纠正。",
+        "action_index": 16,
+        "request": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0208_21_4/oracle_actions/review_0016/request.json"
+      },
+      "external_actions": 8,
+      "error": {
+        "action_index": 16,
+        "physics_ticks": 801,
+        "response": {
+          "request_id": "kujiale_0208_21_4_trunk_16",
+          "decision": "error",
+          "reason": "连续实际向北进入卧室及洗手台之间的通道，已从存档的y=-5.03推进到-3.60，越过应向西穿过客厅的分支；画面是卧室门与洗手台而非通向窗前的客厅路线，确认错选后启动配对。"
+        },
+        "request": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0208_21_4/trunk/review_0016/request.json"
+      },
+      "checkpoint": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0208_21_4/snapshot_checkpoint.pkl",
+      "protocol": "actual_checkpoint_action_pair_v1"
+    }
+  },
+  {
+    "episode_id": "kujiale_0240_8_4",
+    "audit": {
+      "same_saved_pose": true,
+      "same_policy_hash": true,
+      "stabilized_pair_gap_m": 0.00019673066291445927,
+      "saved_goal_distance_m": 2.7921343798740668
+    },
+    "technical_failure": null,
+    "streamvln": {
+      "episode_id": "kujiale_0240_8_4",
+      "arm": "streamvln",
+      "status": "complete",
+      "triggered": true,
+      "metrics": {
+        "NE": 1.1739739955493382,
+        "success": 1.0,
+        "osr": 1.0,
+        "spl": 0.7084258345972959,
+        "TL": 6.352111654084469,
+        "steps": 4001,
+        "fail_reason": "success"
+      },
+      "interventions": [],
+      "source_trunk": null,
+      "actions": 70,
+      "physics_ticks": 3502,
+      "local_choice": {
+        "choice": "correct",
+        "reason": "恢复后的原模型自主绕过餐桌来到厨房门口，厨房水槽正前可见，餐桌在右侧，轨迹向东与参考路线一致；本次恢复后选路正确，保留这一反例并让其自然结束。",
+        "action_index": 52,
+        "request": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0240_8_4/streamvln/review_0052/request.json"
+      },
+      "external_actions": 0,
+      "error": {
+        "action_index": 48,
+        "physics_ticks": 2401,
+        "response": {
+          "request_id": "kujiale_0240_8_4_trunk_48",
+          "decision": "error",
+          "reason": "已实际越过餐桌分支进入朝末端白门的狭窄走廊，餐桌和厨房退到左后方，轨迹继续向南而非参考路线向东进入厨房；确认错选，恢复之前第36步真实存档做配对。"
+        },
+        "request": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0240_8_4/trunk/review_0048/request.json"
+      },
+      "checkpoint": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0240_8_4/snapshot_checkpoint.pkl",
+      "protocol": "actual_checkpoint_action_pair_v1"
+    },
+    "oracle_actions": {
+      "episode_id": "kujiale_0240_8_4",
+      "arm": "oracle_actions",
+      "status": "complete",
+      "triggered": true,
+      "metrics": {
+        "NE": 0.5146822711129645,
+        "success": 1.0,
+        "osr": 1.0,
+        "spl": 0.773744623755907,
+        "TL": 5.8158723974793185,
+        "steps": 4001,
+        "fail_reason": "success"
+      },
+      "interventions": [],
+      "source_trunk": null,
+      "actions": 70,
+      "physics_ticks": 3502,
+      "local_choice": {
+        "choice": "correct",
+        "reason": "从第36步存档经14个真实动作绕到厨房入口，厨房水槽在正前，餐桌在右侧，未走向末端门；已实际进入正确支路，交回StreamVLN自然完成余下任务。",
+        "action_index": 50,
+        "request": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0240_8_4/oracle_actions/review_0050/request.json"
+      },
+      "external_actions": 14,
+      "error": {
+        "action_index": 48,
+        "physics_ticks": 2401,
+        "response": {
+          "request_id": "kujiale_0240_8_4_trunk_48",
+          "decision": "error",
+          "reason": "已实际越过餐桌分支进入朝末端白门的狭窄走廊，餐桌和厨房退到左后方，轨迹继续向南而非参考路线向东进入厨房；确认错选，恢复之前第36步真实存档做配对。"
+        },
+        "request": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0240_8_4/trunk/review_0048/request.json"
+      },
+      "checkpoint": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0240_8_4/snapshot_checkpoint.pkl",
+      "protocol": "actual_checkpoint_action_pair_v1"
+    }
+  },
+  {
+    "episode_id": "kujiale_0232_23_2",
+    "audit": {
+      "same_saved_pose": true,
+      "same_policy_hash": true,
+      "stabilized_pair_gap_m": 0.009137016310561307,
+      "saved_goal_distance_m": 5.444085089947028
+    },
+    "technical_failure": null,
+    "streamvln": {
+      "episode_id": "kujiale_0232_23_2",
+      "arm": "streamvln",
+      "status": "complete",
+      "triggered": true,
+      "metrics": {
+        "NE": 5.554270544795044,
+        "success": 0.0,
+        "osr": 0.0,
+        "spl": 0.0,
+        "TL": 11.52077353635545,
+        "steps": 5651,
+        "fail_reason": "not_reach_goal"
+      },
+      "interventions": [],
+      "source_trunk": null,
+      "actions": 103,
+      "physics_ticks": 5152,
+      "local_choice": {
+        "choice": "wrong",
+        "reason": "恢复后持续向南沿来路回走约1.4米，衣柜和起始卧室窗帘越来越近，客厅应在相反方向；再次选择错误回走，记录后让原模型自然结束。",
+        "action_index": 76,
+        "request": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0232_23_2/streamvln/review_0076/request.json"
+      },
+      "external_actions": 0,
+      "error": {
+        "action_index": 84,
+        "physics_ticks": 4201,
+        "response": {
+          "request_id": "kujiale_0232_23_2_trunk_84",
+          "decision": "error",
+          "reason": "已脱离贴墙局部调整，连续沿来路向南回走超过1米，当前明确朝起始卧室床窗而不是继续向北转客厅；确认错误回走，恢复64步实际存档，保持其原本朝向。"
+        },
+        "request": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0232_23_2/trunk/review_0084/request.json"
+      },
+      "checkpoint": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0232_23_2/snapshot_checkpoint.pkl",
+      "protocol": "actual_checkpoint_action_pair_v1"
+    },
+    "oracle_actions": {
+      "episode_id": "kujiale_0232_23_2",
+      "arm": "oracle_actions",
+      "status": "complete",
+      "triggered": true,
+      "metrics": {
+        "NE": 3.4879791068982557,
+        "success": 0.0,
+        "osr": 0.0,
+        "spl": 0.0,
+        "TL": 12.331937598778946,
+        "steps": 6151,
+        "fail_reason": "not_reach_goal"
+      },
+      "interventions": [],
+      "source_trunk": null,
+      "actions": 113,
+      "physics_ticks": 5652,
+      "local_choice": {
+        "choice": "correct",
+        "reason": "从原回望存档通过17个实际转向和前进动作进入西侧客厅连接区，沙发电视在左、卧室岔口已在身后，参考路线方向一致；局部纠正完成，交回StreamVLN且不再接管。",
+        "action_index": 81,
+        "request": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0232_23_2/oracle_actions/review_0081/request.json"
+      },
+      "external_actions": 17,
+      "error": {
+        "action_index": 84,
+        "physics_ticks": 4201,
+        "response": {
+          "request_id": "kujiale_0232_23_2_trunk_84",
+          "decision": "error",
+          "reason": "已脱离贴墙局部调整，连续沿来路向南回走超过1米，当前明确朝起始卧室床窗而不是继续向北转客厅；确认错误回走，恢复64步实际存档，保持其原本朝向。"
+        },
+        "request": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0232_23_2/trunk/review_0084/request.json"
+      },
+      "checkpoint": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0232_23_2/snapshot_checkpoint.pkl",
+      "protocol": "actual_checkpoint_action_pair_v1"
+    }
+  },
+  {
+    "episode_id": "kujiale_0234_34_4",
+    "audit": {
+      "same_saved_pose": true,
+      "same_policy_hash": true,
+      "stabilized_pair_gap_m": 0.0002792541155606038,
+      "saved_goal_distance_m": 9.901265138669565
+    },
+    "technical_failure": null,
+    "streamvln": {
+      "episode_id": "kujiale_0234_34_4",
+      "arm": "streamvln",
+      "status": "complete",
+      "triggered": true,
+      "metrics": {
+        "NE": 9.72502777022589,
+        "success": 0.0,
+        "osr": 0.0,
+        "spl": 0.0,
+        "TL": 8.230027057804449,
+        "steps": 4851,
+        "fail_reason": "not_reach_goal"
+      },
+      "interventions": [],
+      "source_trunk": null,
+      "actions": 87,
+      "physics_ticks": 4352,
+      "local_choice": {
+        "choice": "wrong",
+        "reason": "恢复后再次跨入东北卧室并持续沿木地板通道深入，床与窗帘已明确可见，未进入应向南的公共走廊；局部再次选错，后续自然运行。",
+        "action_index": 56,
+        "request": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0234_34_4/streamvln/review_0056/request.json"
+      },
+      "external_actions": 0,
+      "error": {
+        "action_index": 52,
+        "physics_ticks": 2601,
+        "response": {
+          "request_id": "kujiale_0234_34_4_trunk_52",
+          "decision": "error",
+          "reason": "已实际跨过木地板门槛进入东北侧卧室通道，房间内床边家具显现，未按参考路线向南公共走廊走；确认错误分支，恢复第44步真实存档做配对。"
+        },
+        "request": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0234_34_4/trunk/review_0052/request.json"
+      },
+      "checkpoint": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0234_34_4/snapshot_checkpoint.pkl",
+      "protocol": "actual_checkpoint_action_pair_v1"
+    },
+    "oracle_actions": {
+      "episode_id": "kujiale_0234_34_4",
+      "arm": "oracle_actions",
+      "status": "complete",
+      "triggered": true,
+      "metrics": {
+        "NE": 2.8144371386735583,
+        "success": 1.0,
+        "osr": 1.0,
+        "spl": 1.0,
+        "TL": 11.969259408792885,
+        "steps": 7301,
+        "fail_reason": "success"
+      },
+      "interventions": [],
+      "source_trunk": null,
+      "actions": 136,
+      "physics_ticks": 6802,
+      "local_choice": {
+        "choice": "correct",
+        "reason": "从真实存档经24个原生动作进入南向公共走廊，盆栽在左、厨房在右，东北错误卧室已在身后，实际位置接近正确参考路线；局部选路完成，交回原模型且不再纠正。",
+        "action_index": 68,
+        "request": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0234_34_4/oracle_actions/review_0068/request.json"
+      },
+      "external_actions": 24,
+      "error": {
+        "action_index": 52,
+        "physics_ticks": 2601,
+        "response": {
+          "request_id": "kujiale_0234_34_4_trunk_52",
+          "decision": "error",
+          "reason": "已实际跨过木地板门槛进入东北侧卧室通道，房间内床边家具显现，未按参考路线向南公共走廊走；确认错误分支，恢复第44步真实存档做配对。"
+        },
+        "request": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0234_34_4/trunk/review_0052/request.json"
+      },
+      "checkpoint": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0234_34_4/snapshot_checkpoint.pkl",
+      "protocol": "actual_checkpoint_action_pair_v1"
+    }
+  },
+  {
+    "episode_id": "kujiale_0123_fix_30_2",
+    "audit": {
+      "same_saved_pose": true,
+      "same_policy_hash": true,
+      "stabilized_pair_gap_m": 2.7217337022457763e-05,
+      "saved_goal_distance_m": 8.682138326800674
+    },
+    "technical_failure": null,
+    "streamvln": {
+      "episode_id": "kujiale_0123_fix_30_2",
+      "arm": "streamvln",
+      "status": "complete",
+      "triggered": true,
+      "metrics": {
+        "NE": 10.694616765084534,
+        "success": 0.0,
+        "osr": 0.0,
+        "spl": 0.0,
+        "TL": 4.648946666006512,
+        "steps": 2851,
+        "fail_reason": "not_reach_goal"
+      },
+      "interventions": [],
+      "source_trunk": null,
+      "actions": 47,
+      "physics_ticks": 2352,
+      "local_choice": {
+        "choice": "wrong",
+        "reason": "恢复后连续向南推进约一米进入衣柜与床之间，明确重走错误卧室分支而非向东长走廊；记录局部错误后让原模型自然结束。",
+        "action_index": 20,
+        "request": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0123_fix_30_2/streamvln/review_0020/request.json"
+      },
+      "external_actions": 0,
+      "error": {
+        "action_index": 20,
+        "physics_ticks": 1001,
+        "response": {
+          "request_id": "kujiale_0123_fix_30_2_trunk_20",
+          "decision": "error",
+          "reason": "已沿南侧黑衣柜与床之间的卧室通道持续推进，床尾与窗帘越来越近，未进入应向东延伸的长走廊；这是实际选错房间，恢复12步真实存档做配对。"
+        },
+        "request": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0123_fix_30_2/trunk/review_0020/request.json"
+      },
+      "checkpoint": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0123_fix_30_2/snapshot_checkpoint.pkl",
+      "protocol": "actual_checkpoint_action_pair_v1"
+    },
+    "oracle_actions": {
+      "episode_id": "kujiale_0123_fix_30_2",
+      "arm": "oracle_actions",
+      "status": "complete",
+      "triggered": true,
+      "metrics": {
+        "NE": 1.4074443141516892,
+        "success": 1.0,
+        "osr": 1.0,
+        "spl": 1.0,
+        "TL": 10.402775375563806,
+        "steps": 5401,
+        "fail_reason": "success"
+      },
+      "interventions": [],
+      "source_trunk": null,
+      "actions": 98,
+      "physics_ticks": 4902,
+      "local_choice": {
+        "choice": "correct",
+        "reason": "已用28个实际动作穿过卧室旁门洞，位置向东推进至主走廊内部，正前可见走廊连续门洞；正确分支通过，保留门框接触代价并交回StreamVLN。",
+        "action_index": 40,
+        "request": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0123_fix_30_2/oracle_actions/review_0040/request.json"
+      },
+      "external_actions": 28,
+      "error": {
+        "action_index": 20,
+        "physics_ticks": 1001,
+        "response": {
+          "request_id": "kujiale_0123_fix_30_2_trunk_20",
+          "decision": "error",
+          "reason": "已沿南侧黑衣柜与床之间的卧室通道持续推进，床尾与窗帘越来越近，未进入应向东延伸的长走廊；这是实际选错房间，恢复12步真实存档做配对。"
+        },
+        "request": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0123_fix_30_2/trunk/review_0020/request.json"
+      },
+      "checkpoint": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0123_fix_30_2/snapshot_checkpoint.pkl",
+      "protocol": "actual_checkpoint_action_pair_v1"
+    }
+  },
+  {
+    "episode_id": "kujiale_0234_27_4",
+    "audit": {},
+    "technical_failure": {
+      "episode_id": "kujiale_0234_27_4",
+      "status": "technical_failure",
+      "checkpoint_action": 56,
+      "error_action": 76,
+      "reason": "Restored pose settling yaw drift 20.837779420513293 deg exceeds frozen 15 deg tolerance; no valid paired arms; original logs preserved."
+    },
+    "streamvln": null,
+    "oracle_actions": null
+  },
+  {
+    "episode_id": "kujiale_0113_18_1",
+    "audit": {
+      "same_saved_pose": true,
+      "same_policy_hash": true,
+      "stabilized_pair_gap_m": 0.0011632828057281392,
+      "saved_goal_distance_m": 3.6619536056670583
+    },
+    "technical_failure": null,
+    "streamvln": {
+      "episode_id": "kujiale_0113_18_1",
+      "arm": "streamvln",
+      "status": "complete",
+      "triggered": true,
+      "metrics": {
+        "NE": 5.563494251160749,
+        "success": 0.0,
+        "osr": 1.0,
+        "spl": 0.0,
+        "TL": 12.136691870650122,
+        "steps": 5401,
+        "fail_reason": "not_reach_goal"
+      },
+      "interventions": [],
+      "source_trunk": null,
+      "actions": 98,
+      "physics_ticks": 4902,
+      "local_choice": {
+        "choice": "wrong",
+        "reason": "恢复后再次连续跨入西侧卧室，床窗已完整近距呈现，未沿东向走廊去目标卧室；记录局部再错，让原模型自然结束。",
+        "action_index": 80,
+        "request": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0113_18_1/streamvln/review_0080/request.json"
+      },
+      "external_actions": 0,
+      "error": {
+        "action_index": 76,
+        "physics_ticks": 3801,
+        "response": {
+          "request_id": "kujiale_0113_18_1_trunk_76",
+          "decision": "error",
+          "reason": "已向西南跨入左侧卧室门洞，床和窗户完整呈现在前方，背离应沿下部走廊向东进入目标卧室的路线；确认实际错误，恢复68步原存档。"
+        },
+        "request": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0113_18_1/trunk/review_0076/request.json"
+      },
+      "checkpoint": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0113_18_1/snapshot_checkpoint.pkl",
+      "protocol": "actual_checkpoint_action_pair_v1"
+    },
+    "oracle_actions": {
+      "episode_id": "kujiale_0113_18_1",
+      "arm": "oracle_actions",
+      "status": "complete",
+      "triggered": true,
+      "metrics": {
+        "NE": 1.8645047293088142,
+        "success": 1.0,
+        "osr": 1.0,
+        "spl": 0.7627103765646874,
+        "TL": 16.06114244200406,
+        "steps": 7851,
+        "fail_reason": "success"
+      },
+      "interventions": [],
+      "source_trunk": null,
+      "actions": 147,
+      "physics_ticks": 7352,
+      "local_choice": {
+        "choice": "correct",
+        "reason": "经56个真实动作含门柱碰撞脱困，已沿下部走廊向东跨过正确房间门槛，电视在左且床在前，局部分支选对；立即交回保留记忆的原模型。",
+        "action_index": 124,
+        "request": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0113_18_1/oracle_actions/review_0124/request.json"
+      },
+      "external_actions": 56,
+      "error": {
+        "action_index": 76,
+        "physics_ticks": 3801,
+        "response": {
+          "request_id": "kujiale_0113_18_1_trunk_76",
+          "decision": "error",
+          "reason": "已向西南跨入左侧卧室门洞，床和窗户完整呈现在前方，背离应沿下部走廊向东进入目标卧室的路线；确认实际错误，恢复68步原存档。"
+        },
+        "request": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0113_18_1/trunk/review_0076/request.json"
+      },
+      "checkpoint": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0113_18_1/snapshot_checkpoint.pkl",
+      "protocol": "actual_checkpoint_action_pair_v1"
+    }
+  },
+  {
+    "episode_id": "kujiale_0207_60_4",
+    "audit": {},
+    "technical_failure": null,
+    "streamvln": {
+      "episode_id": "kujiale_0207_60_4",
+      "arm": "streamvln",
+      "status": "complete",
+      "triggered": false,
+      "metrics": {
+        "NE": 0.7143228735603486,
+        "success": 1.0,
+        "osr": 1.0,
+        "spl": 0.8568902980706488,
+        "TL": 9.336084231566845,
+        "steps": 4951,
+        "fail_reason": "success"
+      },
+      "interventions": [],
+      "source_trunk": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0207_60_4/trunk",
+      "actions": 90,
+      "physics_ticks": 4452,
+      "local_choice": null,
+      "external_actions": 0,
+      "error": null,
+      "checkpoint": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0207_60_4/snapshot_checkpoint.pkl",
+      "protocol": "actual_checkpoint_action_pair_v1"
+    },
+    "oracle_actions": {
+      "episode_id": "kujiale_0207_60_4",
+      "arm": "oracle_actions",
+      "status": "complete",
+      "triggered": false,
+      "metrics": {
+        "NE": 0.7143228735603486,
+        "success": 1.0,
+        "osr": 1.0,
+        "spl": 0.8568902980706488,
+        "TL": 9.336084231566845,
+        "steps": 4951,
+        "fail_reason": "success"
+      },
+      "interventions": [],
+      "source_trunk": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0207_60_4/trunk",
+      "actions": 90,
+      "physics_ticks": 4452,
+      "local_choice": null,
+      "external_actions": 0,
+      "error": null,
+      "checkpoint": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0207_60_4/snapshot_checkpoint.pkl",
+      "protocol": "actual_checkpoint_action_pair_v1"
+    }
+  },
+  {
+    "episode_id": "kujiale_0036_3_2",
+    "audit": {
+      "same_saved_pose": true,
+      "same_policy_hash": true,
+      "stabilized_pair_gap_m": 0.00030072669841554807,
+      "saved_goal_distance_m": 4.668705445159934
+    },
+    "technical_failure": null,
+    "streamvln": {
+      "episode_id": "kujiale_0036_3_2",
+      "arm": "streamvln",
+      "status": "complete",
+      "triggered": true,
+      "metrics": {
+        "NE": 2.887976762939162,
+        "success": 1.0,
+        "osr": 1.0,
+        "spl": 1.0,
+        "TL": 4.429865004598435,
+        "steps": 2351,
+        "fail_reason": "success"
+      },
+      "interventions": [],
+      "source_trunk": null,
+      "actions": 37,
+      "physics_ticks": 1852,
+      "local_choice": {
+        "choice": "wrong",
+        "reason": "恢复后持续向南进入客厅约0.7米，电视在右且沙发茶几在前，未走向西侧目标卧室通道；记录局部再错后自然续跑。",
+        "action_index": 16,
+        "request": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0036_3_2/streamvln/review_0016/request.json"
+      },
+      "external_actions": 0,
+      "error": {
+        "action_index": 16,
+        "physics_ticks": 801,
+        "response": {
+          "request_id": "kujiale_0036_3_2_trunk_16",
+          "decision": "error",
+          "reason": "已从起点持续南移约0.6米进入沙发茶几客厅分支，未向西进入目标卧室通道；实际选错已发生，恢复0步真实存档进行配对。"
+        },
+        "request": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0036_3_2/trunk/review_0016/request.json"
+      },
+      "checkpoint": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0036_3_2/snapshot_checkpoint.pkl",
+      "protocol": "actual_checkpoint_action_pair_v1"
+    },
+    "oracle_actions": {
+      "episode_id": "kujiale_0036_3_2",
+      "arm": "oracle_actions",
+      "status": "complete",
+      "triggered": true,
+      "metrics": {
+        "NE": 9.02720719717259,
+        "success": 0.0,
+        "osr": 0.0,
+        "spl": 0.0,
+        "TL": 9.734160871183077,
+        "steps": 4751,
+        "fail_reason": "not_reach_goal"
+      },
+      "interventions": [],
+      "source_trunk": null,
+      "actions": 85,
+      "physics_ticks": 4252,
+      "local_choice": {
+        "choice": "correct",
+        "reason": "经19个真实动作从原起点先西行再左转，已跨过目标卧室入口进入电视左床右的通道，正确分支通过，交回保留原记忆的StreamVLN。",
+        "action_index": 19,
+        "request": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0036_3_2/oracle_actions/review_0019/request.json"
+      },
+      "external_actions": 19,
+      "error": {
+        "action_index": 16,
+        "physics_ticks": 801,
+        "response": {
+          "request_id": "kujiale_0036_3_2_trunk_16",
+          "decision": "error",
+          "reason": "已从起点持续南移约0.6米进入沙发茶几客厅分支，未向西进入目标卧室通道；实际选错已发生，恢复0步真实存档进行配对。"
+        },
+        "request": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0036_3_2/trunk/review_0016/request.json"
+      },
+      "checkpoint": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0036_3_2/snapshot_checkpoint.pkl",
+      "protocol": "actual_checkpoint_action_pair_v1"
+    }
+  },
+  {
+    "episode_id": "kujiale_0036_0_0",
+    "audit": {},
+    "technical_failure": null,
+    "streamvln": {
+      "episode_id": "kujiale_0036_0_0",
+      "arm": "streamvln",
+      "status": "complete",
+      "triggered": false,
+      "metrics": {
+        "NE": 3.2737596023365594,
+        "success": 0.0,
+        "osr": 1.0,
+        "spl": 0.0,
+        "TL": 3.4506073917786875,
+        "steps": 3251,
+        "fail_reason": "not_reach_goal"
+      },
+      "interventions": [],
+      "source_trunk": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0036_0_0/trunk",
+      "actions": 56,
+      "physics_ticks": 2752,
+      "local_choice": null,
+      "external_actions": 0,
+      "error": null,
+      "checkpoint": null,
+      "protocol": "actual_checkpoint_action_pair_v1"
+    },
+    "oracle_actions": {
+      "episode_id": "kujiale_0036_0_0",
+      "arm": "oracle_actions",
+      "status": "complete",
+      "triggered": false,
+      "metrics": {
+        "NE": 3.2737596023365594,
+        "success": 0.0,
+        "osr": 1.0,
+        "spl": 0.0,
+        "TL": 3.4506073917786875,
+        "steps": 3251,
+        "fail_reason": "not_reach_goal"
+      },
+      "interventions": [],
+      "source_trunk": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/checkpoint_action10/run_20261105_01/oracle_records/kujiale_0036_0_0/trunk",
+      "actions": 56,
+      "physics_ticks": 2752,
+      "local_choice": null,
+      "external_actions": 0,
+      "error": null,
+      "checkpoint": null,
+      "protocol": "actual_checkpoint_action_pair_v1"
+    }
+  }
+]

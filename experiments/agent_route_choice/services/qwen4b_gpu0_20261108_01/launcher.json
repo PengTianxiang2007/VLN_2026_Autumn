@@ -1,0 +1,15 @@
+{
+  "supervisor_pid": 3935702,
+  "command": [
+    "python3",
+    "-B",
+    "scripts/serve_qwen4b_standby.py",
+    "--config",
+    "experiments/agent_route_choice/services/qwen4b_gpu0_20261108_01/model.json",
+    "--output",
+    "outputs/model_services/qwen4b_gpu0_20261108_01",
+    "--gpu",
+    "0",
+    "--allow-shared-gpu"
+  ]
+}

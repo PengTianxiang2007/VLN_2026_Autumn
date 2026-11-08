@@ -1,0 +1,23 @@
+{
+  "sample_ids": [
+    "sample_01"
+  ],
+  "sample_offsets_from_annotation": [
+    -4,
+    -2,
+    0,
+    2,
+    4,
+    6,
+    10
+  ],
+  "decision_shift_frames": 0,
+  "stage": 1,
+  "request_seed_base": 20261106,
+  "navigation_seed": 2,
+  "authorization": "User explicitly requested small incremental prompt relaxations on sample_01 only until the visually suggested right passage is included; retain every prompt/output.",
+  "development_target": "separate right/right-front passage candidate, supported by visible edge/gap cues; not forced count, no scene-specific answer in prompt",
+  "keep_service_alive": true,
+  "revision": 2,
+  "previous_prompt": "prompts/01_relaxed_en.txt"
+}

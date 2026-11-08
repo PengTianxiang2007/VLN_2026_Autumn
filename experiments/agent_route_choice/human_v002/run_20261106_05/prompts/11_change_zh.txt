@@ -1,0 +1,1 @@
+仅增加一句通用输出规则：有可见迹象但未确认的候选进入branches，并在uncertainties解释不确定性；不要只在uncertainties提到或等确认后才列入。

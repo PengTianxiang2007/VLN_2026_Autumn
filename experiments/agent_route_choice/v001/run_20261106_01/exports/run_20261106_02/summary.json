@@ -1,0 +1,51 @@
+{
+  "phase": "complete",
+  "finished_at": "2026-11-06T05:07:12.362621+00:00",
+  "html": "outputs/agent_route_choice/v001/run_20261106_01/exports/run_20261106_02/crossing_branches_choice_zh.html",
+  "html_sha256": "7d6894c985c0ef9c4624ad6e2e1881ad8064cee3d65ff1565b0f9da84a760b08",
+  "html_bytes": 28432472,
+  "git_commit": "0a805dfcf4457f80300822abb4eff7cabba43aae",
+  "source_sha256": {
+    "core/agent_route_choice_page.html": "dba106c4abae6ebbdb930f3664b7ed1f20d18121ad8a8a1a774bcd252dd13abd",
+    "core/agent_route_choice_review.js": "f4de0bbfc31b5676942b19cc64d201df327736759d1c7b9a6026665d2dbc46da",
+    "scripts/export_agent_route_choice.py": "900822b53c43bce12acba37956fcc49c602b3e6ca80b45dd6661267ed69d6681",
+    "scripts/check_agent_route_choice.cjs": "cd4805d7747a745f764323d8720d86498b594b3ab19cfc1850401502c184ee88",
+    "scripts/prepare_agent_route_choice.py": "0a004ac1af0f159dd45d71f3caae079268a7adafbae0dc32531503285e02a311",
+    "tests/test_agent_route_choice.py": "deb3577e0567299c9309b2d5d7a8edc68895896f2a6c4fa839b618d593e1c83a",
+    "core/crossing_campaign_template.html": "f8d325b018305b22c1a4049127e9354f4690ee00162e008cd2e6f890b6cb3033",
+    "core/crossing_visualization_template.json": "b83d7428d9f14be90d4b81a3581edc2ca84e0b8b6d7d7f1796f66e86a9ef7cc4"
+  },
+  "translation_sha256": "50893ae9878625608f7104fb857ef25f6dec06ea4c0df2917401098873d6a416",
+  "cpu_tests_passed": 27,
+  "browser_validation": {
+    "cases": 10,
+    "model_case_checks": 20,
+    "image_checks": 300,
+    "fixed_checkpoint_checks": 20,
+    "branch_cards_checked": 31,
+    "selected_branches_checked": 10,
+    "translated_answers_checked": 20,
+    "invalid_responses_checked": 1,
+    "page_errors": [],
+    "network_requests": [],
+    "passed": true,
+    "checkpoint_zoom_passed": true,
+    "notes_export_passed": true,
+    "mobile_no_overflow": true,
+    "html_sha256": "7d6894c985c0ef9c4624ad6e2e1881ad8064cee3d65ff1565b0f9da84a760b08",
+    "checker_sha256": "cd4805d7747a745f764323d8720d86498b594b3ab19cfc1850401502c184ee88"
+  },
+  "manual_screenshot_review": [
+    "sample_01: checkpoint F0011 and all B1/B2/B3 branches plus choice B1 visible",
+    "sample_07: checkpoint F0078; B1 displayed as both excluded and selected, contradiction highlighted"
+  ],
+  "model_requests": 0,
+  "semantic_accuracy": "not_assessed",
+  "changes": [
+    "Fixed exact Crossing checkpoint image on primary view; playback never changes it",
+    "Show every original branch with ID, relative direction, landmark and destination",
+    "Show exact original final selection and exclusions in a large banner",
+    "Retain original contradictions and all Chinese translations",
+    "Move map, playback and full answers into expandable details"
+  ]
+}

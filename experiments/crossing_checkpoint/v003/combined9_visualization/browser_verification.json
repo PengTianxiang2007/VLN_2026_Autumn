@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "unique_cases": 9,
+  "observations": 481,
+  "batch_switches_verified": true,
+  "all_case_images_decoded": true,
+  "synchronized_sliders_verified": true,
+  "page_errors": 0,
+  "external_requests": 0
+}

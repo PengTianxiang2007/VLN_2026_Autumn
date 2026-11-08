@@ -1,0 +1,647 @@
+[
+  {
+    "episode_id": "kujiale_0208_21_4",
+    "scene": "kujiale_0208",
+    "group": "failure",
+    "seed": 2,
+    "episode_seed": 98296561,
+    "original_success": false,
+    "failed_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "trajectory": "evaluation/trajectories/kujiale_0208_21_4.json",
+    "event_ids": [
+      "9a8242c6-8699-45a9-8109-aed1df0943a5"
+    ],
+    "crossing_count": 1,
+    "wrong_choice_count": 1,
+    "source_completed_checkbox": false,
+    "accepted_basis": "user_final_submission_and_nonempty_annotations"
+  },
+  {
+    "episode_id": "kujiale_0207_41_0",
+    "scene": "kujiale_0207",
+    "group": "failure",
+    "seed": 2,
+    "episode_seed": 437501748,
+    "original_success": false,
+    "failed_seeds": [
+      0,
+      1,
+      2
+    ],
+    "trajectory": "evaluation/trajectories/kujiale_0207_41_0.json",
+    "event_ids": [
+      "2ce4bc02-a9fc-4cf4-bd6a-3a267991609c",
+      "a8989b12-ccb4-4453-9d61-b964cc1ffd48",
+      "ec292714-24b9-47dc-a0d2-f252a479f6a4",
+      "bbc9116e-2118-4fbb-b584-86fda9f25986"
+    ],
+    "crossing_count": 4,
+    "wrong_choice_count": 1,
+    "source_completed_checkbox": false,
+    "accepted_basis": "user_final_submission_and_nonempty_annotations"
+  },
+  {
+    "episode_id": "kujiale_0232_72_1",
+    "scene": "kujiale_0232",
+    "group": "failure",
+    "seed": 2,
+    "episode_seed": 1645831180,
+    "original_success": false,
+    "failed_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "trajectory": "evaluation/trajectories/kujiale_0232_72_1.json",
+    "event_ids": [
+      "2f1b82cd-ec59-42d4-b5ca-2c985f13e3cd",
+      "d0a9b3ba-675c-4300-91a1-980e303a8111"
+    ],
+    "crossing_count": 2,
+    "wrong_choice_count": 1,
+    "source_completed_checkbox": false,
+    "accepted_basis": "user_final_submission_and_nonempty_annotations"
+  },
+  {
+    "episode_id": "kujiale_0123_fix_19_3",
+    "scene": "kujiale_0123_fix",
+    "group": "failure",
+    "seed": 2,
+    "episode_seed": 689955747,
+    "original_success": false,
+    "failed_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "trajectory": "evaluation/trajectories/kujiale_0123_fix_19_3.json",
+    "event_ids": [
+      "914e60a9-d3c4-4d2c-86fa-19fabd9e2e61"
+    ],
+    "crossing_count": 1,
+    "wrong_choice_count": 1,
+    "source_completed_checkbox": false,
+    "accepted_basis": "user_final_submission_and_nonempty_annotations"
+  },
+  {
+    "episode_id": "kujiale_0113_1_4",
+    "scene": "kujiale_0113",
+    "group": "failure",
+    "seed": 2,
+    "episode_seed": 839767911,
+    "original_success": false,
+    "failed_seeds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "trajectory": "evaluation/trajectories/kujiale_0113_1_4.json",
+    "event_ids": [
+      "5b4cd7eb-1793-4015-9cbe-e0435cb6649a",
+      "2cc80aea-2855-4421-a2d9-0f389bff22a7",
+      "eaa871fb-efcb-42d7-abb5-c953d2339561"
+    ],
+    "crossing_count": 3,
+    "wrong_choice_count": 1,
+    "source_completed_checkbox": false,
+    "accepted_basis": "user_final_submission_and_nonempty_annotations"
+  },
+  {
+    "episode_id": "kujiale_0036_11_0",
+    "scene": "kujiale_0036",
+    "group": "failure",
+    "seed": 2,
+    "episode_seed": 495588414,
+    "original_success": false,
+    "failed_seeds": [
+      0,
+      2,
+      3
+    ],
+    "trajectory": "evaluation/trajectories/kujiale_0036_11_0.json",
+    "event_ids": [
+      "909a4b01-41b0-467e-b3e9-1298774c72c4",
+      "bd38cdb2-34f1-4333-b1c7-8f5092d21958"
+    ],
+    "crossing_count": 2,
+    "wrong_choice_count": 1,
+    "source_completed_checkbox": false,
+    "accepted_basis": "user_final_submission_and_nonempty_annotations"
+  },
+  {
+    "episode_id": "kujiale_0257_82_4",
+    "scene": "kujiale_0257",
+    "group": "failure",
+    "seed": 2,
+    "episode_seed": 1038112731,
+    "original_success": false,
+    "failed_seeds": [
+      2,
+      3,
+      4
+    ],
+    "trajectory": "evaluation/trajectories/kujiale_0257_82_4.json",
+    "event_ids": [
+      "12feb257-2da0-4c82-868a-8602dadc355e",
+      "41be579e-171b-46ca-a931-52a7f3decf3f"
+    ],
+    "crossing_count": 2,
+    "wrong_choice_count": 2,
+    "source_completed_checkbox": false,
+    "accepted_basis": "user_final_submission_and_nonempty_annotations"
+  },
+  {
+    "episode_id": "kujiale_0240_8_4",
+    "scene": "kujiale_0240",
+    "group": "failure",
+    "seed": 2,
+    "episode_seed": 1106871798,
+    "original_success": false,
+    "failed_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "trajectory": "evaluation/trajectories/kujiale_0240_8_4.json",
+    "event_ids": [
+      "eb9b655a-b938-4293-bbfb-08e86df86adc",
+      "56fbfcaa-5d97-45c5-8fae-f885a7ea6241"
+    ],
+    "crossing_count": 2,
+    "wrong_choice_count": 1,
+    "source_completed_checkbox": false,
+    "accepted_basis": "user_final_submission_and_nonempty_annotations"
+  },
+  {
+    "episode_id": "kujiale_0234_63_3",
+    "scene": "kujiale_0234",
+    "group": "failure",
+    "seed": 2,
+    "episode_seed": 1043577748,
+    "original_success": false,
+    "failed_seeds": [
+      1,
+      2,
+      3
+    ],
+    "trajectory": "evaluation/trajectories/kujiale_0234_63_3.json",
+    "event_ids": [
+      "a36d0c7d-e858-4ac8-b8ee-ea226da73f1a"
+    ],
+    "crossing_count": 1,
+    "wrong_choice_count": 1,
+    "source_completed_checkbox": false,
+    "accepted_basis": "user_final_submission_and_nonempty_annotations"
+  },
+  {
+    "episode_id": "kujiale_0259_55_0",
+    "scene": "kujiale_0259",
+    "group": "failure",
+    "seed": 2,
+    "episode_seed": 1709187880,
+    "original_success": false,
+    "failed_seeds": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "trajectory": "evaluation/trajectories/kujiale_0259_55_0.json",
+    "event_ids": [
+      "ea1706cd-25a7-4bab-b0f9-81a7037e6ae1",
+      "d30cc8ed-d3b9-48d9-b7a7-e6cb893b4f98"
+    ],
+    "crossing_count": 2,
+    "wrong_choice_count": 0,
+    "source_completed_checkbox": false,
+    "accepted_basis": "user_final_submission_and_nonempty_annotations"
+  },
+  {
+    "episode_id": "kujiale_0240_0_0",
+    "scene": "kujiale_0240",
+    "group": "success",
+    "seed": 2,
+    "episode_seed": 828786071,
+    "original_success": true,
+    "failed_seeds": [],
+    "trajectory": "evaluation/trajectories/kujiale_0240_0_0.json",
+    "event_ids": [
+      "e3d66531-0903-42ed-a5d0-95ccc048283e",
+      "a74f3ed4-e267-449c-86c8-9b8a2b0c0cbd"
+    ],
+    "crossing_count": 2,
+    "wrong_choice_count": 0,
+    "source_completed_checkbox": false,
+    "accepted_basis": "user_final_submission_and_nonempty_annotations"
+  },
+  {
+    "episode_id": "kujiale_0232_12_1",
+    "scene": "kujiale_0232",
+    "group": "success",
+    "seed": 2,
+    "episode_seed": 845820617,
+    "original_success": true,
+    "failed_seeds": [
+      0,
+      1
+    ],
+    "trajectory": "evaluation/trajectories/kujiale_0232_12_1.json",
+    "event_ids": [
+      "450839c4-c0be-4a55-9362-b43b579f834b",
+      "2ab4bceb-95bb-4724-9084-f7fad8c12e97"
+    ],
+    "crossing_count": 2,
+    "wrong_choice_count": 0,
+    "source_completed_checkbox": false,
+    "accepted_basis": "user_final_submission_and_nonempty_annotations"
+  },
+  {
+    "episode_id": "kujiale_0123_fix_1_3",
+    "scene": "kujiale_0123_fix",
+    "group": "success",
+    "seed": 2,
+    "episode_seed": 1401664294,
+    "original_success": true,
+    "failed_seeds": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "trajectory": "evaluation/trajectories/kujiale_0123_fix_1_3.json",
+    "event_ids": [
+      "458b92d3-c984-4bf8-acba-5fce0894ab97",
+      "0d9660a1-b0f8-4aab-944c-99653dbd68bc",
+      "af87f1ba-45b7-4630-8b94-db7152fd6e76",
+      "0c65d398-845a-4ec6-8ca2-4740ac4b1953",
+      "9df8bf5d-1fb8-4982-b5a7-cf8ac1d733b2"
+    ],
+    "crossing_count": 5,
+    "wrong_choice_count": 0,
+    "source_completed_checkbox": false,
+    "accepted_basis": "user_final_submission_and_nonempty_annotations"
+  },
+  {
+    "episode_id": "kujiale_0113_66_1",
+    "scene": "kujiale_0113",
+    "group": "success",
+    "seed": 2,
+    "episode_seed": 1091690029,
+    "original_success": true,
+    "failed_seeds": [
+      3
+    ],
+    "trajectory": "evaluation/trajectories/kujiale_0113_66_1.json",
+    "event_ids": [
+      "38cd5de8-d187-4c18-84c7-ecdfa7573804",
+      "40d27fda-a9c7-43f4-9148-ca16abaf322b",
+      "1b77e3e8-532c-4de7-b30b-6c9b56396189",
+      "d7afb3de-e0dc-404d-a4a7-e3a87d59214d"
+    ],
+    "crossing_count": 4,
+    "wrong_choice_count": 0,
+    "source_completed_checkbox": false,
+    "accepted_basis": "user_final_submission_and_nonempty_annotations"
+  },
+  {
+    "episode_id": "kujiale_0259_26_1",
+    "scene": "kujiale_0259",
+    "group": "success",
+    "seed": 2,
+    "episode_seed": 1811867271,
+    "original_success": true,
+    "failed_seeds": [
+      0,
+      3,
+      4
+    ],
+    "trajectory": "evaluation/trajectories/kujiale_0259_26_1.json",
+    "event_ids": [
+      "6e93b60e-da28-4c49-af29-20910927017f",
+      "b33d9900-c0b4-46de-afca-a36e291097ef",
+      "33e32b03-5c8b-45c5-89ec-fe398b8f02de"
+    ],
+    "crossing_count": 3,
+    "wrong_choice_count": 0,
+    "source_completed_checkbox": false,
+    "accepted_basis": "user_final_submission_and_nonempty_annotations"
+  },
+  {
+    "episode_id": "kujiale_0257_11_2",
+    "scene": "kujiale_0257",
+    "group": "success",
+    "seed": 2,
+    "episode_seed": 1093925192,
+    "original_success": true,
+    "failed_seeds": [
+      0,
+      3
+    ],
+    "trajectory": "evaluation/trajectories/kujiale_0257_11_2.json",
+    "event_ids": [
+      "601889f6-a989-4b9a-94bb-2ad22da339c1"
+    ],
+    "crossing_count": 1,
+    "wrong_choice_count": 0,
+    "source_completed_checkbox": false,
+    "accepted_basis": "user_final_submission_and_nonempty_annotations"
+  },
+  {
+    "episode_id": "kujiale_0208_27_3",
+    "scene": "kujiale_0208",
+    "group": "success",
+    "seed": 2,
+    "episode_seed": 1640617345,
+    "original_success": true,
+    "failed_seeds": [
+      0
+    ],
+    "trajectory": "evaluation/trajectories/kujiale_0208_27_3.json",
+    "event_ids": [
+      "9380fa06-0437-4af7-99f6-5e6cc7946a11",
+      "f45ab16a-0f9a-4089-bfb3-970517bf6324"
+    ],
+    "crossing_count": 2,
+    "wrong_choice_count": 0,
+    "source_completed_checkbox": false,
+    "accepted_basis": "user_final_submission_and_nonempty_annotations"
+  },
+  {
+    "episode_id": "kujiale_0234_33_2",
+    "scene": "kujiale_0234",
+    "group": "success",
+    "seed": 2,
+    "episode_seed": 1372482042,
+    "original_success": true,
+    "failed_seeds": [
+      0,
+      3
+    ],
+    "trajectory": "evaluation/trajectories/kujiale_0234_33_2.json",
+    "event_ids": [
+      "566f15de-9930-4454-abed-4f855bba35d6",
+      "bcedd63f-a99a-4e57-a0bc-8debd199e8ee"
+    ],
+    "crossing_count": 2,
+    "wrong_choice_count": 0,
+    "source_completed_checkbox": false,
+    "accepted_basis": "user_final_submission_and_nonempty_annotations"
+  },
+  {
+    "episode_id": "kujiale_0036_18_3",
+    "scene": "kujiale_0036",
+    "group": "success",
+    "seed": 2,
+    "episode_seed": 72644349,
+    "original_success": true,
+    "failed_seeds": [],
+    "trajectory": "evaluation/trajectories/kujiale_0036_18_3.json",
+    "event_ids": [
+      "9303d699-a4b5-4012-8d2c-3fe68489de15",
+      "4ecf127a-fd70-47a8-95ab-3e9d03318d1c"
+    ],
+    "crossing_count": 2,
+    "wrong_choice_count": 0,
+    "source_completed_checkbox": false,
+    "accepted_basis": "user_final_submission_and_nonempty_annotations"
+  },
+  {
+    "episode_id": "kujiale_0207_14_4",
+    "scene": "kujiale_0207",
+    "group": "success",
+    "seed": 2,
+    "episode_seed": 720015218,
+    "original_success": true,
+    "failed_seeds": [
+      0,
+      1,
+      3
+    ],
+    "trajectory": "evaluation/trajectories/kujiale_0207_14_4.json",
+    "event_ids": [
+      "427bdba3-45da-44ee-b665-75da8945de46",
+      "44c85d66-e24c-4556-9741-64ef6f6ec65d",
+      "e58790a7-b717-4dda-b33d-847b1b25e46f",
+      "f70973fb-9772-45a4-ba48-b2ab90742938"
+    ],
+    "crossing_count": 4,
+    "wrong_choice_count": 0,
+    "source_completed_checkbox": false,
+    "accepted_basis": "user_final_submission_and_nonempty_annotations"
+  },
+  {
+    "episode_id": "kujiale_0240_30_3",
+    "scene": "kujiale_0240",
+    "group": "success",
+    "seed": 2,
+    "episode_seed": 2051558758,
+    "original_success": true,
+    "failed_seeds": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "trajectory": "evaluation/trajectories/kujiale_0240_30_3.json",
+    "event_ids": [
+      "51729d0a-4378-4af6-a060-a62e05950993"
+    ],
+    "crossing_count": 1,
+    "wrong_choice_count": 0,
+    "source_completed_checkbox": false,
+    "accepted_basis": "user_final_submission_and_nonempty_annotations"
+  },
+  {
+    "episode_id": "kujiale_0232_40_4",
+    "scene": "kujiale_0232",
+    "group": "success",
+    "seed": 2,
+    "episode_seed": 1057206847,
+    "original_success": true,
+    "failed_seeds": [],
+    "trajectory": "evaluation/trajectories/kujiale_0232_40_4.json",
+    "event_ids": [
+      "cded1da9-e67a-4d3c-aa68-2440b7653395",
+      "85d411d8-d5bd-4b01-a8d4-cc68386fe4da"
+    ],
+    "crossing_count": 2,
+    "wrong_choice_count": 0,
+    "source_completed_checkbox": false,
+    "accepted_basis": "user_final_submission_and_nonempty_annotations"
+  },
+  {
+    "episode_id": "kujiale_0123_fix_44_3",
+    "scene": "kujiale_0123_fix",
+    "group": "success",
+    "seed": 2,
+    "episode_seed": 859227515,
+    "original_success": true,
+    "failed_seeds": [
+      0,
+      1
+    ],
+    "trajectory": "evaluation/trajectories/kujiale_0123_fix_44_3.json",
+    "event_ids": [
+      "e11d39a2-f368-4d76-880d-2ab115eb1efd",
+      "c9952c65-a0b9-446f-8125-408a11409d9b",
+      "325999be-eb4f-4714-bb25-8c11bd2ba99f",
+      "a1e5dba2-c13e-4167-860b-c764dd8e0d34",
+      "4613c8eb-b0d5-4bf1-98c2-17242e047a40"
+    ],
+    "crossing_count": 5,
+    "wrong_choice_count": 0,
+    "source_completed_checkbox": false,
+    "accepted_basis": "user_final_submission_and_nonempty_annotations"
+  },
+  {
+    "episode_id": "kujiale_0113_46_4",
+    "scene": "kujiale_0113",
+    "group": "success",
+    "seed": 2,
+    "episode_seed": 1691846221,
+    "original_success": true,
+    "failed_seeds": [],
+    "trajectory": "evaluation/trajectories/kujiale_0113_46_4.json",
+    "event_ids": [
+      "f4eb9d63-ec5c-466f-836e-1e8c25961ec7",
+      "ff5cabcb-c937-42db-9643-5e58593ab36f"
+    ],
+    "crossing_count": 2,
+    "wrong_choice_count": 0,
+    "source_completed_checkbox": false,
+    "accepted_basis": "user_final_submission_and_nonempty_annotations"
+  },
+  {
+    "episode_id": "kujiale_0259_64_1",
+    "scene": "kujiale_0259",
+    "group": "success",
+    "seed": 2,
+    "episode_seed": 1088169397,
+    "original_success": true,
+    "failed_seeds": [
+      3
+    ],
+    "trajectory": "evaluation/trajectories/kujiale_0259_64_1.json",
+    "event_ids": [
+      "9b3d2399-0596-488c-a63d-c516fe0a2cf0",
+      "6f916427-fd1e-4939-9f2d-23303391d257",
+      "16878480-582e-4e57-8739-4fac9c3282a4"
+    ],
+    "crossing_count": 3,
+    "wrong_choice_count": 0,
+    "source_completed_checkbox": false,
+    "accepted_basis": "user_final_submission_and_nonempty_annotations"
+  },
+  {
+    "episode_id": "kujiale_0257_62_0",
+    "scene": "kujiale_0257",
+    "group": "success",
+    "seed": 2,
+    "episode_seed": 1290521217,
+    "original_success": true,
+    "failed_seeds": [],
+    "trajectory": "evaluation/trajectories/kujiale_0257_62_0.json",
+    "event_ids": [
+      "e7828105-97ce-429e-b21a-9fbb891d2d28",
+      "3c6493cf-2704-4d14-90cc-67e5d4d94c0c"
+    ],
+    "crossing_count": 2,
+    "wrong_choice_count": 0,
+    "source_completed_checkbox": false,
+    "accepted_basis": "user_final_submission_and_nonempty_annotations"
+  },
+  {
+    "episode_id": "kujiale_0208_36_3",
+    "scene": "kujiale_0208",
+    "group": "success",
+    "seed": 2,
+    "episode_seed": 2031150409,
+    "original_success": true,
+    "failed_seeds": [
+      0,
+      1,
+      4
+    ],
+    "trajectory": "evaluation/trajectories/kujiale_0208_36_3.json",
+    "event_ids": [
+      "9b365ea6-3fc7-4377-abdf-d1791ac6a1b7",
+      "1b6cd26a-60ae-4e8f-bb22-eed075236c96"
+    ],
+    "crossing_count": 2,
+    "wrong_choice_count": 0,
+    "source_completed_checkbox": false,
+    "accepted_basis": "user_final_submission_and_nonempty_annotations"
+  },
+  {
+    "episode_id": "kujiale_0234_7_4",
+    "scene": "kujiale_0234",
+    "group": "success",
+    "seed": 2,
+    "episode_seed": 421143132,
+    "original_success": true,
+    "failed_seeds": [
+      0,
+      3
+    ],
+    "trajectory": "evaluation/trajectories/kujiale_0234_7_4.json",
+    "event_ids": [
+      "51f5aa41-2f15-4a06-b1be-891d2b55dcc1",
+      "b3f8af2f-0f9e-473d-8dfa-55b31668fa4f"
+    ],
+    "crossing_count": 2,
+    "wrong_choice_count": 0,
+    "source_completed_checkbox": false,
+    "accepted_basis": "user_final_submission_and_nonempty_annotations"
+  },
+  {
+    "episode_id": "kujiale_0036_30_3",
+    "scene": "kujiale_0036",
+    "group": "success",
+    "seed": 2,
+    "episode_seed": 1939649688,
+    "original_success": true,
+    "failed_seeds": [
+      1
+    ],
+    "trajectory": "evaluation/trajectories/kujiale_0036_30_3.json",
+    "event_ids": [
+      "1266b12f-f914-40d1-808d-3ff91baa08a5",
+      "13cbb5ff-0c81-4c6e-8951-3c6fc5cf7245"
+    ],
+    "crossing_count": 2,
+    "wrong_choice_count": 0,
+    "source_completed_checkbox": false,
+    "accepted_basis": "user_final_submission_and_nonempty_annotations"
+  },
+  {
+    "episode_id": "kujiale_0207_12_1",
+    "scene": "kujiale_0207",
+    "group": "success",
+    "seed": 2,
+    "episode_seed": 472595366,
+    "original_success": true,
+    "failed_seeds": [],
+    "trajectory": "evaluation/trajectories/kujiale_0207_12_1.json",
+    "event_ids": [
+      "acd27f02-a62f-44ae-8d7b-5e786dc4d9a5",
+      "9bbfe1d1-98f4-435c-be8c-3f084d58f829"
+    ],
+    "crossing_count": 2,
+    "wrong_choice_count": 0,
+    "source_completed_checkbox": false,
+    "accepted_basis": "user_final_submission_and_nonempty_annotations"
+  }
+]

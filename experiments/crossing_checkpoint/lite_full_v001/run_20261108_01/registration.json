@@ -1,0 +1,32 @@
+{
+  "created_at": "2026-11-08T06:07:25.600439+00:00",
+  "git_head": "0a805dfcf4457f80300822abb4eff7cabba43aae",
+  "source_hashes": {
+    "scripts/export_crossing_lite_full.py": "1c1eba8363699ee82e79d0bd9bdbc8eff2335bf8c4d2493db918cdfdaf3bdece",
+    "core/crossing_lite_full_review.js": "eadc8d7756a464a04933203cec1cb94cc011cee1cb35b8f6ff72b776359a0693",
+    "scripts/crossing_lite_full_finish.py": "665ddc3301a0aa80e575b51f17bd2eed36eefd641a31a515decfc02f64b720d5",
+    "scripts/check_crossing_lite_full.cjs": "5731a88f36ea0c677a896e250db619cf9815b81fdfe34ed60b9f0882af7c0ef2",
+    "core/crossing_lite.py": "d9c935782cc17d7f7c2d72031955fc034c83d5133b76fef050bb76774a7dd604",
+    "scripts/run_crossing_lite_full.py": "a3516218e7af8c9ab5129beeea391732e69e6a2f24d050acad176e3db4fa03f9",
+    "scripts/export_crossing_lite.py": "3a0f8af319038e404a2aaa551321058226373a20ee4facdb9979cde9cd9cfab1",
+    "core/crossing_lite_review.js": "3767e65692a90b6feb8ffca4612b1260344880801cdbf166700ec656b124d12d",
+    "scripts/check_crossing_lite.cjs": "d6c53d059e0c5793b4467b4fc804685d290361c9e52179765814488dbcb8277b",
+    "scripts/export_crossing_iteration.py": "ca9d5fb6b27afc32ed076014b3555be24033c77ef93c932c0f9310071b90a96f",
+    "core/crossing_campaign_template.html": "f8d325b018305b22c1a4049127e9354f4690ee00162e008cd2e6f890b6cb3033",
+    "core/crossing_campaign_panel.html": "a5549388f1cf241ee6746cb2b8ec279f8eeaaa922353ebd065763af5c955d961",
+    "core/crossing_visualization_template.json": "b83d7428d9f14be90d4b81a3581edc2ca84e0b8b6d7d7f1796f66e86a9ef7cc4",
+    "core/agent_route_choice.py": "7c318758fbd973de3e88882b87bf8b78916e515c15a1ea3f49ab8b1b0731732f",
+    "scripts/run_crossing_local_batch.py": "3e928d605e3eebb103accb0c2976679093c8feb3c7b4397f908ca80e20562b11",
+    "scripts/test_crossing_single_gpu.py": "bfad9553e6752c51148f62d8fd6b1afac12748a9b49ab95e22efc79dc025d937"
+  },
+  "prompt_sha256": "0b862baa63a3fd0b0919129ab54804514d7e696048d488477dda4d6fdb411dc2",
+  "protocol_sha256": "904170cba71863c3c65612db4b0542609dde87f26c954fe71f237f9eb6732512",
+  "task_hashes": {
+    "tasks_0.json": "c3cf13c851c427b778b2c388cf280c22b904be88ea3c0cca1cc74234fad94b5d",
+    "tasks_1.json": "f8572367f51148263c5633262e02ad606c84b824e3ce00bcd3e72a73b812d295",
+    "tasks_2.json": "0f842240f5c94187c2904fc08e48241f45765dd44d5f179d30d05efaa1a02e22",
+    "tasks_3.json": "3ecbe5072ab091c01486a05e0b95ddd4b60c9e33cbf62ab8c8bff9bb6bfea170"
+  },
+  "selection_sha256": "1cda9cee40d822ad4148bf36d434a6774f58224c9d8d6f9e00773156261f52c1",
+  "expected_calls": 5378
+}

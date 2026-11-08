@@ -1,0 +1,19 @@
+<style>
+[hidden]{display:none!important}.campaignGroups.singleGroup{grid-template-columns:1fr}
+.playbackControls{margin:10px 0;padding:10px 12px;background:#edf5fd;border:1px solid #c8ddef;border-radius:7px}.playbackControls>label{display:block;font-size:12px;font-weight:600}.playbackControls input[type=range]{display:block;margin:6px 0;min-height:26px;cursor:ew-resize}.playbackControls .controls{margin-bottom:0}#step,#imageStep{font-size:12px;font-variant-numeric:tabular-nums}
+.campaign{margin:16px 16px 0;padding:18px;background:white;border:1px solid var(--line);border-radius:10px}.campaign h2{margin:0 0 4px}.campaignGroups{display:grid;grid-template-columns:3fr 1fr;gap:18px;margin:12px 0}.campaignGroups h3{font-size:13px;color:var(--muted);margin:0 0 6px}.runChoices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.validationChoices{display:block}.runChoice{width:100%;text-align:left;padding:10px 12px;background:#f8fafc;min-height:108px}.runChoice.active{border-color:#2377bb;box-shadow:inset 0 0 0 1px #2377bb;background:#edf5fd}.runChoice strong,.runChoice span{display:block}.runChoice strong{font-size:15px}.runChoice .runScore{font-size:21px;font-weight:700;margin:3px 0}.runChoice small{color:var(--muted)}.runMeter{height:4px;background:#dfe7ee;margin-top:7px;border-radius:2px}.runMeter i{display:block;height:4px;background:#2377bb;border-radius:2px}.runDescription{margin:8px 0 0;padding:9px 12px;background:#f4f7fa;border-radius:6px}#bookmarks{display:flex;gap:7px;flex-wrap:wrap;margin:8px 0}#bookmarks button{font-size:12px}.caseReview{border-left:3px solid #c58317;padding:8px 10px;background:#fff8eb;margin:10px 0}.caseReview p{margin:3px 0}.stats{grid-template-columns:repeat(6,minmax(0,1fr))}#cases{max-height:580px;overflow:auto}#export{width:100%;margin-top:10px}#rgb{cursor:zoom-in}#imageDialog{max-width:94vw;max-height:94vh;border:0;border-radius:10px;padding:12px}#imageDialog::backdrop{background:#142637c9}#imageDialog img{display:block;max-width:88vw;max-height:80vh;width:auto;margin:auto}#imageDialog button{display:block;margin:0 0 8px auto}#runHint{font-size:12px;color:var(--muted)}
+@media(min-width:1500px){#map{height:480px}}@media(max-width:1150px){.campaignGroups{grid-template-columns:1fr}.validationChoices .runChoice{min-height:0}.stats{grid-template-columns:repeat(3,1fr)}}@media(max-width:720px){.campaign{margin:10px;padding:12px}.runChoices{grid-template-columns:1fr}.runChoice{min-height:0}.runChoice .runScore{display:inline;font-size:17px;margin-right:9px}.runChoice strong{display:inline;margin-right:9px}.runMeter{display:none}.stats{grid-template-columns:repeat(2,1fr)}#cases{max-height:250px}.campaignGroups{gap:10px}.caseReview{overflow-wrap:anywhere}#title{overflow-wrap:anywhere}}
+</style>
+<section class="campaign" aria-label="开发与验证版本选择">
+  <h2 id="campaignTitle">Crossing 迭代复核</h2>
+  <div class="muted" id="campaignInfo"></div>
+  <div class="campaignGroups" id="campaignGroups">
+    <div id="developmentGroup"><h3 id="developmentInfo"></h3><div class="runChoices" id="developmentRuns"></div></div>
+    <div id="validationGroup"><h3 id="validationInfo"></h3><div class="validationChoices" id="validationRuns"></div></div>
+  </div>
+  <p id="runDescription" class="runDescription"></p>
+  <p id="runHint">切换开发版本时保留当前轨迹和观测帧，便于比较同一画面的回答。开发与验证样本不同，分数差不代表方法变化。</p>
+  <details><summary>直接查看典型问题</summary><div id="bookmarks"></div><p class="muted">这些按钮定位已有结果中的证据；审阅说明不修改预测或标注。</p></details>
+  <p class="muted">评价为固定地图标定的时空一致性：首次确认位置、1m容差、固定访问时间窗、一对一匹配。部分标注尚未完成人工视觉复核。</p>
+</section>
+<dialog id="imageDialog"><button id="closeImage">关闭大图</button><img id="largeImage" alt="当前观测大图"></dialog>

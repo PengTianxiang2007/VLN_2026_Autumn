@@ -1,0 +1,10 @@
+Based on the current image and the selected branch, write a clear, specific navigation instruction telling the robot how to move from its current position toward that branch.
+
+The instruction should describe the necessary movement and the target entrance so the robot knows where to go and where to turn. For example: "Proceed along the hallway, then enter the room on the right," or "Enter the room on the left." These examples illustrate the wording only. Determine the actual actions from the current image and the selected entrance; do not copy a fixed route.
+
+Describe only the short local route needed to reach or just enter the selected branch. Do not plan the subsequent journey. Use visible landmarks to distinguish entrances when needed, and do not add unsupported actions, distances, or destinations.
+
+Output only the English navigation instruction, without explanations.
+
+Selected direction: {selected_direction}
+Local description of the selected entrance: {selected_entrance_description}

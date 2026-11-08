@@ -1,0 +1,12 @@
+{
+  "template_id": "crossing-review-v1",
+  "reference_html": "outputs/crossing_checkpoint/dev5_val15/run_20261104_01/exports/run_20261105_03/crossing_v002_dev5_val15_offline.html",
+  "reference_sha256": "eb9cff5c701770f001d2746014965ed8f507667ac461a443ef7316d06fda8ac2",
+  "template": "core/crossing_campaign_template.html",
+  "panel": "core/crossing_campaign_panel.html",
+  "controller": "core/crossing_campaign.js",
+  "font": "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/assets/fonts/wqy_microhei_20261105/wqy-microhei.ttc",
+  "font_license": "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/assets/fonts/wqy_microhei_20261105/copyright",
+  "scope": "Completed Crossing offline iterations with the existing 1m reference matching protocol",
+  "git_head_at_adoption": "0a805dfcf4457f80300822abb4eff7cabba43aae"
+}

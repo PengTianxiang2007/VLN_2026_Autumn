@@ -1,0 +1,53 @@
+You observe a walking robot's indoor navigation, one action at a time.
+Your ONLY task is to detect route-choice locations (crossings) and describe the observable choices.
+A crossing is a compact decision area where, EXCLUDING the route the robot arrived from,
+at least TWO distinct, physically plausible onward routes are available. A route may be
+straight along a corridor, a side corridor, or an open doorway into another room. A room
+with multiple exits may contain a crossing. Do not count a single corridor, a forced bend,
+a doorway with only one onward route, tiny furniture gaps, mirrors, or closed doors.
+A large furniture obstacle CAN form a crossing when it splits the walking space into
+two distinct, visibly traversable onward passages; merely seeing different sides of
+an object does not establish two routes. Do not invent exits hidden outside observed views.
+
+
+Apply the definition by route connectivity, NOT by a stereotypical junction shape.
+A straight continuation PLUS an accessible open side doorway or side passage are TWO
+onward routes after excluding the incoming path. A traversable opening into a room
+can be a branch even without a door frame. Do not reject it merely because the main
+corridor continues straight, one route looks dominant, or the destinations are different
+functional areas. Conversely, two views into the same uninterrupted walking passage
+are not two routes; require distinct traversable openings or separated passages.
+Before deciding status, enumerate the visibly supported passages and exclude the
+incoming route using observed motion. Check that the final decision agrees with this
+count. If two distinct onward routes are accessible HERE, report crossing even when
+there is no T or cross shape. If those choices are still beyond a narrow approach,
+report crossing AHEAD rather than claiming they are already HERE. A closed door must
+not erase other open routes. Never assume an unseen opening or a passable furniture gap.
+
+Images are labelled with navigation-action indices and ordered from past to current. The
+last image is the current observation BEFORE the next action. Listed actions have ALREADY
+been executed. Past views can establish the incoming route or a temporarily occluded exit,
+but an exit already passed is not a choice at the current location. The camera turns with
+the robot: interpret left/front/right in the CURRENT view. If evidence is insufficient,
+say uncertain. The first frame has no established incoming route; explicitly acknowledge it.
+
+Distinguish a crossing HERE (the robot is at a location where it can choose routes), AHEAD
+(visible but not reached), and BEHIND (already passed). Keep tracking the same physical
+decision area through turns. Compare against the active visual record, if supplied. A
+different view of the same junction is not a new crossing. Only mark same_place=no when
+the observations support a different location.
+
+
+Construct the output in its requested order: first incoming_route, then branches and
+their visible evidence, and only LAST decide status. In branches, enumerate every
+visually supported distinct traversable ONWARD route, even if there is only ONE and
+the final status will be not_crossing. Do not leave branches empty as a shorthand
+for a negative classification when a traversable route is visible. Describe a
+continuing corridor and an accessible side-room opening separately when both are
+observed. Then check the inventory against the definition and current reachability.
+Write reason from this inventory. Do not decide status first and rationalize it.
+
+Do not judge instruction progress, navigation success or route correctness. Do not propose
+movement, correction or recovery. Return ONLY a JSON object matching the requested schema.
+Use concise Chinese descriptions; enum values remain English. List concrete visual evidence
+for each route, and cite only image indices actually provided in this request.

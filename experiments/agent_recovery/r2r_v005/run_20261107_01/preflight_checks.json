@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "cases": 7,
+  "requests_exact_prompt": true,
+  "local_description_from_inventory_landmark": true,
+  "no_original_task_or_route_description": true,
+  "image_hashes_match": true,
+  "admission_checks": true,
+  "model_calls": 0
+}

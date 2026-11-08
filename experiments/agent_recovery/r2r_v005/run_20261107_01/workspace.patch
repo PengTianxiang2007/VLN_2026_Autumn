@@ -1,0 +1,266 @@
+diff --git a/.gitignore b/.gitignore
+index 1594b46..a9b5c85 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -19,3 +19,4 @@ benchmarks/vlnverse/upstream/logs/
+ benchmarks/vlnverse/runner/cache/
+ benchmarks/vlnverse/runner/config/
+ benchmarks/vlnverse/runner/share/
++backbone/internvla_n1/vendor/
+diff --git a/AGENTS.md b/AGENTS.md
+index b09be96..e20f1dd 100644
+--- a/AGENTS.md
++++ b/AGENTS.md
+@@ -1,8 +1,143 @@
+ # VLN_2026_Autumn 工作约定
+ 
++## 新 Codex 会话必读：项目与服务器基本事项
++
++本仓库是 VLN_2026_Autumn：以 StreamVLN、JanusVLN 等既有导航 backbone 为基础，
++保留 R2R/RxR/VLNVerse 适配和复现代码，研究 Crossing 语义存档点检测与外部 Agent
++干预恢复。当前包含离线 Crossing 方法迭代、错误分析和 Oracle 恢复实验。
++原 TTA 路线已放弃。方法预测、离线归因和 Oracle 实验的证据范围必须区分，不能混报。
++新会话依次阅读本文件、docs/STATUS.md、experiments/README.md，再阅读相关实验 README。
++
++### 公共服务器边界
++
++这是公共服务器，不是用户独占机器。严禁随意删除数据、修改共享环境、停止他人进程、
++抢占他人端口或干扰他人的 GPU 任务。删除或停止前必须确认归属及用户授权范围；
++不得通过批量 kill、按模糊名称匹配等方式清理进程。模型权重、数据集、场景资产保留。
++启动前检查 GPU 资源和进程归属；本项目任务结束、取消或异常后及时释放自己的闲置 GPU。
++
++### 环境与下载规则（用户更新，2026-11-04）
++
++服务器使用 uv 管理 Python 环境。优先复用仓库现有 .venv 和 .runtime 环境；
++新增或维护环境使用 uv，显式指定目标解释器，不随意改系统 Python 或他人环境。
++
++用户告知：当前终端使用 7892 端口，该端口连接用户的代理（梯子）。
++这是本次用户提供的环境信息，不代表该端口永远可用；需要联网时再检查实际配置。
++本节下载规则替代下文历史任务中的临时隧道要求，不自动沿用历史端口。
++
++配置环境、安装依赖优先使用镜像站；可以为当前下载命令显式禁用代理，直连镜像站。
++用户经验：PyTorch 优先尝试上海交通大学镜像源；仍须核对包版本、CUDA 兼容性和来源。
++数据集、权重也优先从提供相应资源的镜像站下载（如魔搭社区）；镜像不可用时，
++再使用用户授权的 7892 代理节点。禁止使用他人的代理，不修改全局网络配置，
++不将代理密码、订阅令牌等凭据写入仓库。不能假定所有工具都会自动遵循同一代理设置。
++
++所有模型权重、数据集、场景 assets、机器人资源及其下载缓存统一放在：
++`/mnt/nas/gezuhao/shared_dataset/Resource_Peng/`。
++权重使用 `models/<模型名>/`，数据集/场景/机器人使用 `assets/<项目或数据集>/`；
++下载缓存指定在该资源根目录下，避免工具默认缓存造成重复存储。
++下载时显式设置目标目录，保留已有文件并核验，不覆盖同名共享资源。
++仓库保存代码、配置和实验记录；实验日志、轨迹、可视化放 outputs/。
++已有虚拟环境继续保留原位，不因本规则重新安装或迁移。
++
++
++## 实验登记与接手（2026-11-04，当前规则）
++
++先读 docs/STATUS.md → experiments/README.md → 相关类别与具体实验README；环境问题再读 docs/ENVIRONMENT.md。
++每一类实验、每个具体实验必须建目录并维护README；模板为 experiments/TEMPLATE.md。
++开始前记录目的、版本、样本、seed、协议、启动命令；条件变化同步记录；完成/失败/暂停/取消立即补齐结果、限制、产物和下一步，更新状态及总索引。
++配置、任务清单、小体积摘要进入 experiments/；公共代码仍在 core/和scripts/，大文件放outputs/。
++历史运行不可覆盖，重跑新建运行编号；记录实际Git提交及未提交差异/源码快照。不可将当前HEAD填作未知历史版本。
++接手前检查工作区，不覆盖其他终端修改；并行开发使用独立分支/worktree和独立输出目录。
++旧文档中的启动授权与PID不代表现在仍须运行；当前状态和最新用户指令优先。不得自动恢复取消任务。
++必要验证以改动范围为限，文档整理只检查链接和清单，不重跑导航或模型。
++
++
++## HTML 可视化发布与交付（用户明确要求，2026-11-07）
++
++凡本仓库新制作或重新导出的 HTML 可视化，包括预览、标注工具、实验报告和回放，
++一律发布到用户指定服务器 `134.175.18.101`，并在回复中给出可直接打开的完整网址。
++只生成本地 HTML、只给文件路径或 localhost 地址，不算完成可视化交付。
++此要求是持续授权，正常发布不必每次重复请求确认；用户后续明确要求不发布时除外。
++
++**HTML 中英文显示（用户明确要求，2026-11-07）：** 所有新制作或重新导出的 HTML，
++凡展示模型输出、prompt（提示词）、原始任务指令、理由说明等英文内容，均须提供完整中文翻译，
++并在页面提供明确的“中文 / English”两种显示选择，默认中文。语言切换覆盖实际内容，不能只翻译标题或按钮。
++中文翻译与对应英文原文逐条关联；英文原文完整保留，中文不得省略、改写模型结论或纠正原答中的错误。
++原始 JSON/请求/响应可保留原始字段及内容，同时提供其中自然语言内容的中文展示；
++ID、路径、数值、代码和协议枚举等机器标识保持原值，必要时另附中文释义。
++翻译仅用于展示，不改实验输入、实际发送的 prompt、原始模型响应或评分依据。
++发布前检查两种语言切换后仍对应同一任务/帧/回答，并检查是否有英文正文遗漏翻译。
++
++**新窗口固定入口：涉及 HTML 发布时先读 `docs/VISUALIZATION_PUBLISHING.md`，直接复制其中
++“标准发布”命令执行。服务器已经配置完成，日常发布无需重新研究 Nginx、部署新服务或询问密码。
++命令会完成在线版拆分、全部资源打包上传、远端哈希与公网快速检查，并打印最终网址。
++只有实际遇到故障才按手册的排障表处理；不要重复做大文件全量下载测试。**
++
++- 登录入口：`ssh root@134.175.18.101`。这是用户租用的发布服务器，与当前公共 GPU 服务器分开。
++- 统一公开前缀：`http://134.175.18.101/vln/`；配置见 `core/visualization_publish.json`，
++  发布入口为 `scripts/publish_visualization.py`，操作说明见 `docs/VISUALIZATION_PUBLISHING.md`。
++- 每次发布使用新的实验/版本/运行标识，保留本地 `outputs/` 原件与历史远端版本，不覆盖旧 HTML。
++- 大体积离线 HTML 发布前用 `scripts/prepare_online_visualization.py` 拆分内嵌图片/字体，网页按需加载；
++  不直接把几十 MiB 的单文件当作在线入口，避免脚本等待整个文件下载后才显示内容。
++- 同步 HTML 必需的图片、脚本、样式、数据和视频，核对远端 SHA256 与公网 HTTP 200/类型/大小。
++  默认快速验证；完整公网下载和在线浏览器检查仅在用户要求或排查页面问题时执行，不拖住正常发布。
++  在相关实验/导出 README 中记录网址、源文件、SHA256、发布时间和验证结果。
++- 用户随后明确要求将此发布服务器密码写入仓库，已保存于 `core/visualization_publish_credentials.json`，
++  发布脚本自动读取认证；该文件是用户授权的例外，不将密码复制到公开 HTML、命令行参数或发布记录。
++- 上传使用 SSH/SCP 默认端口直接连接，不指定 7892。HTTP 验证也默认直连；显式使用 7892
++  代理而代理不可用时直接绕过，不把代理不可用当作发布阻塞。
++- 只上传明确选定的可视化及必要静态依赖，不同步整个仓库、日志、环境、权重或数据集。
++  沿用现有 Nginx 静态服务与项目独立目录，不覆盖其他站点或停止其进程。
++- 发布失败时保留本地结果，明确报告失败原因与未完成状态，不能把未验证的网址当作已交付。
++  本规则不触发历史 HTML 的批量补传，也不授权重新运行已完成或取消的实验。
++
++## Crossing 可视化默认模板（用户明确要求，2026-11-05）
++
++以后每次 Crossing 方法迭代完成，都必须按当前双进度条HTML模板导出离线可视化，
++并按上节发布到指定服务器、提供网址后，再交付该版结果；离线文件仍保留。
++用户指定的样式基准是 `outputs/crossing_checkpoint/dev5_val15/run_20261104_01/exports/run_20261105_03/crossing_v002_dev5_val15_offline.html`。
++仓库模板为 `core/crossing_campaign_template.html`，配置与来源哈希为 `core/crossing_visualization_template.json`；
++统一入口 `scripts/export_crossing_iteration.py`，具体使用见 `docs/CROSSING_VISUALIZATION_TEMPLATE.md`。
++保留地图/RGB正下方同步进度条、原C/现P对照、逐帧回答、因果历史、存档状态、复核意见导出和版本同帧切换。
++版本名、样本数量、成绩、分析结论必须来自该次实际结果，不能沿用v002的固定文字。
++每版单独保存，重导出使用新目录，不能覆盖历史HTML或冻结结果；模板调整仅影响后续导出。
++这是后续导出规范，不授权恢复已完成或取消的模型/导航实验。用户后续明确修改模板时，以最新要求为准。
++
++## GPU 生命周期（用户明确要求，2026-11-03）
++
++实验完成、明确取消、停止或异常退出后，及时关闭本项目已无任务的模型服务、
++仿真进程及其子进程，释放 GPU；除非用户明确要求保留服务，不得长期空载占卡。
++启动新任务前不仅检查显存和负载，也要核对占用进程是否属于本项目，优先回收自己
++已无任务的服务。停止前核验 PID 的命令行、工作目录或运行清单，严禁停止他人进程。
++运行入口必须提供正常退出和异常退出清理；停止后通过 nvidia-smi 验证资源释放，
++保留日志、结果、模型权重和数据集。用户澄清：等待 Oracle 实时审阅仍属于在途任务，
++不能仅因等待达到 10 分钟就自动退出；持续跟踪并完成干预后续跑。
++不要把本项目闲置服务占用误报为无法使用的他人资源。
++
++## 当前 Oracle 实验（用户更新，2026-11-03）
++
++术语约定：所谓提前组应称“确认走错后尽早纠正”，不在实际分支错误发生前预先替模型选路。
++接近 crossing 只启动审阅，转头本身不触发纠正；允许的接管依据是已经发生的错误分支选择。
++固定十条任务，允许每条多次纠正位置和朝向；每次都保留 StreamVLN policy memory。
++纠正后持续实时审阅，再次走偏可再次接管，不得擅自限制为一次。
++普通停止、跌倒、卡住和任务物理预算仍沿用原规则。旧单次试跑保留，
++与 `outputs/oracle_crossing/seed2_10_multi_20261103/` 的多次干预结果分开统计。
++已完成的十条对照直接复用。具体操作与记录口径见 docs/ORACLE_CROSSING_PILOT.md。
++用户已取消追加 15–20 条不同任务的计划，不得启动该批次。
++用户随后授权：当前十条完成后，在同样十条任务上再做四组延迟纠正实验。
++偏移阈值按用户给定为 3、5、8、12 米，度量是到正确参考路线的最短水平距离。
++确认走错并达到对应阈值才纠正；保留 policy memory，允许多次纠正。
++若阈值前已按原规则停止、跌倒、卡住或耗尽预算，保留该结果并标为未触发，
++不强行延长导航或重置任务。四组分别记录，当前尽早纠正组协议保持不变。
++每组结束及时释放已无任务的服务，下一组启动前重新核验 GPU 归属与资源。
++
++2026-11-04：尽早纠正与 3、5、8、12 米五组各十条均已完成，最后使用的 GPU 0、3
++已释放。最终结果与限制见 docs/ORACLE_CROSSING_PILOT.md 和
++outputs/oracle_crossing/comparison_20261103/index.html。8、12 米组没有实际干预，
++其各一条成功不能归因于纠正；查看结果时不要重新启动已完成的实验。
++
+ 先读 README.md、docs/RUNNING.md、docs/ENVIRONMENT.md 和 docs/MIGRATION.md。
+ 这是放弃 TTA 研究路线后建立的独立初始项目。当前范围为 StreamVLN、JanusVLN 在
+-R2R-CE、RxR-CE 和 VLNVerse fine val_unseen 上的原生推理与评估；后续研究机制尚未指定。
++R2R-CE、RxR-CE 和 VLNVerse fine val_unseen 上的原生推理与评估，以及 Crossing 存档和 Oracle 恢复研究；当前状态见 docs/STATUS.md。
+ 
+ 两个模型的 .venv 和所依赖的 Python 运行时均独立迁入本目录，不依赖旧项目是否存在。
+ 不要将 .venv、Python 或可编辑安装重新链接到旧项目。升级环境前保留当前依赖快照。
+@@ -33,3 +168,27 @@ VLN_retained_assets/tta_cleanup_20261101，详见 docs/CLEANUP_20261101.md。
+ 此要求更新上述两组默认上限：调度允许最多八组，但必须满足连续低负载、显存和主存准入；
+ 主存保守要求当前 MemAvailable >= 64 GiB × (活动组数 + 1)，仅限制新增任务，不抢占已有任务。
+ 逐组启动后重新读取资源，空闲卡出现时后台自动补充 worker；已分卡任务的两张卡都计为占用。
++
++2026-11-02 用户授权 InternVLA-N1 在 VLNVerse fine Val Unseen 的 33 个场景、825 条任务
++完整复现，固定 seed 0，采用官方 N1 flash 配置。此授权独立于 StreamVLN 五 seed 实验。
++先核验权重版本、环境与完整任务，再启动全量；详细记录见 docs/INTERNVLA_N1_VLNVERSE.md。
++用户指定后续下载必须经其 Mihomo 127.0.0.1:7892，可在其节点中测试并选取可用节点，
++配置目录 /mnt/nas/gezuhao/PengTianxiang/mihomo。不得自动回退至其他人的代理或原17897。
++
++随后用户改为通过自己 Windows 电脑转发下载，并实际建立 SSH 反向隧道：本次动态分配的
++服务器 127.0.0.1:41623 转发至用户 Windows 127.0.0.1:17897。已验证 Hugging Face HTTP 200。
++本次后续下载明确使用 http://127.0.0.1:41623，不是服务器本地17897；隧道断开即停止或报错，
++不回退其他代理。重新建立隧道时以用户报告并验证的动态端口为准，禁止自行绑定固定端口。
++
++权重已经下载并校验完成，后续模型加载与评测离线执行。禁止使用他人的代理。
++
++## 资源存放规则（用户明确要求，2026-11-04）
++
++以后下载的模型权重、数据集、场景、机器人资源等，统一存放在
++`/mnt/nas/gezuhao/shared_dataset/Resource_Peng/`，不得将实际资源下载到本仓库。
++权重放 `models/<模型名称>/`；数据集、场景、机器人资源放 `assets/<项目或数据集>/`。
++下载时显式指定上述目标路径；工具需要下载缓存时也将资源缓存指定到该目录下，
++避免默认缓存把权重或数据写入仓库。代码、配置和说明保留在仓库，实验产物放 `outputs/`，
++已有运行环境不迁移。不要覆盖已有同名资源，不得删除他人的文件、模型权重或数据集。
++27B 权重已迁至 `Resource_Peng/models/Qwen3.8-27B-FP8/`；
++仓库 `.runtime/models/Qwen3.8-27B-FP8` 仅保留兼容软链接，历史命令仍可用。
+diff --git a/README.md b/README.md
+index 8177113..a401022 100644
+--- a/README.md
++++ b/README.md
+@@ -1,5 +1,33 @@
+ # VLN_2026_Autumn
+ 
++## 新会话须知
++
++本项目保留 StreamVLN/JanusVLN 等 backbone 的导航适配与复现，开展 Crossing 存档点
++离线迭代、错误分析及 Oracle 恢复实验；原 TTA 路线已放弃。
++新 Codex 会话必须先读 [AGENTS.md](AGENTS.md)，再读 [当前状态](docs/STATUS.md)
++和 [实验目录](experiments/README.md)。
++
++- 公共服务器：不得随意删除数据、停止他人进程、修改共享环境或干扰他人 GPU 任务。
++- Python 环境使用 uv 管理，优先复用已有环境。
++- 用户当前终端代理端口为 7892；环境依赖、权重和数据优先从镜像站下载，必要时对单次命令禁用代理直连。PyTorch 优先尝试上海交大源并核对兼容性；镜像不可用再使用用户授权代理。
++- 权重、数据集、场景 assets 等统一放 `/mnt/nas/gezuhao/shared_dataset/Resource_Peng/`，分别使用 `models/`、`assets/`；不下载到代码仓库。
++- 每个实验及时维护 README；任务结束后释放本项目已无任务的 GPU 服务。
++- HTML 可视化生成后必须发布到用户服务器，并交付可直接访问的网址；统一入口与操作见
++  [新窗口发布操作手册（可直接复制命令）](docs/VISUALIZATION_PUBLISHING.md)，公开前缀为 `http://134.175.18.101/vln/`。
++- HTML 中的模型输出、prompt、任务指令等英文内容须提供完整中文翻译及“中文 / English”切换，默认中文，保留英文原文。
++
++完整规则及历史要求的优先关系以 AGENTS.md 为准；本说明不触发任何下载或新实验。
++
++
++接手入口：[当前状态](docs/STATUS.md) · [分类实验总目录](experiments/README.md) · [代码导航](docs/CODE_LAYOUT.md)。
++每类实验及具体实验均在 `experiments/` 下维护 README，实验产物仍保留在 `outputs/`。
++
++当前 Crossing Checkpoint 研究版本的流程、27B 模型启动、离线评测及 HTML 使用方式，见
++[Crossing Checkpoint README](README_CROSSING_CHECKPOINT.md)。
++
++10 条任务的 Oracle 位置与朝向纠正实验、实时审阅和 GPU 释放规则，见
++[Oracle Crossing 实验说明](docs/ORACLE_CROSSING_PILOT.md)及 [AGENTS.md](AGENTS.md)。
++
+ StreamVLN 与 JanusVLN 的导航研究初始项目，保留 R2R-CE、RxR-CE 和 VLNVerse 的既有适配。
+ 项目于 2026-11-01 从 VLN_TTA2026_Autumn 分离，后续研究方向重新开始；两个 backbone
+ 的既有环境及 Python 运行时独立迁入本目录，模型权重、数据和场景继续复用 Resource_Peng。
+@@ -31,3 +59,7 @@ python3 scripts/evaluate.py --backbone streamvln --benchmark vlnverse --gpu 0 --
+ 详细命令见 [运行指南](docs/RUNNING.md)，环境复用关系见 [环境说明](docs/ENVIRONMENT.md)，
+ 迁移来源见 [迁移记录](docs/MIGRATION.md)。本次验证状态见 [验证报告](docs/VALIDATION.md)。
+ 上游自带 README 与复现记录保留历史内容；本目录 docs/ 中的说明是新项目运行依据。
++
++## 权重与数据存放位置
++
++所有新下载的权重、数据集、场景等统一放在 `/mnt/nas/gezuhao/shared_dataset/Resource_Peng/`：权重使用 `models/`，数据和场景使用 `assets/`。仓库仅保存代码、配置和资源引用。27B 权重实际位于 `Resource_Peng/models/Qwen3.8-27B-FP8/`，旧 `.runtime/models/Qwen3.8-27B-FP8` 路径为兼容软链接。详见 `docs/ENVIRONMENT.md`。
+diff --git a/docs/ENVIRONMENT.md b/docs/ENVIRONMENT.md
+index 56b1207..3394f22 100644
+--- a/docs/ENVIRONMENT.md
++++ b/docs/ENVIRONMENT.md
+@@ -63,3 +63,14 @@ Isaac 缺失时用 `python3 scripts/restore_isaac.py` 从已有 4.5 安装包恢
+ 
+ 可显式覆盖 `STREAMVLN_VENV`、`JANUSVLN_VENV`、`VLNVERSE_VENV` 和 `PENG_ISAAC_ROOT`。
+ 默认配置已独立；不要继承指向旧项目的同名环境变量。`VLN_OUTPUT_ROOT` 可更改结果根目录。
++
++## 资源存放规则（用户明确要求，2026-11-04）
++
++以后下载的模型权重、数据集、场景、机器人资源等，统一存放在
++`/mnt/nas/gezuhao/shared_dataset/Resource_Peng/`，不得将实际资源下载到本仓库。
++权重放 `models/<模型名称>/`；数据集、场景、机器人资源放 `assets/<项目或数据集>/`。
++下载时显式指定上述目标路径；工具需要下载缓存时也将资源缓存指定到该目录下，
++避免默认缓存把权重或数据写入仓库。代码、配置和说明保留在仓库，实验产物放 `outputs/`，
++已有运行环境不迁移。不要覆盖已有同名资源，不得删除他人的文件、模型权重或数据集。
++27B 权重已迁至 `Resource_Peng/models/Qwen3.8-27B-FP8/`；
++仓库 `.runtime/models/Qwen3.8-27B-FP8` 仅保留兼容软链接，历史命令仍可用。
+diff --git a/docs/STREAMVLN_VLNVERSE_SCENE250.md b/docs/STREAMVLN_VLNVERSE_SCENE250.md
+index e1f204c..a1dd15b 100644
+--- a/docs/STREAMVLN_VLNVERSE_SCENE250.md
++++ b/docs/STREAMVLN_VLNVERSE_SCENE250.md
+@@ -1,5 +1,10 @@
+ # StreamVLN / VLNVerse：完整场景五 seed 复现
+ 
++2026-11-02 的[实现与论文可用性审计](STREAMVLN_VLNVERSE_AUDIT_20261102.md)指出：本实验采用官方
++RGB agent 适配，与官方 Habitat evaluator 不完全等价；评分保留发布代码的 XY 距离成功规则。
++报告结果时还应披露预热失败及尚未触发的变长动作窗口缺陷，不能仅凭 `validation.json` 的
++`passed` 声明所有任务都完成过模型推理。审计没有修改此实验的冻结推理和评分。
++
+ 用户于 2026-11-01 批准启动。范围为 fine/val_unseen 的 10 个完整 scene，250 条不同任务，
+ seed 0、1、2、3、4 使用同一清单，总计 1250 次评测。完整 scene 指该 split 内的全部任务。
+ 本次子集结果不能当作 825 条全集结果。

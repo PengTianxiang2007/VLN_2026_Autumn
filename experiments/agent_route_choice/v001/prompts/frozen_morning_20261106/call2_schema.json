@@ -1,0 +1,95 @@
+{
+  "type": "object",
+  "properties": {
+    "status": {
+      "enum": [
+        "selected",
+        "insufficient_evidence"
+      ]
+    },
+    "wrong_branch_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "wrong_branch_evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "error_reason": {
+      "type": "string"
+    },
+    "instruction_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "excluded_branch_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "selected_branch_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "selected_direction": {
+      "enum": [
+        "front",
+        "front_left",
+        "left",
+        "back_left",
+        "back",
+        "back_right",
+        "right",
+        "front_right",
+        "unclear",
+        null
+      ]
+    },
+    "route_description": {
+      "type": "string"
+    },
+    "selection_evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "confidence": {
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "uncertainties": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "status",
+    "wrong_branch_id",
+    "wrong_branch_evidence_ids",
+    "error_reason",
+    "instruction_evidence",
+    "excluded_branch_ids",
+    "selected_branch_id",
+    "selected_direction",
+    "route_description",
+    "selection_evidence_ids",
+    "confidence",
+    "uncertainties"
+  ],
+  "additionalProperties": false
+}

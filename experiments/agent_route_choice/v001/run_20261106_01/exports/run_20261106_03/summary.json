@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "model_calls": 0,
+  "navigation_actions": 0,
+  "gpu_tasks_started": 0,
+  "html": "outputs/agent_route_choice/v001/run_20261106_01/exports/run_20261106_03/crossing_v001_timeline_zh.html",
+  "html_sha256": "2ec639acf388e1f593954f20cb7deb4be711c6072d1f910dcf8cb6b2b456967e",
+  "html_mib": 55.37486457824707,
+  "samples": 10,
+  "replay_frames": 737,
+  "branch_count": 31,
+  "model_responses_reused": 20,
+  "original_input_frames_pixel_verified": 80,
+  "browser_check_passed": true,
+  "original_case07_conflict_preserved": true,
+  "previous_html_unchanged": true,
+  "completed_at": "2026-11-06T09:05:24.587Z"
+}

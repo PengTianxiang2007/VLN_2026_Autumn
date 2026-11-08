@@ -1,0 +1,13 @@
+Rewrite the selected route below as a brief, self-contained local correction instruction for StreamVLN. The robot starts at the annotated recovery point with its recorded heading and no memory of the previous task.
+
+The goal is to correct this one branch choice using only the necessary local movement. Include approaching the junction, turning, or moving a little into the selected branch when needed. End the correction once the robot is facing or just entering the selected branch, as appropriate to this junction. Do not continue along the later route or toward the original task destination.
+
+Limit the extent of the movement, not the number of sentences. Use the supplied observations and route information to decide what is necessary. Keep the selected branch unchanged. Do not invent distances, landmarks, room entry, or extra movement. A room or corridor name may identify the immediate turn, but must not become an additional destination.
+
+For example, depending on the starting position: "Turn left." or "Move forward to the junction, then turn left."
+
+Output only the English navigation instruction, without explanations or branch IDs.
+
+Selected direction: {selected_direction}
+Route description: {route_description}
+Checkpoint context: {checkpoint_context}

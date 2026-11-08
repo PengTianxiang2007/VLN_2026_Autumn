@@ -1,0 +1,51 @@
+{
+  "control_successes": 0,
+  "control_count": 10,
+  "conditions": [
+    {
+      "condition": "early",
+      "count": 10,
+      "successes": 10,
+      "intervened_tasks": 10,
+      "interventions": 18,
+      "unassisted_successes": 0,
+      "source": "outputs/oracle_crossing/seed2_10_multi_20261103/report/results.json"
+    },
+    {
+      "condition": "delay_3m",
+      "count": 10,
+      "successes": 5,
+      "intervened_tasks": 6,
+      "interventions": 7,
+      "unassisted_successes": 1,
+      "source": "outputs/oracle_crossing/seed2_10_delay3m_20261103/report/results.json"
+    },
+    {
+      "condition": "delay_5m",
+      "count": 10,
+      "successes": 0,
+      "intervened_tasks": 1,
+      "interventions": 1,
+      "unassisted_successes": 0,
+      "source": "outputs/oracle_crossing/seed2_10_delay5m_20261103/report/results.json"
+    },
+    {
+      "condition": "delay_8m",
+      "count": 10,
+      "successes": 1,
+      "intervened_tasks": 0,
+      "interventions": 0,
+      "unassisted_successes": 1,
+      "source": "outputs/oracle_crossing/seed2_10_delay8m_20261103/report/results.json"
+    },
+    {
+      "condition": "delay_12m",
+      "count": 10,
+      "successes": 1,
+      "intervened_tasks": 0,
+      "interventions": 0,
+      "unassisted_successes": 1,
+      "source": "outputs/oracle_crossing/seed2_10_delay12m_20261103/report/results.json"
+    }
+  ]
+}

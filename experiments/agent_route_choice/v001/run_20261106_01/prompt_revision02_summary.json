@@ -1,0 +1,57 @@
+{
+  "prompt_revision": 2,
+  "prepared": "outputs/agent_route_choice/v001/preparation_20261106_03",
+  "previous_preparation": "outputs/agent_route_choice/v001/preparation_20261106_02",
+  "updated_at": "2026-11-06T03:35:25.153735+00:00",
+  "status": "prepared_waiting_for_user_start",
+  "prompt_language": "English",
+  "description_output_language": "English",
+  "changes": [
+    "Define crossing before branch inventory",
+    "Branches are different choices toward distinct spatial areas, including distinct rooms/corridors of the same type",
+    "Accept reasonable different-space inference from partial views or occlusion",
+    "Both calls use English descriptions; Chinese files are review translations"
+  ],
+  "reference_prompts": {
+    "experiments/crossing_checkpoint/v003/prompt_en.txt": "efca53a7c341a7717096e8d730f09fc21ee7d4fae93688849a884281f37273dc",
+    "experiments/crossing_checkpoint/v005/prompt_en.txt": "f463d355334491baa4be25dec576f4a4ae937377c31b9ca593e9c21094d40df1"
+  },
+  "checks": {
+    "dataset.json_unchanged": true,
+    "evaluation_only.json_unchanged": true,
+    "models.json_unchanged": true,
+    "code_unchanged": true,
+    "01_inventory_en.txt_sha256": "4158810002f6ad317be921e85e845bc192c27a8588af1957cd0827b09984af9e",
+    "02_choose_en.txt_sha256": "c7ec532635286fd0fa58a996a75d7835a20a2f873891031278515fb40c3a1e9e",
+    "ten_call1_previews_and_call2_contract_match_english": true,
+    "dry_runs": [
+      {
+        "phase": "dry_run_no_requests",
+        "model": "glm",
+        "samples": 10,
+        "planned_calls": 20,
+        "model_calls": 0,
+        "loads_weights": false
+      },
+      {
+        "phase": "dry_run_no_requests",
+        "model": "qwen27b",
+        "samples": 10,
+        "planned_calls": 20,
+        "model_calls": 0,
+        "loads_weights": false
+      }
+    ],
+    "model_calls": 0,
+    "formal_run_directory_exists": false
+  },
+  "browser": {
+    "cases": 10,
+    "image_checks": 140,
+    "page_errors": [],
+    "network_requests": [],
+    "passed": true
+  },
+  "prepared_manifest_sha256": "748a953c91ef25ae41a93c7bc936ede793eed84d4514e22fb2710b7419d5ca19",
+  "model_calls": 0
+}

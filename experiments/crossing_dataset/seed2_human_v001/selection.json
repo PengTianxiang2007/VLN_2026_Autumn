@@ -1,0 +1,115 @@
+{
+  "included": [
+    "kujiale_0036_0_0",
+    "kujiale_0036_11_0",
+    "kujiale_0036_3_2",
+    "kujiale_0036_43_0",
+    "kujiale_0036_50_1",
+    "kujiale_0036_52_4",
+    "kujiale_0113_18_1",
+    "kujiale_0113_1_4",
+    "kujiale_0123_fix_17_3",
+    "kujiale_0123_fix_19_3",
+    "kujiale_0123_fix_30_2",
+    "kujiale_0123_fix_43_3",
+    "kujiale_0207_41_0",
+    "kujiale_0207_60_4",
+    "kujiale_0208_21_4",
+    "kujiale_0232_13_0",
+    "kujiale_0232_23_2",
+    "kujiale_0232_2_4",
+    "kujiale_0232_68_1",
+    "kujiale_0232_72_1",
+    "kujiale_0234_23_1",
+    "kujiale_0234_28_3",
+    "kujiale_0234_31_4",
+    "kujiale_0234_34_4",
+    "kujiale_0234_55_1",
+    "kujiale_0234_58_1",
+    "kujiale_0234_63_3",
+    "kujiale_0240_7_0",
+    "kujiale_0240_8_4",
+    "kujiale_0257_4_3",
+    "kujiale_0257_73_4",
+    "kujiale_0257_82_4",
+    "kujiale_0257_8_1",
+    "kujiale_0259_55_0",
+    "kujiale_0036_18_3",
+    "kujiale_0036_30_3",
+    "kujiale_0036_36_4",
+    "kujiale_0113_46_4",
+    "kujiale_0113_62_4",
+    "kujiale_0113_66_1",
+    "kujiale_0123_fix_15_3",
+    "kujiale_0123_fix_1_3",
+    "kujiale_0123_fix_44_3",
+    "kujiale_0207_12_1",
+    "kujiale_0207_14_4",
+    "kujiale_0208_27_3",
+    "kujiale_0208_36_3",
+    "kujiale_0208_4_1",
+    "kujiale_0232_12_1",
+    "kujiale_0232_40_4",
+    "kujiale_0234_33_2",
+    "kujiale_0234_5_4",
+    "kujiale_0234_7_4",
+    "kujiale_0240_0_0",
+    "kujiale_0240_30_3",
+    "kujiale_0257_11_2",
+    "kujiale_0257_13_4",
+    "kujiale_0257_62_0",
+    "kujiale_0259_11_0",
+    "kujiale_0259_26_1",
+    "kujiale_0259_64_1"
+  ],
+  "excluded": [
+    {
+      "episode_id": "kujiale_0036_7_2",
+      "scene": "kujiale_0036",
+      "group": "failure",
+      "reason": "zero_human_annotations"
+    },
+    {
+      "episode_id": "kujiale_0123_fix_13_3",
+      "scene": "kujiale_0123_fix",
+      "group": "failure",
+      "reason": "zero_human_annotations"
+    },
+    {
+      "episode_id": "kujiale_0232_33_1",
+      "scene": "kujiale_0232",
+      "group": "failure",
+      "reason": "zero_human_annotations"
+    },
+    {
+      "episode_id": "kujiale_0232_9_3",
+      "scene": "kujiale_0232",
+      "group": "failure",
+      "reason": "zero_human_annotations"
+    },
+    {
+      "episode_id": "kujiale_0234_27_4",
+      "scene": "kujiale_0234",
+      "group": "failure",
+      "reason": "zero_human_annotations"
+    },
+    {
+      "episode_id": "kujiale_0207_78_1",
+      "scene": "kujiale_0207",
+      "group": "success",
+      "reason": "zero_human_annotations"
+    },
+    {
+      "episode_id": "kujiale_0232_64_0",
+      "scene": "kujiale_0232",
+      "group": "success",
+      "reason": "zero_human_annotations"
+    },
+    {
+      "episode_id": "kujiale_0240_5_3",
+      "scene": "kujiale_0240",
+      "group": "success",
+      "reason": "zero_human_annotations"
+    }
+  ]
+}

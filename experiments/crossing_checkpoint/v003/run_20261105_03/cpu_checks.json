@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-11-05T07:40:53.910077+00:00",
+  "command": [
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/benchmarks/vlnverse/.venv/bin/python",
+    "-B",
+    "-m",
+    "unittest",
+    "tests.test_crossing_checkpoint",
+    "tests.test_crossing_stride"
+  ],
+  "returncode": 0,
+  "tests_passed": 19
+}

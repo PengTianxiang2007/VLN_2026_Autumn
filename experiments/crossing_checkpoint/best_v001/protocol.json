@@ -1,0 +1,42 @@
+{
+  "kind": "crossing_lite",
+  "version": "lite_full_v001",
+  "tag": "qwen35_4b_rgb3_score5_full61",
+  "dataset": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/crossing_dataset/seed2_human_v001/run_20261106_01/crossing_seed2_human_v001",
+  "dataset_id": "crossing_seed2_human_v001-afb4e7868989415c",
+  "model_path": "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/models/Qwen3.5-4B",
+  "model": "qwen35-4b-standby",
+  "gpu": 0,
+  "concurrency": 4,
+  "gpu_memory_utilization": 0.5,
+  "max_model_len": 8192,
+  "max_images": 3,
+  "max_tokens": 256,
+  "temperature": 0,
+  "thinking": false,
+  "seed": 20261107,
+  "selection_rule": "Seeded shuffled per-scene round-robin within failure/success; no prediction-based selection",
+  "groups": {
+    "failure": 34,
+    "success": 27
+  },
+  "expected_calls": 5378,
+  "request_timeout_seconds": 180,
+  "network_attempts": 2,
+  "batch_timeout_seconds": 28800,
+  "structured_output": "json_schema",
+  "score_range": [
+    1,
+    5
+  ],
+  "uturn_counts": true,
+  "input_policy": "Exact t-2,t-1,t RGB only; no instruction/actions/history answers/labels/maps/future",
+  "evaluation_policy": "Point annotations are references; unlabeled frames are not negative. No PR/F1 or old 1m matching. Display threshold >=4 is not a checkpoint rule.",
+  "register": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/experiments/crossing_checkpoint/lite_full_v001/run_20261108_01",
+  "documentation": [
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/experiments/crossing_checkpoint/lite_full_v001/run_20261108_01/README.md",
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/experiments/crossing_checkpoint/lite_full_v001/README.md",
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/experiments/README.md",
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/docs/STATUS.md"
+  ]
+}

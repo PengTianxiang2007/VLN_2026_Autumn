@@ -1,0 +1,30 @@
+{
+  "at": "2026-11-06T14:49:26.154061+00:00",
+  "command": [
+    "/usr/bin/python3",
+    "-B",
+    "scripts/run_human_route_choice.py",
+    "--prepared",
+    "outputs/agent_route_choice/human_v001/preparation_20261106_01",
+    "--output",
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/agent_route_choice/human_v001/run_20261106_01/qwen27b",
+    "--registration",
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/experiments/agent_route_choice/human_v001/run_20261106_01/registration.json",
+    "--gpu",
+    "0",
+    "--allow-shared-gpu"
+  ],
+  "supervisor": {
+    "pid": 44492,
+    "ppid": 44489,
+    "session": 44492,
+    "start": "124555525",
+    "state": "R",
+    "cmdline": "/usr/bin/python3 -B scripts/run_human_route_choice.py --prepared outputs/agent_route_choice/human_v001/preparation_20261106_01 --output /mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/agent_route_choice/human_v001/run_20261106_01/qwen27b --registration /mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/experiments/agent_route_choice/human_v001/run_20261106_01/registration.json --gpu 0 --allow-shared-gpu ",
+    "cwd": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn"
+  },
+  "output": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/agent_route_choice/human_v001/run_20261106_01/qwen27b",
+  "html_requested": false,
+  "gpu": 0,
+  "allow_shared_gpu": true
+}

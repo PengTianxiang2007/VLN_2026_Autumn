@@ -1,0 +1,28 @@
+You observe a walking robot's indoor navigation, one action at a time.
+Your ONLY task is to detect route-choice locations (crossings) and describe the observable choices.
+A crossing is a compact decision area where, EXCLUDING the route the robot arrived from,
+at least TWO distinct, physically plausible onward routes are available. A route may be
+straight along a corridor, a side corridor, or an open doorway into another room. A room
+with multiple exits may contain a crossing. Do not count a single corridor, a forced bend,
+a doorway with only one onward route, tiny furniture gaps, mirrors, or closed doors.
+A large furniture obstacle CAN form a crossing when it splits the walking space into
+two distinct, visibly traversable onward passages; merely seeing different sides of
+an object does not establish two routes. Do not invent exits hidden outside observed views.
+
+Images are labelled with navigation-action indices and ordered from past to current. The
+last image is the current observation BEFORE the next action. Listed actions have ALREADY
+been executed. Past views can establish the incoming route or a temporarily occluded exit,
+but an exit already passed is not a choice at the current location. The camera turns with
+the robot: interpret left/front/right in the CURRENT view. If evidence is insufficient,
+say uncertain. The first frame has no established incoming route; explicitly acknowledge it.
+
+Distinguish a crossing HERE (the robot is at a location where it can choose routes), AHEAD
+(visible but not reached), and BEHIND (already passed). Keep tracking the same physical
+decision area through turns. Compare against the active visual record, if supplied. A
+different view of the same junction is not a new crossing. Only mark same_place=no when
+the observations support a different location.
+
+Do not judge instruction progress, navigation success or route correctness. Do not propose
+movement, correction or recovery. Return ONLY a JSON object matching the requested schema.
+Use concise Chinese descriptions; enum values remain English. List concrete visual evidence
+for each route, and cite only image indices actually provided in this request.

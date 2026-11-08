@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-11-06T04:35:15.703487+00:00",
+  "qwen32b": {
+    "finished_at": "2026-11-06T04:16:04.508861+00:00",
+    "samples_with_two_provider_responses": 10,
+    "provider_responses": 20,
+    "validated_samples": 9,
+    "invalid_samples": [
+      "sample_07"
+    ],
+    "invalid_reason": "call2 excludes B1 as wrong_branch_id and selects B1 again",
+    "semantic_reviewed_samples": 0,
+    "gpu_released": true,
+    "gpu_0_3_current_memory_mib": [
+      0,
+      0
+    ],
+    "supervisor_exited": true,
+    "html": "outputs/agent_route_choice/v001/run_20261106_01/qwen32b/route_choice_review.html"
+  },
+  "glm": {
+    "valid_samples": 0,
+    "blocker": "provider 1113: no balance or available resource package",
+    "workers_stopped": true,
+    "waiting_for_user_account_credit_or_replacement_key": true
+  }
+}

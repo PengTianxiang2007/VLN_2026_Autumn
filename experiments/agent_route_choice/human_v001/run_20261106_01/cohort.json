@@ -1,0 +1,243 @@
+{
+  "dataset_id": "crossing_seed2_human_v001-afb4e7868989415c",
+  "events": [
+    {
+      "sample_id": "sample_01",
+      "event_id": "db2de182-2208-40f3-aae4-c98fbf61046d",
+      "episode_id": "kujiale_0036_0_0",
+      "checkpoint_frame": 37,
+      "wrong_end_frame": 44
+    },
+    {
+      "sample_id": "sample_02",
+      "event_id": "bd38cdb2-34f1-4333-b1c7-8f5092d21958",
+      "episode_id": "kujiale_0036_11_0",
+      "checkpoint_frame": 13,
+      "wrong_end_frame": 25
+    },
+    {
+      "sample_id": "sample_03",
+      "event_id": "5bed1d6f-1d95-44ee-b44d-cac205c6cf21",
+      "episode_id": "kujiale_0036_3_2",
+      "checkpoint_frame": 0,
+      "wrong_end_frame": 16
+    },
+    {
+      "sample_id": "sample_04",
+      "event_id": "2fe624dd-a198-4aff-aa17-aeec8dd791f3",
+      "episode_id": "kujiale_0036_43_0",
+      "checkpoint_frame": 0,
+      "wrong_end_frame": 9
+    },
+    {
+      "sample_id": "sample_05",
+      "event_id": "231f6650-61d7-42b6-905c-5afbb85ddcc0",
+      "episode_id": "kujiale_0036_50_1",
+      "checkpoint_frame": 23,
+      "wrong_end_frame": 31
+    },
+    {
+      "sample_id": "sample_06",
+      "event_id": "ad8f7937-def7-4380-b2b6-f1b227eb1d0e",
+      "episode_id": "kujiale_0036_52_4",
+      "checkpoint_frame": 10,
+      "wrong_end_frame": 17
+    },
+    {
+      "sample_id": "sample_07",
+      "event_id": "5650663b-b31f-41ce-86ce-e00e258caaf9",
+      "episode_id": "kujiale_0113_18_1",
+      "checkpoint_frame": 70,
+      "wrong_end_frame": 78
+    },
+    {
+      "sample_id": "sample_08",
+      "event_id": "2cc80aea-2855-4421-a2d9-0f389bff22a7",
+      "episode_id": "kujiale_0113_1_4",
+      "checkpoint_frame": 22,
+      "wrong_end_frame": 30
+    },
+    {
+      "sample_id": "sample_09",
+      "event_id": "de8d28d1-ad78-4346-97eb-9a7ccadc93ec",
+      "episode_id": "kujiale_0123_fix_17_3",
+      "checkpoint_frame": 66,
+      "wrong_end_frame": 74
+    },
+    {
+      "sample_id": "sample_10",
+      "event_id": "914e60a9-d3c4-4d2c-86fa-19fabd9e2e61",
+      "episode_id": "kujiale_0123_fix_19_3",
+      "checkpoint_frame": 6,
+      "wrong_end_frame": 29
+    },
+    {
+      "sample_id": "sample_11",
+      "event_id": "2354ef65-8e17-488d-a39f-df5b1984246d",
+      "episode_id": "kujiale_0123_fix_30_2",
+      "checkpoint_frame": 7,
+      "wrong_end_frame": 19
+    },
+    {
+      "sample_id": "sample_12",
+      "event_id": "782a255b-344f-4c45-9e31-0660320d25cd",
+      "episode_id": "kujiale_0123_fix_43_3",
+      "checkpoint_frame": 34,
+      "wrong_end_frame": 60
+    },
+    {
+      "sample_id": "sample_13",
+      "event_id": "a8989b12-ccb4-4453-9d61-b964cc1ffd48",
+      "episode_id": "kujiale_0207_41_0",
+      "checkpoint_frame": 13,
+      "wrong_end_frame": 28
+    },
+    {
+      "sample_id": "sample_14",
+      "event_id": "6e9832c8-d593-4679-8974-cafdb408ece2",
+      "episode_id": "kujiale_0207_60_4",
+      "checkpoint_frame": 0,
+      "wrong_end_frame": 20
+    },
+    {
+      "sample_id": "sample_15",
+      "event_id": "9a8242c6-8699-45a9-8109-aed1df0943a5",
+      "episode_id": "kujiale_0208_21_4",
+      "checkpoint_frame": 2,
+      "wrong_end_frame": 15
+    },
+    {
+      "sample_id": "sample_16",
+      "event_id": "0e442492-1828-482e-8119-26c602edad73",
+      "episode_id": "kujiale_0232_13_0",
+      "checkpoint_frame": 14,
+      "wrong_end_frame": 20
+    },
+    {
+      "sample_id": "sample_17",
+      "event_id": "a545dbc9-ed89-4d52-ab7a-bdc13525e1c2",
+      "episode_id": "kujiale_0232_23_2",
+      "checkpoint_frame": 66,
+      "wrong_end_frame": 74
+    },
+    {
+      "sample_id": "sample_18",
+      "event_id": "8909d947-4085-48ad-b6d2-4852a04b6bcd",
+      "episode_id": "kujiale_0232_2_4",
+      "checkpoint_frame": 15,
+      "wrong_end_frame": 21
+    },
+    {
+      "sample_id": "sample_19",
+      "event_id": "7e0cfac5-567e-4a98-806b-42b04046855f",
+      "episode_id": "kujiale_0232_68_1",
+      "checkpoint_frame": 117,
+      "wrong_end_frame": 126
+    },
+    {
+      "sample_id": "sample_20",
+      "event_id": "2f1b82cd-ec59-42d4-b5ca-2c985f13e3cd",
+      "episode_id": "kujiale_0232_72_1",
+      "checkpoint_frame": 6,
+      "wrong_end_frame": 14
+    },
+    {
+      "sample_id": "sample_21",
+      "event_id": "f682e4a3-50e7-4733-b5a6-36077d3dee3a",
+      "episode_id": "kujiale_0234_23_1",
+      "checkpoint_frame": 0,
+      "wrong_end_frame": 23
+    },
+    {
+      "sample_id": "sample_22",
+      "event_id": "094faeab-75ec-479b-b2c1-a5afb3a10724",
+      "episode_id": "kujiale_0234_28_3",
+      "checkpoint_frame": 32,
+      "wrong_end_frame": 40
+    },
+    {
+      "sample_id": "sample_23",
+      "event_id": "620d29c2-91cc-4e07-a91f-7093cbb34085",
+      "episode_id": "kujiale_0234_31_4",
+      "checkpoint_frame": 61,
+      "wrong_end_frame": 72
+    },
+    {
+      "sample_id": "sample_24",
+      "event_id": "fa6960fa-1f4f-4e15-bbe4-fd3bcbfaa946",
+      "episode_id": "kujiale_0234_34_4",
+      "checkpoint_frame": 49,
+      "wrong_end_frame": 60
+    },
+    {
+      "sample_id": "sample_25",
+      "event_id": "817f2855-4c35-4463-85a9-f525341f8d47",
+      "episode_id": "kujiale_0234_55_1",
+      "checkpoint_frame": 34,
+      "wrong_end_frame": 40
+    },
+    {
+      "sample_id": "sample_26",
+      "event_id": "fd76f952-bdfd-4ba2-94f8-e2a79d528398",
+      "episode_id": "kujiale_0234_58_1",
+      "checkpoint_frame": 31,
+      "wrong_end_frame": 37
+    },
+    {
+      "sample_id": "sample_27",
+      "event_id": "a36d0c7d-e858-4ac8-b8ee-ea226da73f1a",
+      "episode_id": "kujiale_0234_63_3",
+      "checkpoint_frame": 63,
+      "wrong_end_frame": 94
+    },
+    {
+      "sample_id": "sample_28",
+      "event_id": "65e80fe2-d895-4b15-ad14-0c6809b56a01",
+      "episode_id": "kujiale_0240_7_0",
+      "checkpoint_frame": 34,
+      "wrong_end_frame": 43
+    },
+    {
+      "sample_id": "sample_29",
+      "event_id": "56fbfcaa-5d97-45c5-8fae-f885a7ea6241",
+      "episode_id": "kujiale_0240_8_4",
+      "checkpoint_frame": 39,
+      "wrong_end_frame": 46
+    },
+    {
+      "sample_id": "sample_30",
+      "event_id": "09af6ebf-0f64-445f-be8e-ceb3547fc345",
+      "episode_id": "kujiale_0257_4_3",
+      "checkpoint_frame": 14,
+      "wrong_end_frame": 22
+    },
+    {
+      "sample_id": "sample_31",
+      "event_id": "b4740620-22e2-4a79-82e5-d53c30cba542",
+      "episode_id": "kujiale_0257_73_4",
+      "checkpoint_frame": 36,
+      "wrong_end_frame": 44
+    },
+    {
+      "sample_id": "sample_32",
+      "event_id": "12feb257-2da0-4c82-868a-8602dadc355e",
+      "episode_id": "kujiale_0257_82_4",
+      "checkpoint_frame": 12,
+      "wrong_end_frame": 20
+    },
+    {
+      "sample_id": "sample_33",
+      "event_id": "41be579e-171b-46ca-a931-52a7f3decf3f",
+      "episode_id": "kujiale_0257_82_4",
+      "checkpoint_frame": 37,
+      "wrong_end_frame": 43
+    },
+    {
+      "sample_id": "sample_34",
+      "event_id": "d57a7154-4036-4822-9d41-c567ab2f8c06",
+      "episode_id": "kujiale_0257_8_1",
+      "checkpoint_frame": 0,
+      "wrong_end_frame": 24
+    }
+  ]
+}

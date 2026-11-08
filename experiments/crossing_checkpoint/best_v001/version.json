@@ -1,0 +1,27 @@
+{
+  "name": "最优版本1",
+  "version": "best_v001",
+  "scope": "Crossing三帧局部多分支五级评分",
+  "designation": "用户指定的当前最优版本，不代表独立准确率评测结论",
+  "saved_at": "2026-11-08T08:21:25.299592+00:00",
+  "directory": "experiments/crossing_checkpoint/best_v001",
+  "run": "outputs/crossing_checkpoint/lite_full_v001/run_20261108_01",
+  "model": "Qwen3.5-4B",
+  "episodes": 61,
+  "valid_calls": 5378,
+  "prompt_sha256": "0b862baa63a3fd0b0919129ab54804514d7e696048d488477dda4d6fdb411dc2",
+  "visualization": "outputs/crossing_checkpoint/lite_full_v001/run_20261108_01/exports/robot_marker_20261108_01/crossing_lite_review.html",
+  "visualization_sha256": "bb78817f48d6b73f397f05ffaa5fc426ae3c6bab9b602c304cbf930e9454c239",
+  "url": "http://134.175.18.101/vln/crossing_lite_full61_run_20261108_01_web_02/crossing_lite_review.html",
+  "publication_record": "outputs/visualization_publishing/publish_20261108_081302_517506/publication.json",
+  "frozen_files": {
+    "crossing_lite_full_review.js": "b2e551c1e3627862fdfc0b43215ad943f468bdd3fdb2feda666e4fafb67d73dc",
+    "evaluation_selection.json": "1cda9cee40d822ad4148bf36d434a6774f58224c9d8d6f9e00773156261f52c1",
+    "manifest.json": "9c82d80e9542e9f3a04bcc1fb587698b6d2b8650a568228b8bcfb10cc8705dc8",
+    "prompt_en.txt": "0b862baa63a3fd0b0919129ab54804514d7e696048d488477dda4d6fdb411dc2",
+    "prompt_zh.txt": "f2f9eb254add431c66e939d92c6f98095403d761d80c80a33d8500ee2c08e8f1",
+    "protocol.json": "904170cba71863c3c65612db4b0542609dde87f26c954fe71f237f9eb6732512",
+    "summary.json": "ac4e1469bc7e55331a7b222943062e963544598e8f47f09006340d737f8074f3",
+    "visualization_revision.json": "f55df87835d5764979a4ff9d88d3683210151ee34be97842aee573310e5fc277"
+  }
+}

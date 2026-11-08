@@ -1,0 +1,72 @@
+[
+  {
+    "sample_id": "sample_17",
+    "episode_id": "kujiale_0232_23_2",
+    "checkpoint_frame": 66,
+    "selected_direction": "left",
+    "selected_entrance_description": "Open doorway on the left wall revealing a bed and window",
+    "scene_description": "The camera is positioned in a narrow hallway with grey tiled floors. Directly ahead is an open doorway leading into a room with light wood flooring, a desk, and a chair. To the left, there is an open doorway leading into a bedroom with a visible bed and curtains. To the immediate right, a wall edge and a glimpse of a tiled area suggest another passage or room entrance.",
+    "source": "outputs/agent_route_choice/human_v002/run_20261107_01/cases/sample_17/call1_answer.json",
+    "source_sha256": "372fae7b2ea9b4fb994716792ed28e04773e5bb5c6f7e9c5719baa970a994f63"
+  },
+  {
+    "sample_id": "sample_18",
+    "episode_id": "kujiale_0232_2_4",
+    "checkpoint_frame": 15,
+    "selected_direction": "left",
+    "selected_entrance_description": "Open doorway on the left wall revealing a bed and curtains",
+    "scene_description": "The camera is positioned in a narrow hallway with grey tiled floors. Directly ahead is an open doorway leading into a room with light wood flooring, a wall-mounted TV, and a chair. To the left, there is an open doorway revealing a bedroom with a bed and curtains. To the right, there is a doorway opening into a room with grey tiled walls, likely a bathroom.",
+    "source": "outputs/agent_route_choice/human_v002/run_20261107_01/cases/sample_18/call1_answer.json",
+    "source_sha256": "69a55c3bb034b20678ce319b381566d628b797359729d7ae1e34c26e11dad6d3"
+  },
+  {
+    "sample_id": "sample_19",
+    "episode_id": "kujiale_0232_68_1",
+    "checkpoint_frame": 117,
+    "selected_direction": "front",
+    "selected_entrance_description": "Open doorway with white trim",
+    "scene_description": "The camera is positioned in a narrow hallway with grey tiled floors and light grey walls. Directly ahead is an open doorway leading into a room with a desk and chair. To the left, there is an open doorway leading into a bedroom with a bed visible. To the right, there is a wall with a light switch, and the hallway appears to continue or open up slightly further ahead.",
+    "source": "outputs/agent_route_choice/human_v002/run_20261107_01/cases/sample_19/call1_answer.json",
+    "source_sha256": "ec38dfab2729c334787e3ae32c509cd40a2e614111c4f9ad8f92b005e78847f8"
+  },
+  {
+    "sample_id": "sample_20",
+    "episode_id": "kujiale_0232_72_1",
+    "checkpoint_frame": 6,
+    "selected_direction": "right",
+    "selected_entrance_description": "Wooden door frame or wall edge on the right side of the hallway",
+    "scene_description": "The camera is positioned in a narrow hallway with grey tiled flooring, looking forward through a doorway into a longer corridor with light wood flooring. To the immediate left, there is an open entrance to a bathroom containing a vanity and mirror. To the immediate right, there is a wooden door frame or wall edge suggesting an adjacent space.",
+    "source": "outputs/agent_route_choice/human_v002/run_20261107_01/cases/sample_20/call1_answer.json",
+    "source_sha256": "24316850e040d426e2257845f4c91dfb56cb10df3a6e2ad6a83cfa9abdad6232"
+  },
+  {
+    "sample_id": "sample_28",
+    "episode_id": "kujiale_0240_7_0",
+    "checkpoint_frame": 34,
+    "selected_direction": "right",
+    "selected_entrance_description": "Open entrance to a room with a dining table, chairs, and kitchen cabinets.",
+    "scene_description": "The camera is positioned in a narrow hallway junction. Directly ahead is a doorway leading to a bedroom with a window and bed. To the right is an open entrance into a dining and kitchen area. To the left, a dark wall and a glimpse of a wooden floor suggest a passage or room entrance.",
+    "source": "outputs/agent_route_choice/human_v002/run_20261107_01/cases/sample_28/call1_answer.json",
+    "source_sha256": "1d1249342ba90c63bea31f47acdcb81391ba4e8128572518cd89a9d099d0887b"
+  },
+  {
+    "sample_id": "sample_29",
+    "episode_id": "kujiale_0240_8_4",
+    "checkpoint_frame": 39,
+    "selected_direction": "left",
+    "selected_entrance_description": "Open doorway on the left wall of the corridor",
+    "scene_description": "The camera is positioned in a bright open-plan area, looking down a central corridor. To the left is a dining table and kitchen area. To the right is a living area with a sofa. Ahead, the corridor continues toward a white door at the far end. On the left wall of the corridor, there is an open doorway.",
+    "source": "outputs/agent_route_choice/human_v002/run_20261107_01/cases/sample_29/call1_answer.json",
+    "source_sha256": "3e41998b0db19deee593b68bbf82d8b592c414f4e0568a2b2047de9344010903"
+  },
+  {
+    "sample_id": "sample_34",
+    "episode_id": "kujiale_0257_8_1",
+    "checkpoint_frame": 0,
+    "selected_direction": "front",
+    "selected_entrance_description": "Tiled floor leading to a glass door at the end of the corridor",
+    "scene_description": "The camera is positioned in a narrow, tiled corridor or balcony area. To the right, large glass windows look out onto a green landscape. To the left, a tiled wall separates the corridor from an interior room. Ahead, the corridor continues toward a glass door at the far end. An opening on the left leads into a bedroom area.",
+    "source": "outputs/agent_route_choice/human_v002/run_20261107_01/cases/sample_34/call1_answer.json",
+    "source_sha256": "211f04b61e97841024d5b054fa734796362a7370a95d189c40b208a750cbab66"
+  }
+]

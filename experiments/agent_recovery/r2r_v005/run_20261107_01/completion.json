@@ -1,0 +1,14 @@
+{
+  "phase": "cancelled",
+  "supervisor_pid": 2524971,
+  "gpu": null,
+  "started_at": "2026-11-07T16:16:05.506677+00:00",
+  "expected_calls": 7,
+  "completed": 0,
+  "navigation_executed": false,
+  "simulation_started": false,
+  "updated_at": "2026-11-07T16:23:44.832966+00:00",
+  "error": "KeyboardInterrupt: User termination requested",
+  "gpu_released": true,
+  "finished_at": "2026-11-07T16:23:44.832958+00:00"
+}

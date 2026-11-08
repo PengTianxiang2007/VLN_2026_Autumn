@@ -1,5 +1,10 @@
 # StreamVLN / VLNVerse：完整场景五 seed 复现
 
+2026-11-02 的[实现与论文可用性审计](STREAMVLN_VLNVERSE_AUDIT_20261102.md)指出：本实验采用官方
+RGB agent 适配，与官方 Habitat evaluator 不完全等价；评分保留发布代码的 XY 距离成功规则。
+报告结果时还应披露预热失败及尚未触发的变长动作窗口缺陷，不能仅凭 `validation.json` 的
+`passed` 声明所有任务都完成过模型推理。审计没有修改此实验的冻结推理和评分。
+
 用户于 2026-11-01 批准启动。范围为 fine/val_unseen 的 10 个完整 scene，250 条不同任务，
 seed 0、1、2、3、4 使用同一清单，总计 1250 次评测。完整 scene 指该 split 内的全部任务。
 本次子集结果不能当作 825 条全集结果。

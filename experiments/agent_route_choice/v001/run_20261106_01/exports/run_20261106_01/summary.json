@@ -1,0 +1,43 @@
+{
+  "phase": "complete",
+  "completed_at": "2026-11-06T04:48:42.370995+00:00",
+  "html": "outputs/agent_route_choice/v001/run_20261106_01/exports/run_20261106_01/agent_route_choice_qwen32b_zh.html",
+  "html_sha256": "75444120456c8e9b76323569fde105c01cee8cce96881e77feb98ede4627d568",
+  "html_bytes": 28416786,
+  "git_commit": "0a805dfcf4457f80300822abb4eff7cabba43aae",
+  "source_sha256": {
+    "scripts/export_agent_route_choice.py": "c9e157708e1f0f0e2c5e6fc09258be3dfd9d0ce9d799152fffc42415f1c918a3",
+    "core/agent_route_choice_review.js": "65a919d0d9e6006f6ea3549ce548787df4578d197e17bdae0d08ded95b79c568",
+    "scripts/check_agent_route_choice.cjs": "38e6c22f3b095e9641cfd00b80952faf0fa9a2f3c860cdf36ece73ea57a89a26",
+    "tests/test_agent_route_choice.py": "deb3577e0567299c9309b2d5d7a8edc68895896f2a6c4fa839b618d593e1c83a",
+    "core/crossing_campaign_template.html": "f8d325b018305b22c1a4049127e9354f4690ee00162e008cd2e6f890b6cb3033",
+    "core/crossing_visualization_template.json": "b83d7428d9f14be90d4b81a3581edc2ca84e0b8b6d7d7f1796f66e86a9ef7cc4"
+  },
+  "translation_sha256": "50893ae9878625608f7104fb857ef25f6dec06ea4c0df2917401098873d6a416",
+  "cpu_tests_passed": 27,
+  "browser_validation": {
+    "cases": 10,
+    "model_case_checks": 20,
+    "image_checks": 280,
+    "translated_answers_checked": 20,
+    "invalid_responses_checked": 1,
+    "page_errors": [],
+    "network_requests": [],
+    "passed": true,
+    "notes_export_passed": true,
+    "mobile_no_overflow": true,
+    "html_sha256": "75444120456c8e9b76323569fde105c01cee8cce96881e77feb98ede4627d568",
+    "checker_sha256": "38e6c22f3b095e9641cfd00b80952faf0fa9a2f3c860cdf36ece73ea57a89a26"
+  },
+  "models_with_actual_answers": 1,
+  "model_groups_shown": 2,
+  "qwen_responses": 20,
+  "qwen_valid_samples": 9,
+  "qwen_invalid_samples": 1,
+  "chinese_answer_translations": 20,
+  "chinese_instruction_translations": 10,
+  "glm_responses": 0,
+  "model_requests_during_export": 0,
+  "semantic_accuracy": "pending_review",
+  "scope": "Visualization and translation only; original responses and previous exports preserved."
+}

@@ -1,0 +1,28 @@
+{
+  "phase": "prepared_waiting_for_user_start",
+  "checked_at": "2026-11-06T03:21:19.600783+00:00",
+  "prepared": "outputs/agent_route_choice/v001/preparation_20261106_02",
+  "samples": 10,
+  "rgb_images": 80,
+  "planned_models": [
+    "glm-5.3-flash low",
+    "local Qwen27B FP8"
+  ],
+  "planned_logical_calls": 40,
+  "model_calls": 0,
+  "cpu_tests_passed": 22,
+  "dry_runs_passed": [
+    "glm",
+    "qwen27b"
+  ],
+  "browser": {
+    "cases": 10,
+    "image_checks": 140,
+    "passed": true,
+    "page_errors": [],
+    "network_requests": []
+  },
+  "credential_pattern_matches_in_new_files": 0,
+  "prepared_manifest_sha256": "8ee4694c4d9c7376696c774b3fa67dd117098d34990bfdeb1ee3c17cbce097a6",
+  "formal_run_directory_exists": false
+}

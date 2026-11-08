@@ -1,0 +1,30 @@
+{
+  "tag": "glm53flash_draft03_10",
+  "development": [
+    "kujiale_0036_10_0",
+    "kujiale_0113_1_4",
+    "kujiale_0208_21_4",
+    "kujiale_0259_11_0",
+    "kujiale_0259_55_0",
+    "kujiale_0123_fix_33_2",
+    "kujiale_0123_fix_30_2",
+    "kujiale_0207_12_1",
+    "kujiale_0207_60_4",
+    "kujiale_0232_65_2"
+  ],
+  "concurrency": 10,
+  "expected_model_calls": 588,
+  "git_head": "0a805dfcf4457f80300822abb4eff7cabba43aae",
+  "created_at": "2026-11-05T09:49:32.192147+00:00",
+  "source": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/crossing_checkpoint/v004/run_20261105_03/versions/glm53flash_draft03_10",
+  "key_storage": "stdin and process memory only; never saved to disk",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+  "model": "glm-5.3-flash",
+  "thinking": true,
+  "remote_driver_sha256": "84c9904e2d4d95e2c02c7e08ea3dfd1f950e55bd1548ad41cfa9f040b6ea1038",
+  "resume_parent": null,
+  "transport": "streaming; 8 transient retries with capped exponential backoff; 32768 initial actual output budget, double on length to 131072; independent episode failures",
+  "reasoning_effort": "low",
+  "previous_attempt": "outputs/crossing_checkpoint/v004/run_20261105_02",
+  "comparison_note": "Uniform low effort, fresh 588 calls; previous max-effort observations preserved separately, not mixed"
+}

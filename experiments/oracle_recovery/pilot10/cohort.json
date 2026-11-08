@@ -1,0 +1,56 @@
+{
+  "source": "outputs/oracle_crossing/seed2_10_multi_20261103/manifest.json",
+  "run_seed": 2,
+  "cases": [
+    {
+      "episode_id": "kujiale_0208_21_4",
+      "scene": "kujiale_0208",
+      "crossing_id": "C04"
+    },
+    {
+      "episode_id": "kujiale_0240_8_4",
+      "scene": "kujiale_0240",
+      "crossing_id": "C02"
+    },
+    {
+      "episode_id": "kujiale_0232_23_2",
+      "scene": "kujiale_0232",
+      "crossing_id": "C03"
+    },
+    {
+      "episode_id": "kujiale_0234_34_4",
+      "scene": "kujiale_0234",
+      "crossing_id": "C02"
+    },
+    {
+      "episode_id": "kujiale_0123_fix_30_2",
+      "scene": "kujiale_0123_fix",
+      "crossing_id": "C02"
+    },
+    {
+      "episode_id": "kujiale_0234_27_4",
+      "scene": "kujiale_0234",
+      "crossing_id": "C01"
+    },
+    {
+      "episode_id": "kujiale_0113_18_1",
+      "scene": "kujiale_0113",
+      "crossing_id": "C04"
+    },
+    {
+      "episode_id": "kujiale_0207_60_4",
+      "scene": "kujiale_0207",
+      "crossing_id": "C06"
+    },
+    {
+      "episode_id": "kujiale_0036_3_2",
+      "scene": "kujiale_0036",
+      "crossing_id": "C03"
+    },
+    {
+      "episode_id": "kujiale_0036_0_0",
+      "scene": "kujiale_0036",
+      "crossing_id": "C03"
+    }
+  ]
+}

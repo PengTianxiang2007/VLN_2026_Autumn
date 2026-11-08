@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+set -euo pipefail
+here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+project="$(cd "$here/../.." && pwd)"
+isaac_root="$project/.runtime/isaac45"
+export VIRTUAL_ENV="$project/benchmarks/vlnverse/.venv"
+export PATH="$VIRTUAL_ENV/bin:$PATH"
+export OMNI_KIT_ALLOW_ROOT=1
+export XDG_CACHE_HOME="$N1_RUN_ROOT/cache"
+export XDG_CONFIG_HOME="$N1_RUN_ROOT/config"
+export XDG_DATA_HOME="$N1_RUN_ROOT/share"
+mkdir -p "$XDG_CACHE_HOME" "$XDG_CONFIG_HOME" "$XDG_DATA_HOME"
+export PYTHONPATH="$here/vendor:$project"
+export LD_LIBRARY_PATH="${LD_LIBRARY_PATH:-}"
+export CARB_APP_PATH="$isaac_root/kit"
+export ISAAC_PATH="$isaac_root"
+export EXP_PATH="$isaac_root/apps"
+export LD_PRELOAD="$isaac_root/kit/libcarb.so"
+source "$isaac_root/setup_python_env.sh"
+exec "$VIRTUAL_ENV/bin/python" -u "$here/sim_entry.py" --config "$1"

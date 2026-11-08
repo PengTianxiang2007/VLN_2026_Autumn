@@ -1,0 +1,42 @@
+--- r01/core/crossing_checkpoint.py
++++ r02/core/crossing_checkpoint.py
+@@ -10,7 +10,7 @@
+ import math
+ 
+ 
+-PROMPT_VERSION = 'crossing-v002-r01-connectivity'
++PROMPT_VERSION = 'crossing-v002-r02-inventory-first'
+ SYSTEM_PROMPT = """You observe a walking robot's indoor navigation, one action at a time.
+ Your ONLY task is to detect route-choice locations (crossings) and describe the observable choices.
+ A crossing is a compact decision area where, EXCLUDING the route the robot arrived from,
+@@ -49,6 +49,16 @@
+ decision area through turns. Compare against the active visual record, if supplied. A
+ different view of the same junction is not a new crossing. Only mark same_place=no when
+ the observations support a different location.
++
++
++Construct the output in its requested order: first incoming_route, then branches and
++their visible evidence, and only LAST decide status. In branches, enumerate every
++visually supported distinct traversable ONWARD route, even if there is only ONE and
++the final status will be not_crossing. Do not leave branches empty as a shorthand
++for a negative classification when a traversable route is visible. Describe a
++continuing corridor and an accessible side-room opening separately when both are
++observed. Then check the inventory against the definition and current reachability.
++Write reason from this inventory. Do not decide status first and rationalize it.
+ 
+ Do not judge instruction progress, navigation success or route correctness. Do not propose
+ movement, correction or recovery. Return ONLY a JSON object matching the requested schema.
+@@ -75,6 +85,13 @@
+             'required': ['direction', 'landmark', 'evidence_frame']}}},
+     'required': ['status', 'location', 'same_place', 'confidence', 'incoming_route',
+                  'description', 'reason', 'evidence_frames', 'branches']}
++
++
++# Same fields and semantics, but facts precede the final classification in the wire schema.
++_INVENTORY_ORDER = ['incoming_route', 'branches', 'evidence_frames', 'description',
++                    'location', 'same_place', 'confidence', 'reason', 'status']
++RESPONSE_SCHEMA['properties'] = {key: RESPONSE_SCHEMA['properties'][key] for key in _INVENTORY_ORDER}
++RESPONSE_SCHEMA['required'] = list(_INVENTORY_ORDER)
+ 
+ 
+ def canonical_hash(value):

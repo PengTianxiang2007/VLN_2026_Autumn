@@ -1,0 +1,16 @@
+{
+  "supervisor_pid": 197411,
+  "command": [
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/crossing_vllm27/bin/python",
+    "-B",
+    "scripts/serve_qwen27b_standby.py",
+    "--config",
+    "experiments/agent_route_choice/services/qwen27b_gpu0_20261106_01/model.json",
+    "--output",
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/model_services/qwen27b_gpu0_20261106_01",
+    "--gpu",
+    "0",
+    "--allow-shared-gpu"
+  ],
+  "keep_alive": true
+}

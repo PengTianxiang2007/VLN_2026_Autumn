@@ -1,0 +1,20 @@
+{
+  "backend": "qwen_local",
+  "model": "route-choice-qwen27b-standby",
+  "model_path": "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/models/Qwen3.8-27B-FP8",
+  "python": ".runtime/crossing_vllm27/bin/python",
+  "max_tokens": 8192,
+  "seed": 20261106,
+  "thinking": false,
+  "request_timeout_seconds": 120,
+  "request_deadline_seconds": 600,
+  "max_network_attempts": 2,
+  "concurrency": 1,
+  "tensor_parallel_size": 1,
+  "minimum_host_memory_gib": 64,
+  "batch_deadline_seconds": 21600,
+  "max_model_len": 32768,
+  "gpu_memory_utilization": 0.75,
+  "max_images": 8,
+  "reasoning_parser": "qwen3"
+}

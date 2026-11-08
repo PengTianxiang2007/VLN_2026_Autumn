@@ -1,0 +1,13 @@
+{
+  "samples": 69,
+  "failures": 39,
+  "successes": 30,
+  "scenes": 10,
+  "frames": 6409,
+  "reused_frames": 68,
+  "initially_annotated": 0,
+  "gpu_used": false,
+  "html_bytes": 154859457,
+  "browser_checks_passed": true,
+  "human_annotations": "pending_user"
+}

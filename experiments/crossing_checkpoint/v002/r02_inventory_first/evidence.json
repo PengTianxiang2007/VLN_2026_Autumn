@@ -1,0 +1,307 @@
+{
+  "source": "outputs/crossing_checkpoint/dev5_val15/run_20261104_01/runs/r01_connectivity/cases/kujiale_0113_1_4",
+  "first_generated_fields": {
+    "status": 26
+  },
+  "evidence": [
+    {
+      "frame": 14,
+      "image_frames": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "image_sha256": [
+        "f14d5b3f6edcdc815ef9b1fb483f64284039dddde9a74d46f427d6885a3b3016",
+        "91d3c9bf7961dd1e8fed347a2302a2aaf44a50f995570d9018826513b7de8ee1",
+        "79c24cd0c10580c394db571e329fb36dca58076ee42741567b1337df94876a5c",
+        "a0ea81a3e3471c5d4d31094ef504148e30fe5c96826ce84ea563e4d4e100068a",
+        "14ff5aebac25760c41b738f504dcfffaf36643204ab65af8cfb54ab9b4c1f159",
+        "e81e7b3f8c26e38a4f8116663f1f7993d6d2cbf764a55ab957a7661188ba9e83",
+        "441cb28e052719d233f9f9cdea9333eca516f4d2b1169fcc59391a5a949dabeb",
+        "4a8892c1c4ae27dac11f164630c6d9d5120240a6f54c4d478071eaf9d9a04471"
+      ],
+      "executed_actions": [
+        {
+          "index": 0,
+          "name": "FORWARD"
+        },
+        {
+          "index": 1,
+          "name": "FORWARD"
+        },
+        {
+          "index": 2,
+          "name": "FORWARD"
+        },
+        {
+          "index": 3,
+          "name": "FORWARD"
+        },
+        {
+          "index": 4,
+          "name": "FORWARD"
+        },
+        {
+          "index": 5,
+          "name": "FORWARD"
+        },
+        {
+          "index": 6,
+          "name": "FORWARD"
+        },
+        {
+          "index": 7,
+          "name": "FORWARD"
+        },
+        {
+          "index": 8,
+          "name": "FORWARD"
+        },
+        {
+          "index": 9,
+          "name": "FORWARD"
+        },
+        {
+          "index": 10,
+          "name": "RIGHT"
+        },
+        {
+          "index": 11,
+          "name": "RIGHT"
+        },
+        {
+          "index": 12,
+          "name": "RIGHT"
+        },
+        {
+          "index": 13,
+          "name": "RIGHT"
+        }
+      ],
+      "request_sha256": "810eb462fd4d8c7755434f3bb6dac1b0500bb5ecf510182ac06f8f6fb82991cf",
+      "prediction": {
+        "status": "not_crossing",
+        "location": "here",
+        "same_place": "no_active_record",
+        "confidence": "medium",
+        "incoming_route": "从卧室方向进入走廊后向右转",
+        "description": "当前在走廊中，前方是走廊的延伸，右侧是厨房区域，左侧是卧室。",
+        "reason": "当前位于走廊中，前方是走廊的延伸，右侧是厨房区域，左侧是卧室。",
+        "evidence_frames": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "branches": []
+      },
+      "elapsed_seconds": 8.421194463968277,
+      "usage": {
+        "prompt_tokens": 3738,
+        "total_tokens": 3871,
+        "completion_tokens": 133,
+        "prompt_tokens_details": null
+      },
+      "created_at": "2026-11-04T18:48:02.735482+00:00"
+    },
+    {
+      "frame": 18,
+      "image_frames": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "image_sha256": [
+        "14ff5aebac25760c41b738f504dcfffaf36643204ab65af8cfb54ab9b4c1f159",
+        "e81e7b3f8c26e38a4f8116663f1f7993d6d2cbf764a55ab957a7661188ba9e83",
+        "441cb28e052719d233f9f9cdea9333eca516f4d2b1169fcc59391a5a949dabeb",
+        "4a8892c1c4ae27dac11f164630c6d9d5120240a6f54c4d478071eaf9d9a04471",
+        "3c0dc6898a460bb737446fb67cf0f55e4e502408c39b3c10f7399851bc0f3115",
+        "78941a3b780059160d52024adb9b4b114f8b0185dd1c0e6a7760129ef43a6bee",
+        "91c8f919f193aae9f0899c88aeb89ff601a2299332109cfd41cbe59fd7d6cc98",
+        "d49268284ab8a7ff600688eaf4d65edd685fe4075bfe40e45f1134b6f93ca601"
+      ],
+      "executed_actions": [
+        {
+          "index": 0,
+          "name": "FORWARD"
+        },
+        {
+          "index": 1,
+          "name": "FORWARD"
+        },
+        {
+          "index": 2,
+          "name": "FORWARD"
+        },
+        {
+          "index": 3,
+          "name": "FORWARD"
+        },
+        {
+          "index": 4,
+          "name": "FORWARD"
+        },
+        {
+          "index": 5,
+          "name": "FORWARD"
+        },
+        {
+          "index": 6,
+          "name": "FORWARD"
+        },
+        {
+          "index": 7,
+          "name": "FORWARD"
+        },
+        {
+          "index": 8,
+          "name": "FORWARD"
+        },
+        {
+          "index": 9,
+          "name": "FORWARD"
+        },
+        {
+          "index": 10,
+          "name": "RIGHT"
+        },
+        {
+          "index": 11,
+          "name": "RIGHT"
+        },
+        {
+          "index": 12,
+          "name": "RIGHT"
+        },
+        {
+          "index": 13,
+          "name": "RIGHT"
+        },
+        {
+          "index": 14,
+          "name": "RIGHT"
+        },
+        {
+          "index": 15,
+          "name": "FORWARD"
+        },
+        {
+          "index": 16,
+          "name": "FORWARD"
+        },
+        {
+          "index": 17,
+          "name": "FORWARD"
+        }
+      ],
+      "request_sha256": "1d529ea3c85da7cfa0cadcfd1f0f2ef9f0bccadc1ea7d2f667961336b21372a0",
+      "prediction": {
+        "status": "not_crossing",
+        "location": "here",
+        "same_place": "no_active_record",
+        "confidence": "high",
+        "incoming_route": "从卧室方向进入走廊",
+        "description": "当前位于一条笔直的走廊中，左侧有一个开放的厨房入口，右侧是走廊的墙壁和植物。",
+        "reason": "虽然左侧有厨房入口，但走廊本身是单一通道，没有形成两个或以上独立的、可选择的后续路径。",
+        "evidence_frames": [
+          15,
+          16,
+          17,
+          18
+        ],
+        "branches": []
+      },
+      "elapsed_seconds": 8.268624532967806,
+      "usage": {
+        "prompt_tokens": 3802,
+        "total_tokens": 3925,
+        "completion_tokens": 123,
+        "prompt_tokens_details": null
+      },
+      "created_at": "2026-11-04T18:48:36.567312+00:00"
+    }
+  ],
+  "hypothesis": "Status-first structured output may commit classification before route enumeration; test inventory-first output order. This is a hypothesis, not established mechanism.",
+  "parent_complete_score": {
+    "tp": 3,
+    "fp": 3,
+    "fn": 10,
+    "confirmed_predictions": 6,
+    "reference_encounters": 13,
+    "duplicate_predictions": 0,
+    "precision": 0.5,
+    "recall": 0.23076923076923078,
+    "f1": 0.3157894736842105
+  },
+  "parent_scores_sha256": "8ae2474a5b1869f2f61d5c5bd2d1e215b626a1a4e5a2451ef6b5b15dc27b763f",
+  "diagnostic_probe": {
+    "order": [
+      "incoming_route",
+      "branches",
+      "evidence_frames",
+      "description",
+      "location",
+      "same_place",
+      "confidence",
+      "reason",
+      "status"
+    ],
+    "requested_order": [
+      "incoming_route",
+      "branches",
+      "evidence_frames",
+      "description",
+      "location",
+      "same_place",
+      "confidence",
+      "reason",
+      "status"
+    ],
+    "status_last": true,
+    "prediction": {
+      "incoming_route": "从卧室/金属门区域向右转后沿主走廊直行进入",
+      "branches": [
+        {
+          "direction": "front",
+          "landmark": "走廊尽头可见的开放通道/门洞",
+          "evidence_frame": 18
+        },
+        {
+          "direction": "left",
+          "landmark": "左侧带黑色大理石门槛的开放厨房/吧台入口",
+          "evidence_frame": 18
+        }
+      ],
+      "evidence_frames": [
+        15,
+        16,
+        17,
+        18
+      ],
+      "description": "机器人沿主走廊直行，当前位于走廊中段。左侧有一个明显的开放入口（带黑色大理石门槛），通向厨房/吧台区域；前方走廊继续延伸，尽头可见开放通道。",
+      "location": "here",
+      "same_place": "no_active_record",
+      "confidence": "high",
+      "reason": "排除来向（从卧室方向右转进入走廊）后，当前可见两条独立可行走的后续路线：1）沿走廊直行至尽头；2）从左侧开放入口进入厨房/吧台区域。两者均为物理上可通行的不同方向，满足交叉口定义。",
+      "status": "crossing"
+    },
+    "elapsed_seconds": 15.157862175256014
+  },
+  "probe_interpretation": "Requested order followed; frame18 now inventories two routes and reports crossing. Parent-memory diagnostic only, excluded from scores; full causal replay still required."
+}

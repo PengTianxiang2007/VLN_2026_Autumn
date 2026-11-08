@@ -1,0 +1,10 @@
+{
+  "ssh_host": "134.175.18.101",
+  "ssh_user": "root",
+  "remote_root": "/www/wwwroot/vln_2026_autumn",
+  "public_base_url": "http://134.175.18.101/vln",
+  "host_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFyMnojLJ9AuA8+8GXMdgxO4PoICFrt8yOGZRpVM9Tlw",
+  "host_key_observed_utc": "2026-11-07",
+  "credentials_file": "core/visualization_publish_credentials.json",
+  "credential_storage": "repository credentials file, explicitly requested by user on 2026-11-07"
+}

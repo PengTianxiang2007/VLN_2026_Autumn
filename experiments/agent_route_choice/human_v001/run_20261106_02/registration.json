@@ -1,0 +1,18 @@
+{
+  "experiment_dir": "experiments/agent_route_choice/human_v001/run_20261106_02",
+  "samples": 34,
+  "episodes": 33,
+  "planned_max_calls": 68,
+  "source_navigation_seed": 2,
+  "concurrency": 10,
+  "html_requested": false,
+  "panoramas": false,
+  "authorization": "User requested GLM5.3-flash on the same frozen human no-panorama dataset, with parallel processes and key retained only in conversation/process memory.",
+  "documentation": [
+    "experiments/agent_route_choice/human_v001/run_20261106_02/README.md",
+    "experiments/agent_route_choice/human_v001/README.md",
+    "experiments/agent_route_choice/README.md",
+    "experiments/README.md",
+    "docs/STATUS.md"
+  ]
+}

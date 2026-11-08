@@ -1,0 +1,59 @@
+{
+  "cases": 9,
+  "observations": 481,
+  "metrics": {
+    "tp": 6,
+    "fp": 6,
+    "fn": 10,
+    "reference_encounters": 16,
+    "confirmed_predictions": 12,
+    "duplicate_predictions": 0,
+    "precision": 0.5,
+    "recall": 0.375,
+    "f1": 0.42857142857142855
+  },
+  "source_batches": [
+    {
+      "campaign": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/crossing_checkpoint/v003/run_20261105_03",
+      "tag": "v003_draft03_stride1_dev3",
+      "cases": 3,
+      "observations": 168,
+      "source_report": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/crossing_checkpoint/v003/run_20261105_03/exports/final/audited_report/crossing_dev8_review.html",
+      "source_sha256": "e548d19f819e8d47a8430bf3a17753a4189991676811d5f434179e680fabd473",
+      "metrics": {
+        "tp": 4,
+        "fp": 3,
+        "fn": 4,
+        "confirmed_predictions": 7,
+        "reference_encounters": 8,
+        "duplicate_predictions": 0,
+        "precision": 0.5714285714285714,
+        "recall": 0.5,
+        "f1": 0.5333333333333333
+      }
+    },
+    {
+      "campaign": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/crossing_checkpoint/v003/run_20261105_05",
+      "tag": "v003_draft03_stride1_extra6",
+      "cases": 6,
+      "observations": 313,
+      "source_report": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/crossing_checkpoint/v003/run_20261105_05/exports/final/audited_report/crossing_dev8_review.html",
+      "source_sha256": "666a92f43b300d8d88e4d3b30fb98c7345e3f1397be8dbf011da39208967f3dc",
+      "metrics": {
+        "tp": 2,
+        "fp": 3,
+        "fn": 6,
+        "confirmed_predictions": 5,
+        "reference_encounters": 8,
+        "duplicate_predictions": 0,
+        "precision": 0.4,
+        "recall": 0.25,
+        "f1": 0.3076923076923077
+      }
+    }
+  ],
+  "prompt_sha256": "efca53a7c341a7717096e8d730f09fc21ee7d4fae93688849a884281f37273dc",
+  "created_at": "2026-11-05T10:50:58.123375+00:00",
+  "git_head": "0a805dfcf4457f80300822abb4eff7cabba43aae",
+  "inference_started": false
+}

@@ -1,0 +1,10 @@
+Based on the current image and the selected branch below, write a clear, unambiguous R2R-style navigation instruction for moving from the current position toward that branch.
+
+Describe only the necessary local movements. Use the current viewing direction as the reference for left and right. Decide from the image whether to move forward before turning, where to turn, and whether a short movement into the entrance is needed. Identify the entrance using visible features when needed to distinguish it from nearby openings.
+
+Give enough detail to make the actions and turning location clear, while keeping the route local. End the instruction once the necessary turn or movement into the selected branch is complete. Do not extend it into a route through the room or toward a farther destination. Do not invent landmarks, distances, or extra movements.
+
+Output only the English navigation instruction.
+
+Selected direction: {selected_direction}
+Local description of the selected entrance: {selected_entrance_description}

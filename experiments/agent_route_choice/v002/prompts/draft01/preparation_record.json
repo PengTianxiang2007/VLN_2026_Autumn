@@ -1,0 +1,39 @@
+{
+  "created_at": "2026-11-06T07:19:54.849419+00:00",
+  "state": "prompt_draft_ready_for_user_review",
+  "model_calls": 0,
+  "gpu_started": false,
+  "git_head": "0a805dfcf4457f80300822abb4eff7cabba43aae",
+  "source_files_sha256": {
+    "01_inventory_en.txt": "c4b63309af59e23c9608faa35ea925e7e54e53723ddcfcec7615e1c9effe3d28",
+    "01_inventory_zh.txt": "a2688bcc95f0191c7ad758731384d3a85d08f196cc5eba9aed744a4319d7e79e",
+    "02_choose_en.txt": "58595c54fc2b37e4237a769febcddf1fa2a5aaa1ce6c85ab2d6ad3fe33e4a0d8",
+    "02_choose_zh.txt": "27a7a73aa491188d2260aaab7e90c008ba7782a056428f255c0b70d48a73fc57",
+    "README.md": "eb8551ceb42bc90b2e616d6115a824d28c9ce167cb257781264db44de060a42e"
+  },
+  "draft_snapshot": "outputs/agent_route_choice/v002/prompt_draft01_20261106_02",
+  "v001_matches_frozen_preparation": true,
+  "v001_prompt_hashes": {
+    "01_inventory_en.txt": "4158810002f6ad317be921e85e845bc192c27a8588af1957cd0827b09984af9e",
+    "01_inventory_zh.txt": "0c3e5477e8c739ced70d1356e86b150bc2fce0e1324106fd7830453eaacb3173",
+    "02_choose_en.txt": "c7ec532635286fd0fa58a996a75d7835a20a2f873891031278515fb40c3a1e9e",
+    "02_choose_zh.txt": "dd4cd118039615d7484d9656eb524f66bf167b5dfe915d0f75ec4d585dab32d0"
+  },
+  "checks": [
+    {
+      "prompt": "01_inventory",
+      "english_no_chinese": true,
+      "bilingual_field_names_identical": true,
+      "english_word_count": 1045
+    },
+    {
+      "prompt": "02_choose",
+      "english_no_chinese": true,
+      "bilingual_field_names_identical": true,
+      "english_word_count": 697
+    }
+  ],
+  "panorama_manifest": "outputs/agent_route_choice/v002/capture_20261106_04/manifest.json",
+  "panorama_manifest_sha256": "80e9a0dd6aad5e0c3356c8add4ff8358e1f17fc5ae2e044111776f7185efd47b",
+  "runtime_integration": "not implemented; v001 remains unchanged"
+}

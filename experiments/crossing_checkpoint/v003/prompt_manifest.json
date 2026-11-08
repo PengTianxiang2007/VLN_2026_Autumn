@@ -1,0 +1,59 @@
+{
+  "prepared_at": "2026-11-05T07:34:50.169789+00:00",
+  "candidate_id": "crossing-v003-region-choice-draft03",
+  "status": "prompt_prepared_not_evaluated",
+  "user_requested_scope": "Small prompt-only reduction in visual evidence threshold; no new evaluation launched.",
+  "prepared_from_git_head": "0a805dfcf4457f80300822abb4eff7cabba43aae",
+  "source_files": {
+    "baseline": {
+      "path": "outputs/crossing_checkpoint/dev5_val15/run_20261104_01/versions/baseline/core/crossing_checkpoint.py",
+      "source_sha256": "2779a94fa7c60919b109b81b42c446366ad878e6eaf7dae95dfcf19ebee5974d",
+      "prompt_sha256": "08b5c32be0afa9b6a18b74c8efd207cfc102dd9a92a9c5ac17c979f747752554"
+    },
+    "r02": {
+      "path": "outputs/crossing_checkpoint/dev5_val15/run_20261104_01/versions/r02_inventory_first/core/crossing_checkpoint.py",
+      "source_sha256": "7636e9bbc88e8ff96aed5e0fff9d6f7562edaa8dbf7cab1338e8e48bf6c82d15",
+      "prompt_sha256": "903fae9df6316a4ebcc3579d38187bf33a47359fbb54910fee6c7178f76ebf4d"
+    }
+  },
+  "candidate_files": {
+    "previous_baseline_en.txt": "08b5c32be0afa9b6a18b74c8efd207cfc102dd9a92a9c5ac17c979f747752554",
+    "previous_baseline_zh.txt": "0a65e1d333ca9f15b9ab6af98f09709e02ba42be15a209bda813ce610e3cf9f9",
+    "previous_r02_en.txt": "903fae9df6316a4ebcc3579d38187bf33a47359fbb54910fee6c7178f76ebf4d",
+    "previous_r02_zh.txt": "884876fcf8bffcc809fdae1de15c1938e35026a5d0a23bcb147343db59b30132",
+    "prompt_en.txt": "efca53a7c341a7717096e8d730f09fc21ee7d4fae93688849a884281f37273dc",
+    "prompt_zh.txt": "6f9662f356392691c4bb2218f1da587937db8e830d122152058dae83ff66ecd3"
+  },
+  "comparison_baseline": "crossing-v1-schema2",
+  "latest_tested_but_not_selected": "crossing-v002-r02-inventory-first",
+  "baseline_temporal_tracking_and_output_paragraphs_preserved": true,
+  "runtime_system_prompt_still_baseline": true,
+  "runtime_code_changed": false,
+  "response_schema_changed": false,
+  "evaluation_started": false,
+  "model_or_simulation_started": false,
+  "new_measurements": null,
+  "updated_at": "2026-11-05T07:34:50.169789+00:00",
+  "draft_revision": 3,
+  "change": "Add three sentences: a single concrete cue may support a plausible second branch; prefer crossing/medium for such partial evidence; room/open-area location alone is not a rejection reason.",
+  "previous_draft": {
+    "manifest": "prompt_manifest_revision02.json",
+    "manifest_sha256": "17eeb1e07970656d5c3399c59346595c2e3ee6ea8cef1e3ec7ef8ca6eed7325f",
+    "files": {
+      "prompt_revision02_en.txt": "54ab928263fefa2684d9317550e59cfdbf72d2febd42d5c804beb53296cea851",
+      "prompt_revision02_zh.txt": "1a1156327186d0e2c9551ed1c4a5a24e22fb82a8db13efad03b41079ea85e8fc"
+    },
+    "evaluated_runs": [
+      "run_20261105_01",
+      "run_20261105_02"
+    ]
+  },
+  "partial_visual_evidence_allowed": true,
+  "evidence_review": {
+    "source": "outputs/crossing_checkpoint/v003/run_20261105_02/runs/v003_region_choice_stride1_dev3",
+    "case": "kujiale_0036_10_0",
+    "frame": 44,
+    "observation": "Model reason rejects a room with exits as not a junction; this is a log-derived lead, not RGB-certified proof of two available branches.",
+    "limitation": "Four of five missed reference visits already have crossing/here votes; this prompt edit does not address event tracking/confirmation anchor matching."
+  }
+}

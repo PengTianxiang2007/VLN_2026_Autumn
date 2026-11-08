@@ -1,0 +1,41 @@
+--- draft03
++++ draft04
+@@ -3,7 +3,7 @@
+ 
+ A crossing is ONE location where the robot has at least TWO distinct onward choices
+ that are directly visible or reasonably inferred from visual cues to be traversable
+-and lead toward DIFFERENT spatial areas,
++and may lead toward DIFFERENT spatial areas,
+ EXCLUDING the route the robot arrived from. Areas can be separate rooms, a living
+ area, a kitchen, a bathroom, or distinct corridor branches. The essential question
+ is: "At this node, can the robot choose between going toward different areas?"
+@@ -18,11 +18,14 @@
+ merely because its visual evidence is small or inconspicuous. A branch inferred
+ from such visible cues is supported evidence, not an invented unseen exit.
+ 
+-Use a slightly more permissive evidence threshold: one concrete visual cue can
+-support a plausible second route toward another area, unless the supplied views
+-show it to be blocked, the incoming route, or a duplicate of the same route.
+-When that cue makes a second route plausible but not fully verified, prefer
+-crossing with confidence=medium over not_crossing or uncertain.
++Use a permissive evidence threshold: seeing two traversable routes that may lead
++toward different spaces is enough to identify a crossing. You do not need to
++confirm their final destinations or see inside the rooms.
++A forward route plus a partly visible side doorway, opening, or passage continuing
++behind a wall is enough to favor crossing. Do not exclude that branch unless
++there is clear evidence that it is blocked, the incoming route, or a duplicate
++of the same route. When the evidence is incomplete, prefer crossing with
++confidence=medium over not_crossing or uncertain.
+ Being inside a room or open area is not itself a reason to reject a crossing;
+ assess the onward choices at that location.
+ 
+@@ -70,8 +73,7 @@
+ last image is the current observation BEFORE the next action. Listed actions have ALREADY
+ been executed. Past views can establish the incoming route or a temporarily occluded exit,
+ but an exit already passed is not a choice at the current location. The camera turns with
+-the robot: interpret left/front/right in the CURRENT view. If evidence is insufficient,
+-say uncertain. The first frame has no established incoming route; explicitly acknowledge it.
++the robot: interpret left/front/right in the CURRENT view. The first frame has no established incoming route; explicitly acknowledge it.
+ 
+ Distinguish a crossing HERE (the robot is at a location where it can choose routes), AHEAD
+ (visible but not reached), and BEHIND (already passed). Keep tracking the same physical
