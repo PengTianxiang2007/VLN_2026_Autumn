@@ -1,0 +1,11 @@
+{
+  "window": 7,
+  "delay": 5,
+  "high": 0.6,
+  "low": 0.45,
+  "peakDrop": 0.03,
+  "initialFloor": 0.45,
+  "debounce": 2,
+  "minGap": 3,
+  "plateauGap": 5
+}

@@ -1,5 +1,7 @@
 # 当前项目状态
 
+2026-11-12：[JEV 在线采样 v001](../experiments/crossing_checkpoint/online_sampling_v001/README.md)获用户认可，准备为主要开发机器合并接入；默认总延迟5个反馈步，确认结果固定。独立算法、41组固定样例、本地网页源码及跨机器导出已验证。网页默认关闭采样，曲线和路线始终完整显示；采样器仍只读取当前前缀。源码交接分支为 `codex/jev-online-sampling-v001`，接手先读 [JEV_SAMPLING_HANDOFF.md](JEV_SAMPLING_HANDOFF.md)。用户要求网页仅本地使用；尚未接入实际导航或后续大模型。
+
 2026-11-07 用户随后纠正：发布服务器密码已按明确要求存入仓库专用认证文件，脚本自动读取；
 SSH/SCP 默认直连，HTTP 默认快速 HEAD 验证，7892 不可用时直接绕过。完整下载和在线浏览器
 检查仅按需执行，避免大文件重复下载拖住交付。见[发布说明](VISUALIZATION_PUBLISHING.md)。

@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-12",
+  "base_commit": "df32de50a5981b3d2175ae927ed2ca7ab50888f7",
+  "sampler_sha256_lf": "a2d9e945e806d2ff774aaf6f6a20ad55659c6c08406cbbaf30ffa81f6d621923",
+  "core_tests": {
+    "passed": true,
+    "golden_cases": 41,
+    "recorded_trajectories": 33,
+    "replays": 4085,
+    "arrivals": 179349,
+    "long_stream_frames": 100000,
+    "recorded_candidates": 284
+  },
+  "exporter_unit_tests": {
+    "passed": true,
+    "tests": 4
+  },
+  "cli_reference_check": {
+    "passed": true,
+    "cases": 1,
+    "candidates": 6
+  },
+  "real_zip_export": {
+    "passed": true,
+    "source": "wrong_choices34_fullwave_site_20261109_05.zip",
+    "cases": 34,
+    "identical_assets": 3049,
+    "html_and_javascript_text_match_previously_verified_local_viewer": true
+  },
+  "scope": {
+    "new_model_calls": 0,
+    "navigation_runs": 0,
+    "live_runtime_integration": false,
+    "detection_accuracy_established": false,
+    "website_local_only": true
+  }
+}

@@ -1,5 +1,7 @@
 # 实验总目录
 
+2026-11-12：[JEV 在线采样 v001](crossing_checkpoint/online_sampling_v001/README.md)：用户认可固定延迟局部峰、滞回区域与间隔采样。参考实现、41组固定样例和本地网页导出已验证，源码经授权在 `codex/jev-online-sampling-v001` 分支交接；[接手说明](../docs/JEV_SAMPLING_HANDOFF.md)给出合并、验证和运行循环适配步骤。网页仅本地使用；尚未新增模型/导航运行。
+
 2026-11-07 起，所有新生成/重导出的 HTML 可视化须按[统一发布规范](../docs/VISUALIZATION_PUBLISHING.md)
 上传到用户指定服务器，并在具体实验/导出 README 记录源文件、网址、SHA256、发布时间及在线验证结果。
 本地导出成功不等于完成交付；回复必须提供可直接打开的完整网址。历史原件与版本保持不变。
