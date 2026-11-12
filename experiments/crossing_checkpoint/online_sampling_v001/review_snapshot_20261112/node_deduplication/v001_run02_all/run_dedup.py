@@ -133,7 +133,7 @@ def run_case(case,key,prompt,settings):
         apply_decision(active,b,relation)
         decision={'order':len(decisions)+1,'previous_id':a['id'] if a else None,'current_id':b['id'],'previous_frame':a['index'] if a else None,'current_frame':b['index'],'step_gap':gap,'needs_model':needs,'relation':relation,'reason':reason,'action':'replace_previous' if relation=='same' else 'append_current','active_ids_before':before,'active_ids_after':[n['id'] for n in active],'committed_at':now()}
         if response:
-            for k in ['status','answer','error','started_at','completed_at','elapsed_seconds','normalized_references']: 
+            for k in ['status','answer','error','started_at','completed_at','elapsed_seconds','normalized_references']:
                 if k in response:decision[k]=response[k]
             decision['usage']=response.get('response',{}).get('usage',{})
         decisions.append(decision)
