@@ -1,0 +1,29 @@
+/* Match the supplied laboratory template; add compact evidence and progress panels. */
+#eliminationControls,#nodeEliminationTop,#dedupAudit{display:none!important}
+#guardStrip{border:1px solid #b8cbd6;border-radius:8px;background:#f8fbfd;padding:12px;margin:14px 0}
+#guardStrip h3{margin:0 0 7px}.guard-toolbar{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.guard-toolbar label{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:700}.guard-toolbar input{accent-color:#e11d48}
+#guardNodes{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}.guard-node{font-size:11px;padding:5px 7px;border:1.5px solid #94a3b8;background:#fff}
+.guard-node.consistent{border-color:#0f766e;color:#0f766e}.guard-node.deviated{border-color:#e11d48;background:#fff1f2;color:#be123c}
+.guard-node.uncertain{border-color:#b7791f;background:#fffbeb;color:#92400e}.guard-node.error{border-color:#9f1239;color:#9f1239}
+.guard-node.initialization{border-color:#2563eb;color:#1d4ed8}.guard-node.replaced{border-style:dashed;opacity:.76}.guard-node.selected{outline:2px solid #17344e;outline-offset:1px;opacity:1}
+#guardPanel{margin-top:14px;padding:12px;border:1px solid #b9cbd8;border-radius:8px;background:#f8fbfd}
+#guardPanel h3{margin:0 0 9px;font-size:16px}#guardNode{width:100%;margin:8px 0;font-size:12px}
+.guard-badge{display:inline-block;border-radius:5px;padding:3px 9px;font-size:12px;font-weight:700;background:#e2e8f0;color:#334155}
+.guard-badge.consistent{background:#d9f1e9;color:#065f46}.guard-badge.deviated{background:#ffe1e6;color:#be123c}.guard-badge.uncertain{background:#fff0c2;color:#92400e}.guard-badge.initialization{background:#dbeafe;color:#1d4ed8}
+.guard-label{font-size:12px;font-weight:700;color:#537087;margin:11px 0 3px}.guard-content{font-size:13px;line-height:1.75;margin:0;white-space:pre-wrap;overflow-wrap:anywhere}
+.guard-progress{background:#eaf5f0;border-left:3px solid #0f766e;border-radius:4px;padding:9px;margin:9px 0}
+.guard-progress[data-state="deviated"],.guard-progress[data-state="pending"],.guard-progress[data-state="uncertain"],.guard-progress[data-state="error"]{background:#f0f3f6;border-color:#94a3b8}
+#guardRollback{padding:8px;border:1px solid #f9a8b8;background:#fff1f2;color:#9f1239;border-radius:5px;font-size:12px}
+#guardProof{font-size:12px;line-height:1.7}#guardProof h4{font-size:12px;margin:10px 0 4px}#guardProof p{margin:4px 0}.guard-quote{border-left:2px solid #94a3b8;padding-left:8px}
+#guardEvidenceBox{border-top:1px solid #d9e2eb;margin-top:14px;padding-top:9px}#guardEvidenceBox h3{font-size:14px;margin:0 0 3px}
+#guardEvidence{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;margin:9px 0}
+.guard-image{padding:3px;border:1px solid #cbd5e1;background:#fff;min-width:0}.guard-image.A,.guard-image.B{border:2px solid #1d5a68}.guard-image img{width:100%;display:block;aspect-ratio:4/3;object-fit:contain}.guard-image span{display:block;font-size:10px;line-height:1.4;margin:4px 0;overflow-wrap:anywhere}
+#guardRaw{font-size:12px}#guardRaw a{display:inline-block;margin-right:12px;color:#1d4ed8}#guardPromptText{max-height:500px}
+#guardSummaryLink{display:inline-block;margin-top:8px;font-size:12px;color:#1d4ed8}#guardInit{padding:7px;background:#eff6ff;border-radius:4px}
+#guardNodeMeta{overflow-wrap:anywhere}#guardLatency{font-variant-numeric:tabular-nums}#guardEvidenceMeta{font-variant-numeric:tabular-nums}
+button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #38bdf8;outline-offset:2px}button:disabled{cursor:default;opacity:.48}
+@media(max-width:1250px){#guardEvidence{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:760px){#guardEvidence{grid-template-columns:repeat(3,minmax(0,1fr))}#guardPanel{margin-top:12px}.guard-node{padding:7px;font-size:12px}}
+
+.guard-task{padding:12px 16px;margin:12px 0 16px;background:#eef6fb;border-left:4px solid #245f7b;border-radius:5px}.guard-task h3{font-size:15px;margin:0 0 7px}.guard-task p{font-size:15px;line-height:1.85;white-space:pre-wrap;margin:0}#guardBadge{margin-right:6px}

@@ -1,0 +1,76 @@
+{
+  "mode": "segment",
+  "previous_id": "S02",
+  "current_id": "S03",
+  "previous_frame": 40,
+  "current_frame": 45,
+  "instruction_en": "Walk forward past the bookshelves on your right. Turn left to enter the first doorway, with a painting on the wall to your right. Proceed straight through this doorway and continue straight through the next doorway immediately ahead. After passing the second doorway, turn left. Walk forward into the open room, keeping the dining table and chairs on your right and the living room area with sofas and a TV on your left. Turn slightly left and stop in front of the large window, with the television on your right and a sofa on your left.",
+  "prior_semantic_progress": "截至 S02，已从门洞向前进入带大窗的明亮房间；电视在右墙、木柜在其下，窗边沙发/坐卧家具在左侧，正在朝窗前继续靠近，尚未在窗前停下。此前是否经过书架、画作和两道门，以及餐桌椅是否保持在右侧，仍未确认。",
+  "coverage": "Endpoint observations plus up to five uniformly sampled intermediate observations. Frames are not necessarily consecutive. Review ends at B.",
+  "images": [
+    {
+      "frame": 40,
+      "role": "A",
+      "image_id": "7daf5d3243bc13495c2dde70bc36d3f47e420095ccc34fdf2d71e0a7e1751c47",
+      "path": "assets/7daf5d3243bc13495c2dde70bc36d3f47e420095ccc34fdf2d71e0a7e1751c47.webp",
+      "sha256": "7daf5d3243bc13495c2dde70bc36d3f47e420095ccc34fdf2d71e0a7e1751c47",
+      "bytes": 14578
+    },
+    {
+      "frame": 41,
+      "role": "history",
+      "image_id": "dfb8c3c38bffa1bbc179a212e9ca5e0617240fe0f189d21d13fe05e64dd3bfdf",
+      "path": "assets/dfb8c3c38bffa1bbc179a212e9ca5e0617240fe0f189d21d13fe05e64dd3bfdf.webp",
+      "sha256": "dfb8c3c38bffa1bbc179a212e9ca5e0617240fe0f189d21d13fe05e64dd3bfdf",
+      "bytes": 15766
+    },
+    {
+      "frame": 42,
+      "role": "history",
+      "image_id": "7a6d758803990fe392a52f1f54e921e77ad86680b1d4598abd59f05fd1c1aee0",
+      "path": "assets/7a6d758803990fe392a52f1f54e921e77ad86680b1d4598abd59f05fd1c1aee0.webp",
+      "sha256": "7a6d758803990fe392a52f1f54e921e77ad86680b1d4598abd59f05fd1c1aee0",
+      "bytes": 17206
+    },
+    {
+      "frame": 43,
+      "role": "history",
+      "image_id": "c076895e38ee235884838f34a8841ab066feac48310c19a7d4a4e13aa0048ea1",
+      "path": "assets/c076895e38ee235884838f34a8841ab066feac48310c19a7d4a4e13aa0048ea1.webp",
+      "sha256": "c076895e38ee235884838f34a8841ab066feac48310c19a7d4a4e13aa0048ea1",
+      "bytes": 19440
+    },
+    {
+      "frame": 44,
+      "role": "history",
+      "image_id": "58cdacb0e8c00c0f2dcba418988f986c0b85d3c46f8b3152398b8fa0faf9ffdd",
+      "path": "assets/58cdacb0e8c00c0f2dcba418988f986c0b85d3c46f8b3152398b8fa0faf9ffdd.webp",
+      "sha256": "58cdacb0e8c00c0f2dcba418988f986c0b85d3c46f8b3152398b8fa0faf9ffdd",
+      "bytes": 17332
+    },
+    {
+      "frame": 45,
+      "role": "B",
+      "image_id": "1a9920b376595542092effb5d6d0823fc19ff56d3d27a4e53e0efdce06be25ac",
+      "path": "assets/1a9920b376595542092effb5d6d0823fc19ff56d3d27a4e53e0efdce06be25ac.webp",
+      "sha256": "1a9920b376595542092effb5d6d0823fc19ff56d3d27a4e53e0efdce06be25ac",
+      "bytes": 13216
+    }
+  ],
+  "settings": {
+    "model": "deepseek-flash",
+    "response_format": {
+      "type": "json_object"
+    },
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_tokens": 32768,
+    "stream": false
+  },
+  "prompt_sha256": "129ef91051dcb6cc1be8e2e276cb102166bff322a36fdd10661e644de2162cad",
+  "request_sha256": "547494ffcd5fd3e4b2376f6c85892e4a85c52ad4859eceff1132771e1da53a48",
+  "started_at": "2026-11-12T10:43:22.237986+00:00",
+  "worker_pid": 13424
+}

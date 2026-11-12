@@ -1,0 +1,257 @@
+{
+  "case_number": 5,
+  "case_index": 1,
+  "episode_id": "kujiale_0036_50_1 · F23",
+  "real_episode_id": "kujiale_0036_50_1",
+  "scene": "kujiale_0036",
+  "worker_pid": 32580,
+  "started_at": "2026-11-12T08:25:49.608644+00:00",
+  "completed_at": "2026-11-12T08:26:18.772949+00:00",
+  "reviews": [
+    {
+      "node_id": "S01",
+      "node_frame": 5,
+      "available_at_frame": 10,
+      "terminal_node": false,
+      "mode": "initialization",
+      "previous_id": "S01",
+      "from_frame": 5,
+      "to_frame": 5,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 5,
+          "role": "A=B",
+          "image_id": "9ba9702b2dfc0223fc48c527af57dc18bc76567f8aa6abc6de663ebee33ae3e6",
+          "path": "assets/9ba9702b2dfc0223fc48c527af57dc18bc76567f8aa6abc6de663ebee33ae3e6.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 10.768,
+      "started_at": "2026-11-12T08:25:49.608644+00:00",
+      "completed_at": "2026-11-12T08:26:00.379663+00:00",
+      "worker_pid": 32580,
+      "request_file": "run/cases/C05/S01.request.json",
+      "response_file": "run/cases/C05/S01.response.json",
+      "usage": {
+        "prompt_tokens": 1407,
+        "completion_tokens": 1660,
+        "total_tokens": 3067,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 922
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 511
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S01",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "当前仅有一个有效节点：视角位于木质门框或门口附近，透过门框可见室内有白色单人椅和台灯；右侧近景为浅色瓷砖墙、毛巾环及深色设备边缘。画面未显示电视、床或蓝粉窗帘，无法确认已从走廊右转进入目标房间。",
+          "en": "Only one valid node is available: the viewpoint is near a wooden door frame or doorway, and through it a white armchair and a table lamp are visible in the room; in the right foreground are a light-colored tiled wall, a towel ring, and the edge of a dark fixture. The image does not show a TV, bed, or blue and pink curtains, so it cannot be confirmed that the robot has turned right from the hallway into the target room."
+        },
+        "reason": {
+          "zh": "初始化节点 A=B，只能据此建立当前语义状态；单帧显示门口及相邻空间，但缺少可验证的右转、穿门，以及电视在左、床在右的通行依据，因此不判定完成任何新增路线要求。",
+          "en": "The initialization node has A=B, so only the current semantic state can be established from it; the single frame shows a doorway and an adjacent space, but there is no verifiable evidence of a right turn, passing through the door, or the TV on the left and bed on the right, so no newly completed route requirement is confirmed."
+        },
+        "instruction_evidence": [],
+        "visual_evidence": [
+          {
+            "frames": [
+              5
+            ],
+            "description": {
+              "zh": "单帧显示木质门框或门边、瓷砖墙和毛巾环，并透过门洞看到带台灯的白色单人椅；未见电视、床或蓝粉窗帘。",
+              "en": "The single frame shows a wooden door frame or door edge, a tiled wall, and a towel ring, and through the doorway a white armchair with a table lamp is visible; no TV, bed, or blue and pink curtains are visible."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "首次有效节点：当前位于木质门框或门口附近，可见室内有白色单人椅和台灯，右侧有瓷砖墙与毛巾；尚未确认是否已从走廊右转进入目标房间，也未确认电视在左、床在右以及蓝粉窗帘的位置。",
+          "en": "First valid node: the robot is currently near a wooden door frame or doorway; inside, a white armchair and a table lamp are visible, and on the right there are a tiled wall and a towel. It is not yet confirmed whether the robot has turned right from the hallway into the target room, nor whether the TV is on the left, the bed on the right, and where the blue and pink curtains are."
+        },
+        "uncertainties": [
+          {
+            "zh": "当前视角是在走廊门口还是已进入目标房间，尚无法确认。",
+            "en": "It is not yet possible to confirm whether the current viewpoint is at a hallway doorway or already inside the target room."
+          },
+          {
+            "zh": "是否已完成从走廊右转并穿门进入房间，缺少过程证据。",
+            "en": "There is no process evidence to confirm whether the robot has completed the right turn from the hallway and passed through the door into the room."
+          },
+          {
+            "zh": "电视、床及蓝粉窗帘是否位于该空间内及其左右关系，画面未显示。",
+            "en": "Whether the TV, bed, and blue and pink curtains are in this space and their left-right relationships are not shown in the image."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "首次有效节点：当前位于木质门框或门口附近，可见室内有白色单人椅和台灯，右侧有瓷砖墙与毛巾；尚未确认是否已从走廊右转进入目标房间，也未确认电视在左、床在右以及蓝粉窗帘的位置。",
+        "en": "First valid node: the robot is currently near a wooden door frame or doorway; inside, a white armchair and a table lamp are visible, and on the right there are a tiled wall and a towel. It is not yet confirmed whether the robot has turned right from the hallway into the target room, nor whether the TV is on the left, the bed on the right, and where the blue and pink curtains are."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 5
+      }
+    },
+    {
+      "node_id": "S02",
+      "node_frame": 10,
+      "available_at_frame": 15,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S01",
+      "from_frame": 5,
+      "to_frame": 10,
+      "prior_progress": {
+        "zh": "首次有效节点：当前位于木质门框或门口附近，可见室内有白色单人椅和台灯，右侧有瓷砖墙与毛巾；尚未确认是否已从走廊右转进入目标房间，也未确认电视在左、床在右以及蓝粉窗帘的位置。",
+        "en": "First valid node: the robot is currently near a wooden door frame or doorway; inside, a white armchair and a table lamp are visible, and on the right there are a tiled wall and a towel. It is not yet confirmed whether the robot has turned right from the hallway into the target room, nor whether the TV is on the left, the bed on the right, and where the blue and pink curtains are."
+      },
+      "images": [
+        {
+          "frame": 5,
+          "role": "A",
+          "image_id": "9ba9702b2dfc0223fc48c527af57dc18bc76567f8aa6abc6de663ebee33ae3e6",
+          "path": "assets/9ba9702b2dfc0223fc48c527af57dc18bc76567f8aa6abc6de663ebee33ae3e6.webp"
+        },
+        {
+          "frame": 6,
+          "role": "history",
+          "image_id": "c3b274ad0e28c95ebf09995efa2bd0679a79bd8b4017260a6b85be558909c299",
+          "path": "assets/c3b274ad0e28c95ebf09995efa2bd0679a79bd8b4017260a6b85be558909c299.webp"
+        },
+        {
+          "frame": 7,
+          "role": "history",
+          "image_id": "0bcc90b26ede8eaa9f98dd787a0454ef987fff72cf0c479e1d5984cc8ac6d59f",
+          "path": "assets/0bcc90b26ede8eaa9f98dd787a0454ef987fff72cf0c479e1d5984cc8ac6d59f.webp"
+        },
+        {
+          "frame": 8,
+          "role": "history",
+          "image_id": "66c88ce4ae93bd0a2b20870371c4fc4c254cc7bf0be6e17947a529a18607d0cf",
+          "path": "assets/66c88ce4ae93bd0a2b20870371c4fc4c254cc7bf0be6e17947a529a18607d0cf.webp"
+        },
+        {
+          "frame": 9,
+          "role": "history",
+          "image_id": "5dd205870e94a67b8405f788374ed15fde6e6bd92163a5db05b143c9828ca105",
+          "path": "assets/5dd205870e94a67b8405f788374ed15fde6e6bd92163a5db05b143c9828ca105.webp"
+        },
+        {
+          "frame": 10,
+          "role": "B",
+          "image_id": "7ab999d0924cac683468013dd78c298d4f4e86803a8710c4cfd6fff3fb878742",
+          "path": "assets/7ab999d0924cac683468013dd78c298d4f4e86803a8710c4cfd6fff3fb878742.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 18.359,
+      "started_at": "2026-11-12T08:26:00.399245+00:00",
+      "completed_at": "2026-11-12T08:26:18.758872+00:00",
+      "worker_pid": 32580,
+      "request_file": "run/cases/C05/S02.request.json",
+      "response_file": "run/cases/C05/S02.response.json",
+      "usage": {
+        "prompt_tokens": 2530,
+        "completion_tokens": 2844,
+        "total_tokens": 5374,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2290
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1634
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S02",
+        "verdict": "deviated",
+        "segment_summary": {
+          "zh": "从木质门框附近离开，视角向右转向并进入带圆形镜子、洗手盆和马桶的卫生间；经过毛巾与洗手台，最后停在洗手台和马桶旁，未见电视、床或蓝粉窗帘。",
+          "en": "From near the wooden door frame, the view turned right and moved into a bathroom with a round mirror, sink, and toilet; it passed towels and the vanity and ended beside the vanity and toilet, with no TV, bed, or blue-pink curtains seen."
+        },
+        "reason": {
+          "zh": "任务要求从走廊右转进入房间后直行，电视在左、床在右，并停在蓝粉窗帘窗前；本段画面却显示进入并停留在卫生间（圆镜、洗手盆、马桶、毛巾），与目标卧室及其参照物冲突。",
+          "en": "The task requires turning right from the hallway into the room, walking straight with the TV on the left and bed on the right, and stopping in front of the blue and pink curtains; this segment instead shows entering and stopping in a bathroom with a round mirror, sink, toilet, and towels, conflicting with the target bedroom and its landmarks."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "From the hallway, turn right to enter the room.",
+            "quote_zh": "从走廊右转进入房间。"
+          },
+          {
+            "quote_en": "Walk straight forward with the TV on your left and the bed on your right",
+            "quote_zh": "直行，电视在左侧，床在右侧"
+          },
+          {
+            "quote_en": "stop in front of the window with the blue and pink curtains",
+            "quote_zh": "停在有蓝粉窗帘的窗前"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              5,
+              6
+            ],
+            "description": {
+              "zh": "F5 显示木质门框、局部开间和右侧瓷砖墙；F6 转向并显现卫生间洗手台、圆镜和毛巾。",
+              "en": "F5 shows the wooden door frame, a partial opening, and the tiled wall on the right; F6 turns toward and reveals the bathroom vanity, round mirror, and towel."
+            }
+          },
+          {
+            "frames": [
+              7,
+              8,
+              9,
+              10
+            ],
+            "description": {
+              "zh": "这些帧近距离显示卫生间洗手盆、圆镜、毛巾和马桶，终点 B 停在洗手台与马桶旁；未见电视、床或蓝粉窗帘。",
+              "en": "These frames show close views of the bathroom sink, round mirror, towel, and toilet, with endpoint B stopped beside the vanity and toilet; no TV, bed, or blue-pink curtains are visible."
+            }
+          }
+        ],
+        "semantic_progress": null,
+        "uncertainties": []
+      },
+      "rollback_target": {
+        "node_id": "S01",
+        "frame": 5,
+        "progress": {
+          "zh": "首次有效节点：当前位于木质门框或门口附近，可见室内有白色单人椅和台灯，右侧有瓷砖墙与毛巾；尚未确认是否已从走廊右转进入目标房间，也未确认电视在左、床在右以及蓝粉窗帘的位置。",
+          "en": "First valid node: the robot is currently near a wooden door frame or doorway; inside, a white armchair and a table lamp are visible, and on the right there are a tiled wall and a towel. It is not yet confirmed whether the robot has turned right from the hallway into the target room, nor whether the TV is on the left, the bed on the right, and where the blue and pink curtains are."
+        }
+      },
+      "committed_progress": {
+        "zh": "首次有效节点：当前位于木质门框或门口附近，可见室内有白色单人椅和台灯，右侧有瓷砖墙与毛巾；尚未确认是否已从走廊右转进入目标房间，也未确认电视在左、床在右以及蓝粉窗帘的位置。",
+        "en": "First valid node: the robot is currently near a wooden door frame or doorway; inside, a white armchair and a table lamp are visible, and on the right there are a tiled wall and a towel. It is not yet confirmed whether the robot has turned right from the hallway into the target room, nor whether the TV is on the left, the bed on the right, and where the blue and pink curtains are."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 5
+      }
+    }
+  ],
+  "stop_node": "S02",
+  "stop_reason": "first_deviation",
+  "terminal_frame": 68,
+  "raw_node_count": 6,
+  "retained_node_count": 6,
+  "unreviewed_nodes": [
+    "S03",
+    "S04",
+    "S05",
+    "S06"
+  ]
+}

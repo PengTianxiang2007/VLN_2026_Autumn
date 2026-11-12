@@ -1,0 +1,82 @@
+{
+  "started_at": "2026-11-12T08:25:49.639830+00:00",
+  "worker_pid": 44612,
+  "status": "error",
+  "http_status": 200,
+  "response": {
+    "id": "79e322d1-85ab-4276-a2e6-3e1c340b9e6e",
+    "object": "chat.completion",
+    "created": 1794471950,
+    "model": "deepseek-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"previous_id\":\"S01\",\"current_id\":\"S01\",\"verdict\":\"consistent\",\"segment_summary\":{\"zh\":\"A=B，首帧从带层架的高柜旁向室内看：左侧近景是柜体，前方可见电视和矮柜，右侧有圆桌及两把餐椅，尚未看到打开的厨房门口或窗边水槽、冰箱。\",\"en\":\"A=B. From beside a tall built-in shelving unit, the first frame looks into the room: the cabinet is in the left foreground, a TV and low cabinet are visible ahead, and a round table and two dining chairs are on the right; no open kitchen doorway, window sink, or refrigerator is visible yet.\"},\"reason\":{\"zh\":\"单帧可确认当前位于高柜一侧并朝向客餐厅，但无法仅凭此帧确认是否已按指令直行通过该柜、右转经过餐桌或进入厨房；作为初始化，仅建立当前语义状态，此前路线不确认。\",\"en\":\"This single frame confirms only that the viewpoint is beside a tall cabinet and facing the living/dining area. It cannot establish that the shelf was already passed straight ahead, that the dining table was passed by turning right, or that the kitchen was entered; as initialization, it only establishes the current semantic state, and the prior route is unconfirmed.\"},\"instruction_evidence\":[],\"visual_evidence\":[{\"frames\":[8],\"description\":{\"zh\":\"第8帧中左侧近景为带层架的高柜，前方有壁挂电视和矮柜，右侧有圆桌与两把椅子；没有可见的厨房入口、窗户水槽或冰箱。\",\"en\":\"In frame 8, a tall built-in shelving unit is in the left foreground, a wall-mounted TV and low cabinet are ahead, and a round table with two chairs is on the right; no kitchen entrance, window sink, or refrigerator is visible.\"}}],\"semantic_progress\":{\"zh\":\"首个有效节点：当前位于带层架的高柜旁，柜体在左侧，面向有电视和餐桌椅的区域；此前移动尚未确认，直行经过高柜、右转经过餐桌、进入厨房及到窗边水槽处停下均未确认。\",\"en\":\"First valid node: the robot is currently beside a tall built-in shelving unit, with the cabinet on the left, facing an area with a TV and dining table/chairs. Prior movement is unconfirmed, as are proceeding straight past the cabinet, turning right past the dining table, entering the kitchen, and stopping at the window sink.\"},\"uncertainties\":{\"zh\":[\"此前是否沿高柜左侧直行通过，以及是否曾右转经过餐桌，尚未确认。\",\"画面中未见打开的厨房门口，也未确认厨房、窗户水槽和大冰箱的位置。\",\"当前高柜是否就是指令所指带瓶子和书的高柜，仍需结合后续视角确认。\"],\"en\":[\"It is not yet confirmed whether the robot previously proceeded straight past the left side of the tall cabinet or turned right past the dining table.\",\"No open kitchen doorway is visible, and the locations of the kitchen, window sink, and large refrigerator are not confirmed.\",\"It remains to be confirmed with later views whether the current tall cabinet is the one with bottles and books specified in the instruction.\"]}}",
+          "reasoning_content": "We need answer JSON only. Need analyze initialization single frame. Need establish semantic state from observation, not infer prior route. Image shows viewpoint near built-in shelf? Left foreground large white built-in shelf with shelves, some objects maybe bottles/books? Center bright room with TV on wall, low console, round table, two chairs on right, closed white door ahead. Need task: walk forward keeping tall built-in shelf with bottles/books on left. Proceed straight passing shelf left. Turn right past dining table right. Enter kitchen through open doorway right. Stop in front window and sink, fridge left.\n\nAt frame 8, camera seems at/next to built-in shelf on left, looking forward into living/dining area. Shelf left foreground. Ahead TV, door, table/chairs right. Can we confirm shelf with bottles/books? loosely yes built-in shelf left foreground. But only single frame, cannot confirm movement. initialization: prior progress unconfirmed; current state perhaps located beside tall built-in shelf on left, facing forward toward living area with TV and dining table/chairs to right; kitchen doorway not visible. Need verdict consistent (specified). semantic_progress cumulative from this frame: \"首个有效节点位于带架子的高柜旁，架子在左侧；前方可见客厅电视、圆桌和餐椅，右侧有两把椅子；尚未确认已直行经过柜子、右转经过餐桌或进入厨房。\" But be careful not claim actual position beyond observation. \"当前视角显示左侧近处是高柜/置物架，前方有电视和桌椅；尚未观察到厨房门口或水槽冰箱。\" That's acceptable. Need mention previous route unconfirmed. semantic progress maybe ≤200 Chinese chars.\n\nNeed JSON fields. instruction_evidence perhaps can be empty because initialization. visual_evidence one item frames [8], description zh/en. uncertainties array about prior route, whether shelf corresponds to specified, whether kitchen doorway visible. We can include. segment_summary: \"首帧从...\" Should not overstate. \"A=B，在带架子的高柜旁观察前方：左侧近景为高柜，前方是电视和矮柜，右侧有圆桌和餐椅；未见厨房门口、窗户水槽或冰箱。\" Is it \"带架子的高柜\" yes.\n\nNeed quote_en? initialization can empty. But maybe include max 3? \"initialization 可以为空\" and not deviated. Can be empty. Visual evidence frames actual 8.\n\nNeed exact current_id S01 previous_id S01. verdict consistent. semantic_progress non-null. uncertainties array.\n\nLet's ensure English translation faithful same conclusions. We don't need too long. Need not mention \"bottles and books\" if unclear; shelf has objects. The task says tall built-in shelf with bottles and books on left. Image left shelf built-in with window-like cubbies, objects. We can state \"built-in shelving unit on the left is visible in the near foreground.\" Good.\n\nNeed \"first effective node\" no prior movement confirmed. Since initialization, no nonzero segment. mode initialization. \"previous route progress unconfirmed\" semantic progress. We need be consistent.\n\nLet's craft:\n\nsegment_summary zh: \"A=B，首帧从带层架的高柜旁向室内看：左侧近景是柜体，前方可见电视和矮柜，右侧有圆桌及两把餐椅，尚未看到打开的厨房门口或窗边水槽/冰箱。\"\nen faithful.\n\nreason zh: \"单帧可确认当前位于高柜一侧并朝向客餐厅，但无法仅凭此帧确认是否已按指令直行通过该柜、右转经过餐桌或进入厨房；作为初始化，仅建立当前语义状态，此前路线不确认。\"\nen.\n\ninstruction_evidence [].\n\nvisual_evidence: frames [8], desc zh: \"第8帧中左侧近景为带层架的高柜，前方有壁挂电视和矮柜，右侧有圆桌与两把椅子；没有可见的厨房入口、窗户水槽或冰箱。\" en.\n\nsemantic_progress zh: \"首个有效节点：当前位于带层架的高柜旁，柜体在左侧，面向有电视和餐桌椅的区域；此前移动尚未确认，直行经过高柜、右转经过餐桌、进入厨房及到窗边水槽处停下均未确认。\" That's <=200. Good.\n\nuncertainties:\n1. \"此前是否沿高柜左侧直行通过，以及是否曾右转经过餐桌，尚未确认。\" \n2. \"画面中未见打开的厨房门口，也未确认厨房、窗户水槽和大冰箱的位置。\"\n3. \"当前高柜是否就是指令所指带瓶子和书的高柜，需结合后续视角确认。\" Is that too uncertain? Since image shows shelf but objects unclear. Good.\n\nNeed not overdo. English.\n\nEnsure no markdown. Final only JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1434,
+      "completion_tokens": 1697,
+      "total_tokens": 3131,
+      "prompt_tokens_details": {
+        "cached_tokens": 896
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1010
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 538
+    },
+    "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+  },
+  "parsed_original": {
+    "previous_id": "S01",
+    "current_id": "S01",
+    "verdict": "consistent",
+    "segment_summary": {
+      "zh": "A=B，首帧从带层架的高柜旁向室内看：左侧近景是柜体，前方可见电视和矮柜，右侧有圆桌及两把餐椅，尚未看到打开的厨房门口或窗边水槽、冰箱。",
+      "en": "A=B. From beside a tall built-in shelving unit, the first frame looks into the room: the cabinet is in the left foreground, a TV and low cabinet are visible ahead, and a round table and two dining chairs are on the right; no open kitchen doorway, window sink, or refrigerator is visible yet."
+    },
+    "reason": {
+      "zh": "单帧可确认当前位于高柜一侧并朝向客餐厅，但无法仅凭此帧确认是否已按指令直行通过该柜、右转经过餐桌或进入厨房；作为初始化，仅建立当前语义状态，此前路线不确认。",
+      "en": "This single frame confirms only that the viewpoint is beside a tall cabinet and facing the living/dining area. It cannot establish that the shelf was already passed straight ahead, that the dining table was passed by turning right, or that the kitchen was entered; as initialization, it only establishes the current semantic state, and the prior route is unconfirmed."
+    },
+    "instruction_evidence": [],
+    "visual_evidence": [
+      {
+        "frames": [
+          8
+        ],
+        "description": {
+          "zh": "第8帧中左侧近景为带层架的高柜，前方有壁挂电视和矮柜，右侧有圆桌与两把椅子；没有可见的厨房入口、窗户水槽或冰箱。",
+          "en": "In frame 8, a tall built-in shelving unit is in the left foreground, a wall-mounted TV and low cabinet are ahead, and a round table with two chairs is on the right; no kitchen entrance, window sink, or refrigerator is visible."
+        }
+      }
+    ],
+    "semantic_progress": {
+      "zh": "首个有效节点：当前位于带层架的高柜旁，柜体在左侧，面向有电视和餐桌椅的区域；此前移动尚未确认，直行经过高柜、右转经过餐桌、进入厨房及到窗边水槽处停下均未确认。",
+      "en": "First valid node: the robot is currently beside a tall built-in shelving unit, with the cabinet on the left, facing an area with a TV and dining table/chairs. Prior movement is unconfirmed, as are proceeding straight past the cabinet, turning right past the dining table, entering the kitchen, and stopping at the window sink."
+    },
+    "uncertainties": {
+      "zh": [
+        "此前是否沿高柜左侧直行通过，以及是否曾右转经过餐桌，尚未确认。",
+        "画面中未见打开的厨房门口，也未确认厨房、窗户水槽和大冰箱的位置。",
+        "当前高柜是否就是指令所指带瓶子和书的高柜，仍需结合后续视角确认。"
+      ],
+      "en": [
+        "It is not yet confirmed whether the robot previously proceeded straight past the left side of the tall cabinet or turned right past the dining table.",
+        "No open kitchen doorway is visible, and the locations of the kitchen, window sink, and large refrigerator are not confirmed.",
+        "It remains to be confirmed with later views whether the current tall cabinet is the one with bottles and books specified in the instruction."
+      ]
+    }
+  },
+  "error": "ValueError: Invalid uncertainties",
+  "completed_at": "2026-11-12T08:26:01.224455+00:00",
+  "elapsed_seconds": 11.583
+}

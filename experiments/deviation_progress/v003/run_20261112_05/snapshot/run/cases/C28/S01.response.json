@@ -1,0 +1,83 @@
+{
+  "started_at": "2026-11-12T08:11:10.844645+00:00",
+  "worker_pid": 45636,
+  "status": "error",
+  "http_status": 200,
+  "response": {
+    "id": "2d2ffcb9-d71b-4c64-bb22-aa78f4603bf2",
+    "object": "chat.completion",
+    "created": 1794471071,
+    "model": "deepseek-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"previous_id\":\"S01\",\"current_id\":\"S01\",\"verdict\":\"consistent\",\"segment_summary\":{\"zh\":\"本帧为初始化观测：画面大部分被白色墙体或门框占据，左侧缝隙中可见浅灰色沙发一角与一张小矮桌或凳子，地面为浅色。机器人停在此处，朝向尚未改变。\",\"en\":\"This frame is the initialization observation: most of the view is filled by a white wall or door frame, and through the gap on the left a corner of a light-grey sofa and a small low table or stool are visible on a light-coloured floor. The robot is stopped here and its heading has not yet changed.\"},\"reason\":{\"zh\":\"这是首个有效节点，A=B，仅有单帧信息，无法据此确认此前是否已执行右转进入走廊、经过卫生间与卧室、经过厨房与餐桌等要求；画面中的沙发一角与矮桌只能说明附近可能有起居区的家具，尚不能确认机器人已在目标茶几前停下。\",\"en\":\"This is the first valid node with A=B and only a single frame, so it cannot be confirmed whether the earlier requirements were met—turning right into the hallway, passing the bathroom and bedroom, and passing the kitchen and dining table. The visible sofa corner and low table only suggest that living-area furniture may be nearby; they do not confirm that the robot has stopped in front of the target coffee table.\"},\"instruction_evidence\":[{\"quote_en\":\"Turn right to enter the hallway.\",\"quote_zh\":\"右转进入走廊。\"},{\"quote_en\":\"Stop in front of the coffee table, with the sectional sofa on your left and the television on your right.\",\"quote_zh\":\"停在茶几前，组合沙发在你的左侧，电视在你的右侧。\"}],\"visual_evidence\":[{\"frames\":[0],\"description\":{\"zh\":\"白色墙面或门框占据大部分画面，左缘可见浅灰沙发一角与一张小矮桌或凳子，地面浅色。\",\"en\":\"A white wall or door frame occupies most of the frame; at the left edge a corner of a light-grey sofa and a small low table or stool are visible on a light-coloured floor.\"}}],\"semantic_progress\":{\"zh\":\"首次有效节点：已在某处白色墙面或门框旁停下，左前方可见沙发一角与一张小矮桌。此前是否右转进入走廊、经过左侧卫生间与卧室、经过右侧厨房与餐桌，均尚未确认；是否已进入客厅并停在茶几前也未确认。\",\"en\":\"First valid node: stopped beside a white wall or door frame, with a corner of a sofa and a small low table visible ahead to the left. It is not yet confirmed whether the robot has turned right into the hallway, passed the bathroom and bedroom on the left, or passed the kitchen and dining table on the right; nor whether it has entered the living room and stopped in front of the coffee table.\"},\"uncertainties\":{\"zh\":\"尚未确认机器人所处空间（走廊、门厅还是客厅入口）；尚未确认是否已完成右转进入走廊；尚未确认左侧卫生间与卧室、右侧厨房与餐桌是否已依次经过；尚未确认是否已到达客厅茶几并面向电视与组合沙发之间的正确朝向。\",\"en\":\"It is not yet confirmed which space the robot occupies (hallway, entryway, or living-room entrance); whether the right turn into the hallway has been completed; whether the bathroom and bedroom on the left and the kitchen and dining table on the right have been passed in order; or whether the robot has reached the coffee table in the living room with the correct orientation between the television and the sectional sofa.\"}}",
+          "reasoning_content": "The image shows a white wall/doorway edge with a glimpse of a sofa and small table/stool beyond. Initialization mode: A=B, single frame. Cannot confirm prior route. Verdict consistent, but note prior progress unconfirmed.\n\nSemantic progress: 当前位于门框/墙边，可见左前方有沙发与矮桌一角，尚未确认所处具体房间及是否已转向走廊。\n\nLet me craft the JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1434,
+      "completion_tokens": 841,
+      "total_tokens": 2275,
+      "prompt_tokens_details": {
+        "cached_tokens": 1280
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 89
+      },
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 154
+    },
+    "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+  },
+  "parsed_original": {
+    "previous_id": "S01",
+    "current_id": "S01",
+    "verdict": "consistent",
+    "segment_summary": {
+      "zh": "本帧为初始化观测：画面大部分被白色墙体或门框占据，左侧缝隙中可见浅灰色沙发一角与一张小矮桌或凳子，地面为浅色。机器人停在此处，朝向尚未改变。",
+      "en": "This frame is the initialization observation: most of the view is filled by a white wall or door frame, and through the gap on the left a corner of a light-grey sofa and a small low table or stool are visible on a light-coloured floor. The robot is stopped here and its heading has not yet changed."
+    },
+    "reason": {
+      "zh": "这是首个有效节点，A=B，仅有单帧信息，无法据此确认此前是否已执行右转进入走廊、经过卫生间与卧室、经过厨房与餐桌等要求；画面中的沙发一角与矮桌只能说明附近可能有起居区的家具，尚不能确认机器人已在目标茶几前停下。",
+      "en": "This is the first valid node with A=B and only a single frame, so it cannot be confirmed whether the earlier requirements were met—turning right into the hallway, passing the bathroom and bedroom, and passing the kitchen and dining table. The visible sofa corner and low table only suggest that living-area furniture may be nearby; they do not confirm that the robot has stopped in front of the target coffee table."
+    },
+    "instruction_evidence": [
+      {
+        "quote_en": "Turn right to enter the hallway.",
+        "quote_zh": "右转进入走廊。"
+      },
+      {
+        "quote_en": "Stop in front of the coffee table, with the sectional sofa on your left and the television on your right.",
+        "quote_zh": "停在茶几前，组合沙发在你的左侧，电视在你的右侧。"
+      }
+    ],
+    "visual_evidence": [
+      {
+        "frames": [
+          0
+        ],
+        "description": {
+          "zh": "白色墙面或门框占据大部分画面，左缘可见浅灰沙发一角与一张小矮桌或凳子，地面浅色。",
+          "en": "A white wall or door frame occupies most of the frame; at the left edge a corner of a light-grey sofa and a small low table or stool are visible on a light-coloured floor."
+        }
+      }
+    ],
+    "semantic_progress": {
+      "zh": "首次有效节点：已在某处白色墙面或门框旁停下，左前方可见沙发一角与一张小矮桌。此前是否右转进入走廊、经过左侧卫生间与卧室、经过右侧厨房与餐桌，均尚未确认；是否已进入客厅并停在茶几前也未确认。",
+      "en": "First valid node: stopped beside a white wall or door frame, with a corner of a sofa and a small low table visible ahead to the left. It is not yet confirmed whether the robot has turned right into the hallway, passed the bathroom and bedroom on the left, or passed the kitchen and dining table on the right; nor whether it has entered the living room and stopped in front of the coffee table."
+    },
+    "uncertainties": {
+      "zh": "尚未确认机器人所处空间（走廊、门厅还是客厅入口）；尚未确认是否已完成右转进入走廊；尚未确认左侧卫生间与卧室、右侧厨房与餐桌是否已依次经过；尚未确认是否已到达客厅茶几并面向电视与组合沙发之间的正确朝向。",
+      "en": "It is not yet confirmed which space the robot occupies (hallway, entryway, or living-room entrance); whether the right turn into the hallway has been completed; whether the bathroom and bedroom on the left and the kitchen and dining table on the right have been passed in order; or whether the robot has reached the coffee table in the living room with the correct orientation between the television and the sectional sofa."
+    }
+  },
+  "error": "ValueError: Invalid uncertainties",
+  "completed_at": "2026-11-12T08:11:16.809556+00:00",
+  "elapsed_seconds": 5.963
+}

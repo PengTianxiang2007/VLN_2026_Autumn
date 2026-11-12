@@ -1,0 +1,280 @@
+{
+  "passed": true,
+  "effective_nodes": 199,
+  "terminal_nodes": 34,
+  "reused_twelve_cases_unchanged": true,
+  "six_new_worker_processes": true,
+  "consecutive_ids": true,
+  "all_review_endpoints_are_effective_nodes": true,
+  "max_input_images": 7,
+  "full_chinese_instructions": 34,
+  "no_dedup_controls": true,
+  "no_external_assets": true,
+  "red_intervals": [
+    {
+      "case": 1,
+      "nodes": "S01 → S02",
+      "frames": [
+        5,
+        38
+      ]
+    },
+    {
+      "case": 2,
+      "nodes": "S04 → S05",
+      "frames": [
+        25,
+        35
+      ]
+    },
+    {
+      "case": 3,
+      "nodes": "S01 → S03",
+      "frames": [
+        0,
+        36
+      ]
+    },
+    {
+      "case": 4,
+      "nodes": "S02 → S04",
+      "frames": [
+        57,
+        99
+      ]
+    },
+    {
+      "case": 5,
+      "nodes": "S01 → S02",
+      "frames": [
+        5,
+        10
+      ]
+    },
+    {
+      "case": 6,
+      "nodes": "S03 → S04",
+      "frames": [
+        59,
+        70
+      ]
+    },
+    {
+      "case": 7,
+      "nodes": "S01 → S02",
+      "frames": [
+        5,
+        80
+      ]
+    },
+    {
+      "case": 8,
+      "nodes": "S02 → S03",
+      "frames": [
+        13,
+        26
+      ]
+    },
+    {
+      "case": 9,
+      "nodes": "S01 → S02",
+      "frames": [
+        5,
+        10
+      ]
+    },
+    {
+      "case": 10,
+      "nodes": "S02 → S03",
+      "frames": [
+        17,
+        36
+      ]
+    },
+    {
+      "case": 11,
+      "nodes": "S03 → S04",
+      "frames": [
+        35,
+        44
+      ]
+    },
+    {
+      "case": 13,
+      "nodes": "S01 → S02",
+      "frames": [
+        8,
+        23
+      ]
+    },
+    {
+      "case": 14,
+      "nodes": "S01 → S02",
+      "frames": [
+        0,
+        9
+      ]
+    },
+    {
+      "case": 15,
+      "nodes": "S01 → S02",
+      "frames": [
+        8,
+        33
+      ]
+    },
+    {
+      "case": 16,
+      "nodes": "S02 → S03",
+      "frames": [
+        16,
+        21
+      ]
+    },
+    {
+      "case": 17,
+      "nodes": "S05 → S06",
+      "frames": [
+        74,
+        100
+      ]
+    },
+    {
+      "case": 18,
+      "nodes": "S02 → S03",
+      "frames": [
+        19,
+        46
+      ]
+    },
+    {
+      "case": 19,
+      "nodes": "S09 → S10",
+      "frames": [
+        127,
+        132
+      ]
+    },
+    {
+      "case": 20,
+      "nodes": "S03 → S04",
+      "frames": [
+        15,
+        20
+      ]
+    },
+    {
+      "case": 21,
+      "nodes": "S01 → S02",
+      "frames": [
+        0,
+        14
+      ]
+    },
+    {
+      "case": 22,
+      "nodes": "S01 → S02",
+      "frames": [
+        0,
+        17
+      ]
+    },
+    {
+      "case": 23,
+      "nodes": "S01 → S02",
+      "frames": [
+        32,
+        49
+      ]
+    },
+    {
+      "case": 24,
+      "nodes": "S03 → S04",
+      "frames": [
+        58,
+        102
+      ]
+    },
+    {
+      "case": 25,
+      "nodes": "S03 → S04",
+      "frames": [
+        39,
+        66
+      ]
+    },
+    {
+      "case": 26,
+      "nodes": "S01 → S02",
+      "frames": [
+        0,
+        5
+      ]
+    },
+    {
+      "case": 27,
+      "nodes": "S02 → S04",
+      "frames": [
+        48,
+        71
+      ]
+    },
+    {
+      "case": 28,
+      "nodes": "S04 → S05",
+      "frames": [
+        43,
+        63
+      ]
+    },
+    {
+      "case": 29,
+      "nodes": "S01 → S02",
+      "frames": [
+        0,
+        41
+      ]
+    },
+    {
+      "case": 30,
+      "nodes": "S02 → S03",
+      "frames": [
+        40,
+        45
+      ]
+    },
+    {
+      "case": 31,
+      "nodes": "S02 → S03",
+      "frames": [
+        13,
+        23
+      ]
+    },
+    {
+      "case": 32,
+      "nodes": "S03 → S04",
+      "frames": [
+        44,
+        98
+      ]
+    },
+    {
+      "case": 33,
+      "nodes": "S04 → S06",
+      "frames": [
+        44,
+        102
+      ]
+    },
+    {
+      "case": 34,
+      "nodes": "S01 → S02",
+      "frames": [
+        5,
+        15
+      ]
+    }
+  ],
+  "standalone_sha256": "eb3ebd470766d30a69e7ce512933bfb8defd4b847346aae2c1df505464757800"
+}

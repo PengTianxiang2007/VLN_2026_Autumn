@@ -1,0 +1,416 @@
+{
+  "case_number": 12,
+  "pid": 17524,
+  "reviews": [
+    {
+      "node_id": "S01",
+      "node_frame": 5,
+      "available_at_frame": 10,
+      "terminal_node": false,
+      "mode": "initialization",
+      "previous_id": "S01",
+      "from_frame": 5,
+      "to_frame": 5,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 5,
+          "role": "A=B",
+          "image_id": "5889866a9ec68f8995a300ba9bb6451b3da85ea2b10a6da94026e201274770f6",
+          "path": "assets/5889866a9ec68f8995a300ba9bb6451b3da85ea2b10a6da94026e201274770f6.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 10.314,
+      "started_at": "2026-11-12T10:39:21.331231+00:00",
+      "completed_at": "2026-11-12T10:39:31.646913+00:00",
+      "worker_pid": 17524,
+      "request_file": "run/cases/C12/S01.request.json",
+      "response_file": "run/cases/C12/S01.response.json",
+      "usage": {
+        "prompt_tokens": 1444,
+        "completion_tokens": 1346,
+        "total_tokens": 2790,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 781
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 548
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S01",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "本轮仅有 S01 的单帧：处于有窗、白墙和淋浴设备的浴室或淋浴间内，面向窗户与淋浴杆区域。未提供其他帧，不能确认如何到达这里或此前完成了哪些导航步骤。",
+          "en": "This round contains only the single frame for S01: the robot is in a bathroom or shower room with a window, white walls, and shower fixtures, facing the window and shower rail area. No other frames are provided, so it cannot be confirmed how it arrived here or which navigation steps were completed previously."
+        },
+        "reason": {
+          "zh": "初始化节点 A=B；单帧可确认当前是淋浴间样式的房间，但无法从该帧判断是否已穿过门口、是否在左侧有白柜的房间里，或与后续走廊和客餐厅路线的空间关系。",
+          "en": "This is an initialization node with A=B; the single frame confirms a shower-room-like space, but it cannot determine whether a doorway was crossed, whether this is the room with white cabinets on the left, or the spatial relationship to the later hallway and dining/living areas."
+        },
+        "instruction_evidence": [],
+        "visual_evidence": [
+          {
+            "frames": [
+              5
+            ],
+            "description": {
+              "zh": "该帧显示白墙、窗户和淋浴杆/软管，当前处在浴室或淋浴间样式的空间。",
+              "en": "This frame shows white walls, a window, and a shower rail/hose, indicating a bathroom or shower-room-like space."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "截至 S01，当前位于有窗、白墙和淋浴设备的浴室或淋浴间内；尚不能确认入口、朝向或与任务要求中白柜房间、走廊等位置的对应关系，此前路线进度尚未确认。",
+          "en": "As of S01, the robot is in a bathroom or shower room with a window, white walls, and shower fixtures; the entrance, orientation, and correspondence to the white-cabinet room or hallway required by the task are not yet confirmed, and prior route progress remains unconfirmed."
+        },
+        "uncertainties": [
+          {
+            "zh": "当前浴室或淋浴间在任务路线中的位置及到达方式未确认。",
+            "en": "The location of the current bathroom or shower room within the task route and how it was reached are unconfirmed."
+          },
+          {
+            "zh": "门口、左侧白柜房间、走廊、餐桌和大电视等任务地标尚未由本次观测确认。",
+            "en": "Task landmarks such as the doorway, the room with white cabinets on the left, the hallway, the dining table, and the large TV have not been confirmed by the current observation."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "截至 S01，当前位于有窗、白墙和淋浴设备的浴室或淋浴间内；尚不能确认入口、朝向或与任务要求中白柜房间、走廊等位置的对应关系，此前路线进度尚未确认。",
+        "en": "As of S01, the robot is in a bathroom or shower room with a window, white walls, and shower fixtures; the entrance, orientation, and correspondence to the white-cabinet room or hallway required by the task are not yet confirmed, and prior route progress remains unconfirmed."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 5
+      }
+    },
+    {
+      "node_id": "S02",
+      "node_frame": 34,
+      "available_at_frame": 39,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S01",
+      "from_frame": 5,
+      "to_frame": 34,
+      "prior_progress": {
+        "zh": "截至 S01，当前位于有窗、白墙和淋浴设备的浴室或淋浴间内；尚不能确认入口、朝向或与任务要求中白柜房间、走廊等位置的对应关系，此前路线进度尚未确认。",
+        "en": "As of S01, the robot is in a bathroom or shower room with a window, white walls, and shower fixtures; the entrance, orientation, and correspondence to the white-cabinet room or hallway required by the task are not yet confirmed, and prior route progress remains unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 5,
+          "role": "A",
+          "image_id": "5889866a9ec68f8995a300ba9bb6451b3da85ea2b10a6da94026e201274770f6",
+          "path": "assets/5889866a9ec68f8995a300ba9bb6451b3da85ea2b10a6da94026e201274770f6.webp"
+        },
+        {
+          "frame": 6,
+          "role": "history",
+          "image_id": "e7cb7998551208fc6db05d9871b47f7f4b497a6997da007881c77246e29ad12c",
+          "path": "assets/e7cb7998551208fc6db05d9871b47f7f4b497a6997da007881c77246e29ad12c.webp"
+        },
+        {
+          "frame": 13,
+          "role": "history",
+          "image_id": "e2c77bd3f2bdccebb48fc2e18446711004f5eb8cd2b6b93588083bf758e7db51",
+          "path": "assets/e2c77bd3f2bdccebb48fc2e18446711004f5eb8cd2b6b93588083bf758e7db51.webp"
+        },
+        {
+          "frame": 20,
+          "role": "history",
+          "image_id": "2a27db990f2cc56be5c2121a2cbac4c2078ca8cc4c2dd278151f777aef8c5d59",
+          "path": "assets/2a27db990f2cc56be5c2121a2cbac4c2078ca8cc4c2dd278151f777aef8c5d59.webp"
+        },
+        {
+          "frame": 26,
+          "role": "history",
+          "image_id": "a490ca9be5af10a457a310219939b707d2f90942069e6151da9ff69361fb0959",
+          "path": "assets/a490ca9be5af10a457a310219939b707d2f90942069e6151da9ff69361fb0959.webp"
+        },
+        {
+          "frame": 33,
+          "role": "history",
+          "image_id": "6835be249b166df2bf87c24ac3beff45cd54fd8daf6bbe7d818cce3d037438c6",
+          "path": "assets/6835be249b166df2bf87c24ac3beff45cd54fd8daf6bbe7d818cce3d037438c6.webp"
+        },
+        {
+          "frame": 34,
+          "role": "B",
+          "image_id": "4246d2869aa8a297d363b2dbcf00298286026c212a08e7ba9a604ea84ebf2a96",
+          "path": "assets/4246d2869aa8a297d363b2dbcf00298286026c212a08e7ba9a604ea84ebf2a96.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 33.053,
+      "started_at": "2026-11-12T10:39:31.683921+00:00",
+      "completed_at": "2026-11-12T10:40:04.731115+00:00",
+      "worker_pid": 17524,
+      "request_file": "run/cases/C12/S02.request.json",
+      "response_file": "run/cases/C12/S02.response.json",
+      "usage": {
+        "prompt_tokens": 2775,
+        "completion_tokens": 5181,
+        "total_tokens": 7956,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4228
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1879
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S02",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "本段从带窗和淋浴装置的浴室淋浴区移动到双盆洗手台，随后经浴室门洞进入铺木地板、左侧有白色柜门的房间，并在 B 处转向或面向通往走廊的门洞；尚未确认已深入走廊。",
+          "en": "In this segment the robot moved from the shower area with a window and shower fittings to the double-sink vanity, then passed through the bathroom doorway into a wood-floored room with white cabinet doors on the left, and at B turned toward or faced the doorway leading to the hallway; it is not yet confirmed that it has advanced down the hallway."
+        },
+        "reason": {
+          "zh": "F26/F33 显示浴室门外木地板房间左侧为带黑色拉手的白色柜门，F34 显示视角已由白柜转向门洞，白柜仍在左侧，符合先进入白柜房间再转向走廊入口的当前要求；走廊内直行及后续地标尚未出现，不构成冲突。",
+          "en": "F26/F33 show that beyond the bathroom doorway is a wood-floored room with white cabinet doors with black handles on the left, and F34 shows the view turned from the white cabinets toward a doorway while the white cabinets remain on the left, consistent with the current requirement to enter the room with white cabinets and then turn toward the hallway entrance; walking down the hallway and later landmarks have not yet appeared, so there is no conflict."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Go through the doorway and enter the room with white cabinets on your left.",
+            "quote_zh": "穿过门洞，进入左侧有白色柜子的房间。"
+          },
+          {
+            "quote_en": "Turn right to enter the hallway.",
+            "quote_zh": "右转进入走廊。"
+          },
+          {
+            "quote_en": "Walk straight down the hallway, passing an opening on your left and another on your right.",
+            "quote_zh": "沿走廊直行，经过左侧的一个开口和右侧的另一个开口。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              5,
+              6,
+              20
+            ],
+            "description": {
+              "zh": "F5/F6 显示浴室淋浴区，F20 显示双盆洗手台，说明本段先从浴室内部移动到出口附近。",
+              "en": "F5/F6 show the bathroom shower area and F20 shows the double-sink vanity, indicating movement within the bathroom toward the exit."
+            }
+          },
+          {
+            "frames": [
+              26,
+              33
+            ],
+            "description": {
+              "zh": "F26 从浴室门口可见门外铺木地板、左侧为白色柜门的房间；F33 更接近该白色柜墙和墙边门洞。",
+              "en": "F26 shows a wood-floored room beyond the bathroom doorway with white cabinet doors on the left; F33 is closer to that white cabinet wall and the adjacent doorway."
+            }
+          },
+          {
+            "frames": [
+              34
+            ],
+            "description": {
+              "zh": "F34 位于门洞前，左侧仍是白色柜门，右侧为深色大物体，前方为通向走廊的明亮开口；未见明确冲突。",
+              "en": "F34 is in front of a doorway, with white cabinet doors still on the left, a large dark object on the right, and a bright opening ahead leading toward the hallway; no clear conflict is visible."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "截至 S02，已从有窗和淋浴设备的浴室经双盆洗手台走出浴室门洞，进入铺木地板且左侧为白色柜门的房间，并在门口转向或面向走廊入口；尚待在走廊内直行、经过左右开口、进入末端大开放房间并走到电视前。",
+          "en": "As of S02, the robot has moved from the bathroom with a window and shower fittings past the double-sink vanity, exited through the bathroom doorway into a wood-floored room with white cabinet doors on the left, and at the doorway turned toward or faced the hallway entrance; it still needs to walk down the hallway, pass the left and right openings, enter the large open room at the end, and reach the TV."
+        },
+        "uncertainties": [
+          {
+            "zh": "B 处是否已实际进入走廊，还是仅到达或面向走廊入口，尚不能完全确认。",
+            "en": "Whether B is actually inside the hallway or only at/facing the hallway entrance cannot yet be fully confirmed."
+          },
+          {
+            "zh": "尚未看到并确认经过走廊左侧和右侧的开口，也未到达大开放房间和电视。",
+            "en": "The openings on the left and right of the hallway have not yet been seen and confirmed, and the large open room and TV have not yet been reached."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "截至 S02，已从有窗和淋浴设备的浴室经双盆洗手台走出浴室门洞，进入铺木地板且左侧为白色柜门的房间，并在门口转向或面向走廊入口；尚待在走廊内直行、经过左右开口、进入末端大开放房间并走到电视前。",
+        "en": "As of S02, the robot has moved from the bathroom with a window and shower fittings past the double-sink vanity, exited through the bathroom doorway into a wood-floored room with white cabinet doors on the left, and at the doorway turned toward or faced the hallway entrance; it still needs to walk down the hallway, pass the left and right openings, enter the large open room at the end, and reach the TV."
+      },
+      "progress_anchor": {
+        "id": "S02",
+        "frame": 34
+      }
+    },
+    {
+      "node_id": "S03",
+      "node_frame": 94,
+      "available_at_frame": 94,
+      "terminal_node": true,
+      "mode": "segment",
+      "previous_id": "S02",
+      "from_frame": 34,
+      "to_frame": 94,
+      "prior_progress": {
+        "zh": "截至 S02，已从有窗和淋浴设备的浴室经双盆洗手台走出浴室门洞，进入铺木地板且左侧为白色柜门的房间，并在门口转向或面向走廊入口；尚待在走廊内直行、经过左右开口、进入末端大开放房间并走到电视前。",
+        "en": "As of S02, the robot has moved from the bathroom with a window and shower fittings past the double-sink vanity, exited through the bathroom doorway into a wood-floored room with white cabinet doors on the left, and at the doorway turned toward or faced the hallway entrance; it still needs to walk down the hallway, pass the left and right openings, enter the large open room at the end, and reach the TV."
+      },
+      "images": [
+        {
+          "frame": 34,
+          "role": "A",
+          "image_id": "4246d2869aa8a297d363b2dbcf00298286026c212a08e7ba9a604ea84ebf2a96",
+          "path": "assets/4246d2869aa8a297d363b2dbcf00298286026c212a08e7ba9a604ea84ebf2a96.webp"
+        },
+        {
+          "frame": 35,
+          "role": "history",
+          "image_id": "e8cba56720b33a4a25c2c8df7c3e992287f30c96bbde0105409cef2fc6fa8f4c",
+          "path": "assets/e8cba56720b33a4a25c2c8df7c3e992287f30c96bbde0105409cef2fc6fa8f4c.webp"
+        },
+        {
+          "frame": 49,
+          "role": "history",
+          "image_id": "9ac43e636245146cadec1e5586e76e6673c4277fcee1cdf3ed597804b3f49166",
+          "path": "assets/9ac43e636245146cadec1e5586e76e6673c4277fcee1cdf3ed597804b3f49166.webp"
+        },
+        {
+          "frame": 64,
+          "role": "history",
+          "image_id": "33d4caf4c0f7b8c1741ef1038e872e62974493b3b58a0dd9f8ba4a38d30c6a4c",
+          "path": "assets/33d4caf4c0f7b8c1741ef1038e872e62974493b3b58a0dd9f8ba4a38d30c6a4c.webp"
+        },
+        {
+          "frame": 79,
+          "role": "history",
+          "image_id": "d758a4ff81ac69704eff1497afef7d5abe5a877db5e2db9962a890117293cf77",
+          "path": "assets/d758a4ff81ac69704eff1497afef7d5abe5a877db5e2db9962a890117293cf77.webp"
+        },
+        {
+          "frame": 93,
+          "role": "history",
+          "image_id": "c4d490fabd04262e85ba22c4b496ab1fb74e1d2404c6b21a9694eab6fc9b80c4",
+          "path": "assets/c4d490fabd04262e85ba22c4b496ab1fb74e1d2404c6b21a9694eab6fc9b80c4.webp"
+        },
+        {
+          "frame": 94,
+          "role": "B",
+          "image_id": "eb70017b45c1408fd58f76420772c9f78b66de850044cb352d430a8f03545861",
+          "path": "assets/eb70017b45c1408fd58f76420772c9f78b66de850044cb352d430a8f03545861.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 72.171,
+      "started_at": "2026-11-12T10:40:04.754192+00:00",
+      "completed_at": "2026-11-12T10:41:16.925025+00:00",
+      "worker_pid": 17524,
+      "request_file": "run/cases/C12/S03.request.json",
+      "response_file": "run/cases/C12/S03.response.json",
+      "usage": {
+        "prompt_tokens": 2790,
+        "completion_tokens": 10863,
+        "total_tokens": 13653,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 9855
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1894
+      },
+      "answer": {
+        "previous_id": "S02",
+        "current_id": "S03",
+        "verdict": "uncertain",
+        "segment_summary": {
+          "zh": "本段从白色柜体/黑色高柜之间的门口附近开始，随后画面依次出现带窗的玻璃淋浴间、有黑色衣柜和床的卧室，以及黑色衣柜近景。由于中间帧多为朝向侧方房间的视角，无法确认机器人是沿走廊经过左右开口，还是进入了浴室或卧室；本段也未看见餐桌、电视或大开放房间。",
+          "en": "This segment starts near the doorway between white cabinets/panels and a tall black cabinet, then shows in sequence a glass shower with a window, a bedroom with a black wardrobe and bed, and a close view of the black wardrobe. Because the intermediate frames are mostly views toward rooms on the side, it cannot be confirmed whether the robot walked along the hallway past openings on the left and right or entered the bathroom or bedroom; the dining table, TV, or large open room is not seen in this segment."
+        },
+        "reason": {
+          "zh": "任务要求从白色柜体房间右转进入走廊，沿走廊直行，经过左右开口后进入末端大开放房间；本段画面虽依次出现门口、淋浴间和卧室/黑柜近景，但没有连续走廊或明确的门洞穿越关系，无法确认是在走廊侧向经过开口还是已进入其他房间，因此不能判定符合或偏航。",
+          "en": "The task requires turning right from the room with white cabinets into the hallway, walking straight along it past an opening on the left and another on the right, and then entering the large open room at the end; although this segment shows a doorway, a shower, and bedroom/black-wardrobe close views in sequence, there is no continuous hallway view or clear doorway-crossing relationship, so it cannot be confirmed whether the robot passed openings from the hallway or entered other rooms, and thus the segment cannot be judged consistent or deviated."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Turn right to enter the hallway.",
+            "quote_zh": "右转进入走廊。"
+          },
+          {
+            "quote_en": "Walk straight down the hallway, passing an opening on your left and another on your right.",
+            "quote_zh": "沿走廊直行，经过你左侧的一个开口和右侧的另一个开口。"
+          },
+          {
+            "quote_en": "Enter the large open room at the end of the hallway, then turn right.",
+            "quote_zh": "进入走廊尽头的大开放房间，然后右转。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              34,
+              35
+            ],
+            "description": {
+              "zh": "A 附近可见白色门板/柜体、木质地板、前方亮白门洞，右侧有高大黑色柜体；这是门口区域，但未呈现完整走廊。",
+              "en": "Near A, white door panels/cabinets, wood flooring, a bright doorway ahead, and a tall black cabinet on the right are visible; this is a doorway area but does not show the full hallway."
+            }
+          },
+          {
+            "frames": [
+              49
+            ],
+            "description": {
+              "zh": "画面为带窗玻璃淋浴间，底部右侧可见木地板，说明镜头朝浴室开口内看；不能据此确认已穿过浴室门。",
+              "en": "The frame shows a glass shower with a window, with wood floor visible at the lower right, indicating the view looks into the bathroom opening; it does not confirm that the bathroom door was crossed."
+            }
+          },
+          {
+            "frames": [
+              64,
+              79,
+              93,
+              94
+            ],
+            "description": {
+              "zh": "画面出现黑色衣柜、床和床头柜，最后为黑色衣柜近景；可能是在走廊经过卧室开口时向侧方观察，也可能是已进入卧室，无法由这些帧唯一确定，且未看见餐桌、电视或大开放房间。",
+              "en": "The frames show a black wardrobe, bed, and nightstand, ending with a close view of the black wardrobe; this could be a side view from the hallway through a bedroom opening or could mean the robot entered the bedroom, which these frames cannot uniquely determine, and no dining table, TV, or large open room is seen."
+            }
+          }
+        ],
+        "semantic_progress": null,
+        "uncertainties": [
+          {
+            "zh": "机器人是否始终留在任务要求的走廊内，还是进入了浴室或卧室，现有采样帧无法确认。",
+            "en": "Whether the robot remained in the required hallway throughout or entered the bathroom or bedroom cannot be confirmed from the available sampled frames."
+          },
+          {
+            "zh": "B 处黑色衣柜近景对应走廊中的柜体还是卧室内的衣柜，不能唯一对应。",
+            "en": "Whether the close view of the black wardrobe at B corresponds to a cabinet in the hallway or the wardrobe inside the bedroom cannot be uniquely determined."
+          },
+          {
+            "zh": "是否已到达走廊尽头的大开放房间、右转并走到电视前，尚无观测依据。",
+            "en": "There is no observational basis yet for whether the robot reached the large open room at the end of the hallway, turned right, and walked to the TV."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "截至 S02，已从有窗和淋浴设备的浴室经双盆洗手台走出浴室门洞，进入铺木地板且左侧为白色柜门的房间，并在门口转向或面向走廊入口；尚待在走廊内直行、经过左右开口、进入末端大开放房间并走到电视前。",
+        "en": "As of S02, the robot has moved from the bathroom with a window and shower fittings past the double-sink vanity, exited through the bathroom doorway into a wood-floored room with white cabinet doors on the left, and at the doorway turned toward or faced the hallway entrance; it still needs to walk down the hallway, pass the left and right openings, enter the large open room at the end, and reach the TV."
+      },
+      "progress_anchor": {
+        "id": "S02",
+        "frame": 34
+      }
+    }
+  ],
+  "stop_node": null
+}

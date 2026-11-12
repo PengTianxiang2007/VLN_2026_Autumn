@@ -1,0 +1,269 @@
+{
+  "case_number": 1,
+  "case_index": 0,
+  "episode_id": "kujiale_0036_0_0 · F37",
+  "real_episode_id": "kujiale_0036_0_0",
+  "scene": "kujiale_0036",
+  "worker_pid": 17524,
+  "started_at": "2026-11-12T10:38:47.406267+00:00",
+  "completed_at": "2026-11-12T10:39:21.327368+00:00",
+  "reviews": [
+    {
+      "node_id": "S01",
+      "node_frame": 5,
+      "available_at_frame": 10,
+      "terminal_node": false,
+      "mode": "initialization",
+      "previous_id": "S01",
+      "from_frame": 5,
+      "to_frame": 5,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 5,
+          "role": "A=B",
+          "image_id": "25743109edd9850d59deb6f3d1f596b4a74c58099296eef220b07ceaaaf51b70",
+          "path": "assets/25743109edd9850d59deb6f3d1f596b4a74c58099296eef220b07ceaaaf51b70.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 8.711,
+      "started_at": "2026-11-12T10:38:47.406267+00:00",
+      "completed_at": "2026-11-12T10:38:56.120586+00:00",
+      "worker_pid": 17524,
+      "request_file": "run/cases/C01/S01.request.json",
+      "response_file": "run/cases/C01/S01.response.json",
+      "usage": {
+        "prompt_tokens": 1424,
+        "completion_tokens": 1165,
+        "total_tokens": 2589,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 573
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 528
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S01",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "首次有效节点仅有一帧：画面主要为白墙，左侧边缘可见部分电视屏幕。无法从这一帧确认此前经过的门洞、房间或家具关系。",
+          "en": "The first valid node contains only one frame: mostly a white wall with part of a television screen visible at the left edge. This frame cannot confirm which doorways, rooms, or furniture relationships were previously encountered."
+        },
+        "reason": {
+          "zh": "这是初始化节点，A=B 且只有一帧观测；可见白墙和左侧电视局部，但不足以确认客厅、沙发、茶几、下一门洞或卧室床等空间关系，因此只建立当前语义状态，不确认此前路线。",
+          "en": "This is an initialization node with A=B and only one observation; a white wall and part of a television on the left are visible, but this is insufficient to confirm the living room, sofa, coffee table, next doorway, bedroom bed, or other spatial relationships, so only the current semantic state is established and the prior route is not confirmed."
+        },
+        "instruction_evidence": [],
+        "visual_evidence": [
+          {
+            "frames": [
+              5
+            ],
+            "description": {
+              "zh": "第5帧显示一面白墙，左侧边缘有部分电视屏幕。",
+              "en": "Frame 5 shows a white wall with part of a television screen at the left edge."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "首次有效节点：当前仅见白墙和画面左侧的部分电视，尚未确认是否已进入客厅、是否经过沙发和茶几以及对侧电视，也尚未确认是否右转穿过下一门洞或到达卧室床前。",
+          "en": "First valid node: currently only a white wall and part of a television on the left side of the view are visible; it is not yet confirmed whether the living room has been entered, whether the sofa, coffee table, and opposite television were passed, or whether a right turn through the next doorway or arrival at the bedroom bed has occurred."
+        },
+        "uncertainties": [
+          {
+            "zh": "此前是否已穿过门洞进入客厅，以及客厅内沙发、茶几和电视的相对位置是否符合任务，尚未确认。",
+            "en": "It is not yet confirmed whether a doorway was previously crossed into the living room, or whether the relative positions of the sofa, coffee table, and television in the living room match the task."
+          },
+          {
+            "zh": "是否已完成右转并穿过下一门洞，尚未确认。",
+            "en": "It is not yet confirmed whether the right turn and passage through the next doorway have been completed."
+          },
+          {
+            "zh": "当前是否位于卧室、电视是否在左侧，以及是否已到达床和窗前，尚未确认。",
+            "en": "It is not yet confirmed whether the robot is currently in the bedroom, whether the television is on the left, or whether it has reached the bed and window."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "首次有效节点：当前仅见白墙和画面左侧的部分电视，尚未确认是否已进入客厅、是否经过沙发和茶几以及对侧电视，也尚未确认是否右转穿过下一门洞或到达卧室床前。",
+        "en": "First valid node: currently only a white wall and part of a television on the left side of the view are visible; it is not yet confirmed whether the living room has been entered, whether the sofa, coffee table, and opposite television were passed, or whether a right turn through the next doorway or arrival at the bedroom bed has occurred."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 5
+      }
+    },
+    {
+      "node_id": "S02",
+      "node_frame": 38,
+      "available_at_frame": 43,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S01",
+      "from_frame": 5,
+      "to_frame": 38,
+      "prior_progress": {
+        "zh": "首次有效节点：当前仅见白墙和画面左侧的部分电视，尚未确认是否已进入客厅、是否经过沙发和茶几以及对侧电视，也尚未确认是否右转穿过下一门洞或到达卧室床前。",
+        "en": "First valid node: currently only a white wall and part of a television on the left side of the view are visible; it is not yet confirmed whether the living room has been entered, whether the sofa, coffee table, and opposite television were passed, or whether a right turn through the next doorway or arrival at the bedroom bed has occurred."
+      },
+      "images": [
+        {
+          "frame": 5,
+          "role": "A",
+          "image_id": "25743109edd9850d59deb6f3d1f596b4a74c58099296eef220b07ceaaaf51b70",
+          "path": "assets/25743109edd9850d59deb6f3d1f596b4a74c58099296eef220b07ceaaaf51b70.webp"
+        },
+        {
+          "frame": 6,
+          "role": "history",
+          "image_id": "759e1aa2389c05750a5b0940da0877f1d55fa629d91c19f175eab66d5c1f96b6",
+          "path": "assets/759e1aa2389c05750a5b0940da0877f1d55fa629d91c19f175eab66d5c1f96b6.webp"
+        },
+        {
+          "frame": 14,
+          "role": "history",
+          "image_id": "48cd2806cbd13d8bf69fd40186779df7f05daf29fef0affff1b8046cc3e0c631",
+          "path": "assets/48cd2806cbd13d8bf69fd40186779df7f05daf29fef0affff1b8046cc3e0c631.webp"
+        },
+        {
+          "frame": 22,
+          "role": "history",
+          "image_id": "70123978cb671aa11b60111f3207b9cfe2657936efadce36b4f0eebce3ac0875",
+          "path": "assets/70123978cb671aa11b60111f3207b9cfe2657936efadce36b4f0eebce3ac0875.webp"
+        },
+        {
+          "frame": 29,
+          "role": "history",
+          "image_id": "33fdc48c4a60e86c07cb62ee8eb3bcedf94674318b65acbd92fbfb755a7028c2",
+          "path": "assets/33fdc48c4a60e86c07cb62ee8eb3bcedf94674318b65acbd92fbfb755a7028c2.webp"
+        },
+        {
+          "frame": 37,
+          "role": "history",
+          "image_id": "ba916041c6f3d4ce92df12666d6c8198e1c739b2454045f818c87499934528af",
+          "path": "assets/ba916041c6f3d4ce92df12666d6c8198e1c739b2454045f818c87499934528af.webp"
+        },
+        {
+          "frame": 38,
+          "role": "B",
+          "image_id": "1e0fe13bdd573c1305270024e59225d261201a382161bea5546465044ecbb21a",
+          "path": "assets/1e0fe13bdd573c1305270024e59225d261201a382161bea5546465044ecbb21a.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 25.171,
+      "started_at": "2026-11-12T10:38:56.131599+00:00",
+      "completed_at": "2026-11-12T10:39:21.293127+00:00",
+      "worker_pid": 17524,
+      "request_file": "run/cases/C01/S02.request.json",
+      "response_file": "run/cases/C01/S02.response.json",
+      "usage": {
+        "prompt_tokens": 2753,
+        "completion_tokens": 3679,
+        "total_tokens": 6432,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3062
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1857
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S02",
+        "verdict": "deviated",
+        "segment_summary": {
+          "zh": "本段从近处墙面与左侧电视开始；随后出现卧室的床、窗帘和衣柜，再透过门洞看到客厅，最后停在可见沙发和茶几在左、电视在右的客厅内。终点未停在卧室床和窗前。",
+          "en": "The segment begins close to a wall with a television on the left; it then shows a bedroom bed, curtains, and wardrobe, later looks through a doorway into the living room, and ends inside the living room with the sofa and coffee table on the left and television on the right. The endpoint is not stopped in front of the bedroom bed and window."
+        },
+        "reason": {
+          "zh": "任务要求先进入客厅，再右转穿过下一门洞进入卧室，并停在床和窗前；按时间排序的观测却先显示卧室，再透过门洞进入客厅，最后位于客厅，顺序与终点均与任务要求冲突。",
+          "en": "The task requires entering the living room first, then turning right through the next doorway into the bedroom, and stopping in front of the bed and window. The time-ordered observations instead show the bedroom first, then looking through a doorway into the living room, and finally ending in the living room, conflicting with both the required order and endpoint."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Walk straight through the doorway into the living room",
+            "quote_zh": "直走穿过门洞进入客厅"
+          },
+          {
+            "quote_en": "Turn right to go through the next doorway",
+            "quote_zh": "右转穿过下一个门洞"
+          },
+          {
+            "quote_en": "Continue straight into the bedroom",
+            "quote_zh": "继续直走进入卧室"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              14,
+              22,
+              29
+            ],
+            "description": {
+              "zh": "按时间顺序，先看到卧室的床、窗帘和衣柜，随后透过木质门洞看到客厅；表明该段先经过卧室并向客厅方向移动。",
+              "en": "In chronological order, the bedroom bed, curtains, and wardrobe are seen first, followed by a view through a wooden doorway into the living room, indicating that this segment passes through the bedroom and moves toward the living room."
+            }
+          },
+          {
+            "frames": [
+              37,
+              38
+            ],
+            "description": {
+              "zh": "画面显示客厅，沙发和茶几在左侧，电视在右侧墙面，终点位于客厅而非卧室床前。",
+              "en": "The frames show the living room, with the sofa and coffee table on the left and the television on the right wall; the endpoint is in the living room rather than in front of the bedroom bed."
+            }
+          },
+          {
+            "frames": [
+              5,
+              6
+            ],
+            "description": {
+              "zh": "起始观测仅见白墙和画面左侧的电视，不能据此确认已按任务要求穿过正确的门洞。",
+              "en": "The initial observation shows only a white wall and a television at the left edge, which is insufficient to confirm passage through the correct doorway as required."
+            }
+          }
+        ],
+        "semantic_progress": null,
+        "uncertainties": []
+      },
+      "rollback_target": {
+        "node_id": "S01",
+        "frame": 5,
+        "progress": {
+          "zh": "首次有效节点：当前仅见白墙和画面左侧的部分电视，尚未确认是否已进入客厅、是否经过沙发和茶几以及对侧电视，也尚未确认是否右转穿过下一门洞或到达卧室床前。",
+          "en": "First valid node: currently only a white wall and part of a television on the left side of the view are visible; it is not yet confirmed whether the living room has been entered, whether the sofa, coffee table, and opposite television were passed, or whether a right turn through the next doorway or arrival at the bedroom bed has occurred."
+        }
+      },
+      "committed_progress": {
+        "zh": "首次有效节点：当前仅见白墙和画面左侧的部分电视，尚未确认是否已进入客厅、是否经过沙发和茶几以及对侧电视，也尚未确认是否右转穿过下一门洞或到达卧室床前。",
+        "en": "First valid node: currently only a white wall and part of a television on the left side of the view are visible; it is not yet confirmed whether the living room has been entered, whether the sofa, coffee table, and opposite television were passed, or whether a right turn through the next doorway or arrival at the bedroom bed has occurred."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 5
+      }
+    }
+  ],
+  "stop_node": "S02",
+  "stop_reason": "first_deviation",
+  "terminal_frame": 66,
+  "raw_node_count": 3,
+  "retained_node_count": 3,
+  "unreviewed_nodes": [
+    "S03"
+  ]
+}

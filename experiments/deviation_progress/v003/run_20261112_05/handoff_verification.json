@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-12",
+  "scope": "source/result archival and local reconstruction only",
+  "archive_files": 354,
+  "archive_bytes": 12385159,
+  "restored_cases": 34,
+  "restored_assets": 3049,
+  "source": "wrong_choices34_fullwave_site_20261109_05.zip",
+  "python_syntax": "passed",
+  "method_document_links": "passed",
+  "exported_html_matches_snapshot": true,
+  "exported_results_match_snapshot": true,
+  "credential_scan": "no credential-like values found in archived files",
+  "new_model_calls": 0,
+  "navigation_runs": 0,
+  "browser_test": "not repeated; existing run05 browser_smoke.json retained as historical evidence"
+}

@@ -1,0 +1,261 @@
+{
+  "case_number": 7,
+  "case_index": 1,
+  "episode_id": "kujiale_0113_18_1 · F70",
+  "real_episode_id": "kujiale_0113_18_1",
+  "scene": "kujiale_0113",
+  "worker_pid": 31288,
+  "started_at": "2026-11-12T08:11:10.784965+00:00",
+  "completed_at": "2026-11-12T08:11:59.101957+00:00",
+  "reviews": [
+    {
+      "node_id": "S01",
+      "node_frame": 5,
+      "available_at_frame": 10,
+      "terminal_node": false,
+      "mode": "initialization",
+      "previous_id": "S01",
+      "from_frame": 5,
+      "to_frame": 5,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 5,
+          "role": "A=B",
+          "image_id": "f44011af8604badb365d12a2020805835eb12abf83fb1d4e957402f7ab900ec5",
+          "path": "assets/f44011af8604badb365d12a2020805835eb12abf83fb1d4e957402f7ab900ec5.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 19.988,
+      "started_at": "2026-11-12T08:11:10.784965+00:00",
+      "completed_at": "2026-11-12T08:11:30.775603+00:00",
+      "worker_pid": 31288,
+      "request_file": "run/cases/C07/S01.request.json",
+      "response_file": "run/cases/C07/S01.response.json",
+      "usage": {
+        "prompt_tokens": 1464,
+        "completion_tokens": 2884,
+        "total_tokens": 4348,
+        "prompt_tokens_details": {
+          "cached_tokens": 1280
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2115
+        },
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 184
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S01",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "本次只有 S01 单帧观测，A 与 B 相同；画面显示其处于客厅一带，前方可见灰色沙发和茶几/脚凳，右侧有嵌入式白色置物架，左后方可见通向另一房间的开口。尚无连续运动证据，不能确认此前从何处进入或已经完成哪些移动要求。",
+          "en": "Only the single S01 frame is observed in this review, with A equal to B; it shows the robot in the living-room area, with a gray couch and coffee table/ottoman visible ahead, a built-in white shelving unit on the right, and an opening to another room in the left background. There is no continuous-motion evidence, so it cannot be confirmed where the robot entered from or which movement requirements were previously completed."
+        },
+        "reason": {
+          "zh": "A=B 的初始化节点只能根据第 5 帧建立当前语义状态；画面虽有客厅与置物架，但单帧不能证明已按“电视墙在左、沙发在右”行走，也不能据此确认此前路线正确。",
+          "en": "As an initialization node with A=B, the current semantic state can only be established from frame 5; although the living room and shelving unit appear, a single frame cannot prove that the robot walked with the TV wall on the left and the couch on the right, nor confirm that the prior route was correct."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "keeping the wall with the TV on your left and the living room with a couch on your right",
+            "quote_zh": "让带电视的墙保持在你的左侧，让有沙发的客厅保持在你的右侧"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              5
+            ],
+            "description": {
+              "zh": "第 5 帧显示客厅场景：灰色沙发、茶几和脚凳位于画面中部偏左，右侧为嵌入式白色置物架，左后方有一个可见桌椅的开口。",
+              "en": "Frame 5 shows a living-room scene: a gray couch, coffee table, and ottoman are located slightly left of center, with a built-in white shelving unit on the right and an opening with a table and chairs in the left background."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "首次有效节点（S01）：当前位于客厅一带，可见灰色沙发、茶几/脚凳，右侧有嵌入式白色置物架，左后方有通向另一房间的开口；此前从何处进入、已完成哪些移动，以及“电视墙在左、沙发在右”的朝向关系均尚未确认。",
+          "en": "First valid node (S01): the robot is currently in the living-room area; a gray couch and coffee table/ottoman are visible, a built-in white shelving unit is on the right, and an opening to another room is in the left background. It is not yet confirmed where the robot entered from, which movement requirements have been completed, or whether the TV wall is on the left and the couch on the right."
+        },
+        "uncertainties": [
+          {
+            "zh": "单帧无法确认此前是否从正确入口进入客厅，或是否已经满足沿电视墙与沙发之间前进的要求。",
+            "en": "A single frame cannot confirm whether the robot previously entered the living room through the correct opening or whether it has already satisfied the requirement to move between the TV wall and the couch."
+          },
+          {
+            "zh": "当前视野未明确显示电视、装饰屏、走廊入口、画作或床，无法确认这些地标及其空间关系。",
+            "en": "The current view does not clearly show the TV, decorative screen, hallway entrance, painting, or bed, so these landmarks and their spatial relationships cannot be confirmed."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "首次有效节点（S01）：当前位于客厅一带，可见灰色沙发、茶几/脚凳，右侧有嵌入式白色置物架，左后方有通向另一房间的开口；此前从何处进入、已完成哪些移动，以及“电视墙在左、沙发在右”的朝向关系均尚未确认。",
+        "en": "First valid node (S01): the robot is currently in the living-room area; a gray couch and coffee table/ottoman are visible, a built-in white shelving unit is on the right, and an opening to another room is in the left background. It is not yet confirmed where the robot entered from, which movement requirements have been completed, or whether the TV wall is on the left and the couch on the right."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 5
+      }
+    },
+    {
+      "node_id": "S02",
+      "node_frame": 80,
+      "available_at_frame": 85,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S01",
+      "from_frame": 5,
+      "to_frame": 80,
+      "prior_progress": {
+        "zh": "首次有效节点（S01）：当前位于客厅一带，可见灰色沙发、茶几/脚凳，右侧有嵌入式白色置物架，左后方有通向另一房间的开口；此前从何处进入、已完成哪些移动，以及“电视墙在左、沙发在右”的朝向关系均尚未确认。",
+        "en": "First valid node (S01): the robot is currently in the living-room area; a gray couch and coffee table/ottoman are visible, a built-in white shelving unit is on the right, and an opening to another room is in the left background. It is not yet confirmed where the robot entered from, which movement requirements have been completed, or whether the TV wall is on the left and the couch on the right."
+      },
+      "images": [
+        {
+          "frame": 5,
+          "role": "A",
+          "image_id": "f44011af8604badb365d12a2020805835eb12abf83fb1d4e957402f7ab900ec5",
+          "path": "assets/f44011af8604badb365d12a2020805835eb12abf83fb1d4e957402f7ab900ec5.webp"
+        },
+        {
+          "frame": 6,
+          "role": "history",
+          "image_id": "694ad57ac9ef49ac2825a4dede95ce24adf046e1906eb6d6aac0831c79c76141",
+          "path": "assets/694ad57ac9ef49ac2825a4dede95ce24adf046e1906eb6d6aac0831c79c76141.webp"
+        },
+        {
+          "frame": 24,
+          "role": "history",
+          "image_id": "aa2a24f28076920eec5ef0721e8b3d3dede601afa7785925da5f22de41568d51",
+          "path": "assets/aa2a24f28076920eec5ef0721e8b3d3dede601afa7785925da5f22de41568d51.webp"
+        },
+        {
+          "frame": 42,
+          "role": "history",
+          "image_id": "9415e35c2280c1225060d9c2c42ca1abe16d8275b9d02cba9fbba7426c8cad8b",
+          "path": "assets/9415e35c2280c1225060d9c2c42ca1abe16d8275b9d02cba9fbba7426c8cad8b.webp"
+        },
+        {
+          "frame": 61,
+          "role": "history",
+          "image_id": "3dab4baaa5732e66dc5841899e3af26b7e8b39abe12a1821c8b24e1737497dd8",
+          "path": "assets/3dab4baaa5732e66dc5841899e3af26b7e8b39abe12a1821c8b24e1737497dd8.webp"
+        },
+        {
+          "frame": 79,
+          "role": "history",
+          "image_id": "42cb64bcdcb4322767b6c251a2741ec2248c40f4b3da452ffcf21dcc9a92fe7f",
+          "path": "assets/42cb64bcdcb4322767b6c251a2741ec2248c40f4b3da452ffcf21dcc9a92fe7f.webp"
+        },
+        {
+          "frame": 80,
+          "role": "B",
+          "image_id": "91b27e309f6d340608c4404f97d57ce261be132b09b9b817bcb90b422c639281",
+          "path": "assets/91b27e309f6d340608c4404f97d57ce261be132b09b9b817bcb90b422c639281.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 28.293,
+      "started_at": "2026-11-12T08:11:30.791649+00:00",
+      "completed_at": "2026-11-12T08:11:59.085697+00:00",
+      "worker_pid": 31288,
+      "request_file": "run/cases/C07/S02.request.json",
+      "response_file": "run/cases/C07/S02.response.json",
+      "usage": {
+        "prompt_tokens": 2811,
+        "completion_tokens": 4190,
+        "total_tokens": 7001,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3572
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 1787
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S02",
+        "verdict": "deviated",
+        "segment_summary": {
+          "zh": "本段从客厅沙发与电视墙之间的区域向前移动，穿过客厅到达餐桌前的开口；随后左转，沿一条短走廊前行，经过墙面左侧的大幅装饰画，进入卧室并看到床。",
+          "en": "In this segment the robot moved forward from the area between the living-room couch and the TV wall, crossed the living room to the opening in front of the dining table; it then turned left, went along a short hallway, passed a large decorative painting on the left wall, and entered the bedroom, where the bed was visible."
+        },
+        "reason": {
+          "zh": "任务要求沿走廊“经过右侧的画”再进入卧室，但 F79 显示大幅画位于行进方向的左侧墙面，卧室入口和床位于右侧，画与卧室入口的左右关系与任务描述明确相反，因此本段发生偏航。",
+          "en": "The task requires passing the painting on the right while following the hallway and then entering the bedroom, but F79 shows the large painting on the left wall in the direction of travel, with the bedroom opening and bed on the right; this left-right relationship between the painting and the bedroom entrance is clearly opposite to the task description, so this segment deviated."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "past the painting on your right, and enter the bedroom",
+            "quote_zh": "经过你右侧的画，然后进入卧室。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              24,
+              42,
+              61
+            ],
+            "description": {
+              "zh": "F24 可见电视墙在左、沙发在右；F42 沿电视墙一侧前行；F61 到达通往餐桌的开口，说明本段从客厅向前到达该开口。",
+              "en": "F24 shows the TV wall on the left and the couch on the right; F42 moves forward along one side of the TV wall; F61 reaches the opening toward the dining table, indicating that this segment moved forward from the living room to that opening."
+            }
+          },
+          {
+            "frames": [
+              79,
+              80
+            ],
+            "description": {
+              "zh": "F79 显示大幅画位于左侧墙面，卧室入口及床在右侧；F80 已进入卧室并看到床。",
+              "en": "F79 shows the large painting on the left wall, with the bedroom opening and bed on the right; F80 has entered the bedroom and sees the bed."
+            }
+          }
+        ],
+        "semantic_progress": null,
+        "uncertainties": [
+          {
+            "zh": "F80 仅显示进入卧室看到床，尚未确认是否已停在床前，以及床头柜是否位于床的右侧。",
+            "en": "F80 only shows entering the bedroom and seeing the bed; it has not yet been confirmed whether the robot has stopped in front of the bed and whether the nightstand is to its right."
+          },
+          {
+            "zh": "本段未明确看到任务所述的左侧装饰屏。",
+            "en": "The decorative screen on the left mentioned in the task is not clearly seen in this segment."
+          }
+        ]
+      },
+      "rollback_target": {
+        "node_id": "S01",
+        "frame": 5,
+        "progress": {
+          "zh": "首次有效节点（S01）：当前位于客厅一带，可见灰色沙发、茶几/脚凳，右侧有嵌入式白色置物架，左后方有通向另一房间的开口；此前从何处进入、已完成哪些移动，以及“电视墙在左、沙发在右”的朝向关系均尚未确认。",
+          "en": "First valid node (S01): the robot is currently in the living-room area; a gray couch and coffee table/ottoman are visible, a built-in white shelving unit is on the right, and an opening to another room is in the left background. It is not yet confirmed where the robot entered from, which movement requirements have been completed, or whether the TV wall is on the left and the couch on the right."
+        }
+      },
+      "committed_progress": {
+        "zh": "首次有效节点（S01）：当前位于客厅一带，可见灰色沙发、茶几/脚凳，右侧有嵌入式白色置物架，左后方有通向另一房间的开口；此前从何处进入、已完成哪些移动，以及“电视墙在左、沙发在右”的朝向关系均尚未确认。",
+        "en": "First valid node (S01): the robot is currently in the living-room area; a gray couch and coffee table/ottoman are visible, a built-in white shelving unit is on the right, and an opening to another room is in the left background. It is not yet confirmed where the robot entered from, which movement requirements have been completed, or whether the TV wall is on the left and the couch on the right."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 5
+      }
+    }
+  ],
+  "stop_node": "S02",
+  "stop_reason": "first_deviation",
+  "terminal_frame": 96,
+  "raw_node_count": 3,
+  "retained_node_count": 3,
+  "unreviewed_nodes": [
+    "S03"
+  ]
+}

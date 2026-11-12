@@ -1,0 +1,262 @@
+{
+  "case_number": 21,
+  "pid": 49660,
+  "reviews": [
+    {
+      "node_id": "S01",
+      "node_frame": 0,
+      "available_at_frame": 5,
+      "terminal_node": false,
+      "mode": "initialization",
+      "previous_id": "S01",
+      "from_frame": 0,
+      "to_frame": 0,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 0,
+          "role": "A=B",
+          "image_id": "27b61452b7b767177fa8a2c875409679a17465dac9eddcb801eae8d2e9d54e9d",
+          "path": "assets/27b61452b7b767177fa8a2c875409679a17465dac9eddcb801eae8d2e9d54e9d.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 12.26,
+      "started_at": "2026-11-12T10:40:30.893000+00:00",
+      "completed_at": "2026-11-12T10:40:43.150490+00:00",
+      "worker_pid": 49660,
+      "request_file": "run/cases/C21/S01.request.json",
+      "response_file": "run/cases/C21/S01.response.json",
+      "usage": {
+        "prompt_tokens": 1437,
+        "completion_tokens": 1969,
+        "total_tokens": 3406,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1322
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 541
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S01",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "S01 为首次有效节点：当前视角沿白色走廊向前，绿色装饰板位于右侧墙面，板上有圆形棕色饰件；左前方可见通向木地板区域的门洞或开口，尚未看到卫生间内部或淋浴间。",
+          "en": "S01 is the first valid node: the current view looks along a white hallway, with a green decorative panel on the right wall bearing round brown ornaments; to the front left an opening or doorway leads to a wood-floored area, and no bathroom interior or shower enclosure is visible yet."
+        },
+        "reason": {
+          "zh": "单帧显示绿色装饰板在右侧，与任务中保持绿色装饰板在右侧的当前空间关系相符；但这是初始化帧，不能据此确认此前已沿走廊直行或已接近尽头，也不能确认左转入口及卫生间内目标位置。",
+          "en": "The single frame shows the green decorative panel on the right, consistent with the current spatial relationship of keeping the green decorative panel on the right; however, this is an initialization frame, so it cannot confirm that the robot has already walked straight along the hallway or approached the end, nor can it confirm the left-turn doorway or the target positions inside the bathroom."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Walk straight down the hallway, keeping the green decorative panel on your right.",
+            "quote_zh": "沿走廊直行，并让绿色装饰板保持在你的右侧。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              0
+            ],
+            "description": {
+              "zh": "帧 0 显示白色走廊、右侧绿色装饰板和圆形棕色饰件；左前方有开口可见，但未见卫生间设施。",
+              "en": "Frame 0 shows a white hallway, the green decorative panel and round brown ornaments on the right; an opening is visible to the front left, but no bathroom fixtures are seen."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "首次有效节点：当前位于白色走廊内，右侧可见绿色装饰板及其上的圆形棕色饰件；此前是否已按要求沿走廊直行、是否接近尽头并左转进入卫生间均尚未确认，卫生间内部目标也尚未确认。",
+          "en": "First valid node: currently in a white hallway, with the green decorative panel and its round brown ornaments visible on the right; it is not yet confirmed whether the robot has previously walked straight along the hallway as required, whether it has approached the end and turned left into the bathroom, or the targets inside the bathroom."
+        },
+        "uncertainties": [
+          {
+            "zh": "此前是否沿走廊直行无法由单帧确认；当前帧未显示走廊尽头与左侧圆形棕色墙饰，也未显示左转后的卫生间内部，因此不能确认转折入口和淋浴间前停下的位置。",
+            "en": "Whether the robot previously walked straight along the hallway cannot be confirmed from a single frame; the current frame does not show the end of the hallway or the round brown wall decoration on the left, nor the bathroom interior after turning left, so the turn entrance and the stopping position in front of the shower enclosure cannot be confirmed."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "首次有效节点：当前位于白色走廊内，右侧可见绿色装饰板及其上的圆形棕色饰件；此前是否已按要求沿走廊直行、是否接近尽头并左转进入卫生间均尚未确认，卫生间内部目标也尚未确认。",
+        "en": "First valid node: currently in a white hallway, with the green decorative panel and its round brown ornaments visible on the right; it is not yet confirmed whether the robot has previously walked straight along the hallway as required, whether it has approached the end and turned left into the bathroom, or the targets inside the bathroom."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 0
+      }
+    },
+    {
+      "node_id": "S02",
+      "node_frame": 14,
+      "available_at_frame": 19,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S01",
+      "from_frame": 0,
+      "to_frame": 14,
+      "prior_progress": {
+        "zh": "首次有效节点：当前位于白色走廊内，右侧可见绿色装饰板及其上的圆形棕色饰件；此前是否已按要求沿走廊直行、是否接近尽头并左转进入卫生间均尚未确认，卫生间内部目标也尚未确认。",
+        "en": "First valid node: currently in a white hallway, with the green decorative panel and its round brown ornaments visible on the right; it is not yet confirmed whether the robot has previously walked straight along the hallway as required, whether it has approached the end and turned left into the bathroom, or the targets inside the bathroom."
+      },
+      "images": [
+        {
+          "frame": 0,
+          "role": "A",
+          "image_id": "27b61452b7b767177fa8a2c875409679a17465dac9eddcb801eae8d2e9d54e9d",
+          "path": "assets/27b61452b7b767177fa8a2c875409679a17465dac9eddcb801eae8d2e9d54e9d.webp"
+        },
+        {
+          "frame": 1,
+          "role": "history",
+          "image_id": "8ea57d887417695b468199e1047d7a9ecc345363ce62e4712d1a18f46fbf2472",
+          "path": "assets/8ea57d887417695b468199e1047d7a9ecc345363ce62e4712d1a18f46fbf2472.webp"
+        },
+        {
+          "frame": 4,
+          "role": "history",
+          "image_id": "4d0491c2f3b6a61bbc4e9a47646c3dcb203884e03773145704f0921b490bbc0f",
+          "path": "assets/4d0491c2f3b6a61bbc4e9a47646c3dcb203884e03773145704f0921b490bbc0f.webp"
+        },
+        {
+          "frame": 7,
+          "role": "history",
+          "image_id": "9c3357ba1ad7c8d8f9a933fc1d0fc08821fc2b79def3b08c944a4eab49b17a8f",
+          "path": "assets/9c3357ba1ad7c8d8f9a933fc1d0fc08821fc2b79def3b08c944a4eab49b17a8f.webp"
+        },
+        {
+          "frame": 10,
+          "role": "history",
+          "image_id": "d3745d2a24c731ea5dff0c5e3eced636556cad5629985e66431f05576a4014ac",
+          "path": "assets/d3745d2a24c731ea5dff0c5e3eced636556cad5629985e66431f05576a4014ac.webp"
+        },
+        {
+          "frame": 13,
+          "role": "history",
+          "image_id": "10ffc3088f87b78ce1ed7397ead27b8fc16cbda1ef1a28264d139449e114a428",
+          "path": "assets/10ffc3088f87b78ce1ed7397ead27b8fc16cbda1ef1a28264d139449e114a428.webp"
+        },
+        {
+          "frame": 14,
+          "role": "B",
+          "image_id": "9065bb3b30d4fc6129f6e7cc8333f9077fff8e5c630d062d279b6a46b4291de9",
+          "path": "assets/9065bb3b30d4fc6129f6e7cc8333f9077fff8e5c630d062d279b6a46b4291de9.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 17.328,
+      "started_at": "2026-11-12T10:40:43.160397+00:00",
+      "completed_at": "2026-11-12T10:41:00.478097+00:00",
+      "worker_pid": 49660,
+      "request_file": "run/cases/C21/S02.request.json",
+      "response_file": "run/cases/C21/S02.response.json",
+      "usage": {
+        "prompt_tokens": 2769,
+        "completion_tokens": 2641,
+        "total_tokens": 5410,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1776
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1873
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S02",
+        "verdict": "deviated",
+        "segment_summary": {
+          "zh": "本段从白色走廊开始，绿色装饰板及其圆形棕色饰件位于右侧；随后视野转入一个有白色高柜/衣柜、木地板、条纹墙和雕塑座的房间。到 B 时左侧可见带深色帘的开口，但未出现淋浴房、马桶、水槽或正前方窗户。",
+          "en": "This segment begins in the white hallway, with the green decorative panel and its round brown ornaments on the right; the view then shifts to a room with tall white cabinets/wardrobes, wooden flooring, a ribbed wall, and a pedestal sculpture. At B, an opening with a dark curtain is visible on the left, but no shower enclosure, toilet, sink, or window directly ahead is visible."
+        },
+        "reason": {
+          "zh": "任务要求沿走廊直行并在尽头左转进入卫生间、停在淋浴房前，且左侧有马桶和水槽、正前方有窗户；前段绿色装饰板在右侧与指令相符，但后段连续画面显示的是带白色衣柜、木地板、条纹墙和雕塑座的空间，B 处也没有卫生间设施，证据表明本段进入了不符合任务的房间。",
+          "en": "The task requires walking down the hallway, turning left at the end into the bathroom, and stopping in front of the shower enclosure, with the toilet and sink on the left and a window directly ahead. The green panel on the right in the early frames matches the instruction, but the later frames show a space with white wardrobes, wooden flooring, a ribbed wall, and a pedestal sculpture, and B shows no bathroom fixtures; this is evidence that the segment entered a room inconsistent with the task."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "keeping the green decorative panel on your right",
+            "quote_zh": "让绿色装饰板保持在你右侧"
+          },
+          {
+            "quote_en": "Walk into the bathroom and stop in front of the shower enclosure",
+            "quote_zh": "走进卫生间，停在淋浴房前"
+          },
+          {
+            "quote_en": "with the toilet and sink on your left and the window directly ahead of you",
+            "quote_zh": "马桶和水槽在你的左侧，窗户在你正前方"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              0,
+              1
+            ],
+            "description": {
+              "zh": "白色走廊内，绿色装饰板及其圆形棕色饰件位于右侧，与任务开头的方位要求相符。",
+              "en": "In the white hallway, the green decorative panel and its round brown ornaments are on the right, matching the directional requirement at the start of the task."
+            }
+          },
+          {
+            "frames": [
+              4,
+              7,
+              10
+            ],
+            "description": {
+              "zh": "画面显示白色高柜/衣柜、木地板和条纹墙，空间呈衣帽或更衣区域特征，而不是卫生间内部。",
+              "en": "The frames show tall white cabinets/wardrobes, wooden flooring, and a ribbed wall, giving the space the character of a closet or dressing area rather than the interior of a bathroom."
+            }
+          },
+          {
+            "frames": [
+              13,
+              14
+            ],
+            "description": {
+              "zh": "B 附近可见条纹墙、雕塑座及左侧带深色帘的开口，仍未出现淋浴房、马桶、水槽或正前方窗户。",
+              "en": "Near B, a ribbed wall, a pedestal sculpture, and an opening with a dark curtain on the left are visible, while no shower enclosure, toilet, sink, or window directly ahead appears."
+            }
+          }
+        ],
+        "semantic_progress": null,
+        "uncertainties": [
+          {
+            "zh": "抽样帧无法确认具体在哪一处门洞转向，也无法确定该衣帽/更衣区域与走廊的连接位置；但 B 处不是任务要求的卫生间内部。",
+            "en": "The sampled frames do not confirm exactly which doorway was turned through or the connection between this closet/dressing area and the hallway; however, B is not the interior of the required bathroom."
+          },
+          {
+            "zh": "任务要求的淋浴房前停止位置、左侧马桶和水槽、正前方窗户均未在 B 处确认。",
+            "en": "The required stopping position in front of the shower enclosure, the toilet and sink on the left, and the window directly ahead are not confirmed at B."
+          }
+        ]
+      },
+      "rollback_target": {
+        "node_id": "S01",
+        "frame": 0,
+        "progress": {
+          "zh": "首次有效节点：当前位于白色走廊内，右侧可见绿色装饰板及其上的圆形棕色饰件；此前是否已按要求沿走廊直行、是否接近尽头并左转进入卫生间均尚未确认，卫生间内部目标也尚未确认。",
+          "en": "First valid node: currently in a white hallway, with the green decorative panel and its round brown ornaments visible on the right; it is not yet confirmed whether the robot has previously walked straight along the hallway as required, whether it has approached the end and turned left into the bathroom, or the targets inside the bathroom."
+        }
+      },
+      "committed_progress": {
+        "zh": "首次有效节点：当前位于白色走廊内，右侧可见绿色装饰板及其上的圆形棕色饰件；此前是否已按要求沿走廊直行、是否接近尽头并左转进入卫生间均尚未确认，卫生间内部目标也尚未确认。",
+        "en": "First valid node: currently in a white hallway, with the green decorative panel and its round brown ornaments visible on the right; it is not yet confirmed whether the robot has previously walked straight along the hallway as required, whether it has approached the end and turned left into the bathroom, or the targets inside the bathroom."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 0
+      }
+    }
+  ],
+  "stop_node": "S02"
+}

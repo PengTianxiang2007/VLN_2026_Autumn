@@ -1,0 +1,36 @@
+{
+  "mode": "initialization",
+  "previous_id": "S01",
+  "current_id": "S01",
+  "previous_frame": 8,
+  "current_frame": 8,
+  "instruction_en": "Turn right to enter the hallway. Walk straight down the hallway, passing a doorway to a bathroom on your left and a doorway to a room with white folding doors straight ahead. Continue straight, passing a doorway to a library on your left and a doorway to a bedroom on your right. Proceed into the open living area, with a living room on your left and a dining table on your right. Walk further into the living room, keeping the TV wall on your right and the sofas and coffee table on your left. Stop in front of the large window, with the main sofa to your left.",
+  "prior_semantic_progress": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+  "coverage": "Endpoint observations plus up to five uniformly sampled intermediate observations. Frames are not necessarily consecutive. Review ends at B.",
+  "images": [
+    {
+      "frame": 8,
+      "role": "A=B",
+      "image_id": "2d7a61e1108b267682b45f8950787210e159982aa2a4a24a6b19bbcd26fa3e8f",
+      "path": "assets/2d7a61e1108b267682b45f8950787210e159982aa2a4a24a6b19bbcd26fa3e8f.webp",
+      "sha256": "2d7a61e1108b267682b45f8950787210e159982aa2a4a24a6b19bbcd26fa3e8f",
+      "bytes": 16050
+    }
+  ],
+  "settings": {
+    "model": "deepseek-flash",
+    "response_format": {
+      "type": "json_object"
+    },
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_tokens": 32768,
+    "stream": false
+  },
+  "prompt_sha256": "129ef91051dcb6cc1be8e2e276cb102166bff322a36fdd10661e644de2162cad",
+  "request_sha256": "b3f38c619b6be9d2a61e7a064e725faa38bae7a601da696afb795badd775a79d",
+  "started_at": "2026-11-12T10:43:04.617487+00:00",
+  "worker_pid": 17524
+}

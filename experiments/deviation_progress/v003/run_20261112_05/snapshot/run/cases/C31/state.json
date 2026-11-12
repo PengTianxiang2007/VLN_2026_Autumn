@@ -1,0 +1,415 @@
+{
+  "case_number": 31,
+  "pid": 17524,
+  "reviews": [
+    {
+      "node_id": "S01",
+      "node_frame": 8,
+      "available_at_frame": 13,
+      "terminal_node": false,
+      "mode": "initialization",
+      "previous_id": "S01",
+      "from_frame": 8,
+      "to_frame": 8,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 8,
+          "role": "A=B",
+          "image_id": "2d7a61e1108b267682b45f8950787210e159982aa2a4a24a6b19bbcd26fa3e8f",
+          "path": "assets/2d7a61e1108b267682b45f8950787210e159982aa2a4a24a6b19bbcd26fa3e8f.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 10.673,
+      "started_at": "2026-11-12T10:43:04.617487+00:00",
+      "completed_at": "2026-11-12T10:43:15.295425+00:00",
+      "worker_pid": 17524,
+      "request_file": "run/cases/C31/S01.request.json",
+      "response_file": "run/cases/C31/S01.response.json",
+      "usage": {
+        "prompt_tokens": 1487,
+        "completion_tokens": 1690,
+        "total_tokens": 3177,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1034
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 591
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S01",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "本节点为初始化观测：当前站在走廊中，正前方是白色折叠门，左侧门口内可见洗手台和镜子，右侧房间内可见床。单帧观测无法确认此前的移动或到达过程。",
+          "en": "This node is an initialization observation: the robot is currently standing in a hallway, facing white folding doors straight ahead, with a sink and mirror visible through the doorway on the left and a bed visible in the room on the right. A single frame cannot confirm the prior movement or arrival process."
+        },
+        "reason": {
+          "zh": "A=B 的初始化帧支持当前处于有白色折叠门、左侧洗手台/镜子和右侧床的走廊位置，但无法据此确认已按要求右转进入走廊或已经过卫生间等历史要求。",
+          "en": "The initialization frame with A=B supports a current hallway position featuring white folding doors, a sink/mirror on the left, and a bed on the right, but it cannot confirm that the robot previously turned right into the hallway or passed the bathroom as required."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "passing a doorway to a bathroom on your left",
+            "quote_zh": "经过你左侧通往卫生间的门口"
+          },
+          {
+            "quote_en": "a room with white folding doors straight ahead",
+            "quote_zh": "正前方一扇带白色折叠门的房间"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              8
+            ],
+            "description": {
+              "zh": "第8帧显示走廊地面、正前方的白色折叠门、左侧门口内的洗手台和镜子，以及右侧房间内的床。",
+              "en": "Frame 8 shows the hallway floor, white folding doors straight ahead, a sink and mirror through the doorway on the left, and a bed in the room on the right."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "截至S01，仅能确认当前位于走廊，面朝白色折叠门；左侧门口内可见洗手台/镜子，右侧房间内可见床。此前是否已正确右转进入走廊并经过卫生间等尚未确认；客厅、餐桌、电视墙、沙发、茶几和大窗均未到达。",
+          "en": "As of S01, it can only be confirmed that the robot is currently in a hallway facing white folding doors; a sink/mirror is visible through the left doorway and a bed is visible in the right room. It is not yet confirmed whether the robot previously turned right into the hallway and passed the bathroom; the living room, dining table, TV wall, sofas, coffee table, and large window have not been reached."
+        },
+        "uncertainties": [
+          {
+            "zh": "此前是否已经按要求右转进入走廊并经过卫生间，单帧无法确认。",
+            "en": "Whether the robot has already turned right into the hallway and passed the bathroom as required cannot be confirmed from a single frame."
+          },
+          {
+            "zh": "当前白色折叠门与左侧、右侧门口相对任务中后续图书馆、卧室和客厅的先后关系尚未确认。",
+            "en": "The ordering of the current white folding doors and the left and right doorways relative to the later library, bedroom, and living room in the task is not yet confirmed."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "截至S01，仅能确认当前位于走廊，面朝白色折叠门；左侧门口内可见洗手台/镜子，右侧房间内可见床。此前是否已正确右转进入走廊并经过卫生间等尚未确认；客厅、餐桌、电视墙、沙发、茶几和大窗均未到达。",
+        "en": "As of S01, it can only be confirmed that the robot is currently in a hallway facing white folding doors; a sink/mirror is visible through the left doorway and a bed is visible in the right room. It is not yet confirmed whether the robot previously turned right into the hallway and passed the bathroom; the living room, dining table, TV wall, sofas, coffee table, and large window have not been reached."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 8
+      }
+    },
+    {
+      "node_id": "S02",
+      "node_frame": 13,
+      "available_at_frame": 18,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S01",
+      "from_frame": 8,
+      "to_frame": 13,
+      "prior_progress": {
+        "zh": "截至S01，仅能确认当前位于走廊，面朝白色折叠门；左侧门口内可见洗手台/镜子，右侧房间内可见床。此前是否已正确右转进入走廊并经过卫生间等尚未确认；客厅、餐桌、电视墙、沙发、茶几和大窗均未到达。",
+        "en": "As of S01, it can only be confirmed that the robot is currently in a hallway facing white folding doors; a sink/mirror is visible through the left doorway and a bed is visible in the right room. It is not yet confirmed whether the robot previously turned right into the hallway and passed the bathroom; the living room, dining table, TV wall, sofas, coffee table, and large window have not been reached."
+      },
+      "images": [
+        {
+          "frame": 8,
+          "role": "A",
+          "image_id": "2d7a61e1108b267682b45f8950787210e159982aa2a4a24a6b19bbcd26fa3e8f",
+          "path": "assets/2d7a61e1108b267682b45f8950787210e159982aa2a4a24a6b19bbcd26fa3e8f.webp"
+        },
+        {
+          "frame": 9,
+          "role": "history",
+          "image_id": "7d2f3f56df1e1946722c545da7335f0405ff213df55a671e9ff39976c65b1194",
+          "path": "assets/7d2f3f56df1e1946722c545da7335f0405ff213df55a671e9ff39976c65b1194.webp"
+        },
+        {
+          "frame": 10,
+          "role": "history",
+          "image_id": "56cd4bc4db20a4c74eb546fa032f6a2b3e7fb75408beb391a6c2d2bf076f08cb",
+          "path": "assets/56cd4bc4db20a4c74eb546fa032f6a2b3e7fb75408beb391a6c2d2bf076f08cb.webp"
+        },
+        {
+          "frame": 11,
+          "role": "history",
+          "image_id": "0931cfaf3c746d036433ee8c7d45da624f83ebfea6d63b68f082adf18c53a682",
+          "path": "assets/0931cfaf3c746d036433ee8c7d45da624f83ebfea6d63b68f082adf18c53a682.webp"
+        },
+        {
+          "frame": 12,
+          "role": "history",
+          "image_id": "5ddac4e95de5c304d609e049c4f1c0b33537321fd2875ccc45820081c060fac1",
+          "path": "assets/5ddac4e95de5c304d609e049c4f1c0b33537321fd2875ccc45820081c060fac1.webp"
+        },
+        {
+          "frame": 13,
+          "role": "B",
+          "image_id": "9f65ea272711e7733715aac9c76c2b832c9a7cd49395157468b2c342d63290e3",
+          "path": "assets/9f65ea272711e7733715aac9c76c2b832c9a7cd49395157468b2c342d63290e3.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 105.294,
+      "started_at": "2026-11-12T10:43:15.303827+00:00",
+      "completed_at": "2026-11-12T10:45:00.599496+00:00",
+      "worker_pid": 17524,
+      "request_file": "run/cases/C31/S02.request.json",
+      "response_file": "run/cases/C31/S02.response.json",
+      "usage": {
+        "prompt_tokens": 2616,
+        "completion_tokens": 15142,
+        "total_tokens": 17758,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 14056
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1720
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S02",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "从S01到S02，视角由走廊正前方的白色折叠门逐渐向右转，白色折叠门移到画面左侧，右侧卧室内的床和大窗变得更完整。全程仍处于走廊/卧室门口附近，未出现客厅、餐桌、电视墙、沙发或茶几。",
+          "en": "From S01 to S02, the view gradually turns right from the white folding doors ahead in the hallway; the white folding doors move to the left side of the image, and the bed and large window in the right-hand bedroom become more fully visible. The robot remains in the hallway/bedroom-doorway area throughout, and no living room, dining table, TV wall, sofa, or coffee table appears."
+        },
+        "reason": {
+          "zh": "帧中白色折叠门仍在走廊前方偏左，右侧为带床和大窗的卧室，符合仍在走廊并经过右侧卧室门口的阶段；视角右转本身不足以证明转入卧室。没有证据显示已穿门进入卧室或到达客厅，因此不判偏航；后续客厅等参照物仍待确认。",
+          "en": "The frames show the white folding doors still ahead/to the left in the hallway, with the bedroom containing the bed and large window on the right, consistent with the stage of remaining in the hallway and passing the bedroom doorway on the right; the rightward view change alone is insufficient to prove entry into the bedroom. There is no evidence that the robot passed through the bedroom doorway or reached the living room, so no deviation is inferred; later landmarks such as the living room remain unconfirmed."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Walk straight down the hallway, passing a doorway to a bathroom on your left and a doorway to a room with white folding doors straight ahead.",
+            "quote_zh": "沿走廊直行，经过左侧通往卫生间的门口，以及正前方通往带白色折叠门房间的门口。"
+          },
+          {
+            "quote_en": "Continue straight, passing a doorway to a library on your left and a doorway to a bedroom on your right.",
+            "quote_zh": "继续直行，经过左侧通往书房的门口和右侧通往卧室的门口。"
+          },
+          {
+            "quote_en": "Proceed into the open living area, with a living room on your left and a dining table on your right.",
+            "quote_zh": "进入开阔的起居区，左侧是客厅，右侧是餐桌。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              8,
+              9,
+              10
+            ],
+            "description": {
+              "zh": "A帧及前两张中间帧显示走廊前方为白色折叠门，左侧卫生间门口可见洗手台/镜子，右侧卧室内可见床；整体仍处于走廊入口附近。",
+              "en": "Frame A and the first two intermediate frames show the white folding doors ahead in the hallway, the sink/mirror through the bathroom doorway on the left, and the bed in the bedroom on the right; the view is still around the hallway area."
+            }
+          },
+          {
+            "frames": [
+              11,
+              12,
+              13
+            ],
+            "description": {
+              "zh": "后续帧中视角明显向右转：白色折叠门移到画面左侧，右侧卧室的床和大窗更完整可见；没有出现客厅、餐桌、电视墙、沙发或茶几。",
+              "en": "In the later frames the view clearly turns right: the white folding doors move to the left side of the image, and the bed and large window in the right-hand bedroom become more fully visible; no living room, dining table, TV wall, sofa, or coffee table appears."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "截至S02，仍只能确认位于走廊的白色折叠门与右侧卧室门口附近：先前左侧卫生间门口可见洗手台/镜子，当前白色折叠门在画面左侧、右侧卧室内可见床和大窗。尚未确认已穿过卧室门口或进入客厅区域，也未看到餐桌、电视墙、沙发、茶几及大窗前的停止点；此前是否正确右转进入走廊仍待确认。",
+          "en": "As of S02, it can still only be confirmed that the robot is in the hallway near the white folding doors and the bedroom doorway on the right: previously the sink/mirror were visible through the bathroom doorway on the left; currently the white folding doors are on the left side of the view, and the bed and large window are visible in the bedroom on the right. It is not yet confirmed that the bedroom doorway has been passed or the living-room area entered, nor have the dining table, TV wall, sofas, coffee table, or the stopping point in front of the large window been seen; whether the earlier right turn into the hallway was correct also remains to be confirmed."
+        },
+        "uncertainties": [
+          {
+            "zh": "本段画面显示视角转向右侧卧室，但是否已实际接近或穿过该卧室门口，不能仅凭这几帧确定。",
+            "en": "This segment shows the view turning toward the bedroom on the right, but whether the robot actually approached or passed that bedroom doorway cannot be determined from these frames alone."
+          },
+          {
+            "zh": "客厅入口、餐桌、电视墙、沙发和茶几的位置及对应通行关系尚未在视野中出现。",
+            "en": "The positions of and passage relations to the living-room entrance, dining table, TV wall, sofas, and coffee table have not yet appeared in view."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "截至S02，仍只能确认位于走廊的白色折叠门与右侧卧室门口附近：先前左侧卫生间门口可见洗手台/镜子，当前白色折叠门在画面左侧、右侧卧室内可见床和大窗。尚未确认已穿过卧室门口或进入客厅区域，也未看到餐桌、电视墙、沙发、茶几及大窗前的停止点；此前是否正确右转进入走廊仍待确认。",
+        "en": "As of S02, it can still only be confirmed that the robot is in the hallway near the white folding doors and the bedroom doorway on the right: previously the sink/mirror were visible through the bathroom doorway on the left; currently the white folding doors are on the left side of the view, and the bed and large window are visible in the bedroom on the right. It is not yet confirmed that the bedroom doorway has been passed or the living-room area entered, nor have the dining table, TV wall, sofas, coffee table, or the stopping point in front of the large window been seen; whether the earlier right turn into the hallway was correct also remains to be confirmed."
+      },
+      "progress_anchor": {
+        "id": "S02",
+        "frame": 13
+      }
+    },
+    {
+      "node_id": "S03",
+      "node_frame": 23,
+      "available_at_frame": 28,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S02",
+      "from_frame": 13,
+      "to_frame": 23,
+      "prior_progress": {
+        "zh": "截至S02，仍只能确认位于走廊的白色折叠门与右侧卧室门口附近：先前左侧卫生间门口可见洗手台/镜子，当前白色折叠门在画面左侧、右侧卧室内可见床和大窗。尚未确认已穿过卧室门口或进入客厅区域，也未看到餐桌、电视墙、沙发、茶几及大窗前的停止点；此前是否正确右转进入走廊仍待确认。",
+        "en": "As of S02, it can still only be confirmed that the robot is in the hallway near the white folding doors and the bedroom doorway on the right: previously the sink/mirror were visible through the bathroom doorway on the left; currently the white folding doors are on the left side of the view, and the bed and large window are visible in the bedroom on the right. It is not yet confirmed that the bedroom doorway has been passed or the living-room area entered, nor have the dining table, TV wall, sofas, coffee table, or the stopping point in front of the large window been seen; whether the earlier right turn into the hallway was correct also remains to be confirmed."
+      },
+      "images": [
+        {
+          "frame": 13,
+          "role": "A",
+          "image_id": "9f65ea272711e7733715aac9c76c2b832c9a7cd49395157468b2c342d63290e3",
+          "path": "assets/9f65ea272711e7733715aac9c76c2b832c9a7cd49395157468b2c342d63290e3.webp"
+        },
+        {
+          "frame": 14,
+          "role": "history",
+          "image_id": "8da56bf1a4dbf73e2a404e5cdefa8d2c08b2bef2f3d20a62f5467e021d5727f7",
+          "path": "assets/8da56bf1a4dbf73e2a404e5cdefa8d2c08b2bef2f3d20a62f5467e021d5727f7.webp"
+        },
+        {
+          "frame": 16,
+          "role": "history",
+          "image_id": "b528fe6965b887f3384fa93acb4b0b949d4266d735ed6c52d981f0589da34e55",
+          "path": "assets/b528fe6965b887f3384fa93acb4b0b949d4266d735ed6c52d981f0589da34e55.webp"
+        },
+        {
+          "frame": 18,
+          "role": "history",
+          "image_id": "0b1f96c17971200db5dc627b11a185756190bc13656ce85eb1f9634c8721311b",
+          "path": "assets/0b1f96c17971200db5dc627b11a185756190bc13656ce85eb1f9634c8721311b.webp"
+        },
+        {
+          "frame": 20,
+          "role": "history",
+          "image_id": "c63152ac6d535866bb95fe36c65c843c976c59593c034176c12ea545bf94bbce",
+          "path": "assets/c63152ac6d535866bb95fe36c65c843c976c59593c034176c12ea545bf94bbce.webp"
+        },
+        {
+          "frame": 22,
+          "role": "history",
+          "image_id": "90bceb3cd18290f1c58a2111d8a31d318de3c28fffa28b7380bd395887aa766e",
+          "path": "assets/90bceb3cd18290f1c58a2111d8a31d318de3c28fffa28b7380bd395887aa766e.webp"
+        },
+        {
+          "frame": 23,
+          "role": "B",
+          "image_id": "7904ea00fb5c491c8fe430f101eda4143a7fdc9dd7bd95b2851f7c335b18bc41",
+          "path": "assets/7904ea00fb5c491c8fe430f101eda4143a7fdc9dd7bd95b2851f7c335b18bc41.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 59.255,
+      "started_at": "2026-11-12T10:45:00.612320+00:00",
+      "completed_at": "2026-11-12T10:45:59.861797+00:00",
+      "worker_pid": 17524,
+      "request_file": "run/cases/C31/S03.request.json",
+      "response_file": "run/cases/C31/S03.response.json",
+      "usage": {
+        "prompt_tokens": 2852,
+        "completion_tokens": 8750,
+        "total_tokens": 11602,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 7871
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1956
+      },
+      "answer": {
+        "previous_id": "S02",
+        "current_id": "S03",
+        "verdict": "deviated",
+        "segment_summary": {
+          "zh": "本段从S02的走廊位置开始，左侧仍可见白色折叠门，前方右侧卧室内有床和大窗。随后多帧中卧室的床、大窗和右侧矮柜/电视持续放大并居中，至B点视角已明显推进到卧室窗前区域，而非沿走廊进入开放客厅。",
+          "en": "This segment starts at the S02 hallway position, with the white folding door still visible on the left and a bed and large window in the bedroom ahead/right. Across the following frames the bed, large window, and low console/TV on the right grow larger and remain centered; by B the viewpoint has clearly advanced into the bedroom-window area rather than continuing down the hallway into the open living area."
+        },
+        "reason": {
+          "zh": "任务要求经过右侧卧室门口后继续直行进入开放起居区；但本段观测显示相机持续朝该卧室内部推进，B点面对的是卧室大窗、左侧床和右侧电视矮柜，未出现餐桌、沙发或茶几，属于进入/深入卧室而非经过其门口继续前行。",
+          "en": "The task requires passing the bedroom doorway on the right and continuing straight into the open living area; however, the observations show the camera advancing into that bedroom, and at B it faces the bedroom's large window, bed on the left, and TV console on the right, without the dining table, sofas, or coffee table, indicating entering/deepening into the bedroom rather than passing its doorway and continuing onward."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Continue straight, passing a doorway to a library on your left and a doorway to a bedroom on your right.",
+            "quote_zh": "继续直行，经过左侧通往书房的门口以及右侧通往卧室的门口。"
+          },
+          {
+            "quote_en": "Proceed into the open living area, with a living room on your left and a dining table on your right.",
+            "quote_zh": "继续进入开放式起居区，客厅在左侧，餐桌在右侧。"
+          },
+          {
+            "quote_en": "Stop in front of the large window, with the main sofa to your left.",
+            "quote_zh": "停在大窗前，主沙发在你的左侧。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              13,
+              14
+            ],
+            "description": {
+              "zh": "F13仍可见左侧白色折叠门，前方右侧卧室内有床和大窗；F14视角已转向该卧室并使床、窗更居中。",
+              "en": "In F13 the white folding door is still visible on the left, with a bed and large window in the bedroom ahead/right; by F14 the view has turned toward that bedroom and centers the bed and window more."
+            }
+          },
+          {
+            "frames": [
+              16,
+              18,
+              20
+            ],
+            "description": {
+              "zh": "这些帧中卧室的床、大窗与右侧矮柜/电视逐渐放大，左侧白色折叠门离开视野，显示运动方向持续深入卧室。",
+              "en": "In these frames the bedroom's bed, large window, and right-side low console/TV gradually enlarge while the white folding door leaves the view, indicating continued movement deeper into the bedroom."
+            }
+          },
+          {
+            "frames": [
+              22,
+              23
+            ],
+            "description": {
+              "zh": "B帧F23显示视角已在卧室窗前区域，床在左、电视矮柜在右；画面中没有开放客厅、餐桌、沙发和茶几。",
+              "en": "Frame F23 at B shows the viewpoint in the bedroom-window area, with the bed on the left and the TV console on the right; the open living area, dining table, sofas, and coffee table are not visible."
+            }
+          }
+        ],
+        "semantic_progress": null,
+        "uncertainties": [
+          {
+            "zh": "S02之前是否正确右转进入走廊仍不能由本段帧独立确认。",
+            "en": "Whether the robot correctly turned right into the hallway before S02 still cannot be independently confirmed from these frames."
+          },
+          {
+            "zh": "抽样帧无法精确判定完全越过卧室门槛的时刻，也无法确认B点是否已完全停稳；但持续深入卧室的通行方向与任务冲突明确。",
+            "en": "The sampled frames cannot precisely determine when the bedroom threshold was fully crossed, nor whether B is fully stopped; however, the continued movement deeper into the bedroom clearly conflicts with the task."
+          }
+        ]
+      },
+      "rollback_target": {
+        "node_id": "S02",
+        "frame": 13,
+        "progress": {
+          "zh": "截至S02，仍只能确认位于走廊的白色折叠门与右侧卧室门口附近：先前左侧卫生间门口可见洗手台/镜子，当前白色折叠门在画面左侧、右侧卧室内可见床和大窗。尚未确认已穿过卧室门口或进入客厅区域，也未看到餐桌、电视墙、沙发、茶几及大窗前的停止点；此前是否正确右转进入走廊仍待确认。",
+          "en": "As of S02, it can still only be confirmed that the robot is in the hallway near the white folding doors and the bedroom doorway on the right: previously the sink/mirror were visible through the bathroom doorway on the left; currently the white folding doors are on the left side of the view, and the bed and large window are visible in the bedroom on the right. It is not yet confirmed that the bedroom doorway has been passed or the living-room area entered, nor have the dining table, TV wall, sofas, coffee table, or the stopping point in front of the large window been seen; whether the earlier right turn into the hallway was correct also remains to be confirmed."
+        }
+      },
+      "committed_progress": {
+        "zh": "截至S02，仍只能确认位于走廊的白色折叠门与右侧卧室门口附近：先前左侧卫生间门口可见洗手台/镜子，当前白色折叠门在画面左侧、右侧卧室内可见床和大窗。尚未确认已穿过卧室门口或进入客厅区域，也未看到餐桌、电视墙、沙发、茶几及大窗前的停止点；此前是否正确右转进入走廊仍待确认。",
+        "en": "As of S02, it can still only be confirmed that the robot is in the hallway near the white folding doors and the bedroom doorway on the right: previously the sink/mirror were visible through the bathroom doorway on the left; currently the white folding doors are on the left side of the view, and the bed and large window are visible in the bedroom on the right. It is not yet confirmed that the bedroom doorway has been passed or the living-room area entered, nor have the dining table, TV wall, sofas, coffee table, or the stopping point in front of the large window been seen; whether the earlier right turn into the hallway was correct also remains to be confirmed."
+      },
+      "progress_anchor": {
+        "id": "S02",
+        "frame": 13
+      }
+    }
+  ],
+  "stop_node": "S03"
+}

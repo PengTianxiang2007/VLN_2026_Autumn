@@ -1,0 +1,84 @@
+{
+  "mode": "segment",
+  "previous_id": "S01",
+  "current_id": "S03",
+  "previous_frame": 0,
+  "current_frame": 36,
+  "instruction_en": "Turn left to enter the bedroom, passing a TV on your left and a bed on your right. Stop in front of the vanity table with a mirror on your left.",
+  "prior_semantic_progress": "首次有效节点：当前位于走廊尽端、正对卫生间门口；尚未确认已左转进入卧室，也未确认经过左侧电视、右侧床或到达带镜梳妆台前。",
+  "coverage": "Endpoint observations plus up to five uniformly sampled intermediate observations. Frames are not necessarily consecutive. Review ends at B.",
+  "images": [
+    {
+      "frame": 0,
+      "role": "A",
+      "image_id": "2367621fcb0bac91f0df8e5a4fae97ef570a5ddff4f814b22e7635aea6b963e4",
+      "path": "assets/2367621fcb0bac91f0df8e5a4fae97ef570a5ddff4f814b22e7635aea6b963e4.webp",
+      "sha256": "2367621fcb0bac91f0df8e5a4fae97ef570a5ddff4f814b22e7635aea6b963e4",
+      "bytes": 18402
+    },
+    {
+      "frame": 1,
+      "role": "history",
+      "image_id": "9df022e9ac3824ac046e1eac5c560a59a37d5eb5d8136c0e202df61b70e83118",
+      "path": "assets/9df022e9ac3824ac046e1eac5c560a59a37d5eb5d8136c0e202df61b70e83118.webp",
+      "sha256": "9df022e9ac3824ac046e1eac5c560a59a37d5eb5d8136c0e202df61b70e83118",
+      "bytes": 23172
+    },
+    {
+      "frame": 9,
+      "role": "history",
+      "image_id": "c142007dc329a2ca343ee5d257fef926418180ff58bb3a45c459d95b71ab2538",
+      "path": "assets/c142007dc329a2ca343ee5d257fef926418180ff58bb3a45c459d95b71ab2538.webp",
+      "sha256": "c142007dc329a2ca343ee5d257fef926418180ff58bb3a45c459d95b71ab2538",
+      "bytes": 22048
+    },
+    {
+      "frame": 18,
+      "role": "history",
+      "image_id": "518745a8595d525abb826fa15e74e7879e6969720e2a1f323f986322186eb6e8",
+      "path": "assets/518745a8595d525abb826fa15e74e7879e6969720e2a1f323f986322186eb6e8.webp",
+      "sha256": "518745a8595d525abb826fa15e74e7879e6969720e2a1f323f986322186eb6e8",
+      "bytes": 26222
+    },
+    {
+      "frame": 27,
+      "role": "history",
+      "image_id": "8f7550da6f9e422d547f4c6a39588bf908960ebab6f18c3affac2021517f2c02",
+      "path": "assets/8f7550da6f9e422d547f4c6a39588bf908960ebab6f18c3affac2021517f2c02.webp",
+      "sha256": "8f7550da6f9e422d547f4c6a39588bf908960ebab6f18c3affac2021517f2c02",
+      "bytes": 31278
+    },
+    {
+      "frame": 35,
+      "role": "history",
+      "image_id": "85a6ea5155595035ddc2503f31ca9d72df7bdf3e2fd819dee14d21755c746606",
+      "path": "assets/85a6ea5155595035ddc2503f31ca9d72df7bdf3e2fd819dee14d21755c746606.webp",
+      "sha256": "85a6ea5155595035ddc2503f31ca9d72df7bdf3e2fd819dee14d21755c746606",
+      "bytes": 28014
+    },
+    {
+      "frame": 36,
+      "role": "B",
+      "image_id": "b59351868012b60bf9c90419843f5ad0b913fe8bd0020a4496b9863255fead3e",
+      "path": "assets/b59351868012b60bf9c90419843f5ad0b913fe8bd0020a4496b9863255fead3e.webp",
+      "sha256": "b59351868012b60bf9c90419843f5ad0b913fe8bd0020a4496b9863255fead3e",
+      "bytes": 25248
+    }
+  ],
+  "settings": {
+    "model": "deepseek-flash",
+    "response_format": {
+      "type": "json_object"
+    },
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_tokens": 32768,
+    "stream": false
+  },
+  "prompt_sha256": "129ef91051dcb6cc1be8e2e276cb102166bff322a36fdd10661e644de2162cad",
+  "request_sha256": "7305099ef541d999fee30a7ec51b8f7d556b9da475bfc187bba784a737260b14",
+  "started_at": "2026-11-12T10:39:31.661892+00:00",
+  "worker_pid": 50992
+}

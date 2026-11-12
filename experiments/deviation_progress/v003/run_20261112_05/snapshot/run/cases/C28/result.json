@@ -1,0 +1,674 @@
+{
+  "case_number": 28,
+  "case_index": 5,
+  "episode_id": "kujiale_0240_7_0 · F34",
+  "real_episode_id": "kujiale_0240_7_0",
+  "scene": "kujiale_0240",
+  "worker_pid": 45636,
+  "started_at": "2026-11-12T08:11:10.844645+00:00",
+  "completed_at": "2026-11-12T08:14:12.485314+00:00",
+  "reviews": [
+    {
+      "node_id": "S01",
+      "node_frame": 0,
+      "available_at_frame": 5,
+      "terminal_node": false,
+      "mode": "initialization",
+      "previous_id": "S01",
+      "from_frame": 0,
+      "to_frame": 0,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 0,
+          "role": "A=B",
+          "image_id": "221407b7b176c8dde32dbe0ece4523db74a97f674f4ffc08b4176da3bae7ce28",
+          "path": "assets/221407b7b176c8dde32dbe0ece4523db74a97f674f4ffc08b4176da3bae7ce28.webp"
+        }
+      ],
+      "status": "error",
+      "elapsed_seconds": 5.963,
+      "started_at": "2026-11-12T08:11:10.844645+00:00",
+      "completed_at": "2026-11-12T08:11:16.809556+00:00",
+      "worker_pid": 45636,
+      "request_file": "run/cases/C28/S01.request.json",
+      "response_file": "run/cases/C28/S01.response.json",
+      "usage": {
+        "prompt_tokens": 1434,
+        "completion_tokens": 841,
+        "total_tokens": 2275,
+        "prompt_tokens_details": {
+          "cached_tokens": 1280
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 89
+        },
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 154
+      },
+      "error": "ValueError: Invalid uncertainties",
+      "committed_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 0
+      }
+    },
+    {
+      "node_id": "S02",
+      "node_frame": 23,
+      "available_at_frame": 28,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S01",
+      "from_frame": 0,
+      "to_frame": 23,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 0,
+          "role": "A",
+          "image_id": "221407b7b176c8dde32dbe0ece4523db74a97f674f4ffc08b4176da3bae7ce28",
+          "path": "assets/221407b7b176c8dde32dbe0ece4523db74a97f674f4ffc08b4176da3bae7ce28.webp"
+        },
+        {
+          "frame": 1,
+          "role": "history",
+          "image_id": "1fdb9d6de40f83b610cad3e79f6e0f1618631dce776adcc2ec4b5e16866e92b1",
+          "path": "assets/1fdb9d6de40f83b610cad3e79f6e0f1618631dce776adcc2ec4b5e16866e92b1.webp"
+        },
+        {
+          "frame": 6,
+          "role": "history",
+          "image_id": "2df0c46e94a146a1b27e5190582e2d7835e59f62b4f7ce753018c8c1270f611a",
+          "path": "assets/2df0c46e94a146a1b27e5190582e2d7835e59f62b4f7ce753018c8c1270f611a.webp"
+        },
+        {
+          "frame": 11,
+          "role": "history",
+          "image_id": "e637bf2aad03b1aff2d9987beadfb3574041064bc974e16240594e6c5da972d5",
+          "path": "assets/e637bf2aad03b1aff2d9987beadfb3574041064bc974e16240594e6c5da972d5.webp"
+        },
+        {
+          "frame": 17,
+          "role": "history",
+          "image_id": "4d7f6aa25cf1ff4eee5c1ec359085e31cd36ae3cb0dbbd13034f3fcfaad6ae4a",
+          "path": "assets/4d7f6aa25cf1ff4eee5c1ec359085e31cd36ae3cb0dbbd13034f3fcfaad6ae4a.webp"
+        },
+        {
+          "frame": 22,
+          "role": "history",
+          "image_id": "2179d093bfd343953825a49729a38d5310b3f5cfe8847a920433ce18b2749070",
+          "path": "assets/2179d093bfd343953825a49729a38d5310b3f5cfe8847a920433ce18b2749070.webp"
+        },
+        {
+          "frame": 23,
+          "role": "B",
+          "image_id": "8980232fe938046a063236275ab0b4e7a3df29ace8fc1d030549eac64aeb8401",
+          "path": "assets/8980232fe938046a063236275ab0b4e7a3df29ace8fc1d030549eac64aeb8401.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 87.306,
+      "started_at": "2026-11-12T08:11:16.826347+00:00",
+      "completed_at": "2026-11-12T08:12:44.126123+00:00",
+      "worker_pid": 45636,
+      "request_file": "run/cases/C28/S02.request.json",
+      "response_file": "run/cases/C28/S02.response.json",
+      "usage": {
+        "prompt_tokens": 2728,
+        "completion_tokens": 12628,
+        "total_tokens": 15356,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 11837
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 1704
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S02",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "本段从近处白墙与转角开始，随后依次看到带电视、床和衣柜的卧室内部，以及门洞后的厨房和餐桌。画面中未出现卫生间，也尚未进入客厅或停在茶几前。",
+          "en": "This segment starts from a nearby white wall and corner, then in sequence shows a bedroom interior with a television, bed, and wardrobe, followed by a kitchen and dining table through a doorway. No bathroom appears, and the living room has not yet been entered or a stop at the coffee table reached."
+        },
+        "reason": {
+          "zh": "任务要求沿走廊经过左侧卧室，再经过右侧厨房和餐桌；本段先出现带电视、床和衣柜的卧室内部，随后门洞外出现厨房与餐桌，先后和空间对应相符。没有清晰证据表明进入了卧室或发生了与任务冲突的通行；卫生间及最终客厅/茶几位置尚未确认。",
+          "en": "The task requires walking along the hallway past the bedroom on the left and then past the kitchen and dining table on the right; this segment first shows a bedroom interior with a television, bed, and wardrobe, and later a kitchen and dining table through a doorway, consistent with the expected sequence and spatial correspondence. There is no clear evidence that the bedroom was entered or that passage conflicting with the task occurred; the bathroom and the final living room/coffee-table position are not yet confirmed."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "passing a bathroom on your left and a bedroom also on your left",
+            "quote_zh": "经过你左侧的卫生间和同样在你左侧的卧室"
+          },
+          {
+            "quote_en": "Continue past the kitchen and dining table on your right",
+            "quote_zh": "继续经过你右侧的厨房和餐桌"
+          },
+          {
+            "quote_en": "Stop in front of the coffee table, with the sectional sofa on your left and the television on your right.",
+            "quote_zh": "停在茶几前，组合沙发在你左侧，电视在你右侧。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              6,
+              11,
+              17
+            ],
+            "description": {
+              "zh": "这些帧显示一间带壁挂电视、床、床头柜和衣柜的卧室内部；相机朝向该卧室。",
+              "en": "These frames show a bedroom interior with a wall-mounted television, bed, nightstands, and wardrobe; the camera is facing into that bedroom."
+            }
+          },
+          {
+            "frames": [
+              22,
+              23
+            ],
+            "description": {
+              "zh": "这些帧显示门洞后方的厨房台面、餐桌和椅子，出现在卧室视野之后。",
+              "en": "These frames show kitchen counters, a dining table, and chairs through a doorway, appearing after the bedroom views."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "此前更早路线仍未确认。截至B，本段观测显示机器人先看到左侧卧室内部（电视、床、衣柜），随后朝向门洞后的厨房和餐桌区域；尚未确认卫生间是否已经过，也未确认进入客厅或到达茶几前停止。",
+          "en": "The earlier route before the first valid node remains unconfirmed. As of B, the observations show the robot first seeing the left-side bedroom interior (television, bed, wardrobe), then facing the kitchen and dining-table area through a doorway; it is not yet confirmed whether the bathroom was already passed, nor that the living room has been entered or a stop at the coffee table reached."
+        },
+        "uncertainties": [
+          {
+            "zh": "卫生间是否已在更早的未采样路段经过，无法从本段确认。",
+            "en": "Whether the bathroom was passed earlier in an unsampled section cannot be confirmed from this segment."
+          },
+          {
+            "zh": "客厅入口及茶几前的最终停止位置尚未出现，无法确认。",
+            "en": "The living-room entrance and the final stopping position in front of the coffee table have not appeared, so they remain unconfirmed."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "此前更早路线仍未确认。截至B，本段观测显示机器人先看到左侧卧室内部（电视、床、衣柜），随后朝向门洞后的厨房和餐桌区域；尚未确认卫生间是否已经过，也未确认进入客厅或到达茶几前停止。",
+        "en": "The earlier route before the first valid node remains unconfirmed. As of B, the observations show the robot first seeing the left-side bedroom interior (television, bed, wardrobe), then facing the kitchen and dining-table area through a doorway; it is not yet confirmed whether the bathroom was already passed, nor that the living room has been entered or a stop at the coffee table reached."
+      },
+      "progress_anchor": {
+        "id": "S02",
+        "frame": 23
+      }
+    },
+    {
+      "node_id": "S03",
+      "node_frame": 28,
+      "available_at_frame": 33,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S02",
+      "from_frame": 23,
+      "to_frame": 28,
+      "prior_progress": {
+        "zh": "此前更早路线仍未确认。截至B，本段观测显示机器人先看到左侧卧室内部（电视、床、衣柜），随后朝向门洞后的厨房和餐桌区域；尚未确认卫生间是否已经过，也未确认进入客厅或到达茶几前停止。",
+        "en": "The earlier route before the first valid node remains unconfirmed. As of B, the observations show the robot first seeing the left-side bedroom interior (television, bed, wardrobe), then facing the kitchen and dining-table area through a doorway; it is not yet confirmed whether the bathroom was already passed, nor that the living room has been entered or a stop at the coffee table reached."
+      },
+      "images": [
+        {
+          "frame": 23,
+          "role": "A",
+          "image_id": "8980232fe938046a063236275ab0b4e7a3df29ace8fc1d030549eac64aeb8401",
+          "path": "assets/8980232fe938046a063236275ab0b4e7a3df29ace8fc1d030549eac64aeb8401.webp"
+        },
+        {
+          "frame": 24,
+          "role": "history",
+          "image_id": "bf227379cb9e9c6d078f639504cab8ce05a70587941aa158fe5eec3e5645170e",
+          "path": "assets/bf227379cb9e9c6d078f639504cab8ce05a70587941aa158fe5eec3e5645170e.webp"
+        },
+        {
+          "frame": 25,
+          "role": "history",
+          "image_id": "b0dcd46f736a1e251532438842605924846f6248ccf35370f0b8cfd5d98bbfaa",
+          "path": "assets/b0dcd46f736a1e251532438842605924846f6248ccf35370f0b8cfd5d98bbfaa.webp"
+        },
+        {
+          "frame": 26,
+          "role": "history",
+          "image_id": "107f3eb86286bdcc7f5666db80fe66bc0c71a133a2659309913afd5b8da5db89",
+          "path": "assets/107f3eb86286bdcc7f5666db80fe66bc0c71a133a2659309913afd5b8da5db89.webp"
+        },
+        {
+          "frame": 27,
+          "role": "history",
+          "image_id": "2cf44cf10df10bd3eb891af895f5384b067482ac7a0bda13714ce63210613cd7",
+          "path": "assets/2cf44cf10df10bd3eb891af895f5384b067482ac7a0bda13714ce63210613cd7.webp"
+        },
+        {
+          "frame": 28,
+          "role": "B",
+          "image_id": "a392bf66d6339b7a9b769d24dc347ce89031d0ae506380eba9c69167f50ac63e",
+          "path": "assets/a392bf66d6339b7a9b769d24dc347ce89031d0ae506380eba9c69167f50ac63e.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 18.632,
+      "started_at": "2026-11-12T08:12:44.148538+00:00",
+      "completed_at": "2026-11-12T08:13:02.782634+00:00",
+      "worker_pid": 45636,
+      "request_file": "run/cases/C28/S03.request.json",
+      "response_file": "run/cases/C28/S03.response.json",
+      "usage": {
+        "prompt_tokens": 2554,
+        "completion_tokens": 2826,
+        "total_tokens": 5380,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1972
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 1530
+      },
+      "answer": {
+        "previous_id": "S02",
+        "current_id": "S03",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "视角从左侧木质衣柜/门框旁沿走廊向前推进，逐渐接近通向厨房操作台和餐桌区域的门洞；远处可见厨房台面和餐桌。机器人仍在走廊/门口，未见客厅、沙发或电视。",
+          "en": "The viewpoint advanced along the hallway from beside a wooden wardrobe/doorframe on the left, gradually approaching an opening that leads toward the kitchen counter and dining-table area; the kitchen counter and dining table were visible in the distance. The robot remained in the hallway/doorway, with no living room, sectional sofa, or television observed."
+        },
+        "reason": {
+          "zh": "本段显示机器人继续沿走廊朝厨房与餐桌方向接近，符合任务中沿走廊前进、厨房和餐桌位于右侧方向的阶段；尚未出现进入客厅或到达茶几前停下的证据，因此一致但后续要求仍未确认。",
+          "en": "This segment shows the robot continuing along the hallway toward the kitchen and dining-table area, consistent with the task stage of proceeding down the hallway with the kitchen and dining table on the right; there is no evidence yet of entering the living room or stopping in front of the coffee table, so it is consistent but the later requirements remain unconfirmed."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Walk straight down the hallway, passing a bathroom on your left and a bedroom also on your left.",
+            "quote_zh": "沿走廊直行，从左侧经过一间卫生间，再从左侧经过一间卧室。"
+          },
+          {
+            "quote_en": "Continue past the kitchen and dining table on your right, then enter the living room straight ahead.",
+            "quote_zh": "继续从右侧经过厨房和餐桌，然后直行进入客厅。"
+          },
+          {
+            "quote_en": "Stop in front of the coffee table, with the sectional sofa on your left and the television on your right.",
+            "quote_zh": "停在茶几前，组合沙发在你的左侧，电视在你的右侧。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              23,
+              24,
+              25,
+              26,
+              27,
+              28
+            ],
+            "description": {
+              "zh": "左侧近景为木质衣柜/门框，中央门洞后可见厨房操作台和餐桌，视角逐步向门洞推进。",
+              "en": "A wooden wardrobe/doorframe is in the near left foreground, with a kitchen counter and dining table visible beyond the central opening; the viewpoint gradually advanced toward the opening."
+            }
+          },
+          {
+            "frames": [
+              27,
+              28
+            ],
+            "description": {
+              "zh": "灰色走廊地面向前延伸，厨房和餐桌区域位于前方偏右，画面中未见客厅、沙发或电视。",
+              "en": "The gray hallway floor extends forward, with the kitchen and dining-table area ahead and to the right; no living room, sofa, or television is visible in the frames."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "此前更早路线及卫生间是否已从左侧经过仍未确认。截至B，机器人从左侧卧室/木质衣柜旁沿走廊向前接近通向厨房与餐桌的门洞；厨房台面和餐桌位于前方偏右可见，尚未穿过该门洞，也未确认经过厨房/餐桌、进入客厅或到达茶几前停下。",
+          "en": "The earlier route and whether the bathroom has already been passed on the left remain unconfirmed. Up to B, the robot advanced along the hallway from beside the left-side bedroom/wooden wardrobe toward an opening leading to the kitchen and dining table; the kitchen counter and dining table were visible ahead and to the right, but the robot had not yet passed through that opening and had not confirmed passing the kitchen/dining table, entering the living room, or stopping in front of the coffee table."
+        },
+        "uncertainties": [
+          {
+            "zh": "卫生间是否已经从左侧经过尚未确认。",
+            "en": "It remains unconfirmed whether the bathroom has already been passed on the left."
+          },
+          {
+            "zh": "是否已经真正经过厨房和餐桌尚未确认。",
+            "en": "It remains unconfirmed whether the kitchen and dining table have actually been passed."
+          },
+          {
+            "zh": "是否进入客厅并到达茶几前停下尚未确认。",
+            "en": "It remains unconfirmed whether the living room has been entered and whether the robot has stopped in front of the coffee table."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "此前更早路线及卫生间是否已从左侧经过仍未确认。截至B，机器人从左侧卧室/木质衣柜旁沿走廊向前接近通向厨房与餐桌的门洞；厨房台面和餐桌位于前方偏右可见，尚未穿过该门洞，也未确认经过厨房/餐桌、进入客厅或到达茶几前停下。",
+        "en": "The earlier route and whether the bathroom has already been passed on the left remain unconfirmed. Up to B, the robot advanced along the hallway from beside the left-side bedroom/wooden wardrobe toward an opening leading to the kitchen and dining table; the kitchen counter and dining table were visible ahead and to the right, but the robot had not yet passed through that opening and had not confirmed passing the kitchen/dining table, entering the living room, or stopping in front of the coffee table."
+      },
+      "progress_anchor": {
+        "id": "S03",
+        "frame": 28
+      }
+    },
+    {
+      "node_id": "S04",
+      "node_frame": 43,
+      "available_at_frame": 48,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S03",
+      "from_frame": 28,
+      "to_frame": 43,
+      "prior_progress": {
+        "zh": "此前更早路线及卫生间是否已从左侧经过仍未确认。截至B，机器人从左侧卧室/木质衣柜旁沿走廊向前接近通向厨房与餐桌的门洞；厨房台面和餐桌位于前方偏右可见，尚未穿过该门洞，也未确认经过厨房/餐桌、进入客厅或到达茶几前停下。",
+        "en": "The earlier route and whether the bathroom has already been passed on the left remain unconfirmed. Up to B, the robot advanced along the hallway from beside the left-side bedroom/wooden wardrobe toward an opening leading to the kitchen and dining table; the kitchen counter and dining table were visible ahead and to the right, but the robot had not yet passed through that opening and had not confirmed passing the kitchen/dining table, entering the living room, or stopping in front of the coffee table."
+      },
+      "images": [
+        {
+          "frame": 28,
+          "role": "A",
+          "image_id": "a392bf66d6339b7a9b769d24dc347ce89031d0ae506380eba9c69167f50ac63e",
+          "path": "assets/a392bf66d6339b7a9b769d24dc347ce89031d0ae506380eba9c69167f50ac63e.webp"
+        },
+        {
+          "frame": 29,
+          "role": "history",
+          "image_id": "f44f0ae0b413de5624eb8bec3157687d6daf7891e9fa403cb4af8d27ab9fba67",
+          "path": "assets/f44f0ae0b413de5624eb8bec3157687d6daf7891e9fa403cb4af8d27ab9fba67.webp"
+        },
+        {
+          "frame": 32,
+          "role": "history",
+          "image_id": "17c16d8363a0bc1af97f5264c5ee29139115fab5e3dded5ecd143951d48e3560",
+          "path": "assets/17c16d8363a0bc1af97f5264c5ee29139115fab5e3dded5ecd143951d48e3560.webp"
+        },
+        {
+          "frame": 35,
+          "role": "history",
+          "image_id": "43ba48b538fe0d9c43a06a7620e772dbe8845531cfd714873235ddc602adcd77",
+          "path": "assets/43ba48b538fe0d9c43a06a7620e772dbe8845531cfd714873235ddc602adcd77.webp"
+        },
+        {
+          "frame": 39,
+          "role": "history",
+          "image_id": "5841866812e6d268badf8198a2fd173c0e99fc6c5e73db2475432d07e9d5c9fb",
+          "path": "assets/5841866812e6d268badf8198a2fd173c0e99fc6c5e73db2475432d07e9d5c9fb.webp"
+        },
+        {
+          "frame": 42,
+          "role": "history",
+          "image_id": "583a209c09799cc775a2ca0f3ebbdcf1ababa37849c5949f0b844626073651a5",
+          "path": "assets/583a209c09799cc775a2ca0f3ebbdcf1ababa37849c5949f0b844626073651a5.webp"
+        },
+        {
+          "frame": 43,
+          "role": "B",
+          "image_id": "a5caf0ccfe039e094f496a5504857c3b69e7cb06d1d272f0d802a66c41679583",
+          "path": "assets/a5caf0ccfe039e094f496a5504857c3b69e7cb06d1d272f0d802a66c41679583.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 44.394,
+      "started_at": "2026-11-12T08:13:02.798595+00:00",
+      "completed_at": "2026-11-12T08:13:47.178900+00:00",
+      "worker_pid": 45636,
+      "request_file": "run/cases/C28/S04.request.json",
+      "response_file": "run/cases/C28/S04.response.json",
+      "usage": {
+        "prompt_tokens": 2783,
+        "completion_tokens": 6630,
+        "total_tokens": 9413,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 5758
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 1759
+      },
+      "answer": {
+        "previous_id": "S03",
+        "current_id": "S04",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "机器人从A继续沿走廊向前，左侧先经过卫生间（F35可见洗手台），随后靠近左侧卧室门口并看到床和窗；右侧始终是厨房台面与餐桌区域。到B时仍在该走廊/卧室门口附近，尚未穿过厨房和餐桌、进入客厅或到达茶几前。",
+          "en": "The robot continued straight along the hallway from A; on the left it first passed the bathroom (the sink is visible in F35), then approached the doorway of the left-side bedroom and saw a bed and window, while the kitchen counter and dining table remained on the right. At B it was still near this hallway/bedroom doorway and had not yet passed the kitchen and dining table, entered the living room, or reached the coffee table."
+        },
+        "reason": {
+          "zh": "新帧显示同一走廊内左侧由洗手台过渡到卧室床铺，右侧为厨房台面和餐桌；这一前进顺序符合任务中卫生间、卧室在左以及厨房、餐桌在右的要求。到B尚未显示穿过餐区或进入客厅，未发现与任务冲突的通行。",
+          "en": "The new frames show a transition on the left side of the same hallway from the bathroom sink to the bedroom bed, with the kitchen counter and dining table on the right; this forward order matches the task requirement that the bathroom and bedroom be on the left and the kitchen and dining table on the right. By B, passing the dining area or entering the living room is not yet shown, and no movement conflicting with the task is observed."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "passing a bathroom on your left and a bedroom also on your left",
+            "quote_zh": "从左侧经过一间卫生间，并且也从左侧经过一间卧室"
+          },
+          {
+            "quote_en": "Continue past the kitchen and dining table on your right",
+            "quote_zh": "继续经过你右侧的厨房和餐桌"
+          },
+          {
+            "quote_en": "then enter the living room straight ahead",
+            "quote_zh": "然后直行进入客厅"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              35
+            ],
+            "description": {
+              "zh": "左侧近处可见洗手台和卫生间设施，右侧可见厨房台面及餐桌，支持沿走廊前进时卫生间在左、厨房和餐桌在右。",
+              "en": "A bathroom sink and fixtures are visible close on the left, while the kitchen counter and dining table are visible on the right, supporting that the bathroom is on the left and the kitchen and dining table are on the right while moving along the hallway."
+            }
+          },
+          {
+            "frames": [
+              39,
+              42
+            ],
+            "description": {
+              "zh": "左侧门内可见带床卧室，右侧仍是餐桌和椅子，说明卧室在左、厨房/餐桌在右的空间关系。",
+              "en": "Through the doorway on the left a bedroom with a bed is visible, while the dining table and chairs remain on the right, indicating the bedroom is on the left and the kitchen/dining area is on the right."
+            }
+          },
+          {
+            "frames": [
+              43
+            ],
+            "description": {
+              "zh": "到达B时仍位于左侧卧室与右侧厨房/餐桌之间的走廊或门口附近，尚未看到客厅或茶几。",
+              "en": "At B the robot is still near the hallway or doorway between the left-side bedroom and the right-side kitchen/dining area, and the living room or coffee table is not yet visible."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "截至B，机器人已沿走廊继续向前：左侧先经过卫生间（洗手台可见），随后到达带床卧室门口并可见床和窗，右侧为厨房台面与餐桌区域。尚未穿过厨房与餐桌，也未进入客厅或到茶几前停下；客厅、沙发与电视及最终停靠关系尚未确认。",
+          "en": "By B, the robot has continued forward along the hallway: on the left it first passed the bathroom (sink visible), then reached the doorway of the bedroom with a visible bed and window, while the kitchen counter and dining table area were on the right. It has not yet passed the kitchen and dining table, entered the living room, or stopped in front of the coffee table; the living room, sectional sofa, television, and final stopping position have not yet been confirmed."
+        },
+        "uncertainties": []
+      },
+      "committed_progress": {
+        "zh": "截至B，机器人已沿走廊继续向前：左侧先经过卫生间（洗手台可见），随后到达带床卧室门口并可见床和窗，右侧为厨房台面与餐桌区域。尚未穿过厨房与餐桌，也未进入客厅或到茶几前停下；客厅、沙发与电视及最终停靠关系尚未确认。",
+        "en": "By B, the robot has continued forward along the hallway: on the left it first passed the bathroom (sink visible), then reached the doorway of the bedroom with a visible bed and window, while the kitchen counter and dining table area were on the right. It has not yet passed the kitchen and dining table, entered the living room, or stopped in front of the coffee table; the living room, sectional sofa, television, and final stopping position have not yet been confirmed."
+      },
+      "progress_anchor": {
+        "id": "S04",
+        "frame": 43
+      }
+    },
+    {
+      "node_id": "S05",
+      "node_frame": 63,
+      "available_at_frame": 63,
+      "terminal_node": true,
+      "mode": "segment",
+      "previous_id": "S04",
+      "from_frame": 43,
+      "to_frame": 63,
+      "prior_progress": {
+        "zh": "截至B，机器人已沿走廊继续向前：左侧先经过卫生间（洗手台可见），随后到达带床卧室门口并可见床和窗，右侧为厨房台面与餐桌区域。尚未穿过厨房与餐桌，也未进入客厅或到茶几前停下；客厅、沙发与电视及最终停靠关系尚未确认。",
+        "en": "By B, the robot has continued forward along the hallway: on the left it first passed the bathroom (sink visible), then reached the doorway of the bedroom with a visible bed and window, while the kitchen counter and dining table area were on the right. It has not yet passed the kitchen and dining table, entered the living room, or stopped in front of the coffee table; the living room, sectional sofa, television, and final stopping position have not yet been confirmed."
+      },
+      "images": [
+        {
+          "frame": 43,
+          "role": "A",
+          "image_id": "a5caf0ccfe039e094f496a5504857c3b69e7cb06d1d272f0d802a66c41679583",
+          "path": "assets/a5caf0ccfe039e094f496a5504857c3b69e7cb06d1d272f0d802a66c41679583.webp"
+        },
+        {
+          "frame": 44,
+          "role": "history",
+          "image_id": "2364101ff3af56b5d2ddf88925c64717dfa2b34edce13fabc96d251061096e2b",
+          "path": "assets/2364101ff3af56b5d2ddf88925c64717dfa2b34edce13fabc96d251061096e2b.webp"
+        },
+        {
+          "frame": 48,
+          "role": "history",
+          "image_id": "0c77ffe6d4f5cd5eb27ad942c2280d74e059f5693b1e985463771f64633e33ff",
+          "path": "assets/0c77ffe6d4f5cd5eb27ad942c2280d74e059f5693b1e985463771f64633e33ff.webp"
+        },
+        {
+          "frame": 53,
+          "role": "history",
+          "image_id": "3a059ef572e6e2a9ebe0ccd038c35883da66553ffdbc6ff90f38d323f434d28e",
+          "path": "assets/3a059ef572e6e2a9ebe0ccd038c35883da66553ffdbc6ff90f38d323f434d28e.webp"
+        },
+        {
+          "frame": 58,
+          "role": "history",
+          "image_id": "5cf38a921d4dac01e62d8ffd8570c141c1432acbbae028e8977c68caf10efd90",
+          "path": "assets/5cf38a921d4dac01e62d8ffd8570c141c1432acbbae028e8977c68caf10efd90.webp"
+        },
+        {
+          "frame": 62,
+          "role": "history",
+          "image_id": "539516585587da6aa88c153c069c129cbad2f919d9963befc0a5fb65b61494be",
+          "path": "assets/539516585587da6aa88c153c069c129cbad2f919d9963befc0a5fb65b61494be.webp"
+        },
+        {
+          "frame": 63,
+          "role": "B",
+          "image_id": "29bbc2292468b414b65ef933a5098457fdb829a31d200543bf147d0d59977c4c",
+          "path": "assets/29bbc2292468b414b65ef933a5098457fdb829a31d200543bf147d0d59977c4c.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 25.275,
+      "started_at": "2026-11-12T08:13:47.199384+00:00",
+      "completed_at": "2026-11-12T08:14:12.469434+00:00",
+      "worker_pid": 45636,
+      "request_file": "run/cases/C28/S05.request.json",
+      "response_file": "run/cases/C28/S05.response.json",
+      "usage": {
+        "prompt_tokens": 2784,
+        "completion_tokens": 3874,
+        "total_tokens": 6658,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3231
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1888
+      },
+      "answer": {
+        "previous_id": "S04",
+        "current_id": "S05",
+        "verdict": "deviated",
+        "segment_summary": {
+          "zh": "机器人从卧室门口继续向前进入卧室，向卧室后窗靠近，最后近距离面对百叶窗；画面未显示其沿走廊继续经过厨房和餐桌或进入客厅。",
+          "en": "From the bedroom doorway, the robot moved forward into the bedroom and approached the rear window, ending close to the blinds; the frames do not show it continuing down the hallway past the kitchen and dining table or entering the living room."
+        },
+        "reason": {
+          "zh": "任务要求把卧室作为左侧经过点，继续沿走廊经过右侧厨房和餐桌后直行进入客厅。新帧显示机器人从卧室门口进入卧室，并在F48至F63逐步逼近卧室后窗、最终近看百叶窗，属于进入非目标房间，未沿走廊继续，故本段偏航。",
+          "en": "The task requires passing the bedroom on the left, then continuing along the hallway past the kitchen and dining table on the right and going straight into the living room. The new frames show the robot entering the bedroom from its doorway and gradually approaching the bedroom's rear window from F48 to F63, ending close to the blinds; this is entering a non-target room rather than continuing along the hallway, so this segment deviates."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "passing a bathroom on your left and a bedroom also on your left.",
+            "quote_zh": "从左侧经过一间卫生间和一间卧室。"
+          },
+          {
+            "quote_en": "Continue past the kitchen and dining table on your right, then enter the living room straight ahead.",
+            "quote_zh": "继续经过右侧的厨房和餐桌，然后直行进入客厅。"
+          },
+          {
+            "quote_en": "Stop in front of the coffee table, with the sectional sofa on your left and the television on your right.",
+            "quote_zh": "停在茶几前，组合沙发在左侧，电视在右侧。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              43,
+              44
+            ],
+            "description": {
+              "zh": "从走廊或卧室门口视角可见前方卧室内有床和后窗，右侧远处可见餐桌与厨房台面。",
+              "en": "From the hallway or bedroom-door viewpoint, a bed and rear window are visible in the bedroom ahead, with a dining table and kitchen counter visible in the distance on the right."
+            }
+          },
+          {
+            "frames": [
+              48,
+              53
+            ],
+            "description": {
+              "zh": "视角已转入卧室内部，床、窗和左侧柜体占据画面，走廊通路不再可见，显示正向卧室内前进。",
+              "en": "The viewpoint has turned into the bedroom interior; the bed, window, and cabinets on the left fill the view, and the hallway passage is no longer visible, indicating movement deeper into the bedroom."
+            }
+          },
+          {
+            "frames": [
+              58,
+              62,
+              63
+            ],
+            "description": {
+              "zh": "镜头逼近卧室后窗，B处近距离面对百叶窗，左下仅见床沿。",
+              "en": "The camera approaches the bedroom's rear window and at B is close to the blinds, with only the edge of the bed visible at the lower left."
+            }
+          }
+        ],
+        "semantic_progress": null,
+        "uncertainties": []
+      },
+      "rollback_target": {
+        "node_id": "S04",
+        "frame": 43,
+        "progress": {
+          "zh": "截至B，机器人已沿走廊继续向前：左侧先经过卫生间（洗手台可见），随后到达带床卧室门口并可见床和窗，右侧为厨房台面与餐桌区域。尚未穿过厨房与餐桌，也未进入客厅或到茶几前停下；客厅、沙发与电视及最终停靠关系尚未确认。",
+          "en": "By B, the robot has continued forward along the hallway: on the left it first passed the bathroom (sink visible), then reached the doorway of the bedroom with a visible bed and window, while the kitchen counter and dining table area were on the right. It has not yet passed the kitchen and dining table, entered the living room, or stopped in front of the coffee table; the living room, sectional sofa, television, and final stopping position have not yet been confirmed."
+        }
+      },
+      "committed_progress": {
+        "zh": "截至B，机器人已沿走廊继续向前：左侧先经过卫生间（洗手台可见），随后到达带床卧室门口并可见床和窗，右侧为厨房台面与餐桌区域。尚未穿过厨房与餐桌，也未进入客厅或到茶几前停下；客厅、沙发与电视及最终停靠关系尚未确认。",
+        "en": "By B, the robot has continued forward along the hallway: on the left it first passed the bathroom (sink visible), then reached the doorway of the bedroom with a visible bed and window, while the kitchen counter and dining table area were on the right. It has not yet passed the kitchen and dining table, entered the living room, or stopped in front of the coffee table; the living room, sectional sofa, television, and final stopping position have not yet been confirmed."
+      },
+      "progress_anchor": {
+        "id": "S04",
+        "frame": 43
+      }
+    }
+  ],
+  "stop_node": "S05",
+  "stop_reason": "first_deviation",
+  "terminal_frame": 63,
+  "raw_node_count": 5,
+  "retained_node_count": 5,
+  "unreviewed_nodes": []
+}

@@ -1,0 +1,278 @@
+{
+  "case_number": 26,
+  "case_index": 25,
+  "episode_id": "kujiale_0234_58_1 · F31",
+  "real_episode_id": "kujiale_0234_58_1",
+  "scene": "kujiale_0234",
+  "worker_pid": 31588,
+  "started_at": "2026-11-12T10:41:21.554476+00:00",
+  "completed_at": "2026-11-12T10:41:54.373815+00:00",
+  "reviews": [
+    {
+      "node_id": "S01",
+      "node_frame": 0,
+      "available_at_frame": 5,
+      "terminal_node": false,
+      "mode": "initialization",
+      "previous_id": "S01",
+      "from_frame": 0,
+      "to_frame": 0,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 0,
+          "role": "A=B",
+          "image_id": "b801c4017a20e9ea9b6fd291feed09e290a936ba4e942e145a7ff9a0fba3a9d1",
+          "path": "assets/b801c4017a20e9ea9b6fd291feed09e290a936ba4e942e145a7ff9a0fba3a9d1.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 12.504,
+      "started_at": "2026-11-12T10:41:21.556605+00:00",
+      "completed_at": "2026-11-12T10:41:34.048643+00:00",
+      "worker_pid": 31588,
+      "request_file": "run/cases/C26/S01.request.json",
+      "response_file": "run/cases/C26/S01.response.json",
+      "usage": {
+        "prompt_tokens": 1434,
+        "completion_tokens": 1998,
+        "total_tokens": 3432,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1231
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 538
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S01",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "当前仅有一帧：机器人位于一个门口或通道开口处，面向明亮的客厅，右侧近处有低矮木凳或矮柜，前方深处可见沙发和茶几；左侧远处有大幅挂画、玄关桌及高植株。画面不能确认是否已经穿门、经过木凳或完成左转。",
+          "en": "Only one frame is available: the robot is at a doorway or opening, facing a bright living room, with a low wooden bench or cabinet near the right foreground and a sofa and coffee table deeper ahead; a large painting, console table, and tall plant are farther to the left. The image does not confirm that the doorway has been crossed, the bench passed, or the left turn completed."
+        },
+        "reason": {
+          "zh": "初始化节点只能确认当前视角：门口、右侧低木凳或矮柜和前方主房间与指令起始环境相符，但此前路线与已走距离未确认，当前不能认定已穿门。",
+          "en": "The initialization node can only confirm the current view: the doorway, the low wooden bench or cabinet on the right, and the main room ahead are consistent with the start of the instruction, but the prior route and distance traveled are unconfirmed, and it cannot currently be determined that the doorway has been crossed."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Walk forward through the doorway into the main room",
+            "quote_zh": "向前穿过门口进入主房间"
+          },
+          {
+            "quote_en": "passing a low wooden bench on your right",
+            "quote_zh": "从右侧经过一条低矮木凳"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              0
+            ],
+            "description": {
+              "zh": "单帧显示视角位于门口或通道开口处：右侧近处为低矮木凳或矮柜，前方客厅内有沙发和茶几，左侧远处为大幅挂画、玄关桌和高植株。",
+              "en": "The single frame shows the viewpoint at a doorway or opening: a low wooden bench or cabinet is near the right foreground, a sofa and coffee table are in the living room ahead, and a large painting, console table, and tall plant are farther to the left."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "截至S01，仅建立当前状态：位于门口并面向主房间，右前方近处有低矮木凳或矮柜，前方可见挂画、玄关桌及高植株，深处为沙发和茶几；此前完成了哪些导航要求、是否已进入主房间、是否已从右侧经过木凳以及是否已完成左转均尚未确认。",
+          "en": "As of S01, only the current state is established: the robot is at the doorway facing the main room, a low wooden bench or cabinet is near the right foreground, a large painting, console table, and tall plant are visible ahead, and a sofa and coffee table are deeper inside; which navigation requirements were completed earlier, whether the main room has been entered, whether the bench has been passed on the right, and whether the left turn has been completed are all unconfirmed."
+        },
+        "uncertainties": [
+          {
+            "zh": "此前是否已执行任何前进或转向未知。",
+            "en": "Whether any forward movement or turning was performed earlier is unknown."
+          },
+          {
+            "zh": "当前是否已跨过门槛进入主房间未知。",
+            "en": "Whether the threshold has already been crossed into the main room is unknown."
+          },
+          {
+            "zh": "低矮木凳是否已在右侧经过、以及门口之后餐厅和小房间的相对位置尚未确认。",
+            "en": "Whether the low wooden bench has already been passed on the right, and the relative locations of the dining room and small room beyond the doorway, remain unconfirmed."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "截至S01，仅建立当前状态：位于门口并面向主房间，右前方近处有低矮木凳或矮柜，前方可见挂画、玄关桌及高植株，深处为沙发和茶几；此前完成了哪些导航要求、是否已进入主房间、是否已从右侧经过木凳以及是否已完成左转均尚未确认。",
+        "en": "As of S01, only the current state is established: the robot is at the doorway facing the main room, a low wooden bench or cabinet is near the right foreground, a large painting, console table, and tall plant are visible ahead, and a sofa and coffee table are deeper inside; which navigation requirements were completed earlier, whether the main room has been entered, whether the bench has been passed on the right, and whether the left turn has been completed are all unconfirmed."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 0
+      }
+    },
+    {
+      "node_id": "S02",
+      "node_frame": 5,
+      "available_at_frame": 10,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S01",
+      "from_frame": 0,
+      "to_frame": 5,
+      "prior_progress": {
+        "zh": "截至S01，仅建立当前状态：位于门口并面向主房间，右前方近处有低矮木凳或矮柜，前方可见挂画、玄关桌及高植株，深处为沙发和茶几；此前完成了哪些导航要求、是否已进入主房间、是否已从右侧经过木凳以及是否已完成左转均尚未确认。",
+        "en": "As of S01, only the current state is established: the robot is at the doorway facing the main room, a low wooden bench or cabinet is near the right foreground, a large painting, console table, and tall plant are visible ahead, and a sofa and coffee table are deeper inside; which navigation requirements were completed earlier, whether the main room has been entered, whether the bench has been passed on the right, and whether the left turn has been completed are all unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 0,
+          "role": "A",
+          "image_id": "b801c4017a20e9ea9b6fd291feed09e290a936ba4e942e145a7ff9a0fba3a9d1",
+          "path": "assets/b801c4017a20e9ea9b6fd291feed09e290a936ba4e942e145a7ff9a0fba3a9d1.webp"
+        },
+        {
+          "frame": 1,
+          "role": "history",
+          "image_id": "0856807a4674b4943c66616e8683c30b9c7ee3fec706484d8d87e19f0025caa1",
+          "path": "assets/0856807a4674b4943c66616e8683c30b9c7ee3fec706484d8d87e19f0025caa1.webp"
+        },
+        {
+          "frame": 2,
+          "role": "history",
+          "image_id": "ca01c99615508c030dc6a64ec329116b015290a5a86b8ac45554a82f08f57fd5",
+          "path": "assets/ca01c99615508c030dc6a64ec329116b015290a5a86b8ac45554a82f08f57fd5.webp"
+        },
+        {
+          "frame": 3,
+          "role": "history",
+          "image_id": "798fadec2714eb157ab1ee105916d9a5ea8bd1dae73ded63d596a5836dae3845",
+          "path": "assets/798fadec2714eb157ab1ee105916d9a5ea8bd1dae73ded63d596a5836dae3845.webp"
+        },
+        {
+          "frame": 4,
+          "role": "history",
+          "image_id": "c16af460974411423648d8b69cac635dbd24bcaf5642e886855c103d7cf6e13d",
+          "path": "assets/c16af460974411423648d8b69cac635dbd24bcaf5642e886855c103d7cf6e13d.webp"
+        },
+        {
+          "frame": 5,
+          "role": "B",
+          "image_id": "39991b69bea73b38bf2ce77fb593d05e49814dbf0f5430c407a106130f05ebd4",
+          "path": "assets/39991b69bea73b38bf2ce77fb593d05e49814dbf0f5430c407a106130f05ebd4.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 20.289,
+      "started_at": "2026-11-12T10:41:34.072526+00:00",
+      "completed_at": "2026-11-12T10:41:54.359248+00:00",
+      "worker_pid": 31588,
+      "request_file": "run/cases/C26/S02.request.json",
+      "response_file": "run/cases/C26/S02.response.json",
+      "usage": {
+        "prompt_tokens": 2575,
+        "completion_tokens": 2743,
+        "total_tokens": 5318,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1799
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1679
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S02",
+        "verdict": "deviated",
+        "segment_summary": {
+          "zh": "从S01门口视角开始，画面正前方是主房间，右侧近处为浅木矮柜或长凳。随后视角持续向右偏转并靠近该矮柜，主房间及沙发、挂画逐渐退到画面左侧。到S02时面对右侧白墙和矮柜，右侧出现一扇门，未见穿过门洞进入主房间或完成左转。",
+          "en": "Starting from the doorway view at S01, the main room is straight ahead and a low light-wood bench/cabinet is close on the right. The view then turns continuously to the right and approaches that bench, while the main room, sofa, and painting recede to the left side of the image. At S02 the robot faces the right-side white wall and bench, with a door on the right; it has not been seen passing through the doorway into the main room or completing the left turn."
+        },
+        "reason": {
+          "zh": "任务要求先向前穿门进入主房间，从右侧经过矮木凳后左转，使大幅挂画和带两株高植株的玄关桌保持在右侧；观测却转向右侧矮柜和墙面，主房间退到左侧，与进入主房间后左转的空间关系相反。",
+          "en": "The task requires moving forward through the doorway into the main room, passing the low wooden bench on the right, and then turning left while keeping the large painting and the console table with two tall plants on the right. Instead, the observations show turning toward the right-side bench and wall, with the main room receding to the left, which conflicts with the required left turn after entering the main room."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Walk forward through the doorway into the main room, passing a low wooden bench on your right.",
+            "quote_zh": "向前穿过门洞进入主房间，从你右侧经过一张低矮木凳。"
+          },
+          {
+            "quote_en": "Turn left, keeping the large painting and console table with two tall plants on your right.",
+            "quote_zh": "左转，使大幅挂画以及带两株高植株的玄关桌保持在你右侧。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              0
+            ],
+            "description": {
+              "zh": "F0位于门口视角，正前方可见主房间内的沙发，左侧有大幅挂画、玄关桌和高植株，右侧近处有浅木矮柜或长凳。",
+              "en": "Frame 0 is a doorway view: the sofa in the main room is visible straight ahead, the large painting, console table, and tall plants are on the left, and a low light-wood bench/cabinet is close on the right."
+            }
+          },
+          {
+            "frames": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "description": {
+              "zh": "F1至F4显示视角持续向右转，矮柜从右下方逐渐移到画面正前方，主房间和沙发退到左侧。",
+              "en": "Frames 1 through 4 show the view turning continuously to the right; the bench moves from the lower right toward the center of the image, while the main room and sofa recede to the left."
+            }
+          },
+          {
+            "frames": [
+              5
+            ],
+            "description": {
+              "zh": "F5面对右侧白墙和矮柜，右侧出现一扇门，主房间仅在左侧边缘，未见已进入主房间或沿其左转前进。",
+              "en": "Frame 5 faces the right-side white wall and bench, with a door on the right and the main room only at the left edge; it does not show entry into the main room or forward movement along a left turn there."
+            }
+          }
+        ],
+        "semantic_progress": null,
+        "uncertainties": [
+          {
+            "zh": "抽样帧无法精确确认相机是原地转向还是伴随右前方移动，但截至S02未出现按任务要求穿过门洞进入主房间并左转的证据。",
+            "en": "The sampled frames cannot precisely confirm whether the camera turned in place or also moved toward the front right, but up to S02 there is no evidence of passing through the doorway into the main room and turning left as required."
+          },
+          {
+            "zh": "右侧门是否通向任务所述走廊尚不能确定；当前可确认的是视线朝向右侧矮柜和墙面，而非主房间内左转后的通行方向。",
+            "en": "It is not yet certain whether the right-side door leads to the hallway described in the task; what can be confirmed is that the view faces the right-side bench and wall rather than the direction of travel after a left turn inside the main room."
+          }
+        ]
+      },
+      "rollback_target": {
+        "node_id": "S01",
+        "frame": 0,
+        "progress": {
+          "zh": "截至S01，仅建立当前状态：位于门口并面向主房间，右前方近处有低矮木凳或矮柜，前方可见挂画、玄关桌及高植株，深处为沙发和茶几；此前完成了哪些导航要求、是否已进入主房间、是否已从右侧经过木凳以及是否已完成左转均尚未确认。",
+          "en": "As of S01, only the current state is established: the robot is at the doorway facing the main room, a low wooden bench or cabinet is near the right foreground, a large painting, console table, and tall plant are visible ahead, and a sofa and coffee table are deeper inside; which navigation requirements were completed earlier, whether the main room has been entered, whether the bench has been passed on the right, and whether the left turn has been completed are all unconfirmed."
+        }
+      },
+      "committed_progress": {
+        "zh": "截至S01，仅建立当前状态：位于门口并面向主房间，右前方近处有低矮木凳或矮柜，前方可见挂画、玄关桌及高植株，深处为沙发和茶几；此前完成了哪些导航要求、是否已进入主房间、是否已从右侧经过木凳以及是否已完成左转均尚未确认。",
+        "en": "As of S01, only the current state is established: the robot is at the doorway facing the main room, a low wooden bench or cabinet is near the right foreground, a large painting, console table, and tall plant are visible ahead, and a sofa and coffee table are deeper inside; which navigation requirements were completed earlier, whether the main room has been entered, whether the bench has been passed on the right, and whether the left turn has been completed are all unconfirmed."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 0
+      }
+    }
+  ],
+  "stop_node": "S02",
+  "stop_reason": "first_deviation",
+  "terminal_frame": 66,
+  "raw_node_count": 5,
+  "retained_node_count": 5,
+  "unreviewed_nodes": [
+    "S03",
+    "S04",
+    "S05"
+  ]
+}

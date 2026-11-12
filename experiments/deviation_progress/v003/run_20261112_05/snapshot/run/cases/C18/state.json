@@ -1,0 +1,410 @@
+{
+  "case_number": 18,
+  "pid": 40868,
+  "reviews": [
+    {
+      "node_id": "S01",
+      "node_frame": 0,
+      "available_at_frame": 5,
+      "terminal_node": false,
+      "mode": "initialization",
+      "previous_id": "S01",
+      "from_frame": 0,
+      "to_frame": 0,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 0,
+          "role": "A=B",
+          "image_id": "d99b6ffaeb7e0ffffdc0becd732a5810b47b05ec6013a1b54fb4a0d517df2165",
+          "path": "assets/d99b6ffaeb7e0ffffdc0becd732a5810b47b05ec6013a1b54fb4a0d517df2165.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 20.704,
+      "started_at": "2026-11-12T10:39:26.434144+00:00",
+      "completed_at": "2026-11-12T10:39:47.139566+00:00",
+      "worker_pid": 40868,
+      "request_file": "run/cases/C18/S01.request.json",
+      "response_file": "run/cases/C18/S01.response.json",
+      "usage": {
+        "prompt_tokens": 1464,
+        "completion_tokens": 3167,
+        "total_tokens": 4631,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2509
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 568
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S01",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "初始化节点 A=B；唯一画面显示一段木地板走廊，右侧是敞开的卫生间（可见玻璃淋浴间），左侧墙上有装框画，前方走廊地面为深灰瓷砖并继续通向远处。",
+          "en": "Initialization node A=B; the single frame shows a wood-floored hallway section, with an open bathroom on the right (glass shower enclosure visible), a framed picture on the left wall, and a dark grey tiled corridor continuing ahead."
+        },
+        "reason": {
+          "zh": "初始化仅依据 F0 建立状态：右侧卫生间、左侧装框画以及木地板向深灰瓷砖的过渡，都与任务开头描述的空间要素相符；但单帧不能确认此前路线或后续通行是否完成。",
+          "en": "Initialization establishes the state from F0 only: the bathroom on the right, the framed picture on the left, and the transition from wood flooring to dark grey tiles all match the spatial elements described at the beginning of the task; however, a single frame cannot confirm prior route progress or subsequent passage."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Walk straight down the hallway, passing a bathroom on your right and a framed picture on your left, as the floor transitions from wood to dark grey tiles.",
+            "quote_zh": "沿走廊直走，经过右侧的卫生间和左侧的一幅装框画，地面从木地板过渡为深灰色瓷砖。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              0
+            ],
+            "description": {
+              "zh": "F0 显示前景为木地板，右侧有敞开的卫生间门并可见玻璃淋浴间，左侧墙上有装框画，前方走廊铺设深灰瓷砖。",
+              "en": "F0 shows wood flooring in the foreground, an open bathroom doorway with a glass shower enclosure on the right, a framed picture on the left wall, and dark grey tiles in the hallway ahead."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "当前位于木地板走廊、深灰瓷砖走廊之前：右侧可见带玻璃淋浴间的卫生间，左侧墙上有装框画，前方地面过渡为深灰瓷砖并通向远处房间。此前路线进度尚未确认；尚未确认已通过左侧卧室入口、到达走廊尽头或进入客厅。",
+          "en": "Currently on the wood-floor hallway before the dark grey tiled corridor: a bathroom with a glass shower enclosure is visible on the right, a framed picture on the left wall, and the floor ahead transitions to dark grey tiles leading toward a distant room. Prior route progress is not yet confirmed; it is not confirmed whether the bedroom entrance on the left has been passed, the end of the hallway has been reached, or the living room has been entered."
+        },
+        "uncertainties": [
+          {
+            "zh": "单帧无法确认此前是否已经过任何路段；也无法确认左侧卧室入口、走廊尽头客厅入口、白色门及茶几的位置关系。",
+            "en": "A single frame cannot confirm whether any section has already been traversed; nor can it confirm the spatial relationships of the bedroom entrance on the left, the living room entrance at the end of the hallway, the white door, or the coffee table."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "当前位于木地板走廊、深灰瓷砖走廊之前：右侧可见带玻璃淋浴间的卫生间，左侧墙上有装框画，前方地面过渡为深灰瓷砖并通向远处房间。此前路线进度尚未确认；尚未确认已通过左侧卧室入口、到达走廊尽头或进入客厅。",
+        "en": "Currently on the wood-floor hallway before the dark grey tiled corridor: a bathroom with a glass shower enclosure is visible on the right, a framed picture on the left wall, and the floor ahead transitions to dark grey tiles leading toward a distant room. Prior route progress is not yet confirmed; it is not confirmed whether the bedroom entrance on the left has been passed, the end of the hallway has been reached, or the living room has been entered."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 0
+      }
+    },
+    {
+      "node_id": "S02",
+      "node_frame": 19,
+      "available_at_frame": 24,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S01",
+      "from_frame": 0,
+      "to_frame": 19,
+      "prior_progress": {
+        "zh": "当前位于木地板走廊、深灰瓷砖走廊之前：右侧可见带玻璃淋浴间的卫生间，左侧墙上有装框画，前方地面过渡为深灰瓷砖并通向远处房间。此前路线进度尚未确认；尚未确认已通过左侧卧室入口、到达走廊尽头或进入客厅。",
+        "en": "Currently on the wood-floor hallway before the dark grey tiled corridor: a bathroom with a glass shower enclosure is visible on the right, a framed picture on the left wall, and the floor ahead transitions to dark grey tiles leading toward a distant room. Prior route progress is not yet confirmed; it is not confirmed whether the bedroom entrance on the left has been passed, the end of the hallway has been reached, or the living room has been entered."
+      },
+      "images": [
+        {
+          "frame": 0,
+          "role": "A",
+          "image_id": "d99b6ffaeb7e0ffffdc0becd732a5810b47b05ec6013a1b54fb4a0d517df2165",
+          "path": "assets/d99b6ffaeb7e0ffffdc0becd732a5810b47b05ec6013a1b54fb4a0d517df2165.webp"
+        },
+        {
+          "frame": 1,
+          "role": "history",
+          "image_id": "a982d389e7ff2ce65fda4faaaf49ac4439f4372adb8b5ffc15f265e513a63080",
+          "path": "assets/a982d389e7ff2ce65fda4faaaf49ac4439f4372adb8b5ffc15f265e513a63080.webp"
+        },
+        {
+          "frame": 5,
+          "role": "history",
+          "image_id": "d500bd1668799723e98cccc873d5740ab0145720346b15ba2451f4527d3d9f7b",
+          "path": "assets/d500bd1668799723e98cccc873d5740ab0145720346b15ba2451f4527d3d9f7b.webp"
+        },
+        {
+          "frame": 9,
+          "role": "history",
+          "image_id": "4259712cc9605cb7ad50484769834d3c9f7444fc3694305536676709d563b0e1",
+          "path": "assets/4259712cc9605cb7ad50484769834d3c9f7444fc3694305536676709d563b0e1.webp"
+        },
+        {
+          "frame": 14,
+          "role": "history",
+          "image_id": "ba3e6bc6f98f453336abc5564d2db53aac51f766b173d97ab35d7480e6c8ce4c",
+          "path": "assets/ba3e6bc6f98f453336abc5564d2db53aac51f766b173d97ab35d7480e6c8ce4c.webp"
+        },
+        {
+          "frame": 18,
+          "role": "history",
+          "image_id": "5ba7d7c9a0ae276858280c50a8b1dab523bb06579b7b5e4ee5816dc05043d747",
+          "path": "assets/5ba7d7c9a0ae276858280c50a8b1dab523bb06579b7b5e4ee5816dc05043d747.webp"
+        },
+        {
+          "frame": 19,
+          "role": "B",
+          "image_id": "c10cf528490ba2f20d90c1a9898b3652754121daf09757e78ab82835f12e47a6",
+          "path": "assets/c10cf528490ba2f20d90c1a9898b3652754121daf09757e78ab82835f12e47a6.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 42.462,
+      "started_at": "2026-11-12T10:39:47.161135+00:00",
+      "completed_at": "2026-11-12T10:40:29.619807+00:00",
+      "worker_pid": 40868,
+      "request_file": "run/cases/C18/S02.request.json",
+      "response_file": "run/cases/C18/S02.response.json",
+      "usage": {
+        "prompt_tokens": 2807,
+        "completion_tokens": 5800,
+        "total_tokens": 8607,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4667
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1911
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S02",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "从木地板走廊沿直线向前，经过右侧卫生间和左侧装框画，并跨过地面交界进入深灰瓷砖走廊。继续直行后，左侧卧室入口及房内床在近旁出现；正前方仍可见带壁挂电视、书桌和椅子的敞开门洞，本段尚未转向右侧客厅。",
+          "en": "Moving straight forward from the wood-floor hallway, passing the bathroom on the right and the framed picture on the left, and crossing the floor transition into the dark grey tiled hallway. Continuing straight, the left-side bedroom entrance and the bed inside become visible nearby; an open doorway with a wall-mounted TV, desk, and chair is still visible ahead, and no right turn into the living room has been made in this segment."
+        },
+        "reason": {
+          "zh": "帧0至5支持右侧卫生间、左侧装框画及木地板到深灰瓷砖的过渡；帧9至19显示继续沿灰砖走廊直行，左侧卧室入口和床出现，正前方门洞仍在，符合任务中先直行经过左侧卧室入口的空间顺序。截至B没有明确证据表明已到达走廊尽头、右转进入客厅或走错通路。",
+          "en": "Frames 0–5 support the bathroom on the right, the framed picture on the left, and the wood-to-dark-grey tile transition; frames 9–19 show continued straight movement along the grey tiled hallway, the left-side bedroom entrance and bed appearing, and the doorway still ahead, which matches the task’s spatial sequence of continuing straight past the left bedroom entrance. Up to B, there is no clear evidence that the hallway end has been reached, that a right turn into the living room has been made, or that a wrong passage has been taken."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Walk straight down the hallway, passing a bathroom on your right and a framed picture on your left, as the floor transitions from wood to dark grey tiles.",
+            "quote_zh": "沿走廊直行，经过右侧的卫生间和左侧的装框画，同时地板从木地板变为深灰色瓷砖。"
+          },
+          {
+            "quote_en": "Continue straight past a bedroom entrance on your left.",
+            "quote_zh": "继续直行，经过左侧的卧室入口。"
+          },
+          {
+            "quote_en": "At the end of the hallway, turn right to enter the living room area, with a sofa and TV on your left and dining chairs on your right.",
+            "quote_zh": "在走廊尽头右转进入客厅区域，沙发和电视在左侧，餐椅在右侧。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              0,
+              1,
+              5
+            ],
+            "description": {
+              "zh": "起始处右侧可见带玻璃淋浴间的卫生间，左侧墙上有装框画；近处木地板与前方深灰瓷砖的分界清楚。",
+              "en": "At the start, a bathroom with a glass shower is visible on the right and a framed picture is on the left wall; the boundary between the nearby wood floor and the dark grey tiles ahead is clear."
+            }
+          },
+          {
+            "frames": [
+              9,
+              14,
+              18,
+              19
+            ],
+            "description": {
+              "zh": "沿深灰瓷砖走廊继续直行；左侧卧室门洞及床在14、18、19帧出现并靠近，正前方敞开门洞内可见壁挂电视、书桌和椅子，未见转向右侧客厅。",
+              "en": "The view continues straight along the dark grey tiled hallway; the left-side bedroom doorway and bed appear and come closer in frames 14, 18, and 19, while an open doorway ahead shows a wall-mounted TV, desk, and chair, with no turn to the right living room visible."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "S01以前路线尚未确认。已从木地板走廊进入深灰瓷砖段，沿直廊经过右侧带玻璃淋浴间的卫生间和左侧装框画；左侧卧室入口及房内床已在近旁可见。尚未到达走廊尽头右转进入客厅，客厅内沙发与电视在左、餐椅在右、右侧白门以及到咖啡桌前面对大窗停下均未确认。",
+          "en": "Route progress before S01 remains unconfirmed. The route has moved from the wood-floor hallway into the dark grey tiled section, passing the bathroom with a glass shower on the right and the framed picture on the left; the left-side bedroom entrance and the bed inside are now visible nearby. The end of the hallway has not been reached for the right turn into the living room, and the sofa and TV on the left, dining chairs on the right, white door on the right, and stopping in front of the coffee table facing the large window remain unconfirmed."
+        },
+        "uncertainties": [
+          {
+            "zh": "截至B，是否已完全通过左侧卧室入口仍不能仅凭单帧确认。",
+            "en": "As of B, whether the left-side bedroom entrance has been fully passed cannot be confirmed from a single frame alone."
+          },
+          {
+            "zh": "前方带电视、书桌和椅子的房门是否为任务所述客厅尚未确认；走廊尽头右转后的布局也未进入视野。",
+            "en": "It is not yet confirmed whether the doorway ahead with the TV, desk, and chair is the living room described in the task; the layout after the right turn at the hallway end is also not in view."
+          },
+          {
+            "zh": "S01以前的路线进度尚未确认。",
+            "en": "Route progress before S01 remains unconfirmed."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "S01以前路线尚未确认。已从木地板走廊进入深灰瓷砖段，沿直廊经过右侧带玻璃淋浴间的卫生间和左侧装框画；左侧卧室入口及房内床已在近旁可见。尚未到达走廊尽头右转进入客厅，客厅内沙发与电视在左、餐椅在右、右侧白门以及到咖啡桌前面对大窗停下均未确认。",
+        "en": "Route progress before S01 remains unconfirmed. The route has moved from the wood-floor hallway into the dark grey tiled section, passing the bathroom with a glass shower on the right and the framed picture on the left; the left-side bedroom entrance and the bed inside are now visible nearby. The end of the hallway has not been reached for the right turn into the living room, and the sofa and TV on the left, dining chairs on the right, white door on the right, and stopping in front of the coffee table facing the large window remain unconfirmed."
+      },
+      "progress_anchor": {
+        "id": "S02",
+        "frame": 19
+      }
+    },
+    {
+      "node_id": "S03",
+      "node_frame": 46,
+      "available_at_frame": 51,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S02",
+      "from_frame": 19,
+      "to_frame": 46,
+      "prior_progress": {
+        "zh": "S01以前路线尚未确认。已从木地板走廊进入深灰瓷砖段，沿直廊经过右侧带玻璃淋浴间的卫生间和左侧装框画；左侧卧室入口及房内床已在近旁可见。尚未到达走廊尽头右转进入客厅，客厅内沙发与电视在左、餐椅在右、右侧白门以及到咖啡桌前面对大窗停下均未确认。",
+        "en": "Route progress before S01 remains unconfirmed. The route has moved from the wood-floor hallway into the dark grey tiled section, passing the bathroom with a glass shower on the right and the framed picture on the left; the left-side bedroom entrance and the bed inside are now visible nearby. The end of the hallway has not been reached for the right turn into the living room, and the sofa and TV on the left, dining chairs on the right, white door on the right, and stopping in front of the coffee table facing the large window remain unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 19,
+          "role": "A",
+          "image_id": "c10cf528490ba2f20d90c1a9898b3652754121daf09757e78ab82835f12e47a6",
+          "path": "assets/c10cf528490ba2f20d90c1a9898b3652754121daf09757e78ab82835f12e47a6.webp"
+        },
+        {
+          "frame": 20,
+          "role": "history",
+          "image_id": "76a9bb923f6407b6a938eb6ea0ec281898981afdb080b8ed25d91bbfb1065d45",
+          "path": "assets/76a9bb923f6407b6a938eb6ea0ec281898981afdb080b8ed25d91bbfb1065d45.webp"
+        },
+        {
+          "frame": 26,
+          "role": "history",
+          "image_id": "b88be15a34d44d536aeab80566e5d945cc175d81697bb549dab43e0671334bb6",
+          "path": "assets/b88be15a34d44d536aeab80566e5d945cc175d81697bb549dab43e0671334bb6.webp"
+        },
+        {
+          "frame": 32,
+          "role": "history",
+          "image_id": "576f239a6952021319151cfca37f1c3e379e64b9af920136d6b413027df8d718",
+          "path": "assets/576f239a6952021319151cfca37f1c3e379e64b9af920136d6b413027df8d718.webp"
+        },
+        {
+          "frame": 39,
+          "role": "history",
+          "image_id": "531d4ace1c062f74a4ff1fdfea1e5e6fb98366955dc2aa76dfcc56ed77e1f6da",
+          "path": "assets/531d4ace1c062f74a4ff1fdfea1e5e6fb98366955dc2aa76dfcc56ed77e1f6da.webp"
+        },
+        {
+          "frame": 45,
+          "role": "history",
+          "image_id": "51625bbf11983562dc08076bb58d6f253b177af22cec40f7863b1d6c226e865a",
+          "path": "assets/51625bbf11983562dc08076bb58d6f253b177af22cec40f7863b1d6c226e865a.webp"
+        },
+        {
+          "frame": 46,
+          "role": "B",
+          "image_id": "81dbf39014dc276c941119a817c2163d438774d08b2fc0aa0607b5612172e8b3",
+          "path": "assets/81dbf39014dc276c941119a817c2163d438774d08b2fc0aa0607b5612172e8b3.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 23.04,
+      "started_at": "2026-11-12T10:40:29.637786+00:00",
+      "completed_at": "2026-11-12T10:40:52.682583+00:00",
+      "worker_pid": 40868,
+      "request_file": "run/cases/C18/S03.request.json",
+      "response_file": "run/cases/C18/S03.response.json",
+      "usage": {
+        "prompt_tokens": 2830,
+        "completion_tokens": 3627,
+        "total_tokens": 6457,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2774
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1934
+      },
+      "answer": {
+        "previous_id": "S02",
+        "current_id": "S03",
+        "verdict": "deviated",
+        "segment_summary": {
+          "zh": "本段从灰瓷砖走廊的卧室门口开始，进入木地板卧室并推进到电视和窗边，床在右侧；F39 在房内转向可见床头画与深色玻璃面。随后观测显示已回到灰瓷砖走廊，左侧是带圆镜和台盆的卫生间，前方仍见通往木地板房间的门洞。",
+          "en": "This segment begins at the bedroom doorway off the dark grey tiled hallway and enters the wood-floored bedroom, advancing toward the TV and window with the bed on the right; F39 shows a turn inside the room with the headboard pictures and a dark glass panel visible. The observations then show a return to the dark grey tiled hallway, with a bathroom containing a round mirror and basin on the left and a doorway to a wood-floored room still visible ahead."
+        },
+        "reason": {
+          "zh": "任务要求沿走廊直行并从左侧卧室入口旁经过，但 F19/F20 门口之后，F26/F32 已进入该卧室并推进到窗边，F39 仍在房内转向，属于进入卧室而非经过入口；F45/F46 又回到灰瓷砖走廊，尚未显示在走廊尽头右转进入客厅。",
+          "en": "The task requires continuing straight along the hallway and passing the bedroom entrance on the left, but after the doorway in F19/F20, F26/F32 show entry into that bedroom and movement toward the window, and F39 still shows a turn inside the room, so this is entering the bedroom rather than passing its entrance; F45/F46 then show a return to the dark grey tiled hallway, without evidence of turning right into the living room at the hallway end."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Continue straight past a bedroom entrance on your left.",
+            "quote_zh": "继续直行，经过左侧的一处卧室入口。"
+          },
+          {
+            "quote_en": "At the end of the hallway, turn right to enter the living room area",
+            "quote_zh": "在走廊尽头，右转进入客厅区域"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              19,
+              20
+            ],
+            "description": {
+              "zh": "F19/F20 显示机器人位于深灰瓷砖走廊、面向敞开的卧室门洞，内部为木地板，可见左侧电视和右侧床。",
+              "en": "F19/F20 show the robot in the dark grey tiled hallway facing an open bedroom doorway, with wood flooring inside, a TV on the left and a bed on the right."
+            }
+          },
+          {
+            "frames": [
+              26,
+              32,
+              39
+            ],
+            "description": {
+              "zh": "F26/F32 显示已进入卧室并朝窗户推进，电视在左、床在右；F39 显示在房内转向，可见床头画和深色玻璃面。",
+              "en": "F26/F32 show entry into the bedroom and movement toward the window, with the TV on the left and bed on the right; F39 shows a turn inside the room, with headboard pictures and a dark glass surface visible."
+            }
+          },
+          {
+            "frames": [
+              45,
+              46
+            ],
+            "description": {
+              "zh": "F45/F46 显示回到深灰瓷砖走廊，左侧为带圆镜和台盆的卫生间，前方是通往木地板房间的门洞，未见客厅内沙发与电视在左、餐椅在右的到达状态。",
+              "en": "F45/F46 show a return to the dark grey tiled hallway, with a bathroom containing a round mirror and basin on the left and a doorway to a wood-floored room ahead; there is no indicated arrival state in the living room with the sofa and TV on the left and dining chairs on the right."
+            }
+          }
+        ],
+        "semantic_progress": null,
+        "uncertainties": [
+          {
+            "zh": "B 处走廊的前后朝向及离开卧室后是否还能沿原走廊到达尽头，仅凭这些抽样帧尚不能完全确认。",
+            "en": "The forward/backward orientation of the hallway at B and whether the original hallway can still be followed to its end after leaving the bedroom cannot be fully confirmed from these sampled frames alone."
+          }
+        ]
+      },
+      "rollback_target": {
+        "node_id": "S02",
+        "frame": 19,
+        "progress": {
+          "zh": "S01以前路线尚未确认。已从木地板走廊进入深灰瓷砖段，沿直廊经过右侧带玻璃淋浴间的卫生间和左侧装框画；左侧卧室入口及房内床已在近旁可见。尚未到达走廊尽头右转进入客厅，客厅内沙发与电视在左、餐椅在右、右侧白门以及到咖啡桌前面对大窗停下均未确认。",
+          "en": "Route progress before S01 remains unconfirmed. The route has moved from the wood-floor hallway into the dark grey tiled section, passing the bathroom with a glass shower on the right and the framed picture on the left; the left-side bedroom entrance and the bed inside are now visible nearby. The end of the hallway has not been reached for the right turn into the living room, and the sofa and TV on the left, dining chairs on the right, white door on the right, and stopping in front of the coffee table facing the large window remain unconfirmed."
+        }
+      },
+      "committed_progress": {
+        "zh": "S01以前路线尚未确认。已从木地板走廊进入深灰瓷砖段，沿直廊经过右侧带玻璃淋浴间的卫生间和左侧装框画；左侧卧室入口及房内床已在近旁可见。尚未到达走廊尽头右转进入客厅，客厅内沙发与电视在左、餐椅在右、右侧白门以及到咖啡桌前面对大窗停下均未确认。",
+        "en": "Route progress before S01 remains unconfirmed. The route has moved from the wood-floor hallway into the dark grey tiled section, passing the bathroom with a glass shower on the right and the framed picture on the left; the left-side bedroom entrance and the bed inside are now visible nearby. The end of the hallway has not been reached for the right turn into the living room, and the sofa and TV on the left, dining chairs on the right, white door on the right, and stopping in front of the coffee table facing the large window remain unconfirmed."
+      },
+      "progress_anchor": {
+        "id": "S02",
+        "frame": 19
+      }
+    }
+  ],
+  "stop_node": "S03"
+}

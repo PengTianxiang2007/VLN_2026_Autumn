@@ -1,0 +1,402 @@
+{
+  "case_number": 3,
+  "pid": 50992,
+  "reviews": [
+    {
+      "node_id": "S01",
+      "node_frame": 0,
+      "available_at_frame": 5,
+      "terminal_node": false,
+      "mode": "initialization",
+      "previous_id": "S01",
+      "from_frame": 0,
+      "to_frame": 0,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 0,
+          "role": "A=B",
+          "image_id": "2367621fcb0bac91f0df8e5a4fae97ef570a5ddff4f814b22e7635aea6b963e4",
+          "path": "assets/2367621fcb0bac91f0df8e5a4fae97ef570a5ddff4f814b22e7635aea6b963e4.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 11.759,
+      "started_at": "2026-11-12T10:38:47.453641+00:00",
+      "completed_at": "2026-11-12T10:38:59.213550+00:00",
+      "worker_pid": 50992,
+      "request_file": "run/cases/C03/S01.request.json",
+      "response_file": "run/cases/C03/S01.response.json",
+      "usage": {
+        "prompt_tokens": 1400,
+        "completion_tokens": 1668,
+        "total_tokens": 3068,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1013
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 504
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S01",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "本段仅有 S01 的单帧：画面从木地板走廊看向一扇门，门内是铺瓷砖并带玻璃淋浴隔断的卫生间；未看到电视、床、梳妆台或镜子。",
+          "en": "This segment contains only the single frame S01: the view goes from a wood-floored corridor toward a doorway, beyond which is a tiled bathroom with a glass shower enclosure; no TV, bed, vanity table, or mirror is visible."
+        },
+        "reason": {
+          "zh": "这是初始化节点，不能依据单帧确认此前经过了哪些空间或完成了哪些移动要求；当前可见的是走廊尽端的卫生间门口，尚未建立与卧室、电视、床或梳妆台的空间对应，因此不能视为已通过卧室段，但也不据此判定偏航。",
+          "en": "This is an initialization node; a single frame cannot confirm which spaces were previously traversed or which movement requirements were completed. The visible scene is a bathroom doorway at the end of a corridor, and no spatial correspondence with the bedroom, TV, bed, or vanity table has been established, so the bedroom segment cannot be considered completed, but deviation is not determined from this alone."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Turn left to enter the bedroom",
+            "quote_zh": "左转进入卧室"
+          },
+          {
+            "quote_en": "passing a TV on your left and a bed on your right",
+            "quote_zh": "经过你左侧的电视和你右侧的床"
+          },
+          {
+            "quote_en": "Stop in front of the vanity table with a mirror on your left",
+            "quote_zh": "停在你左侧带镜子的梳妆台前"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              0
+            ],
+            "description": {
+              "zh": "唯一帧显示木地板走廊和通向铺砖卫生间的门口，门内可见玻璃淋浴隔断、马桶等；未见电视、床或梳妆台。",
+              "en": "The only frame shows a wood-floored corridor and a doorway leading into a tiled bathroom, with a glass shower enclosure, toilet, and similar fixtures visible inside; no TV, bed, or vanity table is visible."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "首次有效节点：当前位于走廊尽端、正对卫生间门口；尚未确认已左转进入卧室，也未确认经过左侧电视、右侧床或到达带镜梳妆台前。",
+          "en": "First valid node: the robot is currently at the end of a corridor facing a bathroom doorway; it is not yet confirmed that it has turned left into the bedroom, passed a TV on the left and a bed on the right, or reached the vanity table with a mirror."
+        },
+        "uncertainties": [
+          {
+            "zh": "当前门口内显示卫生间而非卧室，单帧无法判断这是任务路线的哪一段，也无法确认机器人是否已经进入卧室区域；此前移动与转向均未确认。",
+            "en": "The doorway currently shows a bathroom rather than a bedroom; a single frame cannot determine which part of the task route this is, nor whether the robot has already entered the bedroom area. Prior movement and turns remain unconfirmed."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "首次有效节点：当前位于走廊尽端、正对卫生间门口；尚未确认已左转进入卧室，也未确认经过左侧电视、右侧床或到达带镜梳妆台前。",
+        "en": "First valid node: the robot is currently at the end of a corridor facing a bathroom doorway; it is not yet confirmed that it has turned left into the bedroom, passed a TV on the left and a bed on the right, or reached the vanity table with a mirror."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 0
+      }
+    },
+    {
+      "node_id": "S02",
+      "node_frame": 4,
+      "available_at_frame": 9,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S01",
+      "from_frame": 0,
+      "to_frame": 4,
+      "prior_progress": {
+        "zh": "首次有效节点：当前位于走廊尽端、正对卫生间门口；尚未确认已左转进入卧室，也未确认经过左侧电视、右侧床或到达带镜梳妆台前。",
+        "en": "First valid node: the robot is currently at the end of a corridor facing a bathroom doorway; it is not yet confirmed that it has turned left into the bedroom, passed a TV on the left and a bed on the right, or reached the vanity table with a mirror."
+      },
+      "images": [
+        {
+          "frame": 0,
+          "role": "A",
+          "image_id": "2367621fcb0bac91f0df8e5a4fae97ef570a5ddff4f814b22e7635aea6b963e4",
+          "path": "assets/2367621fcb0bac91f0df8e5a4fae97ef570a5ddff4f814b22e7635aea6b963e4.webp"
+        },
+        {
+          "frame": 1,
+          "role": "history",
+          "image_id": "9df022e9ac3824ac046e1eac5c560a59a37d5eb5d8136c0e202df61b70e83118",
+          "path": "assets/9df022e9ac3824ac046e1eac5c560a59a37d5eb5d8136c0e202df61b70e83118.webp"
+        },
+        {
+          "frame": 2,
+          "role": "history",
+          "image_id": "4e57133bdd0c18e354a3ebc10addf8ecc7b1660b155f36e667ffae3a0dbc3c2a",
+          "path": "assets/4e57133bdd0c18e354a3ebc10addf8ecc7b1660b155f36e667ffae3a0dbc3c2a.webp"
+        },
+        {
+          "frame": 3,
+          "role": "history",
+          "image_id": "e25bfab93a0dd35607bb26f9c8ceab3aecc4ccaf51c79f35697b00f8f93beff3",
+          "path": "assets/e25bfab93a0dd35607bb26f9c8ceab3aecc4ccaf51c79f35697b00f8f93beff3.webp"
+        },
+        {
+          "frame": 4,
+          "role": "B",
+          "image_id": "039cbe89823facf8e6c333d48abf9308d06ae9588a4f0e7a3e17493b13cd2b66",
+          "path": "assets/039cbe89823facf8e6c333d48abf9308d06ae9588a4f0e7a3e17493b13cd2b66.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 32.425,
+      "started_at": "2026-11-12T10:38:59.221873+00:00",
+      "completed_at": "2026-11-12T10:39:31.646913+00:00",
+      "worker_pid": 50992,
+      "request_file": "run/cases/C03/S02.request.json",
+      "response_file": "run/cases/C03/S02.response.json",
+      "usage": {
+        "prompt_tokens": 2290,
+        "completion_tokens": 5201,
+        "total_tokens": 7491,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4381
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1394
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S02",
+        "verdict": "uncertain",
+        "segment_summary": {
+          "zh": "从 A 处正对卫生间门口开始，视角向左转动并靠近左侧门洞/房间；到 B 时近处白墙占据画面，左侧出现疑似梳妆台或凳子的家具，未见电视或床。",
+          "en": "Starting at A facing the bathroom doorway, the view turns left and approaches a doorway or room on the left; at B, a nearby white wall dominates the view, with furniture resembling a vanity or stool visible on the left, and no TV or bed is seen."
+        },
+        "reason": {
+          "zh": "F0 显示机器人正对卫生间而非卧室；F1-F3 显示视角左转并靠近门框，但不足以确认已进入卧室、经过左侧电视和右侧床；F4 的近景白墙与局部家具也无法确认已停在带镜梳妆台前。未见明确冲突，但关键过程缺失，因此无法判定一致。",
+          "en": "F0 shows the robot facing the bathroom rather than the bedroom; F1-F3 show a leftward view change and approach toward a doorway/frame, but do not establish entry into the bedroom or passing a TV on the left and a bed on the right; the close white wall and partial furniture in F4 also cannot confirm stopping in front of the mirrored vanity. There is no clear conflict, but key process evidence is missing, so consistency cannot be determined."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Turn left to enter the bedroom",
+            "quote_zh": "向左转进入卧室"
+          },
+          {
+            "quote_en": "passing a TV on your left and a bed on your right",
+            "quote_zh": "从左侧经过电视、从右侧经过床"
+          },
+          {
+            "quote_en": "Stop in front of the vanity table with a mirror on your left",
+            "quote_zh": "停在带镜子的梳妆台前，镜子在您的左侧"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              0
+            ],
+            "description": {
+              "zh": "A 处位于走廊尽端，正对打开的卫生间门口；画面未确认卧室内部、电视或床。",
+              "en": "At A, the robot is at the end of a hallway facing an open bathroom doorway; the bedroom interior, TV, or bed is not established in this view."
+            }
+          },
+          {
+            "frames": [
+              1,
+              2,
+              3
+            ],
+            "description": {
+              "zh": "视角向左转动并朝相邻门框/门洞靠近，卫生间门逐渐移到画面右侧；这些帧仍未显示已穿过卧室门，也未显示任务要求的电视与床的关系。",
+              "en": "The view pans left and approaches an adjacent doorway/frame while the bathroom door shifts to the right; these frames still do not show passage through the bedroom door or the required TV-and-bed arrangement."
+            }
+          },
+          {
+            "frames": [
+              4
+            ],
+            "description": {
+              "zh": "B 处近处白墙/隔断占据主要画面，左侧只局部露出疑似凳子或梳妆台类家具；镜子、电视和床均无法确认。",
+              "en": "At B, a close white wall or partition fills most of the view, with only a partial piece of furniture resembling a stool or vanity visible on the left; a mirror, TV, and bed cannot be confirmed."
+            }
+          }
+        ],
+        "semantic_progress": null,
+        "uncertainties": [
+          {
+            "zh": "左侧门洞是否确为卧室入口，以及机器人是否已穿过该门洞进入卧室。",
+            "en": "Whether the doorway on the left is indeed the bedroom entrance, and whether the robot has passed through it into the bedroom."
+          },
+          {
+            "zh": "途中是否实际经过左侧的电视和右侧的床。",
+            "en": "Whether the robot actually passed the TV on its left and the bed on its right en route."
+          },
+          {
+            "zh": "B 处左侧家具是否为任务所指的带镜梳妆台，以及机器人是否已停在其正前方。",
+            "en": "Whether the furniture on the left at B is the instructed vanity with a mirror, and whether the robot has stopped directly in front of it."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "首次有效节点：当前位于走廊尽端、正对卫生间门口；尚未确认已左转进入卧室，也未确认经过左侧电视、右侧床或到达带镜梳妆台前。",
+        "en": "First valid node: the robot is currently at the end of a corridor facing a bathroom doorway; it is not yet confirmed that it has turned left into the bedroom, passed a TV on the left and a bed on the right, or reached the vanity table with a mirror."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 0
+      }
+    },
+    {
+      "node_id": "S03",
+      "node_frame": 36,
+      "available_at_frame": 41,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S01",
+      "from_frame": 0,
+      "to_frame": 36,
+      "prior_progress": {
+        "zh": "首次有效节点：当前位于走廊尽端、正对卫生间门口；尚未确认已左转进入卧室，也未确认经过左侧电视、右侧床或到达带镜梳妆台前。",
+        "en": "First valid node: the robot is currently at the end of a corridor facing a bathroom doorway; it is not yet confirmed that it has turned left into the bedroom, passed a TV on the left and a bed on the right, or reached the vanity table with a mirror."
+      },
+      "images": [
+        {
+          "frame": 0,
+          "role": "A",
+          "image_id": "2367621fcb0bac91f0df8e5a4fae97ef570a5ddff4f814b22e7635aea6b963e4",
+          "path": "assets/2367621fcb0bac91f0df8e5a4fae97ef570a5ddff4f814b22e7635aea6b963e4.webp"
+        },
+        {
+          "frame": 1,
+          "role": "history",
+          "image_id": "9df022e9ac3824ac046e1eac5c560a59a37d5eb5d8136c0e202df61b70e83118",
+          "path": "assets/9df022e9ac3824ac046e1eac5c560a59a37d5eb5d8136c0e202df61b70e83118.webp"
+        },
+        {
+          "frame": 9,
+          "role": "history",
+          "image_id": "c142007dc329a2ca343ee5d257fef926418180ff58bb3a45c459d95b71ab2538",
+          "path": "assets/c142007dc329a2ca343ee5d257fef926418180ff58bb3a45c459d95b71ab2538.webp"
+        },
+        {
+          "frame": 18,
+          "role": "history",
+          "image_id": "518745a8595d525abb826fa15e74e7879e6969720e2a1f323f986322186eb6e8",
+          "path": "assets/518745a8595d525abb826fa15e74e7879e6969720e2a1f323f986322186eb6e8.webp"
+        },
+        {
+          "frame": 27,
+          "role": "history",
+          "image_id": "8f7550da6f9e422d547f4c6a39588bf908960ebab6f18c3affac2021517f2c02",
+          "path": "assets/8f7550da6f9e422d547f4c6a39588bf908960ebab6f18c3affac2021517f2c02.webp"
+        },
+        {
+          "frame": 35,
+          "role": "history",
+          "image_id": "85a6ea5155595035ddc2503f31ca9d72df7bdf3e2fd819dee14d21755c746606",
+          "path": "assets/85a6ea5155595035ddc2503f31ca9d72df7bdf3e2fd819dee14d21755c746606.webp"
+        },
+        {
+          "frame": 36,
+          "role": "B",
+          "image_id": "b59351868012b60bf9c90419843f5ad0b913fe8bd0020a4496b9863255fead3e",
+          "path": "assets/b59351868012b60bf9c90419843f5ad0b913fe8bd0020a4496b9863255fead3e.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 24.216,
+      "started_at": "2026-11-12T10:39:31.661892+00:00",
+      "completed_at": "2026-11-12T10:39:55.880953+00:00",
+      "worker_pid": 50992,
+      "request_file": "run/cases/C03/S03.request.json",
+      "response_file": "run/cases/C03/S03.response.json",
+      "usage": {
+        "prompt_tokens": 2722,
+        "completion_tokens": 3700,
+        "total_tokens": 6422,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2968
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1826
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S03",
+        "verdict": "deviated",
+        "segment_summary": {
+          "zh": "本段从走廊尽端的卫生间门口附近出发，随后进入一个带沙发、茶几和大窗的客厅，电视位于画面右侧；之后经过展示柜和餐桌区域，到达餐厅一侧的门洞旁，透过左侧门洞可见卧室的床和窗帘，但并未进入卧室，也未停在带镜梳妆台前。",
+          "en": "This segment started near the bathroom doorway at the end of the hallway, then entered a living room with a sofa, coffee table, and large window, with the TV on the right side of the view; it then passed a display cabinet and dining table area and reached a doorway beside the dining area, where a bed and curtains were visible through the left doorway, but it did not enter the bedroom or stop in front of a mirrored vanity table."
+        },
+        "reason": {
+          "zh": "任务要求左转进入卧室，经过左侧电视和右侧床，并停在左侧带镜的梳妆台前；但帧9和18显示的是客厅，电视在右、沙发在左，帧35和36显示卧室仍在左侧门洞内而机器人位于门外餐厅区域，空间、参照物及关系均与任务冲突。",
+          "en": "The task requires turning left into the bedroom, passing a TV on the left and a bed on the right, and stopping in front of a vanity table with a mirror on the left; however, frames 9 and 18 show a living room with the TV on the right and the sofa on the left, while frames 35 and 36 show the bedroom still through the left doorway with the robot outside in the dining area, conflicting with the required space, landmarks, and spatial relations."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Turn left to enter the bedroom",
+            "quote_zh": "左转进入卧室"
+          },
+          {
+            "quote_en": "passing a TV on your left and a bed on your right",
+            "quote_zh": "经过你左侧的电视和右侧的床"
+          },
+          {
+            "quote_en": "Stop in front of the vanity table with a mirror on your left.",
+            "quote_zh": "停在梳妆台前，镜子在你左侧。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              9,
+              18
+            ],
+            "description": {
+              "zh": "画面显示带沙发、茶几和大窗的客厅，电视位于右侧，未出现任务所述左侧电视或右侧床。",
+              "en": "The frames show a living room with a sofa, coffee table, and large window; the TV is on the right, and neither the left-side TV nor the right-side bed described in the task is visible."
+            }
+          },
+          {
+            "frames": [
+              35,
+              36
+            ],
+            "description": {
+              "zh": "机器人到达餐厅或门厅一侧，左侧门洞内可见卧室的床和窗帘，但机器人仍在门外，未进入卧室，也未出现在带镜梳妆台前。",
+              "en": "The robot reached the dining or foyer side; a bed and curtains are visible through the left doorway, but the robot remains outside the bedroom and is not in front of a mirrored vanity table."
+            }
+          }
+        ],
+        "semantic_progress": null,
+        "uncertainties": [
+          {
+            "zh": "抽样帧不足以确认从卫生间门口到客厅之间经过的具体门洞和转向顺序；B处左侧门洞内是否存在任务要求的带镜梳妆台也未被清晰确认。",
+            "en": "The sampled frames do not establish the exact doorway or turning sequence from the bathroom doorway to the living room, and it is not clearly confirmed whether the left doorway at B contains the required mirrored vanity table."
+          }
+        ]
+      },
+      "rollback_target": {
+        "node_id": "S01",
+        "frame": 0,
+        "progress": {
+          "zh": "首次有效节点：当前位于走廊尽端、正对卫生间门口；尚未确认已左转进入卧室，也未确认经过左侧电视、右侧床或到达带镜梳妆台前。",
+          "en": "First valid node: the robot is currently at the end of a corridor facing a bathroom doorway; it is not yet confirmed that it has turned left into the bedroom, passed a TV on the left and a bed on the right, or reached the vanity table with a mirror."
+        }
+      },
+      "committed_progress": {
+        "zh": "首次有效节点：当前位于走廊尽端、正对卫生间门口；尚未确认已左转进入卧室，也未确认经过左侧电视、右侧床或到达带镜梳妆台前。",
+        "en": "First valid node: the robot is currently at the end of a corridor facing a bathroom doorway; it is not yet confirmed that it has turned left into the bedroom, passed a TV on the left and a bed on the right, or reached the vanity table with a mirror."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 0
+      }
+    }
+  ],
+  "stop_node": "S03"
+}

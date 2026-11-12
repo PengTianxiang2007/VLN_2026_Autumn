@@ -1,0 +1,36 @@
+{
+  "mode": "initialization",
+  "previous_id": "S01",
+  "current_id": "S01",
+  "previous_frame": 0,
+  "current_frame": 0,
+  "instruction_en": "Turn right, moving away from the console table with the black and gold painting. Walk straight into the hallway, keeping the wall with two framed plant pictures on your left and a storage unit on your right. Continue straight past an open doorway leading to a bathroom on your right. Turn left through the next doorway to enter the bedroom. Walk forward, keeping the TV and dresser on your left and the bed on your right. Stop in front of the window.",
+  "prior_semantic_progress": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+  "coverage": "Endpoint observations plus up to five uniformly sampled intermediate observations. Frames are not necessarily consecutive. Review ends at B.",
+  "images": [
+    {
+      "frame": 0,
+      "role": "A=B",
+      "image_id": "2820c813af1fb25a958449bab8a641ba15c87e820a6d4623b80afcd2414fc520",
+      "path": "assets/2820c813af1fb25a958449bab8a641ba15c87e820a6d4623b80afcd2414fc520.webp",
+      "sha256": "2820c813af1fb25a958449bab8a641ba15c87e820a6d4623b80afcd2414fc520",
+      "bytes": 21814
+    }
+  ],
+  "settings": {
+    "model": "deepseek-flash",
+    "response_format": {
+      "type": "json_object"
+    },
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_tokens": 32768,
+    "stream": false
+  },
+  "prompt_sha256": "129ef91051dcb6cc1be8e2e276cb102166bff322a36fdd10661e644de2162cad",
+  "request_sha256": "bf09304e552dfb0293b1aade28afc0ef5e3d4c75f15b6a2576ac390c91022608",
+  "started_at": "2026-11-12T10:39:55.892423+00:00",
+  "worker_pid": 50992
+}

@@ -1,0 +1,74 @@
+{
+  "started_at": "2026-11-12T08:11:10.813682+00:00",
+  "worker_pid": 34540,
+  "status": "error",
+  "http_status": 200,
+  "response": {
+    "id": "354ba52d-c389-4e19-8485-310ff0e72d49",
+    "object": "chat.completion",
+    "created": 1794471071,
+    "model": "deepseek-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"previous_id\":\"S01\",\"current_id\":\"S01\",\"verdict\":\"consistent\",\"segment_summary\":{\"zh\":\"S01 为首次有效观测：画面中可见左侧/前方的大面积白色柜体或墙面、右侧的黑色高柜，左侧边缘有一个通向其他空间的门口或开口，地面为浅色木地板。单帧无法确认机器人此前是否已右转、经过白色衣柜或进入走廊。\",\"en\":\"S01 is the first valid observation: the view shows a large white wardrobe-like structure or wall ahead/on the left, a tall black wardrobe on the right, an open doorway or opening leading to another space at the left edge, and light wood flooring. A single frame cannot confirm whether the robot has already turned right, passed the white wardrobe, or entered the hallway.\"},\"reason\":{\"zh\":\"这是首个有效节点，只能依据第10帧建立当前语义状态；画面中的白色柜体/墙面、黑色高柜和左侧开口不能单独证明原任务要求的右转、经过白色衣柜及进入前方走廊已经发生。\",\"en\":\"This is the first valid node, so the semantic state can only be established from frame 10; the white wardrobe-like structure/wall, black wardrobe, and left-side opening alone do not prove that the required right turn, passing of the white wardrobe, and entry into the hallway ahead have occurred.\"},\"instruction_evidence\":[],\"visual_evidence\":[{\"frames\":[10],\"description\":{\"zh\":\"第10帧显示近处的大面积白色柜体或墙面位于左中部，右侧有黑色高柜，左侧边缘可见一处通向其他空间的门口或开口，地面为浅色木地板。\",\"en\":\"Frame 10 shows a large white wardrobe-like structure or wall in the left-center, a tall black wardrobe on the right, an open doorway or opening leading to another space at the left edge, and light wood flooring.\"}}],\"semantic_progress\":{\"zh\":\"首次有效节点 S01：此前路线进度尚未确认；当前画面显示左侧/前方有白色柜体或墙面、右侧有黑色高柜，左侧边缘有通向其他空间的门口或开口。尚不能确认是否已完成右转、经过白色衣柜并进入前方走廊。\",\"en\":\"First valid node S01: prior route progress is not yet confirmed; the current view shows a white wardrobe-like structure or wall ahead/on the left, a black wardrobe on the right, and a doorway or opening to another space at the left edge. It is not yet confirmed whether the robot has turned right, passed the white wardrobe, and entered the hallway ahead.\"},\"uncertainties\":{\"zh\":\"无法确认当前是否位于右转后的位置、白色衣柜是否确实在机器人左侧、左侧开口是否为任务所指的前方走廊入口，以及此前是否已完成任何移动要求。\",\"en\":\"It cannot be confirmed whether the robot is currently positioned after a right turn, whether the white wardrobe is truly on the robot's left, whether the left-side opening is the hallway entrance referred to by the task, or whether any earlier movement requirements have been completed.\"}}",
+          "reasoning_content": "We need answer JSON only. Need assess initialization single frame S01. Need describe actual scene. Need infer from instruction and image. Image shows white? Actually large white wardrobe/wall on left? Black wardrobe on right? Room with light wood floor. There's an open doorway/opening on left leading to another room? Let's parse image: A large white surface occupies left/center, possibly wardrobe? On right a tall black wardrobe, and far right maybe bed with dark cover. There is a doorway on left? Frame appears looking toward a corner with white wardrobe left and black wardrobe right? The instruction: \"Turn right, passing a white wardrobe on your left, then enter the hallway ahead...\" At initialization, cannot confirm prior route. Need state current visible: standing near white and black storage furniture; open corridor/passage? The white large structure may be wardrobe left, black wardrobe right. There's an opening at far left? Let's identify. On left, white wall/wardrobe with a vertical dark line and a doorway opening showing another room with floor. Center white large wardrobe face ending at corner? Right black wardrobe. Could be facing a corner with a hallway gap between white and black? Hmm.\n\nInitialization: verdict consistent, semantic_progress should establish current semantic state, no prior movement confirmed. Should mention at S01 current view includes a white wardrobe-like structure ahead/left and black wardrobe/cabinet to right, wood floor, an opening/doorway visible at left; position relative to hallway not yet confirmed. Avoid claiming entered hallway or turned right. instruction_evidence empty allowed. visual_evidence frames [10]. uncertainties: whether current position is after right turn and white wardrobe on left; whether opening is target hallway; no movement confirmed.\n\nNeed segment_summary actual experience 1-3 sentences. Since only one frame, \"At S01, the robot is stationary/observes...\" Don't infer stationary? Single image; can say view. \"The view shows a white wardrobe/wall on the left, a tall black wardrobe on the right, and a doorway/opening at left; the hallway ahead is not clearly visible.\" Actually whether hallway ahead? There is maybe open space ahead between white and black? Need not overstate. \"The view shows...\" Good.\n\nreason: initialization only, single frame can't confirm traveled route or completion; visible white wardrobe and black cabinet don't establish the required right turn/hallway. Need consistent because init. semantic_progress: \"在 S01 首次建立语义状态：当前位于有白色衣柜/白色隔墙和右侧黑色高柜的室内区域，左侧可见一个通向其他空间的门口/开口，木质地板；是否需要右转并进入前方走廊、以及白色衣柜是否在左侧，尚不能由单帧确认。\" But must be cumulative progress under 200 Chinese chars. It is initialization and \"prior route unconfirmed\" maybe exactly. Need \"首次有效节点，尚不能确认此前完成了哪些移动要求；当前画面...\" That's enough.\n\nNeed English faithful. Don't add \"static\". \"At the first valid node S01, a white wardrobe-like structure/wall is visible ahead/left and a tall black wardrobe on the right, with an open doorway/opening on the left and wood flooring; whether the robot has already turned right, passed the white wardrobe on its left, or entered the hallway is not confirmed.\"\n\nvisual evidence: [10], description in Chinese: \"第10帧显示近处的白色大面积柜体/墙面位于左中部，右侧为黑色高柜，左侧边缘可见通向另一房间的门口/开口，地面为浅色木地板。单帧不能证明此前移动或已进入走廊。\" English faithful. Maybe \"白色衣柜/墙\" cautious.\n\nNeed instruction_evidence empty? initialization can be empty. Yes.\n\nPotential issue: mode initialization but previous_frame=current_frame=10. current_id S01. Return consistent. previous_id S01.\n\nNo Markdown. JSON object. Ensure valid."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1434,
+      "completion_tokens": 1452,
+      "total_tokens": 2886,
+      "prompt_tokens_details": {
+        "cached_tokens": 1280
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 817
+      },
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 154
+    },
+    "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+  },
+  "parsed_original": {
+    "previous_id": "S01",
+    "current_id": "S01",
+    "verdict": "consistent",
+    "segment_summary": {
+      "zh": "S01 为首次有效观测：画面中可见左侧/前方的大面积白色柜体或墙面、右侧的黑色高柜，左侧边缘有一个通向其他空间的门口或开口，地面为浅色木地板。单帧无法确认机器人此前是否已右转、经过白色衣柜或进入走廊。",
+      "en": "S01 is the first valid observation: the view shows a large white wardrobe-like structure or wall ahead/on the left, a tall black wardrobe on the right, an open doorway or opening leading to another space at the left edge, and light wood flooring. A single frame cannot confirm whether the robot has already turned right, passed the white wardrobe, or entered the hallway."
+    },
+    "reason": {
+      "zh": "这是首个有效节点，只能依据第10帧建立当前语义状态；画面中的白色柜体/墙面、黑色高柜和左侧开口不能单独证明原任务要求的右转、经过白色衣柜及进入前方走廊已经发生。",
+      "en": "This is the first valid node, so the semantic state can only be established from frame 10; the white wardrobe-like structure/wall, black wardrobe, and left-side opening alone do not prove that the required right turn, passing of the white wardrobe, and entry into the hallway ahead have occurred."
+    },
+    "instruction_evidence": [],
+    "visual_evidence": [
+      {
+        "frames": [
+          10
+        ],
+        "description": {
+          "zh": "第10帧显示近处的大面积白色柜体或墙面位于左中部，右侧有黑色高柜，左侧边缘可见一处通向其他空间的门口或开口，地面为浅色木地板。",
+          "en": "Frame 10 shows a large white wardrobe-like structure or wall in the left-center, a tall black wardrobe on the right, an open doorway or opening leading to another space at the left edge, and light wood flooring."
+        }
+      }
+    ],
+    "semantic_progress": {
+      "zh": "首次有效节点 S01：此前路线进度尚未确认；当前画面显示左侧/前方有白色柜体或墙面、右侧有黑色高柜，左侧边缘有通向其他空间的门口或开口。尚不能确认是否已完成右转、经过白色衣柜并进入前方走廊。",
+      "en": "First valid node S01: prior route progress is not yet confirmed; the current view shows a white wardrobe-like structure or wall ahead/on the left, a black wardrobe on the right, and a doorway or opening to another space at the left edge. It is not yet confirmed whether the robot has turned right, passed the white wardrobe, and entered the hallway ahead."
+    },
+    "uncertainties": {
+      "zh": "无法确认当前是否位于右转后的位置、白色衣柜是否确实在机器人左侧、左侧开口是否为任务所指的前方走廊入口，以及此前是否已完成任何移动要求。",
+      "en": "It cannot be confirmed whether the robot is currently positioned after a right turn, whether the white wardrobe is truly on the robot's left, whether the left-side opening is the hallway entrance referred to by the task, or whether any earlier movement requirements have been completed."
+    }
+  },
+  "error": "ValueError: Invalid uncertainties",
+  "completed_at": "2026-11-12T08:11:20.991784+00:00",
+  "elapsed_seconds": 10.177
+}

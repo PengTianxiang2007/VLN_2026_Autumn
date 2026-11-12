@@ -1,0 +1,213 @@
+{
+  "case_number": 13,
+  "pid": 44612,
+  "reviews": [
+    {
+      "node_id": "S01",
+      "node_frame": 8,
+      "available_at_frame": 13,
+      "terminal_node": false,
+      "mode": "initialization",
+      "previous_id": "S01",
+      "from_frame": 8,
+      "to_frame": 8,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 8,
+          "role": "A=B",
+          "image_id": "6f9021dbb98d7056828f6189a21c42b00140602a8a4c22fb547693b6f869a05a",
+          "path": "assets/6f9021dbb98d7056828f6189a21c42b00140602a8a4c22fb547693b6f869a05a.webp"
+        }
+      ],
+      "status": "error",
+      "elapsed_seconds": 11.583,
+      "started_at": "2026-11-12T08:25:49.639830+00:00",
+      "completed_at": "2026-11-12T08:26:01.224455+00:00",
+      "worker_pid": 44612,
+      "request_file": "run/cases/C13/S01.request.json",
+      "response_file": "run/cases/C13/S01.response.json",
+      "usage": {
+        "prompt_tokens": 1434,
+        "completion_tokens": 1697,
+        "total_tokens": 3131,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1010
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 538
+      },
+      "error": "ValueError: Invalid uncertainties",
+      "committed_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 8
+      }
+    },
+    {
+      "node_id": "S02",
+      "node_frame": 23,
+      "available_at_frame": 28,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S01",
+      "from_frame": 8,
+      "to_frame": 23,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 8,
+          "role": "A",
+          "image_id": "6f9021dbb98d7056828f6189a21c42b00140602a8a4c22fb547693b6f869a05a",
+          "path": "assets/6f9021dbb98d7056828f6189a21c42b00140602a8a4c22fb547693b6f869a05a.webp"
+        },
+        {
+          "frame": 9,
+          "role": "history",
+          "image_id": "4dabba88ebb3234005d9bbec11f5cc7e4514009cf1d21591c0d1f9df9fc02d68",
+          "path": "assets/4dabba88ebb3234005d9bbec11f5cc7e4514009cf1d21591c0d1f9df9fc02d68.webp"
+        },
+        {
+          "frame": 12,
+          "role": "history",
+          "image_id": "5333b2312001651105850137f2a329637292a8fd3ccc7d91094e5da6e9cc2a0b",
+          "path": "assets/5333b2312001651105850137f2a329637292a8fd3ccc7d91094e5da6e9cc2a0b.webp"
+        },
+        {
+          "frame": 15,
+          "role": "history",
+          "image_id": "c4a28ba73914918e3bd7490c8d3a71575685ef86cb3fa7ffc234f5369cdd46d2",
+          "path": "assets/c4a28ba73914918e3bd7490c8d3a71575685ef86cb3fa7ffc234f5369cdd46d2.webp"
+        },
+        {
+          "frame": 19,
+          "role": "history",
+          "image_id": "669beaf6de3e2b4a370659368d5e58018523e97ebe4f12562c18bc7b03d95deb",
+          "path": "assets/669beaf6de3e2b4a370659368d5e58018523e97ebe4f12562c18bc7b03d95deb.webp"
+        },
+        {
+          "frame": 22,
+          "role": "history",
+          "image_id": "487e0baa4990d67dea8e20503c1ba2d0542e457fa6d1990c406412ea846d602a",
+          "path": "assets/487e0baa4990d67dea8e20503c1ba2d0542e457fa6d1990c406412ea846d602a.webp"
+        },
+        {
+          "frame": 23,
+          "role": "B",
+          "image_id": "df871d8de716fbf9b25b34cd2c22ab2267076ea0868bc3e0446aa2fd88d2b805",
+          "path": "assets/df871d8de716fbf9b25b34cd2c22ab2267076ea0868bc3e0446aa2fd88d2b805.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 58.428,
+      "started_at": "2026-11-12T08:26:01.240766+00:00",
+      "completed_at": "2026-11-12T08:26:59.668489+00:00",
+      "worker_pid": 44612,
+      "request_file": "run/cases/C13/S02.request.json",
+      "response_file": "run/cases/C13/S02.response.json",
+      "usage": {
+        "prompt_tokens": 2728,
+        "completion_tokens": 7967,
+        "total_tokens": 10695,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 7211
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1832
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S02",
+        "verdict": "deviated",
+        "segment_summary": {
+          "zh": "机器人从左侧带格层的内置架旁向前，经过右侧的餐桌和椅子，随后继续朝客厅电视方向前移。到达B帧时，左侧出现带长台面和窗户的开放通道，右侧是一扇关闭的白色双开门。未见穿过敞开的右侧门口进入厨房，也未停在窗前水槽前。",
+          "en": "The robot moved forward past the built-in shelf with compartments on its left, passed the dining table and chairs on its right, and then continued moving toward the living-room TV. By frame B, an open passage with a long counter and a window appears on the left, while a closed white double door is on the right. It is not shown passing through an open doorway on the right into the kitchen or stopping at the window and sink."
+        },
+        "reason": {
+          "zh": "前段有证据符合架子在左、并从右侧餐桌旁经过；但B处可进入且带台面/窗户特征的区域位于左侧，右侧门关闭，机器人仍面向客厅，没有按“从右侧敞开门口进入厨房”的空间关系通过，也未见到达窗前水槽。",
+          "en": "The earlier segment supports passing the shelf on the left and moving past the dining table on the right; however, at B the accessible area with counter/window features is on the left while the right door is closed, and the robot still faces the living room. It did not pass through the specified open doorway on the right into the kitchen, nor is it shown reaching the window and sink."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "keeping the tall built-in shelf with bottles and books on your left",
+            "quote_zh": "让带瓶子和书的高大内置架保持在你左侧。"
+          },
+          {
+            "quote_en": "Turn right, moving past the dining table on your right.",
+            "quote_zh": "向右转，从你右侧的餐桌旁经过。"
+          },
+          {
+            "quote_en": "Enter the kitchen through the open doorway on your right.",
+            "quote_zh": "从你右侧的敞开门口进入厨房。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              8,
+              12,
+              15
+            ],
+            "description": {
+              "zh": "第8帧左侧近景为带格层的内置架；第12、15帧右侧出现餐桌和椅子，画面沿客厅方向前移并向右偏转。",
+              "en": "In frame 8 the built-in shelf with compartments is in the left foreground; in frames 12 and 15 a dining table and chairs appear on the right, while the view moves forward toward the living area and turns right."
+            }
+          },
+          {
+            "frames": [
+              22,
+              23
+            ],
+            "description": {
+              "zh": "第22、23帧中，左侧出现带长台面和窗户的开放通道，右侧近处为关闭的白色双开门；镜头仍朝客厅电视方向，未见进入任何门口或停在窗前水槽前。",
+              "en": "In frames 22 and 23, an open passage with a long counter and a window appears on the left, while a closed white double door is on the near right; the camera still faces the living-room TV and shows no entry through a doorway or stop at the window and sink."
+            }
+          }
+        ],
+        "semantic_progress": null,
+        "uncertainties": [
+          {
+            "zh": "第15帧至第22帧之间是否有未被抽样到的转向或穿门动作无法确认。",
+            "en": "Whether there was an unsampled turn or doorway passage between frames 15 and 22 cannot be confirmed."
+          },
+          {
+            "zh": "左侧开放区域内的大冰箱位置尚未被清楚确认。",
+            "en": "The location of the large refrigerator within the left open area is not clearly confirmed."
+          }
+        ]
+      },
+      "rollback_target": {
+        "node_id": "S01",
+        "frame": 8,
+        "progress": {
+          "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+          "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+        }
+      },
+      "committed_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 8
+      }
+    }
+  ],
+  "stop_node": "S02"
+}

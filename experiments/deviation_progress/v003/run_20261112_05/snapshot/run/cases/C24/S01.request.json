@@ -1,0 +1,36 @@
+{
+  "mode": "initialization",
+  "previous_id": "S01",
+  "current_id": "S01",
+  "previous_frame": 0,
+  "current_frame": 0,
+  "instruction_en": "Turn right into the hallway, with a green framed artwork on your left and a wall displaying four framed artworks on your right. Walk straight through this hallway, passing a tall potted plant on your left and an open kitchen on your right. Go through the doorway straight ahead to enter the bedroom. Walk towards the bed on your left, and stop next to the bedside table on the right side of the bed.",
+  "prior_semantic_progress": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+  "coverage": "Endpoint observations plus up to five uniformly sampled intermediate observations. Frames are not necessarily consecutive. Review ends at B.",
+  "images": [
+    {
+      "frame": 0,
+      "role": "A=B",
+      "image_id": "fbb3ae1a944b336e54f359a7aeae7563da38005c89d5519b3b2f1884a97a3839",
+      "path": "assets/fbb3ae1a944b336e54f359a7aeae7563da38005c89d5519b3b2f1884a97a3839.webp",
+      "sha256": "fbb3ae1a944b336e54f359a7aeae7563da38005c89d5519b3b2f1884a97a3839",
+      "bytes": 5416
+    }
+  ],
+  "settings": {
+    "model": "deepseek-flash",
+    "response_format": {
+      "type": "json_object"
+    },
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_tokens": 32768,
+    "stream": false
+  },
+  "prompt_sha256": "129ef91051dcb6cc1be8e2e276cb102166bff322a36fdd10661e644de2162cad",
+  "request_sha256": "b700e51562e8b77b9e47b0883b08f24ee42afeef1e903d9cb234c451cebbe057",
+  "started_at": "2026-11-12T10:41:15.734950+00:00",
+  "worker_pid": 40868
+}

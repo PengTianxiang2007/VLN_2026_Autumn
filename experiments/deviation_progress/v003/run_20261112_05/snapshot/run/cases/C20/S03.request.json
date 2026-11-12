@@ -1,0 +1,60 @@
+{
+  "mode": "segment",
+  "previous_id": "S02",
+  "current_id": "S03",
+  "previous_frame": 12,
+  "current_frame": 15,
+  "instruction_en": "Walk forward into the hallway. Proceed straight, passing a bathroom on your left. Continue straight, passing a brown pillar on your right as you enter an open living area. Turn right, keeping the main living room area with a sofa and TV on your left. Walk straight, passing a dining table with chairs on your right. Stop in front of the wall displaying two framed pictures, to the right of the white door.",
+  "prior_semantic_progress": "截至S02：S01之前的路线进度仍未确认。本段沿灰色地砖走廊向明亮门洞前进，带圆镜和洗手池的卫生间持续在左侧，右侧棕色竖向结构逐渐接近；尚未确认已穿过门洞进入开阔起居区，也未确认右转、左侧客厅沙发电视、右侧餐桌椅及挂两幅画的白门右侧墙面等后续目标。",
+  "coverage": "Endpoint observations plus up to five uniformly sampled intermediate observations. Frames are not necessarily consecutive. Review ends at B.",
+  "images": [
+    {
+      "frame": 12,
+      "role": "A",
+      "image_id": "04f1f1dcde0461f96c13d1f2956620ad59cdec313dbeda929cb20afb87b09b17",
+      "path": "assets/04f1f1dcde0461f96c13d1f2956620ad59cdec313dbeda929cb20afb87b09b17.webp",
+      "sha256": "04f1f1dcde0461f96c13d1f2956620ad59cdec313dbeda929cb20afb87b09b17",
+      "bytes": 15152
+    },
+    {
+      "frame": 13,
+      "role": "history",
+      "image_id": "13748463346397f410b14d519fa3845f27f687fcda9e2d4489fc2717a80daa61",
+      "path": "assets/13748463346397f410b14d519fa3845f27f687fcda9e2d4489fc2717a80daa61.webp",
+      "sha256": "13748463346397f410b14d519fa3845f27f687fcda9e2d4489fc2717a80daa61",
+      "bytes": 14492
+    },
+    {
+      "frame": 14,
+      "role": "history",
+      "image_id": "a8cbed51ade1c4c0dd481817782da2af8610afd1df67f1c36cdb59819cacce7d",
+      "path": "assets/a8cbed51ade1c4c0dd481817782da2af8610afd1df67f1c36cdb59819cacce7d.webp",
+      "sha256": "a8cbed51ade1c4c0dd481817782da2af8610afd1df67f1c36cdb59819cacce7d",
+      "bytes": 16746
+    },
+    {
+      "frame": 15,
+      "role": "B",
+      "image_id": "a071a9ef85bb759fb7b0d48913ce3f89a8b556ed1161986084a5d91c6fc34304",
+      "path": "assets/a071a9ef85bb759fb7b0d48913ce3f89a8b556ed1161986084a5d91c6fc34304.webp",
+      "sha256": "a071a9ef85bb759fb7b0d48913ce3f89a8b556ed1161986084a5d91c6fc34304",
+      "bytes": 16974
+    }
+  ],
+  "settings": {
+    "model": "deepseek-flash",
+    "response_format": {
+      "type": "json_object"
+    },
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_tokens": 32768,
+    "stream": false
+  },
+  "prompt_sha256": "129ef91051dcb6cc1be8e2e276cb102166bff322a36fdd10661e644de2162cad",
+  "request_sha256": "7a2b63f71d973b0cc9e9fe49bc973e2c409c71b3e36d618e957e57301aa8284a",
+  "started_at": "2026-11-12T08:26:32.871387+00:00",
+  "worker_pid": 49356
+}

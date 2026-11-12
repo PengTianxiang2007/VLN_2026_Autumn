@@ -1,0 +1,84 @@
+{
+  "mode": "segment",
+  "previous_id": "S01",
+  "current_id": "S02",
+  "previous_frame": 0,
+  "current_frame": 14,
+  "instruction_en": "Walk straight down the hallway, keeping the green decorative panel on your right. As you approach the end of the hallway, with a round, brown wall decoration on your left, turn left to enter the doorway. Walk into the bathroom and stop in front of the shower enclosure, with the toilet and sink on your left and the window directly ahead of you.",
+  "prior_semantic_progress": "首次有效节点：当前位于白色走廊内，右侧可见绿色装饰板及其上的圆形棕色饰件；此前是否已按要求沿走廊直行、是否接近尽头并左转进入卫生间均尚未确认，卫生间内部目标也尚未确认。",
+  "coverage": "Endpoint observations plus up to five uniformly sampled intermediate observations. Frames are not necessarily consecutive. Review ends at B.",
+  "images": [
+    {
+      "frame": 0,
+      "role": "A",
+      "image_id": "27b61452b7b767177fa8a2c875409679a17465dac9eddcb801eae8d2e9d54e9d",
+      "path": "assets/27b61452b7b767177fa8a2c875409679a17465dac9eddcb801eae8d2e9d54e9d.webp",
+      "sha256": "27b61452b7b767177fa8a2c875409679a17465dac9eddcb801eae8d2e9d54e9d",
+      "bytes": 9860
+    },
+    {
+      "frame": 1,
+      "role": "history",
+      "image_id": "8ea57d887417695b468199e1047d7a9ecc345363ce62e4712d1a18f46fbf2472",
+      "path": "assets/8ea57d887417695b468199e1047d7a9ecc345363ce62e4712d1a18f46fbf2472.webp",
+      "sha256": "8ea57d887417695b468199e1047d7a9ecc345363ce62e4712d1a18f46fbf2472",
+      "bytes": 15494
+    },
+    {
+      "frame": 4,
+      "role": "history",
+      "image_id": "4d0491c2f3b6a61bbc4e9a47646c3dcb203884e03773145704f0921b490bbc0f",
+      "path": "assets/4d0491c2f3b6a61bbc4e9a47646c3dcb203884e03773145704f0921b490bbc0f.webp",
+      "sha256": "4d0491c2f3b6a61bbc4e9a47646c3dcb203884e03773145704f0921b490bbc0f",
+      "bytes": 17026
+    },
+    {
+      "frame": 7,
+      "role": "history",
+      "image_id": "9c3357ba1ad7c8d8f9a933fc1d0fc08821fc2b79def3b08c944a4eab49b17a8f",
+      "path": "assets/9c3357ba1ad7c8d8f9a933fc1d0fc08821fc2b79def3b08c944a4eab49b17a8f.webp",
+      "sha256": "9c3357ba1ad7c8d8f9a933fc1d0fc08821fc2b79def3b08c944a4eab49b17a8f",
+      "bytes": 17364
+    },
+    {
+      "frame": 10,
+      "role": "history",
+      "image_id": "d3745d2a24c731ea5dff0c5e3eced636556cad5629985e66431f05576a4014ac",
+      "path": "assets/d3745d2a24c731ea5dff0c5e3eced636556cad5629985e66431f05576a4014ac.webp",
+      "sha256": "d3745d2a24c731ea5dff0c5e3eced636556cad5629985e66431f05576a4014ac",
+      "bytes": 36698
+    },
+    {
+      "frame": 13,
+      "role": "history",
+      "image_id": "10ffc3088f87b78ce1ed7397ead27b8fc16cbda1ef1a28264d139449e114a428",
+      "path": "assets/10ffc3088f87b78ce1ed7397ead27b8fc16cbda1ef1a28264d139449e114a428.webp",
+      "sha256": "10ffc3088f87b78ce1ed7397ead27b8fc16cbda1ef1a28264d139449e114a428",
+      "bytes": 32428
+    },
+    {
+      "frame": 14,
+      "role": "B",
+      "image_id": "9065bb3b30d4fc6129f6e7cc8333f9077fff8e5c630d062d279b6a46b4291de9",
+      "path": "assets/9065bb3b30d4fc6129f6e7cc8333f9077fff8e5c630d062d279b6a46b4291de9.webp",
+      "sha256": "9065bb3b30d4fc6129f6e7cc8333f9077fff8e5c630d062d279b6a46b4291de9",
+      "bytes": 26838
+    }
+  ],
+  "settings": {
+    "model": "deepseek-flash",
+    "response_format": {
+      "type": "json_object"
+    },
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_tokens": 32768,
+    "stream": false
+  },
+  "prompt_sha256": "129ef91051dcb6cc1be8e2e276cb102166bff322a36fdd10661e644de2162cad",
+  "request_sha256": "9e207349737dd3eec11d62b1f55338725c8a82d5485d7772f7b9f445da0426a3",
+  "started_at": "2026-11-12T10:40:43.160397+00:00",
+  "worker_pid": 49660
+}

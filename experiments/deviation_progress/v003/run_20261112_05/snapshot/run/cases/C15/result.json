@@ -1,0 +1,290 @@
+{
+  "case_number": 15,
+  "case_index": 7,
+  "episode_id": "kujiale_0208_21_4 · F2",
+  "real_episode_id": "kujiale_0208_21_4",
+  "scene": "kujiale_0208",
+  "worker_pid": 46276,
+  "started_at": "2026-11-12T08:25:49.675933+00:00",
+  "completed_at": "2026-11-12T08:26:40.528485+00:00",
+  "reviews": [
+    {
+      "node_id": "S01",
+      "node_frame": 8,
+      "available_at_frame": 13,
+      "terminal_node": false,
+      "mode": "initialization",
+      "previous_id": "S01",
+      "from_frame": 8,
+      "to_frame": 8,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 8,
+          "role": "A=B",
+          "image_id": "e6964fe13b2fab1eb4c0b570f03ffbdf795400307587c4e3bc1a61742d37c3a6",
+          "path": "assets/e6964fe13b2fab1eb4c0b570f03ffbdf795400307587c4e3bc1a61742d37c3a6.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 15.285,
+      "started_at": "2026-11-12T08:25:49.683132+00:00",
+      "completed_at": "2026-11-12T08:26:04.963680+00:00",
+      "worker_pid": 46276,
+      "request_file": "run/cases/C15/S01.request.json",
+      "response_file": "run/cases/C15/S01.response.json",
+      "usage": {
+        "prompt_tokens": 1416,
+        "completion_tokens": 2428,
+        "total_tokens": 3844,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1724
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 520
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S01",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "当前仅有一帧初始化观测：机器人位于一间白色室内空间，左侧有低矮媒体柜/储物架，前方和右侧可见门洞或通道开口；未观察到穿门、椅子、盆栽或窗户。",
+          "en": "Only one initialization frame is available: the robot is in a white interior space, with a low media console/storage shelf on the left and doorway or passage openings visible ahead and to the right; no door traversal, chair, potted plant, or window is observed."
+        },
+        "reason": {
+          "zh": "S01 为本轮首个有效节点，不能据此确认此前是否已右转或经过电视/媒体柜；画面中的低柜位于左侧，门洞仅被看到，不能确认已穿门进入下一房间。",
+          "en": "S01 is the first valid node of this review, so it cannot confirm whether the robot has already turned right or passed the TV/media console; the low cabinet is on the left in the image, the doorway is only seen, and passage through it into the next room cannot be confirmed."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Turn right, passing the TV and media console on your right.",
+            "quote_zh": "右转，经过你右侧的电视和媒体柜。"
+          },
+          {
+            "quote_en": "Walk forward through the doorway into the next room.",
+            "quote_zh": "向前穿过门口进入下一个房间。"
+          },
+          {
+            "quote_en": "stop in front of the window.",
+            "quote_zh": "在窗前停下。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              8
+            ],
+            "description": {
+              "zh": "画面显示白色室内空间；左下有低矮柜体及上方壁架，前方/左中有门洞，右侧有另一个开口，地面与墙面均为白色。",
+              "en": "The frame shows a white interior space; in the lower left are a low cabinet and shelving above, with an opening ahead/left-center and another opening on the right; floors and walls are white."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "初始化状态：当前位于白色室内空间，左侧见低矮媒体柜/储物架，前方及右侧见门洞或通道；此前路线未确认，尚未确认右转经过电视/媒体柜、穿门进入下一房间，也未确认棕色椅子、盆栽或窗户。",
+          "en": "Initialization state: currently in a white interior space, with a low media console/storage shelf on the left and doorway/passage openings ahead and to the right; the prior route is unconfirmed, and it is not confirmed that the robot turned right past the TV/media console, passed through the doorway into the next room, or reached the brown chair, potted plant, or window."
+        },
+        "uncertainties": [
+          {
+            "zh": "是否已完成右转并从右侧经过电视和媒体柜，尚未确认。",
+            "en": "Whether the right turn has been completed and the TV and media console have been passed on the right is not yet confirmed."
+          },
+          {
+            "zh": "是否已穿过前方门洞进入下一房间，尚未确认。",
+            "en": "Whether the doorway ahead has been passed through into the next room is not yet confirmed."
+          },
+          {
+            "zh": "棕色椅子、盆栽和窗户的位置及是否到达，尚未确认。",
+            "en": "The locations of the brown chair, potted plant, and window, and whether they have been reached, are not yet confirmed."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "初始化状态：当前位于白色室内空间，左侧见低矮媒体柜/储物架，前方及右侧见门洞或通道；此前路线未确认，尚未确认右转经过电视/媒体柜、穿门进入下一房间，也未确认棕色椅子、盆栽或窗户。",
+        "en": "Initialization state: currently in a white interior space, with a low media console/storage shelf on the left and doorway/passage openings ahead and to the right; the prior route is unconfirmed, and it is not confirmed that the robot turned right past the TV/media console, passed through the doorway into the next room, or reached the brown chair, potted plant, or window."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 8
+      }
+    },
+    {
+      "node_id": "S02",
+      "node_frame": 33,
+      "available_at_frame": 38,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S01",
+      "from_frame": 8,
+      "to_frame": 33,
+      "prior_progress": {
+        "zh": "初始化状态：当前位于白色室内空间，左侧见低矮媒体柜/储物架，前方及右侧见门洞或通道；此前路线未确认，尚未确认右转经过电视/媒体柜、穿门进入下一房间，也未确认棕色椅子、盆栽或窗户。",
+        "en": "Initialization state: currently in a white interior space, with a low media console/storage shelf on the left and doorway/passage openings ahead and to the right; the prior route is unconfirmed, and it is not confirmed that the robot turned right past the TV/media console, passed through the doorway into the next room, or reached the brown chair, potted plant, or window."
+      },
+      "images": [
+        {
+          "frame": 8,
+          "role": "A",
+          "image_id": "e6964fe13b2fab1eb4c0b570f03ffbdf795400307587c4e3bc1a61742d37c3a6",
+          "path": "assets/e6964fe13b2fab1eb4c0b570f03ffbdf795400307587c4e3bc1a61742d37c3a6.webp"
+        },
+        {
+          "frame": 9,
+          "role": "history",
+          "image_id": "45e013097719f663e52de075400e15346528a4ad71f15373beb9fe0fe17b5c9f",
+          "path": "assets/45e013097719f663e52de075400e15346528a4ad71f15373beb9fe0fe17b5c9f.webp"
+        },
+        {
+          "frame": 15,
+          "role": "history",
+          "image_id": "d271d1e9700b7a01944bbab824016b2a48e10f9e8f20129702fcad0ab0fbe84f",
+          "path": "assets/d271d1e9700b7a01944bbab824016b2a48e10f9e8f20129702fcad0ab0fbe84f.webp"
+        },
+        {
+          "frame": 21,
+          "role": "history",
+          "image_id": "875a957c0ba40d447b42c06c2e9605c9150df2444751326587353f571f552e29",
+          "path": "assets/875a957c0ba40d447b42c06c2e9605c9150df2444751326587353f571f552e29.webp"
+        },
+        {
+          "frame": 26,
+          "role": "history",
+          "image_id": "23f4421d1e5191cd901ebec0a4b52c2df4cc0eaf040193197248a7ad9c3b3142",
+          "path": "assets/23f4421d1e5191cd901ebec0a4b52c2df4cc0eaf040193197248a7ad9c3b3142.webp"
+        },
+        {
+          "frame": 32,
+          "role": "history",
+          "image_id": "1c02d8f43e01ed2d4dfdba32e5a81dd03444811180e278b1eab13491e0cb195e",
+          "path": "assets/1c02d8f43e01ed2d4dfdba32e5a81dd03444811180e278b1eab13491e0cb195e.webp"
+        },
+        {
+          "frame": 33,
+          "role": "B",
+          "image_id": "295a5d23ffb7bdeb996bfa2b4c5ffc40e3bc9278ec810ba8e560efd478b92631",
+          "path": "assets/295a5d23ffb7bdeb996bfa2b4c5ffc40e3bc9278ec810ba8e560efd478b92631.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 35.518,
+      "started_at": "2026-11-12T08:26:05.004005+00:00",
+      "completed_at": "2026-11-12T08:26:40.522358+00:00",
+      "worker_pid": 46276,
+      "request_file": "run/cases/C15/S02.request.json",
+      "response_file": "run/cases/C15/S02.response.json",
+      "usage": {
+        "prompt_tokens": 2756,
+        "completion_tokens": 5408,
+        "total_tokens": 8164,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4615
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1860
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S02",
+        "verdict": "deviated",
+        "segment_summary": {
+          "zh": "从A处沿白色空间向前推进，低矮媒体/储物柜位于左侧并逐渐退到画面左下；随后路线靠近右侧的洗手台、镜柜和狭窄门洞，B停在或接近该门洞处。全程未见电视、棕色椅子、盆栽或窗户。",
+          "en": "From A, the robot advanced through the white space; the low media/storage console stayed on the left and receded toward the lower left. The route then approached a vanity/sink, mirror cabinet, and narrow doorway on the right, with B at or near that doorway. No TV, brown chair, potted plant, or window was seen."
+        },
+        "reason": {
+          "zh": "任务要求右转后让电视和媒体柜位于右侧，再穿过门洞直行，经过右侧棕色椅子和左侧盆栽后停在窗前。F8/F15显示低矮媒体/储物柜在左侧并被向前经过；F21–F33的路线靠近右侧洗手台和窄门洞，未见任务地标，因此与要求冲突。",
+          "en": "The task requires turning right so that the TV and media console are on the right, then walking through the doorway and continuing straight past a brown chair on the right and a potted plant on the left, stopping in front of the window. Frames F8/F15 show the low media/storage console on the left as the robot moves forward past it; the route in F21–F33 approaches a vanity and narrow doorway on the right, without the task landmarks, so it conflicts with the requirement."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Turn right, passing the TV and media console on your right.",
+            "quote_zh": "右转，从右侧经过电视和媒体柜。"
+          },
+          {
+            "quote_en": "Walk forward through the doorway into the next room.",
+            "quote_zh": "向前穿过门洞进入下一个房间。"
+          },
+          {
+            "quote_en": "Continue straight, passing a brown chair on your right and a potted plant on your left, and stop in front of the window.",
+            "quote_zh": "继续直行，从右侧经过一把棕色椅子、从左侧经过一盆盆栽，然后停在窗前。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              8,
+              15
+            ],
+            "description": {
+              "zh": "F8和F15显示低矮媒体/储物柜位于左侧；随着机器人前进，它退向左下角，且未见电视位于右侧。",
+              "en": "F8 and F15 show the low media/storage console on the left; as the robot advances, it recedes toward the lower left, and no TV is seen on the right."
+            }
+          },
+          {
+            "frames": [
+              21,
+              26
+            ],
+            "description": {
+              "zh": "机器人靠近带洗手台和镜柜的区域，洗手台在右侧；前方是一个狭窄的白色门洞。",
+              "en": "The robot approaches a vanity and mirror-cabinet area, with the vanity on the right; ahead is a narrow white doorway."
+            }
+          },
+          {
+            "frames": [
+              32,
+              33
+            ],
+            "description": {
+              "zh": "终点B处在狭窄门洞/米色开口附近，右侧仍可见洗手台边缘；画面中未见窗户。",
+              "en": "Endpoint B is near the narrow doorway/beige opening, with the edge of the vanity still visible on the right; no window is visible."
+            }
+          }
+        ],
+        "semantic_progress": null,
+        "uncertainties": [
+          {
+            "zh": "仅凭B处单帧无法确认机器人是否已跨过窄门洞的阈值。",
+            "en": "It cannot be confirmed from the single B frame whether the robot has crossed the threshold of the narrow doorway."
+          },
+          {
+            "zh": "该洗手台区域与任务所说“下一个房间”的对应关系尚未确认。",
+            "en": "The correspondence between this vanity area and the task's 'next room' has not been confirmed."
+          }
+        ]
+      },
+      "rollback_target": {
+        "node_id": "S01",
+        "frame": 8,
+        "progress": {
+          "zh": "初始化状态：当前位于白色室内空间，左侧见低矮媒体柜/储物架，前方及右侧见门洞或通道；此前路线未确认，尚未确认右转经过电视/媒体柜、穿门进入下一房间，也未确认棕色椅子、盆栽或窗户。",
+          "en": "Initialization state: currently in a white interior space, with a low media console/storage shelf on the left and doorway/passage openings ahead and to the right; the prior route is unconfirmed, and it is not confirmed that the robot turned right past the TV/media console, passed through the doorway into the next room, or reached the brown chair, potted plant, or window."
+        }
+      },
+      "committed_progress": {
+        "zh": "初始化状态：当前位于白色室内空间，左侧见低矮媒体柜/储物架，前方及右侧见门洞或通道；此前路线未确认，尚未确认右转经过电视/媒体柜、穿门进入下一房间，也未确认棕色椅子、盆栽或窗户。",
+        "en": "Initialization state: currently in a white interior space, with a low media console/storage shelf on the left and doorway/passage openings ahead and to the right; the prior route is unconfirmed, and it is not confirmed that the robot turned right past the TV/media console, passed through the doorway into the next room, or reached the brown chair, potted plant, or window."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 8
+      }
+    }
+  ],
+  "stop_node": "S02",
+  "stop_reason": "first_deviation",
+  "terminal_frame": 40,
+  "raw_node_count": 3,
+  "retained_node_count": 3,
+  "unreviewed_nodes": [
+    "S03"
+  ]
+}

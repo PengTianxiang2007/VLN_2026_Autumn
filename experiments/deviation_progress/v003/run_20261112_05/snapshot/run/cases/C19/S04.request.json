@@ -1,0 +1,84 @@
+{
+  "mode": "segment",
+  "previous_id": "S03",
+  "current_id": "S04",
+  "previous_frame": 54,
+  "current_frame": 69,
+  "instruction_en": "Turn right, moving away from the console table with the black and gold painting. Walk straight into the hallway, keeping the wall with two framed plant pictures on your left and a storage unit on your right. Continue straight past an open doorway leading to a bathroom on your right. Turn left through the next doorway to enter the bedroom. Walk forward, keeping the TV and dresser on your left and the bed on your right. Stop in front of the window.",
+  "prior_semantic_progress": "已向右转离开黑金画边桌并进入走廊：左侧墙面有两幅植物框画，右侧为储物柜/衣柜，前方有通向相邻房间的敞开门洞；截至 B 仍沿走廊前进，紧邻右侧挂有灰色外套的木质储物柜。尚未确认经过右侧浴室门口，也未左转进入卧室，未见电视、梳妆台、床或窗前位置。",
+  "coverage": "Endpoint observations plus up to five uniformly sampled intermediate observations. Frames are not necessarily consecutive. Review ends at B.",
+  "images": [
+    {
+      "frame": 54,
+      "role": "A",
+      "image_id": "077a9a58e41ff26852080cf2e0892bb53bb4dfd85e8ffe9fdc2c3750af386fd8",
+      "path": "assets/077a9a58e41ff26852080cf2e0892bb53bb4dfd85e8ffe9fdc2c3750af386fd8.webp",
+      "sha256": "077a9a58e41ff26852080cf2e0892bb53bb4dfd85e8ffe9fdc2c3750af386fd8",
+      "bytes": 24590
+    },
+    {
+      "frame": 55,
+      "role": "history",
+      "image_id": "8b25bde7bd1c4ccb877e9277b0fc9d9175ebc016d8dc4470d71a09fc34879cab",
+      "path": "assets/8b25bde7bd1c4ccb877e9277b0fc9d9175ebc016d8dc4470d71a09fc34879cab.webp",
+      "sha256": "8b25bde7bd1c4ccb877e9277b0fc9d9175ebc016d8dc4470d71a09fc34879cab",
+      "bytes": 26766
+    },
+    {
+      "frame": 58,
+      "role": "history",
+      "image_id": "f769fd96dcf06ea57ca2f0b4d22ca8ad0335ef0cd4efdcc4d675e2dd45301590",
+      "path": "assets/f769fd96dcf06ea57ca2f0b4d22ca8ad0335ef0cd4efdcc4d675e2dd45301590.webp",
+      "sha256": "f769fd96dcf06ea57ca2f0b4d22ca8ad0335ef0cd4efdcc4d675e2dd45301590",
+      "bytes": 24152
+    },
+    {
+      "frame": 61,
+      "role": "history",
+      "image_id": "584c291e6a850b3b20e4735420db07858b328daeef9218ec0ae063159d395c37",
+      "path": "assets/584c291e6a850b3b20e4735420db07858b328daeef9218ec0ae063159d395c37.webp",
+      "sha256": "584c291e6a850b3b20e4735420db07858b328daeef9218ec0ae063159d395c37",
+      "bytes": 26996
+    },
+    {
+      "frame": 65,
+      "role": "history",
+      "image_id": "8e87959a4e16cdb0c78b742f6eb40194222ca389455448e4931741b1b502e996",
+      "path": "assets/8e87959a4e16cdb0c78b742f6eb40194222ca389455448e4931741b1b502e996.webp",
+      "sha256": "8e87959a4e16cdb0c78b742f6eb40194222ca389455448e4931741b1b502e996",
+      "bytes": 25906
+    },
+    {
+      "frame": 68,
+      "role": "history",
+      "image_id": "32ce23457125b2cf3a10b32eb9f431c9d589524b162f9cc84cde858a9658279d",
+      "path": "assets/32ce23457125b2cf3a10b32eb9f431c9d589524b162f9cc84cde858a9658279d.webp",
+      "sha256": "32ce23457125b2cf3a10b32eb9f431c9d589524b162f9cc84cde858a9658279d",
+      "bytes": 25430
+    },
+    {
+      "frame": 69,
+      "role": "B",
+      "image_id": "c72296c69b5d8ebec5ad218ab9c74da4eed83418bb5dbc07ce39ebcf2aa9129e",
+      "path": "assets/c72296c69b5d8ebec5ad218ab9c74da4eed83418bb5dbc07ce39ebcf2aa9129e.webp",
+      "sha256": "c72296c69b5d8ebec5ad218ab9c74da4eed83418bb5dbc07ce39ebcf2aa9129e",
+      "bytes": 26396
+    }
+  ],
+  "settings": {
+    "model": "deepseek-flash",
+    "response_format": {
+      "type": "json_object"
+    },
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_tokens": 32768,
+    "stream": false
+  },
+  "prompt_sha256": "129ef91051dcb6cc1be8e2e276cb102166bff322a36fdd10661e644de2162cad",
+  "request_sha256": "1b0b06974fea12b448f89c241fe14d77507ae42ccebedfd67677693f42527412",
+  "started_at": "2026-11-12T10:42:10.360503+00:00",
+  "worker_pid": 50992
+}

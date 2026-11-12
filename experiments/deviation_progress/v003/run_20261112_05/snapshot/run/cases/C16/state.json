@@ -1,0 +1,378 @@
+{
+  "case_number": 16,
+  "pid": 41376,
+  "reviews": [
+    {
+      "node_id": "S01",
+      "node_frame": 0,
+      "available_at_frame": 5,
+      "terminal_node": false,
+      "mode": "initialization",
+      "previous_id": "S01",
+      "from_frame": 0,
+      "to_frame": 0,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 0,
+          "role": "A=B",
+          "image_id": "034bcc968e4e1fe42c0a4c31b1504c4f96ea7162947791878bc6e2e88ebb0780",
+          "path": "assets/034bcc968e4e1fe42c0a4c31b1504c4f96ea7162947791878bc6e2e88ebb0780.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 8.838,
+      "started_at": "2026-11-12T08:25:49.692374+00:00",
+      "completed_at": "2026-11-12T08:25:58.530174+00:00",
+      "worker_pid": 41376,
+      "request_file": "run/cases/C16/S01.request.json",
+      "response_file": "run/cases/C16/S01.response.json",
+      "usage": {
+        "prompt_tokens": 1448,
+        "completion_tokens": 1334,
+        "total_tokens": 2782,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 701
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 552
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S01",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "在节点S01，视角位于一条铺瓷砖的走廊内，正对前方敞开的门洞；门内可见木地板房间和远处的窗帘或窗户。仅有这一帧，无法确认此前经过了哪些空间或完成了哪些转向。",
+          "en": "At node S01, the view is inside a tiled hallway, facing an open doorway ahead; inside the doorway, a wood-floored room and a curtain or window in the distance are visible. From this single frame alone, it cannot be confirmed which spaces were passed or which turns were completed previously."
+        },
+        "reason": {
+          "zh": "首次有效节点A=B，仅凭此帧建立当前语义状态。走廊和门洞本身与任务场景不冲突，但尚不能确认左侧圆镜、右转进入客厅、电视、床或洗手间等任务地标及此前通行顺序。",
+          "en": "This is the first valid node with A=B, so only this frame is used to establish the current semantic state. The hallway and doorway do not conflict with the task scene, but the round mirror on the left, the right turn into the living room, the TV, the bed, the bathroom, and the prior travel order cannot yet be confirmed."
+        },
+        "instruction_evidence": [],
+        "visual_evidence": [
+          {
+            "frames": [
+              0
+            ],
+            "description": {
+              "zh": "F0显示前景为灰色墙面和瓷砖地面的走廊，前方有一处敞开的门洞；门内可见木地板、远处窗帘或窗户以及部分家具。",
+              "en": "F0 shows a hallway with gray walls and a tiled floor, with an open doorway ahead; inside the doorway, a wood floor, a distant curtain or window, and some furniture are visible."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "首次有效节点S01：位于铺瓷砖的走廊，正对前方敞开的门洞，门内为木地板房间，远处可见窗帘或窗户。此前是否经过左侧圆镜、右转进入客厅以及后续电视、床等要求均尚未确认。",
+          "en": "First valid node S01: located in a tiled hallway, facing an open doorway ahead, with a wood-floored room inside and a curtain or window visible in the distance. Whether the route previously passed a round mirror on the left, turned right into the living room, or met the subsequent TV and bed requirements remains unconfirmed."
+        },
+        "uncertainties": [
+          {
+            "zh": "无法确认此前是否沿走廊直行并经过左侧圆镜、右转进入客厅。",
+            "en": "It cannot be confirmed whether the route previously walked straight down the hallway, passed a round mirror on the left, and turned right into the living room."
+          },
+          {
+            "zh": "无法确认当前门洞是否就是电视旁的门洞，也无法确认电视、床、右侧洗手间等位置关系。",
+            "en": "It cannot be confirmed whether the current doorway is the doorway beside the TV, nor can the spatial relationships of the TV, bed, and bathroom on the right be confirmed."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "首次有效节点S01：位于铺瓷砖的走廊，正对前方敞开的门洞，门内为木地板房间，远处可见窗帘或窗户。此前是否经过左侧圆镜、右转进入客厅以及后续电视、床等要求均尚未确认。",
+        "en": "First valid node S01: located in a tiled hallway, facing an open doorway ahead, with a wood-floored room inside and a curtain or window visible in the distance. Whether the route previously passed a round mirror on the left, turned right into the living room, or met the subsequent TV and bed requirements remains unconfirmed."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 0
+      }
+    },
+    {
+      "node_id": "S02",
+      "node_frame": 16,
+      "available_at_frame": 21,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S01",
+      "from_frame": 0,
+      "to_frame": 16,
+      "prior_progress": {
+        "zh": "首次有效节点S01：位于铺瓷砖的走廊，正对前方敞开的门洞，门内为木地板房间，远处可见窗帘或窗户。此前是否经过左侧圆镜、右转进入客厅以及后续电视、床等要求均尚未确认。",
+        "en": "First valid node S01: located in a tiled hallway, facing an open doorway ahead, with a wood-floored room inside and a curtain or window visible in the distance. Whether the route previously passed a round mirror on the left, turned right into the living room, or met the subsequent TV and bed requirements remains unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 0,
+          "role": "A",
+          "image_id": "034bcc968e4e1fe42c0a4c31b1504c4f96ea7162947791878bc6e2e88ebb0780",
+          "path": "assets/034bcc968e4e1fe42c0a4c31b1504c4f96ea7162947791878bc6e2e88ebb0780.webp"
+        },
+        {
+          "frame": 1,
+          "role": "history",
+          "image_id": "f6711a043bc33432e2144c861c7d5e0ba82fa5658642d8af137054097ffe6ad2",
+          "path": "assets/f6711a043bc33432e2144c861c7d5e0ba82fa5658642d8af137054097ffe6ad2.webp"
+        },
+        {
+          "frame": 5,
+          "role": "history",
+          "image_id": "8ba578a119514b1a3590fd9450a4fe1f94abf5e12f3c1caab29ac9f99ca4b4be",
+          "path": "assets/8ba578a119514b1a3590fd9450a4fe1f94abf5e12f3c1caab29ac9f99ca4b4be.webp"
+        },
+        {
+          "frame": 8,
+          "role": "history",
+          "image_id": "13388f5b3760961b9a7a21e49c6817db6e3d8916018dcfbc81862fd9418f9d2d",
+          "path": "assets/13388f5b3760961b9a7a21e49c6817db6e3d8916018dcfbc81862fd9418f9d2d.webp"
+        },
+        {
+          "frame": 11,
+          "role": "history",
+          "image_id": "6b44ef4896a4821b2ce900451c573771a0351d30c88a14177ca75add6eba8c78",
+          "path": "assets/6b44ef4896a4821b2ce900451c573771a0351d30c88a14177ca75add6eba8c78.webp"
+        },
+        {
+          "frame": 15,
+          "role": "history",
+          "image_id": "5ce5e8aa658c7cc85c5500b54d01e72282f32477ff2821540f5c047b183dcc7e",
+          "path": "assets/5ce5e8aa658c7cc85c5500b54d01e72282f32477ff2821540f5c047b183dcc7e.webp"
+        },
+        {
+          "frame": 16,
+          "role": "B",
+          "image_id": "582b3ad6fc13f9986d3821d5ad123a0f95a5d087ad4bf6071a083e46e687a7d3",
+          "path": "assets/582b3ad6fc13f9986d3821d5ad123a0f95a5d087ad4bf6071a083e46e687a7d3.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 49.528,
+      "started_at": "2026-11-12T08:25:58.546387+00:00",
+      "completed_at": "2026-11-12T08:26:48.074892+00:00",
+      "worker_pid": 41376,
+      "request_file": "run/cases/C16/S02.request.json",
+      "response_file": "run/cases/C16/S02.response.json",
+      "usage": {
+        "prompt_tokens": 2785,
+        "completion_tokens": 7579,
+        "total_tokens": 10364,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 6655
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1889
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S02",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "从S01起，机器人沿铺瓷砖的走廊继续直行，经过左侧带圆镜的开放盥洗区，并接近尽头通往木地板房间的敞开门口；到达B时仍在门槛前的瓷砖地面上，没有右转。",
+          "en": "From S01, the robot continued straight along the tiled hallway, passed an open vanity/bathroom area with a round mirror on the left, and approached the open doorway at the end leading to a wood-floored room; at B it was still on the tiled side before the threshold and did not turn right."
+        },
+        "reason": {
+          "zh": "画面显示沿瓷砖走廊直行，F8和F11中圆镜位于左侧，之后继续接近木地板房间的敞开门口；这与“沿走廊直行并从左侧经过圆镜”相符。尚无证据显示已经右转或进入客厅，因此右转及后续照明面板、沙发、电视、床等仍待确认，不构成明确偏航。",
+          "en": "The frames show straight movement along the tiled hallway, with the round mirror on the left in F8 and F11, followed by continued approach toward the open doorway into the wood-floored room. This is consistent with walking straight down the hallway and passing the round mirror on the left. There is no evidence yet of a right turn or entry into the living room, so the right turn and the later illuminated panel, sofa, TV, and bed remain unconfirmed rather than a clear deviation."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Walk straight down the hallway.",
+            "quote_zh": "沿走廊直行。"
+          },
+          {
+            "quote_en": "Pass a round mirror on your left and then turn right to enter the living room area.",
+            "quote_zh": "从左侧经过一面圆镜，然后右转进入客厅区域。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              0,
+              1,
+              5,
+              15,
+              16
+            ],
+            "description": {
+              "zh": "连续画面显示沿铺瓷砖的走廊向前，尽头是通往木地板房间的敞开门口；B帧仍在门槛前的瓷砖地面上，未见穿过门槛。",
+              "en": "The consecutive frames show forward movement along the tiled hallway toward an open doorway leading to a wood-floored room; at frame B the view is still on the tiled side before the threshold, with no crossing visible."
+            }
+          },
+          {
+            "frames": [
+              8,
+              11
+            ],
+            "description": {
+              "zh": "左侧可见开放盥洗区，内有圆镜、洗手台和玻璃淋浴，圆镜位于左侧；右侧为木质门板或墙板，通道仍指向前方。",
+              "en": "An open vanity/bathroom area is visible on the left, with a round mirror, sink, and glass shower; the round mirror is on the left. A wooden door panel or wall panel is on the right, and the passage still points forward."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "截至S02：沿瓷砖走廊继续直行，已经过左侧带圆镜的开放盥洗区，正接近通往木地板房间的敞开门口；B仍在门槛前的瓷砖地面上，尚未右转进入客厅。此前S01可见的远端窗帘或窗户仍在视野内；照明面板、沙发、电视和床等后续参照物均未确认。",
+          "en": "As of S02: continued straight along the tiled hallway, passed the open vanity/bathroom area with a round mirror on the left, and is approaching the open doorway leading to the wood-floored room; B is still on the tiled floor before the threshold and has not yet turned right into the living room. The distant curtains or window visible at S01 remain in view; later references such as the illuminated panel, sofa, TV, and bed are not yet confirmed."
+        },
+        "uncertainties": [
+          {
+            "zh": "B处前方的木地板房间是否就是任务中的客厅尚未确认；右转入口的具体位置也未在画面中明确看到。",
+            "en": "It is not yet confirmed whether the wood-floored room ahead at B is the living room in the task, and the exact location of the right-turn entrance is not clearly visible in the frames."
+          },
+          {
+            "zh": "照明面板、沙发、电视、床以及随后右侧开放卫浴的相对位置尚未确认。",
+            "en": "The relative positions of the illuminated panel, sofa, TV, bed, and the later open bathroom on the right are not yet confirmed."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "截至S02：沿瓷砖走廊继续直行，已经过左侧带圆镜的开放盥洗区，正接近通往木地板房间的敞开门口；B仍在门槛前的瓷砖地面上，尚未右转进入客厅。此前S01可见的远端窗帘或窗户仍在视野内；照明面板、沙发、电视和床等后续参照物均未确认。",
+        "en": "As of S02: continued straight along the tiled hallway, passed the open vanity/bathroom area with a round mirror on the left, and is approaching the open doorway leading to the wood-floored room; B is still on the tiled floor before the threshold and has not yet turned right into the living room. The distant curtains or window visible at S01 remain in view; later references such as the illuminated panel, sofa, TV, and bed are not yet confirmed."
+      },
+      "progress_anchor": {
+        "id": "S02",
+        "frame": 16
+      }
+    },
+    {
+      "node_id": "S03",
+      "node_frame": 21,
+      "available_at_frame": 26,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S02",
+      "from_frame": 16,
+      "to_frame": 21,
+      "prior_progress": {
+        "zh": "截至S02：沿瓷砖走廊继续直行，已经过左侧带圆镜的开放盥洗区，正接近通往木地板房间的敞开门口；B仍在门槛前的瓷砖地面上，尚未右转进入客厅。此前S01可见的远端窗帘或窗户仍在视野内；照明面板、沙发、电视和床等后续参照物均未确认。",
+        "en": "As of S02: continued straight along the tiled hallway, passed the open vanity/bathroom area with a round mirror on the left, and is approaching the open doorway leading to the wood-floored room; B is still on the tiled floor before the threshold and has not yet turned right into the living room. The distant curtains or window visible at S01 remain in view; later references such as the illuminated panel, sofa, TV, and bed are not yet confirmed."
+      },
+      "images": [
+        {
+          "frame": 16,
+          "role": "A",
+          "image_id": "582b3ad6fc13f9986d3821d5ad123a0f95a5d087ad4bf6071a083e46e687a7d3",
+          "path": "assets/582b3ad6fc13f9986d3821d5ad123a0f95a5d087ad4bf6071a083e46e687a7d3.webp"
+        },
+        {
+          "frame": 17,
+          "role": "history",
+          "image_id": "705bd609cc0190c648c98c57899f73259197e3ab740467a764adea0981715bbc",
+          "path": "assets/705bd609cc0190c648c98c57899f73259197e3ab740467a764adea0981715bbc.webp"
+        },
+        {
+          "frame": 18,
+          "role": "history",
+          "image_id": "30d9851b5b8018285f76fc7d7defac6b7e2b7616ec55a2a655d1349fc33360b0",
+          "path": "assets/30d9851b5b8018285f76fc7d7defac6b7e2b7616ec55a2a655d1349fc33360b0.webp"
+        },
+        {
+          "frame": 19,
+          "role": "history",
+          "image_id": "da5d2fa5db68be3c94747c69616849d577f01f97f3ca10049dd7c04d05ce4b98",
+          "path": "assets/da5d2fa5db68be3c94747c69616849d577f01f97f3ca10049dd7c04d05ce4b98.webp"
+        },
+        {
+          "frame": 20,
+          "role": "history",
+          "image_id": "139a577de8f2fc7f4b5ed62b7207d77b88e6f0c357707c310086bc0bf41bd8c9",
+          "path": "assets/139a577de8f2fc7f4b5ed62b7207d77b88e6f0c357707c310086bc0bf41bd8c9.webp"
+        },
+        {
+          "frame": 21,
+          "role": "B",
+          "image_id": "c81e22e0a4382a161445f43026385d9b301d145f3d06e9c8014369c34f23949f",
+          "path": "assets/c81e22e0a4382a161445f43026385d9b301d145f3d06e9c8014369c34f23949f.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 18.498,
+      "started_at": "2026-11-12T08:26:48.080566+00:00",
+      "completed_at": "2026-11-12T08:27:06.574172+00:00",
+      "worker_pid": 41376,
+      "request_file": "run/cases/C16/S03.request.json",
+      "response_file": "run/cases/C16/S03.response.json",
+      "usage": {
+        "prompt_tokens": 2590,
+        "completion_tokens": 2715,
+        "total_tokens": 5305,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2151
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1694
+      },
+      "answer": {
+        "previous_id": "S02",
+        "current_id": "S03",
+        "verdict": "deviated",
+        "segment_summary": {
+          "zh": "从门口继续直行，跨过门槛进入木地板通道；右侧墙面可见两幅挂画，左侧经过深色门洞或开放区域，远端有窗帘和深色家具；视角始终向前，未出现右转进入客厅的动作。",
+          "en": "Continuing straight from the doorway, the robot crossed the threshold into a wood-floored passage; two framed pictures were visible on the right wall, dark door openings or open areas were passed on the left, and curtains and dark furniture were visible in the distance; the view remained forward throughout, with no right turn into a living room."
+        },
+        "reason": {
+          "zh": "任务要求经过左侧圆镜后右转进入客厅区域，但F16至F21显示机器人沿门洞直行跨入木地板通道，并未右转；右侧照明面板和左侧沙发等客厅参照物也未在视野中确认。",
+          "en": "The task requires turning right into the living room area after passing the round mirror on the left, but F16–F21 show the robot moving straight across the threshold into a wood-floored passage without turning right; the illuminated panel on the right and sofa on the left were also not confirmed in view."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "turn right to enter the living room area",
+            "quote_zh": "右转进入客厅区域"
+          },
+          {
+            "quote_en": "Walk forward with an illuminated panel on your right and a sofa on your left.",
+            "quote_zh": "向前走，右侧有照明面板，左侧有沙发。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              16,
+              17,
+              18,
+              19,
+              20,
+              21
+            ],
+            "description": {
+              "zh": "这些帧显示机器人从瓷砖门槛外直行跨入木地板通道，右侧墙面有挂画，左侧经过深色门洞或开放区域，远端可见窗帘和深色家具；相机持续朝前，没有右转动作。",
+              "en": "These frames show the robot moving straight from the tiled threshold into a wood-floored passage, with framed pictures on the right wall, dark door openings or open areas passed on the left, and curtains and dark furniture visible ahead; the camera kept facing forward without any right turn."
+            }
+          }
+        ],
+        "semantic_progress": null,
+        "uncertainties": [
+          {
+            "zh": "尚未确认左侧深色门洞通向何处，也未确认远端深色家具是否为电视；但未按任务要求右转的证据已经明确。",
+            "en": "It is not yet confirmed where the dark doorway on the left leads, nor whether the distant dark furniture is a TV; however, the evidence that the required right turn was not made is clear."
+          }
+        ]
+      },
+      "rollback_target": {
+        "node_id": "S02",
+        "frame": 16,
+        "progress": {
+          "zh": "截至S02：沿瓷砖走廊继续直行，已经过左侧带圆镜的开放盥洗区，正接近通往木地板房间的敞开门口；B仍在门槛前的瓷砖地面上，尚未右转进入客厅。此前S01可见的远端窗帘或窗户仍在视野内；照明面板、沙发、电视和床等后续参照物均未确认。",
+          "en": "As of S02: continued straight along the tiled hallway, passed the open vanity/bathroom area with a round mirror on the left, and is approaching the open doorway leading to the wood-floored room; B is still on the tiled floor before the threshold and has not yet turned right into the living room. The distant curtains or window visible at S01 remain in view; later references such as the illuminated panel, sofa, TV, and bed are not yet confirmed."
+        }
+      },
+      "committed_progress": {
+        "zh": "截至S02：沿瓷砖走廊继续直行，已经过左侧带圆镜的开放盥洗区，正接近通往木地板房间的敞开门口；B仍在门槛前的瓷砖地面上，尚未右转进入客厅。此前S01可见的远端窗帘或窗户仍在视野内；照明面板、沙发、电视和床等后续参照物均未确认。",
+        "en": "As of S02: continued straight along the tiled hallway, passed the open vanity/bathroom area with a round mirror on the left, and is approaching the open doorway leading to the wood-floored room; B is still on the tiled floor before the threshold and has not yet turned right into the living room. The distant curtains or window visible at S01 remain in view; later references such as the illuminated panel, sofa, TV, and bed are not yet confirmed."
+      },
+      "progress_anchor": {
+        "id": "S02",
+        "frame": 16
+      }
+    }
+  ],
+  "stop_node": "S03"
+}

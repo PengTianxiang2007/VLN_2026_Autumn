@@ -1,0 +1,36 @@
+{
+  "mode": "initialization",
+  "previous_id": "S01",
+  "current_id": "S01",
+  "previous_frame": 10,
+  "current_frame": 10,
+  "instruction_en": "Walk forward in the hallway, passing a painting on your left. Continue straight, passing a doorway to a kitchen on your right. At the end of the hallway, turn right to enter the living room. Walk straight through the living room, passing the large grey sofa on your left and a coffee table in front of you, and stop in front of the window.",
+  "prior_semantic_progress": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+  "coverage": "Endpoint observations plus up to five uniformly sampled intermediate observations. Frames are not necessarily consecutive. Review ends at B.",
+  "images": [
+    {
+      "frame": 10,
+      "role": "A=B",
+      "image_id": "e589f0c6a7da74bc449ae68672895e2b1e2915302bd7031bd72ca2805cac32c3",
+      "path": "assets/e589f0c6a7da74bc449ae68672895e2b1e2915302bd7031bd72ca2805cac32c3.webp",
+      "sha256": "e589f0c6a7da74bc449ae68672895e2b1e2915302bd7031bd72ca2805cac32c3",
+      "bytes": 11470
+    }
+  ],
+  "settings": {
+    "model": "deepseek-flash",
+    "response_format": {
+      "type": "json_object"
+    },
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_tokens": 32768,
+    "stream": false
+  },
+  "prompt_sha256": "129ef91051dcb6cc1be8e2e276cb102166bff322a36fdd10661e644de2162cad",
+  "request_sha256": "51818dbf439573ec7f45f6b6aa271c2e37bf59d1186632e758aa47c99ca5a278",
+  "started_at": "2026-11-12T10:38:47.469539+00:00",
+  "worker_pid": 31588
+}

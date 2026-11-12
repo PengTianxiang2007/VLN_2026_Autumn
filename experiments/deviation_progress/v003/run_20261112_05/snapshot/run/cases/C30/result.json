@@ -1,0 +1,428 @@
+{
+  "case_number": 30,
+  "case_index": 29,
+  "episode_id": "kujiale_0257_4_3 · F14",
+  "real_episode_id": "kujiale_0257_4_3",
+  "scene": "kujiale_0257",
+  "worker_pid": 13424,
+  "started_at": "2026-11-12T10:42:28.697038+00:00",
+  "completed_at": "2026-11-12T10:44:42.988617+00:00",
+  "reviews": [
+    {
+      "node_id": "S01",
+      "node_frame": 30,
+      "available_at_frame": 35,
+      "terminal_node": false,
+      "mode": "initialization",
+      "previous_id": "S01",
+      "from_frame": 30,
+      "to_frame": 30,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 30,
+          "role": "A=B",
+          "image_id": "9d272c48ef1215c32609107724e6dde08fb60ce75160638092f4215fd832c534",
+          "path": "assets/9d272c48ef1215c32609107724e6dde08fb60ce75160638092f4215fd832c534.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 11.288,
+      "started_at": "2026-11-12T10:42:28.700766+00:00",
+      "completed_at": "2026-11-12T10:42:39.988250+00:00",
+      "worker_pid": 13424,
+      "request_file": "run/cases/C30/S01.request.json",
+      "response_file": "run/cases/C30/S01.response.json",
+      "usage": {
+        "prompt_tokens": 1476,
+        "completion_tokens": 1556,
+        "total_tokens": 3032,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 810
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 580
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S01",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "这是首次有效节点，A 与 B 为同一帧。画面显示当前位于一处门洞或通道口，面向一个带大面积窗的明亮房间；右前方有木制柜/台，窗边可见座椅或沙发类家具。单帧无法确认此前经过的路线。",
+          "en": "This is the first valid node, with A and B being the same frame. The image shows the current position at a doorway or passage opening, facing a bright room with a large window; a wooden cabinet/console is to the front right, and seating or sofa-like furniture is visible by the window. A single frame cannot confirm the route taken before this point."
+        },
+        "reason": {
+          "zh": "初始化只依据单帧建立当前语义状态。可见门洞、大窗和室内家具，但没有连续观测证明此前经过书架、画作、两道门或已进入开放式客餐厅，因此只确认当前起点状态，不确认此前导航进度。",
+          "en": "Initialization establishes the current semantic state from a single frame only. A doorway, large window, and interior furniture are visible, but there is no continuous observation proving that bookshelves, a painting, two doorways were passed earlier or that the open living/dining area has been entered; therefore only the current starting state is confirmed, not prior navigation progress."
+        },
+        "instruction_evidence": [],
+        "visual_evidence": [
+          {
+            "frames": [
+              30
+            ],
+            "description": {
+              "zh": "第30帧显示从一处门洞或通道口朝向带大窗的明亮房间；右前方有木制柜/台，窗边有座椅或沙发类家具。",
+              "en": "Frame 30 shows a view from a doorway or passage opening toward a bright room with a large window; a wooden cabinet/console is to the front right, and seating or sofa-like furniture is by the window."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "截至 S01（首次有效节点），当前位于一处门洞或通道口，面向带大窗的明亮房间；右前方可见木制柜/台，窗边可见座椅或沙发类家具。此前如何到达、是否经过书架/画作/两道门，以及是否已进入开放式客餐厅均尚未确认。",
+          "en": "As of S01 (the first valid node), the current position is at a doorway or passage opening, facing a bright room with a large window; a wooden cabinet/console is visible to the front right, and seating or sofa-like furniture is visible by the window. How the robot arrived here, whether it passed bookshelves/a painting/two doorways, and whether it has entered the open living/dining area all remain unconfirmed."
+        },
+        "uncertainties": [
+          {
+            "zh": "此前路线及已完成动作尚未确认。",
+            "en": "The prior route and completed actions have not been confirmed."
+          },
+          {
+            "zh": "当前门洞相对任务中“第一处/第二处门洞”的具体身份无法从单帧确定。",
+            "en": "The identity of the current doorway relative to the task's first/second doorway cannot be determined from a single frame."
+          },
+          {
+            "zh": "是否已经跨过当前门洞或已进入前方房间尚不清楚。",
+            "en": "It is unclear whether the robot has already crossed the current doorway or entered the room ahead."
+          },
+          {
+            "zh": "画面中座椅/沙发类家具及木制柜/台的具体类别和朝向未完全确认。",
+            "en": "The exact category and orientation of the seating/sofa-like furniture and the wooden cabinet/console in the image are not fully confirmed."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "截至 S01（首次有效节点），当前位于一处门洞或通道口，面向带大窗的明亮房间；右前方可见木制柜/台，窗边可见座椅或沙发类家具。此前如何到达、是否经过书架/画作/两道门，以及是否已进入开放式客餐厅均尚未确认。",
+        "en": "As of S01 (the first valid node), the current position is at a doorway or passage opening, facing a bright room with a large window; a wooden cabinet/console is visible to the front right, and seating or sofa-like furniture is visible by the window. How the robot arrived here, whether it passed bookshelves/a painting/two doorways, and whether it has entered the open living/dining area all remain unconfirmed."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 30
+      }
+    },
+    {
+      "node_id": "S02",
+      "node_frame": 40,
+      "available_at_frame": 45,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S01",
+      "from_frame": 30,
+      "to_frame": 40,
+      "prior_progress": {
+        "zh": "截至 S01（首次有效节点），当前位于一处门洞或通道口，面向带大窗的明亮房间；右前方可见木制柜/台，窗边可见座椅或沙发类家具。此前如何到达、是否经过书架/画作/两道门，以及是否已进入开放式客餐厅均尚未确认。",
+        "en": "As of S01 (the first valid node), the current position is at a doorway or passage opening, facing a bright room with a large window; a wooden cabinet/console is visible to the front right, and seating or sofa-like furniture is visible by the window. How the robot arrived here, whether it passed bookshelves/a painting/two doorways, and whether it has entered the open living/dining area all remain unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 30,
+          "role": "A",
+          "image_id": "9d272c48ef1215c32609107724e6dde08fb60ce75160638092f4215fd832c534",
+          "path": "assets/9d272c48ef1215c32609107724e6dde08fb60ce75160638092f4215fd832c534.webp"
+        },
+        {
+          "frame": 31,
+          "role": "history",
+          "image_id": "c3c844a6556d6970298814bd1433d716e317b2afec14ba3184d0ec9db2a54e83",
+          "path": "assets/c3c844a6556d6970298814bd1433d716e317b2afec14ba3184d0ec9db2a54e83.webp"
+        },
+        {
+          "frame": 33,
+          "role": "history",
+          "image_id": "910a061e551865f61065637b100c462d4e93f264a9be80117693e4914bff6539",
+          "path": "assets/910a061e551865f61065637b100c462d4e93f264a9be80117693e4914bff6539.webp"
+        },
+        {
+          "frame": 35,
+          "role": "history",
+          "image_id": "a990515a013a4cddaa14e409a47a11db77177b6b02ade3b6e7a8f73d2116e104",
+          "path": "assets/a990515a013a4cddaa14e409a47a11db77177b6b02ade3b6e7a8f73d2116e104.webp"
+        },
+        {
+          "frame": 37,
+          "role": "history",
+          "image_id": "d1c3229d39f3b310f3d76088c6d3c1576b6424ba30e41b5496b346458a0c98be",
+          "path": "assets/d1c3229d39f3b310f3d76088c6d3c1576b6424ba30e41b5496b346458a0c98be.webp"
+        },
+        {
+          "frame": 39,
+          "role": "history",
+          "image_id": "f0ff70caeaf4f30806a935f781545545c3077f566259c81f927f326b0aeea4b1",
+          "path": "assets/f0ff70caeaf4f30806a935f781545545c3077f566259c81f927f326b0aeea4b1.webp"
+        },
+        {
+          "frame": 40,
+          "role": "B",
+          "image_id": "7daf5d3243bc13495c2dde70bc36d3f47e420095ccc34fdf2d71e0a7e1751c47",
+          "path": "assets/7daf5d3243bc13495c2dde70bc36d3f47e420095ccc34fdf2d71e0a7e1751c47.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 42.232,
+      "started_at": "2026-11-12T10:42:39.988250+00:00",
+      "completed_at": "2026-11-12T10:43:22.221716+00:00",
+      "worker_pid": 13424,
+      "request_file": "run/cases/C30/S02.request.json",
+      "response_file": "run/cases/C30/S02.response.json",
+      "usage": {
+        "prompt_tokens": 2826,
+        "completion_tokens": 6473,
+        "total_tokens": 9299,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 5480
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1930
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S02",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "从 S01 门洞处向前走入一间带大窗的明亮房间；画面中电视位于右墙、下方有木柜，窗边沙发/坐卧家具位于左侧。随后继续朝窗前靠近，但到 B 点仍未在窗前停下。",
+          "en": "From the S01 doorway, the robot moved forward into a bright room with a large window; the television is on the right wall with a low wooden cabinet below it, and the sofa/daybed near the window is on the left. It continued approaching the window, but at B it had not yet stopped in front of the window."
+        },
+        "reason": {
+          "zh": "画面显示穿过门洞进入同一明亮空间，电视在右侧、沙发在左侧、大窗在前，符合任务末段接近窗前并保持电视右/沙发左的空间关系；未见与其他通路或相反方位的明确冲突。餐桌椅是否曾在右侧、以及此前两道门/画作尚未由本段画面确认。",
+          "en": "The frames show passage through a doorway into the same bright space, with the television on the right, the sofa on the left, and the large window ahead. This is consistent with the task's final-stage relationship of approaching the window with the television on the right and the sofa on the left; there is no clear conflict with another passage or opposite orientation. Whether the dining table and chairs were kept on the right, and the earlier two doorways/painting, are not confirmed by this segment's frames."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Walk forward into the open room",
+            "quote_zh": "向前走入这个开放房间"
+          },
+          {
+            "quote_en": "with the television on your right and a sofa on your left",
+            "quote_zh": "电视在你的右侧，沙发在你的左侧"
+          },
+          {
+            "quote_en": "stop in front of the large window",
+            "quote_zh": "停在大窗前"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              30,
+              33,
+              37,
+              40
+            ],
+            "description": {
+              "zh": "连续画面显示镜头从门洞处向前进入房间，左侧门框逐渐退向画面边缘，室内地面和右侧陈设逐步靠近。",
+              "en": "The consecutive frames show the camera moving forward from the doorway into the room, with the left doorframe receding toward the image edge and the interior floor and right-side furnishings coming closer."
+            }
+          },
+          {
+            "frames": [
+              37,
+              39,
+              40
+            ],
+            "description": {
+              "zh": "大窗位于前方，电视挂在右墙上方、木柜在其下，窗边沙发/坐卧家具位于左侧。",
+              "en": "The large window is ahead, the television is mounted on the right wall with a wooden cabinet below, and the sofa/daybed near the window is on the left."
+            }
+          },
+          {
+            "frames": [
+              40
+            ],
+            "description": {
+              "zh": "B 点仍可见左侧门洞边缘，前方到窗前尚有一段地面距离，未显示已在大窗前停下。",
+              "en": "At B, the left edge of the doorway is still visible, and there is still floor distance to the window ahead; the view does not show the robot stopped in front of the window."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "截至 S02，已从门洞向前进入带大窗的明亮房间；电视在右墙、木柜在其下，窗边沙发/坐卧家具在左侧，正在朝窗前继续靠近，尚未在窗前停下。此前是否经过书架、画作和两道门，以及餐桌椅是否保持在右侧，仍未确认。",
+          "en": "As of S02, the robot has moved forward from the doorway into a bright room with a large window; the television is on the right wall with a wooden cabinet below, the sofa/daybed is on the left near the window, and it is still approaching the window, not yet stopped in front of it. It remains unconfirmed whether the bookshelves, painting, and two doorways were passed earlier, and whether the dining table and chairs were kept on the right."
+        },
+        "uncertainties": [
+          {
+            "zh": "B 点尚未到达大窗前停下，最终停止位置是否满足要求仍需到窗前确认。",
+            "en": "Point B has not yet reached a stop in front of the large window; the final stopping position still needs to be confirmed at the window."
+          },
+          {
+            "zh": "本段画面未出现餐桌椅，无法确认经过开放房间时是否一直将其保持在右侧。",
+            "en": "The dining table and chairs do not appear in this segment's frames, so it cannot be confirmed that they were kept on the right while moving through the open room."
+          },
+          {
+            "zh": "此前书架、画作和两道门的经过不在本次可用帧中，无法复核。",
+            "en": "The earlier passage past the bookshelves, painting, and two doorways is not within the available frames and cannot be verified."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "截至 S02，已从门洞向前进入带大窗的明亮房间；电视在右墙、木柜在其下，窗边沙发/坐卧家具在左侧，正在朝窗前继续靠近，尚未在窗前停下。此前是否经过书架、画作和两道门，以及餐桌椅是否保持在右侧，仍未确认。",
+        "en": "As of S02, the robot has moved forward from the doorway into a bright room with a large window; the television is on the right wall with a wooden cabinet below, the sofa/daybed is on the left near the window, and it is still approaching the window, not yet stopped in front of it. It remains unconfirmed whether the bookshelves, painting, and two doorways were passed earlier, and whether the dining table and chairs were kept on the right."
+      },
+      "progress_anchor": {
+        "id": "S02",
+        "frame": 40
+      }
+    },
+    {
+      "node_id": "S03",
+      "node_frame": 45,
+      "available_at_frame": 50,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S02",
+      "from_frame": 40,
+      "to_frame": 45,
+      "prior_progress": {
+        "zh": "截至 S02，已从门洞向前进入带大窗的明亮房间；电视在右墙、木柜在其下，窗边沙发/坐卧家具在左侧，正在朝窗前继续靠近，尚未在窗前停下。此前是否经过书架、画作和两道门，以及餐桌椅是否保持在右侧，仍未确认。",
+        "en": "As of S02, the robot has moved forward from the doorway into a bright room with a large window; the television is on the right wall with a wooden cabinet below, the sofa/daybed is on the left near the window, and it is still approaching the window, not yet stopped in front of it. It remains unconfirmed whether the bookshelves, painting, and two doorways were passed earlier, and whether the dining table and chairs were kept on the right."
+      },
+      "images": [
+        {
+          "frame": 40,
+          "role": "A",
+          "image_id": "7daf5d3243bc13495c2dde70bc36d3f47e420095ccc34fdf2d71e0a7e1751c47",
+          "path": "assets/7daf5d3243bc13495c2dde70bc36d3f47e420095ccc34fdf2d71e0a7e1751c47.webp"
+        },
+        {
+          "frame": 41,
+          "role": "history",
+          "image_id": "dfb8c3c38bffa1bbc179a212e9ca5e0617240fe0f189d21d13fe05e64dd3bfdf",
+          "path": "assets/dfb8c3c38bffa1bbc179a212e9ca5e0617240fe0f189d21d13fe05e64dd3bfdf.webp"
+        },
+        {
+          "frame": 42,
+          "role": "history",
+          "image_id": "7a6d758803990fe392a52f1f54e921e77ad86680b1d4598abd59f05fd1c1aee0",
+          "path": "assets/7a6d758803990fe392a52f1f54e921e77ad86680b1d4598abd59f05fd1c1aee0.webp"
+        },
+        {
+          "frame": 43,
+          "role": "history",
+          "image_id": "c076895e38ee235884838f34a8841ab066feac48310c19a7d4a4e13aa0048ea1",
+          "path": "assets/c076895e38ee235884838f34a8841ab066feac48310c19a7d4a4e13aa0048ea1.webp"
+        },
+        {
+          "frame": 44,
+          "role": "history",
+          "image_id": "58cdacb0e8c00c0f2dcba418988f986c0b85d3c46f8b3152398b8fa0faf9ffdd",
+          "path": "assets/58cdacb0e8c00c0f2dcba418988f986c0b85d3c46f8b3152398b8fa0faf9ffdd.webp"
+        },
+        {
+          "frame": 45,
+          "role": "B",
+          "image_id": "1a9920b376595542092effb5d6d0823fc19ff56d3d27a4e53e0efdce06be25ac",
+          "path": "assets/1a9920b376595542092effb5d6d0823fc19ff56d3d27a4e53e0efdce06be25ac.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 80.751,
+      "started_at": "2026-11-12T10:43:22.237986+00:00",
+      "completed_at": "2026-11-12T10:44:42.988617+00:00",
+      "worker_pid": 13424,
+      "request_file": "run/cases/C30/S03.request.json",
+      "response_file": "run/cases/C30/S03.response.json",
+      "usage": {
+        "prompt_tokens": 2611,
+        "completion_tokens": 12338,
+        "total_tokens": 14949,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 11593
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1715
+      },
+      "answer": {
+        "previous_id": "S02",
+        "current_id": "S03",
+        "verdict": "deviated",
+        "segment_summary": {
+          "zh": "本段先从门洞朝明亮房间的大窗方向靠近，电视和木柜在右、窗边坐卧家具在左；随后在门洞附近明显向左转，目标房间连同大窗和沙发滑到画面右侧，至 B 时面对近处白墙/墙角，电视不在视野中，未呈现在窗前停下的状态。",
+          "en": "From the doorway, the view first moved toward the bright room with the large window ahead, the TV and wooden cabinet on the right, and the sofa/daybed on the left. Near the doorway the camera then turned markedly left, so the target room with the large window and sofa shifted to the right side of the view; at B it faces a nearby blank wall/corner, the TV is no longer visible, and there is no evidence of stopping in front of the window."
+        },
+        "reason": {
+          "zh": "与任务要求的“向前走进开放房间并停在大窗前”不符：F44-F45 显示镜头在门洞附近向左转，目标房间和大窗留在右侧，B 处面对墙面/墙角，电视右侧、沙发左侧的最终停靠关系未出现；此前“已进入房间”的记录不能被这些帧支持。",
+          "en": "This conflicts with walking forward into the open room and stopping in front of the large window: frames 44-45 show a clear left turn near the doorway, leaving the target room and large window on the right, while B faces a wall/corner and the required final view with the TV on the right and sofa on the left is absent. The earlier note that the robot had already entered the room is not supported by these frames."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Walk forward into the open room",
+            "quote_zh": "向前走进那个开放房间"
+          },
+          {
+            "quote_en": "Turn slightly left and stop in front of the large window",
+            "quote_zh": "稍微向左转并停在大窗户前"
+          },
+          {
+            "quote_en": "with the television on your right and a sofa on your left",
+            "quote_zh": "电视在你右侧，沙发在你左侧"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              40,
+              41,
+              42,
+              43
+            ],
+            "description": {
+              "zh": "从门洞向明亮房间靠近：大窗在前方，电视与木柜在右墙，窗边坐卧家具在左侧，目标房间在正前方。",
+              "en": "From the doorway, approaching the bright room: the large window is ahead, the TV and wooden cabinet are on the right wall, and the sofa/daybed is on the left; the target room is directly ahead."
+            }
+          },
+          {
+            "frames": [
+              44,
+              45
+            ],
+            "description": {
+              "zh": "镜头明显向左转，门洞/房间连同大窗和沙发滑到画面右侧；B 处正对近处白墙/墙角，电视不在视野中，未呈现在大窗前停下的姿态。",
+              "en": "The camera turns clearly left, so the doorway/room with the large window and sofa shifts to the right side of the view; at B it faces a nearby blank wall/corner, the TV is not visible, and there is no pose of stopping in front of the large window."
+            }
+          }
+        ],
+        "semantic_progress": null,
+        "uncertainties": [
+          {
+            "zh": "此前路线中书架、画作、两道门及餐桌椅的具体通过情况仍未由本次帧确认。",
+            "en": "The earlier pass by the bookshelves, painting, two doorways, and dining table/chairs is still not confirmed by the frames in this segment."
+          }
+        ]
+      },
+      "rollback_target": {
+        "node_id": "S02",
+        "frame": 40,
+        "progress": {
+          "zh": "截至 S02，已从门洞向前进入带大窗的明亮房间；电视在右墙、木柜在其下，窗边沙发/坐卧家具在左侧，正在朝窗前继续靠近，尚未在窗前停下。此前是否经过书架、画作和两道门，以及餐桌椅是否保持在右侧，仍未确认。",
+          "en": "As of S02, the robot has moved forward from the doorway into a bright room with a large window; the television is on the right wall with a wooden cabinet below, the sofa/daybed is on the left near the window, and it is still approaching the window, not yet stopped in front of it. It remains unconfirmed whether the bookshelves, painting, and two doorways were passed earlier, and whether the dining table and chairs were kept on the right."
+        }
+      },
+      "committed_progress": {
+        "zh": "截至 S02，已从门洞向前进入带大窗的明亮房间；电视在右墙、木柜在其下，窗边沙发/坐卧家具在左侧，正在朝窗前继续靠近，尚未在窗前停下。此前是否经过书架、画作和两道门，以及餐桌椅是否保持在右侧，仍未确认。",
+        "en": "As of S02, the robot has moved forward from the doorway into a bright room with a large window; the television is on the right wall with a wooden cabinet below, the sofa/daybed is on the left near the window, and it is still approaching the window, not yet stopped in front of it. It remains unconfirmed whether the bookshelves, painting, and two doorways were passed earlier, and whether the dining table and chairs were kept on the right."
+      },
+      "progress_anchor": {
+        "id": "S02",
+        "frame": 40
+      }
+    }
+  ],
+  "stop_node": "S03",
+  "stop_reason": "first_deviation",
+  "terminal_frame": 65,
+  "raw_node_count": 4,
+  "retained_node_count": 4,
+  "unreviewed_nodes": [
+    "S04"
+  ]
+}

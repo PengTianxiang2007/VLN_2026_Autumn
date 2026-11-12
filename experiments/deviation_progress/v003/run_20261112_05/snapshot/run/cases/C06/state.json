@@ -1,0 +1,573 @@
+{
+  "case_number": 6,
+  "pid": 28772,
+  "reviews": [
+    {
+      "node_id": "S01",
+      "node_frame": 10,
+      "available_at_frame": 15,
+      "terminal_node": false,
+      "mode": "initialization",
+      "previous_id": "S01",
+      "from_frame": 10,
+      "to_frame": 10,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 10,
+          "role": "A=B",
+          "image_id": "9aed7bf38bceb7a7dec10a4348079de0409a0ec12c9bb077d6e35b62c826e213",
+          "path": "assets/9aed7bf38bceb7a7dec10a4348079de0409a0ec12c9bb077d6e35b62c826e213.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 14.541,
+      "started_at": "2026-11-12T08:25:49.639830+00:00",
+      "completed_at": "2026-11-12T08:26:04.172034+00:00",
+      "worker_pid": 28772,
+      "request_file": "run/cases/C06/S01.request.json",
+      "response_file": "run/cases/C06/S01.response.json",
+      "usage": {
+        "prompt_tokens": 1431,
+        "completion_tokens": 2207,
+        "total_tokens": 3638,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1516
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 535
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S01",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "首次有效节点显示当前位于通道或走廊内，前方有一扇木门；右侧可见开放起居区的沙发、台灯和中央单人椅。当前没有观察到卧室、电视、粉蓝窗帘或床。",
+          "en": "The first valid node shows the robot currently in a passage or hallway with a wooden door ahead; on the right, a couch, a lamp, and a central armchair in the open living area are visible. No bedroom, TV, pink and blue curtains, or bed are observed at present."
+        },
+        "reason": {
+          "zh": "该单帧与任务起始段的空间关系部分相符：右侧有沙发和台灯；但只能据此建立当前位置，不能确认此前已沿走廊直行并经过起居区，也不能确认后续是否右转进入卧室。",
+          "en": "This single frame partially matches the spatial relations of the task's starting section: a couch and a lamp are on the right. It only establishes the current position; it cannot confirm that the robot has already walked straight down the hallway and passed the living area, nor whether it will turn right into the bedroom later."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "passing an open living area with a couch and a lamp on your right",
+            "quote_zh": "经过一个开阔的起居区，右侧有沙发和一盏台灯"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              10
+            ],
+            "description": {
+              "zh": "帧10显示通道或走廊尽头有一扇木门；右侧墙边有沙发和台灯，中央有单人椅，前景有茶几；未见卧室、电视、粉蓝窗帘或床。",
+              "en": "Frame 10 shows a wooden door at the end of the passage or hallway; along the right wall are a couch and a lamp, with an armchair in the center and a coffee table in the foreground; no bedroom, TV, pink and blue curtains, or bed are visible."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "截至S01：首次有效节点位于通道或走廊内，前方为木门，右侧可见开放起居区的沙发和台灯；此前是否已沿走廊直行并经过该起居区尚未确认；尚未进入卧室，也未确认电视、粉蓝窗帘或床的位置。",
+          "en": "As of S01: the first valid node is in a passage or hallway with a wooden door ahead and a couch and lamp of the open living area visible on the right; it is not yet confirmed whether the robot previously walked straight down the hallway and passed this living area; it has not entered the bedroom, and the TV, pink and blue curtains, and bed positions are not yet confirmed."
+        },
+        "uncertainties": [
+          {
+            "zh": "此前是否已沿走廊直行并经过开放起居区尚未确认。",
+            "en": "Whether the robot has already walked straight down the hallway and passed the open living area is not yet confirmed."
+          },
+          {
+            "zh": "起居区之后右转进入卧室的入口及卧室位置尚未出现在视野中。",
+            "en": "The entrance for turning right into the bedroom after the living area and the bedroom's location have not yet appeared in view."
+          },
+          {
+            "zh": "是否接近卧室窗前床的左侧尚未确认。",
+            "en": "Whether the robot is approaching the left side of the bed by the bedroom window is not yet confirmed."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "截至S01：首次有效节点位于通道或走廊内，前方为木门，右侧可见开放起居区的沙发和台灯；此前是否已沿走廊直行并经过该起居区尚未确认；尚未进入卧室，也未确认电视、粉蓝窗帘或床的位置。",
+        "en": "As of S01: the first valid node is in a passage or hallway with a wooden door ahead and a couch and lamp of the open living area visible on the right; it is not yet confirmed whether the robot previously walked straight down the hallway and passed this living area; it has not entered the bedroom, and the TV, pink and blue curtains, and bed positions are not yet confirmed."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 10
+      }
+    },
+    {
+      "node_id": "S02",
+      "node_frame": 27,
+      "available_at_frame": 32,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S01",
+      "from_frame": 10,
+      "to_frame": 27,
+      "prior_progress": {
+        "zh": "截至S01：首次有效节点位于通道或走廊内，前方为木门，右侧可见开放起居区的沙发和台灯；此前是否已沿走廊直行并经过该起居区尚未确认；尚未进入卧室，也未确认电视、粉蓝窗帘或床的位置。",
+        "en": "As of S01: the first valid node is in a passage or hallway with a wooden door ahead and a couch and lamp of the open living area visible on the right; it is not yet confirmed whether the robot previously walked straight down the hallway and passed this living area; it has not entered the bedroom, and the TV, pink and blue curtains, and bed positions are not yet confirmed."
+      },
+      "images": [
+        {
+          "frame": 10,
+          "role": "A",
+          "image_id": "9aed7bf38bceb7a7dec10a4348079de0409a0ec12c9bb077d6e35b62c826e213",
+          "path": "assets/9aed7bf38bceb7a7dec10a4348079de0409a0ec12c9bb077d6e35b62c826e213.webp"
+        },
+        {
+          "frame": 11,
+          "role": "history",
+          "image_id": "c0f8e86a2642ce40cfdf6225c80134554fdf647b76a4872c013747f4a89a33cc",
+          "path": "assets/c0f8e86a2642ce40cfdf6225c80134554fdf647b76a4872c013747f4a89a33cc.webp"
+        },
+        {
+          "frame": 15,
+          "role": "history",
+          "image_id": "50ec94a6eda5d80e62591338caa6c9b95c01d8909b5ae3ee284dad224179487e",
+          "path": "assets/50ec94a6eda5d80e62591338caa6c9b95c01d8909b5ae3ee284dad224179487e.webp"
+        },
+        {
+          "frame": 19,
+          "role": "history",
+          "image_id": "40c7bfa9e24332148b11b5a7b6ff78e5e22a59122d1e5d41ed9c4e1c6803001e",
+          "path": "assets/40c7bfa9e24332148b11b5a7b6ff78e5e22a59122d1e5d41ed9c4e1c6803001e.webp"
+        },
+        {
+          "frame": 22,
+          "role": "history",
+          "image_id": "6100dedc3f8ccaa13e0ce5615bdcf381ed18ac2b1d7a68aab7a769c434351b71",
+          "path": "assets/6100dedc3f8ccaa13e0ce5615bdcf381ed18ac2b1d7a68aab7a769c434351b71.webp"
+        },
+        {
+          "frame": 26,
+          "role": "history",
+          "image_id": "48c82512d84661a9e5b4f3090764c5d1885e3b49a81f0f3983ab85857fd98ca7",
+          "path": "assets/48c82512d84661a9e5b4f3090764c5d1885e3b49a81f0f3983ab85857fd98ca7.webp"
+        },
+        {
+          "frame": 27,
+          "role": "B",
+          "image_id": "427510b8a74034c6cb7991f048f65d991bbf7da7d3fc9674d9c1caf2f6635d9a",
+          "path": "assets/427510b8a74034c6cb7991f048f65d991bbf7da7d3fc9674d9c1caf2f6635d9a.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 39.742,
+      "started_at": "2026-11-12T08:26:04.193912+00:00",
+      "completed_at": "2026-11-12T08:26:43.936793+00:00",
+      "worker_pid": 28772,
+      "request_file": "run/cases/C06/S02.request.json",
+      "response_file": "run/cases/C06/S02.response.json",
+      "usage": {
+        "prompt_tokens": 2771,
+        "completion_tokens": 6440,
+        "total_tokens": 9211,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 5225
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1875
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S02",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "本段从走廊内的A沿走廊向前推进：右侧依次可见开放起居区的沙发、台灯和扶手椅，随后左侧经过打开的厨房/餐厅，最后接近走廊尽头一扇关着的木门，右侧近处有边桌和台灯。画面始终朝向走廊前方，尚未右转进入卧室。",
+          "en": "From A in the hallway, the view advanced straight along the corridor: the open living area with a couch, lamp, and armchair appeared on the right, then an open kitchen/dining area was passed on the left, and finally the view approached a closed wooden door at the end of the hallway, with a side table and lamp nearby on the right. The camera remained oriented along the hallway and had not yet turned right into a bedroom."
+        },
+        "reason": {
+          "zh": "任务先要求沿走廊直行并从右侧经过带沙发和台灯的开放起居区；F10-F19及F22-F27支持这一直行和右侧起居区、左侧厨房开口的顺序。B仍面向走廊尽头的木门，新增内容仅到接近门前，尚无右转进入卧室或看到电视、粉蓝窗帘和床的证据，因此本段不构成偏航。",
+          "en": "The task first requires walking straight along the hallway and passing the open living area with a couch and lamp on the right; F10-F19 and F22-F27 support this straight movement and the sequence of the living area on the right and the kitchen opening on the left. At B the view still faces the wooden door at the end of the hallway, and the only new progress is approaching that door; there is no evidence of turning right into the bedroom or seeing the TV, pink/blue curtains, or bed, so this segment does not constitute a deviation."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Walk straight down the hallway, passing an open living area with a couch and a lamp on your right.",
+            "quote_zh": "沿走廊直行，经过右侧带沙发和台灯的开放起居区。"
+          },
+          {
+            "quote_en": "Continue forward, then turn right to enter a bedroom with a TV on a cabinet on your right.",
+            "quote_zh": "继续向前，然后右转进入一间卧室，卧室右侧柜子上有一台电视。"
+          },
+          {
+            "quote_en": "Walk further into the room, towards the window with pink and blue curtains, and stop to the left of the bed.",
+            "quote_zh": "继续向房间深处走，朝带粉色和蓝色窗帘的窗户方向，并在床的左侧停下。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              10,
+              11,
+              15,
+              19
+            ],
+            "description": {
+              "zh": "走廊尽头有木门，右侧开放起居区可见沙发、台灯和扶手椅；镜头沿走廊向前。",
+              "en": "A wooden door is visible at the end of the hallway, and a couch, lamp, and armchair are visible in the open living area on the right; the view moves forward along the hallway."
+            }
+          },
+          {
+            "frames": [
+              22,
+              26
+            ],
+            "description": {
+              "zh": "左侧可见打开的厨房/餐厅及餐桌椅，走廊尽头木门仍在正前方；说明继续沿走廊前行，并未进入左侧房间。",
+              "en": "An open kitchen/dining area with a table and chairs is visible on the left, while the wooden door at the end of the hallway remains ahead; this indicates continued movement along the hallway rather than entering the left-side room."
+            }
+          },
+          {
+            "frames": [
+              27
+            ],
+            "description": {
+              "zh": "到达节点B时镜头仍朝向走廊尽头的关闭木门，右侧近处有边桌和台灯；未呈现已右转进入卧室或卧室内目标物。",
+              "en": "At node B the view still faces the closed wooden door at the end of the hallway, with a side table and lamp nearby on the right; it does not show a right turn into the bedroom or the bedroom targets."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "截至S02：已从走廊沿直线向前推进，右侧经过带沙发、台灯和扶手椅的开放起居区；随后左侧经过打开的厨房/餐厅，继续接近走廊尽头的木门，当前仍面向木门。尚未右转进入卧室，也未确认电视、粉蓝窗帘、床或床左侧停止点。",
+          "en": "As of S02: the route has advanced straight along the hallway, passing the open living area with a couch, lamp, and armchair on the right; an open kitchen/dining area then appeared on the left, and the view continued approaching the wooden door at the end of the hallway, still facing that door. It has not yet turned right into the bedroom, and the TV, pink-and-blue curtains, bed, or stopping point left of the bed have not been confirmed."
+        },
+        "uncertainties": [
+          {
+            "zh": "尚未确认右转进入卧室的具体位置；走廊尽头的木门是否通往卧室、或右侧何处为卧室入口仍不明确。",
+            "en": "It is not yet confirmed where the right turn into the bedroom is; whether the wooden door at the end of the hallway leads to the bedroom, or where the bedroom entrance is on the right, remains unclear."
+          },
+          {
+            "zh": "尚未看到电视、粉蓝窗帘和床，无法确认卧室内部布局及是否已到达床左侧停止点。",
+            "en": "The TV, pink-and-blue curtains, and bed have not yet been seen, so the bedroom layout and whether the stopping point left of the bed has been reached cannot be confirmed."
+          },
+          {
+            "zh": "S01之前是否已更早经过该起居区仍未由本次图像确认；当前只确认从S01到S02的走廊直行经过。",
+            "en": "Whether the living area had already been passed earlier before S01 is still not confirmed by these images; only the straight movement along the hallway from S01 to S02 is confirmed."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "截至S02：已从走廊沿直线向前推进，右侧经过带沙发、台灯和扶手椅的开放起居区；随后左侧经过打开的厨房/餐厅，继续接近走廊尽头的木门，当前仍面向木门。尚未右转进入卧室，也未确认电视、粉蓝窗帘、床或床左侧停止点。",
+        "en": "As of S02: the route has advanced straight along the hallway, passing the open living area with a couch, lamp, and armchair on the right; an open kitchen/dining area then appeared on the left, and the view continued approaching the wooden door at the end of the hallway, still facing that door. It has not yet turned right into the bedroom, and the TV, pink-and-blue curtains, bed, or stopping point left of the bed have not been confirmed."
+      },
+      "progress_anchor": {
+        "id": "S02",
+        "frame": 27
+      }
+    },
+    {
+      "node_id": "S03",
+      "node_frame": 59,
+      "available_at_frame": 64,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S02",
+      "from_frame": 27,
+      "to_frame": 59,
+      "prior_progress": {
+        "zh": "截至S02：已从走廊沿直线向前推进，右侧经过带沙发、台灯和扶手椅的开放起居区；随后左侧经过打开的厨房/餐厅，继续接近走廊尽头的木门，当前仍面向木门。尚未右转进入卧室，也未确认电视、粉蓝窗帘、床或床左侧停止点。",
+        "en": "As of S02: the route has advanced straight along the hallway, passing the open living area with a couch, lamp, and armchair on the right; an open kitchen/dining area then appeared on the left, and the view continued approaching the wooden door at the end of the hallway, still facing that door. It has not yet turned right into the bedroom, and the TV, pink-and-blue curtains, bed, or stopping point left of the bed have not been confirmed."
+      },
+      "images": [
+        {
+          "frame": 27,
+          "role": "A",
+          "image_id": "427510b8a74034c6cb7991f048f65d991bbf7da7d3fc9674d9c1caf2f6635d9a",
+          "path": "assets/427510b8a74034c6cb7991f048f65d991bbf7da7d3fc9674d9c1caf2f6635d9a.webp"
+        },
+        {
+          "frame": 28,
+          "role": "history",
+          "image_id": "fc489b10ee58b468c158fb1f80d90e61d95194c74d4a75a2ec0417592d8b27bd",
+          "path": "assets/fc489b10ee58b468c158fb1f80d90e61d95194c74d4a75a2ec0417592d8b27bd.webp"
+        },
+        {
+          "frame": 36,
+          "role": "history",
+          "image_id": "88f2dec3c5953f5ae0b81623220fed51e14aeec1d40ddde7f849b3cee2a6f0dc",
+          "path": "assets/88f2dec3c5953f5ae0b81623220fed51e14aeec1d40ddde7f849b3cee2a6f0dc.webp"
+        },
+        {
+          "frame": 43,
+          "role": "history",
+          "image_id": "62ffa228fab046f05be4ba67ee1c19d40a66a4ae965ea5ca1129f5aacc14e945",
+          "path": "assets/62ffa228fab046f05be4ba67ee1c19d40a66a4ae965ea5ca1129f5aacc14e945.webp"
+        },
+        {
+          "frame": 50,
+          "role": "history",
+          "image_id": "c8dc88389a4bd5be24c5601df94594fef4859ecfa6cfec18a6b3b481e5bdf48d",
+          "path": "assets/c8dc88389a4bd5be24c5601df94594fef4859ecfa6cfec18a6b3b481e5bdf48d.webp"
+        },
+        {
+          "frame": 58,
+          "role": "history",
+          "image_id": "b021091c4a50922a2705e90d6dd9cad0515186217fbabfc8f5e107d27600564b",
+          "path": "assets/b021091c4a50922a2705e90d6dd9cad0515186217fbabfc8f5e107d27600564b.webp"
+        },
+        {
+          "frame": 59,
+          "role": "B",
+          "image_id": "34ee74b53d5e2f13575b6f3e2bff5e6dd5fcd22cda18028ae63b55b6898fe635",
+          "path": "assets/34ee74b53d5e2f13575b6f3e2bff5e6dd5fcd22cda18028ae63b55b6898fe635.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 24.835,
+      "started_at": "2026-11-12T08:26:43.966661+00:00",
+      "completed_at": "2026-11-12T08:27:08.802095+00:00",
+      "worker_pid": 28772,
+      "request_file": "run/cases/C06/S03.request.json",
+      "response_file": "run/cases/C06/S03.response.json",
+      "usage": {
+        "prompt_tokens": 2783,
+        "completion_tokens": 3413,
+        "total_tokens": 6196,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2531
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1887
+      },
+      "answer": {
+        "previous_id": "S02",
+        "current_id": "S03",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "从走廊尽头继续向前接近木门，随后在白墙转角附近右转，进入一个右侧可见柜面电视和椅子的房间。当前仍在向房间内部推进，尚未确认床、粉蓝窗帘及床左侧停止点。",
+          "en": "Continued forward from the end of the hallway toward the wooden door, then turned right near the white wall corner into a room where a TV on a cabinet and a chair are visible on the right. It is still moving into the room; the bed, pink-and-blue curtains, and the stopping point to the left of the bed have not been confirmed."
+        },
+        "reason": {
+          "zh": "前段已沿走廊右侧经过沙发和台灯，本段图像显示先接近尽头木门，再右转进入带电视柜的房间；电视位置与任务所述卧室相符，但床和窗帘尚未出现，不能确认已到达最终停止点。",
+          "en": "The earlier segment passed the couch and lamp on the right side of the hallway; this segment shows approaching the wooden door at the end and then turning right into a room with a TV on a cabinet. The TV location is consistent with the described bedroom, but the bed and curtains are not yet visible, so the final stopping point is not confirmed."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "turn right to enter a bedroom with a TV on a cabinet on your right",
+            "quote_zh": "右转进入一间卧室，右侧柜子上有一台电视"
+          },
+          {
+            "quote_en": "towards the window with pink and blue curtains, and stop to the left of the bed",
+            "quote_zh": "朝有粉色和蓝色窗帘的窗户前进，并停在床的左侧"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              27,
+              36,
+              43,
+              50
+            ],
+            "description": {
+              "zh": "沿走廊继续接近尽头的木门；右侧台灯桌仍在近处，最后画面到达木门前。",
+              "en": "Continued along the hallway approaching the wooden door at the end; the lamp table remained nearby on the right, and the final frame reached the front of the wooden door."
+            }
+          },
+          {
+            "frames": [
+              58,
+              59
+            ],
+            "description": {
+              "zh": "视角转向左侧白墙/门框一侧，右侧显现室内区域；可见柜面上的电视、椅子以及通向房间内部的地面，支持已经右转进入房间。",
+              "en": "The view turned toward the white wall/doorframe on the left, revealing an interior area on the right; a TV on a cabinet, a chair, and the floor leading into the room are visible, supporting that the robot turned right into the room."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "截至S03：此前已沿走廊直行并右侧经过带沙发、台灯的开放起居区，左侧经过厨房/餐厅；本段继续到走廊尽头木门附近，随后右转进入一个有电视柜和椅子的房间，电视位于右侧柜面上。仍在向房间内部推进，粉蓝窗帘、床及床左侧停止点尚未确认。",
+          "en": "As of S03: previously proceeded straight along the hallway, passing the open living area with a couch and lamp on the right and the kitchen/dining area on the left; this segment continued to the wooden door near the end of the hallway and then turned right into a room with a TV on a cabinet and a chair, with the TV on the right-hand cabinet surface. It is still moving into the room; the pink-and-blue curtains, the bed, and the stopping point to the left of the bed have not been confirmed."
+        },
+        "uncertainties": [
+          {
+            "zh": "尚未确认当前带电视的房间就是指令中的卧室。",
+            "en": "It has not been confirmed that the current room with the TV is the bedroom specified in the instruction."
+          },
+          {
+            "zh": "尚未确认是否已完全穿过卧室入口，也未确认电视相对最终进入方向的右侧关系。",
+            "en": "It has not been confirmed whether the bedroom entrance has been fully crossed, nor the TV's right-side relationship relative to the final entering direction."
+          },
+          {
+            "zh": "床、粉蓝窗帘及床左侧停止点尚未进入视野。",
+            "en": "The bed, pink-and-blue curtains, and the stopping point to the left of the bed have not yet come into view."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "截至S03：此前已沿走廊直行并右侧经过带沙发、台灯的开放起居区，左侧经过厨房/餐厅；本段继续到走廊尽头木门附近，随后右转进入一个有电视柜和椅子的房间，电视位于右侧柜面上。仍在向房间内部推进，粉蓝窗帘、床及床左侧停止点尚未确认。",
+        "en": "As of S03: previously proceeded straight along the hallway, passing the open living area with a couch and lamp on the right and the kitchen/dining area on the left; this segment continued to the wooden door near the end of the hallway and then turned right into a room with a TV on a cabinet and a chair, with the TV on the right-hand cabinet surface. It is still moving into the room; the pink-and-blue curtains, the bed, and the stopping point to the left of the bed have not been confirmed."
+      },
+      "progress_anchor": {
+        "id": "S03",
+        "frame": 59
+      }
+    },
+    {
+      "node_id": "S04",
+      "node_frame": 70,
+      "available_at_frame": 75,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S03",
+      "from_frame": 59,
+      "to_frame": 70,
+      "prior_progress": {
+        "zh": "截至S03：此前已沿走廊直行并右侧经过带沙发、台灯的开放起居区，左侧经过厨房/餐厅；本段继续到走廊尽头木门附近，随后右转进入一个有电视柜和椅子的房间，电视位于右侧柜面上。仍在向房间内部推进，粉蓝窗帘、床及床左侧停止点尚未确认。",
+        "en": "As of S03: previously proceeded straight along the hallway, passing the open living area with a couch and lamp on the right and the kitchen/dining area on the left; this segment continued to the wooden door near the end of the hallway and then turned right into a room with a TV on a cabinet and a chair, with the TV on the right-hand cabinet surface. It is still moving into the room; the pink-and-blue curtains, the bed, and the stopping point to the left of the bed have not been confirmed."
+      },
+      "images": [
+        {
+          "frame": 59,
+          "role": "A",
+          "image_id": "34ee74b53d5e2f13575b6f3e2bff5e6dd5fcd22cda18028ae63b55b6898fe635",
+          "path": "assets/34ee74b53d5e2f13575b6f3e2bff5e6dd5fcd22cda18028ae63b55b6898fe635.webp"
+        },
+        {
+          "frame": 60,
+          "role": "history",
+          "image_id": "d13f50a7f568e8cbb800bffb22fb2186c0f7fb3d057add11ca6236f2874e9cbb",
+          "path": "assets/d13f50a7f568e8cbb800bffb22fb2186c0f7fb3d057add11ca6236f2874e9cbb.webp"
+        },
+        {
+          "frame": 62,
+          "role": "history",
+          "image_id": "260d0795df0f6b591400ead84e4517a5fb183a9762ca03a88c000a5eee21b0c3",
+          "path": "assets/260d0795df0f6b591400ead84e4517a5fb183a9762ca03a88c000a5eee21b0c3.webp"
+        },
+        {
+          "frame": 64,
+          "role": "history",
+          "image_id": "8f02a7435cca3194745103aa79e0064c4061ba0c0d597c443df3e0810e558063",
+          "path": "assets/8f02a7435cca3194745103aa79e0064c4061ba0c0d597c443df3e0810e558063.webp"
+        },
+        {
+          "frame": 67,
+          "role": "history",
+          "image_id": "44fa2e1ea3135855e83a71897d2d45ead8759a88cd3238fb3364d8ca0b47f6d9",
+          "path": "assets/44fa2e1ea3135855e83a71897d2d45ead8759a88cd3238fb3364d8ca0b47f6d9.webp"
+        },
+        {
+          "frame": 69,
+          "role": "history",
+          "image_id": "cdede70057b7d5b7930a269c6df8381255c1a71cb2444b4317836755792d6c14",
+          "path": "assets/cdede70057b7d5b7930a269c6df8381255c1a71cb2444b4317836755792d6c14.webp"
+        },
+        {
+          "frame": 70,
+          "role": "B",
+          "image_id": "5b83fa23250f5c63bba712a8c973e5fdbc70b3b3c421d73173a0675ba3d1b2aa",
+          "path": "assets/5b83fa23250f5c63bba712a8c973e5fdbc70b3b3c421d73173a0675ba3d1b2aa.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 114.644,
+      "started_at": "2026-11-12T08:27:08.811804+00:00",
+      "completed_at": "2026-11-12T08:29:03.456000+00:00",
+      "worker_pid": 28772,
+      "request_file": "run/cases/C06/S04.request.json",
+      "response_file": "run/cases/C06/S04.response.json",
+      "usage": {
+        "prompt_tokens": 2788,
+        "completion_tokens": 17982,
+        "total_tokens": 20770,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 17140
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1892
+      },
+      "answer": {
+        "previous_id": "S03",
+        "current_id": "S04",
+        "verdict": "deviated",
+        "segment_summary": {
+          "zh": "本段从走廊侧墙旁进入一个开阔的起居/餐区：左侧近处有台灯和边桌，左侧有电视、矮柜和白色扶手椅，右侧为玻璃展示柜、蘑菇壁画墙及餐桌椅，前方仍有一道门。画面中未出现目标卧室的床或粉蓝窗帘，且电视位于左侧，而非任务要求进入卧室时应在右侧。",
+          "en": "This segment moves from beside a hallway wall into a broad living/dining area: a lamp on a side table appears near the left foreground, with a TV on a low cabinet and a white armchair on the left, while a glass display cabinet, mushroom-mural wall, and dining chair/table are on the right; a doorway remains ahead. Neither the target bedroom's bed nor the pink-and-blue curtains appear, and the TV is on the left rather than on the right as specified for entering the bedroom."
+        },
+        "reason": {
+          "zh": "任务要求沿走廊直行，将带沙发和台灯的开放起居区留在右侧，随后右转进入电视在右侧的卧室并走向粉蓝窗帘和床；本段却进入并深入带台灯、扶手椅、电视、展示柜和餐桌椅的起居餐区，且电视在左侧，与进入目标卧室的空间关系不符。",
+          "en": "The task requires walking straight down the hallway, passing the open living area with a couch and lamp on the right, then turning right into a bedroom with the TV on a cabinet on the right and moving toward the pink-and-blue curtains and bed. Instead, this segment enters and advances into a living/dining area with a lamp, armchair, TV, display cabinet, and dining chair/table, with the TV on the left, which conflicts with the spatial layout specified for entering the target bedroom."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "passing an open living area with a couch and a lamp on your right",
+            "quote_zh": "从右侧有沙发和台灯的开放起居区经过"
+          },
+          {
+            "quote_en": "then turn right to enter a bedroom with a TV on a cabinet on your right",
+            "quote_zh": "然后右转进入一间卧室，右侧柜子上有一台电视"
+          },
+          {
+            "quote_en": "towards the window with pink and blue curtains",
+            "quote_zh": "朝着有粉色和蓝色窗帘的窗户方向"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              59,
+              60,
+              62,
+              64
+            ],
+            "description": {
+              "zh": "这些帧显示视野由走廊侧墙旁展开到一个开阔空间；左侧可见矮柜上的电视和白色扶手椅，右侧出现白色玻璃展示柜，前方有一道门洞。",
+              "en": "These frames show the view opening from beside a hallway wall into a broad space; a TV on a low cabinet and a white armchair are visible on the left, a white glass display cabinet appears on the right, and a doorway is ahead."
+            }
+          },
+          {
+            "frames": [
+              67,
+              69,
+              70
+            ],
+            "description": {
+              "zh": "这些帧显示左侧近处有台灯和边桌，电视、矮柜与扶手椅在左，白色展示柜、蘑菇壁画墙和餐桌椅在右；画面未出现床或粉蓝窗帘，电视位于左侧而非进入卧室时应处的右侧。",
+              "en": "These frames show a lamp on a side table near the left foreground, the TV, low cabinet, and armchair on the left, and a white display cabinet, mushroom-mural wall, and dining chair/table on the right; no bed or pink-and-blue curtains are visible, and the TV is on the left rather than on the right as it should be when entering the bedroom."
+            }
+          }
+        ],
+        "semantic_progress": null,
+        "uncertainties": [
+          {
+            "zh": "目标卧室、床和粉蓝窗帘未在本段出现，无法确认它们是否位于前方门后。",
+            "en": "The target bedroom, bed, and pink-and-blue curtains do not appear in this segment, so it cannot be confirmed whether they lie beyond the doorway ahead."
+          }
+        ]
+      },
+      "rollback_target": {
+        "node_id": "S03",
+        "frame": 59,
+        "progress": {
+          "zh": "截至S03：此前已沿走廊直行并右侧经过带沙发、台灯的开放起居区，左侧经过厨房/餐厅；本段继续到走廊尽头木门附近，随后右转进入一个有电视柜和椅子的房间，电视位于右侧柜面上。仍在向房间内部推进，粉蓝窗帘、床及床左侧停止点尚未确认。",
+          "en": "As of S03: previously proceeded straight along the hallway, passing the open living area with a couch and lamp on the right and the kitchen/dining area on the left; this segment continued to the wooden door near the end of the hallway and then turned right into a room with a TV on a cabinet and a chair, with the TV on the right-hand cabinet surface. It is still moving into the room; the pink-and-blue curtains, the bed, and the stopping point to the left of the bed have not been confirmed."
+        }
+      },
+      "committed_progress": {
+        "zh": "截至S03：此前已沿走廊直行并右侧经过带沙发、台灯的开放起居区，左侧经过厨房/餐厅；本段继续到走廊尽头木门附近，随后右转进入一个有电视柜和椅子的房间，电视位于右侧柜面上。仍在向房间内部推进，粉蓝窗帘、床及床左侧停止点尚未确认。",
+        "en": "As of S03: previously proceeded straight along the hallway, passing the open living area with a couch and lamp on the right and the kitchen/dining area on the left; this segment continued to the wooden door near the end of the hallway and then turned right into a room with a TV on a cabinet and a chair, with the TV on the right-hand cabinet surface. It is still moving into the room; the pink-and-blue curtains, the bed, and the stopping point to the left of the bed have not been confirmed."
+      },
+      "progress_anchor": {
+        "id": "S03",
+        "frame": 59
+      }
+    }
+  ],
+  "stop_node": "S04"
+}

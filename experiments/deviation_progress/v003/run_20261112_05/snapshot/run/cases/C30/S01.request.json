@@ -1,0 +1,36 @@
+{
+  "mode": "initialization",
+  "previous_id": "S01",
+  "current_id": "S01",
+  "previous_frame": 30,
+  "current_frame": 30,
+  "instruction_en": "Walk forward past the bookshelves on your right. Turn left to enter the first doorway, with a painting on the wall to your right. Proceed straight through this doorway and continue straight through the next doorway immediately ahead. After passing the second doorway, turn left. Walk forward into the open room, keeping the dining table and chairs on your right and the living room area with sofas and a TV on your left. Turn slightly left and stop in front of the large window, with the television on your right and a sofa on your left.",
+  "prior_semantic_progress": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+  "coverage": "Endpoint observations plus up to five uniformly sampled intermediate observations. Frames are not necessarily consecutive. Review ends at B.",
+  "images": [
+    {
+      "frame": 30,
+      "role": "A=B",
+      "image_id": "9d272c48ef1215c32609107724e6dde08fb60ce75160638092f4215fd832c534",
+      "path": "assets/9d272c48ef1215c32609107724e6dde08fb60ce75160638092f4215fd832c534.webp",
+      "sha256": "9d272c48ef1215c32609107724e6dde08fb60ce75160638092f4215fd832c534",
+      "bytes": 20328
+    }
+  ],
+  "settings": {
+    "model": "deepseek-flash",
+    "response_format": {
+      "type": "json_object"
+    },
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_tokens": 32768,
+    "stream": false
+  },
+  "prompt_sha256": "129ef91051dcb6cc1be8e2e276cb102166bff322a36fdd10661e644de2162cad",
+  "request_sha256": "e692d67b022a20cfa3bcdf9e279d64c68dbec3791133c206cbd0751732f760c0",
+  "started_at": "2026-11-12T10:42:28.700766+00:00",
+  "worker_pid": 13424
+}

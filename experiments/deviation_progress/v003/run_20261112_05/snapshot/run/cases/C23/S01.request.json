@@ -1,0 +1,36 @@
+{
+  "mode": "initialization",
+  "previous_id": "S01",
+  "current_id": "S01",
+  "previous_frame": 32,
+  "current_frame": 32,
+  "instruction_en": "Walk forward, passing the white wall on your left and a green decorative panel on your right. Turn right into the open area, with framed pictures on your right wall. Turn left to enter the narrow hallway with a wooden floor. Walk straight down the hallway, entering the bedroom directly ahead. Stop in front of the bed, with the bed on your left and a TV stand on your right.",
+  "prior_semantic_progress": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+  "coverage": "Endpoint observations plus up to five uniformly sampled intermediate observations. Frames are not necessarily consecutive. Review ends at B.",
+  "images": [
+    {
+      "frame": 32,
+      "role": "A=B",
+      "image_id": "6fc24e8d6023768f7784a0fe4780d2278d6c9e52a713f92c40eccf994c3ec894",
+      "path": "assets/6fc24e8d6023768f7784a0fe4780d2278d6c9e52a713f92c40eccf994c3ec894.webp",
+      "sha256": "6fc24e8d6023768f7784a0fe4780d2278d6c9e52a713f92c40eccf994c3ec894",
+      "bytes": 6848
+    }
+  ],
+  "settings": {
+    "model": "deepseek-flash",
+    "response_format": {
+      "type": "json_object"
+    },
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_tokens": 32768,
+    "stream": false
+  },
+  "prompt_sha256": "129ef91051dcb6cc1be8e2e276cb102166bff322a36fdd10661e644de2162cad",
+  "request_sha256": "225507731089155ab29345c3459129f554bb0a32ecc200de4b3f45164eebdde6",
+  "started_at": "2026-11-12T10:41:00.509821+00:00",
+  "worker_pid": 49660
+}

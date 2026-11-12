@@ -1,0 +1,36 @@
+{
+  "mode": "initialization",
+  "previous_id": "S01",
+  "current_id": "S01",
+  "previous_frame": 0,
+  "current_frame": 0,
+  "instruction_en": "Walk straight down the hallway, passing a bedroom doorway on your right. Continue forward, passing a study area on your left. As you pass shelves on your left, turn right into the dining room. Walk towards the dining table, keeping it on your left side. Then, turn right and enter the kitchen. Proceed straight into the kitchen and stop in front of the sink, directly under the window.",
+  "prior_semantic_progress": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+  "coverage": "Endpoint observations plus up to five uniformly sampled intermediate observations. Frames are not necessarily consecutive. Review ends at B.",
+  "images": [
+    {
+      "frame": 0,
+      "role": "A=B",
+      "image_id": "225fc291d5fd3222a11e8e4d04c4c490b6a2a806d05bfaba4dc3b4e132d3de3b",
+      "path": "assets/225fc291d5fd3222a11e8e4d04c4c490b6a2a806d05bfaba4dc3b4e132d3de3b.webp",
+      "sha256": "225fc291d5fd3222a11e8e4d04c4c490b6a2a806d05bfaba4dc3b4e132d3de3b",
+      "bytes": 6984
+    }
+  ],
+  "settings": {
+    "model": "deepseek-flash",
+    "response_format": {
+      "type": "json_object"
+    },
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_tokens": 32768,
+    "stream": false
+  },
+  "prompt_sha256": "129ef91051dcb6cc1be8e2e276cb102166bff322a36fdd10661e644de2162cad",
+  "request_sha256": "543229c3d3969e8aba3d3a279871b9ef54a37742dd6209188b7a5b71684cf8f9",
+  "started_at": "2026-11-12T08:11:10.828780+00:00",
+  "worker_pid": 35964
+}

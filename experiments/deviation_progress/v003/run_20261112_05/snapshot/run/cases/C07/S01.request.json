@@ -1,0 +1,36 @@
+{
+  "mode": "initialization",
+  "previous_id": "S01",
+  "current_id": "S01",
+  "previous_frame": 5,
+  "current_frame": 5,
+  "instruction_en": "Walk forward, keeping the wall with the TV on your left and the living room with a couch on your right. Continue straight, passing a decorative screen on your left, towards the dining room ahead. When you reach the opening, turn left into the hallway. Walk straight ahead, past the painting on your right, and enter the bedroom. Proceed forward into the bedroom, keeping the TV on your left, and stop in front of the bed, with the nightstand to its right.",
+  "prior_semantic_progress": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+  "coverage": "Endpoint observations plus up to five uniformly sampled intermediate observations. Frames are not necessarily consecutive. Review ends at B.",
+  "images": [
+    {
+      "frame": 5,
+      "role": "A=B",
+      "image_id": "f44011af8604badb365d12a2020805835eb12abf83fb1d4e957402f7ab900ec5",
+      "path": "assets/f44011af8604badb365d12a2020805835eb12abf83fb1d4e957402f7ab900ec5.webp",
+      "sha256": "f44011af8604badb365d12a2020805835eb12abf83fb1d4e957402f7ab900ec5",
+      "bytes": 22498
+    }
+  ],
+  "settings": {
+    "model": "deepseek-flash",
+    "response_format": {
+      "type": "json_object"
+    },
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_tokens": 32768,
+    "stream": false
+  },
+  "prompt_sha256": "129ef91051dcb6cc1be8e2e276cb102166bff322a36fdd10661e644de2162cad",
+  "request_sha256": "e55c346a678243812cb4a3441785584f6c21780c9a403ffead8893651a9546c1",
+  "started_at": "2026-11-12T08:11:10.784965+00:00",
+  "worker_pid": 31288
+}

@@ -1,0 +1,84 @@
+{
+  "mode": "segment",
+  "previous_id": "S01",
+  "current_id": "S02",
+  "previous_frame": 8,
+  "current_frame": 23,
+  "instruction_en": "Walk forward, keeping the tall built-in shelf with bottles and books on your left. Proceed straight, passing the shelf on your left. Turn right, moving past the dining table on your right. Enter the kitchen through the open doorway on your right. Stop in front of the window and sink, with the large refrigerator on your left.",
+  "prior_semantic_progress": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+  "coverage": "Endpoint observations plus up to five uniformly sampled intermediate observations. Frames are not necessarily consecutive. Review ends at B.",
+  "images": [
+    {
+      "frame": 8,
+      "role": "A",
+      "image_id": "6f9021dbb98d7056828f6189a21c42b00140602a8a4c22fb547693b6f869a05a",
+      "path": "assets/6f9021dbb98d7056828f6189a21c42b00140602a8a4c22fb547693b6f869a05a.webp",
+      "sha256": "6f9021dbb98d7056828f6189a21c42b00140602a8a4c22fb547693b6f869a05a",
+      "bytes": 13100
+    },
+    {
+      "frame": 9,
+      "role": "history",
+      "image_id": "4dabba88ebb3234005d9bbec11f5cc7e4514009cf1d21591c0d1f9df9fc02d68",
+      "path": "assets/4dabba88ebb3234005d9bbec11f5cc7e4514009cf1d21591c0d1f9df9fc02d68.webp",
+      "sha256": "4dabba88ebb3234005d9bbec11f5cc7e4514009cf1d21591c0d1f9df9fc02d68",
+      "bytes": 12892
+    },
+    {
+      "frame": 12,
+      "role": "history",
+      "image_id": "5333b2312001651105850137f2a329637292a8fd3ccc7d91094e5da6e9cc2a0b",
+      "path": "assets/5333b2312001651105850137f2a329637292a8fd3ccc7d91094e5da6e9cc2a0b.webp",
+      "sha256": "5333b2312001651105850137f2a329637292a8fd3ccc7d91094e5da6e9cc2a0b",
+      "bytes": 14186
+    },
+    {
+      "frame": 15,
+      "role": "history",
+      "image_id": "c4a28ba73914918e3bd7490c8d3a71575685ef86cb3fa7ffc234f5369cdd46d2",
+      "path": "assets/c4a28ba73914918e3bd7490c8d3a71575685ef86cb3fa7ffc234f5369cdd46d2.webp",
+      "sha256": "c4a28ba73914918e3bd7490c8d3a71575685ef86cb3fa7ffc234f5369cdd46d2",
+      "bytes": 12908
+    },
+    {
+      "frame": 19,
+      "role": "history",
+      "image_id": "669beaf6de3e2b4a370659368d5e58018523e97ebe4f12562c18bc7b03d95deb",
+      "path": "assets/669beaf6de3e2b4a370659368d5e58018523e97ebe4f12562c18bc7b03d95deb.webp",
+      "sha256": "669beaf6de3e2b4a370659368d5e58018523e97ebe4f12562c18bc7b03d95deb",
+      "bytes": 15618
+    },
+    {
+      "frame": 22,
+      "role": "history",
+      "image_id": "487e0baa4990d67dea8e20503c1ba2d0542e457fa6d1990c406412ea846d602a",
+      "path": "assets/487e0baa4990d67dea8e20503c1ba2d0542e457fa6d1990c406412ea846d602a.webp",
+      "sha256": "487e0baa4990d67dea8e20503c1ba2d0542e457fa6d1990c406412ea846d602a",
+      "bytes": 15478
+    },
+    {
+      "frame": 23,
+      "role": "B",
+      "image_id": "df871d8de716fbf9b25b34cd2c22ab2267076ea0868bc3e0446aa2fd88d2b805",
+      "path": "assets/df871d8de716fbf9b25b34cd2c22ab2267076ea0868bc3e0446aa2fd88d2b805.webp",
+      "sha256": "df871d8de716fbf9b25b34cd2c22ab2267076ea0868bc3e0446aa2fd88d2b805",
+      "bytes": 13244
+    }
+  ],
+  "settings": {
+    "model": "deepseek-flash",
+    "response_format": {
+      "type": "json_object"
+    },
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_tokens": 32768,
+    "stream": false
+  },
+  "prompt_sha256": "129ef91051dcb6cc1be8e2e276cb102166bff322a36fdd10661e644de2162cad",
+  "request_sha256": "8006117de9b9b04cd0ed3dc7a1caaa6c5960ecbef2c974647667b0479135013c",
+  "started_at": "2026-11-12T08:26:01.240766+00:00",
+  "worker_pid": 44612
+}

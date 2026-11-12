@@ -1,0 +1,84 @@
+{
+  "mode": "segment",
+  "previous_id": "S01",
+  "current_id": "S02",
+  "previous_frame": 0,
+  "current_frame": 33,
+  "instruction_en": "Turn left to enter the hallway from the room with the wardrobe. Walk straight down the hallway, passing a bathroom on your right and an open doorway to a bedroom on your left. Go through the open archway at the end of the hallway to enter the living room. Walk forward, passing a sofa and TV on your left, towards the open doorway on your left. Enter the sunroom through this doorway, and turn left. Stop in front of the sofa in the living room, with the large windows on your right.",
+  "prior_semantic_progress": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+  "coverage": "Endpoint observations plus up to five uniformly sampled intermediate observations. Frames are not necessarily consecutive. Review ends at B.",
+  "images": [
+    {
+      "frame": 0,
+      "role": "A",
+      "image_id": "4355e4a841d780bea9240efcf42985c99bb2ec4cfeeb2f8fd29019123ed98a9b",
+      "path": "assets/4355e4a841d780bea9240efcf42985c99bb2ec4cfeeb2f8fd29019123ed98a9b.webp",
+      "sha256": "4355e4a841d780bea9240efcf42985c99bb2ec4cfeeb2f8fd29019123ed98a9b",
+      "bytes": 14700
+    },
+    {
+      "frame": 1,
+      "role": "history",
+      "image_id": "9b9f6e648e16aaa140147c7b0a1133af3f2b6c6e599aeaf389676d3ee8dd81fd",
+      "path": "assets/9b9f6e648e16aaa140147c7b0a1133af3f2b6c6e599aeaf389676d3ee8dd81fd.webp",
+      "sha256": "9b9f6e648e16aaa140147c7b0a1133af3f2b6c6e599aeaf389676d3ee8dd81fd",
+      "bytes": 13872
+    },
+    {
+      "frame": 9,
+      "role": "history",
+      "image_id": "06b16ad4aea03539743c79e5fe0f675a5edcbf347e2dd01f104aad04770749cf",
+      "path": "assets/06b16ad4aea03539743c79e5fe0f675a5edcbf347e2dd01f104aad04770749cf.webp",
+      "sha256": "06b16ad4aea03539743c79e5fe0f675a5edcbf347e2dd01f104aad04770749cf",
+      "bytes": 34202
+    },
+    {
+      "frame": 17,
+      "role": "history",
+      "image_id": "ad1ccad09c5cca7ff4f88947d2b4b3466dc73e7962ef9b05519af5b8f6777e94",
+      "path": "assets/ad1ccad09c5cca7ff4f88947d2b4b3466dc73e7962ef9b05519af5b8f6777e94.webp",
+      "sha256": "ad1ccad09c5cca7ff4f88947d2b4b3466dc73e7962ef9b05519af5b8f6777e94",
+      "bytes": 24680
+    },
+    {
+      "frame": 24,
+      "role": "history",
+      "image_id": "91b7dfae4a5ab335d3c5a63b68d7f86e7f5a362b4c30dd8c7fbb707c9034d0cb",
+      "path": "assets/91b7dfae4a5ab335d3c5a63b68d7f86e7f5a362b4c30dd8c7fbb707c9034d0cb.webp",
+      "sha256": "91b7dfae4a5ab335d3c5a63b68d7f86e7f5a362b4c30dd8c7fbb707c9034d0cb",
+      "bytes": 22496
+    },
+    {
+      "frame": 32,
+      "role": "history",
+      "image_id": "d1e4cee04148e5f0ac3c901cc36e5f6f1bf4b29deddff3cf30d1a77c691ec0bd",
+      "path": "assets/d1e4cee04148e5f0ac3c901cc36e5f6f1bf4b29deddff3cf30d1a77c691ec0bd.webp",
+      "sha256": "d1e4cee04148e5f0ac3c901cc36e5f6f1bf4b29deddff3cf30d1a77c691ec0bd",
+      "bytes": 13678
+    },
+    {
+      "frame": 33,
+      "role": "B",
+      "image_id": "3ed4274600520440fe51b6c196b1075965b8ae23be704d8aa13a46fe29067759",
+      "path": "assets/3ed4274600520440fe51b6c196b1075965b8ae23be704d8aa13a46fe29067759.webp",
+      "sha256": "3ed4274600520440fe51b6c196b1075965b8ae23be704d8aa13a46fe29067759",
+      "bytes": 12776
+    }
+  ],
+  "settings": {
+    "model": "deepseek-flash",
+    "response_format": {
+      "type": "json_object"
+    },
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_tokens": 32768,
+    "stream": false
+  },
+  "prompt_sha256": "129ef91051dcb6cc1be8e2e276cb102166bff322a36fdd10661e644de2162cad",
+  "request_sha256": "21c47ac4feeb709fa1ead2dce4101dfa5d67a1af8ad66870cf5d2c1fce23c888",
+  "started_at": "2026-11-12T08:11:18.341180+00:00",
+  "worker_pid": 23072
+}

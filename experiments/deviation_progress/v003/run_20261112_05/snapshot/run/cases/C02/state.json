@@ -1,0 +1,705 @@
+{
+  "case_number": 2,
+  "pid": 13424,
+  "reviews": [
+    {
+      "node_id": "S01",
+      "node_frame": 0,
+      "available_at_frame": 5,
+      "terminal_node": false,
+      "mode": "initialization",
+      "previous_id": "S01",
+      "from_frame": 0,
+      "to_frame": 0,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 0,
+          "role": "A=B",
+          "image_id": "c480d13c817fe5ec49644698fed7ca60aac40f894c5c4c349c8955b9ac008bee",
+          "path": "assets/c480d13c817fe5ec49644698fed7ca60aac40f894c5c4c349c8955b9ac008bee.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 7.636,
+      "started_at": "2026-11-12T10:38:47.434859+00:00",
+      "completed_at": "2026-11-12T10:38:55.074327+00:00",
+      "worker_pid": 13424,
+      "request_file": "run/cases/C02/S01.request.json",
+      "response_file": "run/cases/C02/S01.response.json",
+      "usage": {
+        "prompt_tokens": 1451,
+        "completion_tokens": 780,
+        "total_tokens": 2231,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 237
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 555
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S01",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "这是首个有效节点，观测显示镜头靠近一处木质门框或墙角，旁边是白色墙面与木地板。单帧无法确认机器人是站在门口、正准备穿过，还是已经位于另一侧。",
+          "en": "This is the first valid node. The observation shows the camera close to a wooden door frame or wall corner, beside a white wall and wood floor. A single frame cannot confirm whether the robot is at the doorway, about to pass through it, or already on the other side."
+        },
+        "reason": {
+          "zh": "本轮为初始化，A=B，只能依据这一张观测建立当前语义状态；图中近距离门框和墙面不足以确认此前路线、门口通过方向或后续走廊位置。",
+          "en": "This round is initialization with A=B, so the current semantic state can only be established from this single observation. The close-up door frame and wall do not establish the prior route, the direction of doorway passage, or the subsequent hallway location."
+        },
+        "instruction_evidence": [],
+        "visual_evidence": [
+          {
+            "frames": [
+              0
+            ],
+            "description": {
+              "zh": "第0帧显示近距离的木质门框/墙角、白色墙面和木地板，没有足够视野确认相邻房间、走廊或家具。",
+              "en": "Frame 0 shows a close-up wooden door frame or wall corner, white walls, and a wood floor; the field of view is insufficient to confirm adjacent rooms, hallways, or furniture."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "首次有效节点：当前位于一处门框或墙角附近，可见白色墙面与木地板；此前已完成哪些导航要求以及是否已穿过该门口均尚未确认。",
+          "en": "First valid node: the robot is currently near a door frame or wall corner, with white walls and a wood floor visible; which navigation requirements were previously completed and whether the doorway has been passed remain unconfirmed."
+        },
+        "uncertainties": [
+          {
+            "zh": "当前是在门口之前、门槛处还是门后侧尚未确认。",
+            "en": "It is not yet confirmed whether the robot is before the doorway, at the threshold, or on the far side."
+          },
+          {
+            "zh": "此前是否已按任务穿过门口并沿直路行走尚未确认。",
+            "en": "It is not yet confirmed whether the robot has already passed through the doorway and walked straight as required."
+          },
+          {
+            "zh": "左侧卫生间入口、右侧走廊及更远房间的关系尚无法从单帧确认。",
+            "en": "The relationships involving the bathroom entrance on the left, the hallway to the right, and farther rooms cannot be confirmed from a single frame."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "首次有效节点：当前位于一处门框或墙角附近，可见白色墙面与木地板；此前已完成哪些导航要求以及是否已穿过该门口均尚未确认。",
+        "en": "First valid node: the robot is currently near a door frame or wall corner, with white walls and a wood floor visible; which navigation requirements were previously completed and whether the doorway has been passed remain unconfirmed."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 0
+      }
+    },
+    {
+      "node_id": "S02",
+      "node_frame": 5,
+      "available_at_frame": 10,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S01",
+      "from_frame": 0,
+      "to_frame": 5,
+      "prior_progress": {
+        "zh": "首次有效节点：当前位于一处门框或墙角附近，可见白色墙面与木地板；此前已完成哪些导航要求以及是否已穿过该门口均尚未确认。",
+        "en": "First valid node: the robot is currently near a door frame or wall corner, with white walls and a wood floor visible; which navigation requirements were previously completed and whether the doorway has been passed remain unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 0,
+          "role": "A",
+          "image_id": "c480d13c817fe5ec49644698fed7ca60aac40f894c5c4c349c8955b9ac008bee",
+          "path": "assets/c480d13c817fe5ec49644698fed7ca60aac40f894c5c4c349c8955b9ac008bee.webp"
+        },
+        {
+          "frame": 1,
+          "role": "history",
+          "image_id": "fa5f98ef7998d4f63b0c5a82d4ec3a4054f17f683118a3432c59a4aa1d012e13",
+          "path": "assets/fa5f98ef7998d4f63b0c5a82d4ec3a4054f17f683118a3432c59a4aa1d012e13.webp"
+        },
+        {
+          "frame": 2,
+          "role": "history",
+          "image_id": "a090befd153e1eaa0cc1b6979c99de887e6020ea7ac0f4e148598d731f42ea43",
+          "path": "assets/a090befd153e1eaa0cc1b6979c99de887e6020ea7ac0f4e148598d731f42ea43.webp"
+        },
+        {
+          "frame": 3,
+          "role": "history",
+          "image_id": "51a4402c66308bb0f362cf270a8fb35cc83c3f16f93409c76d76b5a511db75f8",
+          "path": "assets/51a4402c66308bb0f362cf270a8fb35cc83c3f16f93409c76d76b5a511db75f8.webp"
+        },
+        {
+          "frame": 4,
+          "role": "history",
+          "image_id": "5728a2fd021e5e039a923fe024b38396edd07c1808048f2bc555ec33dd86dd95",
+          "path": "assets/5728a2fd021e5e039a923fe024b38396edd07c1808048f2bc555ec33dd86dd95.webp"
+        },
+        {
+          "frame": 5,
+          "role": "B",
+          "image_id": "3b37f240be0f282a2383400940af178ca01497d2eb5f93b447cd1d42a1d1c87f",
+          "path": "assets/3b37f240be0f282a2383400940af178ca01497d2eb5f93b447cd1d42a1d1c87f.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 44.129,
+      "started_at": "2026-11-12T10:38:55.082825+00:00",
+      "completed_at": "2026-11-12T10:39:39.212230+00:00",
+      "worker_pid": 13424,
+      "request_file": "run/cases/C02/S02.request.json",
+      "response_file": "run/cases/C02/S02.response.json",
+      "usage": {
+        "prompt_tokens": 2552,
+        "completion_tokens": 6701,
+        "total_tokens": 9253,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 5784
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1656
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S02",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "镜头从初始门框附近向前推进，左侧逐渐显露铺白瓷砖和花砖地面的卫生间入口；到达 B 时面对白色墙面与踢脚线，右侧可见另一门洞/入口。画面尚未显示机器人已右转进入走廊后的通行。",
+          "en": "The camera moves forward from near the initial doorway, gradually revealing a bathroom entrance with white tiled walls and a patterned floor on the left; at B it faces a white wall and baseboard, with another doorway/opening visible on the right. The frames do not yet show travel after turning right into the hallway."
+        },
+        "reason": {
+          "zh": "F0 的木门框和近距离墙面、F2–F5 左侧逐渐显露的卫生间瓷砖与花砖地面，以及 B 处正前方白墙和右侧门洞，支持本段按“向前、让卫生间保持在左侧、随后应右转进入走廊”的空间顺序推进；未发现左转进入卫生间或进入其他房间等冲突证据。",
+          "en": "The wooden door frame and nearby wall in F0, the bathroom tiles and patterned floor gradually revealed on the left in F2–F5, and the white wall ahead with a doorway on the right at B support progress in the spatial order of moving forward, keeping the bathroom on the left, and subsequently needing to turn right into the hallway; no conflicting evidence such as turning left into the bathroom or entering another room is observed."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Walk forward through the doorway",
+            "quote_zh": "向前穿过门口"
+          },
+          {
+            "quote_en": "passing a bathroom entrance on your left",
+            "quote_zh": "从左侧经过卫生间入口"
+          },
+          {
+            "quote_en": "Turn right to enter the hallway",
+            "quote_zh": "右转进入走廊"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              0,
+              2,
+              4
+            ],
+            "description": {
+              "zh": "F0 显示近处木门框与白墙；F2、F4 中左侧逐渐出现白瓷砖墙面和花砖地面，支持卫生间入口位于左侧的空间关系。",
+              "en": "F0 shows a nearby wooden door frame and white wall; in F2 and F4, a white tiled wall and patterned floor gradually appear on the left, supporting the bathroom entrance being on the left."
+            }
+          },
+          {
+            "frames": [
+              5
+            ],
+            "description": {
+              "zh": "F5 显示正前方为白墙及踢脚线，右侧有门洞/入口，左侧仍可见卫生间地面；画面未显示已进入走廊后的白色装饰柜、扶手椅或沙发。",
+              "en": "F5 shows a white wall and baseboard directly ahead, a doorway/opening on the right, and bathroom flooring still visible on the left; the frames do not show the white curio cabinet, armchair, or sofa after entering the hallway."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "截至 B：已从初始门框附近向前推进，左侧可见并经过铺白瓷砖、花砖地面的卫生间入口；当前面对白墙，右侧有门洞/入口。尚需右转进入走廊，走廊左侧的白色装饰柜、右侧的白色扶手椅和沙发，以及之后左转进入餐厅、经过餐桌椅和到达厨房门口均未确认。",
+          "en": "Up to B: the robot has moved forward from near the initial doorway, with a bathroom entrance featuring white tiles and a patterned floor visible and passing on the left; it now faces a white wall, with a doorway/opening on the right. It still needs to turn right into the hallway; the white curio cabinet on the left, the white armchair and sofa on the right, and the later left turn into the dining room, passage by the dining table and chairs, and arrival at the kitchen doorway have not been confirmed."
+        },
+        "uncertainties": [
+          {
+            "zh": "右侧门洞是否即任务所指的走廊入口、机器人是否已完全转入该走廊，仍需后续观测确认。",
+            "en": "Whether the doorway on the right is exactly the hallway entrance named in the task and whether the robot has fully turned into that hallway still need confirmation from later observations."
+          },
+          {
+            "zh": "走廊内的白色装饰柜、扶手椅和沙发尚未出现，下一段路线无法确认。",
+            "en": "The white curio cabinet, armchair, and sofa in the hallway have not yet appeared, so the next part of the route cannot be confirmed."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "截至 B：已从初始门框附近向前推进，左侧可见并经过铺白瓷砖、花砖地面的卫生间入口；当前面对白墙，右侧有门洞/入口。尚需右转进入走廊，走廊左侧的白色装饰柜、右侧的白色扶手椅和沙发，以及之后左转进入餐厅、经过餐桌椅和到达厨房门口均未确认。",
+        "en": "Up to B: the robot has moved forward from near the initial doorway, with a bathroom entrance featuring white tiles and a patterned floor visible and passing on the left; it now faces a white wall, with a doorway/opening on the right. It still needs to turn right into the hallway; the white curio cabinet on the left, the white armchair and sofa on the right, and the later left turn into the dining room, passage by the dining table and chairs, and arrival at the kitchen doorway have not been confirmed."
+      },
+      "progress_anchor": {
+        "id": "S02",
+        "frame": 5
+      }
+    },
+    {
+      "node_id": "S03",
+      "node_frame": 15,
+      "available_at_frame": 20,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S02",
+      "from_frame": 5,
+      "to_frame": 15,
+      "prior_progress": {
+        "zh": "截至 B：已从初始门框附近向前推进，左侧可见并经过铺白瓷砖、花砖地面的卫生间入口；当前面对白墙，右侧有门洞/入口。尚需右转进入走廊，走廊左侧的白色装饰柜、右侧的白色扶手椅和沙发，以及之后左转进入餐厅、经过餐桌椅和到达厨房门口均未确认。",
+        "en": "Up to B: the robot has moved forward from near the initial doorway, with a bathroom entrance featuring white tiles and a patterned floor visible and passing on the left; it now faces a white wall, with a doorway/opening on the right. It still needs to turn right into the hallway; the white curio cabinet on the left, the white armchair and sofa on the right, and the later left turn into the dining room, passage by the dining table and chairs, and arrival at the kitchen doorway have not been confirmed."
+      },
+      "images": [
+        {
+          "frame": 5,
+          "role": "A",
+          "image_id": "3b37f240be0f282a2383400940af178ca01497d2eb5f93b447cd1d42a1d1c87f",
+          "path": "assets/3b37f240be0f282a2383400940af178ca01497d2eb5f93b447cd1d42a1d1c87f.webp"
+        },
+        {
+          "frame": 6,
+          "role": "history",
+          "image_id": "eb02d7429b789662007b801387700ed4035f12c78730eb1403d7980cb8dea0ba",
+          "path": "assets/eb02d7429b789662007b801387700ed4035f12c78730eb1403d7980cb8dea0ba.webp"
+        },
+        {
+          "frame": 8,
+          "role": "history",
+          "image_id": "b7f7e8f814431f14a4f690c9841bf833daefb68e303c4012dd54a946cc73f4d1",
+          "path": "assets/b7f7e8f814431f14a4f690c9841bf833daefb68e303c4012dd54a946cc73f4d1.webp"
+        },
+        {
+          "frame": 10,
+          "role": "history",
+          "image_id": "5eb4e135c8867b27d316a74204ab69aa1ddf73c88d4548c9b9b52302af62bcbf",
+          "path": "assets/5eb4e135c8867b27d316a74204ab69aa1ddf73c88d4548c9b9b52302af62bcbf.webp"
+        },
+        {
+          "frame": 12,
+          "role": "history",
+          "image_id": "638b5fef9daf710104618055700c0e51ee95abd6d2e109d58078fbfc92bd59e0",
+          "path": "assets/638b5fef9daf710104618055700c0e51ee95abd6d2e109d58078fbfc92bd59e0.webp"
+        },
+        {
+          "frame": 14,
+          "role": "history",
+          "image_id": "560b7b5238daafff1ca08d317369ca7fb873c6b62cf92c9674262e129d2432a7",
+          "path": "assets/560b7b5238daafff1ca08d317369ca7fb873c6b62cf92c9674262e129d2432a7.webp"
+        },
+        {
+          "frame": 15,
+          "role": "B",
+          "image_id": "c56c5f21f6d78a31d09877aff965cfb0304376288038255c324938a63b2474d4",
+          "path": "assets/c56c5f21f6d78a31d09877aff965cfb0304376288038255c324938a63b2474d4.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 28.907,
+      "started_at": "2026-11-12T10:39:39.221027+00:00",
+      "completed_at": "2026-11-12T10:40:08.128042+00:00",
+      "worker_pid": 13424,
+      "request_file": "run/cases/C02/S03.request.json",
+      "response_file": "run/cases/C02/S03.response.json",
+      "usage": {
+        "prompt_tokens": 2811,
+        "completion_tokens": 4296,
+        "total_tokens": 7107,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3283
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1915
+      },
+      "answer": {
+        "previous_id": "S02",
+        "current_id": "S03",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "本段从白墙前继续调整朝向，左侧可见铺白瓷砖、花砖地面的卫生间入口；随后视角右转，走廊展开，左侧可见白色装饰柜，右侧可见白色扶手椅。B 帧仍位于门框或走廊入口附近，尚未看到沙发或餐厅。",
+          "en": "In this segment the robot continued adjusting its heading in front of a white wall, with the tiled bathroom entrance visible on the left; it then turned right as the hallway opened up, showing a white curio cabinet on the left and a white armchair on the right. Frame B remains near the doorway or hallway entrance, and neither the sofa nor the dining room has been seen."
+        },
+        "reason": {
+          "zh": "任务要求先经过左侧卫生间入口，再右转进入走廊并经过左侧白色装饰柜、右侧白色扶手椅和沙发；图像支持左侧卫生间入口及右转后走廊内的左柜右椅空间关系，未发现冲突，但尚未确认已深入走廊并经过这些家具。",
+          "en": "The task requires passing the bathroom entrance on the left, then turning right into the hallway and passing a white curio cabinet on the left and a white armchair and sofa on the right; the frames support the left-side bathroom entrance and, after turning right, the hallway arrangement with the cabinet on the left and armchair on the right. No conflict is evident, but it is not yet confirmed that the robot has moved down the hallway past these furnishings."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "passing a bathroom entrance on your left",
+            "quote_zh": "从左侧经过一个卫生间入口"
+          },
+          {
+            "quote_en": "Turn right to enter the hallway.",
+            "quote_zh": "右转进入走廊。"
+          },
+          {
+            "quote_en": "passing a white curio cabinet on your left and a white armchair and sofa on your right",
+            "quote_zh": "左侧经过一个白色装饰柜，右侧经过一个白色扶手椅和沙发"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              5,
+              6
+            ],
+            "description": {
+              "zh": "左侧可见卫生间白色瓷砖与花砖地面，正前方为白墙，右侧有门洞或入口。",
+              "en": "White wall tiles and patterned floor tiles of the bathroom are visible on the left, a white wall is ahead, and a doorway or entrance is on the right."
+            }
+          },
+          {
+            "frames": [
+              10,
+              12
+            ],
+            "description": {
+              "zh": "视角转向右侧，走廊向前展开；走廊左侧出现白色装饰柜，远处可见木门。",
+              "en": "The view turns right and the hallway extends ahead; a white curio cabinet appears on the left side of the hallway, with a wooden door in the distance."
+            }
+          },
+          {
+            "frames": [
+              14,
+              15
+            ],
+            "description": {
+              "zh": "走廊视角中左侧可见白色装饰柜，右侧可见白色扶手椅；B 帧仍靠近左侧门框或走廊入口，尚未到达柜子和扶手椅。",
+              "en": "In the hallway view, the white curio cabinet is visible on the left and the white armchair on the right; frame B remains near the left doorframe or hallway entrance and has not yet reached the cabinet and armchair."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "截至 B：已从初始门框附近向前推进，左侧经过铺白瓷砖、花砖地面的卫生间入口；已右转朝向走廊入口，走廊左侧可见白色装饰柜，右侧可见白色扶手椅。尚未确认已沿走廊经过柜子、扶手椅和沙发，也未确认左转进入餐厅、穿过餐桌椅及到达厨房门口。",
+          "en": "As of B: the robot has advanced from near the initial doorway, passing the bathroom entrance with white wall tiles and patterned floor tiles on the left; it has turned right toward the hallway entrance, where a white curio cabinet is visible on the left and a white armchair on the right. It is not yet confirmed that the robot has moved down the hallway past the cabinet, armchair, and sofa, nor that it has turned left into the dining room, passed the dining table and chairs, and reached the kitchen doorway."
+        },
+        "uncertainties": [
+          {
+            "zh": "B 是否已完全跨过走廊入口、真正进入走廊，还是仍在入口附近转向，尚不能完全确定。",
+            "en": "It cannot be fully determined whether B has completely crossed the hallway entrance and truly entered the hallway, or is still turning near the entrance."
+          },
+          {
+            "zh": "尚未确认已沿走廊经过白色装饰柜、扶手椅和沙发。",
+            "en": "It is not yet confirmed that the robot has passed the white curio cabinet, armchair, and sofa along the hallway."
+          },
+          {
+            "zh": "尚未确认左转进入餐厅、穿过餐桌椅区域以及到达厨房门口。",
+            "en": "It is not yet confirmed that the robot has turned left into the dining room, passed through the dining table and chairs area, and reached the kitchen doorway."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "截至 B：已从初始门框附近向前推进，左侧经过铺白瓷砖、花砖地面的卫生间入口；已右转朝向走廊入口，走廊左侧可见白色装饰柜，右侧可见白色扶手椅。尚未确认已沿走廊经过柜子、扶手椅和沙发，也未确认左转进入餐厅、穿过餐桌椅及到达厨房门口。",
+        "en": "As of B: the robot has advanced from near the initial doorway, passing the bathroom entrance with white wall tiles and patterned floor tiles on the left; it has turned right toward the hallway entrance, where a white curio cabinet is visible on the left and a white armchair on the right. It is not yet confirmed that the robot has moved down the hallway past the cabinet, armchair, and sofa, nor that it has turned left into the dining room, passed the dining table and chairs, and reached the kitchen doorway."
+      },
+      "progress_anchor": {
+        "id": "S03",
+        "frame": 15
+      }
+    },
+    {
+      "node_id": "S04",
+      "node_frame": 25,
+      "available_at_frame": 30,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S03",
+      "from_frame": 15,
+      "to_frame": 25,
+      "prior_progress": {
+        "zh": "截至 B：已从初始门框附近向前推进，左侧经过铺白瓷砖、花砖地面的卫生间入口；已右转朝向走廊入口，走廊左侧可见白色装饰柜，右侧可见白色扶手椅。尚未确认已沿走廊经过柜子、扶手椅和沙发，也未确认左转进入餐厅、穿过餐桌椅及到达厨房门口。",
+        "en": "As of B: the robot has advanced from near the initial doorway, passing the bathroom entrance with white wall tiles and patterned floor tiles on the left; it has turned right toward the hallway entrance, where a white curio cabinet is visible on the left and a white armchair on the right. It is not yet confirmed that the robot has moved down the hallway past the cabinet, armchair, and sofa, nor that it has turned left into the dining room, passed the dining table and chairs, and reached the kitchen doorway."
+      },
+      "images": [
+        {
+          "frame": 15,
+          "role": "A",
+          "image_id": "c56c5f21f6d78a31d09877aff965cfb0304376288038255c324938a63b2474d4",
+          "path": "assets/c56c5f21f6d78a31d09877aff965cfb0304376288038255c324938a63b2474d4.webp"
+        },
+        {
+          "frame": 16,
+          "role": "history",
+          "image_id": "219f924fac1278ffee9ec56c2018d9ff56b8a9e15dc335252041e80dafb5b091",
+          "path": "assets/219f924fac1278ffee9ec56c2018d9ff56b8a9e15dc335252041e80dafb5b091.webp"
+        },
+        {
+          "frame": 18,
+          "role": "history",
+          "image_id": "442b49540cda95715ee54fc950f455a86750abdb4cedffe5a248a5e7c6b5343b",
+          "path": "assets/442b49540cda95715ee54fc950f455a86750abdb4cedffe5a248a5e7c6b5343b.webp"
+        },
+        {
+          "frame": 20,
+          "role": "history",
+          "image_id": "fec178992981c78883f60bf195c49acd8f6bc4c26ef4f5ab1229076b7467aac4",
+          "path": "assets/fec178992981c78883f60bf195c49acd8f6bc4c26ef4f5ab1229076b7467aac4.webp"
+        },
+        {
+          "frame": 22,
+          "role": "history",
+          "image_id": "1a486f76f34ab79a00cf44066f403047dd4f34dcd2215f8da6a227d2489ff5ae",
+          "path": "assets/1a486f76f34ab79a00cf44066f403047dd4f34dcd2215f8da6a227d2489ff5ae.webp"
+        },
+        {
+          "frame": 24,
+          "role": "history",
+          "image_id": "945c2b91dab6f97c29041c1c9ef4d67becb3284ede3619dcb5dff4169dfc37b2",
+          "path": "assets/945c2b91dab6f97c29041c1c9ef4d67becb3284ede3619dcb5dff4169dfc37b2.webp"
+        },
+        {
+          "frame": 25,
+          "role": "B",
+          "image_id": "7173289edaacba0e2ccbb2dc81795043c66cbe1cc7ddfc9fa324e168b820b505",
+          "path": "assets/7173289edaacba0e2ccbb2dc81795043c66cbe1cc7ddfc9fa324e168b820b505.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 103.481,
+      "started_at": "2026-11-12T10:40:08.139276+00:00",
+      "completed_at": "2026-11-12T10:41:51.621576+00:00",
+      "worker_pid": 13424,
+      "request_file": "run/cases/C02/S04.request.json",
+      "response_file": "run/cases/C02/S04.response.json",
+      "usage": {
+        "prompt_tokens": 2806,
+        "completion_tokens": 15796,
+        "total_tokens": 18602,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 14858
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1910
+      },
+      "answer": {
+        "previous_id": "S03",
+        "current_id": "S04",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "本段沿走廊继续向前，左侧经过白色玻璃装饰柜，右侧可见白色扶手椅或沙发的一部分，随后左转穿过门口进入室内空间。B 位于该入口内侧，左侧近处可见电视、矮柜和绿植；尚未看到餐桌椅，也未到厨房门口。",
+          "en": "In this segment the robot continued forward along the hallway, passing a white glass-front curio cabinet on the left and part of a white armchair or sofa on the right, then turned left through a doorway into an interior space. B is just inside that entrance; a television, a low cabinet, and a plant are visible close on the left, while the dining table and chairs and the kitchen doorway have not yet been seen."
+        },
+        "reason": {
+          "zh": "F15–F20 的走廊中可见左侧白色装饰柜和右侧白色家具，F22–F25 显示从左侧门口左转进入室内；该空间和通行顺序与“沿走廊后左转进餐厅”相符。B 仍停在入口附近，餐桌椅与厨房门口尚未确认，未见明确冲突。",
+          "en": "Frames F15–F20 show the white curio cabinet on the left and white furniture on the right in the hallway, and F22–F25 show a left turn through the left-side doorway into an interior space; this space and sequence are consistent with 'walk down the hallway, then turn left into the dining room.' B is still near the entrance, and the dining table/chairs and kitchen doorway remain unconfirmed, with no clear conflict observed."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Walk straight down the hallway, passing a white curio cabinet on your left and a white armchair and sofa on your right.",
+            "quote_zh": "沿走廊直行，从左侧经过一个白色装饰柜，从右侧经过一把白色扶手椅和一张沙发。"
+          },
+          {
+            "quote_en": "Turn left to enter the dining room",
+            "quote_zh": "左转进入餐厅"
+          },
+          {
+            "quote_en": "Stop in front of the doorway leading to the kitchen.",
+            "quote_zh": "停在通往厨房的门口前。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              15,
+              16,
+              18,
+              20
+            ],
+            "description": {
+              "zh": "沿走廊向远端木门方向推进，走廊左侧可见白色玻璃装饰柜，右侧边缘可见白色扶手椅/沙发的一部分。",
+              "en": "The view advances along the hallway toward the far wooden door; the white glass-front curio cabinet is visible on the left side of the hallway, and part of a white armchair/sofa is visible at the right edge."
+            }
+          },
+          {
+            "frames": [
+              22,
+              24,
+              25
+            ],
+            "description": {
+              "zh": "接近并从左侧门口转入，B 位于入口内侧；左侧近处出现电视、矮柜、绿植和粉色窗帘，右侧仍可见走廊及远端木门。",
+              "en": "The robot approaches and turns in through the left-side doorway; B is inside the entrance, with a television, low cabinet, plant, and pink curtain close on the left, while the hallway and far wooden door remain visible on the right."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "截至 B：已沿走廊继续前进，途中左侧为白色玻璃装饰柜，右侧可见白色扶手椅/沙发的一部分，并已左转穿过门口进入餐厅入口内侧；当前入口左侧近处为电视、矮柜和绿植。尚未确认沿餐厅直行时左侧餐桌椅的情况，也未到达通往厨房的门口。",
+          "en": "As of B: the robot has continued along the hallway, with the white glass-front curio cabinet on the left and part of a white armchair/sofa visible on the right, and has turned left through the doorway into the dining-room entrance. Just inside on the left are a television, a low cabinet, and a plant. It is not yet confirmed whether the dining table and chairs have been passed on the left while walking straight through the dining room, and the doorway leading to the kitchen has not been reached."
+        },
+        "uncertainties": [
+          {
+            "zh": "B 处尚未见到餐桌椅，需继续沿餐厅直行确认其位于左侧。",
+            "en": "The dining table and chairs have not yet been seen at B; their presence on the left must be confirmed as the robot continues straight through the dining room."
+          },
+          {
+            "zh": "尚未到达并确认通往厨房的门口。",
+            "en": "The doorway leading to the kitchen has not yet been reached or confirmed."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "截至 B：已沿走廊继续前进，途中左侧为白色玻璃装饰柜，右侧可见白色扶手椅/沙发的一部分，并已左转穿过门口进入餐厅入口内侧；当前入口左侧近处为电视、矮柜和绿植。尚未确认沿餐厅直行时左侧餐桌椅的情况，也未到达通往厨房的门口。",
+        "en": "As of B: the robot has continued along the hallway, with the white glass-front curio cabinet on the left and part of a white armchair/sofa visible on the right, and has turned left through the doorway into the dining-room entrance. Just inside on the left are a television, a low cabinet, and a plant. It is not yet confirmed whether the dining table and chairs have been passed on the left while walking straight through the dining room, and the doorway leading to the kitchen has not been reached."
+      },
+      "progress_anchor": {
+        "id": "S04",
+        "frame": 25
+      }
+    },
+    {
+      "node_id": "S05",
+      "node_frame": 35,
+      "available_at_frame": 40,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S04",
+      "from_frame": 25,
+      "to_frame": 35,
+      "prior_progress": {
+        "zh": "截至 B：已沿走廊继续前进，途中左侧为白色玻璃装饰柜，右侧可见白色扶手椅/沙发的一部分，并已左转穿过门口进入餐厅入口内侧；当前入口左侧近处为电视、矮柜和绿植。尚未确认沿餐厅直行时左侧餐桌椅的情况，也未到达通往厨房的门口。",
+        "en": "As of B: the robot has continued along the hallway, with the white glass-front curio cabinet on the left and part of a white armchair/sofa visible on the right, and has turned left through the doorway into the dining-room entrance. Just inside on the left are a television, a low cabinet, and a plant. It is not yet confirmed whether the dining table and chairs have been passed on the left while walking straight through the dining room, and the doorway leading to the kitchen has not been reached."
+      },
+      "images": [
+        {
+          "frame": 25,
+          "role": "A",
+          "image_id": "7173289edaacba0e2ccbb2dc81795043c66cbe1cc7ddfc9fa324e168b820b505",
+          "path": "assets/7173289edaacba0e2ccbb2dc81795043c66cbe1cc7ddfc9fa324e168b820b505.webp"
+        },
+        {
+          "frame": 26,
+          "role": "history",
+          "image_id": "2ef613f24f4a3cd990e27fdc0b55fa1941814d9f86cbb0a059ead791a19ab0df",
+          "path": "assets/2ef613f24f4a3cd990e27fdc0b55fa1941814d9f86cbb0a059ead791a19ab0df.webp"
+        },
+        {
+          "frame": 28,
+          "role": "history",
+          "image_id": "efb8d0bdfc654c26b357f0aabae94be0eb4dc539d64de4323837c1c3a8554272",
+          "path": "assets/efb8d0bdfc654c26b357f0aabae94be0eb4dc539d64de4323837c1c3a8554272.webp"
+        },
+        {
+          "frame": 30,
+          "role": "history",
+          "image_id": "67a2b0fa5978fadb920212f9c46b49f4ed521c559c96cb194c076c34ca12844f",
+          "path": "assets/67a2b0fa5978fadb920212f9c46b49f4ed521c559c96cb194c076c34ca12844f.webp"
+        },
+        {
+          "frame": 32,
+          "role": "history",
+          "image_id": "a442ff977609ce686306f1f6fcce90f996975c85327d11a85a2de64cf3219749",
+          "path": "assets/a442ff977609ce686306f1f6fcce90f996975c85327d11a85a2de64cf3219749.webp"
+        },
+        {
+          "frame": 34,
+          "role": "history",
+          "image_id": "7f73f3908c48f9042ee36be2c41558a86c19baebc6019e1bbb7ff2d59db80315",
+          "path": "assets/7f73f3908c48f9042ee36be2c41558a86c19baebc6019e1bbb7ff2d59db80315.webp"
+        },
+        {
+          "frame": 35,
+          "role": "B",
+          "image_id": "a9574e4dfd66a3aee950e5705122c2a065ad39cfbf34b201b2f664547c83267c",
+          "path": "assets/a9574e4dfd66a3aee950e5705122c2a065ad39cfbf34b201b2f664547c83267c.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 37.046,
+      "started_at": "2026-11-12T10:41:51.634225+00:00",
+      "completed_at": "2026-11-12T10:42:28.665487+00:00",
+      "worker_pid": 13424,
+      "request_file": "run/cases/C02/S05.request.json",
+      "response_file": "run/cases/C02/S05.response.json",
+      "usage": {
+        "prompt_tokens": 2803,
+        "completion_tokens": 4615,
+        "total_tokens": 7418,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3934
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1907
+      },
+      "answer": {
+        "previous_id": "S04",
+        "current_id": "S05",
+        "verdict": "deviated",
+        "segment_summary": {
+          "zh": "本段在门口附近先朝向一间带白色床铺、粉蓝窗帘、电视矮柜和绿植的房间内观察，该房间呈现卧室特征；随后相机靠近一扇木质门或柜门，B 帧停在木门旁，左侧露出花纹地毯和深色家具。全程未见餐桌椅，也未见通往厨房的门口。",
+          "en": "In this segment, near a doorway the view first faces into a room with a white bed, pink-and-blue curtains, a TV stand, and a plant, showing bedroom features; the camera then approaches a wooden door or cabinet door, and at frame B it is beside the wooden door with patterned carpet and dark furniture visible on the left. No dining table or chairs, and no doorway leading to the kitchen, are observed."
+        },
+        "reason": {
+          "zh": "任务要求左转进入餐厅并直走穿过、左侧有餐桌椅，但连续帧显示所在空间有床和窗帘，是卧室而非餐厅，构成与任务空间要求的明确冲突。先前进度称已进入餐厅入口内侧，该判断与本次更广视角的卧室证据不符。",
+          "en": "The instruction requires turning left into the dining room and walking straight through it with a dining table and chairs on the left, but the consecutive frames show a room with a bed and curtains, i.e., a bedroom rather than a dining room, which clearly conflicts with the required space. The prior progress stating entry into the dining-room entrance is inconsistent with the wider bedroom evidence in this segment."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Turn left to enter the dining room",
+            "quote_zh": "左转进入餐厅"
+          },
+          {
+            "quote_en": "walk straight through it with a dining table and chairs on your left",
+            "quote_zh": "直走穿过餐厅，左侧有餐桌和椅子"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              28,
+              30,
+              32
+            ],
+            "description": {
+              "zh": "这些帧显示房间左侧有白色床铺，后方为粉蓝窗帘，右侧有电视、灰色矮柜和绿植；场景具有卧室特征，未见餐桌椅。",
+              "en": "These frames show a white bed on the left, pink-and-blue curtains in the back, and a TV, gray low cabinet, and plant on the right; the scene has bedroom features and no dining table or chairs are visible."
+            }
+          },
+          {
+            "frames": [
+              34,
+              35
+            ],
+            "description": {
+              "zh": "视线贴近木质门或柜门；B 帧左侧可见花纹地毯和深色家具，但未能呈现沿餐厅直行或厨房门口。",
+              "en": "The view is close to a wooden door or cabinet door; at frame B, patterned carpet and dark furniture are visible on the left, but no straight passage through a dining room or a kitchen doorway is shown."
+            }
+          }
+        ],
+        "semantic_progress": null,
+        "uncertainties": [
+          {
+            "zh": "B 帧左侧的花纹地毯和深色家具属于走廊还是另一房间尚不能仅凭该帧确定；本段是否完全离开卧室也不明确。",
+            "en": "Whether the patterned carpet and dark furniture on the left at frame B belong to a hallway or another room cannot be determined from that frame alone, and it is also unclear whether this segment fully leaves the bedroom."
+          }
+        ]
+      },
+      "rollback_target": {
+        "node_id": "S04",
+        "frame": 25,
+        "progress": {
+          "zh": "截至 B：已沿走廊继续前进，途中左侧为白色玻璃装饰柜，右侧可见白色扶手椅/沙发的一部分，并已左转穿过门口进入餐厅入口内侧；当前入口左侧近处为电视、矮柜和绿植。尚未确认沿餐厅直行时左侧餐桌椅的情况，也未到达通往厨房的门口。",
+          "en": "As of B: the robot has continued along the hallway, with the white glass-front curio cabinet on the left and part of a white armchair/sofa visible on the right, and has turned left through the doorway into the dining-room entrance. Just inside on the left are a television, a low cabinet, and a plant. It is not yet confirmed whether the dining table and chairs have been passed on the left while walking straight through the dining room, and the doorway leading to the kitchen has not been reached."
+        }
+      },
+      "committed_progress": {
+        "zh": "截至 B：已沿走廊继续前进，途中左侧为白色玻璃装饰柜，右侧可见白色扶手椅/沙发的一部分，并已左转穿过门口进入餐厅入口内侧；当前入口左侧近处为电视、矮柜和绿植。尚未确认沿餐厅直行时左侧餐桌椅的情况，也未到达通往厨房的门口。",
+        "en": "As of B: the robot has continued along the hallway, with the white glass-front curio cabinet on the left and part of a white armchair/sofa visible on the right, and has turned left through the doorway into the dining-room entrance. Just inside on the left are a television, a low cabinet, and a plant. It is not yet confirmed whether the dining table and chairs have been passed on the left while walking straight through the dining room, and the doorway leading to the kitchen has not been reached."
+      },
+      "progress_anchor": {
+        "id": "S04",
+        "frame": 25
+      }
+    }
+  ],
+  "stop_node": "S05"
+}

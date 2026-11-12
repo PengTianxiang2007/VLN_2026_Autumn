@@ -1,0 +1,36 @@
+{
+  "mode": "initialization",
+  "previous_id": "S01",
+  "current_id": "S01",
+  "previous_frame": 8,
+  "current_frame": 8,
+  "instruction_en": "Walk forward, keeping the tall built-in shelf with bottles and books on your left. Proceed straight, passing the shelf on your left. Turn right, moving past the dining table on your right. Enter the kitchen through the open doorway on your right. Stop in front of the window and sink, with the large refrigerator on your left.",
+  "prior_semantic_progress": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+  "coverage": "Endpoint observations plus up to five uniformly sampled intermediate observations. Frames are not necessarily consecutive. Review ends at B.",
+  "images": [
+    {
+      "frame": 8,
+      "role": "A=B",
+      "image_id": "6f9021dbb98d7056828f6189a21c42b00140602a8a4c22fb547693b6f869a05a",
+      "path": "assets/6f9021dbb98d7056828f6189a21c42b00140602a8a4c22fb547693b6f869a05a.webp",
+      "sha256": "6f9021dbb98d7056828f6189a21c42b00140602a8a4c22fb547693b6f869a05a",
+      "bytes": 13100
+    }
+  ],
+  "settings": {
+    "model": "deepseek-flash",
+    "response_format": {
+      "type": "json_object"
+    },
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_tokens": 32768,
+    "stream": false
+  },
+  "prompt_sha256": "129ef91051dcb6cc1be8e2e276cb102166bff322a36fdd10661e644de2162cad",
+  "request_sha256": "4ab265d6989842b05e0e0b6474674612eb42605ea9e6c1ba886683a4bb8aeb86",
+  "started_at": "2026-11-12T08:25:49.639830+00:00",
+  "worker_pid": 44612
+}

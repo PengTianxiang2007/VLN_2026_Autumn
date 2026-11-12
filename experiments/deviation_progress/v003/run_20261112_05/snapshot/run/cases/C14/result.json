@@ -1,0 +1,208 @@
+{
+  "case_number": 14,
+  "case_index": 3,
+  "episode_id": "kujiale_0207_60_4 · F0",
+  "real_episode_id": "kujiale_0207_60_4",
+  "scene": "kujiale_0207",
+  "worker_pid": 35964,
+  "started_at": "2026-11-12T08:11:10.822758+00:00",
+  "completed_at": "2026-11-12T08:11:38.900931+00:00",
+  "reviews": [
+    {
+      "node_id": "S01",
+      "node_frame": 0,
+      "available_at_frame": 5,
+      "terminal_node": false,
+      "mode": "initialization",
+      "previous_id": "S01",
+      "from_frame": 0,
+      "to_frame": 0,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 0,
+          "role": "A=B",
+          "image_id": "225fc291d5fd3222a11e8e4d04c4c490b6a2a806d05bfaba4dc3b4e132d3de3b",
+          "path": "assets/225fc291d5fd3222a11e8e4d04c4c490b6a2a806d05bfaba4dc3b4e132d3de3b.webp"
+        }
+      ],
+      "status": "error",
+      "elapsed_seconds": 5.549,
+      "started_at": "2026-11-12T08:11:10.828780+00:00",
+      "completed_at": "2026-11-12T08:11:16.377283+00:00",
+      "worker_pid": 35964,
+      "request_file": "run/cases/C14/S01.request.json",
+      "response_file": "run/cases/C14/S01.response.json",
+      "usage": {
+        "prompt_tokens": 1447,
+        "completion_tokens": 721,
+        "total_tokens": 2168,
+        "prompt_tokens_details": {
+          "cached_tokens": 1280
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 195
+        },
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 167
+      },
+      "error": "ValueError: Invalid uncertainties",
+      "committed_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 0
+      }
+    },
+    {
+      "node_id": "S02",
+      "node_frame": 9,
+      "available_at_frame": 14,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S01",
+      "from_frame": 0,
+      "to_frame": 9,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 0,
+          "role": "A",
+          "image_id": "225fc291d5fd3222a11e8e4d04c4c490b6a2a806d05bfaba4dc3b4e132d3de3b",
+          "path": "assets/225fc291d5fd3222a11e8e4d04c4c490b6a2a806d05bfaba4dc3b4e132d3de3b.webp"
+        },
+        {
+          "frame": 1,
+          "role": "history",
+          "image_id": "3c1d4316937a19bf50b1246dff164ddfd97f70a78aa3ca65b7bcb830c57334e7",
+          "path": "assets/3c1d4316937a19bf50b1246dff164ddfd97f70a78aa3ca65b7bcb830c57334e7.webp"
+        },
+        {
+          "frame": 3,
+          "role": "history",
+          "image_id": "74085d1f1cf4c03e50f5c547bb8d20f215ef6bed9e8c1bdd6cdde4891e8c7d16",
+          "path": "assets/74085d1f1cf4c03e50f5c547bb8d20f215ef6bed9e8c1bdd6cdde4891e8c7d16.webp"
+        },
+        {
+          "frame": 5,
+          "role": "history",
+          "image_id": "0ac15d9ce618423d2dfdde6c13d74a62b84d42893d2b0f57eaad1423b5862b9a",
+          "path": "assets/0ac15d9ce618423d2dfdde6c13d74a62b84d42893d2b0f57eaad1423b5862b9a.webp"
+        },
+        {
+          "frame": 6,
+          "role": "history",
+          "image_id": "e57381a3b42b5a844d485a1f9c40c6561fab52f8bee42a9c639e42d0cb4504cd",
+          "path": "assets/e57381a3b42b5a844d485a1f9c40c6561fab52f8bee42a9c639e42d0cb4504cd.webp"
+        },
+        {
+          "frame": 8,
+          "role": "history",
+          "image_id": "22bcce8581bde40b6ea1a555fe65498504b9c563c0b5cde1aab64a29b5263a84",
+          "path": "assets/22bcce8581bde40b6ea1a555fe65498504b9c563c0b5cde1aab64a29b5263a84.webp"
+        },
+        {
+          "frame": 9,
+          "role": "B",
+          "image_id": "f139e9947935545b547d6a5f3b064bf22be6ba3cc1fc6b6a87738aec479dd175",
+          "path": "assets/f139e9947935545b547d6a5f3b064bf22be6ba3cc1fc6b6a87738aec479dd175.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 22.493,
+      "started_at": "2026-11-12T08:11:16.406145+00:00",
+      "completed_at": "2026-11-12T08:11:38.898639+00:00",
+      "worker_pid": 35964,
+      "request_file": "run/cases/C14/S02.request.json",
+      "response_file": "run/cases/C14/S02.response.json",
+      "usage": {
+        "prompt_tokens": 2741,
+        "completion_tokens": 3372,
+        "total_tokens": 6113,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2906
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 1717
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S02",
+        "verdict": "deviated",
+        "segment_summary": {
+          "zh": "A处可见走廊右侧的门洞通向一间卧室，卧室内有床和窗户。随后画面贴近白墙移动，至B时已位于卧室内，近处可见床、窗帘和木柜，并未沿走廊继续前行。",
+          "en": "At A, a doorway on the right side of the hallway opens into a bedroom with a bed and a window. The view then moves close to white walls, and by B the robot is already inside the bedroom, with the bed, curtains, and a wooden cabinet close by, rather than continuing forward down the hallway."
+        },
+        "reason": {
+          "zh": "任务要求沿走廊直行并从右侧经过卧室门口，而不是进入卧室。F0显示右侧门洞内即是卧室，F9显示相机已进入该卧室，床和窗位于近景，因而本段与任务要求冲突。",
+          "en": "The task requires walking straight down the hallway and passing the bedroom doorway on the right, not entering the bedroom. F0 shows a bedroom through the doorway on the right, and F9 shows the camera already inside that bedroom with the bed and window in the foreground, so this segment conflicts with the task."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Walk straight down the hallway, passing a bedroom doorway on your right.",
+            "quote_zh": "沿走廊直行，经过右侧的一间卧室门口。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              0
+            ],
+            "description": {
+              "zh": "F0显示右侧门洞内是一间有床和窗户的卧室，说明此处是右侧卧室门口。",
+              "en": "F0 shows that the doorway on the right opens into a bedroom with a bed and a window, indicating this is the bedroom doorway on the right."
+            }
+          },
+          {
+            "frames": [
+              8,
+              9
+            ],
+            "description": {
+              "zh": "F8出现木柜与窗帘，F9显示床、窗户、窗帘和木柜的近景，视角已在卧室内。",
+              "en": "F8 shows a wooden cabinet and curtains, and F9 shows the bed, window, curtains, and wooden cabinet in close view, with the viewpoint already inside the bedroom."
+            }
+          }
+        ],
+        "semantic_progress": null,
+        "uncertainties": []
+      },
+      "rollback_target": {
+        "node_id": "S01",
+        "frame": 0,
+        "progress": {
+          "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+          "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+        }
+      },
+      "committed_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 0
+      }
+    }
+  ],
+  "stop_node": "S02",
+  "stop_reason": "first_deviation",
+  "terminal_frame": 72,
+  "raw_node_count": 4,
+  "retained_node_count": 4,
+  "unreviewed_nodes": [
+    "S03",
+    "S04"
+  ]
+}

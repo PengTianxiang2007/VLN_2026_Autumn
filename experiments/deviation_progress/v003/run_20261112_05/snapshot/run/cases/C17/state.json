@@ -1,0 +1,818 @@
+{
+  "case_number": 17,
+  "pid": 23072,
+  "reviews": [
+    {
+      "node_id": "S01",
+      "node_frame": 0,
+      "available_at_frame": 5,
+      "terminal_node": false,
+      "mode": "initialization",
+      "previous_id": "S01",
+      "from_frame": 0,
+      "to_frame": 0,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 0,
+          "role": "A=B",
+          "image_id": "4355e4a841d780bea9240efcf42985c99bb2ec4cfeeb2f8fd29019123ed98a9b",
+          "path": "assets/4355e4a841d780bea9240efcf42985c99bb2ec4cfeeb2f8fd29019123ed98a9b.webp"
+        }
+      ],
+      "status": "error",
+      "elapsed_seconds": 7.489,
+      "started_at": "2026-11-12T08:11:10.832325+00:00",
+      "completed_at": "2026-11-12T08:11:18.314361+00:00",
+      "worker_pid": 23072,
+      "request_file": "run/cases/C17/S01.request.json",
+      "response_file": "run/cases/C17/S01.response.json",
+      "usage": {
+        "prompt_tokens": 1471,
+        "completion_tokens": 933,
+        "total_tokens": 2404,
+        "prompt_tokens_details": {
+          "cached_tokens": 1280
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 466
+        },
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 191
+      },
+      "error": "ValueError: Unexpected/missing answer fields: ['verdict']",
+      "committed_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 0
+      }
+    },
+    {
+      "node_id": "S02",
+      "node_frame": 33,
+      "available_at_frame": 38,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S01",
+      "from_frame": 0,
+      "to_frame": 33,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 0,
+          "role": "A",
+          "image_id": "4355e4a841d780bea9240efcf42985c99bb2ec4cfeeb2f8fd29019123ed98a9b",
+          "path": "assets/4355e4a841d780bea9240efcf42985c99bb2ec4cfeeb2f8fd29019123ed98a9b.webp"
+        },
+        {
+          "frame": 1,
+          "role": "history",
+          "image_id": "9b9f6e648e16aaa140147c7b0a1133af3f2b6c6e599aeaf389676d3ee8dd81fd",
+          "path": "assets/9b9f6e648e16aaa140147c7b0a1133af3f2b6c6e599aeaf389676d3ee8dd81fd.webp"
+        },
+        {
+          "frame": 9,
+          "role": "history",
+          "image_id": "06b16ad4aea03539743c79e5fe0f675a5edcbf347e2dd01f104aad04770749cf",
+          "path": "assets/06b16ad4aea03539743c79e5fe0f675a5edcbf347e2dd01f104aad04770749cf.webp"
+        },
+        {
+          "frame": 17,
+          "role": "history",
+          "image_id": "ad1ccad09c5cca7ff4f88947d2b4b3466dc73e7962ef9b05519af5b8f6777e94",
+          "path": "assets/ad1ccad09c5cca7ff4f88947d2b4b3466dc73e7962ef9b05519af5b8f6777e94.webp"
+        },
+        {
+          "frame": 24,
+          "role": "history",
+          "image_id": "91b7dfae4a5ab335d3c5a63b68d7f86e7f5a362b4c30dd8c7fbb707c9034d0cb",
+          "path": "assets/91b7dfae4a5ab335d3c5a63b68d7f86e7f5a362b4c30dd8c7fbb707c9034d0cb.webp"
+        },
+        {
+          "frame": 32,
+          "role": "history",
+          "image_id": "d1e4cee04148e5f0ac3c901cc36e5f6f1bf4b29deddff3cf30d1a77c691ec0bd",
+          "path": "assets/d1e4cee04148e5f0ac3c901cc36e5f6f1bf4b29deddff3cf30d1a77c691ec0bd.webp"
+        },
+        {
+          "frame": 33,
+          "role": "B",
+          "image_id": "3ed4274600520440fe51b6c196b1075965b8ae23be704d8aa13a46fe29067759",
+          "path": "assets/3ed4274600520440fe51b6c196b1075965b8ae23be704d8aa13a46fe29067759.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 23.302,
+      "started_at": "2026-11-12T08:11:18.341180+00:00",
+      "completed_at": "2026-11-12T08:11:41.639204+00:00",
+      "worker_pid": 23072,
+      "request_file": "run/cases/C17/S02.request.json",
+      "response_file": "run/cases/C17/S02.response.json",
+      "usage": {
+        "prompt_tokens": 2765,
+        "completion_tokens": 3404,
+        "total_tokens": 6169,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2647
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 1741
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S02",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "机器人从带衣柜卧室的走廊入口附近出发，中途视角转向卧室内的床、书桌和窗，随后回到走廊入口。截至 B，仍位于或靠近走廊入口，未观察到已进入并沿走廊直行。",
+          "en": "The robot started near the hallway entrance of the room with the wardrobe, turned its view toward the bed, desk, and window inside the bedroom, and then returned to the hallway entrance. By B, it remains at or near the hallway entrance, and it is not observed to have entered and walked straight down the hallway."
+        },
+        "reason": {
+          "zh": "F0、F1、F32、F33 显示带白色衣柜的卧室及左侧走廊入口，B 仍在入口一侧；F9、F17、F24 显示卧室内床、书桌和窗。该段与“从衣柜房间转向走廊”的当前阶段不冲突，但尚未看到穿过门洞或沿走廊前进，因此没有新增通行完成项，后续走廊地标仍未核对。",
+          "en": "F0, F1, F32, and F33 show the bedroom with the white wardrobe and the hallway entrance on the left, with B still on the entrance side; F9, F17, and F24 show the bed, desk, and window inside the bedroom. This segment does not conflict with the current stage of turning from the wardrobe room toward the hallway, but the robot has not been seen passing through the doorway or advancing along the hallway, so no new traversal item is completed and later hallway landmarks remain unchecked."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Turn left to enter the hallway from the room with the wardrobe.",
+            "quote_zh": "左转，从有衣柜的房间进入走廊。"
+          },
+          {
+            "quote_en": "Walk straight down the hallway",
+            "quote_zh": "沿走廊直走"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              0,
+              1,
+              32,
+              33
+            ],
+            "description": {
+              "zh": "这些帧显示带白色衣柜的房间和左侧走廊入口；B 帧仍在入口附近，未见已穿过走廊门洞。",
+              "en": "These frames show the room with the white wardrobe and the hallway entrance on the left; the B frame is still near the entrance, with no indication of having passed through the hallway doorway."
+            }
+          },
+          {
+            "frames": [
+              9,
+              17,
+              24
+            ],
+            "description": {
+              "zh": "这些帧显示卧室内有床、书桌、照片墙和窗，说明本段中途视角曾转向卧室内部。",
+              "en": "These frames show the bed, desk, photo wall, and window inside the bedroom, indicating that during this segment the view turned toward the bedroom interior."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "截至 B：位于带衣柜的卧室内、靠近走廊入口，朝向走廊一侧；尚未确认已实际进入走廊或开始沿走廊直行。此前路线进度仍未确认。",
+          "en": "As of B: located in the room with the wardrobe, near the hallway entrance and facing toward the hallway side; it is not yet confirmed that the robot has actually entered the hallway or begun walking straight down it. Prior route progress remains unconfirmed."
+        },
+        "uncertainties": [
+          {
+            "zh": "B 是已站在走廊门洞内，还是仍在卧室门口一侧？",
+            "en": "Whether B is already inside the hallway doorway or still on the bedroom side of the entrance?"
+          },
+          {
+            "zh": "走廊右侧的浴室与左侧卧室开门口尚未在本次可见帧中确认。",
+            "en": "The bathroom on the right side of the hallway and the open bedroom doorway on the left have not yet been confirmed in the visible frames."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "截至 B：位于带衣柜的卧室内、靠近走廊入口，朝向走廊一侧；尚未确认已实际进入走廊或开始沿走廊直行。此前路线进度仍未确认。",
+        "en": "As of B: located in the room with the wardrobe, near the hallway entrance and facing toward the hallway side; it is not yet confirmed that the robot has actually entered the hallway or begun walking straight down it. Prior route progress remains unconfirmed."
+      },
+      "progress_anchor": {
+        "id": "S02",
+        "frame": 33
+      }
+    },
+    {
+      "node_id": "S03",
+      "node_frame": 54,
+      "available_at_frame": 59,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S02",
+      "from_frame": 33,
+      "to_frame": 54,
+      "prior_progress": {
+        "zh": "截至 B：位于带衣柜的卧室内、靠近走廊入口，朝向走廊一侧；尚未确认已实际进入走廊或开始沿走廊直行。此前路线进度仍未确认。",
+        "en": "As of B: located in the room with the wardrobe, near the hallway entrance and facing toward the hallway side; it is not yet confirmed that the robot has actually entered the hallway or begun walking straight down it. Prior route progress remains unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 33,
+          "role": "A",
+          "image_id": "3ed4274600520440fe51b6c196b1075965b8ae23be704d8aa13a46fe29067759",
+          "path": "assets/3ed4274600520440fe51b6c196b1075965b8ae23be704d8aa13a46fe29067759.webp"
+        },
+        {
+          "frame": 34,
+          "role": "history",
+          "image_id": "1453399f4c6a1bd26201f891a3d4cb87dd71dc07181ca08ae1627fe9fac57b62",
+          "path": "assets/1453399f4c6a1bd26201f891a3d4cb87dd71dc07181ca08ae1627fe9fac57b62.webp"
+        },
+        {
+          "frame": 39,
+          "role": "history",
+          "image_id": "e04a2fe02272437f1fcff4368e4602012a1ea156e0156a5a1d94552285014cec",
+          "path": "assets/e04a2fe02272437f1fcff4368e4602012a1ea156e0156a5a1d94552285014cec.webp"
+        },
+        {
+          "frame": 44,
+          "role": "history",
+          "image_id": "91115f082ea0f9e33a4ec70d56cb438ab2362242224f0da9e2e0893b65031b6d",
+          "path": "assets/91115f082ea0f9e33a4ec70d56cb438ab2362242224f0da9e2e0893b65031b6d.webp"
+        },
+        {
+          "frame": 48,
+          "role": "history",
+          "image_id": "d2e8059f5c5e6de2424359068c3f94706b9ff7326a0c14de1e874d9fe693f690",
+          "path": "assets/d2e8059f5c5e6de2424359068c3f94706b9ff7326a0c14de1e874d9fe693f690.webp"
+        },
+        {
+          "frame": 53,
+          "role": "history",
+          "image_id": "2a6ae6f81fc96d93e81a8b81f890f5038119e66722008b66df1dd63e75d8cdce",
+          "path": "assets/2a6ae6f81fc96d93e81a8b81f890f5038119e66722008b66df1dd63e75d8cdce.webp"
+        },
+        {
+          "frame": 54,
+          "role": "B",
+          "image_id": "7c35b5acf52b3696a74f4362e4fd2051035d7ede95ee59f697563a4b0936c5e0",
+          "path": "assets/7c35b5acf52b3696a74f4362e4fd2051035d7ede95ee59f697563a4b0936c5e0.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 57.914,
+      "started_at": "2026-11-12T08:11:41.660813+00:00",
+      "completed_at": "2026-11-12T08:12:39.567636+00:00",
+      "worker_pid": 23072,
+      "request_file": "run/cases/C17/S03.request.json",
+      "response_file": "run/cases/C17/S03.response.json",
+      "usage": {
+        "prompt_tokens": 2790,
+        "completion_tokens": 9277,
+        "total_tokens": 12067,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 8220
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 1766
+      },
+      "answer": {
+        "previous_id": "S02",
+        "current_id": "S03",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "本段从衣柜附近的走廊入口开始，沿木地板走廊直行；左侧经过挂有植物画的墙面，右侧经过柜体/衣物挂钩区域，接近走廊尽头时右侧出现玻璃淋浴间/浴室。到达 B 时仍面对前方门洞，尚未穿过门洞进入客厅。",
+          "en": "In this segment, starting from the hallway entrance near the wardrobe, the robot moved straight along the wood-floored hallway; it passed a wall with botanical artwork on the left and a cabinet/coat-hook area on the right, and near the end of the hallway a glass shower/bathroom appeared on the right. At B, it was still facing the doorway ahead and had not passed through into the living room."
+        },
+        "reason": {
+          "zh": "原任务要求从带衣柜的房间进入走廊后直行，并经过右侧浴室，再到走廊尽头进入客厅。新观测显示机器人已在走廊中持续向前，右侧出现浴室/玻璃淋浴间，B 仍停在走廊内、面对前方门洞；这与当前走廊直行段不冲突，但尚未确认到达或穿过客厅拱门，也未确认左侧卧室门口。",
+          "en": "The task requires entering the hallway from the room with the wardrobe, walking straight, passing a bathroom on the right, and then entering the living room at the end of the hallway. The new observations show continued forward travel in the hallway, with a bathroom/glass shower on the right; at B the robot remains in the hallway facing the doorway ahead. This does not conflict with the current hallway segment, but reaching or passing through the living-room archway is not yet confirmed, nor is the bedroom doorway on the left."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Turn left to enter the hallway from the room with the wardrobe.",
+            "quote_zh": "从带衣柜的房间左转进入走廊。"
+          },
+          {
+            "quote_en": "Walk straight down the hallway, passing a bathroom on your right and an open doorway to a bedroom on your left.",
+            "quote_zh": "沿走廊直行，经过右侧的浴室和左侧通往卧室的敞开的门口。"
+          },
+          {
+            "quote_en": "Go through the open archway at the end of the hallway to enter the living room.",
+            "quote_zh": "穿过走廊尽头的开放拱门进入客厅。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              33,
+              34,
+              39
+            ],
+            "description": {
+              "zh": "这些帧显示木地板走廊、左侧挂画墙面和右侧柜体/门框，视角持续向前，说明机器人沿走廊直行。",
+              "en": "These frames show the wood-floored hallway, the artwork wall on the left, and the cabinet/door frame on the right, with the view continuing forward, indicating straight travel along the hallway."
+            }
+          },
+          {
+            "frames": [
+              44,
+              48
+            ],
+            "description": {
+              "zh": "右侧经过柜体/衣物挂钩区域，随后继续朝前方门洞行进。",
+              "en": "The robot passed a cabinet/coat-hook area on the right and then continued toward the doorway ahead."
+            }
+          },
+          {
+            "frames": [
+              53,
+              54
+            ],
+            "description": {
+              "zh": "在接近 B 的位置，右侧可见玻璃淋浴间/浴室，前方仍有未穿过的门洞。",
+              "en": "Near B, a glass shower/bathroom is visible on the right, while the doorway ahead has not yet been crossed."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "截至 B：已进入木地板走廊并沿走廊直行，左侧经过挂画墙面，右侧可见浴室/玻璃淋浴间；仍在走廊内、面对前方门洞，尚未穿过门洞进入客厅。左侧卧室门口是否已经过仍未确认，客厅、阳光房及沙发尚未到达。此前从起点至衣柜房间的路线仍未确认。",
+          "en": "As of B: the robot has entered the wood-floored hallway and moved straight along it, passing the artwork wall on the left and seeing the bathroom/glass shower on the right; it is still in the hallway facing the doorway ahead and has not passed through into the living room. Whether the bedroom doorway on the left has been passed remains unconfirmed, and the living room, sunroom, and sofa have not been reached. The earlier route from the recording start to the wardrobe room remains unconfirmed."
+        },
+        "uncertainties": [
+          {
+            "zh": "提供的帧未清楚显示左侧通往卧室的开放门口，无法确认是否已从旁经过。",
+            "en": "The provided frames do not clearly show the open doorway to the bedroom on the left, so it is not confirmed whether it has been passed."
+          },
+          {
+            "zh": "B 处前方门洞是否就是任务所述走廊尽头的客厅拱门，尚需穿过时确认。",
+            "en": "It still needs to be confirmed by passing through whether the doorway ahead at B is the living-room archway at the end of the hallway described in the task."
+          },
+          {
+            "zh": "从录像起点到衣柜房间的此前路线仍未由本次提供的帧确认。",
+            "en": "The earlier route from the recording start to the wardrobe room is still not confirmed by the frames provided in this review."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "截至 B：已进入木地板走廊并沿走廊直行，左侧经过挂画墙面，右侧可见浴室/玻璃淋浴间；仍在走廊内、面对前方门洞，尚未穿过门洞进入客厅。左侧卧室门口是否已经过仍未确认，客厅、阳光房及沙发尚未到达。此前从起点至衣柜房间的路线仍未确认。",
+        "en": "As of B: the robot has entered the wood-floored hallway and moved straight along it, passing the artwork wall on the left and seeing the bathroom/glass shower on the right; it is still in the hallway facing the doorway ahead and has not passed through into the living room. Whether the bedroom doorway on the left has been passed remains unconfirmed, and the living room, sunroom, and sofa have not been reached. The earlier route from the recording start to the wardrobe room remains unconfirmed."
+      },
+      "progress_anchor": {
+        "id": "S03",
+        "frame": 54
+      }
+    },
+    {
+      "node_id": "S04",
+      "node_frame": 64,
+      "available_at_frame": 69,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S03",
+      "from_frame": 54,
+      "to_frame": 64,
+      "prior_progress": {
+        "zh": "截至 B：已进入木地板走廊并沿走廊直行，左侧经过挂画墙面，右侧可见浴室/玻璃淋浴间；仍在走廊内、面对前方门洞，尚未穿过门洞进入客厅。左侧卧室门口是否已经过仍未确认，客厅、阳光房及沙发尚未到达。此前从起点至衣柜房间的路线仍未确认。",
+        "en": "As of B: the robot has entered the wood-floored hallway and moved straight along it, passing the artwork wall on the left and seeing the bathroom/glass shower on the right; it is still in the hallway facing the doorway ahead and has not passed through into the living room. Whether the bedroom doorway on the left has been passed remains unconfirmed, and the living room, sunroom, and sofa have not been reached. The earlier route from the recording start to the wardrobe room remains unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 54,
+          "role": "A",
+          "image_id": "7c35b5acf52b3696a74f4362e4fd2051035d7ede95ee59f697563a4b0936c5e0",
+          "path": "assets/7c35b5acf52b3696a74f4362e4fd2051035d7ede95ee59f697563a4b0936c5e0.webp"
+        },
+        {
+          "frame": 55,
+          "role": "history",
+          "image_id": "1b6ef75af6649a476ea5837cf48df050503d0463000261e32e97c07fcb2de34e",
+          "path": "assets/1b6ef75af6649a476ea5837cf48df050503d0463000261e32e97c07fcb2de34e.webp"
+        },
+        {
+          "frame": 57,
+          "role": "history",
+          "image_id": "a92f0778b899db8e17609e90737e551e19fac39f582b3065efdcb6c265c16efe",
+          "path": "assets/a92f0778b899db8e17609e90737e551e19fac39f582b3065efdcb6c265c16efe.webp"
+        },
+        {
+          "frame": 59,
+          "role": "history",
+          "image_id": "2460197d674c066fd1e995c4956c60449768032b4d7629de61982e4e2a56c920",
+          "path": "assets/2460197d674c066fd1e995c4956c60449768032b4d7629de61982e4e2a56c920.webp"
+        },
+        {
+          "frame": 61,
+          "role": "history",
+          "image_id": "9cb5550b795f700f950fbeabe27fea9306e4cd2eb7e9736142c2382d2ee62121",
+          "path": "assets/9cb5550b795f700f950fbeabe27fea9306e4cd2eb7e9736142c2382d2ee62121.webp"
+        },
+        {
+          "frame": 63,
+          "role": "history",
+          "image_id": "143decdf5f420f45d060c9d9aab06e97647fbcce14629c6f3ed3112fa8977c0c",
+          "path": "assets/143decdf5f420f45d060c9d9aab06e97647fbcce14629c6f3ed3112fa8977c0c.webp"
+        },
+        {
+          "frame": 64,
+          "role": "B",
+          "image_id": "725a2327e5aefef9fd7d9bc6ddd0f6e532aa96a63b973212610673ae0ed4a6fa",
+          "path": "assets/725a2327e5aefef9fd7d9bc6ddd0f6e532aa96a63b973212610673ae0ed4a6fa.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 22.369,
+      "started_at": "2026-11-12T08:12:39.583580+00:00",
+      "completed_at": "2026-11-12T08:13:01.957962+00:00",
+      "worker_pid": 23072,
+      "request_file": "run/cases/C17/S04.request.json",
+      "response_file": "run/cases/C17/S04.response.json",
+      "usage": {
+        "prompt_tokens": 2827,
+        "completion_tokens": 3549,
+        "total_tokens": 6376,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2665
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1931
+      },
+      "answer": {
+        "previous_id": "S03",
+        "current_id": "S04",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "本段沿走廊继续向前：右侧先后可见玻璃淋浴间和马桶所在的浴室，左侧在接近 B 时出现并正经过一扇开着的卧室门口，门口内可见床；前方仍有通向带电视/书桌房间的门洞，尚未穿过。",
+          "en": "In this segment the robot continued forward along the hallway: on the right it passed a bathroom with a glass shower and toilet; near B an open bedroom doorway appeared on the left with a bed visible inside, and the robot was passing it; ahead there remained a doorway into a room with a TV/desk, not yet crossed."
+        },
+        "reason": {
+          "zh": "与任务“沿走廊直行，右侧浴室、左侧卧室门口”一致；B 处仍在走廊且未穿过尽头门洞，进入客厅及后续阳光房、沙发尚未确认，也未见冲突通行。",
+          "en": "This is consistent with the task of walking straight down the hallway, passing a bathroom on the right and an open bedroom doorway on the left; at B the robot is still in the hallway and has not crossed the doorway at the end, so entering the living room and later the sunroom/sofa are not yet confirmed, and no conflicting passage is observed."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Walk straight down the hallway, passing a bathroom on your right and an open doorway to a bedroom on your left.",
+            "quote_zh": "沿走廊直行，从右侧经过一间浴室，从左侧经过一扇开着的卧室门口。"
+          },
+          {
+            "quote_en": "Go through the open archway at the end of the hallway to enter the living room.",
+            "quote_zh": "穿过走廊尽头的开放式拱门进入客厅。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              54,
+              55,
+              57,
+              61
+            ],
+            "description": {
+              "zh": "A 及其中间帧显示仍在走廊内直行，右侧依次可见玻璃淋浴间、浴室和马桶，左侧墙面有挂画；支持沿走廊前进并从右侧经过浴室。",
+              "en": "Frame A and the intermediate frames show continued forward movement in the hallway, with a glass shower, bathroom, and toilet visible on the right and artwork on the left wall; this supports walking along the hallway and passing the bathroom on the right."
+            }
+          },
+          {
+            "frames": [
+              63,
+              64
+            ],
+            "description": {
+              "zh": "接近 B 时左侧出现敞开的卧室门口，门口内可见床和窗，机器人仍在走廊内并面对前方门洞。",
+              "en": "Near B, an open bedroom doorway appears on the left with a bed and window visible inside, while the robot remains in the hallway facing the doorway ahead."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "截至 B：已从走廊继续直行，右侧经过浴室（可见玻璃淋浴间和马桶），左侧到达并正经过一扇开着的卧室门口，门口内可见床；仍位于走廊内、面对前方门洞，尚未穿过门洞进入客厅。客厅、阳光房及沙发尚未到达；此前从衣柜房间左转进入走廊及起点至该房间的路线仍未确认。",
+          "en": "As of B: the robot has continued straight along the hallway, passed a bathroom on the right (glass shower and toilet visible), and reached/passed an open bedroom doorway on the left with a bed visible inside; it is still in the hallway facing the doorway ahead and has not crossed the doorway into the living room. The living room, sunroom, and sofa have not been reached; the earlier route of turning left from the wardrobe room into the hallway and the route from the start to that room remain unconfirmed."
+        },
+        "uncertainties": [
+          {
+            "zh": "B 处尚未穿过尽头门洞进入客厅，客厅、阳光房及沙发的位置关系尚未确认。",
+            "en": "At B the robot has not yet crossed the doorway at the end into the living room, and the spatial relationships of the living room, sunroom, and sofa are not yet confirmed."
+          },
+          {
+            "zh": "此前从衣柜房间左转进入走廊以及起点至衣柜房间的路线仍未确认。",
+            "en": "The earlier route of turning left from the wardrobe room into the hallway, and the route from the start to the wardrobe room, remain unconfirmed."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "截至 B：已从走廊继续直行，右侧经过浴室（可见玻璃淋浴间和马桶），左侧到达并正经过一扇开着的卧室门口，门口内可见床；仍位于走廊内、面对前方门洞，尚未穿过门洞进入客厅。客厅、阳光房及沙发尚未到达；此前从衣柜房间左转进入走廊及起点至该房间的路线仍未确认。",
+        "en": "As of B: the robot has continued straight along the hallway, passed a bathroom on the right (glass shower and toilet visible), and reached/passed an open bedroom doorway on the left with a bed visible inside; it is still in the hallway facing the doorway ahead and has not crossed the doorway into the living room. The living room, sunroom, and sofa have not been reached; the earlier route of turning left from the wardrobe room into the hallway and the route from the start to that room remain unconfirmed."
+      },
+      "progress_anchor": {
+        "id": "S04",
+        "frame": 64
+      }
+    },
+    {
+      "node_id": "S05",
+      "node_frame": 74,
+      "available_at_frame": 79,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S04",
+      "from_frame": 64,
+      "to_frame": 74,
+      "prior_progress": {
+        "zh": "截至 B：已从走廊继续直行，右侧经过浴室（可见玻璃淋浴间和马桶），左侧到达并正经过一扇开着的卧室门口，门口内可见床；仍位于走廊内、面对前方门洞，尚未穿过门洞进入客厅。客厅、阳光房及沙发尚未到达；此前从衣柜房间左转进入走廊及起点至该房间的路线仍未确认。",
+        "en": "As of B: the robot has continued straight along the hallway, passed a bathroom on the right (glass shower and toilet visible), and reached/passed an open bedroom doorway on the left with a bed visible inside; it is still in the hallway facing the doorway ahead and has not crossed the doorway into the living room. The living room, sunroom, and sofa have not been reached; the earlier route of turning left from the wardrobe room into the hallway and the route from the start to that room remain unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 64,
+          "role": "A",
+          "image_id": "725a2327e5aefef9fd7d9bc6ddd0f6e532aa96a63b973212610673ae0ed4a6fa",
+          "path": "assets/725a2327e5aefef9fd7d9bc6ddd0f6e532aa96a63b973212610673ae0ed4a6fa.webp"
+        },
+        {
+          "frame": 65,
+          "role": "history",
+          "image_id": "dcc4217d2b021354ea394c0112516162251dbcc73609f05ddec3390673416c81",
+          "path": "assets/dcc4217d2b021354ea394c0112516162251dbcc73609f05ddec3390673416c81.webp"
+        },
+        {
+          "frame": 67,
+          "role": "history",
+          "image_id": "829b372badb80c02f15e3228bec8cb70e2200d4ddd43e51bce3d6164810c2ac3",
+          "path": "assets/829b372badb80c02f15e3228bec8cb70e2200d4ddd43e51bce3d6164810c2ac3.webp"
+        },
+        {
+          "frame": 69,
+          "role": "history",
+          "image_id": "3c62a92984f00c625c05f5602db25f1e56a9f10bbda3017d3a67d371536a5c8f",
+          "path": "assets/3c62a92984f00c625c05f5602db25f1e56a9f10bbda3017d3a67d371536a5c8f.webp"
+        },
+        {
+          "frame": 71,
+          "role": "history",
+          "image_id": "6bbff1cac0f59c22a1fae472da37849dec1a1a4a42f85960d0a24fdb35e8b1a2",
+          "path": "assets/6bbff1cac0f59c22a1fae472da37849dec1a1a4a42f85960d0a24fdb35e8b1a2.webp"
+        },
+        {
+          "frame": 73,
+          "role": "history",
+          "image_id": "fc8a83c6def71bd628d0c83f377ae89a64aa92115d121a8e604f7ac74c876d67",
+          "path": "assets/fc8a83c6def71bd628d0c83f377ae89a64aa92115d121a8e604f7ac74c876d67.webp"
+        },
+        {
+          "frame": 74,
+          "role": "B",
+          "image_id": "6be07a93316ccb01f2776592a425719dc63907f5fccce548cacab9f711c922b9",
+          "path": "assets/6be07a93316ccb01f2776592a425719dc63907f5fccce548cacab9f711c922b9.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 50.851,
+      "started_at": "2026-11-12T08:13:01.963846+00:00",
+      "completed_at": "2026-11-12T08:13:52.805023+00:00",
+      "worker_pid": 23072,
+      "request_file": "run/cases/C17/S05.request.json",
+      "response_file": "run/cases/C17/S05.response.json",
+      "usage": {
+        "prompt_tokens": 2836,
+        "completion_tokens": 7985,
+        "total_tokens": 10821,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 7020
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 1812
+      },
+      "answer": {
+        "previous_id": "S04",
+        "current_id": "S05",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "沿走廊继续直线前行，从左侧敞开的卧室门口经过（可见床），随后接近走廊尽头的敞开门洞；到B时位于门洞前，尚未穿过，门内可见左侧墙上的电视、桌柜和椅子。",
+          "en": "Continued straight along the hallway, passing the open bedroom doorway on the left (bed visible), then approached the open doorway at the end of the hallway; at B it is in front of the doorway, not yet through, with a TV on the left wall, a desk/cabinet, and a chair visible inside."
+        },
+        "reason": {
+          "zh": "画面支持沿走廊直行并在左侧经过卧室门口，与任务中沿走廊直行、右侧浴室和左侧卧室门的空间关系不冲突；尽头门洞仍在身前、尚未穿过，不能确认已进入客厅或已从沙发/电视左侧经过，但也没有偏航证据。",
+          "en": "The frames support walking straight along the hallway and passing the bedroom doorway on the left, which does not conflict with the instructed spatial relation of continuing down the hallway with the bathroom on the right and the bedroom doorway on the left; the end doorway is still in front and has not been crossed, so entry into the living room or passing the sofa/TV on the left cannot be confirmed, but there is no evidence of deviation."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Walk straight down the hallway, passing a bathroom on your right and an open doorway to a bedroom on your left.",
+            "quote_zh": "沿走廊直行，从右侧的浴室和左侧敞开的卧室门口经过。"
+          },
+          {
+            "quote_en": "Go through the open archway at the end of the hallway to enter the living room.",
+            "quote_zh": "穿过走廊尽头的敞开门洞进入客厅。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              64,
+              65,
+              67,
+              69,
+              71,
+              73
+            ],
+            "description": {
+              "zh": "这些帧显示走廊视角持续向前，左侧敞开的卧室门内可见床，尽头敞开门洞逐渐靠近；未显示进入左侧卧室。",
+              "en": "These frames show a continuous forward view along the hallway, with a bed visible through the open bedroom doorway on the left and the open doorway at the end gradually coming closer; they do not show entry into the left bedroom."
+            }
+          },
+          {
+            "frames": [
+              74
+            ],
+            "description": {
+              "zh": "B帧显示仍以走廊灰色地面为前景，尽头门洞的门框和门槛在视野中，门内可见电视、桌柜、椅子与窗户；没有显示已经穿过门洞或客厅中的沙发。",
+              "en": "Frame B shows the gray hallway floor still in the foreground, with the frame and threshold of the end doorway in view; a TV, desk/cabinet, chair, and window are visible inside; it does not show having passed through the doorway or a sofa in the living room."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "截至B：已继续沿走廊直线前行，进一步经过左侧敞开的卧室门口（可见床），到达走廊尽头的敞开门洞前，尚未穿过门洞进入前方房间；门内可见左侧墙上的电视、桌柜和椅子，但客厅、沙发及后续阳光房尚未确认。此前右侧经过浴室、从衣柜房间左转进入走廊及更早路线仍未确认。",
+          "en": "As of B: has continued straight along the hallway, passed further by the open bedroom doorway on the left (bed visible), and reached the open doorway at the end of the hallway, but has not yet passed through it into the room ahead; a TV on the left wall, a desk/cabinet, and a chair are visible inside, while the living room, sofa, and subsequent sunroom are not yet confirmed. The earlier passing of the bathroom on the right, the left turn from the wardrobe room into the hallway, and the earlier route remain unconfirmed."
+        },
+        "uncertainties": [
+          {
+            "zh": "尽头门洞内的房间是否就是任务所指的客厅尚未确认；目前只看到电视、桌柜和椅子，未看到沙发。",
+            "en": "Whether the room inside the doorway at the end of the hallway is the living room referred to by the task remains unconfirmed; only a TV, desk/cabinet, and chair have been seen, not a sofa."
+          },
+          {
+            "zh": "此前从衣柜房间左转进入走廊及右侧浴室经过等进度来自上一份记录，本段未重新观测确认。",
+            "en": "The earlier progress of turning left from the wardrobe room into the hallway and passing the bathroom on the right comes from the previous record and was not re-observed in this segment."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "截至B：已继续沿走廊直线前行，进一步经过左侧敞开的卧室门口（可见床），到达走廊尽头的敞开门洞前，尚未穿过门洞进入前方房间；门内可见左侧墙上的电视、桌柜和椅子，但客厅、沙发及后续阳光房尚未确认。此前右侧经过浴室、从衣柜房间左转进入走廊及更早路线仍未确认。",
+        "en": "As of B: has continued straight along the hallway, passed further by the open bedroom doorway on the left (bed visible), and reached the open doorway at the end of the hallway, but has not yet passed through it into the room ahead; a TV on the left wall, a desk/cabinet, and a chair are visible inside, while the living room, sofa, and subsequent sunroom are not yet confirmed. The earlier passing of the bathroom on the right, the left turn from the wardrobe room into the hallway, and the earlier route remain unconfirmed."
+      },
+      "progress_anchor": {
+        "id": "S05",
+        "frame": 74
+      }
+    },
+    {
+      "node_id": "S06",
+      "node_frame": 100,
+      "available_at_frame": 100,
+      "terminal_node": true,
+      "mode": "segment",
+      "previous_id": "S05",
+      "from_frame": 74,
+      "to_frame": 100,
+      "prior_progress": {
+        "zh": "截至B：已继续沿走廊直线前行，进一步经过左侧敞开的卧室门口（可见床），到达走廊尽头的敞开门洞前，尚未穿过门洞进入前方房间；门内可见左侧墙上的电视、桌柜和椅子，但客厅、沙发及后续阳光房尚未确认。此前右侧经过浴室、从衣柜房间左转进入走廊及更早路线仍未确认。",
+        "en": "As of B: has continued straight along the hallway, passed further by the open bedroom doorway on the left (bed visible), and reached the open doorway at the end of the hallway, but has not yet passed through it into the room ahead; a TV on the left wall, a desk/cabinet, and a chair are visible inside, while the living room, sofa, and subsequent sunroom are not yet confirmed. The earlier passing of the bathroom on the right, the left turn from the wardrobe room into the hallway, and the earlier route remain unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 74,
+          "role": "A",
+          "image_id": "6be07a93316ccb01f2776592a425719dc63907f5fccce548cacab9f711c922b9",
+          "path": "assets/6be07a93316ccb01f2776592a425719dc63907f5fccce548cacab9f711c922b9.webp"
+        },
+        {
+          "frame": 75,
+          "role": "history",
+          "image_id": "20312344ec9b1a23d8ff9e86ba242014b03330b260a21de2aadd05edf058688e",
+          "path": "assets/20312344ec9b1a23d8ff9e86ba242014b03330b260a21de2aadd05edf058688e.webp"
+        },
+        {
+          "frame": 81,
+          "role": "history",
+          "image_id": "aa2108201768cda542f165572c537a9a1c0c8e3e9eb3cad846a27b28bae0042a",
+          "path": "assets/aa2108201768cda542f165572c537a9a1c0c8e3e9eb3cad846a27b28bae0042a.webp"
+        },
+        {
+          "frame": 87,
+          "role": "history",
+          "image_id": "6279015e1876856b4fe96a84dcb388eb422c11d17300989c0b62dbf272859334",
+          "path": "assets/6279015e1876856b4fe96a84dcb388eb422c11d17300989c0b62dbf272859334.webp"
+        },
+        {
+          "frame": 93,
+          "role": "history",
+          "image_id": "d3aaa92aa8e52bc806566db9974ca0eabff9bfb8cb9a1c7b27fabc6fa0ad14c7",
+          "path": "assets/d3aaa92aa8e52bc806566db9974ca0eabff9bfb8cb9a1c7b27fabc6fa0ad14c7.webp"
+        },
+        {
+          "frame": 99,
+          "role": "history",
+          "image_id": "582e95cf6265f3cfb83dd3d08b3c39baaecb8444cf9c45dac3180de80d0359c6",
+          "path": "assets/582e95cf6265f3cfb83dd3d08b3c39baaecb8444cf9c45dac3180de80d0359c6.webp"
+        },
+        {
+          "frame": 100,
+          "role": "B",
+          "image_id": "db805d3ee3ae039403de28ae3f682fe71e3bc3d0c515990bca739846b38bd1f3",
+          "path": "assets/db805d3ee3ae039403de28ae3f682fe71e3bc3d0c515990bca739846b38bd1f3.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 30.674,
+      "started_at": "2026-11-12T08:13:52.823379+00:00",
+      "completed_at": "2026-11-12T08:14:23.486275+00:00",
+      "worker_pid": 23072,
+      "request_file": "run/cases/C17/S06.request.json",
+      "response_file": "run/cases/C17/S06.response.json",
+      "usage": {
+        "prompt_tokens": 2834,
+        "completion_tokens": 4967,
+        "total_tokens": 7801,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4222
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1938
+      },
+      "answer": {
+        "previous_id": "S05",
+        "current_id": "S06",
+        "verdict": "deviated",
+        "segment_summary": {
+          "zh": "从A处门洞外开始，机器人进入一间铺木地板的房间；左侧墙上的电视和矮柜/书桌、前方的椅子和窗户、右侧的白色床铺相继出现，表明这是卧室。随后它继续向窗前靠近，最后视线移至白色窗帘及矮柜上的小盆栽，未看见客厅沙发或阳光房入口。",
+          "en": "Starting outside the doorway at A, the robot enters a wood-floored room; a wall-mounted TV and low cabinet/desk on the left, a chair and window ahead, and a white bed on the right appear, indicating a bedroom. It then continues toward the window, and the final view moves to white curtains and a small plant on the low cabinet; no living-room sofa or sunroom doorway is seen."
+        },
+        "reason": {
+          "zh": "任务要求穿过走廊尽头的拱门进入客厅，从左侧经过沙发和电视，再进入阳光房并左转；本段却进入一间有床、桌柜、电视和椅子的卧室，最后靠近窗前白色窗帘，未见客厅沙发或阳光房入口，因此发生了与任务要求冲突的通行。",
+          "en": "The task requires going through the open archway at the hallway's end into the living room, passing a sofa and TV on the left, then entering the sunroom and turning left; this segment instead enters a bedroom containing a bed, desk/cabinet, TV, and chair, and finally approaches white window curtains. No living-room sofa or sunroom doorway is seen, so this is movement that conflicts with the task requirements."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Go through the open archway at the end of the hallway to enter the living room.",
+            "quote_zh": "穿过走廊尽头的敞开门洞进入客厅。"
+          },
+          {
+            "quote_en": "passing a sofa and TV on your left",
+            "quote_zh": "从左侧经过沙发和电视"
+          },
+          {
+            "quote_en": "Enter the sunroom through this doorway, and turn left.",
+            "quote_zh": "从这个门口进入阳光房，然后左转。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              74,
+              75,
+              81,
+              87
+            ],
+            "description": {
+              "zh": "在门口及进入后可见左侧墙上的电视和矮柜/书桌、前方的椅子和窗户、右侧的白色床铺，表明这是卧室而非客厅。",
+              "en": "At the doorway and after entering, a wall-mounted TV and low cabinet/desk are visible on the left, a chair and window ahead, and a white bed on the right, indicating a bedroom rather than a living room."
+            }
+          },
+          {
+            "frames": [
+              93,
+              99,
+              100
+            ],
+            "description": {
+              "zh": "视线继续靠近窗前，最后贴近白色窗帘，左下可见矮柜上的小盆栽；没有出现沙发、阳光房门口，也没有左转后停在客厅沙发前的证据。",
+              "en": "The view continues toward the window and finally comes close to white curtains, with a small plant on the low cabinet at lower left; no sofa, sunroom doorway, or evidence of turning left and stopping in front of the living-room sofa appears."
+            }
+          }
+        ],
+        "semantic_progress": null,
+        "uncertainties": [
+          {
+            "zh": "A点之前是否已沿正确走廊到达该门洞，以及该门洞是否就是任务中的走廊尽头拱门，无法仅凭本段确认。",
+            "en": "Whether the robot had reached this doorway along the correct hallway before point A, and whether this doorway is the hallway-end archway in the task, cannot be confirmed from this segment alone."
+          }
+        ]
+      },
+      "rollback_target": {
+        "node_id": "S05",
+        "frame": 74,
+        "progress": {
+          "zh": "截至B：已继续沿走廊直线前行，进一步经过左侧敞开的卧室门口（可见床），到达走廊尽头的敞开门洞前，尚未穿过门洞进入前方房间；门内可见左侧墙上的电视、桌柜和椅子，但客厅、沙发及后续阳光房尚未确认。此前右侧经过浴室、从衣柜房间左转进入走廊及更早路线仍未确认。",
+          "en": "As of B: has continued straight along the hallway, passed further by the open bedroom doorway on the left (bed visible), and reached the open doorway at the end of the hallway, but has not yet passed through it into the room ahead; a TV on the left wall, a desk/cabinet, and a chair are visible inside, while the living room, sofa, and subsequent sunroom are not yet confirmed. The earlier passing of the bathroom on the right, the left turn from the wardrobe room into the hallway, and the earlier route remain unconfirmed."
+        }
+      },
+      "committed_progress": {
+        "zh": "截至B：已继续沿走廊直线前行，进一步经过左侧敞开的卧室门口（可见床），到达走廊尽头的敞开门洞前，尚未穿过门洞进入前方房间；门内可见左侧墙上的电视、桌柜和椅子，但客厅、沙发及后续阳光房尚未确认。此前右侧经过浴室、从衣柜房间左转进入走廊及更早路线仍未确认。",
+        "en": "As of B: has continued straight along the hallway, passed further by the open bedroom doorway on the left (bed visible), and reached the open doorway at the end of the hallway, but has not yet passed through it into the room ahead; a TV on the left wall, a desk/cabinet, and a chair are visible inside, while the living room, sofa, and subsequent sunroom are not yet confirmed. The earlier passing of the bathroom on the right, the left turn from the wardrobe room into the hallway, and the earlier route remain unconfirmed."
+      },
+      "progress_anchor": {
+        "id": "S05",
+        "frame": 74
+      }
+    }
+  ],
+  "stop_node": "S06"
+}

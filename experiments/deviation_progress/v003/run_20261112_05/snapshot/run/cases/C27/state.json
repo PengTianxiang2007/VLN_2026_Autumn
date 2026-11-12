@@ -1,0 +1,577 @@
+{
+  "case_number": 27,
+  "pid": 49660,
+  "reviews": [
+    {
+      "node_id": "S01",
+      "node_frame": 5,
+      "available_at_frame": 10,
+      "terminal_node": false,
+      "mode": "initialization",
+      "previous_id": "S01",
+      "from_frame": 5,
+      "to_frame": 5,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 5,
+          "role": "A=B",
+          "image_id": "ec09d4aa88e23971cfb02fddd10f4360d3f3b902a84a4fff2e38496881f53052",
+          "path": "assets/ec09d4aa88e23971cfb02fddd10f4360d3f3b902a84a4fff2e38496881f53052.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 7.759,
+      "started_at": "2026-11-12T10:41:41.746112+00:00",
+      "completed_at": "2026-11-12T10:41:49.497622+00:00",
+      "worker_pid": 49660,
+      "request_file": "run/cases/C27/S01.request.json",
+      "response_file": "run/cases/C27/S01.response.json",
+      "usage": {
+        "prompt_tokens": 1488,
+        "completion_tokens": 1182,
+        "total_tokens": 2670,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 583
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 592
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S01",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "本段为初始化单帧：S01处可见白色墙面、洗手池和镜子，画面左下有一点木质边缘，没有移动过程可供判断。",
+          "en": "This segment is a single initialization frame: at S01, a white wall, a sink, and a mirror are visible, with a small wooden edge at the lower left of the image; no movement process is available for judgment."
+        },
+        "reason": {
+          "zh": "初始化节点A=B，只能依据第5帧建立当前语义状态；画面未提供此前转弯、经过房间或走廊的证据，因此不能确认任务进度，也不据此判定偏航。",
+          "en": "This is an initialization node with A=B, so the current semantic state can only be established from frame 5; the image provides no evidence of earlier turns, rooms passed through, or corridors, so task progress cannot be confirmed and deviation cannot be judged from it."
+        },
+        "instruction_evidence": [],
+        "visual_evidence": [
+          {
+            "frames": [
+              5
+            ],
+            "description": {
+              "zh": "第5帧显示白色墙面、嵌入或靠墙的洗手池及镜子，左下角可见少量木质边缘；这是初始化位置的当前观测。",
+              "en": "Frame 5 shows a white wall, a sink set into or against the wall, and a mirror, with a small wooden edge visible at the lower left; this is the current observation of the initialization position."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "截至S01，当前位于白色墙面配有洗手池和镜子的区域，画面左下仅见少量木质边缘；此前是否已按要求右转、经过装饰架和木衣柜等均尚未确认，导航进度从该节点开始记录。",
+          "en": "As of S01, the current location is an area with a white wall, a sink, and a mirror, with only a small wooden edge visible at the lower left; whether the required right turn was made earlier and whether decorative stands and wooden wardrobes were passed remain unconfirmed, and navigation progress is recorded starting from this node."
+        },
+        "uncertainties": [
+          {
+            "zh": "该洗手池和镜子区域在原任务路线中的对应位置尚未确认；此前是否已按指令右转并穿过木地板房间未知。",
+            "en": "The correspondence of this sink-and-mirror area to the original task route is not yet confirmed; it is unknown whether the instructed right turn was made and whether the wooden-floored room was crossed earlier."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "截至S01，当前位于白色墙面配有洗手池和镜子的区域，画面左下仅见少量木质边缘；此前是否已按要求右转、经过装饰架和木衣柜等均尚未确认，导航进度从该节点开始记录。",
+        "en": "As of S01, the current location is an area with a white wall, a sink, and a mirror, with only a small wooden edge visible at the lower left; whether the required right turn was made earlier and whether decorative stands and wooden wardrobes were passed remain unconfirmed, and navigation progress is recorded starting from this node."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 5
+      }
+    },
+    {
+      "node_id": "S02",
+      "node_frame": 48,
+      "available_at_frame": 53,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S01",
+      "from_frame": 5,
+      "to_frame": 48,
+      "prior_progress": {
+        "zh": "截至S01，当前位于白色墙面配有洗手池和镜子的区域，画面左下仅见少量木质边缘；此前是否已按要求右转、经过装饰架和木衣柜等均尚未确认，导航进度从该节点开始记录。",
+        "en": "As of S01, the current location is an area with a white wall, a sink, and a mirror, with only a small wooden edge visible at the lower left; whether the required right turn was made earlier and whether decorative stands and wooden wardrobes were passed remain unconfirmed, and navigation progress is recorded starting from this node."
+      },
+      "images": [
+        {
+          "frame": 5,
+          "role": "A",
+          "image_id": "ec09d4aa88e23971cfb02fddd10f4360d3f3b902a84a4fff2e38496881f53052",
+          "path": "assets/ec09d4aa88e23971cfb02fddd10f4360d3f3b902a84a4fff2e38496881f53052.webp"
+        },
+        {
+          "frame": 6,
+          "role": "history",
+          "image_id": "16eeeb89a7a622275af83999d15da3883866a8564a7f2fb288347eb0ebb63662",
+          "path": "assets/16eeeb89a7a622275af83999d15da3883866a8564a7f2fb288347eb0ebb63662.webp"
+        },
+        {
+          "frame": 16,
+          "role": "history",
+          "image_id": "2ca0bc477b88082e5e00add88eede8a9a2b3af939d87857dfb58769523697d1e",
+          "path": "assets/2ca0bc477b88082e5e00add88eede8a9a2b3af939d87857dfb58769523697d1e.webp"
+        },
+        {
+          "frame": 26,
+          "role": "history",
+          "image_id": "5bc458afe1986fe530e84c09bbac15ffafa543429d55e98e61c16b53a574b7e1",
+          "path": "assets/5bc458afe1986fe530e84c09bbac15ffafa543429d55e98e61c16b53a574b7e1.webp"
+        },
+        {
+          "frame": 37,
+          "role": "history",
+          "image_id": "ef1a69295d88521faadacc160183a57ee6f2e67ca127ec091881ce1c437c974e",
+          "path": "assets/ef1a69295d88521faadacc160183a57ee6f2e67ca127ec091881ce1c437c974e.webp"
+        },
+        {
+          "frame": 47,
+          "role": "history",
+          "image_id": "071da9aae8b95ae7326857dd77843e6ea51652f7d1d455d1608c64b4721cc014",
+          "path": "assets/071da9aae8b95ae7326857dd77843e6ea51652f7d1d455d1608c64b4721cc014.webp"
+        },
+        {
+          "frame": 48,
+          "role": "B",
+          "image_id": "78ff4c686418dc680953717c79c3725748d3ad3b5e8d3af2d78713951c21e03e",
+          "path": "assets/78ff4c686418dc680953717c79c3725748d3ad3b5e8d3af2d78713951c21e03e.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 76.816,
+      "started_at": "2026-11-12T10:41:49.525928+00:00",
+      "completed_at": "2026-11-12T10:43:06.335240+00:00",
+      "worker_pid": 49660,
+      "request_file": "run/cases/C27/S02.request.json",
+      "response_file": "run/cases/C27/S02.response.json",
+      "usage": {
+        "prompt_tokens": 2820,
+        "completion_tokens": 11646,
+        "total_tokens": 14466,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 10587
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1924
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S02",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "从洗手池和镜子区域出发，经过磨砂玻璃门附近后进入木地板房间；室内可见装饰架在左、成排木衣柜在右。随后接近白色门框和墙面，B处镜面反射出木地板与门洞，尚未显示已穿过门进入铺砖走廊。",
+          "en": "Starting from the sink and mirror area, the robot passed near a frosted glass door and entered the wooden-floor room; inside, a decorative stand was visible on the left and a row of wooden wardrobes on the right. It then approached a white doorframe/wall, and at B the mirror reflects the wooden floor and a doorway, but there is no evidence yet that it has passed through the doorway into the tiled hallway."
+        },
+        "reason": {
+          "zh": "F26和F37中的木地板、左侧装饰架和右侧成排木衣柜与任务对房间及参照物关系的描述一致，说明本段已进入并在该房间内前进；F47和F48只支持接近门框和镜面区域，不能确认已穿过门进入铺砖走廊，但也没有明确证据表明走错通路。",
+          "en": "The wooden floor, decorative stand on the left, and row of wooden wardrobes on the right in F26 and F37 match the task description of the room and object relationships, showing that this segment entered and moved within that room. F47 and F48 only support approaching a doorframe and mirror area; they do not confirm crossing the doorway into the tiled hallway, but there is also no clear evidence of a wrong passage."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Turn right to enter the room with wooden flooring",
+            "quote_zh": "右转进入铺有木地板的房间"
+          },
+          {
+            "quote_en": "passing a decorative stand on your left and a series of wooden wardrobes on your right",
+            "quote_zh": "途中左侧经过一个装饰架，右侧经过一排木衣柜"
+          },
+          {
+            "quote_en": "Go through the doorway into the tiled hallway",
+            "quote_zh": "穿过门洞进入铺砖走廊"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              5,
+              6,
+              16
+            ],
+            "description": {
+              "zh": "F5和F6显示白色洗手池与镜子；F16显示磨砂玻璃门或隔断，表明机器人从盥洗区域向玻璃门附近移动。",
+              "en": "F5 and F6 show a white sink and mirror; F16 shows a frosted glass door or partition, indicating movement from the wash area toward the glass door."
+            }
+          },
+          {
+            "frames": [
+              26,
+              37
+            ],
+            "description": {
+              "zh": "F26和F37显示木地板房间，装饰架位于左侧，成排木衣柜位于右侧，与任务描述的空间关系相符。",
+              "en": "F26 and F37 show the wooden-floor room with the decorative stand on the left and the row of wooden wardrobes on the right, matching the spatial relationships described in the task."
+            }
+          },
+          {
+            "frames": [
+              47,
+              48
+            ],
+            "description": {
+              "zh": "F47和F48显示接近白色门框和墙面，B处镜面反射出木地板和门洞，但未清楚显示铺砖走廊。",
+              "en": "F47 and F48 show proximity to a white doorframe and wall; at B the mirror reflects the wooden floor and doorway, but the tiled hallway is not clearly shown."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "截至S02，已从白色洗手池和镜子区域移动到木地板房间内，画面显示装饰架在左侧、成排木衣柜在右侧，路线与任务描述的房间和参照物关系相符；随后接近白色门框和镜面区域，尚未确认已穿过门进入铺砖走廊，也未确认走廊内绿色装饰、小门洞及圆形木饰。",
+          "en": "As of S02, the robot has moved from the white sink and mirror area into the wooden-floor room; the decorative stand is on the left and the row of wooden wardrobes on the right, consistent with the room and object relationships described in the task. It then approached a white doorframe and mirror area; it is not yet confirmed whether the doorway into the tiled hallway has been crossed, nor have the green decoration, smaller doorway, and round wooden art piece in the hallway been confirmed."
+        },
+        "uncertainties": [
+          {
+            "zh": "B处镜面和白色台面是否仍位于木地板房间或门框附近，以及是否已经穿过敞开门进入铺砖走廊，尚不能由F47和F48确定。",
+            "en": "Whether the mirror and white surface at B are still in the wooden-floor room or near the doorway, and whether the open doorway into the tiled hallway has been crossed, cannot be determined from F47 and F48."
+          },
+          {
+            "zh": "任务后续要求的走廊右侧绿色装饰、左侧小门洞和圆形木饰均未在本段得到确认。",
+            "en": "The later required tall green decoration on the right, the smaller doorway on the left, and the round wooden art piece in the hallway are not confirmed in this segment."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "截至S02，已从白色洗手池和镜子区域移动到木地板房间内，画面显示装饰架在左侧、成排木衣柜在右侧，路线与任务描述的房间和参照物关系相符；随后接近白色门框和镜面区域，尚未确认已穿过门进入铺砖走廊，也未确认走廊内绿色装饰、小门洞及圆形木饰。",
+        "en": "As of S02, the robot has moved from the white sink and mirror area into the wooden-floor room; the decorative stand is on the left and the row of wooden wardrobes on the right, consistent with the room and object relationships described in the task. It then approached a white doorframe and mirror area; it is not yet confirmed whether the doorway into the tiled hallway has been crossed, nor have the green decoration, smaller doorway, and round wooden art piece in the hallway been confirmed."
+      },
+      "progress_anchor": {
+        "id": "S02",
+        "frame": 48
+      }
+    },
+    {
+      "node_id": "S03",
+      "node_frame": 63,
+      "available_at_frame": 68,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S02",
+      "from_frame": 48,
+      "to_frame": 63,
+      "prior_progress": {
+        "zh": "截至S02，已从白色洗手池和镜子区域移动到木地板房间内，画面显示装饰架在左侧、成排木衣柜在右侧，路线与任务描述的房间和参照物关系相符；随后接近白色门框和镜面区域，尚未确认已穿过门进入铺砖走廊，也未确认走廊内绿色装饰、小门洞及圆形木饰。",
+        "en": "As of S02, the robot has moved from the white sink and mirror area into the wooden-floor room; the decorative stand is on the left and the row of wooden wardrobes on the right, consistent with the room and object relationships described in the task. It then approached a white doorframe and mirror area; it is not yet confirmed whether the doorway into the tiled hallway has been crossed, nor have the green decoration, smaller doorway, and round wooden art piece in the hallway been confirmed."
+      },
+      "images": [
+        {
+          "frame": 48,
+          "role": "A",
+          "image_id": "78ff4c686418dc680953717c79c3725748d3ad3b5e8d3af2d78713951c21e03e",
+          "path": "assets/78ff4c686418dc680953717c79c3725748d3ad3b5e8d3af2d78713951c21e03e.webp"
+        },
+        {
+          "frame": 49,
+          "role": "history",
+          "image_id": "d3e52700c90e77bb1be7635538afbf2312f5acd3c82884627573dde4c93c6a90",
+          "path": "assets/d3e52700c90e77bb1be7635538afbf2312f5acd3c82884627573dde4c93c6a90.webp"
+        },
+        {
+          "frame": 52,
+          "role": "history",
+          "image_id": "0a95b8ae5bde6521d0688b302f2be2d7e15f5aa61e2f7d4af995b4944334d771",
+          "path": "assets/0a95b8ae5bde6521d0688b302f2be2d7e15f5aa61e2f7d4af995b4944334d771.webp"
+        },
+        {
+          "frame": 55,
+          "role": "history",
+          "image_id": "44aa6eed6a411034bc2068d25f669848f189ad78bdc384f60313e6961b47686d",
+          "path": "assets/44aa6eed6a411034bc2068d25f669848f189ad78bdc384f60313e6961b47686d.webp"
+        },
+        {
+          "frame": 59,
+          "role": "history",
+          "image_id": "f67a6d1c7b0579337532413e26d74bca9b6964966b74da3c8592660845a09114",
+          "path": "assets/f67a6d1c7b0579337532413e26d74bca9b6964966b74da3c8592660845a09114.webp"
+        },
+        {
+          "frame": 62,
+          "role": "history",
+          "image_id": "e83dd892a28b844ef3af170c9858d55981ec9ed38d14fff78098f059d8c7ab83",
+          "path": "assets/e83dd892a28b844ef3af170c9858d55981ec9ed38d14fff78098f059d8c7ab83.webp"
+        },
+        {
+          "frame": 63,
+          "role": "B",
+          "image_id": "2ef14509112495c408b0fde1d28d14b14c7bb8da1209261ed191abd763e353b2",
+          "path": "assets/2ef14509112495c408b0fde1d28d14b14c7bb8da1209261ed191abd763e353b2.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 183.114,
+      "started_at": "2026-11-12T10:43:06.364806+00:00",
+      "completed_at": "2026-11-12T10:46:09.478579+00:00",
+      "worker_pid": 49660,
+      "request_file": "run/cases/C27/S03.request.json",
+      "response_file": "run/cases/C27/S03.response.json",
+      "usage": {
+        "prompt_tokens": 2848,
+        "completion_tokens": 31995,
+        "total_tokens": 34843,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 30691
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1952
+      },
+      "answer": {
+        "previous_id": "S02",
+        "current_id": "S03",
+        "verdict": "uncertain",
+        "segment_summary": {
+          "zh": "本段从卧室门框与镜面附近开始，先看到一间铺白砖的小房间，内有马桶、淋浴和窗户（F49、F52、F55）；随后透过门框看到卧室内的镜面、洗手池和木地板（F59），最后在木地板上面对成排木衣柜，装饰架位于画面右侧（F62、F63）。",
+          "en": "This segment starts near the bedroom doorframe and mirror; a small white-tiled room with a toilet, shower and window comes into view (F49, F52, F55); then, through the doorframe, the bedroom's mirror, sink and wooden floor are seen (F59); finally, on the wooden floor, the row of wooden wardrobes is faced with the decorative stand on the right (F62, F63)."
+        },
+        "reason": {
+          "zh": "任务要求从木地板房间直行穿过前方门洞进入铺砖走廊，再沿走廊直行，右侧应有高绿色装饰和圆形木饰，左侧小门洞通向有窗房间。本段确实看到了带窗的铺砖房间和木衣柜、装饰架，但无法确认该铺砖房间是走廊左侧的“有窗房间”还是误入的其他房间，也无法确认机器人是否穿过卧室门进入走廊；结尾处装饰架在右、衣柜在左，与任务进入房间时“装饰架在左、衣柜在右”的空间关系相反，且F55到F59之间缺少返回过程，故不能确认路线正确。",
+          "en": "The task requires walking straight through the wooden-floor room toward the open doorway into the tiled hallway, then continuing down the hallway, with a tall green decoration and round wooden art on the right and a smaller doorway to a windowed room on the left. This segment does show a windowed tiled room, the wooden wardrobes and the decorative stand, but it cannot be confirmed whether that tiled room is the hallway's left-side 'room with a window' or another room entered by mistake, nor whether the robot actually went through the bedroom doorway into the hallway; at the end the decorative stand is on the right and the wardrobes on the left, the reverse of the task's entry relation ('decorative stand on your left and a series of wooden wardrobes on your right'), and the passage between F55 and F59 is missing, so the route cannot be confirmed as correct."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Go through the doorway into the tiled hallway.",
+            "quote_zh": "穿过门洞进入铺砖走廊。"
+          },
+          {
+            "quote_en": "On your right is a wall with a tall green decoration, and on your left is a smaller doorway leading to a room with a window.",
+            "quote_zh": "你的右侧是一面有高大绿色装饰的墙，左侧是一个较小的门洞，通向一个有窗户的房间。"
+          },
+          {
+            "quote_en": "passing a decorative stand on your left and a series of wooden wardrobes on your right",
+            "quote_zh": "经过左侧的装饰架和右侧的一排木衣柜"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              49,
+              52,
+              55
+            ],
+            "description": {
+              "zh": "画面显示一间铺白砖的小房间，内有马桶、淋浴装置和带深色边框的窗户，机器人在此房间内或门口近距离观看。",
+              "en": "The frames show a small white-tiled room with a toilet, a shower fixture and a dark-framed window; the robot views it from inside or at its doorway at close range."
+            }
+          },
+          {
+            "frames": [
+              48,
+              59
+            ],
+            "description": {
+              "zh": "F48为卧室门框/镜面与装饰架附近；F59透过白色门框可看到卧室内的镜面、洗手池边和木地板。",
+              "en": "F48 shows the area near the bedroom doorframe/mirror and decorative stand; F59 looks through the white doorframe at the bedroom's mirror, sink edge and wooden floor."
+            }
+          },
+          {
+            "frames": [
+              62,
+              63
+            ],
+            "description": {
+              "zh": "木地板上正对成排浅木色衣柜，柜上有书；右侧为白色洗手池/镜面单元和金色装饰架，装饰架在右、衣柜在左。",
+              "en": "On the wooden floor the row of light-wood wardrobes with books faces the camera; on the right is the white sink/mirror unit and the gold decorative stand, with the stand on the right and the wardrobes on the left."
+            }
+          }
+        ],
+        "semantic_progress": null,
+        "uncertainties": [
+          {
+            "zh": "该铺砖带窗房间是否为任务所述走廊左侧的“有窗房间”，还是与卧室相连的非路线房间。",
+            "en": "Whether the windowed tiled room is the task's hallway-left 'room with a window' or a non-route room connected to the bedroom."
+          },
+          {
+            "zh": "机器人是否真的穿过卧室前方门洞进入铺砖走廊。",
+            "en": "Whether the robot actually passed through the bedroom's front doorway into the tiled hallway."
+          },
+          {
+            "zh": "F55到F59之间缺少过程帧，无法确认机器人如何从铺砖房间回到卧室门框/镜面处。",
+            "en": "Frames between F55 and F59 are missing, so how the robot moved from the tiled room back to the bedroom doorframe/mirror cannot be confirmed."
+          },
+          {
+            "zh": "截至B，装饰架在右、衣柜在左，与任务进入房间时的左右关系相反；机器人是在前进还是折返无法确定，且任务提到的右侧高绿色装饰和圆形木饰尚未出现或确认。",
+            "en": "As of B, the decorative stand is on the right and the wardrobes on the left, the reverse of the task's entry relation; whether the robot is advancing or turning back is undetermined, and the tall green decoration and round wooden art on the right mentioned in the task have not appeared or been confirmed."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "截至S02，已从白色洗手池和镜子区域移动到木地板房间内，画面显示装饰架在左侧、成排木衣柜在右侧，路线与任务描述的房间和参照物关系相符；随后接近白色门框和镜面区域，尚未确认已穿过门进入铺砖走廊，也未确认走廊内绿色装饰、小门洞及圆形木饰。",
+        "en": "As of S02, the robot has moved from the white sink and mirror area into the wooden-floor room; the decorative stand is on the left and the row of wooden wardrobes on the right, consistent with the room and object relationships described in the task. It then approached a white doorframe and mirror area; it is not yet confirmed whether the doorway into the tiled hallway has been crossed, nor have the green decoration, smaller doorway, and round wooden art piece in the hallway been confirmed."
+      },
+      "progress_anchor": {
+        "id": "S02",
+        "frame": 48
+      }
+    },
+    {
+      "node_id": "S04",
+      "node_frame": 71,
+      "available_at_frame": 76,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S02",
+      "from_frame": 48,
+      "to_frame": 71,
+      "prior_progress": {
+        "zh": "截至S02，已从白色洗手池和镜子区域移动到木地板房间内，画面显示装饰架在左侧、成排木衣柜在右侧，路线与任务描述的房间和参照物关系相符；随后接近白色门框和镜面区域，尚未确认已穿过门进入铺砖走廊，也未确认走廊内绿色装饰、小门洞及圆形木饰。",
+        "en": "As of S02, the robot has moved from the white sink and mirror area into the wooden-floor room; the decorative stand is on the left and the row of wooden wardrobes on the right, consistent with the room and object relationships described in the task. It then approached a white doorframe and mirror area; it is not yet confirmed whether the doorway into the tiled hallway has been crossed, nor have the green decoration, smaller doorway, and round wooden art piece in the hallway been confirmed."
+      },
+      "images": [
+        {
+          "frame": 48,
+          "role": "A",
+          "image_id": "78ff4c686418dc680953717c79c3725748d3ad3b5e8d3af2d78713951c21e03e",
+          "path": "assets/78ff4c686418dc680953717c79c3725748d3ad3b5e8d3af2d78713951c21e03e.webp"
+        },
+        {
+          "frame": 49,
+          "role": "history",
+          "image_id": "d3e52700c90e77bb1be7635538afbf2312f5acd3c82884627573dde4c93c6a90",
+          "path": "assets/d3e52700c90e77bb1be7635538afbf2312f5acd3c82884627573dde4c93c6a90.webp"
+        },
+        {
+          "frame": 54,
+          "role": "history",
+          "image_id": "6daa2cc07dcbd86030b03fb9701bf2234ddb2df003c6f941560e006aeac8de63",
+          "path": "assets/6daa2cc07dcbd86030b03fb9701bf2234ddb2df003c6f941560e006aeac8de63.webp"
+        },
+        {
+          "frame": 59,
+          "role": "history",
+          "image_id": "f67a6d1c7b0579337532413e26d74bca9b6964966b74da3c8592660845a09114",
+          "path": "assets/f67a6d1c7b0579337532413e26d74bca9b6964966b74da3c8592660845a09114.webp"
+        },
+        {
+          "frame": 65,
+          "role": "history",
+          "image_id": "b167866017fe0cfd482ddf6795c80e030f69c814c9df900309f4f6737a63540c",
+          "path": "assets/b167866017fe0cfd482ddf6795c80e030f69c814c9df900309f4f6737a63540c.webp"
+        },
+        {
+          "frame": 70,
+          "role": "history",
+          "image_id": "c57e04c6ae56e844f2b68f840882ee910fc01f76758292e6e6b1801bbf2f3917",
+          "path": "assets/c57e04c6ae56e844f2b68f840882ee910fc01f76758292e6e6b1801bbf2f3917.webp"
+        },
+        {
+          "frame": 71,
+          "role": "B",
+          "image_id": "374a99039575b0e9b215c5382b24fc11ff38e177df42b8b119f21c6eb1473360",
+          "path": "assets/374a99039575b0e9b215c5382b24fc11ff38e177df42b8b119f21c6eb1473360.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 74.197,
+      "started_at": "2026-11-12T10:46:09.497637+00:00",
+      "completed_at": "2026-11-12T10:47:23.685685+00:00",
+      "worker_pid": 49660,
+      "request_file": "run/cases/C27/S04.request.json",
+      "response_file": "run/cases/C27/S04.response.json",
+      "usage": {
+        "prompt_tokens": 2848,
+        "completion_tokens": 11930,
+        "total_tokens": 14778,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 10870
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1952
+      },
+      "answer": {
+        "previous_id": "S02",
+        "current_id": "S04",
+        "verdict": "deviated",
+        "segment_summary": {
+          "zh": "从S02的白色门框/镜面区域出发，机器人先进入并看到带马桶、淋浴和窗户的铺砖房间（F49、F54），随后经镜面反射回到木地板房间并经过成排浅色木衣柜（F59、F65），最后来到有电视、条板墙、装饰架和右侧衣柜的房间，在B处停下（F70、F71）。这一实际经历先后与任务要求的“直穿木地板房间进入铺砖走廊，再沿走廊前往客餐厅”不符。",
+          "en": "Starting from the white doorway/mirror area at S02, the robot first entered and saw a tiled room with a toilet, shower, and window (F49, F54), then returned past the mirror to a wooden-floor room with rows of pale wooden wardrobes (F59, F65), and finally reached a room with a TV, ribbed feature wall, decorative stand, and wardrobes on the right, stopping at B (F70, F71). This actual sequence does not match the instructed route of going straight through the wooden-floor room into the tiled hallway and then along the hallway to the living and dining area."
+        },
+        "reason": {
+          "zh": "任务要求从木地板房间穿过前方门口进入铺砖走廊，以右侧高大绿色装饰、左侧小门洞和右侧圆形木饰为走廊参照，最终在餐桌和厨房位于左侧的客餐厅停下；实际帧显示先进入带马桶/淋浴的铺砖房间，再回到木地板衣柜区域，最后停在电视墙房间，关键空间参照和先后顺序均冲突。",
+          "en": "The task requires going from the wooden-floor room through the doorway into the tiled hallway, using the tall green decoration on the right, the smaller doorway on the left, and the round wooden art on the right as hallway references, and finally stopping in the living and dining area with the dining table and kitchen on the left. The actual frames instead show entry into a tiled room with a toilet and shower, then a return to the wooden-floor wardrobe area, and finally a stop in the TV-wall room; the key spatial references and order conflict."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Go through the doorway into the tiled hallway.",
+            "quote_zh": "穿过门口进入铺瓷砖的走廊。"
+          },
+          {
+            "quote_en": "On your right is a wall with a tall green decoration, and on your left is a smaller doorway leading to a room with a window.",
+            "quote_zh": "你的右侧是一面带有高大绿色装饰的墙，左侧是一个通向有窗户房间的小门洞。"
+          },
+          {
+            "quote_en": "Enter the open living and dining area, and stop with the dining table and kitchen on your left.",
+            "quote_zh": "进入开阔的客厅和餐厅区域，并在餐桌和厨房位于你左侧时停下。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              49,
+              54
+            ],
+            "description": {
+              "zh": "这些画面近距离显示带马桶、淋浴和窗户的铺砖房间，机器人已进入或紧邻其中，而不是任务所述带绿色装饰的铺砖走廊。",
+              "en": "These frames show, at close range, a tiled room with a toilet, shower, and window, with the robot inside or immediately adjacent to it rather than in the tiled hallway with the tall green decoration described by the task."
+            }
+          },
+          {
+            "frames": [
+              59,
+              65
+            ],
+            "description": {
+              "zh": "镜面反射后重新出现木地板和成排浅色木衣柜，显示机器人回到或处于木地板衣柜区域，未提供沿任务走廊继续前进的证据。",
+              "en": "The mirror reflection is followed by wooden flooring and rows of pale wooden wardrobes, indicating the robot returned to or is in the wooden-floor wardrobe area and provides no evidence of continuing along the task hallway."
+            }
+          },
+          {
+            "frames": [
+              70,
+              71
+            ],
+            "description": {
+              "zh": "B处是带电视、条板墙、装饰架和右侧衣柜的木地板房间；左侧门洞可见，但画面中没有任务要求的餐桌和厨房在左侧，也未见走廊的圆形木饰或绿色装饰。",
+              "en": "At B the robot is in a wooden-floor room with a TV, ribbed feature wall, decorative stand, and wardrobes on the right; a doorway is visible on the left, but the required dining table and kitchen on the left are not visible, nor are the hallway's round wooden art or green decoration."
+            }
+          }
+        ],
+        "semantic_progress": null,
+        "uncertainties": [
+          {
+            "zh": "抽样帧无法还原进入铺砖房间与返回木地板房间之间的完整连续动作，但“进入带马桶/淋浴房间”与任务走廊的空间性质冲突已明确；B处左侧门洞通向何处尚未确认。",
+            "en": "The sampled frames cannot reconstruct the full continuous sequence between entering the tiled room and returning to the wooden-floor room, but the conflict between entering a room with a toilet and shower and the spatial nature of the task hallway is clear; where the doorway on the left at B leads remains unconfirmed."
+          }
+        ]
+      },
+      "rollback_target": {
+        "node_id": "S02",
+        "frame": 48,
+        "progress": {
+          "zh": "截至S02，已从白色洗手池和镜子区域移动到木地板房间内，画面显示装饰架在左侧、成排木衣柜在右侧，路线与任务描述的房间和参照物关系相符；随后接近白色门框和镜面区域，尚未确认已穿过门进入铺砖走廊，也未确认走廊内绿色装饰、小门洞及圆形木饰。",
+          "en": "As of S02, the robot has moved from the white sink and mirror area into the wooden-floor room; the decorative stand is on the left and the row of wooden wardrobes on the right, consistent with the room and object relationships described in the task. It then approached a white doorframe and mirror area; it is not yet confirmed whether the doorway into the tiled hallway has been crossed, nor have the green decoration, smaller doorway, and round wooden art piece in the hallway been confirmed."
+        }
+      },
+      "committed_progress": {
+        "zh": "截至S02，已从白色洗手池和镜子区域移动到木地板房间内，画面显示装饰架在左侧、成排木衣柜在右侧，路线与任务描述的房间和参照物关系相符；随后接近白色门框和镜面区域，尚未确认已穿过门进入铺砖走廊，也未确认走廊内绿色装饰、小门洞及圆形木饰。",
+        "en": "As of S02, the robot has moved from the white sink and mirror area into the wooden-floor room; the decorative stand is on the left and the row of wooden wardrobes on the right, consistent with the room and object relationships described in the task. It then approached a white doorframe and mirror area; it is not yet confirmed whether the doorway into the tiled hallway has been crossed, nor have the green decoration, smaller doorway, and round wooden art piece in the hallway been confirmed."
+      },
+      "progress_anchor": {
+        "id": "S02",
+        "frame": 48
+      }
+    }
+  ],
+  "stop_node": "S04"
+}

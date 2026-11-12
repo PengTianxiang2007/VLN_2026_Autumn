@@ -1,0 +1,76 @@
+{
+  "mode": "segment",
+  "previous_id": "S01",
+  "current_id": "S02",
+  "previous_frame": 0,
+  "current_frame": 5,
+  "instruction_en": "Walk forward through the doorway into the main room, passing a low wooden bench on your right. Turn left, keeping the large painting and console table with two tall plants on your right. Enter the hallway, walking straight ahead past a dining room on your left, then turn right to enter a small room. Stop in front of the window.",
+  "prior_semantic_progress": "截至S01，仅建立当前状态：位于门口并面向主房间，右前方近处有低矮木凳或矮柜，前方可见挂画、玄关桌及高植株，深处为沙发和茶几；此前完成了哪些导航要求、是否已进入主房间、是否已从右侧经过木凳以及是否已完成左转均尚未确认。",
+  "coverage": "Endpoint observations plus up to five uniformly sampled intermediate observations. Frames are not necessarily consecutive. Review ends at B.",
+  "images": [
+    {
+      "frame": 0,
+      "role": "A",
+      "image_id": "b801c4017a20e9ea9b6fd291feed09e290a936ba4e942e145a7ff9a0fba3a9d1",
+      "path": "assets/b801c4017a20e9ea9b6fd291feed09e290a936ba4e942e145a7ff9a0fba3a9d1.webp",
+      "sha256": "b801c4017a20e9ea9b6fd291feed09e290a936ba4e942e145a7ff9a0fba3a9d1",
+      "bytes": 23430
+    },
+    {
+      "frame": 1,
+      "role": "history",
+      "image_id": "0856807a4674b4943c66616e8683c30b9c7ee3fec706484d8d87e19f0025caa1",
+      "path": "assets/0856807a4674b4943c66616e8683c30b9c7ee3fec706484d8d87e19f0025caa1.webp",
+      "sha256": "0856807a4674b4943c66616e8683c30b9c7ee3fec706484d8d87e19f0025caa1",
+      "bytes": 27714
+    },
+    {
+      "frame": 2,
+      "role": "history",
+      "image_id": "ca01c99615508c030dc6a64ec329116b015290a5a86b8ac45554a82f08f57fd5",
+      "path": "assets/ca01c99615508c030dc6a64ec329116b015290a5a86b8ac45554a82f08f57fd5.webp",
+      "sha256": "ca01c99615508c030dc6a64ec329116b015290a5a86b8ac45554a82f08f57fd5",
+      "bytes": 21100
+    },
+    {
+      "frame": 3,
+      "role": "history",
+      "image_id": "798fadec2714eb157ab1ee105916d9a5ea8bd1dae73ded63d596a5836dae3845",
+      "path": "assets/798fadec2714eb157ab1ee105916d9a5ea8bd1dae73ded63d596a5836dae3845.webp",
+      "sha256": "798fadec2714eb157ab1ee105916d9a5ea8bd1dae73ded63d596a5836dae3845",
+      "bytes": 19288
+    },
+    {
+      "frame": 4,
+      "role": "history",
+      "image_id": "c16af460974411423648d8b69cac635dbd24bcaf5642e886855c103d7cf6e13d",
+      "path": "assets/c16af460974411423648d8b69cac635dbd24bcaf5642e886855c103d7cf6e13d.webp",
+      "sha256": "c16af460974411423648d8b69cac635dbd24bcaf5642e886855c103d7cf6e13d",
+      "bytes": 13172
+    },
+    {
+      "frame": 5,
+      "role": "B",
+      "image_id": "39991b69bea73b38bf2ce77fb593d05e49814dbf0f5430c407a106130f05ebd4",
+      "path": "assets/39991b69bea73b38bf2ce77fb593d05e49814dbf0f5430c407a106130f05ebd4.webp",
+      "sha256": "39991b69bea73b38bf2ce77fb593d05e49814dbf0f5430c407a106130f05ebd4",
+      "bytes": 11058
+    }
+  ],
+  "settings": {
+    "model": "deepseek-flash",
+    "response_format": {
+      "type": "json_object"
+    },
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_tokens": 32768,
+    "stream": false
+  },
+  "prompt_sha256": "129ef91051dcb6cc1be8e2e276cb102166bff322a36fdd10661e644de2162cad",
+  "request_sha256": "ac665ddef90fef13c6ba05ef50f42cd61de2c850ed22ea090900bce6db83bd09",
+  "started_at": "2026-11-12T10:41:34.072526+00:00",
+  "worker_pid": 31588
+}

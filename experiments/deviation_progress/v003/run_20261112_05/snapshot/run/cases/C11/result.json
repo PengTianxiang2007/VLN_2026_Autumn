@@ -1,0 +1,507 @@
+{
+  "case_number": 11,
+  "case_index": 2,
+  "episode_id": "kujiale_0123_fix_30_2 · F7",
+  "real_episode_id": "kujiale_0123_fix_30_2",
+  "scene": "kujiale_0123_fix",
+  "worker_pid": 34540,
+  "started_at": "2026-11-12T08:11:10.809183+00:00",
+  "completed_at": "2026-11-12T08:16:16.477837+00:00",
+  "reviews": [
+    {
+      "node_id": "S01",
+      "node_frame": 10,
+      "available_at_frame": 15,
+      "terminal_node": false,
+      "mode": "initialization",
+      "previous_id": "S01",
+      "from_frame": 10,
+      "to_frame": 10,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 10,
+          "role": "A=B",
+          "image_id": "0e218428b79973d9a85a327aa98d518f668f8bc9eb47a978b71a6d5d468406ee",
+          "path": "assets/0e218428b79973d9a85a327aa98d518f668f8bc9eb47a978b71a6d5d468406ee.webp"
+        }
+      ],
+      "status": "error",
+      "elapsed_seconds": 10.177,
+      "started_at": "2026-11-12T08:11:10.813682+00:00",
+      "completed_at": "2026-11-12T08:11:20.991784+00:00",
+      "worker_pid": 34540,
+      "request_file": "run/cases/C11/S01.request.json",
+      "response_file": "run/cases/C11/S01.response.json",
+      "usage": {
+        "prompt_tokens": 1434,
+        "completion_tokens": 1452,
+        "total_tokens": 2886,
+        "prompt_tokens_details": {
+          "cached_tokens": 1280
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 817
+        },
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 154
+      },
+      "error": "ValueError: Invalid uncertainties",
+      "committed_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 10
+      }
+    },
+    {
+      "node_id": "S02",
+      "node_frame": 15,
+      "available_at_frame": 20,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S01",
+      "from_frame": 10,
+      "to_frame": 15,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 10,
+          "role": "A",
+          "image_id": "0e218428b79973d9a85a327aa98d518f668f8bc9eb47a978b71a6d5d468406ee",
+          "path": "assets/0e218428b79973d9a85a327aa98d518f668f8bc9eb47a978b71a6d5d468406ee.webp"
+        },
+        {
+          "frame": 11,
+          "role": "history",
+          "image_id": "c4357f70df77ded175d86ce86f7b44b1d1c3f080c23654aea4fd199987322ab0",
+          "path": "assets/c4357f70df77ded175d86ce86f7b44b1d1c3f080c23654aea4fd199987322ab0.webp"
+        },
+        {
+          "frame": 12,
+          "role": "history",
+          "image_id": "505ca2c80101ee03e9ef3eef3dfae4902efa6265de8f2a346beac0e9a23dbb37",
+          "path": "assets/505ca2c80101ee03e9ef3eef3dfae4902efa6265de8f2a346beac0e9a23dbb37.webp"
+        },
+        {
+          "frame": 13,
+          "role": "history",
+          "image_id": "7c97323fe759ba134edc221fd50a818492e90060b8740ad2f811f8420707691f",
+          "path": "assets/7c97323fe759ba134edc221fd50a818492e90060b8740ad2f811f8420707691f.webp"
+        },
+        {
+          "frame": 14,
+          "role": "history",
+          "image_id": "a57dc5a570dc2aabf2bc189df6ca49f5ff808f0b635aed949de0f607f19a295f",
+          "path": "assets/a57dc5a570dc2aabf2bc189df6ca49f5ff808f0b635aed949de0f607f19a295f.webp"
+        },
+        {
+          "frame": 15,
+          "role": "B",
+          "image_id": "5fa17ed1b275f2019dec06046ee1f625b20cf2fe60da4114cfed3684f477abd4",
+          "path": "assets/5fa17ed1b275f2019dec06046ee1f625b20cf2fe60da4114cfed3684f477abd4.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 54.67,
+      "started_at": "2026-11-12T08:11:21.000100+00:00",
+      "completed_at": "2026-11-12T08:12:15.671002+00:00",
+      "worker_pid": 34540,
+      "request_file": "run/cases/C11/S02.request.json",
+      "response_file": "run/cases/C11/S02.response.json",
+      "usage": {
+        "prompt_tokens": 2512,
+        "completion_tokens": 8196,
+        "total_tokens": 10708,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 7489
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 1488
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S02",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "从 S01 到 S02，视角沿左侧白色衣柜旁的通行区域向前推进；右侧可见黑色衣柜和床。本次帧段尚未显示进入前方走廊、穿过门洞或到达餐桌所在的大房间。",
+          "en": "From S01 to S02, the viewpoint advances along the passage area beside a white wardrobe on the left; a black wardrobe and a bed are visible on the right. This frame segment does not yet show entering the hallway ahead, passing through a doorway, or reaching the large room with the dining table."
+        },
+        "reason": {
+          "zh": "观测支持机器人从左侧经过白色衣柜，这与任务开头的要求相符；右侧的黑色衣柜和床未显示与任务冲突的通行。由于尚未看到进入前方走廊或后续地标，只能记录起始阶段的推进。",
+          "en": "The observations support the robot passing a white wardrobe on its left, which matches the opening requirement of the task; the black wardrobe and bed on the right do not show any movement conflicting with the task. Since entering the hallway ahead or later landmarks has not been seen, only progress in the initial stage can be recorded."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "passing a white wardrobe on your left",
+            "quote_zh": "从你的左侧经过一个白色衣柜"
+          },
+          {
+            "quote_en": "then enter the hallway ahead",
+            "quote_zh": "然后进入前方走廊"
+          },
+          {
+            "quote_en": "Walk straight down the hallway",
+            "quote_zh": "沿走廊直行"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              10,
+              15
+            ],
+            "description": {
+              "zh": "F10 与 F15 显示相机沿左侧白色衣柜/白色柜面前进，右侧出现黑色衣柜和床，地面通行区域连续。",
+              "en": "F10 and F15 show the camera advancing along the white wardrobe/white cabinet surface on the left, with a black wardrobe and a bed appearing on the right and a continuous floor passage."
+            }
+          },
+          {
+            "frames": [
+              11,
+              12,
+              13,
+              14
+            ],
+            "description": {
+              "zh": "中间帧显示相机持续经过同一黑色衣柜和床所在区域，没有明确转向另一条横向走廊的画面。",
+              "en": "The intermediate frames show the camera continuing past the area containing the same black wardrobe and bed, with no clear view of turning into another transverse hallway."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "首次有效节点前的路线仍未确认；自 S01 至 B，机器人沿左侧白色衣柜旁向前移动，右侧可见黑色衣柜和床；尚未确认进入前方走廊，也未到走廊尽头大房间、餐桌或深色门。",
+          "en": "The route before the first valid node remains unconfirmed; from S01 to B, the robot has moved forward beside the white wardrobe on the left, with a black wardrobe and bed visible on the right. Entering the hallway ahead is not yet confirmed, and the large room at the end of the hallway, the dining table, and the dark door have not been reached."
+        },
+        "uncertainties": [
+          {
+            "zh": "尚未确认是否已进入任务所述的前方走廊，也未确认走廊两侧的开放门洞、尽头大房间、餐桌与深色门。",
+            "en": "It is not yet confirmed whether the robot has entered the hallway ahead described in the task, nor the open doorways on both sides of the hallway, the large room at the end, the dining table, or the dark door."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "首次有效节点前的路线仍未确认；自 S01 至 B，机器人沿左侧白色衣柜旁向前移动，右侧可见黑色衣柜和床；尚未确认进入前方走廊，也未到走廊尽头大房间、餐桌或深色门。",
+        "en": "The route before the first valid node remains unconfirmed; from S01 to B, the robot has moved forward beside the white wardrobe on the left, with a black wardrobe and bed visible on the right. Entering the hallway ahead is not yet confirmed, and the large room at the end of the hallway, the dining table, and the dark door have not been reached."
+      },
+      "progress_anchor": {
+        "id": "S02",
+        "frame": 15
+      }
+    },
+    {
+      "node_id": "S03",
+      "node_frame": 35,
+      "available_at_frame": 40,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S02",
+      "from_frame": 15,
+      "to_frame": 35,
+      "prior_progress": {
+        "zh": "首次有效节点前的路线仍未确认；自 S01 至 B，机器人沿左侧白色衣柜旁向前移动，右侧可见黑色衣柜和床；尚未确认进入前方走廊，也未到走廊尽头大房间、餐桌或深色门。",
+        "en": "The route before the first valid node remains unconfirmed; from S01 to B, the robot has moved forward beside the white wardrobe on the left, with a black wardrobe and bed visible on the right. Entering the hallway ahead is not yet confirmed, and the large room at the end of the hallway, the dining table, and the dark door have not been reached."
+      },
+      "images": [
+        {
+          "frame": 15,
+          "role": "A",
+          "image_id": "5fa17ed1b275f2019dec06046ee1f625b20cf2fe60da4114cfed3684f477abd4",
+          "path": "assets/5fa17ed1b275f2019dec06046ee1f625b20cf2fe60da4114cfed3684f477abd4.webp"
+        },
+        {
+          "frame": 16,
+          "role": "history",
+          "image_id": "bb009acc91e254be553b36d6efaeb21fe538679be68c179893c4904d55f61d8d",
+          "path": "assets/bb009acc91e254be553b36d6efaeb21fe538679be68c179893c4904d55f61d8d.webp"
+        },
+        {
+          "frame": 20,
+          "role": "history",
+          "image_id": "616452813b6d7ecbe3d21c9d029cfc56c363c01aa5d4f9456bbcf9fab74334d3",
+          "path": "assets/616452813b6d7ecbe3d21c9d029cfc56c363c01aa5d4f9456bbcf9fab74334d3.webp"
+        },
+        {
+          "frame": 25,
+          "role": "history",
+          "image_id": "4301711cfde8f3f0fdf8522f98dcd02629f1f317c9343e3d68069ba446f5d699",
+          "path": "assets/4301711cfde8f3f0fdf8522f98dcd02629f1f317c9343e3d68069ba446f5d699.webp"
+        },
+        {
+          "frame": 30,
+          "role": "history",
+          "image_id": "17c9b21bab012200f82510f22913ae4764c26f3f14293d1f212a3be46008373f",
+          "path": "assets/17c9b21bab012200f82510f22913ae4764c26f3f14293d1f212a3be46008373f.webp"
+        },
+        {
+          "frame": 34,
+          "role": "history",
+          "image_id": "fdb6bdf7cb565dc97ca3295d56b175ba1737e33862b72e255db6f42f23bec5f3",
+          "path": "assets/fdb6bdf7cb565dc97ca3295d56b175ba1737e33862b72e255db6f42f23bec5f3.webp"
+        },
+        {
+          "frame": 35,
+          "role": "B",
+          "image_id": "b837d3b193cb0673ae5f53234a22cad994337a29db4de8b59597ca173690ef36",
+          "path": "assets/b837d3b193cb0673ae5f53234a22cad994337a29db4de8b59597ca173690ef36.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 154.071,
+      "started_at": "2026-11-12T08:12:15.695760+00:00",
+      "completed_at": "2026-11-12T08:14:49.759833+00:00",
+      "worker_pid": 34540,
+      "request_file": "run/cases/C11/S03.request.json",
+      "response_file": "run/cases/C11/S03.response.json",
+      "usage": {
+        "prompt_tokens": 2766,
+        "completion_tokens": 22874,
+        "total_tokens": 25640,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 22010
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 1742
+      },
+      "answer": {
+        "previous_id": "S02",
+        "current_id": "S03",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "本段机器人在有床、深色衣柜和白色窗帘的房间内调整朝向，经过床与衣柜一侧后接近门洞；到 B 时透过门洞可见前方白色走廊，尚未确认已跨入或沿走廊直行。",
+          "en": "In this segment the robot adjusts heading in a room with a bed, a dark wardrobe, and white curtains; after moving along one side of the bed and wardrobe, it approaches a doorway. At B, a white hallway is visible through the doorway, but it is not yet confirmed that the robot has crossed into or walked straight along it."
+        },
+        "reason": {
+          "zh": "先前进度保留了从左侧白色衣柜旁向前的移动；本段在同一房间内继续转向并接近门洞，F35 出现前方白色走廊，符合“进入前方走廊”的阶段方向。尚无明确证据显示走错；由于只到门口，仍需确认是否真正进入并沿走廊直行。",
+          "en": "The prior progress retains forward movement past the white wardrobe on the left. This segment continues turning in the same room and approaches a doorway; F35 shows a white hallway ahead, consistent with the stage direction of entering the hallway ahead. There is no clear evidence of a wrong route; since it has only reached the doorway, whether it actually enters and walks straight along the hallway still needs confirmation."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Turn right, passing a white wardrobe on your left, then enter the hallway ahead.",
+            "quote_zh": "右转，从左侧白色衣柜旁经过，然后进入前方走廊。"
+          },
+          {
+            "quote_en": "Walk straight down the hallway, passing open doorways on both sides.",
+            "quote_zh": "沿走廊直行，经过两侧敞开的门洞。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              15,
+              16,
+              20,
+              25,
+              30
+            ],
+            "description": {
+              "zh": "这些帧显示机器人与床、深色衣柜和白色窗帘同处一个房间，视角在床和衣柜一侧转动并移动；F20/F25 可见床和床头柜占主要视野。",
+              "en": "These frames show the robot in the same room as a bed, dark wardrobe, and white curtains; the view rotates and moves along the side of the bed and wardrobe, with the bed and nightstand occupying much of the view in F20/F25."
+            }
+          },
+          {
+            "frames": [
+              34,
+              35
+            ],
+            "description": {
+              "zh": "F34–F35 显示机器人接近一个门洞，B 处透过门洞可见向前延伸的白色走廊；仅凭该视角不能确认已跨入门洞或沿走廊直行。",
+              "en": "F34–F35 show the robot approaching a doorway; at B, a white hallway extending ahead is visible through the doorway. From this view alone, it cannot be confirmed that the robot has crossed the doorway or walked straight along the hallway."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "此前沿左侧白色衣柜旁向前的移动予以保留；本段在带床和深色衣柜的房间内调整朝向，经过床与衣柜一侧后接近门洞，F35 可见前方白色走廊，当前位于走廊入口处。尚未确认已跨入走廊、沿走廊直行经过两侧门洞，亦未到达尽头大房间、餐桌或深色门。",
+          "en": "The earlier forward movement past the white wardrobe on the left is retained. In this segment the robot adjusts heading in a room with a bed and a dark wardrobe, passes along one side of the bed and wardrobe, then approaches a doorway; F35 shows a white hallway ahead, and the robot is currently at the hallway entrance. It is not yet confirmed that it has crossed into the hallway, walked straight along it past the open doorways, or reached the large room, dining table, or dark door at the end."
+        },
+        "uncertainties": [
+          {
+            "zh": "是否已跨入门洞进入白色走廊、并开始沿走廊直行经过两侧门洞，尚未确认。",
+            "en": "Whether the robot has crossed the doorway into the white hallway and begun walking straight along it past the open doorways is not yet confirmed."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "此前沿左侧白色衣柜旁向前的移动予以保留；本段在带床和深色衣柜的房间内调整朝向，经过床与衣柜一侧后接近门洞，F35 可见前方白色走廊，当前位于走廊入口处。尚未确认已跨入走廊、沿走廊直行经过两侧门洞，亦未到达尽头大房间、餐桌或深色门。",
+        "en": "The earlier forward movement past the white wardrobe on the left is retained. In this segment the robot adjusts heading in a room with a bed and a dark wardrobe, passes along one side of the bed and wardrobe, then approaches a doorway; F35 shows a white hallway ahead, and the robot is currently at the hallway entrance. It is not yet confirmed that it has crossed into the hallway, walked straight along it past the open doorways, or reached the large room, dining table, or dark door at the end."
+      },
+      "progress_anchor": {
+        "id": "S03",
+        "frame": 35
+      }
+    },
+    {
+      "node_id": "S04",
+      "node_frame": 44,
+      "available_at_frame": 44,
+      "terminal_node": true,
+      "mode": "segment",
+      "previous_id": "S03",
+      "from_frame": 35,
+      "to_frame": 44,
+      "prior_progress": {
+        "zh": "此前沿左侧白色衣柜旁向前的移动予以保留；本段在带床和深色衣柜的房间内调整朝向，经过床与衣柜一侧后接近门洞，F35 可见前方白色走廊，当前位于走廊入口处。尚未确认已跨入走廊、沿走廊直行经过两侧门洞，亦未到达尽头大房间、餐桌或深色门。",
+        "en": "The earlier forward movement past the white wardrobe on the left is retained. In this segment the robot adjusts heading in a room with a bed and a dark wardrobe, passes along one side of the bed and wardrobe, then approaches a doorway; F35 shows a white hallway ahead, and the robot is currently at the hallway entrance. It is not yet confirmed that it has crossed into the hallway, walked straight along it past the open doorways, or reached the large room, dining table, or dark door at the end."
+      },
+      "images": [
+        {
+          "frame": 35,
+          "role": "A",
+          "image_id": "b837d3b193cb0673ae5f53234a22cad994337a29db4de8b59597ca173690ef36",
+          "path": "assets/b837d3b193cb0673ae5f53234a22cad994337a29db4de8b59597ca173690ef36.webp"
+        },
+        {
+          "frame": 36,
+          "role": "history",
+          "image_id": "c8f2785549be1beafbd626cd1bde42941150309e3031c1c86837c45a58af215a",
+          "path": "assets/c8f2785549be1beafbd626cd1bde42941150309e3031c1c86837c45a58af215a.webp"
+        },
+        {
+          "frame": 38,
+          "role": "history",
+          "image_id": "ac21de8d54e8de71367e150bdca6e4f6fb60464970317482918bb66ce6483f5b",
+          "path": "assets/ac21de8d54e8de71367e150bdca6e4f6fb60464970317482918bb66ce6483f5b.webp"
+        },
+        {
+          "frame": 40,
+          "role": "history",
+          "image_id": "50919164dee48e6e23a0dd1cd4b22a2c356f46a6418ed012a6bd82c0886a5f86",
+          "path": "assets/50919164dee48e6e23a0dd1cd4b22a2c356f46a6418ed012a6bd82c0886a5f86.webp"
+        },
+        {
+          "frame": 41,
+          "role": "history",
+          "image_id": "1ffc899d362d2cc515e9f1940b182a28174f0b569efefd50ac8f5f7d7fb9ea05",
+          "path": "assets/1ffc899d362d2cc515e9f1940b182a28174f0b569efefd50ac8f5f7d7fb9ea05.webp"
+        },
+        {
+          "frame": 43,
+          "role": "history",
+          "image_id": "9515e6735852dcd44dda25842d390ab5aa8c42d80d926266ff0df557941f2299",
+          "path": "assets/9515e6735852dcd44dda25842d390ab5aa8c42d80d926266ff0df557941f2299.webp"
+        },
+        {
+          "frame": 44,
+          "role": "B",
+          "image_id": "7b8b7b299d37f223b6e51f5953fdff983ce4f5c0d309e72547a9439de9b27462",
+          "path": "assets/7b8b7b299d37f223b6e51f5953fdff983ce4f5c0d309e72547a9439de9b27462.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 86.684,
+      "started_at": "2026-11-12T08:14:49.790604+00:00",
+      "completed_at": "2026-11-12T08:16:16.473811+00:00",
+      "worker_pid": 34540,
+      "request_file": "run/cases/C11/S04.request.json",
+      "response_file": "run/cases/C11/S04.response.json",
+      "usage": {
+        "prompt_tokens": 2795,
+        "completion_tokens": 12814,
+        "total_tokens": 15609,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 12032
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1899
+      },
+      "answer": {
+        "previous_id": "S03",
+        "current_id": "S04",
+        "verdict": "deviated",
+        "segment_summary": {
+          "zh": "F35–F38 中，机器人从白色衣柜一侧的走廊入口向前推进，前方走廊可见；随后 F40–F44 视角转向并靠近一处白色衣柜与墙角，左侧出现玻璃门/门洞，直行走廊不再在画面中，也未到达大房间、餐桌或深色门。",
+          "en": "In frames F35–F38, the robot advanced from the hallway entrance beside a white wardrobe, with the corridor visible ahead. Then in frames F40–F44, the view turned toward and approached a white wardrobe and wall corner, with a glass doorway/opening appearing on the left; the straight hallway is no longer visible, and the large room, dining table, and dark door were not reached."
+        },
+        "reason": {
+          "zh": "任务要求经过左侧白色衣柜后进入走廊并沿走廊直行，经过两侧门洞，直到尽头大房间。F35–F38 虽有朝走廊前进的证据，但 F38 之后 F40–F44 连续近距面对白色衣柜和墙角，未保持走廊直行，画面中也没有餐桌椅或深色门，这与沿走廊直行的要求冲突。",
+          "en": "The task requires entering the hallway after passing the white wardrobe on the left, walking straight down the hallway past open doorways on both sides, and reaching the large room at the end. Although F35–F38 support advancing toward the hallway, F40–F44 continuously show the robot close to a white wardrobe and wall corner rather than continuing straight along the hallway, and no dining table with chairs or dark door is visible; this conflicts with the requirement to walk straight down the hallway."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "passing a white wardrobe on your left, then enter the hallway ahead",
+            "quote_zh": "经过你左侧的白色衣柜，然后进入前方的走廊"
+          },
+          {
+            "quote_en": "Walk straight down the hallway, passing open doorways on both sides.",
+            "quote_zh": "沿走廊直行，经过两侧敞开的门洞。"
+          },
+          {
+            "quote_en": "Enter the large room at the end of the hallway.",
+            "quote_zh": "进入走廊尽头的大房间。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              35,
+              36,
+              38
+            ],
+            "description": {
+              "zh": "F35–F38 可见走廊入口、前方走廊及左侧白色衣柜，机器人正从入口朝走廊方向推进。",
+              "en": "Frames F35–F38 show the hallway entrance, the corridor ahead, and the white wardrobe on the left; the robot is advancing from the entrance toward the hallway."
+            }
+          },
+          {
+            "frames": [
+              40,
+              41,
+              43,
+              44
+            ],
+            "description": {
+              "zh": "F40–F44 中直行走廊不再可见，镜头近距面对白色衣柜和墙角；F41–F44 左侧出现玻璃门/门洞，未见到餐桌椅或深色门。",
+              "en": "In frames F40–F44, the straight hallway is no longer visible; the view is close to a white wardrobe and wall corner, with a glass doorway/opening appearing on the left in F41–F44. No dining table with chairs or dark door is visible."
+            }
+          }
+        ],
+        "semantic_progress": null,
+        "uncertainties": [
+          {
+            "zh": "采样帧之间缺失 F39，无法精确确定由走廊转向白色衣柜区域的瞬间；但 F40–F44 的连续画面支持未继续沿走廊直行。",
+            "en": "Frame F39 is missing between the sampled frames, so the exact moment of turning from the hallway toward the white wardrobe area cannot be determined precisely; however, the continuous frames F40–F44 support that the robot did not continue straight down the hallway."
+          }
+        ]
+      },
+      "rollback_target": {
+        "node_id": "S03",
+        "frame": 35,
+        "progress": {
+          "zh": "此前沿左侧白色衣柜旁向前的移动予以保留；本段在带床和深色衣柜的房间内调整朝向，经过床与衣柜一侧后接近门洞，F35 可见前方白色走廊，当前位于走廊入口处。尚未确认已跨入走廊、沿走廊直行经过两侧门洞，亦未到达尽头大房间、餐桌或深色门。",
+          "en": "The earlier forward movement past the white wardrobe on the left is retained. In this segment the robot adjusts heading in a room with a bed and a dark wardrobe, passes along one side of the bed and wardrobe, then approaches a doorway; F35 shows a white hallway ahead, and the robot is currently at the hallway entrance. It is not yet confirmed that it has crossed into the hallway, walked straight along it past the open doorways, or reached the large room, dining table, or dark door at the end."
+        }
+      },
+      "committed_progress": {
+        "zh": "此前沿左侧白色衣柜旁向前的移动予以保留；本段在带床和深色衣柜的房间内调整朝向，经过床与衣柜一侧后接近门洞，F35 可见前方白色走廊，当前位于走廊入口处。尚未确认已跨入走廊、沿走廊直行经过两侧门洞，亦未到达尽头大房间、餐桌或深色门。",
+        "en": "The earlier forward movement past the white wardrobe on the left is retained. In this segment the robot adjusts heading in a room with a bed and a dark wardrobe, passes along one side of the bed and wardrobe, then approaches a doorway; F35 shows a white hallway ahead, and the robot is currently at the hallway entrance. It is not yet confirmed that it has crossed into the hallway, walked straight along it past the open doorways, or reached the large room, dining table, or dark door at the end."
+      },
+      "progress_anchor": {
+        "id": "S03",
+        "frame": 35
+      }
+    }
+  ],
+  "stop_node": "S04",
+  "stop_reason": "first_deviation",
+  "terminal_frame": 44,
+  "raw_node_count": 4,
+  "retained_node_count": 4,
+  "unreviewed_nodes": []
+}

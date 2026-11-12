@@ -1,0 +1,243 @@
+{
+  "case_number": 9,
+  "pid": 40868,
+  "reviews": [
+    {
+      "node_id": "S01",
+      "node_frame": 5,
+      "available_at_frame": 10,
+      "terminal_node": false,
+      "mode": "initialization",
+      "previous_id": "S01",
+      "from_frame": 5,
+      "to_frame": 5,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 5,
+          "role": "A=B",
+          "image_id": "825f8d845c9acf9dd38c58bfb865dfad035579df65e1c95c4600f9705b5a89c5",
+          "path": "assets/825f8d845c9acf9dd38c58bfb865dfad035579df65e1c95c4600f9705b5a89c5.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 10.368,
+      "started_at": "2026-11-12T10:38:47.483177+00:00",
+      "completed_at": "2026-11-12T10:38:57.850469+00:00",
+      "worker_pid": 40868,
+      "request_file": "run/cases/C09/S01.request.json",
+      "response_file": "run/cases/C09/S01.response.json",
+      "usage": {
+        "prompt_tokens": 1468,
+        "completion_tokens": 1498,
+        "total_tokens": 2966,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 914
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 572
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S01",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "当前视角位于铺白瓷砖的卫生间内，面向敞开的门口；右侧可见洗手台，门外是铺木地板的走廊及白色柜体。单帧无法确认此前已经过哪些空间或完成了哪些移动要求。",
+          "en": "The current viewpoint is inside a white-tiled bathroom, facing an open doorway; a sink vanity is visible on the right, and beyond the doorway is a wood-floored hallway with white cabinetry. This single frame cannot confirm which spaces were previously passed or which movement requirements have been completed."
+        },
+        "reason": {
+          "zh": "初始化节点A=B，仅凭这一帧可确定当前位于卫生间并面向门口，门外可见白色柜体，但无法据此确认已经穿过门口或此前路线正确。",
+          "en": "This is an initialization node with A=B. This single frame only establishes that the viewpoint is in a bathroom facing a doorway with white cabinetry visible beyond it; it cannot confirm that the doorway has been crossed or that the prior route was correct."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Walk forward through the doorway, leaving the shower on your left.",
+            "quote_zh": "向前穿过门口，让淋浴间位于你的左侧。"
+          },
+          {
+            "quote_en": "Turn left into the hallway, passing the white closets on your right.",
+            "quote_zh": "左转进入走廊，从右侧经过白色储物柜。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              5
+            ],
+            "description": {
+              "zh": "画面显示白瓷砖卫生间内部、前方敞开的门口、右下方洗手台，以及门外木地板走廊和白色柜体；没有穿门后的连续画面。",
+              "en": "The image shows the interior of a white-tiled bathroom, an open doorway ahead, a sink vanity at the lower right, and a wood-floored hallway with white cabinetry beyond; there is no continuous view after passing through the doorway."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "当前在卫生间内，面向通往走廊的门口；可见门外木地板走廊和白色柜体。尚待实际穿过门口并向左转入走廊；此前路线进度未确认。",
+          "en": "Currently in the bathroom, facing the doorway leading to the hallway; the wood-floored hallway and white cabinetry are visible beyond the doorway. It remains to actually pass through the doorway and turn left into the hallway; progress along the prior route is unconfirmed."
+        },
+        "uncertainties": [
+          {
+            "zh": "淋浴间是否确实在左侧、该门口是否就是任务所指门口，以及此前是否发生过移动，均无法由单帧确认。",
+            "en": "Whether the shower is indeed on the left, whether this is the doorway referred to by the task, and whether any movement occurred previously cannot be confirmed from a single frame."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "当前在卫生间内，面向通往走廊的门口；可见门外木地板走廊和白色柜体。尚待实际穿过门口并向左转入走廊；此前路线进度未确认。",
+        "en": "Currently in the bathroom, facing the doorway leading to the hallway; the wood-floored hallway and white cabinetry are visible beyond the doorway. It remains to actually pass through the doorway and turn left into the hallway; progress along the prior route is unconfirmed."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 5
+      }
+    },
+    {
+      "node_id": "S02",
+      "node_frame": 10,
+      "available_at_frame": 15,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S01",
+      "from_frame": 5,
+      "to_frame": 10,
+      "prior_progress": {
+        "zh": "当前在卫生间内，面向通往走廊的门口；可见门外木地板走廊和白色柜体。尚待实际穿过门口并向左转入走廊；此前路线进度未确认。",
+        "en": "Currently in the bathroom, facing the doorway leading to the hallway; the wood-floored hallway and white cabinetry are visible beyond the doorway. It remains to actually pass through the doorway and turn left into the hallway; progress along the prior route is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 5,
+          "role": "A",
+          "image_id": "825f8d845c9acf9dd38c58bfb865dfad035579df65e1c95c4600f9705b5a89c5",
+          "path": "assets/825f8d845c9acf9dd38c58bfb865dfad035579df65e1c95c4600f9705b5a89c5.webp"
+        },
+        {
+          "frame": 6,
+          "role": "history",
+          "image_id": "61ed3fd5938f97fab51f120c0dc7964fda0f70056105c99f818d3b368efe2cd0",
+          "path": "assets/61ed3fd5938f97fab51f120c0dc7964fda0f70056105c99f818d3b368efe2cd0.webp"
+        },
+        {
+          "frame": 7,
+          "role": "history",
+          "image_id": "c0e652658e20aeebf9f69a52082c3810f3ac6b585adc83be933e71b07e8f6865",
+          "path": "assets/c0e652658e20aeebf9f69a52082c3810f3ac6b585adc83be933e71b07e8f6865.webp"
+        },
+        {
+          "frame": 8,
+          "role": "history",
+          "image_id": "e0d6c964312c3dcf24bb2a6973c0eba2b55be4204c38f2ce1d3ed1950b6bcd41",
+          "path": "assets/e0d6c964312c3dcf24bb2a6973c0eba2b55be4204c38f2ce1d3ed1950b6bcd41.webp"
+        },
+        {
+          "frame": 9,
+          "role": "history",
+          "image_id": "eefd195ec6ba1b02a25ecb016027c8dddef00ec28f08d7fb5d3208453c7eec57",
+          "path": "assets/eefd195ec6ba1b02a25ecb016027c8dddef00ec28f08d7fb5d3208453c7eec57.webp"
+        },
+        {
+          "frame": 10,
+          "role": "B",
+          "image_id": "710d92a4dcce4f808132ef5fa85ed06ac8652f0a10b12eaa0cabf136fc627158",
+          "path": "assets/710d92a4dcce4f808132ef5fa85ed06ac8652f0a10b12eaa0cabf136fc627158.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 28.561,
+      "started_at": "2026-11-12T10:38:57.861902+00:00",
+      "completed_at": "2026-11-12T10:39:26.422586+00:00",
+      "worker_pid": 40868,
+      "request_file": "run/cases/C09/S02.request.json",
+      "response_file": "run/cases/C09/S02.response.json",
+      "usage": {
+        "prompt_tokens": 2571,
+        "completion_tokens": 3990,
+        "total_tokens": 6561,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3343
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1675
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S02",
+        "verdict": "deviated",
+        "segment_summary": {
+          "zh": "本段从卫生间门内朝门口前进，接近正前方和左前方的白色双门柜体；右侧可见通道或门洞继续延伸。到达B时，相机近距离面对白柜，白柜在画面中偏左或居中，未形成沿走廊直行、白柜在右侧的通行关系。",
+          "en": "This segment moves from inside the bathroom toward the doorway and approaches the white double-door closet unit ahead and to the left, while a passage or opening remains visible to the right. At B the camera is close to the closet, which sits left of center or centered in the view, rather than proceeding down a hallway with the white closets on the right."
+        },
+        "reason": {
+          "zh": "任务要求出门后左转进入走廊，并让白色柜子位于右侧；帧序列显示相机接近白柜正面，白柜逐渐移到画面左侧，右侧通道仍伸向远处，这与左转后沿走廊行进、白柜在右的空间关系冲突。",
+          "en": "The task requires turning left into the hallway after the doorway and keeping the white closets on the right; the frame sequence shows the camera approaching the closet face, with the closet shifting toward the left of the view and a passage continuing to the right, which conflicts with moving down the hallway and keeping the white closets on the right."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Turn left into the hallway, passing the white closets on your right.",
+            "quote_zh": "左转进入走廊，经过你右侧的白色柜子。"
+          },
+          {
+            "quote_en": "Walk straight down the hallway",
+            "quote_zh": "沿着走廊直走"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              5,
+              6,
+              7,
+              8
+            ],
+            "description": {
+              "zh": "从卫生间门内向外看，木地板通向白色双门柜体；随着前进，柜体从画面中央向左侧移动，右侧仍有通道或门洞延伸。",
+              "en": "Looking outward from inside the bathroom, the wood floor leads toward the white double-door closet unit; as the camera advances, the closet shifts from the center toward the left, while a passage or opening still extends to the right."
+            }
+          },
+          {
+            "frames": [
+              9,
+              10
+            ],
+            "description": {
+              "zh": "到B时相机近距离面对白色柜体，柜体占据画面左侧和中央，右侧可见继续延伸的通道；没有呈现沿柜体右侧走廊直行的视角。",
+              "en": "At B the camera is close to the white closet unit, which occupies the left and center of the view, with a passage continuing on the right; the view does not show straight travel down a hallway with the closets on the right."
+            }
+          }
+        ],
+        "semantic_progress": null,
+        "uncertainties": [
+          {
+            "zh": "抽样帧无法确认相机靠近白柜后是否只是短暂调整朝向，也无法完全确定右侧通道是否就是任务所指走廊。",
+            "en": "The sampled frames cannot confirm whether approaching the closet is only a brief heading adjustment, nor can they fully establish whether the passage on the right is the hallway referred to in the task."
+          }
+        ]
+      },
+      "rollback_target": {
+        "node_id": "S01",
+        "frame": 5,
+        "progress": {
+          "zh": "当前在卫生间内，面向通往走廊的门口；可见门外木地板走廊和白色柜体。尚待实际穿过门口并向左转入走廊；此前路线进度未确认。",
+          "en": "Currently in the bathroom, facing the doorway leading to the hallway; the wood-floored hallway and white cabinetry are visible beyond the doorway. It remains to actually pass through the doorway and turn left into the hallway; progress along the prior route is unconfirmed."
+        }
+      },
+      "committed_progress": {
+        "zh": "当前在卫生间内，面向通往走廊的门口；可见门外木地板走廊和白色柜体。尚待实际穿过门口并向左转入走廊；此前路线进度未确认。",
+        "en": "Currently in the bathroom, facing the doorway leading to the hallway; the wood-floored hallway and white cabinetry are visible beyond the doorway. It remains to actually pass through the doorway and turn left into the hallway; progress along the prior route is unconfirmed."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 5
+      }
+    }
+  ],
+  "stop_node": "S02"
+}

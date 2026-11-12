@@ -1,0 +1,585 @@
+{
+  "case_number": 24,
+  "pid": 40868,
+  "reviews": [
+    {
+      "node_id": "S01",
+      "node_frame": 0,
+      "available_at_frame": 5,
+      "terminal_node": false,
+      "mode": "initialization",
+      "previous_id": "S01",
+      "from_frame": 0,
+      "to_frame": 0,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 0,
+          "role": "A=B",
+          "image_id": "fbb3ae1a944b336e54f359a7aeae7563da38005c89d5519b3b2f1884a97a3839",
+          "path": "assets/fbb3ae1a944b336e54f359a7aeae7563da38005c89d5519b3b2f1884a97a3839.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 14.523,
+      "started_at": "2026-11-12T10:41:15.734950+00:00",
+      "completed_at": "2026-11-12T10:41:30.253967+00:00",
+      "worker_pid": 40868,
+      "request_file": "run/cases/C24/S01.request.json",
+      "response_file": "run/cases/C24/S01.response.json",
+      "usage": {
+        "prompt_tokens": 1448,
+        "completion_tokens": 2421,
+        "total_tokens": 3869,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1732
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 552
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S01",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "节点 S01 的单帧观测显示，视角贴近一面白墙，右前方有一处通往浅色地面的开口，开口附近墙面挂有绿色边框画作；画面本身未提供移动或穿门证据。",
+          "en": "The single-frame observation at node S01 shows the viewpoint close to a white wall, with an opening leading to a light-colored floor ahead on the right, and a green-framed artwork on the wall near the opening; the image itself provides no evidence of movement or passing through a doorway."
+        },
+        "reason": {
+          "zh": "这是首个有效节点，只能依据当前帧建立语义状态；可见开口与绿色边框画作，但无法确认是否已按要求右转进入走廊，也不能确认此前经过或完成了哪些地标。",
+          "en": "This is the first valid node, so the semantic state can only be established from the current frame; an opening and a green-framed artwork are visible, but it cannot be confirmed whether the robot has already turned right into the hallway as required, nor which landmarks were previously passed or completed."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Turn right into the hallway, with a green framed artwork on your left and a wall displaying four framed artworks on your right.",
+            "quote_zh": "右转进入走廊，左侧有一幅绿色边框画作，右侧墙上展示四幅带框画作。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              0
+            ],
+            "description": {
+              "zh": "第 0 帧显示近处白色墙面、右前方的开口或门口，以及开口附近墙面上的绿色边框画作；未见明确的走廊纵深、四幅画墙、盆栽、开放厨房或床。",
+              "en": "Frame 0 shows a nearby white wall, an opening or doorway ahead on the right, and a green-framed artwork on the wall near the opening; no clear hallway depth, four-artwork wall, potted plant, open kitchen, or bed is visible."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "截至 S01：首次有效节点仅确认当前视角贴近白墙，右前方有开口，附近墙面可见绿色边框画作；尚未确认已右转进入走廊，也未确认经过四幅画墙、盆栽、开放厨房或进入卧室。",
+          "en": "As of S01: this first valid node only confirms that the current viewpoint is close to a white wall, there is an opening ahead on the right, and a green-framed artwork is visible on the nearby wall; it has not been confirmed that the robot has turned right into the hallway, nor that it has passed the four-artwork wall, potted plant, open kitchen, or entered the bedroom."
+        },
+        "uncertainties": [
+          {
+            "zh": "当前开口是否就是任务所指走廊入口尚未确认。",
+            "en": "Whether the current opening is the hallway entrance referred to by the task remains unconfirmed."
+          },
+          {
+            "zh": "绿色边框画作是否位于行进方向的左侧尚未确认。",
+            "en": "Whether the green-framed artwork is on the left side of the direction of travel remains unconfirmed."
+          },
+          {
+            "zh": "此前路线进度及是否已完成任何移动要求无法从单帧确认。",
+            "en": "Prior route progress and whether any movement requirement has been completed cannot be confirmed from a single frame."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "截至 S01：首次有效节点仅确认当前视角贴近白墙，右前方有开口，附近墙面可见绿色边框画作；尚未确认已右转进入走廊，也未确认经过四幅画墙、盆栽、开放厨房或进入卧室。",
+        "en": "As of S01: this first valid node only confirms that the current viewpoint is close to a white wall, there is an opening ahead on the right, and a green-framed artwork is visible on the nearby wall; it has not been confirmed that the robot has turned right into the hallway, nor that it has passed the four-artwork wall, potted plant, open kitchen, or entered the bedroom."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 0
+      }
+    },
+    {
+      "node_id": "S02",
+      "node_frame": 43,
+      "available_at_frame": 48,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S01",
+      "from_frame": 0,
+      "to_frame": 43,
+      "prior_progress": {
+        "zh": "截至 S01：首次有效节点仅确认当前视角贴近白墙，右前方有开口，附近墙面可见绿色边框画作；尚未确认已右转进入走廊，也未确认经过四幅画墙、盆栽、开放厨房或进入卧室。",
+        "en": "As of S01: this first valid node only confirms that the current viewpoint is close to a white wall, there is an opening ahead on the right, and a green-framed artwork is visible on the nearby wall; it has not been confirmed that the robot has turned right into the hallway, nor that it has passed the four-artwork wall, potted plant, open kitchen, or entered the bedroom."
+      },
+      "images": [
+        {
+          "frame": 0,
+          "role": "A",
+          "image_id": "fbb3ae1a944b336e54f359a7aeae7563da38005c89d5519b3b2f1884a97a3839",
+          "path": "assets/fbb3ae1a944b336e54f359a7aeae7563da38005c89d5519b3b2f1884a97a3839.webp"
+        },
+        {
+          "frame": 1,
+          "role": "history",
+          "image_id": "227e0f273d16f19c55c77d1d516f70807e5732a91ba9c389a8cfc0bbd89820f2",
+          "path": "assets/227e0f273d16f19c55c77d1d516f70807e5732a91ba9c389a8cfc0bbd89820f2.webp"
+        },
+        {
+          "frame": 11,
+          "role": "history",
+          "image_id": "8bb847d4182f6e38111791be617922475eb124e7c7cb0d72cdca6a286141f521",
+          "path": "assets/8bb847d4182f6e38111791be617922475eb124e7c7cb0d72cdca6a286141f521.webp"
+        },
+        {
+          "frame": 21,
+          "role": "history",
+          "image_id": "c4a380a5c697306867e57c960f544c2638dd39ba4db21ad72bc5e5610f76a38e",
+          "path": "assets/c4a380a5c697306867e57c960f544c2638dd39ba4db21ad72bc5e5610f76a38e.webp"
+        },
+        {
+          "frame": 32,
+          "role": "history",
+          "image_id": "583b0ed109ab302fb911b43935fa6c77819102165122f3fc998f8469698d6676",
+          "path": "assets/583b0ed109ab302fb911b43935fa6c77819102165122f3fc998f8469698d6676.webp"
+        },
+        {
+          "frame": 42,
+          "role": "history",
+          "image_id": "52b9316fdbe132b0bb416d8bfb97a15fc97afef848f1009f298bd6ab40c42ec4",
+          "path": "assets/52b9316fdbe132b0bb416d8bfb97a15fc97afef848f1009f298bd6ab40c42ec4.webp"
+        },
+        {
+          "frame": 43,
+          "role": "B",
+          "image_id": "f52daaa963753cae396be10ead8a6373287c9f45cacdd6db7184eaa347fb470c",
+          "path": "assets/f52daaa963753cae396be10ead8a6373287c9f45cacdd6db7184eaa347fb470c.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 62.752,
+      "started_at": "2026-11-12T10:41:30.285552+00:00",
+      "completed_at": "2026-11-12T10:42:33.040524+00:00",
+      "worker_pid": 40868,
+      "request_file": "run/cases/C24/S02.request.json",
+      "response_file": "run/cases/C24/S02.response.json",
+      "usage": {
+        "prompt_tokens": 2782,
+        "completion_tokens": 9882,
+        "total_tokens": 12664,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 8731
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1886
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S02",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "从贴近白墙、前方可见绿色边框画与开口的起点出发，视野一度转向带洗手台和淋浴的卫生间；随后回到走廊视角，B 处可见绿色边框画在左侧、四幅框画墙在右侧，正前方有门洞。尚未看到高盆栽、开放厨房、卧室或床与床头柜。",
+          "en": "Starting close to a white wall with a green-framed artwork and an opening ahead, the view briefly turned toward a bathroom with a sink and shower; it then returned to the hallway view. At B, the green-framed artwork is on the left, the wall with four framed artworks is on the right, and a doorway is straight ahead. A tall potted plant, open kitchen, bedroom, bed, and bedside table have not yet been seen."
+        },
+        "reason": {
+          "zh": "B 处的空间关系与任务开头的走廊描述吻合：绿色边框画在左、四幅画墙在右、前方为门洞。中间卫生间画面只是短暂朝向，未见从走廊连续进入或穿越卫生间的过程，不能据此判为偏航；同时尚未确认完成经过盆栽、开放厨房和进入卧室等后续要求。",
+          "en": "The spatial relationships at B match the hallway described at the start of the task: the green-framed artwork on the left, the four-artwork wall on the right, and a doorway ahead. The intermediate bathroom views are only a brief orientation, with no observed continuous entry into or passage through the bathroom from the hallway, so they do not establish deviation; it is also not yet confirmed that the later requirements of passing the potted plant and open kitchen and entering the bedroom have been met."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Turn right into the hallway, with a green framed artwork on your left and a wall displaying four framed artworks on your right.",
+            "quote_zh": "右转进入走廊，你的左侧有一幅绿色边框画作，右侧有一面展示四幅带框画作的墙。"
+          },
+          {
+            "quote_en": "Walk straight through this hallway, passing a tall potted plant on your left and an open kitchen on your right.",
+            "quote_zh": "沿这条走廊直行，经过你左侧的一株高盆栽和你右侧的开放式厨房。"
+          },
+          {
+            "quote_en": "Go through the doorway straight ahead to enter the bedroom.",
+            "quote_zh": "穿过正前方的门洞进入卧室。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              0,
+              1
+            ],
+            "description": {
+              "zh": "A 处视野贴近白色墙面，可见绿色边框画作和开口；F1 右侧开始出现带框画作。",
+              "en": "At A, the view is close to a white wall, with a green-framed artwork and an opening visible; by F1, framed artworks begin to appear on the right."
+            }
+          },
+          {
+            "frames": [
+              11,
+              21
+            ],
+            "description": {
+              "zh": "中间帧显示洗手台、镜子和淋浴间、毛巾架，呈卫生间内部或门口视角；未显示从走廊连续进入该卫生间的通行过程。",
+              "en": "The intermediate frames show a bathroom sink, mirror, shower, and towel rack, appearing as an interior or doorway view; they do not show a continuous passage from the hallway into that bathroom."
+            }
+          },
+          {
+            "frames": [
+              42,
+              43
+            ],
+            "description": {
+              "zh": "F42/F43 显示绿色边框画在左侧、四幅框画墙在右侧，正前方有门洞，视角与任务描述的走廊一致。",
+              "en": "F42/F43 show the green-framed artwork on the left, the wall with four framed artworks on the right, and a doorway straight ahead; the view is consistent with the hallway described in the task."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "截至 S02：已进入与任务描述一致的走廊，绿色边框画在左侧，右侧墙面可见四幅框画，正前方有门洞。尚未确认已直行经过左侧高盆栽和右侧开放厨房，也未穿过门洞进入卧室或到达床边、床头柜；中间曾短暂朝向卫生间设施，但未确认实际进入。",
+          "en": "As of S02: the robot has entered the hallway matching the task description, with the green-framed artwork on the left, four framed artworks visible on the right wall, and a doorway straight ahead. It is not yet confirmed that the robot has walked straight past the tall potted plant on the left and the open kitchen on the right, nor that it has gone through the doorway into the bedroom or reached the bed and bedside table; the view briefly turned toward bathroom fixtures in between, but actual entry into the bathroom is not confirmed."
+        },
+        "uncertainties": [
+          {
+            "zh": "中间帧朝向卫生间设施，但采样帧未显示从走廊进入或离开卫生间的连续过程，无法确认是否只是转头观察。",
+            "en": "The intermediate frames face bathroom fixtures, but the sampled frames do not show a continuous process of entering or leaving the bathroom from the hallway, so it is unclear whether this was only a turn of view."
+          },
+          {
+            "zh": "B 处仍见前方门洞，但本次观测未显示高盆栽、开放厨房、卧室床或床头柜，无法确认走廊直行段及后续卧室要求是否已推进。",
+            "en": "A doorway is still visible ahead at B, but this observation does not show the tall potted plant, open kitchen, bedroom bed, or bedside table, so it is not possible to confirm progress along the straight hallway segment or the subsequent bedroom requirements."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "截至 S02：已进入与任务描述一致的走廊，绿色边框画在左侧，右侧墙面可见四幅框画，正前方有门洞。尚未确认已直行经过左侧高盆栽和右侧开放厨房，也未穿过门洞进入卧室或到达床边、床头柜；中间曾短暂朝向卫生间设施，但未确认实际进入。",
+        "en": "As of S02: the robot has entered the hallway matching the task description, with the green-framed artwork on the left, four framed artworks visible on the right wall, and a doorway straight ahead. It is not yet confirmed that the robot has walked straight past the tall potted plant on the left and the open kitchen on the right, nor that it has gone through the doorway into the bedroom or reached the bed and bedside table; the view briefly turned toward bathroom fixtures in between, but actual entry into the bathroom is not confirmed."
+      },
+      "progress_anchor": {
+        "id": "S02",
+        "frame": 43
+      }
+    },
+    {
+      "node_id": "S03",
+      "node_frame": 58,
+      "available_at_frame": 63,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S02",
+      "from_frame": 43,
+      "to_frame": 58,
+      "prior_progress": {
+        "zh": "截至 S02：已进入与任务描述一致的走廊，绿色边框画在左侧，右侧墙面可见四幅框画，正前方有门洞。尚未确认已直行经过左侧高盆栽和右侧开放厨房，也未穿过门洞进入卧室或到达床边、床头柜；中间曾短暂朝向卫生间设施，但未确认实际进入。",
+        "en": "As of S02: the robot has entered the hallway matching the task description, with the green-framed artwork on the left, four framed artworks visible on the right wall, and a doorway straight ahead. It is not yet confirmed that the robot has walked straight past the tall potted plant on the left and the open kitchen on the right, nor that it has gone through the doorway into the bedroom or reached the bed and bedside table; the view briefly turned toward bathroom fixtures in between, but actual entry into the bathroom is not confirmed."
+      },
+      "images": [
+        {
+          "frame": 43,
+          "role": "A",
+          "image_id": "f52daaa963753cae396be10ead8a6373287c9f45cacdd6db7184eaa347fb470c",
+          "path": "assets/f52daaa963753cae396be10ead8a6373287c9f45cacdd6db7184eaa347fb470c.webp"
+        },
+        {
+          "frame": 44,
+          "role": "history",
+          "image_id": "c5a58b2d27d2c850bb68a93d4be9089155dca63b9198ab52e9f716563d217a30",
+          "path": "assets/c5a58b2d27d2c850bb68a93d4be9089155dca63b9198ab52e9f716563d217a30.webp"
+        },
+        {
+          "frame": 47,
+          "role": "history",
+          "image_id": "026cc3168e27e35829716a4ad938c6949e4c003c1fcdcbbf11300602023ef9d7",
+          "path": "assets/026cc3168e27e35829716a4ad938c6949e4c003c1fcdcbbf11300602023ef9d7.webp"
+        },
+        {
+          "frame": 50,
+          "role": "history",
+          "image_id": "c7a48b8b9149a518dc78a243770ee5f88489f3718835a00c34948a92d5a6bdc0",
+          "path": "assets/c7a48b8b9149a518dc78a243770ee5f88489f3718835a00c34948a92d5a6bdc0.webp"
+        },
+        {
+          "frame": 54,
+          "role": "history",
+          "image_id": "a420311bb70cb5879ae56f266216110b79b57bc318bbf4fb2bf38a211ce1da1b",
+          "path": "assets/a420311bb70cb5879ae56f266216110b79b57bc318bbf4fb2bf38a211ce1da1b.webp"
+        },
+        {
+          "frame": 57,
+          "role": "history",
+          "image_id": "3be878a3b78a985e8bc530506f411eec8a6ec957c71692acbd781fec2086d110",
+          "path": "assets/3be878a3b78a985e8bc530506f411eec8a6ec957c71692acbd781fec2086d110.webp"
+        },
+        {
+          "frame": 58,
+          "role": "B",
+          "image_id": "83495aaf7b62e9ea73e79db016f8f5223d328769a2110b331e4f2f70f4a734f5",
+          "path": "assets/83495aaf7b62e9ea73e79db016f8f5223d328769a2110b331e4f2f70f4a734f5.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 33.09,
+      "started_at": "2026-11-12T10:42:33.059405+00:00",
+      "completed_at": "2026-11-12T10:43:06.148757+00:00",
+      "worker_pid": 40868,
+      "request_file": "run/cases/C24/S03.request.json",
+      "response_file": "run/cases/C24/S03.response.json",
+      "usage": {
+        "prompt_tokens": 2802,
+        "completion_tokens": 5304,
+        "total_tokens": 8106,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4212
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1906
+      },
+      "answer": {
+        "previous_id": "S02",
+        "current_id": "S03",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "机器人继续沿走廊向正前方门洞前进：绿色边框画位于左侧，右侧墙面可见框画；左前方出现带窗、桌子和椅子的开放区域，未看到高盆栽。到 B 时已接近门洞但尚未穿过，未进入卧室或到达床边。",
+          "en": "The robot continued along the hallway toward the doorway straight ahead: the green-framed artwork was on the left and framed artworks were visible on the right wall; an open area with a window, table, and chair appeared ahead-left, with no tall potted plant seen. At B it had approached but not yet passed through the doorway, and had not entered the bedroom or reached the bed."
+        },
+        "reason": {
+          "zh": "本段视角持续推进，门洞位于前方，绿色画在左、右侧框画的关系与已建立的走廊一致；但高盆栽、右侧开放式厨房以及左侧开放区域的用途未获确认，且尚无穿门或到达床边的证据。没有明确的通行冲突，故判为一致。",
+          "en": "The view advanced along the hallway with the doorway ahead, and the relationship of the green artwork on the left and framed artworks on the right is consistent with the established hallway; however, the tall potted plant, the open kitchen on the right, and the purpose of the open area on the left remain unconfirmed, and there is no evidence of passing through the doorway or reaching the bed. There is no clear transit conflict, so it is judged consistent."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Walk straight through this hallway, passing a tall potted plant on your left and an open kitchen on your right.",
+            "quote_zh": "沿着这条走廊直行，经过你左侧的一株高盆栽和你右侧的开放式厨房。"
+          },
+          {
+            "quote_en": "Go through the doorway straight ahead to enter the bedroom.",
+            "quote_zh": "穿过正前方的门洞进入卧室。"
+          },
+          {
+            "quote_en": "Walk towards the bed on your left, and stop next to the bedside table on the right side of the bed.",
+            "quote_zh": "朝你左侧的床走去，并在床右侧的床头柜旁停下。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              43,
+              44,
+              47
+            ],
+            "description": {
+              "zh": "这些帧显示走廊前方有门洞，绿色边框画在左侧，右侧墙面有框画；机器人尚未到达门洞。",
+              "en": "These frames show a doorway ahead in the hallway, the green-framed artwork on the left, and framed artworks on the right wall; the robot had not yet reached the doorway."
+            }
+          },
+          {
+            "frames": [
+              50,
+              54
+            ],
+            "description": {
+              "zh": "这些帧显示左前方有一个带窗、桌子和椅子的开放区域，绿色画在旁侧，门洞在右侧；未清楚看到高盆栽或明确可辨的开放式厨房。",
+              "en": "These frames show an open area with a window, table, and chair ahead-left, the green artwork beside it, and the doorway to the right; no tall potted plant or clearly identifiable open kitchen is visible."
+            }
+          },
+          {
+            "frames": [
+              57,
+              58
+            ],
+            "description": {
+              "zh": "这些帧显示机器人已接近门洞和绿色画；门洞另一侧可见浅色地面和室内家具，但没有证据表明已穿过门洞、进入卧室或停在床边或床头柜旁。",
+              "en": "These frames show the robot close to the doorway and green artwork; pale flooring and indoor furniture are visible beyond the doorway, but there is no evidence that it had passed through, entered the bedroom, or stopped next to the bed or bedside table."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "截至 S03：已进入并沿符合已建立空间关系的走廊前行，绿色边框画在左、右侧墙面可见框画，正前方门洞逐渐接近；左前方出现带窗、桌椅的开放区域，但高盆栽与任务所述右侧开放式厨房尚未确认。尚未穿过门洞进入卧室，也未到达床边或床头柜。",
+          "en": "As of S03: the robot has entered and moved along the hallway consistent with the established spatial relationships, with the green-framed artwork on the left, framed artworks visible on the right wall, and the doorway straight ahead being approached; an open area with a window, table, and chairs appeared ahead-left, but the tall potted plant and the open kitchen on the right described by the task have not been confirmed. It has not passed through the doorway into the bedroom, nor reached the bed or bedside table."
+        },
+        "uncertainties": [
+          {
+            "zh": "尚未确认是否经过左侧的高盆栽和右侧的开放式厨房；左前方带窗、桌椅的开放区域用途不明。",
+            "en": "It is not yet confirmed whether the tall potted plant on the left and the open kitchen on the right were passed; the purpose of the open area with a window, table, and chairs ahead-left remains unclear."
+          },
+          {
+            "zh": "尚未确认门洞后是否为卧室，也未确认到达床边和右侧床头柜；截至 B 没有穿门证据。",
+            "en": "It is not yet confirmed whether the room beyond the doorway is the bedroom, nor whether the bed and right-side bedside table were reached; as of B there is no evidence of passing through the doorway."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "截至 S03：已进入并沿符合已建立空间关系的走廊前行，绿色边框画在左、右侧墙面可见框画，正前方门洞逐渐接近；左前方出现带窗、桌椅的开放区域，但高盆栽与任务所述右侧开放式厨房尚未确认。尚未穿过门洞进入卧室，也未到达床边或床头柜。",
+        "en": "As of S03: the robot has entered and moved along the hallway consistent with the established spatial relationships, with the green-framed artwork on the left, framed artworks visible on the right wall, and the doorway straight ahead being approached; an open area with a window, table, and chairs appeared ahead-left, but the tall potted plant and the open kitchen on the right described by the task have not been confirmed. It has not passed through the doorway into the bedroom, nor reached the bed or bedside table."
+      },
+      "progress_anchor": {
+        "id": "S03",
+        "frame": 58
+      }
+    },
+    {
+      "node_id": "S04",
+      "node_frame": 102,
+      "available_at_frame": 102,
+      "terminal_node": true,
+      "mode": "segment",
+      "previous_id": "S03",
+      "from_frame": 58,
+      "to_frame": 102,
+      "prior_progress": {
+        "zh": "截至 S03：已进入并沿符合已建立空间关系的走廊前行，绿色边框画在左、右侧墙面可见框画，正前方门洞逐渐接近；左前方出现带窗、桌椅的开放区域，但高盆栽与任务所述右侧开放式厨房尚未确认。尚未穿过门洞进入卧室，也未到达床边或床头柜。",
+        "en": "As of S03: the robot has entered and moved along the hallway consistent with the established spatial relationships, with the green-framed artwork on the left, framed artworks visible on the right wall, and the doorway straight ahead being approached; an open area with a window, table, and chairs appeared ahead-left, but the tall potted plant and the open kitchen on the right described by the task have not been confirmed. It has not passed through the doorway into the bedroom, nor reached the bed or bedside table."
+      },
+      "images": [
+        {
+          "frame": 58,
+          "role": "A",
+          "image_id": "83495aaf7b62e9ea73e79db016f8f5223d328769a2110b331e4f2f70f4a734f5",
+          "path": "assets/83495aaf7b62e9ea73e79db016f8f5223d328769a2110b331e4f2f70f4a734f5.webp"
+        },
+        {
+          "frame": 59,
+          "role": "history",
+          "image_id": "9cb65e44d7e9e5b3d472724ebcd7290617cc61824b6365b20591a67c67b50199",
+          "path": "assets/9cb65e44d7e9e5b3d472724ebcd7290617cc61824b6365b20591a67c67b50199.webp"
+        },
+        {
+          "frame": 69,
+          "role": "history",
+          "image_id": "5ec75c88dde2ac97f9c806531898e6647a5a67b8e7ddd66b6307039acc2a86e8",
+          "path": "assets/5ec75c88dde2ac97f9c806531898e6647a5a67b8e7ddd66b6307039acc2a86e8.webp"
+        },
+        {
+          "frame": 80,
+          "role": "history",
+          "image_id": "fce64470960b55c58a5d75c090e5dac1cb410786d58278c3dab75374f84b6fd7",
+          "path": "assets/fce64470960b55c58a5d75c090e5dac1cb410786d58278c3dab75374f84b6fd7.webp"
+        },
+        {
+          "frame": 91,
+          "role": "history",
+          "image_id": "6f8ba985389b897a8eceeaeba26b0c6b3b7a9847d8f7649b92c735df5460dfc9",
+          "path": "assets/6f8ba985389b897a8eceeaeba26b0c6b3b7a9847d8f7649b92c735df5460dfc9.webp"
+        },
+        {
+          "frame": 101,
+          "role": "history",
+          "image_id": "030fb79873bad773d2377de50de5b277cfec5669444c7ca3a5c89b98199398bb",
+          "path": "assets/030fb79873bad773d2377de50de5b277cfec5669444c7ca3a5c89b98199398bb.webp"
+        },
+        {
+          "frame": 102,
+          "role": "B",
+          "image_id": "ef0363d558e0d7612b8e00529485c31d73e4b37d41bc2c0cd3903485feec26f7",
+          "path": "assets/ef0363d558e0d7612b8e00529485c31d73e4b37d41bc2c0cd3903485feec26f7.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 47.928,
+      "started_at": "2026-11-12T10:43:06.161006+00:00",
+      "completed_at": "2026-11-12T10:43:54.083494+00:00",
+      "worker_pid": 40868,
+      "request_file": "run/cases/C24/S04.request.json",
+      "response_file": "run/cases/C24/S04.response.json",
+      "usage": {
+        "prompt_tokens": 2802,
+        "completion_tokens": 6746,
+        "total_tokens": 9548,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 6057
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1906
+      },
+      "answer": {
+        "previous_id": "S03",
+        "current_id": "S04",
+        "verdict": "deviated",
+        "segment_summary": {
+          "zh": "本段沿绿色边框画旁的走廊前行，穿过正前方门洞进入卧室；卧室内床位于左侧，右侧为电视墙，随后靠近并停在床靠墙一侧的床头柜旁。",
+          "en": "In this segment, the route continued along the hallway beside the green-framed artwork and passed straight through the doorway ahead into the bedroom; inside, the bed was on the left and the TV wall on the right, after which the route approached and stopped by the bedside table against the wall on the left side of the bed."
+        },
+        "reason": {
+          "zh": "走廊至卧室的总体空间关系与任务相符：绿画在左、直行门洞进入卧室、床在左侧；但终点选择有冲突。F91、F101、F102显示镜头停靠在床靠墙一侧的床头柜旁，床位于该柜右侧，而任务明确要求停在床右侧的床头柜旁。",
+          "en": "The overall spatial relationship from the hallway to the bedroom matches the task: the green artwork was on the left, the doorway ahead led into the bedroom, and the bed was on the left. However, the stopping position conflicts with the task. Frames F91, F101, and F102 show the viewpoint stopping by the bedside table against the wall on the left side of the bed, with the bed to the right of that table, while the task explicitly requires stopping next to the bedside table on the right side of the bed."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "with a green framed artwork on your left",
+            "quote_zh": "绿色边框画在您的左侧"
+          },
+          {
+            "quote_en": "Go through the doorway straight ahead to enter the bedroom.",
+            "quote_zh": "直行穿过前方的门洞进入卧室。"
+          },
+          {
+            "quote_en": "stop next to the bedside table on the right side of the bed.",
+            "quote_zh": "停在床右侧的床头柜旁。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              58,
+              59
+            ],
+            "description": {
+              "zh": "走廊中绿色边框画位于左侧，正前方可见通往卧室的门洞。",
+              "en": "In the hallway, the green-framed artwork is on the left, and the doorway leading to the bedroom is visible straight ahead."
+            }
+          },
+          {
+            "frames": [
+              69,
+              80
+            ],
+            "description": {
+              "zh": "穿过门洞后进入卧室，床位于左侧，右侧为条纹墙和电视柜。",
+              "en": "After passing through the doorway into the bedroom, the bed is on the left and the striped wall with the TV cabinet is on the right."
+            }
+          },
+          {
+            "frames": [
+              91,
+              101,
+              102
+            ],
+            "description": {
+              "zh": "镜头靠近床靠墙一侧的木质床头柜和台灯，床位于画面右侧；终点停在该床头柜旁。",
+              "en": "The viewpoint approaches the wooden bedside table and lamp against the wall on the left side of the bed, with the bed on the right side of the image; the endpoint stops beside that bedside table."
+            }
+          }
+        ],
+        "semantic_progress": null,
+        "uncertainties": [
+          {
+            "zh": "走廊中任务提及的高盆栽与右侧开放式厨房在本次抽样帧中未确认。",
+            "en": "The tall potted plant and the open kitchen on the right mentioned in the task were not confirmed in the sampled frames of this segment."
+          }
+        ]
+      },
+      "rollback_target": {
+        "node_id": "S03",
+        "frame": 58,
+        "progress": {
+          "zh": "截至 S03：已进入并沿符合已建立空间关系的走廊前行，绿色边框画在左、右侧墙面可见框画，正前方门洞逐渐接近；左前方出现带窗、桌椅的开放区域，但高盆栽与任务所述右侧开放式厨房尚未确认。尚未穿过门洞进入卧室，也未到达床边或床头柜。",
+          "en": "As of S03: the robot has entered and moved along the hallway consistent with the established spatial relationships, with the green-framed artwork on the left, framed artworks visible on the right wall, and the doorway straight ahead being approached; an open area with a window, table, and chairs appeared ahead-left, but the tall potted plant and the open kitchen on the right described by the task have not been confirmed. It has not passed through the doorway into the bedroom, nor reached the bed or bedside table."
+        }
+      },
+      "committed_progress": {
+        "zh": "截至 S03：已进入并沿符合已建立空间关系的走廊前行，绿色边框画在左、右侧墙面可见框画，正前方门洞逐渐接近；左前方出现带窗、桌椅的开放区域，但高盆栽与任务所述右侧开放式厨房尚未确认。尚未穿过门洞进入卧室，也未到达床边或床头柜。",
+        "en": "As of S03: the robot has entered and moved along the hallway consistent with the established spatial relationships, with the green-framed artwork on the left, framed artworks visible on the right wall, and the doorway straight ahead being approached; an open area with a window, table, and chairs appeared ahead-left, but the tall potted plant and the open kitchen on the right described by the task have not been confirmed. It has not passed through the doorway into the bedroom, nor reached the bed or bedside table."
+      },
+      "progress_anchor": {
+        "id": "S03",
+        "frame": 58
+      }
+    }
+  ],
+  "stop_node": "S04"
+}

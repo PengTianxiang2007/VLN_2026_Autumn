@@ -1,0 +1,36 @@
+{
+  "mode": "initialization",
+  "previous_id": "S01",
+  "current_id": "S01",
+  "previous_frame": 10,
+  "current_frame": 10,
+  "instruction_en": "Walk straight down the hallway, passing an open living area with a couch and a lamp on your right. Continue forward, then turn right to enter a bedroom with a TV on a cabinet on your right. Walk further into the room, towards the window with pink and blue curtains, and stop to the left of the bed.",
+  "prior_semantic_progress": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+  "coverage": "Endpoint observations plus up to five uniformly sampled intermediate observations. Frames are not necessarily consecutive. Review ends at B.",
+  "images": [
+    {
+      "frame": 10,
+      "role": "A=B",
+      "image_id": "9aed7bf38bceb7a7dec10a4348079de0409a0ec12c9bb077d6e35b62c826e213",
+      "path": "assets/9aed7bf38bceb7a7dec10a4348079de0409a0ec12c9bb077d6e35b62c826e213.webp",
+      "sha256": "9aed7bf38bceb7a7dec10a4348079de0409a0ec12c9bb077d6e35b62c826e213",
+      "bytes": 26818
+    }
+  ],
+  "settings": {
+    "model": "deepseek-flash",
+    "response_format": {
+      "type": "json_object"
+    },
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_tokens": 32768,
+    "stream": false
+  },
+  "prompt_sha256": "129ef91051dcb6cc1be8e2e276cb102166bff322a36fdd10661e644de2162cad",
+  "request_sha256": "602453ab60535bba3de3c06c5f18c22647af22c0e5bd391172f075b51df8f3b9",
+  "started_at": "2026-11-12T08:25:49.639830+00:00",
+  "worker_pid": 28772
+}

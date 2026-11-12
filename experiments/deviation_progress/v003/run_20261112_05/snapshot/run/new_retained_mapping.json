@@ -1,0 +1,716 @@
+[
+  {
+    "case": 1,
+    "source_id": "S02",
+    "id": "S01",
+    "frame": 5
+  },
+  {
+    "case": 1,
+    "source_id": "S06",
+    "id": "S02",
+    "frame": 38
+  },
+  {
+    "case": 2,
+    "source_id": "S01",
+    "id": "S01",
+    "frame": 0
+  },
+  {
+    "case": 2,
+    "source_id": "S02",
+    "id": "S02",
+    "frame": 5
+  },
+  {
+    "case": 2,
+    "source_id": "S04",
+    "id": "S03",
+    "frame": 15
+  },
+  {
+    "case": 2,
+    "source_id": "S05",
+    "id": "S04",
+    "frame": 25
+  },
+  {
+    "case": 2,
+    "source_id": "S06",
+    "id": "S05",
+    "frame": 35
+  },
+  {
+    "case": 2,
+    "source_id": "S09",
+    "id": "S06",
+    "frame": 50
+  },
+  {
+    "case": 3,
+    "source_id": "S01",
+    "id": "S01",
+    "frame": 0
+  },
+  {
+    "case": 3,
+    "source_id": "S02",
+    "id": "S02",
+    "frame": 4
+  },
+  {
+    "case": 3,
+    "source_id": "S05",
+    "id": "S03",
+    "frame": 36
+  },
+  {
+    "case": 3,
+    "source_id": "S06",
+    "id": "S04",
+    "frame": 41
+  },
+  {
+    "case": 8,
+    "source_id": "S03",
+    "id": "S01",
+    "frame": 10
+  },
+  {
+    "case": 8,
+    "source_id": "S04",
+    "id": "S02",
+    "frame": 13
+  },
+  {
+    "case": 8,
+    "source_id": "S07",
+    "id": "S03",
+    "frame": 26
+  },
+  {
+    "case": 8,
+    "source_id": "S10",
+    "id": "S04",
+    "frame": 57
+  },
+  {
+    "case": 9,
+    "source_id": "S02",
+    "id": "S01",
+    "frame": 5
+  },
+  {
+    "case": 9,
+    "source_id": "S03",
+    "id": "S02",
+    "frame": 10
+  },
+  {
+    "case": 9,
+    "source_id": "S07",
+    "id": "S03",
+    "frame": 68
+  },
+  {
+    "case": 9,
+    "source_id": "S08",
+    "id": "S04",
+    "frame": 73
+  },
+  {
+    "case": 9,
+    "source_id": "S09",
+    "id": "S05",
+    "frame": 84
+  },
+  {
+    "case": 9,
+    "source_id": "S10",
+    "id": "S06",
+    "frame": 90
+  },
+  {
+    "case": 9,
+    "source_id": "S11",
+    "id": "S07",
+    "frame": 135
+  },
+  {
+    "case": 9,
+    "source_id": "S12",
+    "id": "S08",
+    "frame": 143
+  },
+  {
+    "case": 10,
+    "source_id": "S02",
+    "id": "S01",
+    "frame": 7
+  },
+  {
+    "case": 10,
+    "source_id": "S04",
+    "id": "S02",
+    "frame": 17
+  },
+  {
+    "case": 10,
+    "source_id": "S05",
+    "id": "S03",
+    "frame": 36
+  },
+  {
+    "case": 10,
+    "source_id": "S06",
+    "id": "S04",
+    "frame": 71
+  },
+  {
+    "case": 10,
+    "source_id": "S07",
+    "id": "S05",
+    "frame": 92
+  },
+  {
+    "case": 12,
+    "source_id": "S02",
+    "id": "S01",
+    "frame": 5
+  },
+  {
+    "case": 12,
+    "source_id": "S05",
+    "id": "S02",
+    "frame": 34
+  },
+  {
+    "case": 18,
+    "source_id": "S01",
+    "id": "S01",
+    "frame": 0
+  },
+  {
+    "case": 18,
+    "source_id": "S04",
+    "id": "S02",
+    "frame": 19
+  },
+  {
+    "case": 18,
+    "source_id": "S06",
+    "id": "S03",
+    "frame": 46
+  },
+  {
+    "case": 19,
+    "source_id": "S01",
+    "id": "S01",
+    "frame": 0
+  },
+  {
+    "case": 19,
+    "source_id": "S02",
+    "id": "S02",
+    "frame": 38
+  },
+  {
+    "case": 19,
+    "source_id": "S03",
+    "id": "S03",
+    "frame": 54
+  },
+  {
+    "case": 19,
+    "source_id": "S04",
+    "id": "S04",
+    "frame": 69
+  },
+  {
+    "case": 19,
+    "source_id": "S05",
+    "id": "S05",
+    "frame": 89
+  },
+  {
+    "case": 19,
+    "source_id": "S06",
+    "id": "S06",
+    "frame": 107
+  },
+  {
+    "case": 19,
+    "source_id": "S07",
+    "id": "S07",
+    "frame": 112
+  },
+  {
+    "case": 19,
+    "source_id": "S09",
+    "id": "S08",
+    "frame": 122
+  },
+  {
+    "case": 19,
+    "source_id": "S10",
+    "id": "S09",
+    "frame": 127
+  },
+  {
+    "case": 19,
+    "source_id": "S11",
+    "id": "S10",
+    "frame": 132
+  },
+  {
+    "case": 21,
+    "source_id": "S01",
+    "id": "S01",
+    "frame": 0
+  },
+  {
+    "case": 21,
+    "source_id": "S02",
+    "id": "S02",
+    "frame": 14
+  },
+  {
+    "case": 22,
+    "source_id": "S01",
+    "id": "S01",
+    "frame": 0
+  },
+  {
+    "case": 22,
+    "source_id": "S02",
+    "id": "S02",
+    "frame": 17
+  },
+  {
+    "case": 22,
+    "source_id": "S03",
+    "id": "S03",
+    "frame": 24
+  },
+  {
+    "case": 22,
+    "source_id": "S04",
+    "id": "S04",
+    "frame": 30
+  },
+  {
+    "case": 22,
+    "source_id": "S06",
+    "id": "S05",
+    "frame": 40
+  },
+  {
+    "case": 22,
+    "source_id": "S07",
+    "id": "S06",
+    "frame": 66
+  },
+  {
+    "case": 22,
+    "source_id": "S08",
+    "id": "S07",
+    "frame": 71
+  },
+  {
+    "case": 22,
+    "source_id": "S09",
+    "id": "S08",
+    "frame": 77
+  },
+  {
+    "case": 22,
+    "source_id": "S10",
+    "id": "S09",
+    "frame": 94
+  },
+  {
+    "case": 22,
+    "source_id": "S13",
+    "id": "S10",
+    "frame": 146
+  },
+  {
+    "case": 22,
+    "source_id": "S14",
+    "id": "S11",
+    "frame": 151
+  },
+  {
+    "case": 22,
+    "source_id": "S15",
+    "id": "S12",
+    "frame": 167
+  },
+  {
+    "case": 22,
+    "source_id": "S16",
+    "id": "S13",
+    "frame": 181
+  },
+  {
+    "case": 22,
+    "source_id": "S18",
+    "id": "S14",
+    "frame": 191
+  },
+  {
+    "case": 22,
+    "source_id": "S20",
+    "id": "S15",
+    "frame": 204
+  },
+  {
+    "case": 22,
+    "source_id": "S22",
+    "id": "S16",
+    "frame": 214
+  },
+  {
+    "case": 23,
+    "source_id": "S03",
+    "id": "S01",
+    "frame": 32
+  },
+  {
+    "case": 23,
+    "source_id": "S04",
+    "id": "S02",
+    "frame": 49
+  },
+  {
+    "case": 23,
+    "source_id": "S05",
+    "id": "S03",
+    "frame": 54
+  },
+  {
+    "case": 23,
+    "source_id": "S07",
+    "id": "S04",
+    "frame": 62
+  },
+  {
+    "case": 23,
+    "source_id": "S08",
+    "id": "S05",
+    "frame": 67
+  },
+  {
+    "case": 23,
+    "source_id": "S09",
+    "id": "S06",
+    "frame": 94
+  },
+  {
+    "case": 24,
+    "source_id": "S01",
+    "id": "S01",
+    "frame": 0
+  },
+  {
+    "case": 24,
+    "source_id": "S05",
+    "id": "S02",
+    "frame": 43
+  },
+  {
+    "case": 24,
+    "source_id": "S08",
+    "id": "S03",
+    "frame": 58
+  },
+  {
+    "case": 25,
+    "source_id": "S02",
+    "id": "S01",
+    "frame": 5
+  },
+  {
+    "case": 25,
+    "source_id": "S04",
+    "id": "S02",
+    "frame": 29
+  },
+  {
+    "case": 25,
+    "source_id": "S06",
+    "id": "S03",
+    "frame": 39
+  },
+  {
+    "case": 26,
+    "source_id": "S01",
+    "id": "S01",
+    "frame": 0
+  },
+  {
+    "case": 26,
+    "source_id": "S02",
+    "id": "S02",
+    "frame": 5
+  },
+  {
+    "case": 26,
+    "source_id": "S05",
+    "id": "S03",
+    "frame": 33
+  },
+  {
+    "case": 26,
+    "source_id": "S06",
+    "id": "S04",
+    "frame": 38
+  },
+  {
+    "case": 27,
+    "source_id": "S01",
+    "id": "S01",
+    "frame": 5
+  },
+  {
+    "case": 27,
+    "source_id": "S03",
+    "id": "S02",
+    "frame": 48
+  },
+  {
+    "case": 27,
+    "source_id": "S05",
+    "id": "S03",
+    "frame": 63
+  },
+  {
+    "case": 27,
+    "source_id": "S06",
+    "id": "S04",
+    "frame": 71
+  },
+  {
+    "case": 27,
+    "source_id": "S07",
+    "id": "S05",
+    "frame": 81
+  },
+  {
+    "case": 27,
+    "source_id": "S09",
+    "id": "S06",
+    "frame": 96
+  },
+  {
+    "case": 27,
+    "source_id": "S10",
+    "id": "S07",
+    "frame": 101
+  },
+  {
+    "case": 27,
+    "source_id": "S11",
+    "id": "S08",
+    "frame": 109
+  },
+  {
+    "case": 29,
+    "source_id": "S01",
+    "id": "S01",
+    "frame": 0
+  },
+  {
+    "case": 29,
+    "source_id": "S05",
+    "id": "S02",
+    "frame": 41
+  },
+  {
+    "case": 29,
+    "source_id": "S06",
+    "id": "S03",
+    "frame": 53
+  },
+  {
+    "case": 30,
+    "source_id": "S07",
+    "id": "S01",
+    "frame": 30
+  },
+  {
+    "case": 30,
+    "source_id": "S09",
+    "id": "S02",
+    "frame": 40
+  },
+  {
+    "case": 30,
+    "source_id": "S10",
+    "id": "S03",
+    "frame": 45
+  },
+  {
+    "case": 31,
+    "source_id": "S02",
+    "id": "S01",
+    "frame": 8
+  },
+  {
+    "case": 31,
+    "source_id": "S03",
+    "id": "S02",
+    "frame": 13
+  },
+  {
+    "case": 31,
+    "source_id": "S05",
+    "id": "S03",
+    "frame": 23
+  },
+  {
+    "case": 31,
+    "source_id": "S09",
+    "id": "S04",
+    "frame": 43
+  },
+  {
+    "case": 32,
+    "source_id": "S01",
+    "id": "S01",
+    "frame": 2
+  },
+  {
+    "case": 32,
+    "source_id": "S05",
+    "id": "S02",
+    "frame": 29
+  },
+  {
+    "case": 32,
+    "source_id": "S08",
+    "id": "S03",
+    "frame": 44
+  },
+  {
+    "case": 32,
+    "source_id": "S12",
+    "id": "S04",
+    "frame": 98
+  },
+  {
+    "case": 32,
+    "source_id": "S13",
+    "id": "S05",
+    "frame": 102
+  },
+  {
+    "case": 32,
+    "source_id": "S14",
+    "id": "S06",
+    "frame": 107
+  },
+  {
+    "case": 33,
+    "source_id": "S01",
+    "id": "S01",
+    "frame": 2
+  },
+  {
+    "case": 33,
+    "source_id": "S04",
+    "id": "S02",
+    "frame": 24
+  },
+  {
+    "case": 33,
+    "source_id": "S05",
+    "id": "S03",
+    "frame": 29
+  },
+  {
+    "case": 33,
+    "source_id": "S08",
+    "id": "S04",
+    "frame": 44
+  },
+  {
+    "case": 33,
+    "source_id": "S12",
+    "id": "S05",
+    "frame": 98
+  },
+  {
+    "case": 33,
+    "source_id": "S13",
+    "id": "S06",
+    "frame": 102
+  },
+  {
+    "case": 33,
+    "source_id": "S14",
+    "id": "S07",
+    "frame": 107
+  },
+  {
+    "case": 34,
+    "source_id": "S02",
+    "id": "S01",
+    "frame": 5
+  },
+  {
+    "case": 34,
+    "source_id": "S04",
+    "id": "S02",
+    "frame": 15
+  },
+  {
+    "case": 34,
+    "source_id": "S07",
+    "id": "S03",
+    "frame": 44
+  },
+  {
+    "case": 34,
+    "source_id": "S08",
+    "id": "S04",
+    "frame": 49
+  },
+  {
+    "case": 34,
+    "source_id": "S09",
+    "id": "S05",
+    "frame": 53
+  },
+  {
+    "case": 34,
+    "source_id": "S11",
+    "id": "S06",
+    "frame": 71
+  },
+  {
+    "case": 34,
+    "source_id": "S12",
+    "id": "S07",
+    "frame": 76
+  },
+  {
+    "case": 34,
+    "source_id": "S13",
+    "id": "S08",
+    "frame": 84
+  },
+  {
+    "case": 34,
+    "source_id": "S14",
+    "id": "S09",
+    "frame": 87
+  },
+  {
+    "case": 34,
+    "source_id": "S15",
+    "id": "S10",
+    "frame": 92
+  }
+]

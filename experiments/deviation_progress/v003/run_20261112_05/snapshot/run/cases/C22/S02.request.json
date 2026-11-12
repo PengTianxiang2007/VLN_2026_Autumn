@@ -1,0 +1,84 @@
+{
+  "mode": "segment",
+  "previous_id": "S01",
+  "current_id": "S02",
+  "previous_frame": 0,
+  "current_frame": 17,
+  "instruction_en": "Turn right into the main area, keeping the green wall art on your left and framed pictures on your right. Walk forward, passing a doorway to a room with a window on your left, and then a tall shelving unit also on your left. Turn left to face the bathroom entrance, with a coat rack on your right. Immediately turn left again, passing a large circular wall art on your left, and walk into the open living space. Proceed past the dining table and chairs on your right, then enter the kitchen. Stop in front of the kitchen counter, between the built-in ovens and the sink, directly facing the window.",
+  "prior_semantic_progress": "首个有效节点位于有绿色墙面艺术和右侧框画的入口/走廊视角，前方有通向木地板空间的门洞；仅确认当前场景外观，此前路线和任务完成情况尚未确认。",
+  "coverage": "Endpoint observations plus up to five uniformly sampled intermediate observations. Frames are not necessarily consecutive. Review ends at B.",
+  "images": [
+    {
+      "frame": 0,
+      "role": "A",
+      "image_id": "acf103ba70423d2b2c7ebec6b577f8fbc14845ddc8f105a510bb57039aca73f8",
+      "path": "assets/acf103ba70423d2b2c7ebec6b577f8fbc14845ddc8f105a510bb57039aca73f8.webp",
+      "sha256": "acf103ba70423d2b2c7ebec6b577f8fbc14845ddc8f105a510bb57039aca73f8",
+      "bytes": 8986
+    },
+    {
+      "frame": 1,
+      "role": "history",
+      "image_id": "d6f9fc085086b357e8dc591300398d16d5a0e06a9eb063e1f20b9f6b995940d4",
+      "path": "assets/d6f9fc085086b357e8dc591300398d16d5a0e06a9eb063e1f20b9f6b995940d4.webp",
+      "sha256": "d6f9fc085086b357e8dc591300398d16d5a0e06a9eb063e1f20b9f6b995940d4",
+      "bytes": 9148
+    },
+    {
+      "frame": 5,
+      "role": "history",
+      "image_id": "fd007be085ee65ee8e19d2fefb225c7ea0485bedccc2b7e30a1693e65876bd5e",
+      "path": "assets/fd007be085ee65ee8e19d2fefb225c7ea0485bedccc2b7e30a1693e65876bd5e.webp",
+      "sha256": "fd007be085ee65ee8e19d2fefb225c7ea0485bedccc2b7e30a1693e65876bd5e",
+      "bytes": 3910
+    },
+    {
+      "frame": 9,
+      "role": "history",
+      "image_id": "27820fc54912872b81c9b79e5d2b0f2f8eeb4506e3f8921f0f51b4ca3938ec88",
+      "path": "assets/27820fc54912872b81c9b79e5d2b0f2f8eeb4506e3f8921f0f51b4ca3938ec88.webp",
+      "sha256": "27820fc54912872b81c9b79e5d2b0f2f8eeb4506e3f8921f0f51b4ca3938ec88",
+      "bytes": 4554
+    },
+    {
+      "frame": 12,
+      "role": "history",
+      "image_id": "7f8cf8444dcb3266ed1d9954c745933bf947acd7be20b3d5e5b97f2b303186dc",
+      "path": "assets/7f8cf8444dcb3266ed1d9954c745933bf947acd7be20b3d5e5b97f2b303186dc.webp",
+      "sha256": "7f8cf8444dcb3266ed1d9954c745933bf947acd7be20b3d5e5b97f2b303186dc",
+      "bytes": 6208
+    },
+    {
+      "frame": 16,
+      "role": "history",
+      "image_id": "f0066773ba89ad099e0c0e2e1372dcb940afd8f2f5defc8f146eaf059c1e248c",
+      "path": "assets/f0066773ba89ad099e0c0e2e1372dcb940afd8f2f5defc8f146eaf059c1e248c.webp",
+      "sha256": "f0066773ba89ad099e0c0e2e1372dcb940afd8f2f5defc8f146eaf059c1e248c",
+      "bytes": 4914
+    },
+    {
+      "frame": 17,
+      "role": "B",
+      "image_id": "41690dbfc8e783d73910986067f72c006292d4c2c1750eec6382f1835d9a486d",
+      "path": "assets/41690dbfc8e783d73910986067f72c006292d4c2c1750eec6382f1835d9a486d.webp",
+      "sha256": "41690dbfc8e783d73910986067f72c006292d4c2c1750eec6382f1835d9a486d",
+      "bytes": 4696
+    }
+  ],
+  "settings": {
+    "model": "deepseek-flash",
+    "response_format": {
+      "type": "json_object"
+    },
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_tokens": 32768,
+    "stream": false
+  },
+  "prompt_sha256": "129ef91051dcb6cc1be8e2e276cb102166bff322a36fdd10661e644de2162cad",
+  "request_sha256": "25e398f3b8ddd5dc0b42f3448ad5e8e5b8b30e91257084063c662ec5208097ef",
+  "started_at": "2026-11-12T10:41:00.225763+00:00",
+  "worker_pid": 40868
+}

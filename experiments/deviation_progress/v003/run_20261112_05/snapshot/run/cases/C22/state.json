@@ -1,0 +1,257 @@
+{
+  "case_number": 22,
+  "pid": 40868,
+  "reviews": [
+    {
+      "node_id": "S01",
+      "node_frame": 0,
+      "available_at_frame": 5,
+      "terminal_node": false,
+      "mode": "initialization",
+      "previous_id": "S01",
+      "from_frame": 0,
+      "to_frame": 0,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 0,
+          "role": "A=B",
+          "image_id": "acf103ba70423d2b2c7ebec6b577f8fbc14845ddc8f105a510bb57039aca73f8",
+          "path": "assets/acf103ba70423d2b2c7ebec6b577f8fbc14845ddc8f105a510bb57039aca73f8.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 7.509,
+      "started_at": "2026-11-12T10:40:52.700997+00:00",
+      "completed_at": "2026-11-12T10:41:00.210738+00:00",
+      "worker_pid": 40868,
+      "request_file": "run/cases/C22/S01.request.json",
+      "response_file": "run/cases/C22/S01.response.json",
+      "usage": {
+        "prompt_tokens": 1495,
+        "completion_tokens": 911,
+        "total_tokens": 2406,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 408
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 599
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S01",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "首个有效节点处，视角位于有绿色墙面艺术和右侧框画的入口/走廊区域，前方可见通向木地板空间的门洞；本次没有可比较的移动过程。",
+          "en": "At the first valid node, the viewpoint is in an entry/hallway area with green wall art and a framed picture on the right, with a doorway ahead opening onto a wood-floored space; there is no movement sequence to compare in this segment."
+        },
+        "reason": {
+          "zh": "这是初始化节点，A 与 B 相同，只能根据单帧建立当前语义状态；不能据此确认此前是否已完成右转、直行或经过其他房间。",
+          "en": "This is an initialization node with A equal to B, so the current semantic state can only be established from a single frame; it cannot confirm whether a right turn, forward walking, or passage through other rooms has already been completed."
+        },
+        "instruction_evidence": [],
+        "visual_evidence": [
+          {
+            "frames": [
+              0
+            ],
+            "description": {
+              "zh": "第 0 帧显示绿色墙面艺术位于左侧、框画位于右侧，前方是可见木地板的门洞或开口。",
+              "en": "Frame 0 shows green wall art on the left and a framed picture on the right, with a doorway or opening ahead where wood flooring is visible."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "首个有效节点位于有绿色墙面艺术和右侧框画的入口/走廊视角，前方有通向木地板空间的门洞；仅确认当前场景外观，此前路线和任务完成情况尚未确认。",
+          "en": "The first valid node is an entry/hallway viewpoint with green wall art and a framed picture on the right, and a doorway ahead opening toward a wood-floored space; only the current scene appearance is confirmed, while the prior route and task completion remain unconfirmed."
+        },
+        "uncertainties": [
+          {
+            "zh": "此前是否已经执行右转并进入主区域尚未确认。",
+            "en": "It is not yet confirmed whether the right turn into the main area has already been performed."
+          },
+          {
+            "zh": "前方门洞通向的空间及后续经过门口、架子和餐区等要求尚未由本帧确认。",
+            "en": "The space reached through the doorway ahead, and later requirements such as passing the doorway, shelving unit, and dining area, are not confirmed by this frame."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "首个有效节点位于有绿色墙面艺术和右侧框画的入口/走廊视角，前方有通向木地板空间的门洞；仅确认当前场景外观，此前路线和任务完成情况尚未确认。",
+        "en": "The first valid node is an entry/hallway viewpoint with green wall art and a framed picture on the right, and a doorway ahead opening toward a wood-floored space; only the current scene appearance is confirmed, while the prior route and task completion remain unconfirmed."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 0
+      }
+    },
+    {
+      "node_id": "S02",
+      "node_frame": 17,
+      "available_at_frame": 22,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S01",
+      "from_frame": 0,
+      "to_frame": 17,
+      "prior_progress": {
+        "zh": "首个有效节点位于有绿色墙面艺术和右侧框画的入口/走廊视角，前方有通向木地板空间的门洞；仅确认当前场景外观，此前路线和任务完成情况尚未确认。",
+        "en": "The first valid node is an entry/hallway viewpoint with green wall art and a framed picture on the right, and a doorway ahead opening toward a wood-floored space; only the current scene appearance is confirmed, while the prior route and task completion remain unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 0,
+          "role": "A",
+          "image_id": "acf103ba70423d2b2c7ebec6b577f8fbc14845ddc8f105a510bb57039aca73f8",
+          "path": "assets/acf103ba70423d2b2c7ebec6b577f8fbc14845ddc8f105a510bb57039aca73f8.webp"
+        },
+        {
+          "frame": 1,
+          "role": "history",
+          "image_id": "d6f9fc085086b357e8dc591300398d16d5a0e06a9eb063e1f20b9f6b995940d4",
+          "path": "assets/d6f9fc085086b357e8dc591300398d16d5a0e06a9eb063e1f20b9f6b995940d4.webp"
+        },
+        {
+          "frame": 5,
+          "role": "history",
+          "image_id": "fd007be085ee65ee8e19d2fefb225c7ea0485bedccc2b7e30a1693e65876bd5e",
+          "path": "assets/fd007be085ee65ee8e19d2fefb225c7ea0485bedccc2b7e30a1693e65876bd5e.webp"
+        },
+        {
+          "frame": 9,
+          "role": "history",
+          "image_id": "27820fc54912872b81c9b79e5d2b0f2f8eeb4506e3f8921f0f51b4ca3938ec88",
+          "path": "assets/27820fc54912872b81c9b79e5d2b0f2f8eeb4506e3f8921f0f51b4ca3938ec88.webp"
+        },
+        {
+          "frame": 12,
+          "role": "history",
+          "image_id": "7f8cf8444dcb3266ed1d9954c745933bf947acd7be20b3d5e5b97f2b303186dc",
+          "path": "assets/7f8cf8444dcb3266ed1d9954c745933bf947acd7be20b3d5e5b97f2b303186dc.webp"
+        },
+        {
+          "frame": 16,
+          "role": "history",
+          "image_id": "f0066773ba89ad099e0c0e2e1372dcb940afd8f2f5defc8f146eaf059c1e248c",
+          "path": "assets/f0066773ba89ad099e0c0e2e1372dcb940afd8f2f5defc8f146eaf059c1e248c.webp"
+        },
+        {
+          "frame": 17,
+          "role": "B",
+          "image_id": "41690dbfc8e783d73910986067f72c006292d4c2c1750eec6382f1835d9a486d",
+          "path": "assets/41690dbfc8e783d73910986067f72c006292d4c2c1750eec6382f1835d9a486d.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 15.478,
+      "started_at": "2026-11-12T10:41:00.225763+00:00",
+      "completed_at": "2026-11-12T10:41:15.713359+00:00",
+      "worker_pid": 40868,
+      "request_file": "run/cases/C22/S02.request.json",
+      "response_file": "run/cases/C22/S02.response.json",
+      "usage": {
+        "prompt_tokens": 2818,
+        "completion_tokens": 2351,
+        "total_tokens": 5169,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1741
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1922
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S02",
+        "verdict": "deviated",
+        "segment_summary": {
+          "zh": "从绿色墙艺与右侧框画所在的入口视角出发，随后画面转向并进入浴室：F5–F17连续出现洗手池、镜子和淋浴玻璃，B停在洗手池/镜子前。该段未显示已进入开放起居空间或厨房。",
+          "en": "Starting from the entry view with the green wall art and framed picture on the right, the view then turns toward and enters the bathroom: frames F5–F17 show the sink, mirror, and shower glass, and B stops at the sink/mirror. This segment does not show entry into the open living space or kitchen."
+        },
+        "reason": {
+          "zh": "任务要求前行经过有窗房间和高架搁架，左转面向浴室入口后立即再次左转进入开放起居空间并前往厨房；但F5–F17明确显示实际位于浴室并面向洗手池/镜子，与“仅面向浴室入口后立即左转”的通行要求冲突。",
+          "en": "The task requires walking past the windowed room and tall shelving, turning left to face the bathroom entrance, then immediately turning left again into the open living space and proceeding toward the kitchen; however, F5–F17 clearly show the robot inside the bathroom facing the sink/mirror, conflicting with the required behavior of only facing the bathroom entrance and then immediately turning left."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Turn left to face the bathroom entrance",
+            "quote_zh": "左转面向浴室入口"
+          },
+          {
+            "quote_en": "Immediately turn left again",
+            "quote_zh": "立即再次左转"
+          },
+          {
+            "quote_en": "walk into the open living space",
+            "quote_zh": "走入开放起居空间"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              0,
+              1
+            ],
+            "description": {
+              "zh": "入口视角可见绿色墙艺在左、框画在右，前方有通向木地板空间的门洞。",
+              "en": "The entry view shows the green wall art on the left and a framed picture on the right, with a doorway ahead leading to a wood-floored space."
+            }
+          },
+          {
+            "frames": [
+              5,
+              9,
+              17
+            ],
+            "description": {
+              "zh": "画面近距离显示浴室洗手池和镜子，B停在洗手池/镜子前。",
+              "en": "The frames show a close view of the bathroom sink and mirror, with B stopping at the sink/mirror."
+            }
+          },
+          {
+            "frames": [
+              12,
+              16
+            ],
+            "description": {
+              "zh": "可见淋浴玻璃隔断，进一步支持机器人位于浴室内部。",
+              "en": "A glass shower partition is visible, further supporting that the robot is inside the bathroom."
+            }
+          }
+        ],
+        "semantic_progress": null,
+        "uncertainties": [
+          {
+            "zh": "无法从抽样帧确认进入浴室前是否已经过有窗房间和高架搁架。",
+            "en": "It cannot be confirmed from the sampled frames whether the windowed room and tall shelving were passed before entering the bathroom."
+          }
+        ]
+      },
+      "rollback_target": {
+        "node_id": "S01",
+        "frame": 0,
+        "progress": {
+          "zh": "首个有效节点位于有绿色墙面艺术和右侧框画的入口/走廊视角，前方有通向木地板空间的门洞；仅确认当前场景外观，此前路线和任务完成情况尚未确认。",
+          "en": "The first valid node is an entry/hallway viewpoint with green wall art and a framed picture on the right, and a doorway ahead opening toward a wood-floored space; only the current scene appearance is confirmed, while the prior route and task completion remain unconfirmed."
+        }
+      },
+      "committed_progress": {
+        "zh": "首个有效节点位于有绿色墙面艺术和右侧框画的入口/走廊视角，前方有通向木地板空间的门洞；仅确认当前场景外观，此前路线和任务完成情况尚未确认。",
+        "en": "The first valid node is an entry/hallway viewpoint with green wall art and a framed picture on the right, and a doorway ahead opening toward a wood-floored space; only the current scene appearance is confirmed, while the prior route and task completion remain unconfirmed."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 0
+      }
+    }
+  ],
+  "stop_node": "S02"
+}

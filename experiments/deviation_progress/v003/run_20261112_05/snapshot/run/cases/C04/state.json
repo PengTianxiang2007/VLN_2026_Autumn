@@ -1,0 +1,464 @@
+{
+  "case_number": 4,
+  "pid": 46312,
+  "reviews": [
+    {
+      "node_id": "S01",
+      "node_frame": 5,
+      "available_at_frame": 10,
+      "terminal_node": false,
+      "mode": "initialization",
+      "previous_id": "S01",
+      "from_frame": 5,
+      "to_frame": 5,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 5,
+          "role": "A=B",
+          "image_id": "c5adeaa131229d1c55cbf34cf2ec8d514690552a241fbea7e44e66cb3bad9298",
+          "path": "assets/c5adeaa131229d1c55cbf34cf2ec8d514690552a241fbea7e44e66cb3bad9298.webp"
+        }
+      ],
+      "status": "error",
+      "elapsed_seconds": 6.166,
+      "started_at": "2026-11-12T08:11:10.760207+00:00",
+      "completed_at": "2026-11-12T08:11:16.915024+00:00",
+      "worker_pid": 46312,
+      "request_file": "run/cases/C04/S01.request.json",
+      "response_file": "run/cases/C04/S01.response.json",
+      "usage": {
+        "prompt_tokens": 1449,
+        "completion_tokens": 922,
+        "total_tokens": 2371,
+        "prompt_tokens_details": {
+          "cached_tokens": 1280
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 177
+        },
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 169
+      },
+      "error": "ValueError: Invalid uncertainties",
+      "committed_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 5
+      }
+    },
+    {
+      "node_id": "S02",
+      "node_frame": 57,
+      "available_at_frame": 62,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S01",
+      "from_frame": 5,
+      "to_frame": 57,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 5,
+          "role": "A",
+          "image_id": "c5adeaa131229d1c55cbf34cf2ec8d514690552a241fbea7e44e66cb3bad9298",
+          "path": "assets/c5adeaa131229d1c55cbf34cf2ec8d514690552a241fbea7e44e66cb3bad9298.webp"
+        },
+        {
+          "frame": 6,
+          "role": "history",
+          "image_id": "111969ff0c691b707fee6f48e10813501cd75e13b71be6012e093db7a965203b",
+          "path": "assets/111969ff0c691b707fee6f48e10813501cd75e13b71be6012e093db7a965203b.webp"
+        },
+        {
+          "frame": 18,
+          "role": "history",
+          "image_id": "fbfd92426966b484b32be783104942e6eb9fccf7f106c0cca1d619406c8e7685",
+          "path": "assets/fbfd92426966b484b32be783104942e6eb9fccf7f106c0cca1d619406c8e7685.webp"
+        },
+        {
+          "frame": 31,
+          "role": "history",
+          "image_id": "945c46a8918efd8c91b242fdd5df7a9f70bcd8bb0e6a0065cbfd46a59989a23a",
+          "path": "assets/945c46a8918efd8c91b242fdd5df7a9f70bcd8bb0e6a0065cbfd46a59989a23a.webp"
+        },
+        {
+          "frame": 44,
+          "role": "history",
+          "image_id": "564a4a88152466b06bcb8e624213a74093abb146bbb8320f5acf1707183dc43b",
+          "path": "assets/564a4a88152466b06bcb8e624213a74093abb146bbb8320f5acf1707183dc43b.webp"
+        },
+        {
+          "frame": 56,
+          "role": "history",
+          "image_id": "8e7c56d8131e001157b71889c2c840379471ed58e7d7b931b00f8242508e7a4a",
+          "path": "assets/8e7c56d8131e001157b71889c2c840379471ed58e7d7b931b00f8242508e7a4a.webp"
+        },
+        {
+          "frame": 57,
+          "role": "B",
+          "image_id": "ffe991831c263d752b38260935651336da5171f7916e04df2356e95693b491fa",
+          "path": "assets/ffe991831c263d752b38260935651336da5171f7916e04df2356e95693b491fa.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 138.682,
+      "started_at": "2026-11-12T08:11:16.933748+00:00",
+      "completed_at": "2026-11-12T08:13:35.623802+00:00",
+      "worker_pid": 46312,
+      "request_file": "run/cases/C04/S02.request.json",
+      "response_file": "run/cases/C04/S02.response.json",
+      "usage": {
+        "prompt_tokens": 2743,
+        "completion_tokens": 20492,
+        "total_tokens": 23235,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 19678
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 1719
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S02",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "从客厅中央沿房间向前接近窗前和窗帘，随后靠近右侧电视柜，最终停在可同时看到两处门洞的位置；画面左侧为电视，机器人尚未穿过左侧门洞。",
+          "en": "From the center of the living room, the robot moved forward toward the window and curtain, then approached the TV console on the right, and finally stopped at a position facing two doorways; the TV is on the left of the view, and the robot has not passed through the left doorway."
+        },
+        "reason": {
+          "zh": "这些帧显示机器人仍在同一客厅内活动：先经过左侧沙发与右侧电视柜，后续画面转到两个门洞前；没有证据表明它已进入错误房间或穿过左侧门洞，因此本段与客厅段及面向两门洞的当前要求相符。卧室内的电视在左、床在右以及到远端窗前停止尚未完成。",
+          "en": "These frames show the robot still moving within the same living room: it first passed the couch on the left and the TV console on the right, and later faced the two doorways. There is no evidence that it entered a wrong room or passed through the left doorway, so this segment is consistent with the living-room stage and the current requirement to face the two doorways. The bedroom requirements of keeping the TV on the left, the bed on the right, and stopping at the far window have not yet been completed."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "passing a couch on your left and a TV console on your right",
+            "quote_zh": "从你左侧的沙发和右侧的电视柜旁经过"
+          },
+          {
+            "quote_en": "Turn right to face two doorways.",
+            "quote_zh": "右转面向两个门洞。"
+          },
+          {
+            "quote_en": "turn left to go through the doorway on your left, entering a bedroom",
+            "quote_zh": "左转穿过你左侧的门洞，进入一间卧室"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              5,
+              6,
+              18
+            ],
+            "description": {
+              "zh": "这些帧显示客厅中沙发在左、电视柜在右，机器人正朝远端窗前方向前进。",
+              "en": "These frames show the living room with the couch on the left and the TV console on the right, with the robot moving toward the far window area."
+            }
+          },
+          {
+            "frames": [
+              31,
+              44
+            ],
+            "description": {
+              "zh": "中间帧分别接近窗帘/窗和右侧电视屏幕，表明机器人在客厅内继续向窗前及电视柜一侧移动。",
+              "en": "The intermediate frames show close views of the curtain/window and the TV screen on the right, indicating continued movement within the living room toward the window area and the TV-console side."
+            }
+          },
+          {
+            "frames": [
+              56,
+              57
+            ],
+            "description": {
+              "zh": "B 及前一帧显示电视位于画面左侧，前方可见两处门洞，其中左侧门洞通向粉色房间；机器人停在客厅内，尚未穿过左侧门洞。",
+              "en": "B and the preceding frame show the TV on the left of the view and two doorways ahead, with the left doorway leading to a pink room; the robot is stopped in the living room and has not passed through the left doorway."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "截至B：当前在客厅内，已确认向前经过左侧沙发和右侧电视柜，随后朝向两处门洞；电视在画面左侧，尚未穿过左侧门洞进入卧室，卧室内的电视、床和远端窗户均未到达。",
+          "en": "As of B: the robot is currently in the living room, confirmed to have moved forward past the couch on the left and the TV console on the right, and then faced two doorways; the TV is on the left of the view, and the robot has not passed through the left doorway into the bedroom. The bedroom's TV, bed, and far window have not been reached."
+        },
+        "uncertainties": []
+      },
+      "committed_progress": {
+        "zh": "截至B：当前在客厅内，已确认向前经过左侧沙发和右侧电视柜，随后朝向两处门洞；电视在画面左侧，尚未穿过左侧门洞进入卧室，卧室内的电视、床和远端窗户均未到达。",
+        "en": "As of B: the robot is currently in the living room, confirmed to have moved forward past the couch on the left and the TV console on the right, and then faced two doorways; the TV is on the left of the view, and the robot has not passed through the left doorway into the bedroom. The bedroom's TV, bed, and far window have not been reached."
+      },
+      "progress_anchor": {
+        "id": "S02",
+        "frame": 57
+      }
+    },
+    {
+      "node_id": "S03",
+      "node_frame": 93,
+      "available_at_frame": 98,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S02",
+      "from_frame": 57,
+      "to_frame": 93,
+      "prior_progress": {
+        "zh": "截至B：当前在客厅内，已确认向前经过左侧沙发和右侧电视柜，随后朝向两处门洞；电视在画面左侧，尚未穿过左侧门洞进入卧室，卧室内的电视、床和远端窗户均未到达。",
+        "en": "As of B: the robot is currently in the living room, confirmed to have moved forward past the couch on the left and the TV console on the right, and then faced two doorways; the TV is on the left of the view, and the robot has not passed through the left doorway into the bedroom. The bedroom's TV, bed, and far window have not been reached."
+      },
+      "images": [
+        {
+          "frame": 57,
+          "role": "A",
+          "image_id": "ffe991831c263d752b38260935651336da5171f7916e04df2356e95693b491fa",
+          "path": "assets/ffe991831c263d752b38260935651336da5171f7916e04df2356e95693b491fa.webp"
+        },
+        {
+          "frame": 58,
+          "role": "history",
+          "image_id": "2e78c2dd6aa43408c3c592d5289f79461aa71b4947c30ba6d28d6b20e7e8bb24",
+          "path": "assets/2e78c2dd6aa43408c3c592d5289f79461aa71b4947c30ba6d28d6b20e7e8bb24.webp"
+        },
+        {
+          "frame": 66,
+          "role": "history",
+          "image_id": "e342c9ea926bae028f8b40f4c18b37657ebde10e4ce46762662d3752d35146e3",
+          "path": "assets/e342c9ea926bae028f8b40f4c18b37657ebde10e4ce46762662d3752d35146e3.webp"
+        },
+        {
+          "frame": 75,
+          "role": "history",
+          "image_id": "2dcd2d8ff95b26f3b80865f314de6753b1e3b9ac0ed013fd6c5714a0f7155a6f",
+          "path": "assets/2dcd2d8ff95b26f3b80865f314de6753b1e3b9ac0ed013fd6c5714a0f7155a6f.webp"
+        },
+        {
+          "frame": 84,
+          "role": "history",
+          "image_id": "9ba78fa073722de9268d3f9f7cdfc09722de83d0816dde03f156380d86d893a8",
+          "path": "assets/9ba78fa073722de9268d3f9f7cdfc09722de83d0816dde03f156380d86d893a8.webp"
+        },
+        {
+          "frame": 92,
+          "role": "history",
+          "image_id": "ad52d74a23f36fdd37d98e833dca9d605a6f5c9f364168d3efc493512a342a69",
+          "path": "assets/ad52d74a23f36fdd37d98e833dca9d605a6f5c9f364168d3efc493512a342a69.webp"
+        },
+        {
+          "frame": 93,
+          "role": "B",
+          "image_id": "a339db4e6be4c7ceaa603df2f70b60211edb67e85a98cbd2fe9b50a24f0c3aee",
+          "path": "assets/a339db4e6be4c7ceaa603df2f70b60211edb67e85a98cbd2fe9b50a24f0c3aee.webp"
+        }
+      ],
+      "status": "error",
+      "elapsed_seconds": 38.482,
+      "started_at": "2026-11-12T08:13:35.640663+00:00",
+      "completed_at": "2026-11-12T08:14:14.121008+00:00",
+      "worker_pid": 46312,
+      "request_file": "run/cases/C04/S03.request.json",
+      "response_file": "run/cases/C04/S03.response.json",
+      "usage": {
+        "prompt_tokens": 2782,
+        "completion_tokens": 5737,
+        "total_tokens": 8519,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4838
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 1758
+      },
+      "error": "ValueError: Unexpected/missing answer fields: ['type']",
+      "committed_progress": {
+        "zh": "截至B：当前在客厅内，已确认向前经过左侧沙发和右侧电视柜，随后朝向两处门洞；电视在画面左侧，尚未穿过左侧门洞进入卧室，卧室内的电视、床和远端窗户均未到达。",
+        "en": "As of B: the robot is currently in the living room, confirmed to have moved forward past the couch on the left and the TV console on the right, and then faced two doorways; the TV is on the left of the view, and the robot has not passed through the left doorway into the bedroom. The bedroom's TV, bed, and far window have not been reached."
+      },
+      "progress_anchor": {
+        "id": "S02",
+        "frame": 57
+      }
+    },
+    {
+      "node_id": "S04",
+      "node_frame": 99,
+      "available_at_frame": 99,
+      "terminal_node": true,
+      "mode": "segment",
+      "previous_id": "S02",
+      "from_frame": 57,
+      "to_frame": 99,
+      "prior_progress": {
+        "zh": "截至B：当前在客厅内，已确认向前经过左侧沙发和右侧电视柜，随后朝向两处门洞；电视在画面左侧，尚未穿过左侧门洞进入卧室，卧室内的电视、床和远端窗户均未到达。",
+        "en": "As of B: the robot is currently in the living room, confirmed to have moved forward past the couch on the left and the TV console on the right, and then faced two doorways; the TV is on the left of the view, and the robot has not passed through the left doorway into the bedroom. The bedroom's TV, bed, and far window have not been reached."
+      },
+      "images": [
+        {
+          "frame": 57,
+          "role": "A",
+          "image_id": "ffe991831c263d752b38260935651336da5171f7916e04df2356e95693b491fa",
+          "path": "assets/ffe991831c263d752b38260935651336da5171f7916e04df2356e95693b491fa.webp"
+        },
+        {
+          "frame": 58,
+          "role": "history",
+          "image_id": "2e78c2dd6aa43408c3c592d5289f79461aa71b4947c30ba6d28d6b20e7e8bb24",
+          "path": "assets/2e78c2dd6aa43408c3c592d5289f79461aa71b4947c30ba6d28d6b20e7e8bb24.webp"
+        },
+        {
+          "frame": 68,
+          "role": "history",
+          "image_id": "5d23f6e6d8feed89ba56686a65b91386e1de4099d16896f26fc828be5d653e5e",
+          "path": "assets/5d23f6e6d8feed89ba56686a65b91386e1de4099d16896f26fc828be5d653e5e.webp"
+        },
+        {
+          "frame": 78,
+          "role": "history",
+          "image_id": "54c9fe894a4926a48647bb16a780aa7d093cf7bfca2877ad22003c134603a41e",
+          "path": "assets/54c9fe894a4926a48647bb16a780aa7d093cf7bfca2877ad22003c134603a41e.webp"
+        },
+        {
+          "frame": 88,
+          "role": "history",
+          "image_id": "bb24c967e4f49cd61c1fb803ad2daa2b387279943fff15ec4af6b0bcb2fdaea5",
+          "path": "assets/bb24c967e4f49cd61c1fb803ad2daa2b387279943fff15ec4af6b0bcb2fdaea5.webp"
+        },
+        {
+          "frame": 98,
+          "role": "history",
+          "image_id": "6a5491f17fa191e96862fc6546aa69705571f3c859c94473c1fd5469b3ed976f",
+          "path": "assets/6a5491f17fa191e96862fc6546aa69705571f3c859c94473c1fd5469b3ed976f.webp"
+        },
+        {
+          "frame": 99,
+          "role": "B",
+          "image_id": "3828514fb1c14a18a7c458559902b04b2cf35953aef51aaaa15f3784d91f7528",
+          "path": "assets/3828514fb1c14a18a7c458559902b04b2cf35953aef51aaaa15f3784d91f7528.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 16.407,
+      "started_at": "2026-11-12T08:14:14.139837+00:00",
+      "completed_at": "2026-11-12T08:14:30.550617+00:00",
+      "worker_pid": 46312,
+      "request_file": "run/cases/C04/S04.request.json",
+      "response_file": "run/cases/C04/S04.response.json",
+      "usage": {
+        "prompt_tokens": 2782,
+        "completion_tokens": 2548,
+        "total_tokens": 5330,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1604
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1886
+      },
+      "answer": {
+        "previous_id": "S02",
+        "current_id": "S04",
+        "verdict": "deviated",
+        "segment_summary": {
+          "zh": "从客厅视角出发，先经过一段白墙或门框的近景，视野几乎被白色表面占满；随后短暂出现一个带远端窗户、左侧床和床头柜的卧室画面；到 B 处又回到客厅视角，还是面向原来的左侧门洞和远处餐区，左侧仍是同一台山景电视。",
+          "en": "Starting from the living-room viewpoint, the robot passed a stretch of close-up white wall/door-frame views that nearly filled the frame; a bedroom with a far window, a bed and a nightstand on the left briefly appeared; at B the view returned to the living room, again facing the original left doorway and the dining area beyond, with the same mountain-scene TV on the left."
+        },
+        "reason": {
+          "zh": "任务要求穿过左侧门洞进入卧室，保持电视在左、床在右，一路向前并在卧室最远端窗前停下；但 B 处的画面（电视在左侧、白扶手椅、远处餐桌、左侧带粉色窗帘的门洞）与 A 处客厅视角基本一致，说明机器人在短暂进入卧室后又退回到客厅，没有停在卧室远端窗前，通行行为与任务要求冲突。",
+          "en": "The task requires going through the left doorway into the bedroom, keeping the TV on the left and the bed on the right, walking straight to the far end and stopping in front of the window; however, the view at B (TV on the left, white armchair, dining table beyond, pink-curtained doorway on the left) essentially matches the living-room view at A, showing that after briefly entering the bedroom the robot retreated back into the living room instead of stopping in front of the far window, which conflicts with the task."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "entering a bedroom",
+            "quote_zh": "进入一间卧室"
+          },
+          {
+            "quote_en": "keeping the TV on your left and the bed on your right",
+            "quote_zh": "保持电视在你的左侧、床在你的右侧"
+          },
+          {
+            "quote_en": "stop in front of the window at the far end of the room",
+            "quote_zh": "在房间最远端的窗前停下"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              57,
+              58,
+              99
+            ],
+            "description": {
+              "zh": "A 与 B 均为客厅视角：左侧是山景画面电视和低柜，右前方是白扶手椅，正前方偏左是带粉色窗帘的门洞，远处可见餐桌椅，说明 B 处又回到客厅朝向。",
+              "en": "Both A and B show the living-room view: the mountain-scene TV and low console on the left, the white armchair on the right, the pink-curtained doorway ahead-left, and the dining table and chairs beyond, indicating that at B the robot faces the living room again."
+            }
+          },
+          {
+            "frames": [
+              88
+            ],
+            "description": {
+              "zh": "出现带大面积窗户和窗帘的卧室，床与床头柜、台灯位于画面左侧，说明曾进入卧室区域，但未显示在窗前停下的稳定姿态。",
+              "en": "A bedroom with large windows and curtains appears, with the bed, nightstand and lamp on the left of the frame, showing the robot did enter a bedroom area but not a settled stop at the window."
+            }
+          },
+          {
+            "frames": [
+              68,
+              78
+            ],
+            "description": {
+              "zh": "两帧几乎全白，仅见门框或白墙边缘，无法据此判断通行方向或途经空间。",
+              "en": "Two frames are almost entirely white with only a door-frame or wall edge visible, giving no reliable information about travel direction or spaces passed through."
+            }
+          }
+        ],
+        "semantic_progress": null,
+        "uncertainties": [
+          {
+            "zh": "白色近景帧对应的具体移动与转向过程不明，无法确认是否真正穿过左侧门洞进入卧室。",
+            "en": "The movement and turning corresponding to the near-white frames are unclear, so it cannot be confirmed whether the robot actually passed through the left doorway into the bedroom."
+          },
+          {
+            "zh": "F88 中的卧室是否为任务指定的卧室，以及床是否确实从右侧经过，均未得到清晰证实。",
+            "en": "It is not clearly confirmed whether the bedroom in F88 is the one specified by the task, nor whether the bed was actually passed on the right."
+          },
+          {
+            "zh": "B 处明显回到客厅朝向，未确认是否还有其他通向卧室远端窗户的路线尚未走完。",
+            "en": "At B the robot is clearly oriented back in the living room; it is unconfirmed whether any remaining route to the bedroom's far window is still untraveled."
+          }
+        ]
+      },
+      "rollback_target": {
+        "node_id": "S02",
+        "frame": 57,
+        "progress": {
+          "zh": "截至B：当前在客厅内，已确认向前经过左侧沙发和右侧电视柜，随后朝向两处门洞；电视在画面左侧，尚未穿过左侧门洞进入卧室，卧室内的电视、床和远端窗户均未到达。",
+          "en": "As of B: the robot is currently in the living room, confirmed to have moved forward past the couch on the left and the TV console on the right, and then faced two doorways; the TV is on the left of the view, and the robot has not passed through the left doorway into the bedroom. The bedroom's TV, bed, and far window have not been reached."
+        }
+      },
+      "committed_progress": {
+        "zh": "截至B：当前在客厅内，已确认向前经过左侧沙发和右侧电视柜，随后朝向两处门洞；电视在画面左侧，尚未穿过左侧门洞进入卧室，卧室内的电视、床和远端窗户均未到达。",
+        "en": "As of B: the robot is currently in the living room, confirmed to have moved forward past the couch on the left and the TV console on the right, and then faced two doorways; the TV is on the left of the view, and the robot has not passed through the left doorway into the bedroom. The bedroom's TV, bed, and far window have not been reached."
+      },
+      "progress_anchor": {
+        "id": "S02",
+        "frame": 57
+      }
+    }
+  ],
+  "stop_node": "S04"
+}

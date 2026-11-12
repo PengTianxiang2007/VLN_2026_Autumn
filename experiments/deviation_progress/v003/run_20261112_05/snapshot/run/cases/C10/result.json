@@ -1,0 +1,412 @@
+{
+  "case_number": 10,
+  "case_index": 9,
+  "episode_id": "kujiale_0123_fix_19_3 · F6",
+  "real_episode_id": "kujiale_0123_fix_19_3",
+  "scene": "kujiale_0123_fix",
+  "worker_pid": 49660,
+  "started_at": "2026-11-12T10:38:47.469539+00:00",
+  "completed_at": "2026-11-12T10:40:30.878341+00:00",
+  "reviews": [
+    {
+      "node_id": "S01",
+      "node_frame": 7,
+      "available_at_frame": 12,
+      "terminal_node": false,
+      "mode": "initialization",
+      "previous_id": "S01",
+      "from_frame": 7,
+      "to_frame": 7,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 7,
+          "role": "A=B",
+          "image_id": "795098c9941b50b7496a9283cddc778c6747c220b225a2e5abc3da5d4b010145",
+          "path": "assets/795098c9941b50b7496a9283cddc778c6747c220b225a2e5abc3da5d4b010145.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 8.368,
+      "started_at": "2026-11-12T10:38:47.483177+00:00",
+      "completed_at": "2026-11-12T10:38:55.851198+00:00",
+      "worker_pid": 49660,
+      "request_file": "run/cases/C10/S01.request.json",
+      "response_file": "run/cases/C10/S01.response.json",
+      "usage": {
+        "prompt_tokens": 1455,
+        "completion_tokens": 927,
+        "total_tokens": 2382,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 386
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 559
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S01",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "A=B，本段没有发生移动。单帧F7显示当前视角位于一间铺木地板的房间内，右侧可见床的边缘，前方有深色高柜或墙板，左侧有门口或开口。",
+          "en": "A=B, so no movement occurred in this segment. Single frame F7 shows the current viewpoint inside a room with a wooden floor, the edge of a bed visible on the right, a dark tall cabinet or panel ahead, and a doorway or opening on the left."
+        },
+        "reason": {
+          "zh": "这是首次有效节点，只能依据F7建立当前语义状态；画面支持当前处于卧室类房间，但无法据此确认此前是否已完成右转进入卧室、左转进入走廊等要求。",
+          "en": "This is the first valid node, so the current semantic state can only be established from F7; the image supports being in a bedroom-like room, but cannot confirm whether earlier requirements such as turning right into the bedroom and then left into the hallway were completed."
+        },
+        "instruction_evidence": [],
+        "visual_evidence": [
+          {
+            "frames": [
+              7
+            ],
+            "description": {
+              "zh": "F7显示室内木地板、右侧床沿、前方深色高柜或墙板以及左侧开口；没有动作序列可判断通行方向。",
+              "en": "F7 shows an indoor wooden floor, the edge of a bed on the right, a dark tall cabinet or panel ahead, and an opening on the left; no action sequence is available to determine travel direction."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "首次有效节点：当前位于一间有床和深色高柜的房间内，床在右侧，左侧有门口或开口。此前路线以及是否已完成右转进入卧室、左转沿走廊等要求尚未确认。",
+          "en": "First valid node: currently in a room with a bed and a dark tall cabinet, with the bed on the right and a doorway or opening on the left. Prior route progress and whether requirements such as turning right into the bedroom and then left into the hallway were completed remain unconfirmed."
+        },
+        "uncertainties": [
+          {
+            "zh": "当前房间与任务所述卧室的空间对应关系尚未确认。",
+            "en": "The spatial correspondence between the current room and the bedroom mentioned in the task is not yet confirmed."
+          },
+          {
+            "zh": "此前是否已按指令右转进入卧室并随后左转沿走廊前进，尚无观测依据。",
+            "en": "There is no observational evidence yet that the robot previously turned right into the bedroom and then turned left to proceed along the hallway as instructed."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "首次有效节点：当前位于一间有床和深色高柜的房间内，床在右侧，左侧有门口或开口。此前路线以及是否已完成右转进入卧室、左转沿走廊等要求尚未确认。",
+        "en": "First valid node: currently in a room with a bed and a dark tall cabinet, with the bed on the right and a doorway or opening on the left. Prior route progress and whether requirements such as turning right into the bedroom and then left into the hallway were completed remain unconfirmed."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 7
+      }
+    },
+    {
+      "node_id": "S02",
+      "node_frame": 17,
+      "available_at_frame": 22,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S01",
+      "from_frame": 7,
+      "to_frame": 17,
+      "prior_progress": {
+        "zh": "首次有效节点：当前位于一间有床和深色高柜的房间内，床在右侧，左侧有门口或开口。此前路线以及是否已完成右转进入卧室、左转沿走廊等要求尚未确认。",
+        "en": "First valid node: currently in a room with a bed and a dark tall cabinet, with the bed on the right and a doorway or opening on the left. Prior route progress and whether requirements such as turning right into the bedroom and then left into the hallway were completed remain unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 7,
+          "role": "A",
+          "image_id": "795098c9941b50b7496a9283cddc778c6747c220b225a2e5abc3da5d4b010145",
+          "path": "assets/795098c9941b50b7496a9283cddc778c6747c220b225a2e5abc3da5d4b010145.webp"
+        },
+        {
+          "frame": 8,
+          "role": "history",
+          "image_id": "ff3cebaa3e07e66a0c5aea284673e4976a3f36b0be0bf07ade43a4f60ce2ef23",
+          "path": "assets/ff3cebaa3e07e66a0c5aea284673e4976a3f36b0be0bf07ade43a4f60ce2ef23.webp"
+        },
+        {
+          "frame": 10,
+          "role": "history",
+          "image_id": "5297c479bb4515e331d5f99ea042029854ce392183177641d36002877abb85d1",
+          "path": "assets/5297c479bb4515e331d5f99ea042029854ce392183177641d36002877abb85d1.webp"
+        },
+        {
+          "frame": 12,
+          "role": "history",
+          "image_id": "543bc173099cbf48aff7a6e2942af5939a48ee94db696362af6cb691f7c44c9d",
+          "path": "assets/543bc173099cbf48aff7a6e2942af5939a48ee94db696362af6cb691f7c44c9d.webp"
+        },
+        {
+          "frame": 14,
+          "role": "history",
+          "image_id": "79b092f81b2370bf9db8eab591fa986f2fcddf40c92b0490dbbebfbf3615c52b",
+          "path": "assets/79b092f81b2370bf9db8eab591fa986f2fcddf40c92b0490dbbebfbf3615c52b.webp"
+        },
+        {
+          "frame": 16,
+          "role": "history",
+          "image_id": "93a3ff72c56324f29ce7713b8d630d6b61aeabbe761d7ed92c675d21b98c6262",
+          "path": "assets/93a3ff72c56324f29ce7713b8d630d6b61aeabbe761d7ed92c675d21b98c6262.webp"
+        },
+        {
+          "frame": 17,
+          "role": "B",
+          "image_id": "ad7ccaae35ed87532127f0cd96953d8297b0479026c224b426183ecc2c0005b5",
+          "path": "assets/ad7ccaae35ed87532127f0cd96953d8297b0479026c224b426183ecc2c0005b5.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 30.765,
+      "started_at": "2026-11-12T10:38:55.868742+00:00",
+      "completed_at": "2026-11-12T10:39:26.637928+00:00",
+      "worker_pid": 49660,
+      "request_file": "run/cases/C10/S02.request.json",
+      "response_file": "run/cases/C10/S02.response.json",
+      "usage": {
+        "prompt_tokens": 2783,
+        "completion_tokens": 5046,
+        "total_tokens": 7829,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4094
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1887
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S02",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "从有床和深色高柜的卧室左侧开口离开，穿过白色门洞进入狭窄走廊，并沿走廊向前经过侧向门洞/开口。截至B，机器人仍在走廊或门洞附近，尚未看到开放客厅内的餐桌和床。",
+          "en": "The robot leaves the bedroom with the bed and dark tall wardrobe through the opening on the left, passes through a white doorway into a narrow hallway, and moves forward along the hallway past side doorways/openings. At B it is still near the hallway/doorway and has not yet seen the dining table and bed in the open living area."
+        },
+        "reason": {
+          "zh": "本段有依据显示机器人从卧室左侧门洞进入白色走廊并沿走廊直行，符合任务中进入卧室后左转沿走廊前进的当前阶段；尚无证据表明与路线要求冲突。开放客厅、左侧餐桌、右侧床及后续灰门/厨房尚未到达或确认。",
+          "en": "This segment provides evidence that the robot entered a white hallway through the left-side doorway of the bedroom and moved straight along the hallway, consistent with the current stage of turning left and walking down the hallway after entering the bedroom; there is no evidence of conflict with the route requirements. The open living area, dining table on the left, bed on the right, and the later grey door/kitchen have not yet been reached or confirmed."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Turn right to enter the bedroom, then immediately turn left and walk straight down the hallway.",
+            "quote_zh": "向右转进入卧室，然后立即左转并沿走廊直走。"
+          },
+          {
+            "quote_en": "Continue straight through the open living area, passing a dining table on your left and a bed on your right.",
+            "quote_zh": "继续直行穿过开放客厅，从左侧经过餐桌，从右侧经过床。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              7,
+              8,
+              10
+            ],
+            "description": {
+              "zh": "F7中可见右侧的床和深色高柜、左侧白色门洞；F8至F10显示相机朝该门洞靠近并穿过，进入更窄的白色通道。",
+              "en": "F7 shows the bed and dark tall wardrobe on the right and a white doorway on the left; F8–F10 show the camera approaching and passing through this doorway into a narrower white passage."
+            }
+          },
+          {
+            "frames": [
+              12,
+              14,
+              16,
+              17
+            ],
+            "description": {
+              "zh": "F12至F17显示沿白色狭窄走廊继续前进，途中经过侧向门洞/开口；画面中尚未出现开放客厅、左侧餐桌或右侧床。",
+              "en": "F12–F17 show continued movement along the narrow white hallway, passing side doorways/openings; the open living area, dining table on the left, or bed on the right is not yet visible."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "首次有效节点已确认机器人位于有床和深色高柜的卧室，床在右、左侧有开口；本段从该左侧开口穿过门洞进入白色走廊，并沿走廊向前经过侧向门洞/开口，截至B仍在走廊、尚未进入开放客厅，也未见左侧餐桌和右侧床。",
+          "en": "The first valid node established that the robot was in a bedroom with a bed and a dark tall wardrobe, the bed on the right and an opening on the left. In this segment it passes through that left opening and a white doorway into a white hallway, moves forward past side doorways/openings, and at B is still in the hallway, not yet in the open living area and with no dining table on the left or bed on the right seen."
+        },
+        "uncertainties": [
+          {
+            "zh": "A之前是否已正确完成“向右转进入卧室”无法由本段确认。",
+            "en": "Whether the earlier “turn right to enter the bedroom” was correctly completed before A cannot be confirmed from this segment."
+          },
+          {
+            "zh": "尚未看到开放客厅、左侧餐桌和右侧床，进入并穿过客厅的完成情况未确认。",
+            "en": "The open living area, the dining table on the left, and the bed on the right have not been seen, so entry into and traversal of the living area remain unconfirmed."
+          },
+          {
+            "zh": "尚未看到带红线的灰门、厨房入口和尽头窗户，后续转向及停止位置未确认。",
+            "en": "The grey door with the red line, kitchen entrance, and window at the end have not been seen, so subsequent turns and the stop position remain unconfirmed."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "首次有效节点已确认机器人位于有床和深色高柜的卧室，床在右、左侧有开口；本段从该左侧开口穿过门洞进入白色走廊，并沿走廊向前经过侧向门洞/开口，截至B仍在走廊、尚未进入开放客厅，也未见左侧餐桌和右侧床。",
+        "en": "The first valid node established that the robot was in a bedroom with a bed and a dark tall wardrobe, the bed on the right and an opening on the left. In this segment it passes through that left opening and a white doorway into a white hallway, moves forward past side doorways/openings, and at B is still in the hallway, not yet in the open living area and with no dining table on the left or bed on the right seen."
+      },
+      "progress_anchor": {
+        "id": "S02",
+        "frame": 17
+      }
+    },
+    {
+      "node_id": "S03",
+      "node_frame": 36,
+      "available_at_frame": 41,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S02",
+      "from_frame": 17,
+      "to_frame": 36,
+      "prior_progress": {
+        "zh": "首次有效节点已确认机器人位于有床和深色高柜的卧室，床在右、左侧有开口；本段从该左侧开口穿过门洞进入白色走廊，并沿走廊向前经过侧向门洞/开口，截至B仍在走廊、尚未进入开放客厅，也未见左侧餐桌和右侧床。",
+        "en": "The first valid node established that the robot was in a bedroom with a bed and a dark tall wardrobe, the bed on the right and an opening on the left. In this segment it passes through that left opening and a white doorway into a white hallway, moves forward past side doorways/openings, and at B is still in the hallway, not yet in the open living area and with no dining table on the left or bed on the right seen."
+      },
+      "images": [
+        {
+          "frame": 17,
+          "role": "A",
+          "image_id": "ad7ccaae35ed87532127f0cd96953d8297b0479026c224b426183ecc2c0005b5",
+          "path": "assets/ad7ccaae35ed87532127f0cd96953d8297b0479026c224b426183ecc2c0005b5.webp"
+        },
+        {
+          "frame": 18,
+          "role": "history",
+          "image_id": "d4ecca0fdef5258233f42b6e9e11f9c1230e26b45f3bd1489eba2393058ade9f",
+          "path": "assets/d4ecca0fdef5258233f42b6e9e11f9c1230e26b45f3bd1489eba2393058ade9f.webp"
+        },
+        {
+          "frame": 22,
+          "role": "history",
+          "image_id": "66f5bef812a1c065261be7f2a6111226d805d5f681fb6ee5b428fc226fcce23e",
+          "path": "assets/66f5bef812a1c065261be7f2a6111226d805d5f681fb6ee5b428fc226fcce23e.webp"
+        },
+        {
+          "frame": 26,
+          "role": "history",
+          "image_id": "c0b7a88db8f1029d27b3beb8c9e4234220a836f179095f2dc40b864673ab745d",
+          "path": "assets/c0b7a88db8f1029d27b3beb8c9e4234220a836f179095f2dc40b864673ab745d.webp"
+        },
+        {
+          "frame": 31,
+          "role": "history",
+          "image_id": "c71305a13358c832d3470b78fb39d3c4613f19380acf3c57e30883dba3821a48",
+          "path": "assets/c71305a13358c832d3470b78fb39d3c4613f19380acf3c57e30883dba3821a48.webp"
+        },
+        {
+          "frame": 35,
+          "role": "history",
+          "image_id": "ebb78ee5d4539aa5c4315acc9e4ea02d4b9ae3c47cb02f9b3d59b68c4ae086c5",
+          "path": "assets/ebb78ee5d4539aa5c4315acc9e4ea02d4b9ae3c47cb02f9b3d59b68c4ae086c5.webp"
+        },
+        {
+          "frame": 36,
+          "role": "B",
+          "image_id": "354a48887ac159715b56c700fecd3ec229e9aabb59bc3b75bd9917dd9b3b1b66",
+          "path": "assets/354a48887ac159715b56c700fecd3ec229e9aabb59bc3b75bd9917dd9b3b1b66.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 64.217,
+      "started_at": "2026-11-12T10:39:26.650114+00:00",
+      "completed_at": "2026-11-12T10:40:30.868990+00:00",
+      "worker_pid": 49660,
+      "request_file": "run/cases/C10/S03.request.json",
+      "response_file": "run/cases/C10/S03.response.json",
+      "usage": {
+        "prompt_tokens": 2805,
+        "completion_tokens": 9685,
+        "total_tokens": 12490,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 9003
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1909
+      },
+      "answer": {
+        "previous_id": "S02",
+        "current_id": "S03",
+        "verdict": "deviated",
+        "segment_summary": {
+          "zh": "从A处白色走廊继续向前，经过门框边缘和木地板墙角，随后视野中出现玻璃淋浴间；到B时床位于左侧，玻璃淋浴间位于右侧，机器人处在卧室/卫浴区域旁，未显示已进入开放客厅。",
+          "en": "From the white hallway at A, the robot continued forward past a door edge and a wood-floored corner, after which a glass shower enclosure came into view. At B, the bed is on the left and the glass shower enclosure is on the right, placing the robot beside a bedroom/bathroom area, with no indication that it has entered the open living area."
+        },
+        "reason": {
+          "zh": "任务当前要求沿走廊继续直行穿过开放客厅，并保持餐桌在左、床在右的空间关系；B帧显示床在左且紧邻玻璃淋浴间，属于卧室/卫浴一侧，与预期通行方向及“床在右”的关系冲突。",
+          "en": "At this stage the task requires continuing straight through the open living area with the dining table on the left and the bed on the right; frame B shows the bed on the left next to a glass shower enclosure, which is a bedroom/bathroom area and conflicts with the expected direction and the “bed on the right” relation."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Continue straight through the open living area, passing a dining table on your left and a bed on your right.",
+            "quote_zh": "继续直行穿过开放客厅，从左侧的餐桌和右侧的床旁经过。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              31,
+              35,
+              36
+            ],
+            "description": {
+              "zh": "F31显示玻璃淋浴间在左、木地板在右；F35至F36显示床在左侧、玻璃淋浴间在右侧，且两者相邻，构成卧室/卫浴空间。",
+              "en": "Frame 31 shows the glass shower enclosure on the left and wood flooring on the right; frames 35–36 show the bed on the left and the glass shower enclosure on the right, adjacent to each other, forming a bedroom/bathroom space."
+            }
+          },
+          {
+            "frames": [
+              17,
+              18,
+              22,
+              26
+            ],
+            "description": {
+              "zh": "从A处白色墙面和门框旁的走廊视角出发，沿木地板前行并经过墙角；这些帧中未出现开放客厅或左侧餐桌。",
+              "en": "Starting from the hallway view at A beside white walls and a door frame, the robot moved along the wood floor past a corner; these frames show neither the open living area nor a dining table on the left."
+            }
+          }
+        ],
+        "semantic_progress": null,
+        "uncertainties": [
+          {
+            "zh": "抽样帧未完整显示跨过门洞的过程，机器人是否已完全进入卧室/卫浴区还是仅在门口观望，无法完全确认。",
+            "en": "The sampled frames do not fully show passage through the doorway, so it cannot be completely confirmed whether the robot has fully entered the bedroom/bathroom area or is only looking in from the doorway."
+          },
+          {
+            "zh": "开放客厅及左侧餐桌尚未在任何帧中得到确认。",
+            "en": "The open living area and the dining table on the left are not confirmed in any frame."
+          }
+        ]
+      },
+      "rollback_target": {
+        "node_id": "S02",
+        "frame": 17,
+        "progress": {
+          "zh": "首次有效节点已确认机器人位于有床和深色高柜的卧室，床在右、左侧有开口；本段从该左侧开口穿过门洞进入白色走廊，并沿走廊向前经过侧向门洞/开口，截至B仍在走廊、尚未进入开放客厅，也未见左侧餐桌和右侧床。",
+          "en": "The first valid node established that the robot was in a bedroom with a bed and a dark tall wardrobe, the bed on the right and an opening on the left. In this segment it passes through that left opening and a white doorway into a white hallway, moves forward past side doorways/openings, and at B is still in the hallway, not yet in the open living area and with no dining table on the left or bed on the right seen."
+        }
+      },
+      "committed_progress": {
+        "zh": "首次有效节点已确认机器人位于有床和深色高柜的卧室，床在右、左侧有开口；本段从该左侧开口穿过门洞进入白色走廊，并沿走廊向前经过侧向门洞/开口，截至B仍在走廊、尚未进入开放客厅，也未见左侧餐桌和右侧床。",
+        "en": "The first valid node established that the robot was in a bedroom with a bed and a dark tall wardrobe, the bed on the right and an opening on the left. In this segment it passes through that left opening and a white doorway into a white hallway, moves forward past side doorways/openings, and at B is still in the hallway, not yet in the open living area and with no dining table on the left or bed on the right seen."
+      },
+      "progress_anchor": {
+        "id": "S02",
+        "frame": 17
+      }
+    }
+  ],
+  "stop_node": "S03",
+  "stop_reason": "first_deviation",
+  "terminal_frame": 130,
+  "raw_node_count": 6,
+  "retained_node_count": 6,
+  "unreviewed_nodes": [
+    "S04",
+    "S05",
+    "S06"
+  ]
+}

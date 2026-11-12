@@ -1,0 +1,403 @@
+{
+  "case_number": 8,
+  "case_index": 7,
+  "episode_id": "kujiale_0113_1_4 · F22",
+  "real_episode_id": "kujiale_0113_1_4",
+  "scene": "kujiale_0113",
+  "worker_pid": 31588,
+  "started_at": "2026-11-12T10:38:47.469539+00:00",
+  "completed_at": "2026-11-12T10:41:21.543880+00:00",
+  "reviews": [
+    {
+      "node_id": "S01",
+      "node_frame": 10,
+      "available_at_frame": 15,
+      "terminal_node": false,
+      "mode": "initialization",
+      "previous_id": "S01",
+      "from_frame": 10,
+      "to_frame": 10,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 10,
+          "role": "A=B",
+          "image_id": "e589f0c6a7da74bc449ae68672895e2b1e2915302bd7031bd72ca2805cac32c3",
+          "path": "assets/e589f0c6a7da74bc449ae68672895e2b1e2915302bd7031bd72ca2805cac32c3.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 9.601,
+      "started_at": "2026-11-12T10:38:47.469539+00:00",
+      "completed_at": "2026-11-12T10:38:57.078367+00:00",
+      "worker_pid": 31588,
+      "request_file": "run/cases/C08/S01.request.json",
+      "response_file": "run/cases/C08/S01.response.json",
+      "usage": {
+        "prompt_tokens": 1439,
+        "completion_tokens": 1085,
+        "total_tokens": 2524,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 572
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 543
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S01",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "在 S01 的首帧中，视角位于走廊或门口，朝一间带床、窗户和窗帘的房间看去；单帧未显示实际移动过程。",
+          "en": "In the first frame at S01, the viewpoint is in a hallway or doorway looking toward a room with a bed, window, and curtain; the single frame does not show an actual movement process."
+        },
+        "reason": {
+          "zh": "这是初始化节点，只能依据这一帧建立当前语义状态；画面支持位于走廊/门口并朝带床房间观察，但无法据此确认此前路线或任务完成情况。",
+          "en": "This is an initialization node, so only this frame can establish the current semantic state; the image supports being in a hallway/doorway looking toward a room with a bed, but it cannot confirm the prior route or task completion."
+        },
+        "instruction_evidence": [],
+        "visual_evidence": [
+          {
+            "frames": [
+              10
+            ],
+            "description": {
+              "zh": "帧10显示从白色走廊/门口向前看，可见一间有床、窗户、窗帘和一盆植物的房间；未显示已到达客厅沙发和茶几区域。",
+              "en": "Frame 10 shows a forward view from a white hallway/doorway toward a room with a bed, window, curtain, and a potted plant; it does not show having reached the living-room sofa and coffee-table area."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "截至 S01，视角处于走廊/门口附近，朝一间带床和窗户的房间观察；此前是否沿走廊前行、经过左侧画和右侧厨房门口、在走廊尽头右转进入客厅并穿过客厅均尚未确认。",
+          "en": "As of S01, the viewpoint is near a hallway/doorway, looking toward a room with a bed and window; it is not yet confirmed whether the robot previously walked along the hallway, passed the painting on the left and kitchen doorway on the right, turned right at the end into the living room, and crossed the living room."
+        },
+        "uncertainties": [
+          {
+            "zh": "当前房间与任务所述客厅、窗户及沙发茶几的空间关系尚未确认。",
+            "en": "The spatial relationship between the current room and the task's living room, window, sofa, and coffee table is not yet confirmed."
+          },
+          {
+            "zh": "本次初始化帧无法确认此前已完成的移动和经过的地标。",
+            "en": "This initialization frame cannot confirm previously completed movements or landmarks passed."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "截至 S01，视角处于走廊/门口附近，朝一间带床和窗户的房间观察；此前是否沿走廊前行、经过左侧画和右侧厨房门口、在走廊尽头右转进入客厅并穿过客厅均尚未确认。",
+        "en": "As of S01, the viewpoint is near a hallway/doorway, looking toward a room with a bed and window; it is not yet confirmed whether the robot previously walked along the hallway, passed the painting on the left and kitchen doorway on the right, turned right at the end into the living room, and crossed the living room."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 10
+      }
+    },
+    {
+      "node_id": "S02",
+      "node_frame": 13,
+      "available_at_frame": 18,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S01",
+      "from_frame": 10,
+      "to_frame": 13,
+      "prior_progress": {
+        "zh": "截至 S01，视角处于走廊/门口附近，朝一间带床和窗户的房间观察；此前是否沿走廊前行、经过左侧画和右侧厨房门口、在走廊尽头右转进入客厅并穿过客厅均尚未确认。",
+        "en": "As of S01, the viewpoint is near a hallway/doorway, looking toward a room with a bed and window; it is not yet confirmed whether the robot previously walked along the hallway, passed the painting on the left and kitchen doorway on the right, turned right at the end into the living room, and crossed the living room."
+      },
+      "images": [
+        {
+          "frame": 10,
+          "role": "A",
+          "image_id": "e589f0c6a7da74bc449ae68672895e2b1e2915302bd7031bd72ca2805cac32c3",
+          "path": "assets/e589f0c6a7da74bc449ae68672895e2b1e2915302bd7031bd72ca2805cac32c3.webp"
+        },
+        {
+          "frame": 11,
+          "role": "history",
+          "image_id": "acc5d178378656ceb009877dcbee3f6ece7b4c072dd05e4a03d512c51c505d19",
+          "path": "assets/acc5d178378656ceb009877dcbee3f6ece7b4c072dd05e4a03d512c51c505d19.webp"
+        },
+        {
+          "frame": 12,
+          "role": "history",
+          "image_id": "bb06f1f2647495cc1de425d4877d2664dc8079b9eef8dc829fb388fea9aa5822",
+          "path": "assets/bb06f1f2647495cc1de425d4877d2664dc8079b9eef8dc829fb388fea9aa5822.webp"
+        },
+        {
+          "frame": 13,
+          "role": "B",
+          "image_id": "e155543608cfdc230086e367cfa00f2e327ebc2066cbc7f223adf87b3a0de9c0",
+          "path": "assets/e155543608cfdc230086e367cfa00f2e327ebc2066cbc7f223adf87b3a0de9c0.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 66.61,
+      "started_at": "2026-11-12T10:38:57.096543+00:00",
+      "completed_at": "2026-11-12T10:40:03.701328+00:00",
+      "worker_pid": 31588,
+      "request_file": "run/cases/C08/S02.request.json",
+      "response_file": "run/cases/C08/S02.response.json",
+      "usage": {
+        "prompt_tokens": 2121,
+        "completion_tokens": 9974,
+        "total_tokens": 12095,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 9115
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1225
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S02",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "本段视角先朝向一间带床和窗户的卧室，随后向右转，右侧出现厨房台面、柜体和门口；画面未显示进入客厅、经过灰色沙发或茶几，也未显示在窗前停下。",
+          "en": "In this segment, the view first faces a bedroom with a bed and window, then turns right to reveal kitchen counters, cabinets, and a doorway on the right; the images do not show entering the living room, passing the grey sofa or coffee table, or stopping at the window."
+        },
+        "reason": {
+          "zh": "厨房门口出现在右侧，与任务中“右侧厨房门口”的空间关系相符，尚无与任务冲突的通行证据；但画面不足以确认已完全通过该门口，且客厅、灰色沙发和茶几尚未出现。",
+          "en": "The kitchen doorway appears on the right, matching the task's spatial cue of a kitchen doorway on the right, and there is no evidence of a conflicting passage; however, the images are not enough to confirm that this doorway has been fully passed, and the living room, grey sofa, and coffee table have not yet appeared."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "passing a doorway to a kitchen on your right",
+            "quote_zh": "从你右侧的一间厨房门口经过"
+          },
+          {
+            "quote_en": "At the end of the hallway, turn right to enter the living room.",
+            "quote_zh": "在走廊尽头右转，进入客厅。"
+          },
+          {
+            "quote_en": "stop in front of the window.",
+            "quote_zh": "在窗前停下。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              10,
+              11
+            ],
+            "description": {
+              "zh": "视角主要朝向一间带床和窗户的卧室，左右为门口和墙体，尚未看到客厅。",
+              "en": "The view is mainly toward a bedroom with a bed and window, with doorway and walls at the sides; no living room is visible."
+            }
+          },
+          {
+            "frames": [
+              12,
+              13
+            ],
+            "description": {
+              "zh": "视角向右转后，右侧可见厨房台面、柜体和深色地面过渡，左侧仍保留卧室的床和窗帘；未看到灰色沙发、茶几或客厅空间。",
+              "en": "After the view turns right, kitchen counters, cabinets, and a dark floor transition are visible on the right, while the bedroom bed and curtain remain on the left; no grey sofa, coffee table, or living-room space is visible."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "截至 S02，视角位于走廊或门口一带，先朝带床和窗户的卧室方向，随后向右转看到右侧的厨房门口与台面，符合厨房门口在右侧的空间线索。尚未确认已通过该厨房门口、到达走廊尽头右转进入客厅，也未看到灰色沙发、茶几或已在窗前停下。",
+          "en": "As of S02, the view is in the hallway or doorway area, first facing a bedroom with a bed and window, then turning right to see a kitchen doorway and counters on the right, consistent with the spatial cue of a kitchen doorway on the right. It is not yet confirmed that this kitchen doorway has been passed, that the end of the hallway has been reached to turn right into the living room, or that the grey sofa, coffee table, or stop at the window has been seen."
+        },
+        "uncertainties": [
+          {
+            "zh": "左侧画作未在本段画面中出现，无法据此确认已经过画作。",
+            "en": "The painting on the left does not appear in this segment's frames, so it cannot be confirmed that the painting has been passed."
+          },
+          {
+            "zh": "右侧厨房门口已进入视野，但尚不能确认机器人是否已经完全经过该门口。",
+            "en": "The kitchen doorway on the right is now in view, but it cannot yet be confirmed whether the robot has completely passed this doorway."
+          },
+          {
+            "zh": "尚未确认已到走廊尽头并右转进入客厅，也未看到灰色沙发、茶几或窗前停止位置。",
+            "en": "It is not yet confirmed that the end of the hallway has been reached and a right turn taken into the living room, nor have the grey sofa, coffee table, or window stopping position been seen."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "截至 S02，视角位于走廊或门口一带，先朝带床和窗户的卧室方向，随后向右转看到右侧的厨房门口与台面，符合厨房门口在右侧的空间线索。尚未确认已通过该厨房门口、到达走廊尽头右转进入客厅，也未看到灰色沙发、茶几或已在窗前停下。",
+        "en": "As of S02, the view is in the hallway or doorway area, first facing a bedroom with a bed and window, then turning right to see a kitchen doorway and counters on the right, consistent with the spatial cue of a kitchen doorway on the right. It is not yet confirmed that this kitchen doorway has been passed, that the end of the hallway has been reached to turn right into the living room, or that the grey sofa, coffee table, or stop at the window has been seen."
+      },
+      "progress_anchor": {
+        "id": "S02",
+        "frame": 13
+      }
+    },
+    {
+      "node_id": "S03",
+      "node_frame": 26,
+      "available_at_frame": 31,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S02",
+      "from_frame": 13,
+      "to_frame": 26,
+      "prior_progress": {
+        "zh": "截至 S02，视角位于走廊或门口一带，先朝带床和窗户的卧室方向，随后向右转看到右侧的厨房门口与台面，符合厨房门口在右侧的空间线索。尚未确认已通过该厨房门口、到达走廊尽头右转进入客厅，也未看到灰色沙发、茶几或已在窗前停下。",
+        "en": "As of S02, the view is in the hallway or doorway area, first facing a bedroom with a bed and window, then turning right to see a kitchen doorway and counters on the right, consistent with the spatial cue of a kitchen doorway on the right. It is not yet confirmed that this kitchen doorway has been passed, that the end of the hallway has been reached to turn right into the living room, or that the grey sofa, coffee table, or stop at the window has been seen."
+      },
+      "images": [
+        {
+          "frame": 13,
+          "role": "A",
+          "image_id": "e155543608cfdc230086e367cfa00f2e327ebc2066cbc7f223adf87b3a0de9c0",
+          "path": "assets/e155543608cfdc230086e367cfa00f2e327ebc2066cbc7f223adf87b3a0de9c0.webp"
+        },
+        {
+          "frame": 14,
+          "role": "history",
+          "image_id": "0961c5757ca8480579419cfe345a130053bf7e6091e41494a55962fcc92906d6",
+          "path": "assets/0961c5757ca8480579419cfe345a130053bf7e6091e41494a55962fcc92906d6.webp"
+        },
+        {
+          "frame": 17,
+          "role": "history",
+          "image_id": "87148ca350f2a57bbb33789ed5ccf9e039cb40a06c273e15a69033b8bbac4e27",
+          "path": "assets/87148ca350f2a57bbb33789ed5ccf9e039cb40a06c273e15a69033b8bbac4e27.webp"
+        },
+        {
+          "frame": 20,
+          "role": "history",
+          "image_id": "4480c2ce2052c82c254077d72249ea6a3ffdc2018ee31b3b816b80af54852242",
+          "path": "assets/4480c2ce2052c82c254077d72249ea6a3ffdc2018ee31b3b816b80af54852242.webp"
+        },
+        {
+          "frame": 22,
+          "role": "history",
+          "image_id": "b55838bdecb85d1cda50bb97e13689dc9050feb0428c78a00a6241ee7f8ebbe6",
+          "path": "assets/b55838bdecb85d1cda50bb97e13689dc9050feb0428c78a00a6241ee7f8ebbe6.webp"
+        },
+        {
+          "frame": 25,
+          "role": "history",
+          "image_id": "7d9a61287a93df9ffdf5b80943fed1f6e0724cf4acf2e9a57d58c32360b6b7b7",
+          "path": "assets/7d9a61287a93df9ffdf5b80943fed1f6e0724cf4acf2e9a57d58c32360b6b7b7.webp"
+        },
+        {
+          "frame": 26,
+          "role": "B",
+          "image_id": "561a13cc9397333bd75ca124487a28d76b6c0802ee3a036e0f0174aab335b123",
+          "path": "assets/561a13cc9397333bd75ca124487a28d76b6c0802ee3a036e0f0174aab335b123.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 77.808,
+      "started_at": "2026-11-12T10:40:03.730555+00:00",
+      "completed_at": "2026-11-12T10:41:21.526919+00:00",
+      "worker_pid": 31588,
+      "request_file": "run/cases/C08/S03.request.json",
+      "response_file": "run/cases/C08/S03.response.json",
+      "usage": {
+        "prompt_tokens": 2789,
+        "completion_tokens": 11916,
+        "total_tokens": 14705,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 11263
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1893
+      },
+      "answer": {
+        "previous_id": "S02",
+        "current_id": "S03",
+        "verdict": "deviated",
+        "segment_summary": {
+          "zh": "从 S02 的卧室/厨房门口一带继续向前，经过厨房附近的开口，进入厨房与客厅相邻的开放区域；随后镜头沿通道直行，灰色大沙发和绿植位于前进方向右侧，远处门口仍在正前方，未右转进入客厅或在窗前停下。",
+          "en": "From the bedroom/kitchen doorway area at S02, the view continued forward past the kitchen opening into an open area adjacent to the kitchen and living room; the camera then kept straight along the passage, with the large grey sofa and plant on the right side of travel, while a distant doorway remained ahead; it did not turn right into the living room or stop at a window."
+        },
+        "reason": {
+          "zh": "任务要求在走廊尽头右转进入客厅，并从左侧经过大灰色沙发，最后在窗前停下；但 F25–F26 显示相机仍沿通道直行，灰色沙发明显在右侧，未见进入客厅的右转，也未到窗前。",
+          "en": "The task requires a right turn into the living room at the end of the hallway, passing the large grey sofa on the left, and stopping at the window; however, F25–F26 show the camera still moving straight along the passage with the grey sofa clearly on the right, with no right turn into the living room and no arrival at the window."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "turn right to enter the living room",
+            "quote_zh": "向右转进入客厅"
+          },
+          {
+            "quote_en": "passing the large grey sofa on your left",
+            "quote_zh": "从你的左侧经过那张大灰色沙发"
+          },
+          {
+            "quote_en": "stop in front of the window",
+            "quote_zh": "在窗前停下"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              13,
+              14
+            ],
+            "description": {
+              "zh": "起点附近可见卧室一侧以及右侧厨房台面/开口，表明视角从卧室与厨房之间的走廊或门口区域开始。",
+              "en": "Near the start, the bedroom side and the kitchen counter/opening on the right are visible, indicating the view begins in the hallway or doorway area between the bedroom and kitchen."
+            }
+          },
+          {
+            "frames": [
+              17,
+              20,
+              22,
+              25,
+              26
+            ],
+            "description": {
+              "zh": "连续帧显示相机沿通道向前，厨房区域在左侧，客厅的绿植和灰色沙发在右侧；视角持续朝向远处门口。",
+              "en": "The sequence shows the camera moving forward along the passage, with the kitchen area on the left and the living-room plant and grey sofa on the right; the view remains oriented toward the distant doorway."
+            }
+          },
+          {
+            "frames": [
+              25,
+              26
+            ],
+            "description": {
+              "zh": "到 B 时大灰色沙发仍位于前进方向右侧，通道与远处门仍在前方；没有出现右转进入客厅或在窗前停下的依据。",
+              "en": "At B, the large grey sofa is still on the right side of travel, and the passage and distant door remain ahead; there is no evidence of a right turn into the living room or a stop in front of a window."
+            }
+          }
+        ],
+        "semantic_progress": null,
+        "uncertainties": []
+      },
+      "rollback_target": {
+        "node_id": "S02",
+        "frame": 13,
+        "progress": {
+          "zh": "截至 S02，视角位于走廊或门口一带，先朝带床和窗户的卧室方向，随后向右转看到右侧的厨房门口与台面，符合厨房门口在右侧的空间线索。尚未确认已通过该厨房门口、到达走廊尽头右转进入客厅，也未看到灰色沙发、茶几或已在窗前停下。",
+          "en": "As of S02, the view is in the hallway or doorway area, first facing a bedroom with a bed and window, then turning right to see a kitchen doorway and counters on the right, consistent with the spatial cue of a kitchen doorway on the right. It is not yet confirmed that this kitchen doorway has been passed, that the end of the hallway has been reached to turn right into the living room, or that the grey sofa, coffee table, or stop at the window has been seen."
+        }
+      },
+      "committed_progress": {
+        "zh": "截至 S02，视角位于走廊或门口一带，先朝带床和窗户的卧室方向，随后向右转看到右侧的厨房门口与台面，符合厨房门口在右侧的空间线索。尚未确认已通过该厨房门口、到达走廊尽头右转进入客厅，也未看到灰色沙发、茶几或已在窗前停下。",
+        "en": "As of S02, the view is in the hallway or doorway area, first facing a bedroom with a bed and window, then turning right to see a kitchen doorway and counters on the right, consistent with the spatial cue of a kitchen doorway on the right. It is not yet confirmed that this kitchen doorway has been passed, that the end of the hallway has been reached to turn right into the living room, or that the grey sofa, coffee table, or stop at the window has been seen."
+      },
+      "progress_anchor": {
+        "id": "S02",
+        "frame": 13
+      }
+    }
+  ],
+  "stop_node": "S03",
+  "stop_reason": "first_deviation",
+  "terminal_frame": 70,
+  "raw_node_count": 5,
+  "retained_node_count": 5,
+  "unreviewed_nodes": [
+    "S04",
+    "S05"
+  ]
+}

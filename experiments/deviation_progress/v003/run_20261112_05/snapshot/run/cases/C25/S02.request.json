@@ -1,0 +1,84 @@
+{
+  "mode": "segment",
+  "previous_id": "S01",
+  "current_id": "S02",
+  "previous_frame": 5,
+  "current_frame": 29,
+  "instruction_en": "Go through the doorway and enter the room, keeping the wall with four framed artworks on your right. Walk forward, passing a tall potted plant on your right, then turn right into the dining area. Proceed forward, keeping the dining table on your left and a large window with bamboo blinds on your right, and stop in front of the window.",
+  "prior_semantic_progress": "首次有效节点：当前观测到带洗手池和镜子的室内场景，左侧有门洞/开口；此前路线进度及与指令中门洞、挂画墙、盆栽、餐区和窗边的关系尚未确认。",
+  "coverage": "Endpoint observations plus up to five uniformly sampled intermediate observations. Frames are not necessarily consecutive. Review ends at B.",
+  "images": [
+    {
+      "frame": 5,
+      "role": "A",
+      "image_id": "2d7002bea2eb598c01c2361605758e814411cee017b4931ae44845d394632817",
+      "path": "assets/2d7002bea2eb598c01c2361605758e814411cee017b4931ae44845d394632817.webp",
+      "sha256": "2d7002bea2eb598c01c2361605758e814411cee017b4931ae44845d394632817",
+      "bytes": 6670
+    },
+    {
+      "frame": 6,
+      "role": "history",
+      "image_id": "5376e9c88df7b8c708f8656ffb9df82132822434b71e895adc6edaf341dfcba7",
+      "path": "assets/5376e9c88df7b8c708f8656ffb9df82132822434b71e895adc6edaf341dfcba7.webp",
+      "sha256": "5376e9c88df7b8c708f8656ffb9df82132822434b71e895adc6edaf341dfcba7",
+      "bytes": 4690
+    },
+    {
+      "frame": 12,
+      "role": "history",
+      "image_id": "1d315b5a1c4c4aa12c6d75165821485c19d1eb68d544184487217e6cd5bc6b20",
+      "path": "assets/1d315b5a1c4c4aa12c6d75165821485c19d1eb68d544184487217e6cd5bc6b20.webp",
+      "sha256": "1d315b5a1c4c4aa12c6d75165821485c19d1eb68d544184487217e6cd5bc6b20",
+      "bytes": 6776
+    },
+    {
+      "frame": 17,
+      "role": "history",
+      "image_id": "57fa1824b2ac86eb2610b79aea9d1fb5684a281d59216fe30d1e6564fb7146b6",
+      "path": "assets/57fa1824b2ac86eb2610b79aea9d1fb5684a281d59216fe30d1e6564fb7146b6.webp",
+      "sha256": "57fa1824b2ac86eb2610b79aea9d1fb5684a281d59216fe30d1e6564fb7146b6",
+      "bytes": 3472
+    },
+    {
+      "frame": 22,
+      "role": "history",
+      "image_id": "a155e1f8c85aea05bcfe848e4901cff4e1f62b2cfcd6b49aee1650fdc50e7fc9",
+      "path": "assets/a155e1f8c85aea05bcfe848e4901cff4e1f62b2cfcd6b49aee1650fdc50e7fc9.webp",
+      "sha256": "a155e1f8c85aea05bcfe848e4901cff4e1f62b2cfcd6b49aee1650fdc50e7fc9",
+      "bytes": 6486
+    },
+    {
+      "frame": 28,
+      "role": "history",
+      "image_id": "0be2ef9c1b43e0b34252616770bf7685d34f912a1659928303cbd1c69597bb52",
+      "path": "assets/0be2ef9c1b43e0b34252616770bf7685d34f912a1659928303cbd1c69597bb52.webp",
+      "sha256": "0be2ef9c1b43e0b34252616770bf7685d34f912a1659928303cbd1c69597bb52",
+      "bytes": 6354
+    },
+    {
+      "frame": 29,
+      "role": "B",
+      "image_id": "c6f5ae509db156eadba62a108c4d9bfdb8fc93428149fc23133868a3351cd66a",
+      "path": "assets/c6f5ae509db156eadba62a108c4d9bfdb8fc93428149fc23133868a3351cd66a.webp",
+      "sha256": "c6f5ae509db156eadba62a108c4d9bfdb8fc93428149fc23133868a3351cd66a",
+      "bytes": 6824
+    }
+  ],
+  "settings": {
+    "model": "deepseek-flash",
+    "response_format": {
+      "type": "json_object"
+    },
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_tokens": 32768,
+    "stream": false
+  },
+  "prompt_sha256": "129ef91051dcb6cc1be8e2e276cb102166bff322a36fdd10661e644de2162cad",
+  "request_sha256": "02f4eec4b0f011d4ba84459be51cce1caf23e302dbc7b7a3bc8dd2f6eae7b1aa",
+  "started_at": "2026-11-12T10:41:24.069065+00:00",
+  "worker_pid": 17524
+}

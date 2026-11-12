@@ -1,0 +1,574 @@
+{
+  "case_number": 20,
+  "case_index": 10,
+  "episode_id": "kujiale_0232_72_1 · F6",
+  "real_episode_id": "kujiale_0232_72_1",
+  "scene": "kujiale_0232",
+  "worker_pid": 49356,
+  "started_at": "2026-11-12T08:25:49.694750+00:00",
+  "completed_at": "2026-11-12T08:28:33.139886+00:00",
+  "reviews": [
+    {
+      "node_id": "S01",
+      "node_frame": 7,
+      "available_at_frame": 12,
+      "terminal_node": false,
+      "mode": "initialization",
+      "previous_id": "S01",
+      "from_frame": 7,
+      "to_frame": 7,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 7,
+          "role": "A=B",
+          "image_id": "7e5d2a42936dd662a474ad2661812cf1536109393db79ab70666bb344b408bb6",
+          "path": "assets/7e5d2a42936dd662a474ad2661812cf1536109393db79ab70666bb344b408bb6.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 11.802,
+      "started_at": "2026-11-12T08:25:49.695755+00:00",
+      "completed_at": "2026-11-12T08:26:01.498177+00:00",
+      "worker_pid": 49356,
+      "request_file": "run/cases/C20/S01.request.json",
+      "response_file": "run/cases/C20/S01.response.json",
+      "usage": {
+        "prompt_tokens": 1451,
+        "completion_tokens": 1747,
+        "total_tokens": 3198,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1028
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 555
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S01",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "画面位于一段灰色地砖走廊内，左侧为带圆镜和洗手池的卫生间，前方门洞通向较明亮的开阔区域，右侧可见棕色竖向结构。作为初始化节点，仅能据此建立当前位置状态，无法确认此前是否已沿任务路线进入走廊或完成其他移动要求。",
+          "en": "The view is within a gray-tiled hallway, with a bathroom containing a round mirror and sink on the left, a doorway ahead opening toward a brighter open area, and a brown vertical structure visible on the right. As an initialization node, this only establishes the current location state; it cannot confirm whether the route into the hallway or any earlier movement requirements were completed."
+        },
+        "reason": {
+          "zh": "初始化观测与任务起始空间描述相符：走廊、左侧卫生间、前方开阔区域和右侧棕色结构可见；但单帧不能确认此前路线或是否已通过任何地标。",
+          "en": "The initialization observation is consistent with the task's starting spatial description: the hallway, left-side bathroom, open area ahead, and brown structure on the right are visible; however, a single frame cannot confirm the prior route or whether any landmark has already been passed."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Walk forward into the hallway.",
+            "quote_zh": "向前走进走廊。"
+          },
+          {
+            "quote_en": "passing a bathroom on your left",
+            "quote_zh": "经过你左侧的一间卫生间。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              7
+            ],
+            "description": {
+              "zh": "帧7显示走廊视角：左侧有带圆镜和洗手池的卫生间，前方有门洞通向明亮区域，右侧有棕色竖向结构。",
+              "en": "Frame 7 shows a hallway view: a bathroom with a round mirror and sink is on the left, a doorway ahead opens toward a bright area, and a brown vertical structure is on the right."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "截至S01：当前位于铺灰地砖的走廊内，左侧可见带圆镜和洗手池的卫生间，前方门洞通向较明亮区域，右侧可见棕色竖向结构。初始化节点仅确认此处当前场景，此前已完成的路线进度尚未确认；后续直行、经过棕色柱子、右转及到达挂两幅画的白门右侧墙面均未确认。",
+          "en": "As of S01: currently in a gray-tiled hallway, with a bathroom containing a round mirror and sink visible on the left, a doorway ahead opening toward a brighter area, and a brown vertical structure visible on the right. This initialization node only confirms the current scene here; the route progress completed earlier remains unconfirmed, and later requirements such as proceeding straight, passing the brown pillar, turning right, and reaching the wall with two framed pictures to the right of the white door are unconfirmed."
+        },
+        "uncertainties": [
+          {
+            "zh": "此前是否已正确进入走廊并沿任务路线到达该位置尚未确认。",
+            "en": "It is not yet confirmed whether the hallway was entered correctly and the current position reached along the task route."
+          },
+          {
+            "zh": "前方门洞外是否就是任务所述的开阔起居区，以及右侧棕色结构是否为任务中的棕色柱子，尚不能仅凭此帧确认。",
+            "en": "It cannot be confirmed from this frame alone whether the area beyond the doorway is the open living area described in the task, or whether the brown structure on the right is the brown pillar mentioned in the task."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "截至S01：当前位于铺灰地砖的走廊内，左侧可见带圆镜和洗手池的卫生间，前方门洞通向较明亮区域，右侧可见棕色竖向结构。初始化节点仅确认此处当前场景，此前已完成的路线进度尚未确认；后续直行、经过棕色柱子、右转及到达挂两幅画的白门右侧墙面均未确认。",
+        "en": "As of S01: currently in a gray-tiled hallway, with a bathroom containing a round mirror and sink visible on the left, a doorway ahead opening toward a brighter area, and a brown vertical structure visible on the right. This initialization node only confirms the current scene here; the route progress completed earlier remains unconfirmed, and later requirements such as proceeding straight, passing the brown pillar, turning right, and reaching the wall with two framed pictures to the right of the white door are unconfirmed."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 7
+      }
+    },
+    {
+      "node_id": "S02",
+      "node_frame": 12,
+      "available_at_frame": 17,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S01",
+      "from_frame": 7,
+      "to_frame": 12,
+      "prior_progress": {
+        "zh": "截至S01：当前位于铺灰地砖的走廊内，左侧可见带圆镜和洗手池的卫生间，前方门洞通向较明亮区域，右侧可见棕色竖向结构。初始化节点仅确认此处当前场景，此前已完成的路线进度尚未确认；后续直行、经过棕色柱子、右转及到达挂两幅画的白门右侧墙面均未确认。",
+        "en": "As of S01: currently in a gray-tiled hallway, with a bathroom containing a round mirror and sink visible on the left, a doorway ahead opening toward a brighter area, and a brown vertical structure visible on the right. This initialization node only confirms the current scene here; the route progress completed earlier remains unconfirmed, and later requirements such as proceeding straight, passing the brown pillar, turning right, and reaching the wall with two framed pictures to the right of the white door are unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 7,
+          "role": "A",
+          "image_id": "7e5d2a42936dd662a474ad2661812cf1536109393db79ab70666bb344b408bb6",
+          "path": "assets/7e5d2a42936dd662a474ad2661812cf1536109393db79ab70666bb344b408bb6.webp"
+        },
+        {
+          "frame": 8,
+          "role": "history",
+          "image_id": "dd0e663022f84e7706827c5ebd5fc673cf6ab747e6d06453b56641b6e7aa56fa",
+          "path": "assets/dd0e663022f84e7706827c5ebd5fc673cf6ab747e6d06453b56641b6e7aa56fa.webp"
+        },
+        {
+          "frame": 9,
+          "role": "history",
+          "image_id": "709299faf4165c044088ea6b424075153eea93b333d51bc11d2127f4acae2e36",
+          "path": "assets/709299faf4165c044088ea6b424075153eea93b333d51bc11d2127f4acae2e36.webp"
+        },
+        {
+          "frame": 10,
+          "role": "history",
+          "image_id": "3e3931533aedc589c409c014d09b5681a5074ecce04dedcb9fef41c1daeecc90",
+          "path": "assets/3e3931533aedc589c409c014d09b5681a5074ecce04dedcb9fef41c1daeecc90.webp"
+        },
+        {
+          "frame": 11,
+          "role": "history",
+          "image_id": "b858569806df7090b9e0666c630c05a2c7ac76ca6051d974c4c1735a0aca2ed6",
+          "path": "assets/b858569806df7090b9e0666c630c05a2c7ac76ca6051d974c4c1735a0aca2ed6.webp"
+        },
+        {
+          "frame": 12,
+          "role": "B",
+          "image_id": "04f1f1dcde0461f96c13d1f2956620ad59cdec313dbeda929cb20afb87b09b17",
+          "path": "assets/04f1f1dcde0461f96c13d1f2956620ad59cdec313dbeda929cb20afb87b09b17.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 31.352,
+      "started_at": "2026-11-12T08:26:01.507894+00:00",
+      "completed_at": "2026-11-12T08:26:32.859972+00:00",
+      "worker_pid": 49356,
+      "request_file": "run/cases/C20/S02.request.json",
+      "response_file": "run/cases/C20/S02.response.json",
+      "usage": {
+        "prompt_tokens": 2596,
+        "completion_tokens": 4978,
+        "total_tokens": 7574,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3961
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1700
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S02",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "本段从S01沿灰色地砖走廊向明亮门洞前进；左侧带圆镜和洗手池的卫生间持续可见，右侧棕色竖向结构逐渐接近。到B时门洞更近，但尚无证据表明已越过门槛进入起居区。",
+          "en": "From S01, this segment moved along the grey-tiled corridor toward the bright doorway; the bathroom with a round mirror and sink remained visible on the left, and the brown vertical structure on the right came closer. At B the doorway is nearer, but there is no evidence that the threshold was crossed into the living area."
+        },
+        "reason": {
+          "zh": "观测中的灰色走廊、左侧卫生间、前方门洞和右侧棕色竖向结构，与任务要求直行并经过左侧卫生间、右侧棕色柱子的关系相符；从F7到F12门口逐渐靠近，未见与任务冲突的转向或通路。",
+          "en": "The observed grey corridor, bathroom on the left, doorway ahead, and brown vertical structure on the right are consistent with the task's straight passage past a left-side bathroom and a brown pillar on the right; from F7 to F12 the doorway comes closer, with no turn or passage conflicting with the task."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Walk forward into the hallway.",
+            "quote_zh": "向前走入走廊。"
+          },
+          {
+            "quote_en": "Proceed straight, passing a bathroom on your left.",
+            "quote_zh": "直行，经过你左侧的卫生间。"
+          },
+          {
+            "quote_en": "passing a brown pillar on your right as you enter an open living area",
+            "quote_zh": "进入开阔起居区时，经过你右侧的一根棕色柱子。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              7,
+              12
+            ],
+            "description": {
+              "zh": "F7显示灰色地砖走廊、左侧带圆镜和洗手池的卫生间、前方白色门洞和右侧棕色竖向结构；F12中门洞与右侧棕色结构更近，但门槛仍在前方，尚无已进入木地板区域的直接证据。",
+              "en": "F7 shows a grey-tiled corridor, a bathroom with a round mirror and sink on the left, a white doorway ahead, and a brown vertical structure on the right; in F12 the doorway and brown structure on the right are closer, but the threshold is still ahead, with no direct evidence of having entered the wood-floored area."
+            }
+          },
+          {
+            "frames": [
+              8,
+              9,
+              10,
+              11
+            ],
+            "description": {
+              "zh": "中间四帧显示视角沿同一走廊连续前移，左侧卫生间设施与右侧棕色结构保持相对方位，未见明显转向或进入侧向房间。",
+              "en": "The four intermediate frames show the viewpoint advancing continuously along the same corridor, with the bathroom fixtures on the left and the brown structure on the right keeping their relative positions; no obvious turn or entry into a side room is visible."
+            }
+          },
+          {
+            "frames": [
+              12
+            ],
+            "description": {
+              "zh": "F12透过门洞可见明亮木地板、窗帘及远处家具，但视野仍在门洞外，不能确认已穿过。",
+              "en": "Through the doorway in F12, bright wood flooring, curtains, and distant furniture are visible, but the viewpoint is still outside the doorway, and crossing it cannot be confirmed."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "截至S02：S01之前的路线进度仍未确认。本段沿灰色地砖走廊向明亮门洞前进，带圆镜和洗手池的卫生间持续在左侧，右侧棕色竖向结构逐渐接近；尚未确认已穿过门洞进入开阔起居区，也未确认右转、左侧客厅沙发电视、右侧餐桌椅及挂两幅画的白门右侧墙面等后续目标。",
+          "en": "As of S02: progress before S01 remains unconfirmed. In this segment the robot advanced along the grey-tiled corridor toward the bright doorway; the bathroom with the round mirror and sink stayed on the left, while the brown vertical structure on the right came closer. It has not been confirmed that the doorway was crossed into the open living area, nor that the later targets—the right turn, the living-room sofa and TV on the left, the dining table and chairs on the right, and the wall with two framed pictures to the right of the white door—were reached."
+        },
+        "uncertainties": [
+          {
+            "zh": "截至B，是否已完全穿过前方门洞进入开阔起居区尚不能由这些帧确认。",
+            "en": "As of B, whether the doorway ahead has been fully crossed into the open living area cannot be confirmed from these frames."
+          },
+          {
+            "zh": "右侧棕色竖向结构是否已被完全经过仍不能确认。",
+            "en": "Whether the brown vertical structure on the right has been fully passed remains unconfirmed."
+          },
+          {
+            "zh": "S01以前的路线与已完成内容仍未由本次观测确认。",
+            "en": "The route and completed content before S01 remain unconfirmed by the current observations."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "截至S02：S01之前的路线进度仍未确认。本段沿灰色地砖走廊向明亮门洞前进，带圆镜和洗手池的卫生间持续在左侧，右侧棕色竖向结构逐渐接近；尚未确认已穿过门洞进入开阔起居区，也未确认右转、左侧客厅沙发电视、右侧餐桌椅及挂两幅画的白门右侧墙面等后续目标。",
+        "en": "As of S02: progress before S01 remains unconfirmed. In this segment the robot advanced along the grey-tiled corridor toward the bright doorway; the bathroom with the round mirror and sink stayed on the left, while the brown vertical structure on the right came closer. It has not been confirmed that the doorway was crossed into the open living area, nor that the later targets—the right turn, the living-room sofa and TV on the left, the dining table and chairs on the right, and the wall with two framed pictures to the right of the white door—were reached."
+      },
+      "progress_anchor": {
+        "id": "S02",
+        "frame": 12
+      }
+    },
+    {
+      "node_id": "S03",
+      "node_frame": 15,
+      "available_at_frame": 20,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S02",
+      "from_frame": 12,
+      "to_frame": 15,
+      "prior_progress": {
+        "zh": "截至S02：S01之前的路线进度仍未确认。本段沿灰色地砖走廊向明亮门洞前进，带圆镜和洗手池的卫生间持续在左侧，右侧棕色竖向结构逐渐接近；尚未确认已穿过门洞进入开阔起居区，也未确认右转、左侧客厅沙发电视、右侧餐桌椅及挂两幅画的白门右侧墙面等后续目标。",
+        "en": "As of S02: progress before S01 remains unconfirmed. In this segment the robot advanced along the grey-tiled corridor toward the bright doorway; the bathroom with the round mirror and sink stayed on the left, while the brown vertical structure on the right came closer. It has not been confirmed that the doorway was crossed into the open living area, nor that the later targets—the right turn, the living-room sofa and TV on the left, the dining table and chairs on the right, and the wall with two framed pictures to the right of the white door—were reached."
+      },
+      "images": [
+        {
+          "frame": 12,
+          "role": "A",
+          "image_id": "04f1f1dcde0461f96c13d1f2956620ad59cdec313dbeda929cb20afb87b09b17",
+          "path": "assets/04f1f1dcde0461f96c13d1f2956620ad59cdec313dbeda929cb20afb87b09b17.webp"
+        },
+        {
+          "frame": 13,
+          "role": "history",
+          "image_id": "13748463346397f410b14d519fa3845f27f687fcda9e2d4489fc2717a80daa61",
+          "path": "assets/13748463346397f410b14d519fa3845f27f687fcda9e2d4489fc2717a80daa61.webp"
+        },
+        {
+          "frame": 14,
+          "role": "history",
+          "image_id": "a8cbed51ade1c4c0dd481817782da2af8610afd1df67f1c36cdb59819cacce7d",
+          "path": "assets/a8cbed51ade1c4c0dd481817782da2af8610afd1df67f1c36cdb59819cacce7d.webp"
+        },
+        {
+          "frame": 15,
+          "role": "B",
+          "image_id": "a071a9ef85bb759fb7b0d48913ce3f89a8b556ed1161986084a5d91c6fc34304",
+          "path": "assets/a071a9ef85bb759fb7b0d48913ce3f89a8b556ed1161986084a5d91c6fc34304.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 32.793,
+      "started_at": "2026-11-12T08:26:32.871387+00:00",
+      "completed_at": "2026-11-12T08:27:05.664673+00:00",
+      "worker_pid": 49356,
+      "request_file": "run/cases/C20/S03.request.json",
+      "response_file": "run/cases/C20/S03.response.json",
+      "usage": {
+        "prompt_tokens": 2166,
+        "completion_tokens": 5043,
+        "total_tokens": 7209,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3943
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1270
+      },
+      "answer": {
+        "previous_id": "S02",
+        "current_id": "S03",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "本段沿灰色地砖通道继续朝明亮门洞前进，门洞和其后的木地板区域逐渐放大；右侧棕色竖向木质结构持续存在并更靠近，F15右缘露出相邻空间的一角。尚未穿门洞、右转或到达挂两幅画的墙前。",
+          "en": "In this segment the view continued along the gray-tiled passage toward the bright doorway, and the doorway and the wooden floor beyond gradually enlarged; the brown vertical wooden structure on the right remained present and came closer, while F15 exposed a corner of an adjacent space at the right edge. The doorway has not yet been crossed, no right turn has been made, and the wall with two framed pictures has not been reached."
+        },
+        "reason": {
+          "zh": "观测显示相机仍在灰色地砖走廊内朝门洞前进，右侧棕色柱/木结构逐渐接近，这与沿走廊直行并准备从右侧经过棕色柱的当前要求相符；没有证据显示已进入错误通路，但进入开放起居区及其后右转、客厅和餐桌位置仍未确认。",
+          "en": "The observations show the camera still moving forward along the gray-tiled corridor toward the doorway, with the brown pillar/wooden structure on the right gradually approaching, which is consistent with the current requirement to go straight along the corridor and prepare to pass the brown pillar on the right; there is no evidence of entering a wrong passage, but entry into the open living area and the subsequent right turn, living room, and dining table location remain unconfirmed."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Walk forward into the hallway.",
+            "quote_zh": "向前走进走廊。"
+          },
+          {
+            "quote_en": "Continue straight, passing a brown pillar on your right as you enter an open living area.",
+            "quote_zh": "继续直行，在进入开放起居区时从右侧经过一根棕色柱子。"
+          },
+          {
+            "quote_en": "Turn right, keeping the main living room area with a sofa and TV on your left.",
+            "quote_zh": "右转，使带沙发和电视的主客厅区域保持在左侧。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              12,
+              13,
+              14,
+              15
+            ],
+            "description": {
+              "zh": "四帧中灰色地砖前景、中央白色门洞和门洞后的木地板连续可见，门洞随前进放大，表明相机沿同一通道向门洞接近。",
+              "en": "Across the four frames, the gray-tiled foreground, the central white doorway, and the wooden floor beyond the doorway are continuously visible; the doorway grows larger with forward motion, indicating that the camera is approaching the doorway along the same passage."
+            }
+          },
+          {
+            "frames": [
+              12,
+              13,
+              14,
+              15
+            ],
+            "description": {
+              "zh": "右侧棕色竖向木质结构在四帧中持续位于画面右缘，并在F15更靠近、占据更大面积，符合经过右侧棕色柱前的状态。",
+              "en": "The brown vertical wooden structure on the right remains at the right edge across the four frames and is closer and occupies a larger area in F15, consistent with being before passing the brown pillar on the right."
+            }
+          },
+          {
+            "frames": [
+              15
+            ],
+            "description": {
+              "zh": "F15右缘可见相邻空间的一角，有白色软装/坐具与绿植，但仅凭此不能确认已进入该空间或完成右转。",
+              "en": "At the right edge of F15 a corner of an adjacent space is visible, with white soft furnishing/seating and a plant, but this alone cannot confirm that the space has been entered or that the right turn has been completed."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "截至S03：S01之前的路线仍未确认。此前记录的灰色地砖走廊和左侧卫生间可作为历史进度保留；本段继续朝明亮门洞前进，右侧棕色木质结构逐渐接近，F15已到门洞近前并见相邻空间一角。尚未确认已穿过门洞进入开放起居区，也未确认按指令右转、左侧沙发电视、右侧餐桌椅及挂两幅画墙面等后续要求。",
+          "en": "As of S03: the route before S01 remains unconfirmed. The previously recorded gray-tiled corridor and left-side bathroom can be retained as historical progress; in this segment the view continued toward the bright doorway, the brown wooden structure on the right gradually came closer, and at F15 the camera is near the doorway with a corner of an adjacent space visible. It is not yet confirmed that the doorway has been crossed into the open living area, nor that the instructed right turn, sofa/TV on the left, dining table/chairs on the right, or the wall with two framed pictures have been reached."
+        },
+        "uncertainties": [
+          {
+            "zh": "尚未确认相机是否已经越过门洞进入开放起居区。",
+            "en": "It has not yet been confirmed whether the camera has crossed the doorway into the open living area."
+          },
+          {
+            "zh": "尚未确认经过棕色柱后是否按任务右转，也未确认客厅沙发电视、右侧餐桌椅及挂画墙面的相对位置。",
+            "en": "It has not yet been confirmed whether the instructed right turn after passing the brown pillar has been made, nor the relative positions of the living-room sofa/TV, the dining table/chairs on the right, and the wall with framed pictures."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "截至S03：S01之前的路线仍未确认。此前记录的灰色地砖走廊和左侧卫生间可作为历史进度保留；本段继续朝明亮门洞前进，右侧棕色木质结构逐渐接近，F15已到门洞近前并见相邻空间一角。尚未确认已穿过门洞进入开放起居区，也未确认按指令右转、左侧沙发电视、右侧餐桌椅及挂两幅画墙面等后续要求。",
+        "en": "As of S03: the route before S01 remains unconfirmed. The previously recorded gray-tiled corridor and left-side bathroom can be retained as historical progress; in this segment the view continued toward the bright doorway, the brown wooden structure on the right gradually came closer, and at F15 the camera is near the doorway with a corner of an adjacent space visible. It is not yet confirmed that the doorway has been crossed into the open living area, nor that the instructed right turn, sofa/TV on the left, dining table/chairs on the right, or the wall with two framed pictures have been reached."
+      },
+      "progress_anchor": {
+        "id": "S03",
+        "frame": 15
+      }
+    },
+    {
+      "node_id": "S04",
+      "node_frame": 20,
+      "available_at_frame": 25,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S03",
+      "from_frame": 15,
+      "to_frame": 20,
+      "prior_progress": {
+        "zh": "截至S03：S01之前的路线仍未确认。此前记录的灰色地砖走廊和左侧卫生间可作为历史进度保留；本段继续朝明亮门洞前进，右侧棕色木质结构逐渐接近，F15已到门洞近前并见相邻空间一角。尚未确认已穿过门洞进入开放起居区，也未确认按指令右转、左侧沙发电视、右侧餐桌椅及挂两幅画墙面等后续要求。",
+        "en": "As of S03: the route before S01 remains unconfirmed. The previously recorded gray-tiled corridor and left-side bathroom can be retained as historical progress; in this segment the view continued toward the bright doorway, the brown wooden structure on the right gradually came closer, and at F15 the camera is near the doorway with a corner of an adjacent space visible. It is not yet confirmed that the doorway has been crossed into the open living area, nor that the instructed right turn, sofa/TV on the left, dining table/chairs on the right, or the wall with two framed pictures have been reached."
+      },
+      "images": [
+        {
+          "frame": 15,
+          "role": "A",
+          "image_id": "a071a9ef85bb759fb7b0d48913ce3f89a8b556ed1161986084a5d91c6fc34304",
+          "path": "assets/a071a9ef85bb759fb7b0d48913ce3f89a8b556ed1161986084a5d91c6fc34304.webp"
+        },
+        {
+          "frame": 16,
+          "role": "history",
+          "image_id": "165f84542fc91ea9b107f75ee83879079800346308dddfb070c9e3342f80c522",
+          "path": "assets/165f84542fc91ea9b107f75ee83879079800346308dddfb070c9e3342f80c522.webp"
+        },
+        {
+          "frame": 17,
+          "role": "history",
+          "image_id": "e69e0b2572b6276d6bbdfff095042509ff8ec7c5ae41d45c8123c65fcac4a03d",
+          "path": "assets/e69e0b2572b6276d6bbdfff095042509ff8ec7c5ae41d45c8123c65fcac4a03d.webp"
+        },
+        {
+          "frame": 18,
+          "role": "history",
+          "image_id": "de6329fe7856b4cc6e4c8ecb273b9c225d24b9792f84a09b67eff9f155900998",
+          "path": "assets/de6329fe7856b4cc6e4c8ecb273b9c225d24b9792f84a09b67eff9f155900998.webp"
+        },
+        {
+          "frame": 19,
+          "role": "history",
+          "image_id": "dd294d6cde1fe26024fb0b266da6df66c46194f7b72494e34a9feadf9d64472e",
+          "path": "assets/dd294d6cde1fe26024fb0b266da6df66c46194f7b72494e34a9feadf9d64472e.webp"
+        },
+        {
+          "frame": 20,
+          "role": "B",
+          "image_id": "d60c42fc7c1ed62327b0a907c55c7a8e82b6d6601d4c9044a0ebe282cd1f63b6",
+          "path": "assets/d60c42fc7c1ed62327b0a907c55c7a8e82b6d6601d4c9044a0ebe282cd1f63b6.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 87.461,
+      "started_at": "2026-11-12T08:27:05.671257+00:00",
+      "completed_at": "2026-11-12T08:28:33.132587+00:00",
+      "worker_pid": 49356,
+      "request_file": "run/cases/C20/S04.request.json",
+      "response_file": "run/cases/C20/S04.response.json",
+      "usage": {
+        "prompt_tokens": 2607,
+        "completion_tokens": 13407,
+        "total_tokens": 16014,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 12480
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1711
+      },
+      "answer": {
+        "previous_id": "S03",
+        "current_id": "S04",
+        "verdict": "deviated",
+        "segment_summary": {
+          "zh": "机器人从灰色地砖门槛跨入木地板走廊，并沿这条狭长走廊持续直行。左侧白色门逐渐接近，右侧近处的棕色木质结构移出视野，前方右墙出现两幅画。到B时仍在走廊内直行，没有向右进入F15右缘所示的沙发/起居区。",
+          "en": "The robot crossed from the gray-tiled threshold into a wood-floored hallway and kept moving straight along this narrow corridor. The white door on the left gradually came closer, the nearby brown wooden structure on the right moved out of view, and two framed pictures appeared on the right-hand wall ahead. At B it was still moving straight in the hallway and did not turn right into the sofa/living-area edge visible at the far right in F15."
+        },
+        "reason": {
+          "zh": "上一进度已将灰色地砖走廊和左侧卫生间列为历史内容；本段的关键位置是右侧棕色木质结构旁的开放起居区入口。任务要求在这里进入开放起居区后右转，并保持沙发电视在左侧，但F15-F20显示机器人直行进入狭长走廊，经过右侧棕色结构而没有右转，因此与该阶段要求的具体通行方向冲突。",
+          "en": "The previous progress already treated the gray-tiled corridor and the bathroom on the left as historical context; the key location in this segment is the entrance to the open living area beside the brown wooden structure on the right. The task requires entering the open living area and turning right here, keeping the sofa and TV on the left, but F15-F20 show the robot going straight into a narrow hallway, passing the brown structure on the right without turning right; this conflicts with the specific travel direction required at this stage."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Continue straight, passing a brown pillar on your right as you enter an open living area.",
+            "quote_zh": "继续直行，在你进入开放起居区时从右侧经过一根棕色柱子。"
+          },
+          {
+            "quote_en": "Turn right, keeping the main living room area with a sofa and TV on your left.",
+            "quote_zh": "右转，保持带沙发和电视的主起居区在你的左侧。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              15
+            ],
+            "description": {
+              "zh": "F15位于灰色地砖门槛处，前方是木地板走廊，右侧近处有大型棕色木质结构，右缘可见沙发和绿植一角，提示开放起居区位于右侧。",
+              "en": "F15 is at the gray-tiled threshold, looking toward a wood-floored hallway; a large brown wooden structure is close on the right, and part of a sofa and plants is visible at the far right edge, indicating that an open living area lies to the right."
+            }
+          },
+          {
+            "frames": [
+              16,
+              17,
+              18,
+              19
+            ],
+            "description": {
+              "zh": "这些连续帧显示视角沿走廊向前，右侧棕色木质结构逐渐移出画面，左侧白门和右墙两幅画逐渐放大；没有转向画面右侧空间的迹象。",
+              "en": "These consecutive frames show the view moving forward along the hallway; the brown wooden structure on the right gradually leaves the frame, while the white door on the left and the two framed pictures on the right wall grow larger. There is no sign of turning into the space on the right."
+            }
+          },
+          {
+            "frames": [
+              20
+            ],
+            "description": {
+              "zh": "B处仍在走廊内，左墙有白色门，右墙有两幅画，远处可见窗帘和矮柜；画面未显示进入或朝向右侧开放起居区的动作。",
+              "en": "At B the robot is still in the hallway, with a white door on the left wall and two framed pictures on the right wall; a curtain and a low cabinet are visible farther ahead. The images do not show entering or turning toward the open living area on the right."
+            }
+          }
+        ],
+        "semantic_progress": null,
+        "uncertainties": [
+          {
+            "zh": "左墙的白色门具体通向什么房间，仅凭画面不足以确认。",
+            "en": "What room the white door on the left wall leads to cannot be confirmed from the images alone."
+          },
+          {
+            "zh": "B处右墙的两幅画是否就是任务最终目标墙面，因未按指定路线经过起居区和餐桌区，尚不能确认。",
+            "en": "Whether the two framed pictures on the right wall at B are the final target wall cannot be confirmed, because the specified route through the living and dining areas has not been followed."
+          }
+        ]
+      },
+      "rollback_target": {
+        "node_id": "S03",
+        "frame": 15,
+        "progress": {
+          "zh": "截至S03：S01之前的路线仍未确认。此前记录的灰色地砖走廊和左侧卫生间可作为历史进度保留；本段继续朝明亮门洞前进，右侧棕色木质结构逐渐接近，F15已到门洞近前并见相邻空间一角。尚未确认已穿过门洞进入开放起居区，也未确认按指令右转、左侧沙发电视、右侧餐桌椅及挂两幅画墙面等后续要求。",
+          "en": "As of S03: the route before S01 remains unconfirmed. The previously recorded gray-tiled corridor and left-side bathroom can be retained as historical progress; in this segment the view continued toward the bright doorway, the brown wooden structure on the right gradually came closer, and at F15 the camera is near the doorway with a corner of an adjacent space visible. It is not yet confirmed that the doorway has been crossed into the open living area, nor that the instructed right turn, sofa/TV on the left, dining table/chairs on the right, or the wall with two framed pictures have been reached."
+        }
+      },
+      "committed_progress": {
+        "zh": "截至S03：S01之前的路线仍未确认。此前记录的灰色地砖走廊和左侧卫生间可作为历史进度保留；本段继续朝明亮门洞前进，右侧棕色木质结构逐渐接近，F15已到门洞近前并见相邻空间一角。尚未确认已穿过门洞进入开放起居区，也未确认按指令右转、左侧沙发电视、右侧餐桌椅及挂两幅画墙面等后续要求。",
+        "en": "As of S03: the route before S01 remains unconfirmed. The previously recorded gray-tiled corridor and left-side bathroom can be retained as historical progress; in this segment the view continued toward the bright doorway, the brown wooden structure on the right gradually came closer, and at F15 the camera is near the doorway with a corner of an adjacent space visible. It is not yet confirmed that the doorway has been crossed into the open living area, nor that the instructed right turn, sofa/TV on the left, dining table/chairs on the right, or the wall with two framed pictures have been reached."
+      },
+      "progress_anchor": {
+        "id": "S03",
+        "frame": 15
+      }
+    }
+  ],
+  "stop_node": "S04",
+  "stop_reason": "first_deviation",
+  "terminal_frame": 57,
+  "raw_node_count": 5,
+  "retained_node_count": 5,
+  "unreviewed_nodes": [
+    "S05"
+  ]
+}

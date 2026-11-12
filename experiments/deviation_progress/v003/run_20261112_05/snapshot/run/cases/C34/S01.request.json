@@ -1,0 +1,36 @@
+{
+  "mode": "initialization",
+  "previous_id": "S01",
+  "current_id": "S01",
+  "previous_frame": 5,
+  "current_frame": 5,
+  "instruction_en": "Walk straight through the tiled corridor, keeping the large windows and the view of the lake on your right. Turn left to enter the living room. Continue walking forward into the living room, passing the L-shaped sofa and coffee table on your right and a TV on your left. Stop in front of the main sofa with the decorative wooden wall panel behind it.",
+  "prior_semantic_progress": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+  "coverage": "Endpoint observations plus up to five uniformly sampled intermediate observations. Frames are not necessarily consecutive. Review ends at B.",
+  "images": [
+    {
+      "frame": 5,
+      "role": "A=B",
+      "image_id": "7964e99d7ec85d9dcd5825291de008657e6cd6e1f59bc745db6e9bea8e286db2",
+      "path": "assets/7964e99d7ec85d9dcd5825291de008657e6cd6e1f59bc745db6e9bea8e286db2.webp",
+      "sha256": "7964e99d7ec85d9dcd5825291de008657e6cd6e1f59bc745db6e9bea8e286db2",
+      "bytes": 28332
+    }
+  ],
+  "settings": {
+    "model": "deepseek-flash",
+    "response_format": {
+      "type": "json_object"
+    },
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_tokens": 32768,
+    "stream": false
+  },
+  "prompt_sha256": "129ef91051dcb6cc1be8e2e276cb102166bff322a36fdd10661e644de2162cad",
+  "request_sha256": "53c891dd326f786d8f62cda900864950be3e9b9e86abb6a8e60f8eb0bced52a0",
+  "started_at": "2026-11-12T10:44:43.003099+00:00",
+  "worker_pid": 13424
+}

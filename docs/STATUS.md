@@ -1,5 +1,17 @@
 # 当前项目状态
 
+2026-11-12：[偏航与累计语义进度 v003 方法及接手](DEVIATION_PROGRESS_V003.md)已冻结在 `codex/jev-online-sampling-v001` 分支；包含34案例原始结果、提示词、运行脚本与本地网页源码，记录no31提前误报限制。本次仅归档，无新增模型调用。
+
+2026-11-12：[全部34个案例](../experiments/deviation_progress/v003/run_20261112_05/README.md)已完成：补跑22条，新请求74次、有效73次，12条的40次记录原样复用；六进程、本地网页。
+
+2026-11-12：[十二条轨迹补齐](../experiments/deviation_progress/v003/run_20261112_04/README.md)已完成：仅补跑六条，新请求17次、有效16次，其余六条的23次记录原样复用；本地网页合并展示。
+
+2026-11-12：[终止节点评审 v003](../experiments/deviation_progress/v003/run_20261112_03/README.md)已完成：26个有效节点（含6个终止节点），23次请求、17次有效、6次偏航判定，DeepSeek六进程；仅本地网页。
+
+2026-11-12：[有效节点联合评审 v002](../experiments/deviation_progress/v002/run_20261112_02/README.md)已完成同六场景重跑，20个有效节点连续编号，19次请求、18次有效、2次偏航判定；旧v001包含已删除节点，不作为本轮结果。网页仅本地使用。
+
+2026-11-12：[六场景偏航与语义进度联合评审](../experiments/deviation_progress/v001/run_20261112_01/README.md)已准备，用户授权DeepSeek六进程离线运行。复用43次节点建立事件和已有去重；端点＋均匀五帧，新增本地可视化。实际状态见新运行目录，不启动导航或网页发布。
+
 2026-11-12 最新：[本地节点去重完整快照](../experiments/crossing_checkpoint/online_sampling_v001/review_snapshot_20261112/README.md)已完成34条：298→165节点，206次实际调用含1次格式错误保留双方；源码和结果保存至原交接分支，网页仅本地使用。此条更新下方“尚未接入后续模型”的历史状态。
 
 2026-11-12：[JEV 在线采样 v001](../experiments/crossing_checkpoint/online_sampling_v001/README.md)获用户认可，准备为主要开发机器合并接入；默认总延迟5个反馈步，确认结果固定。独立算法、41组固定样例、本地网页源码及跨机器导出已验证。网页默认关闭采样，曲线和路线始终完整显示；采样器仍只读取当前前缀。源码交接分支为 `codex/jev-online-sampling-v001`，接手先读 [JEV_SAMPLING_HANDOFF.md](JEV_SAMPLING_HANDOFF.md)。用户要求网页仅本地使用；尚未接入实际导航或后续大模型。

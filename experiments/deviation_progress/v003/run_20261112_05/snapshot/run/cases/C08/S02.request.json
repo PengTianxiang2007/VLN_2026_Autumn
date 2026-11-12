@@ -1,0 +1,60 @@
+{
+  "mode": "segment",
+  "previous_id": "S01",
+  "current_id": "S02",
+  "previous_frame": 10,
+  "current_frame": 13,
+  "instruction_en": "Walk forward in the hallway, passing a painting on your left. Continue straight, passing a doorway to a kitchen on your right. At the end of the hallway, turn right to enter the living room. Walk straight through the living room, passing the large grey sofa on your left and a coffee table in front of you, and stop in front of the window.",
+  "prior_semantic_progress": "截至 S01，视角处于走廊/门口附近，朝一间带床和窗户的房间观察；此前是否沿走廊前行、经过左侧画和右侧厨房门口、在走廊尽头右转进入客厅并穿过客厅均尚未确认。",
+  "coverage": "Endpoint observations plus up to five uniformly sampled intermediate observations. Frames are not necessarily consecutive. Review ends at B.",
+  "images": [
+    {
+      "frame": 10,
+      "role": "A",
+      "image_id": "e589f0c6a7da74bc449ae68672895e2b1e2915302bd7031bd72ca2805cac32c3",
+      "path": "assets/e589f0c6a7da74bc449ae68672895e2b1e2915302bd7031bd72ca2805cac32c3.webp",
+      "sha256": "e589f0c6a7da74bc449ae68672895e2b1e2915302bd7031bd72ca2805cac32c3",
+      "bytes": 11470
+    },
+    {
+      "frame": 11,
+      "role": "history",
+      "image_id": "acc5d178378656ceb009877dcbee3f6ece7b4c072dd05e4a03d512c51c505d19",
+      "path": "assets/acc5d178378656ceb009877dcbee3f6ece7b4c072dd05e4a03d512c51c505d19.webp",
+      "sha256": "acc5d178378656ceb009877dcbee3f6ece7b4c072dd05e4a03d512c51c505d19",
+      "bytes": 13232
+    },
+    {
+      "frame": 12,
+      "role": "history",
+      "image_id": "bb06f1f2647495cc1de425d4877d2664dc8079b9eef8dc829fb388fea9aa5822",
+      "path": "assets/bb06f1f2647495cc1de425d4877d2664dc8079b9eef8dc829fb388fea9aa5822.webp",
+      "sha256": "bb06f1f2647495cc1de425d4877d2664dc8079b9eef8dc829fb388fea9aa5822",
+      "bytes": 16026
+    },
+    {
+      "frame": 13,
+      "role": "B",
+      "image_id": "e155543608cfdc230086e367cfa00f2e327ebc2066cbc7f223adf87b3a0de9c0",
+      "path": "assets/e155543608cfdc230086e367cfa00f2e327ebc2066cbc7f223adf87b3a0de9c0.webp",
+      "sha256": "e155543608cfdc230086e367cfa00f2e327ebc2066cbc7f223adf87b3a0de9c0",
+      "bytes": 16286
+    }
+  ],
+  "settings": {
+    "model": "deepseek-flash",
+    "response_format": {
+      "type": "json_object"
+    },
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_tokens": 32768,
+    "stream": false
+  },
+  "prompt_sha256": "129ef91051dcb6cc1be8e2e276cb102166bff322a36fdd10661e644de2162cad",
+  "request_sha256": "094c27050742e883f9270d4008274c9a0cb8f41f654dcee15366997fedebc24d",
+  "started_at": "2026-11-12T10:38:57.096543+00:00",
+  "worker_pid": 31588
+}

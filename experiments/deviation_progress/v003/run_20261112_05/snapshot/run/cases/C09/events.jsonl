@@ -1,0 +1,6 @@
+{"at": "2026-11-12T10:38:47.469539+00:00", "pid": 40868, "kind": "case_started", "case_number": 9}
+{"at": "2026-11-12T10:38:47.469539+00:00", "pid": 40868, "kind": "request_started", "node": "S01", "from_frame": 5, "to_frame": 5, "image_count": 1}
+{"at": "2026-11-12T10:38:57.850469+00:00", "pid": 40868, "kind": "request_completed", "node": "S01", "status": "ok", "verdict": "consistent"}
+{"at": "2026-11-12T10:38:57.859562+00:00", "pid": 40868, "kind": "request_started", "node": "S02", "from_frame": 5, "to_frame": 10, "image_count": 6}
+{"at": "2026-11-12T10:39:26.424584+00:00", "pid": 40868, "kind": "request_completed", "node": "S02", "status": "ok", "verdict": "deviated"}
+{"at": "2026-11-12T10:39:26.432250+00:00", "pid": 40868, "kind": "case_completed", "stop_reason": "first_deviation"}

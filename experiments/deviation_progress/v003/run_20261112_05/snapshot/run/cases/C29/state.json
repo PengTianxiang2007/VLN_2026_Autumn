@@ -1,0 +1,266 @@
+{
+  "case_number": 29,
+  "pid": 31588,
+  "reviews": [
+    {
+      "node_id": "S01",
+      "node_frame": 0,
+      "available_at_frame": 5,
+      "terminal_node": false,
+      "mode": "initialization",
+      "previous_id": "S01",
+      "from_frame": 0,
+      "to_frame": 0,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 0,
+          "role": "A=B",
+          "image_id": "ae18483a3f09e96cc1f70fffffcf8e19261a400a496b4e6ef61794d024b7d52b",
+          "path": "assets/ae18483a3f09e96cc1f70fffffcf8e19261a400a496b4e6ef61794d024b7d52b.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 10.384,
+      "started_at": "2026-11-12T10:41:54.383452+00:00",
+      "completed_at": "2026-11-12T10:42:04.753365+00:00",
+      "worker_pid": 31588,
+      "request_file": "run/cases/C29/S01.request.json",
+      "response_file": "run/cases/C29/S01.response.json",
+      "usage": {
+        "prompt_tokens": 1403,
+        "completion_tokens": 1490,
+        "total_tokens": 2893,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 762
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 507
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S01",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "当前为首次有效节点 S01，机器人位于一条白色走廊或过道中，面向前方通道；画面可见门洞或通口以及反光地面，但未见餐桌、厨房台面或水槽。本帧未体现任何移动，因此不能据此确认此前或本段的通行要求。",
+          "en": "This is the first valid node, S01. The robot is in a white hallway or passage facing the passage ahead; a doorway or opening and a reflective floor are visible, but no dining table, kitchen counter, or sink is seen. This frame shows no movement, so the travel requirements before or within this segment cannot be confirmed from it."
+        },
+        "reason": {
+          "zh": "初始化仅能建立当前语义状态：场景呈走廊或过道，任务要求从走廊左转进入用餐区，并在经过餐桌右侧后进入厨房，停在水槽所在的台面前；单帧无法确认左转、餐桌右侧经过或厨房到达。",
+          "en": "Initialization can only establish the current semantic state: the scene appears to be a hallway or passage, while the task requires turning left from the hallway into the dining area, passing the dining table on the right, then continuing into the kitchen and stopping in front of the counter with the sink; a single frame cannot confirm the left turn, passing the table on the right, or arrival in the kitchen."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "From the hallway, turn left into the dining area.",
+            "quote_zh": "从走廊左转进入用餐区。"
+          },
+          {
+            "quote_en": "stop in front of the counter with the sink.",
+            "quote_zh": "停在水槽所在的台面前。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              0
+            ],
+            "description": {
+              "zh": "单帧显示白色走廊或过道视角，前方有通口，地面反光；未显示餐桌、厨房台面或水槽。",
+              "en": "The single frame shows a view along a white hallway or passage with an opening ahead and a reflective floor; no dining table, kitchen counter, or sink is shown."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "首次有效节点 S01：机器人当前处于白色走廊或过道视角，前方可见通道或门洞，尚未识别餐桌、厨房台面或水槽；此前的路线进度以及是否已完成左转进入用餐区均未确认。后续需继续观察通行方向与房间对应关系。",
+          "en": "First valid node, S01: the robot is currently at a view along a white hallway or passage; a passage or doorway is visible ahead, and no dining table, kitchen counter, or sink has been identified. The prior route progress and whether the left turn into the dining area has been completed are unconfirmed. Continued observation of the travel direction and room correspondences is needed."
+        },
+        "uncertainties": [
+          {
+            "zh": "当前是否正处在任务起点的走廊，以及左转入口在画面中的具体位置，尚无法确认。",
+            "en": "It cannot yet be confirmed whether the robot is currently in the hallway that is the task start, or where the left-turn entrance is located in the scene."
+          },
+          {
+            "zh": "是否已经完成或将会进行餐桌右侧经过、进入厨房并停在水槽台前，均未在本帧得到证据。",
+            "en": "There is no evidence in this frame that passing the dining table on the right, entering the kitchen, and stopping in front of the sink counter have been completed or will occur."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "首次有效节点 S01：机器人当前处于白色走廊或过道视角，前方可见通道或门洞，尚未识别餐桌、厨房台面或水槽；此前的路线进度以及是否已完成左转进入用餐区均未确认。后续需继续观察通行方向与房间对应关系。",
+        "en": "First valid node, S01: the robot is currently at a view along a white hallway or passage; a passage or doorway is visible ahead, and no dining table, kitchen counter, or sink has been identified. The prior route progress and whether the left turn into the dining area has been completed are unconfirmed. Continued observation of the travel direction and room correspondences is needed."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 0
+      }
+    },
+    {
+      "node_id": "S02",
+      "node_frame": 41,
+      "available_at_frame": 46,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S01",
+      "from_frame": 0,
+      "to_frame": 41,
+      "prior_progress": {
+        "zh": "首次有效节点 S01：机器人当前处于白色走廊或过道视角，前方可见通道或门洞，尚未识别餐桌、厨房台面或水槽；此前的路线进度以及是否已完成左转进入用餐区均未确认。后续需继续观察通行方向与房间对应关系。",
+        "en": "First valid node, S01: the robot is currently at a view along a white hallway or passage; a passage or doorway is visible ahead, and no dining table, kitchen counter, or sink has been identified. The prior route progress and whether the left turn into the dining area has been completed are unconfirmed. Continued observation of the travel direction and room correspondences is needed."
+      },
+      "images": [
+        {
+          "frame": 0,
+          "role": "A",
+          "image_id": "ae18483a3f09e96cc1f70fffffcf8e19261a400a496b4e6ef61794d024b7d52b",
+          "path": "assets/ae18483a3f09e96cc1f70fffffcf8e19261a400a496b4e6ef61794d024b7d52b.webp"
+        },
+        {
+          "frame": 1,
+          "role": "history",
+          "image_id": "5a25b58dfa87c6454291dc30805c14a5f9c61cddb84224ea53af552313050188",
+          "path": "assets/5a25b58dfa87c6454291dc30805c14a5f9c61cddb84224ea53af552313050188.webp"
+        },
+        {
+          "frame": 11,
+          "role": "history",
+          "image_id": "80e82427513b5bbb0f61d05318dacc644692c5d57a491e1872325344fab3c9a3",
+          "path": "assets/80e82427513b5bbb0f61d05318dacc644692c5d57a491e1872325344fab3c9a3.webp"
+        },
+        {
+          "frame": 21,
+          "role": "history",
+          "image_id": "eb93685a59bca29e7a2a8b60c890706fff01d1dad9d381c2fce488937b6f7f32",
+          "path": "assets/eb93685a59bca29e7a2a8b60c890706fff01d1dad9d381c2fce488937b6f7f32.webp"
+        },
+        {
+          "frame": 30,
+          "role": "history",
+          "image_id": "1a5e184a1f6a8c12c017fdbc0a7d60c62a04784e3b15af7bb6fc52204f1f1782",
+          "path": "assets/1a5e184a1f6a8c12c017fdbc0a7d60c62a04784e3b15af7bb6fc52204f1f1782.webp"
+        },
+        {
+          "frame": 40,
+          "role": "history",
+          "image_id": "fce88f81dcc9b0e2b73b0a08c8cfbc1c200b2de172ba4591140585f97f9fabac",
+          "path": "assets/fce88f81dcc9b0e2b73b0a08c8cfbc1c200b2de172ba4591140585f97f9fabac.webp"
+        },
+        {
+          "frame": 41,
+          "role": "B",
+          "image_id": "ffaabfc6630e306f021c6d4959f84d609adbe561f999a2afd942f26867e1d094",
+          "path": "assets/ffaabfc6630e306f021c6d4959f84d609adbe561f999a2afd942f26867e1d094.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 61.399,
+      "started_at": "2026-11-12T10:42:04.768541+00:00",
+      "completed_at": "2026-11-12T10:43:06.178677+00:00",
+      "worker_pid": 31588,
+      "request_file": "run/cases/C29/S02.request.json",
+      "response_file": "run/cases/C29/S02.response.json",
+      "usage": {
+        "prompt_tokens": 2746,
+        "completion_tokens": 8992,
+        "total_tokens": 11738,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 8169
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1850
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S02",
+        "verdict": "deviated",
+        "segment_summary": {
+          "zh": "机器人从白色走廊前行，途中短暂出现窗外景观和近墙画面；随后到达开放式用餐/客厅区域，F30、F40、F41 中餐桌位于其左侧，厨房台面在左前方，右侧为沙发，尚未到达水槽台面。",
+          "en": "The robot moved forward from the white hallway, with brief views of an outdoor window and a close-up white wall along the way; it then reached the open dining/living area. In frames F30, F40, and F41, the dining table is on its left, the kitchen counter is to the front left, and the sofa is on the right; it has not yet reached the sink counter."
+        },
+        "reason": {
+          "zh": "任务要求从走廊左转进入用餐区，直行时餐桌应在右侧，并继续到厨房水槽台面停下。F30、F40、F41 显示机器人位于餐桌右侧、餐桌在其左侧，与“餐桌在右侧”的空间关系相反；且水槽台面尚未到达或确认，因此本段发生了与任务要求冲突的通行行为。",
+          "en": "The instruction requires turning left from the hallway into the dining area, walking straight with the dining table on the right, and continuing to stop at the kitchen counter with the sink. Frames F30, F40, and F41 show the robot on the right side of the dining table with the table on its left, opposite to the required \"dining table on your right\" relationship; the sink counter is not yet reached or confirmed. Therefore this segment contains movement conflicting with the task."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "From the hallway, turn left into the dining area.",
+            "quote_zh": "从走廊左转进入用餐区。"
+          },
+          {
+            "quote_en": "Walk straight, passing the dining table on your right.",
+            "quote_zh": "直行，从餐桌右侧经过。"
+          },
+          {
+            "quote_en": "Continue into the kitchen and stop in front of the counter with the sink.",
+            "quote_zh": "继续进入厨房，停在水槽台面前。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              0,
+              1
+            ],
+            "description": {
+              "zh": "起始观测显示机器人仍在白色走廊内，前方是通道或门洞，未见餐桌、厨房或水槽。",
+              "en": "The initial observations show the robot still in a white hallway, with a passage or doorway ahead and no dining table, kitchen, or sink in view."
+            }
+          },
+          {
+            "frames": [
+              30,
+              40,
+              41
+            ],
+            "description": {
+              "zh": "到达用餐/客厅区域后，餐桌位于画面左侧，厨房台面在左前方，右侧为沙发；未见水槽台面近景，机器人尚未在其前方停下。",
+              "en": "After reaching the dining/living area, the dining table is on the left side of the view, the kitchen counter is to the front left, and the sofa is on the right; no close view of the sink counter is visible, and the robot has not stopped in front of it."
+            }
+          },
+          {
+            "frames": [
+              11,
+              21
+            ],
+            "description": {
+              "zh": "F11 显示窗外景观，F21 为近距白墙，只能确认机器人途中看到窗景并靠近白墙，无法据此识别这些空间的功能。",
+              "en": "F11 shows an outdoor view through a window, and F21 is a close-up white wall; these only confirm that the robot saw a window view and came close to a white wall along the way, without identifying the functions of those spaces."
+            }
+          }
+        ],
+        "semantic_progress": null,
+        "uncertainties": [
+          {
+            "zh": "F11 的窗外景观和 F21 的近墙画面对应哪个房间、是否构成额外绕行，仅凭抽样帧无法确认。",
+            "en": "Which room corresponds to the outdoor view in F11 and the close-up wall in F21, and whether this involved an extra detour, cannot be confirmed from the sampled frames alone."
+          }
+        ]
+      },
+      "rollback_target": {
+        "node_id": "S01",
+        "frame": 0,
+        "progress": {
+          "zh": "首次有效节点 S01：机器人当前处于白色走廊或过道视角，前方可见通道或门洞，尚未识别餐桌、厨房台面或水槽；此前的路线进度以及是否已完成左转进入用餐区均未确认。后续需继续观察通行方向与房间对应关系。",
+          "en": "First valid node, S01: the robot is currently at a view along a white hallway or passage; a passage or doorway is visible ahead, and no dining table, kitchen counter, or sink has been identified. The prior route progress and whether the left turn into the dining area has been completed are unconfirmed. Continued observation of the travel direction and room correspondences is needed."
+        }
+      },
+      "committed_progress": {
+        "zh": "首次有效节点 S01：机器人当前处于白色走廊或过道视角，前方可见通道或门洞，尚未识别餐桌、厨房台面或水槽；此前的路线进度以及是否已完成左转进入用餐区均未确认。后续需继续观察通行方向与房间对应关系。",
+        "en": "First valid node, S01: the robot is currently at a view along a white hallway or passage; a passage or doorway is visible ahead, and no dining table, kitchen counter, or sink has been identified. The prior route progress and whether the left turn into the dining area has been completed are unconfirmed. Continued observation of the travel direction and room correspondences is needed."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 0
+      }
+    }
+  ],
+  "stop_node": "S02"
+}

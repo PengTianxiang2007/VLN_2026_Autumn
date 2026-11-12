@@ -1,0 +1,567 @@
+{
+  "case_number": 32,
+  "pid": 31588,
+  "reviews": [
+    {
+      "node_id": "S01",
+      "node_frame": 2,
+      "available_at_frame": 7,
+      "terminal_node": false,
+      "mode": "initialization",
+      "previous_id": "S01",
+      "from_frame": 2,
+      "to_frame": 2,
+      "prior_progress": {
+        "zh": "首次有效节点：尚未确认此前完成了哪些导航要求。",
+        "en": "First retained node: prior completion of navigation requirements is unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 2,
+          "role": "A=B",
+          "image_id": "3440c85a17973686ed7959f11fbe7eacdc4eddaeb5d17332044b0e694f8fb026",
+          "path": "assets/3440c85a17973686ed7959f11fbe7eacdc4eddaeb5d17332044b0e694f8fb026.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 10.078,
+      "started_at": "2026-11-12T10:43:06.191717+00:00",
+      "completed_at": "2026-11-12T10:43:16.255711+00:00",
+      "worker_pid": 31588,
+      "request_file": "run/cases/C32/S01.request.json",
+      "response_file": "run/cases/C32/S01.response.json",
+      "usage": {
+        "prompt_tokens": 1488,
+        "completion_tokens": 1425,
+        "total_tokens": 2913,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 810
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 592
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S01",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "首个有效节点仅提供一帧：视野中有墙边的电视和木制电视柜，右侧有浅色柜体，左前方可见一个门道。单帧只能确认当前视角所见，不能确认此前经过了哪些空间。",
+          "en": "The first valid node provides only one frame: a wall-mounted TV and wooden TV stand are visible, with a light-colored cabinet on the right and a doorway visible ahead to the left. A single frame can only confirm what is visible from the current viewpoint, not which spaces were traversed previously."
+        },
+        "reason": {
+          "zh": "这是初始化节点，A 与 B 相同。观测能确认电视、柜体与左前方门道的相对位置，但无法据此确认此前是否已完成左转、沿走廊行进等要求，因此不能判断或声称已通过任何非零路段。",
+          "en": "This is an initialization node, so A and B are the same. The observation confirms the relative positions of the TV, cabinet, and doorway ahead to the left, but it cannot confirm whether requirements such as turning left or walking down a hallway were previously completed, so no non-zero segment can be judged or claimed as passed."
+        },
+        "instruction_evidence": [],
+        "visual_evidence": [
+          {
+            "frames": [
+              2
+            ],
+            "description": {
+              "zh": "该帧显示墙边电视、木制电视柜、右侧浅色柜体，以及左前方通向另一空间的门道；这是当前节点的唯一可见场景。",
+              "en": "This frame shows a TV against the wall, a wooden TV stand, a light-colored cabinet on the right, and a doorway ahead to the left leading to another space; it is the only visible scene at the current node."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "首次有效节点：当前视角可见电视、木制电视柜和右侧浅色柜体，左前方有门道。此前路线进度尚未确认；是否已按要求左转并沿走廊行进、当前位置处于完整任务的哪个阶段，均未确认。",
+          "en": "First valid node: from the current viewpoint, a TV, wooden TV stand, and light-colored cabinet on the right are visible, with a doorway ahead to the left. Prior route progress is not yet confirmed; whether a left turn and hallway traversal have been completed as required, and where the current position falls within the overall task, are both unconfirmed."
+        },
+        "uncertainties": [
+          {
+            "zh": "单帧无法确认此前是否已执行左转或沿走廊行走，也无法确认当前房间在完整路线中的具体位置。",
+            "en": "A single frame cannot confirm whether a left turn or hallway traversal was performed previously, nor can it confirm the current room's specific position within the overall route."
+          },
+          {
+            "zh": "左前方门道是否就是任务所指的走廊入口尚未确认。",
+            "en": "It is not yet confirmed whether the doorway ahead to the left is the hallway entrance referred to by the task."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "首次有效节点：当前视角可见电视、木制电视柜和右侧浅色柜体，左前方有门道。此前路线进度尚未确认；是否已按要求左转并沿走廊行进、当前位置处于完整任务的哪个阶段，均未确认。",
+        "en": "First valid node: from the current viewpoint, a TV, wooden TV stand, and light-colored cabinet on the right are visible, with a doorway ahead to the left. Prior route progress is not yet confirmed; whether a left turn and hallway traversal have been completed as required, and where the current position falls within the overall task, are both unconfirmed."
+      },
+      "progress_anchor": {
+        "id": "S01",
+        "frame": 2
+      }
+    },
+    {
+      "node_id": "S02",
+      "node_frame": 29,
+      "available_at_frame": 34,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S01",
+      "from_frame": 2,
+      "to_frame": 29,
+      "prior_progress": {
+        "zh": "首次有效节点：当前视角可见电视、木制电视柜和右侧浅色柜体，左前方有门道。此前路线进度尚未确认；是否已按要求左转并沿走廊行进、当前位置处于完整任务的哪个阶段，均未确认。",
+        "en": "First valid node: from the current viewpoint, a TV, wooden TV stand, and light-colored cabinet on the right are visible, with a doorway ahead to the left. Prior route progress is not yet confirmed; whether a left turn and hallway traversal have been completed as required, and where the current position falls within the overall task, are both unconfirmed."
+      },
+      "images": [
+        {
+          "frame": 2,
+          "role": "A",
+          "image_id": "3440c85a17973686ed7959f11fbe7eacdc4eddaeb5d17332044b0e694f8fb026",
+          "path": "assets/3440c85a17973686ed7959f11fbe7eacdc4eddaeb5d17332044b0e694f8fb026.webp"
+        },
+        {
+          "frame": 3,
+          "role": "history",
+          "image_id": "99a058bb71117172963ba5a2fc57b590f6676d5e9c78e93297ca4ea16ab6bdfa",
+          "path": "assets/99a058bb71117172963ba5a2fc57b590f6676d5e9c78e93297ca4ea16ab6bdfa.webp"
+        },
+        {
+          "frame": 9,
+          "role": "history",
+          "image_id": "73f0c4cb8af0a74ebfb5aae53b61eec2d4d2bf23822eb9e5b33e1dd19a28a471",
+          "path": "assets/73f0c4cb8af0a74ebfb5aae53b61eec2d4d2bf23822eb9e5b33e1dd19a28a471.webp"
+        },
+        {
+          "frame": 15,
+          "role": "history",
+          "image_id": "3b8c5911b4fa0f7c6323fcb66b2c85713877128f6c2fbe6bf101ce6e468abf6d",
+          "path": "assets/3b8c5911b4fa0f7c6323fcb66b2c85713877128f6c2fbe6bf101ce6e468abf6d.webp"
+        },
+        {
+          "frame": 22,
+          "role": "history",
+          "image_id": "aa21f7f25c5f31f154f53b86597cbbe11137cd4d0a4f44c61de21db3e074ff72",
+          "path": "assets/aa21f7f25c5f31f154f53b86597cbbe11137cd4d0a4f44c61de21db3e074ff72.webp"
+        },
+        {
+          "frame": 28,
+          "role": "history",
+          "image_id": "21159ad90391ba9dec910f230284b8450735382d3a9f5e552f7f95df07386dff",
+          "path": "assets/21159ad90391ba9dec910f230284b8450735382d3a9f5e552f7f95df07386dff.webp"
+        },
+        {
+          "frame": 29,
+          "role": "B",
+          "image_id": "fb46db4a11a651be681a3dd0c55c7c58a08185b6f8084938742414bd4f378a19",
+          "path": "assets/fb46db4a11a651be681a3dd0c55c7c58a08185b6f8084938742414bd4f378a19.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 41.96,
+      "started_at": "2026-11-12T10:43:16.277708+00:00",
+      "completed_at": "2026-11-12T10:43:58.233537+00:00",
+      "worker_pid": 31588,
+      "request_file": "run/cases/C32/S02.request.json",
+      "response_file": "run/cases/C32/S02.response.json",
+      "usage": {
+        "prompt_tokens": 2823,
+        "completion_tokens": 7266,
+        "total_tokens": 10089,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 6153
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1927
+      },
+      "answer": {
+        "previous_id": "S01",
+        "current_id": "S02",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "从电视与木制电视柜所在的房间向左转，面向走廊后直行；途中从左侧经过一处敞开的卫生间门口（可见马桶），随后到达走廊尽头的门洞处，前方是一间铺木地板、带窗户并有木制家具的房间，此时仍位于门洞处。",
+          "en": "From the room with the TV and wooden TV cabinet, it turned left to face a hallway and walked straight ahead; it passed an open bathroom doorway on the left (toilet visible), then reached the doorway at the end of the hallway, beyond which is a wood-floored room with a window and wooden furniture; it is still at the threshold."
+        },
+        "reason": {
+          "zh": "帧2、3、9显示视角由正对电视转向左侧门洞并沿走廊推进，电视与木制电视柜逐渐移到右侧；帧15、22显示左侧出现敞开卫生间门口（马桶）；帧28、29到达尽头门洞。这与任务开头“左转面向走廊、沿走廊直行、经过左侧卫生间门口、走向尽头门洞”的空间关系与先后顺序相符；是否已进入大开间及后续经餐桌右侧等尚未确认。",
+          "en": "Frames 2, 3 and 9 show the view turning from facing the TV toward the left-side doorway and moving down the hallway, with the TV and TV cabinet shifting to the right; frames 15 and 22 show an open bathroom doorway on the left with a toilet; frames 28 and 29 reach the doorway at the end. This matches the task's opening in spatial relations and order: turn left to face a hallway, walk straight down it, pass a bathroom doorway on the left, and head to the doorway at the end. Whether it has entered the large open room and later passed the dining table on its right remains unconfirmed."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Turn left from your current position to face a hallway",
+            "quote_zh": "从当前位置向左转，面向一条走廊"
+          },
+          {
+            "quote_en": "Walk straight down the hallway, passing a bathroom doorway on your left",
+            "quote_zh": "沿走廊直行，经过你左侧的卫生间门口"
+          },
+          {
+            "quote_en": "Go through the doorway at the end of the hallway to enter a large open room",
+            "quote_zh": "穿过走廊尽头的门口，进入一个大开间"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              2,
+              3,
+              9
+            ],
+            "description": {
+              "zh": "视角由正对电视转向左侧门洞并对准走廊，电视与木制电视柜逐渐移到画面右侧，显示向走廊方向推进。",
+              "en": "The view turns from facing the TV toward the left-side doorway and aligns with the hallway; the TV and wooden TV cabinet gradually move to the right of the frame, indicating movement toward the hallway."
+            }
+          },
+          {
+            "frames": [
+              15,
+              22
+            ],
+            "description": {
+              "zh": "走廊左侧出现敞开的卫生间门口，可见马桶；摄像机继续朝尽头门洞前进。",
+              "en": "An open bathroom doorway with a toilet appears on the left of the hallway; the camera continues forward toward the doorway at the end."
+            }
+          },
+          {
+            "frames": [
+              28,
+              29
+            ],
+            "description": {
+              "zh": "摄像机到达走廊尽头门洞处，透过门洞可见前方铺木地板、带窗户和木制家具的房间；仍处于门洞处，尚未确认已进入。",
+              "en": "The camera reaches the doorway at the end of the hallway; through it a wood-floored room with a window and wooden furniture is visible; it remains at the threshold and entry is not yet confirmed."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "已从电视与木制电视柜所在的房间向左转，面向走廊；沿走廊直行，从左侧经过一处敞开的卫生间门口（可见马桶），并到达走廊尽头的门洞处，透过门洞可见前方木地板、带窗户的房间；是否已穿过门洞进入该房间、该房间是否即任务所述的大开间尚未确认；进入大开间后保持餐桌在右侧等要求均未开始。",
+          "en": "It has turned left from the room with the TV and wooden TV cabinet to face the hallway, walked straight down the hallway past an open bathroom doorway on the left (toilet visible), and reached the doorway at the end of the hallway, beyond which a wood-floored room with a window is visible; whether it has passed through the doorway into that room and whether that room is the large open room described in the task are not yet confirmed; requirements such as keeping the dining table on the right after entering the large open room have not begun."
+        },
+        "uncertainties": [
+          {
+            "zh": "是否已穿过走廊尽头的门洞真正进入前方房间（B 帧仍处于门洞处）。",
+            "en": "Whether it has actually passed through the doorway at the end of the hallway into the room ahead (frame B is still at the threshold)."
+          },
+          {
+            "zh": "前方房间是否即任务所述的大开间，餐桌与起居区的位置尚未确认。",
+            "en": "Whether the room ahead is the large open room described in the task; the positions of the dining table and living room area are not yet confirmed."
+          },
+          {
+            "zh": "本次观测之前（到达电视房间之前）的路线进度仍未确认。",
+            "en": "The route progress before this observation (before reaching the TV room) remains unconfirmed."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "已从电视与木制电视柜所在的房间向左转，面向走廊；沿走廊直行，从左侧经过一处敞开的卫生间门口（可见马桶），并到达走廊尽头的门洞处，透过门洞可见前方木地板、带窗户的房间；是否已穿过门洞进入该房间、该房间是否即任务所述的大开间尚未确认；进入大开间后保持餐桌在右侧等要求均未开始。",
+        "en": "It has turned left from the room with the TV and wooden TV cabinet to face the hallway, walked straight down the hallway past an open bathroom doorway on the left (toilet visible), and reached the doorway at the end of the hallway, beyond which a wood-floored room with a window is visible; whether it has passed through the doorway into that room and whether that room is the large open room described in the task are not yet confirmed; requirements such as keeping the dining table on the right after entering the large open room have not begun."
+      },
+      "progress_anchor": {
+        "id": "S02",
+        "frame": 29
+      }
+    },
+    {
+      "node_id": "S03",
+      "node_frame": 44,
+      "available_at_frame": 49,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S02",
+      "from_frame": 29,
+      "to_frame": 44,
+      "prior_progress": {
+        "zh": "已从电视与木制电视柜所在的房间向左转，面向走廊；沿走廊直行，从左侧经过一处敞开的卫生间门口（可见马桶），并到达走廊尽头的门洞处，透过门洞可见前方木地板、带窗户的房间；是否已穿过门洞进入该房间、该房间是否即任务所述的大开间尚未确认；进入大开间后保持餐桌在右侧等要求均未开始。",
+        "en": "It has turned left from the room with the TV and wooden TV cabinet to face the hallway, walked straight down the hallway past an open bathroom doorway on the left (toilet visible), and reached the doorway at the end of the hallway, beyond which a wood-floored room with a window is visible; whether it has passed through the doorway into that room and whether that room is the large open room described in the task are not yet confirmed; requirements such as keeping the dining table on the right after entering the large open room have not begun."
+      },
+      "images": [
+        {
+          "frame": 29,
+          "role": "A",
+          "image_id": "fb46db4a11a651be681a3dd0c55c7c58a08185b6f8084938742414bd4f378a19",
+          "path": "assets/fb46db4a11a651be681a3dd0c55c7c58a08185b6f8084938742414bd4f378a19.webp"
+        },
+        {
+          "frame": 30,
+          "role": "history",
+          "image_id": "d2af7af6e4c0176a2ba3a20f4bcfbafaf614338661e1992e416bd4fbf6a20b3a",
+          "path": "assets/d2af7af6e4c0176a2ba3a20f4bcfbafaf614338661e1992e416bd4fbf6a20b3a.webp"
+        },
+        {
+          "frame": 33,
+          "role": "history",
+          "image_id": "980a69db78d3f7455a6ae30af8653fb66f07d4191b32e69ff71be710b1629ed4",
+          "path": "assets/980a69db78d3f7455a6ae30af8653fb66f07d4191b32e69ff71be710b1629ed4.webp"
+        },
+        {
+          "frame": 36,
+          "role": "history",
+          "image_id": "79ae130898bd8b7df9f9f01d78d87cc2ad48f4b36acfd62d534e1e661c5b4c09",
+          "path": "assets/79ae130898bd8b7df9f9f01d78d87cc2ad48f4b36acfd62d534e1e661c5b4c09.webp"
+        },
+        {
+          "frame": 40,
+          "role": "history",
+          "image_id": "de614963250a10b93c2027daad75dea6660317863211addb955ce924cc5d355e",
+          "path": "assets/de614963250a10b93c2027daad75dea6660317863211addb955ce924cc5d355e.webp"
+        },
+        {
+          "frame": 43,
+          "role": "history",
+          "image_id": "f16b988f7d6074ae809aa3c8f3b7f7af02000a63bc51bbd4192e00aa083d44dd",
+          "path": "assets/f16b988f7d6074ae809aa3c8f3b7f7af02000a63bc51bbd4192e00aa083d44dd.webp"
+        },
+        {
+          "frame": 44,
+          "role": "B",
+          "image_id": "36b35a281cce435bb73e2d3425a38195ff94f801b2e6000f6bc3029ba021e637",
+          "path": "assets/36b35a281cce435bb73e2d3425a38195ff94f801b2e6000f6bc3029ba021e637.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 25.384,
+      "started_at": "2026-11-12T10:43:58.256398+00:00",
+      "completed_at": "2026-11-12T10:44:23.641511+00:00",
+      "worker_pid": 31588,
+      "request_file": "run/cases/C32/S03.request.json",
+      "response_file": "run/cases/C32/S03.response.json",
+      "usage": {
+        "prompt_tokens": 2859,
+        "completion_tokens": 3939,
+        "total_tokens": 6798,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2862
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1963
+      },
+      "answer": {
+        "previous_id": "S02",
+        "current_id": "S03",
+        "verdict": "consistent",
+        "segment_summary": {
+          "zh": "本段从走廊尽头门洞前继续向前，跨过门槛进入带木地板、前方窗户和右前方置物架/隔断的大开间；左侧有紧闭房门和挂画，右侧可见餐桌椅，并继续沿大开间直行。尚未确认是否已完全穿过大开间、经过右侧起居区并进入前方走廊。",
+          "en": "In this segment, the view continued forward from the doorway at the end of the hallway and crossed the threshold into a large open room with a wood floor, a window ahead, and a shelving unit/partition to the front right; there is a closed door and a framed picture on the left, and a dining table and chairs are visible on the right. The view continued straight through the large room. It is not yet confirmed whether the room has been fully crossed, the living area on the right passed, and the hallway ahead entered."
+        },
+        "reason": {
+          "zh": "前一进度停在走廊尽头门洞处；本段帧显示视角越过门槛进入大开间，木地板、前方窗户和右前方置物架/隔断都在视野内，餐桌椅位于右侧，符合“穿过走廊尽头门洞进入大开间并保持餐桌在右侧”的要求；但走完大开间及进入下一段走廊尚未确认。",
+          "en": "The previous progress stopped at the doorway at the end of the hallway; the frames in this segment show the view crossing the threshold into a large open room, with the wood floor, window ahead, and shelving unit/partition to the front right all in view, and the dining table and chairs on the right, consistent with the requirements to go through the doorway at the end of the hallway into a large open room and keep the dining table on the right. However, completing the large room and entering the next hallway are not yet confirmed."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "Go through the doorway at the end of the hallway to enter a large open room.",
+            "quote_zh": "穿过走廊尽头的门洞进入一个大开间。"
+          },
+          {
+            "quote_en": "keeping the dining table on your right",
+            "quote_zh": "保持餐桌在你的右侧"
+          },
+          {
+            "quote_en": "continue past a living room area also on your right.",
+            "quote_zh": "继续经过同样位于你右侧的起居区。"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              29,
+              30,
+              33
+            ],
+            "description": {
+              "zh": "帧29至33显示视角位于走廊尽头门洞前，透过门洞可见木地板、前方窗户/开口及右侧的置物架/隔断，并逐步靠近门槛。",
+              "en": "Frames 29 to 33 show the view at the doorway at the end of the hallway; through the doorway, the wood floor, the window/opening ahead, and the shelving unit/partition on the right are visible, and the view gradually approaches the threshold."
+            }
+          },
+          {
+            "frames": [
+              36,
+              40,
+              43,
+              44
+            ],
+            "description": {
+              "zh": "帧36至44显示视角已越过门槛进入大开间：左侧为紧闭房门和挂画，前方为窗户/开口，右侧可见餐桌椅及置物架/隔断，并继续向室内直行。",
+              "en": "Frames 36 to 44 show the view crossing the threshold into the large open room: a closed door and a framed picture are on the left, a window/opening is ahead, a dining table and chairs and a shelving unit/partition are visible on the right, and the view continues straight into the room."
+            }
+          }
+        ],
+        "semantic_progress": {
+          "zh": "已从电视与木制电视柜所在房间向左转，面向走廊；沿走廊直行并从左侧经过敞开卫生间门口，到达走廊尽头门洞；随后穿过门洞进入大开间，室内为木地板，前方有窗，右侧有餐桌椅，右前方有置物架/隔断；当前仍在沿大开间直行且餐桌位于右侧，尚未确认经过右侧起居区并进入前方走廊。",
+          "en": "Having turned left from the room with the television and wooden TV cabinet to face the hallway, the route went straight down the hallway, passed an open bathroom doorway on the left, and reached the doorway at the end of the hallway; it then went through the doorway into a large open room with a wood floor, a window ahead, a dining table and chairs on the right, and a shelving unit/partition to the front right. The route is currently still proceeding straight through the large room with the dining table on the right; it is not yet confirmed that the living area on the right has been passed and the hallway ahead entered."
+        },
+        "uncertainties": [
+          {
+            "zh": "B 处仍在大开间内，是否已完全穿过该房间并经过右侧起居区尚未确认。",
+            "en": "The view at B is still inside the large open room; it is not yet confirmed whether the room has been fully crossed and the living area on the right passed."
+          },
+          {
+            "zh": "是否已到达或进入前方的下一段走廊入口尚未确认。",
+            "en": "It is not yet confirmed whether the entrance to the next hallway ahead has been reached or entered."
+          }
+        ]
+      },
+      "committed_progress": {
+        "zh": "已从电视与木制电视柜所在房间向左转，面向走廊；沿走廊直行并从左侧经过敞开卫生间门口，到达走廊尽头门洞；随后穿过门洞进入大开间，室内为木地板，前方有窗，右侧有餐桌椅，右前方有置物架/隔断；当前仍在沿大开间直行且餐桌位于右侧，尚未确认经过右侧起居区并进入前方走廊。",
+        "en": "Having turned left from the room with the television and wooden TV cabinet to face the hallway, the route went straight down the hallway, passed an open bathroom doorway on the left, and reached the doorway at the end of the hallway; it then went through the doorway into a large open room with a wood floor, a window ahead, a dining table and chairs on the right, and a shelving unit/partition to the front right. The route is currently still proceeding straight through the large room with the dining table on the right; it is not yet confirmed that the living area on the right has been passed and the hallway ahead entered."
+      },
+      "progress_anchor": {
+        "id": "S03",
+        "frame": 44
+      }
+    },
+    {
+      "node_id": "S04",
+      "node_frame": 98,
+      "available_at_frame": 103,
+      "terminal_node": false,
+      "mode": "segment",
+      "previous_id": "S03",
+      "from_frame": 44,
+      "to_frame": 98,
+      "prior_progress": {
+        "zh": "已从电视与木制电视柜所在房间向左转，面向走廊；沿走廊直行并从左侧经过敞开卫生间门口，到达走廊尽头门洞；随后穿过门洞进入大开间，室内为木地板，前方有窗，右侧有餐桌椅，右前方有置物架/隔断；当前仍在沿大开间直行且餐桌位于右侧，尚未确认经过右侧起居区并进入前方走廊。",
+        "en": "Having turned left from the room with the television and wooden TV cabinet to face the hallway, the route went straight down the hallway, passed an open bathroom doorway on the left, and reached the doorway at the end of the hallway; it then went through the doorway into a large open room with a wood floor, a window ahead, a dining table and chairs on the right, and a shelving unit/partition to the front right. The route is currently still proceeding straight through the large room with the dining table on the right; it is not yet confirmed that the living area on the right has been passed and the hallway ahead entered."
+      },
+      "images": [
+        {
+          "frame": 44,
+          "role": "A",
+          "image_id": "36b35a281cce435bb73e2d3425a38195ff94f801b2e6000f6bc3029ba021e637",
+          "path": "assets/36b35a281cce435bb73e2d3425a38195ff94f801b2e6000f6bc3029ba021e637.webp"
+        },
+        {
+          "frame": 45,
+          "role": "history",
+          "image_id": "eea693301ef73e760e7e22964353ba80fe6d1a635388ac3947fd9ac2d824bdcd",
+          "path": "assets/eea693301ef73e760e7e22964353ba80fe6d1a635388ac3947fd9ac2d824bdcd.webp"
+        },
+        {
+          "frame": 58,
+          "role": "history",
+          "image_id": "4328a0770ee798acc1a5996a5b015e11176fb51c36142bc98bc9f480ae659633",
+          "path": "assets/4328a0770ee798acc1a5996a5b015e11176fb51c36142bc98bc9f480ae659633.webp"
+        },
+        {
+          "frame": 71,
+          "role": "history",
+          "image_id": "0043d88a6fab356961db6cfe09ef9c4a344df13d255dcde858658204e75c5b72",
+          "path": "assets/0043d88a6fab356961db6cfe09ef9c4a344df13d255dcde858658204e75c5b72.webp"
+        },
+        {
+          "frame": 84,
+          "role": "history",
+          "image_id": "e016ff93b425bd151866f2d0e17f844ecdc8f77c39c068dff5ed7de2173e95f8",
+          "path": "assets/e016ff93b425bd151866f2d0e17f844ecdc8f77c39c068dff5ed7de2173e95f8.webp"
+        },
+        {
+          "frame": 97,
+          "role": "history",
+          "image_id": "9e1dea634ff33773bae2d786737b6de00e1cef2f0ca46e02584e7a9250cd35ce",
+          "path": "assets/9e1dea634ff33773bae2d786737b6de00e1cef2f0ca46e02584e7a9250cd35ce.webp"
+        },
+        {
+          "frame": 98,
+          "role": "B",
+          "image_id": "eda665c97379d95dd57a9e2f1b38c5c2cadfd3dbb35db82e0d65fa5047e29653",
+          "path": "assets/eda665c97379d95dd57a9e2f1b38c5c2cadfd3dbb35db82e0d65fa5047e29653.webp"
+        }
+      ],
+      "status": "ok",
+      "elapsed_seconds": 41.04,
+      "started_at": "2026-11-12T10:44:23.651523+00:00",
+      "completed_at": "2026-11-12T10:45:04.691288+00:00",
+      "worker_pid": 31588,
+      "request_file": "run/cases/C32/S04.request.json",
+      "response_file": "run/cases/C32/S04.response.json",
+      "usage": {
+        "prompt_tokens": 2858,
+        "completion_tokens": 5929,
+        "total_tokens": 8787,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 5215
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1962
+      },
+      "answer": {
+        "previous_id": "S03",
+        "current_id": "S04",
+        "verdict": "deviated",
+        "segment_summary": {
+          "zh": "从走廊门洞前继续前行，穿过门洞进入带大窗的开间并靠近窗户；随后进入一条走廊，画面左侧出现白色沙发、茶几等起居区，前方另有门洞。继续沿该走廊到B，左侧仍可看到起居区开口，右侧出现黄色柜体，尚未看到卧室床。",
+          "en": "Moved forward from the corridor doorway, passed through it into a large room with a large window and approached the window; then entered a hallway where the living area with a white sofa and coffee table appeared on the left, with another doorway ahead. Continued along this hallway to B; the living-area opening remained visible on the left and a yellow cabinet appeared on the right, while no bed was seen yet."
+        },
+        "reason": {
+          "zh": "任务要求穿过大开间时餐桌和起居区都在右侧，然后进入前方走廊。但帧84至98显示行进方向左侧是沙发茶几组成的起居区，走廊左侧与该起居区相通；这与“起居区在右侧”的空间关系相反，属明确通行冲突。",
+          "en": "The task requires the dining table and living-room area to remain on the right while crossing the large room, then entering the hallway ahead. Frames 84–98 instead show the living area with a sofa and coffee table on the left of the travel direction, with the hallway opening to that living area on the left; this is spatially opposite to 'living room area also on your right' and is a clear traversal conflict."
+        },
+        "instruction_evidence": [
+          {
+            "quote_en": "keeping the dining table on your right",
+            "quote_zh": "让餐桌保持在你的右侧"
+          },
+          {
+            "quote_en": "continue past a living room area also on your right",
+            "quote_zh": "继续经过同样在你右侧的起居区"
+          }
+        ],
+        "visual_evidence": [
+          {
+            "frames": [
+              84,
+              97
+            ],
+            "description": {
+              "zh": "帧84及97中，行进方向左侧可见白色沙发、茶几等起居区，右侧为墙、挂画及门框；走廊入口贴着起居区左侧。",
+              "en": "In frames 84 and 97, the living area with a white sofa and coffee table is visible on the left of the travel direction, while walls, a picture, and door frames are on the right; the hallway entrance is adjacent to the left side of the living area."
+            }
+          },
+          {
+            "frames": [
+              98
+            ],
+            "description": {
+              "zh": "帧98位于走廊中，左侧仍是通向起居区的开口，右侧近处有黄色柜体，前方门洞内未见床。",
+              "en": "Frame 98 is in a hallway; an opening to the living area remains on the left, a yellow cabinet is close on the right, and no bed is visible through the doorway ahead."
+            }
+          },
+          {
+            "frames": [
+              44,
+              45
+            ],
+            "description": {
+              "zh": "帧44及45显示从带置物架的走廊门洞前出发，前方可见大窗。",
+              "en": "Frames 44 and 45 show moving from the corridor doorway with a shelving unit, with a large window visible ahead."
+            }
+          }
+        ],
+        "semantic_progress": null,
+        "uncertainties": [
+          {
+            "zh": "B处是否已到走廊尽头、是否需要右转，以及前方门洞是否通向卧室，尚未确认。",
+            "en": "It is not yet confirmed whether B is at the end of the hallway, whether a right turn is required there, or whether the doorway ahead leads to the bedroom."
+          }
+        ]
+      },
+      "rollback_target": {
+        "node_id": "S03",
+        "frame": 44,
+        "progress": {
+          "zh": "已从电视与木制电视柜所在房间向左转，面向走廊；沿走廊直行并从左侧经过敞开卫生间门口，到达走廊尽头门洞；随后穿过门洞进入大开间，室内为木地板，前方有窗，右侧有餐桌椅，右前方有置物架/隔断；当前仍在沿大开间直行且餐桌位于右侧，尚未确认经过右侧起居区并进入前方走廊。",
+          "en": "Having turned left from the room with the television and wooden TV cabinet to face the hallway, the route went straight down the hallway, passed an open bathroom doorway on the left, and reached the doorway at the end of the hallway; it then went through the doorway into a large open room with a wood floor, a window ahead, a dining table and chairs on the right, and a shelving unit/partition to the front right. The route is currently still proceeding straight through the large room with the dining table on the right; it is not yet confirmed that the living area on the right has been passed and the hallway ahead entered."
+        }
+      },
+      "committed_progress": {
+        "zh": "已从电视与木制电视柜所在房间向左转，面向走廊；沿走廊直行并从左侧经过敞开卫生间门口，到达走廊尽头门洞；随后穿过门洞进入大开间，室内为木地板，前方有窗，右侧有餐桌椅，右前方有置物架/隔断；当前仍在沿大开间直行且餐桌位于右侧，尚未确认经过右侧起居区并进入前方走廊。",
+        "en": "Having turned left from the room with the television and wooden TV cabinet to face the hallway, the route went straight down the hallway, passed an open bathroom doorway on the left, and reached the doorway at the end of the hallway; it then went through the doorway into a large open room with a wood floor, a window ahead, a dining table and chairs on the right, and a shelving unit/partition to the front right. The route is currently still proceeding straight through the large room with the dining table on the right; it is not yet confirmed that the living area on the right has been passed and the hallway ahead entered."
+      },
+      "progress_anchor": {
+        "id": "S03",
+        "frame": 44
+      }
+    }
+  ],
+  "stop_node": "S04"
+}
