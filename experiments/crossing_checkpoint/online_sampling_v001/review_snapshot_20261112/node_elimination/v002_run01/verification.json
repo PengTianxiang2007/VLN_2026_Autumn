@@ -1,0 +1,100 @@
+{
+  "verified_at": "2026-11-11T18:32:01.733846+00:00",
+  "case_counts": [
+    {
+      "case": 1,
+      "candidates": 6,
+      "keep": 6,
+      "uncertain": 0,
+      "reject": 0,
+      "v001_visible": 1,
+      "v002_visible": 6
+    },
+    {
+      "case": 2,
+      "candidates": 9,
+      "keep": 9,
+      "uncertain": 0,
+      "reject": 0,
+      "v001_visible": 7,
+      "v002_visible": 9
+    },
+    {
+      "case": 3,
+      "candidates": 6,
+      "keep": 6,
+      "uncertain": 0,
+      "reject": 0,
+      "v001_visible": 4,
+      "v002_visible": 6
+    },
+    {
+      "case": 4,
+      "candidates": 6,
+      "keep": 6,
+      "uncertain": 0,
+      "reject": 0,
+      "v001_visible": 4,
+      "v002_visible": 6
+    },
+    {
+      "case": 7,
+      "candidates": 15,
+      "keep": 13,
+      "uncertain": 2,
+      "reject": 0,
+      "v001_visible": 6,
+      "v002_visible": 15
+    }
+  ],
+  "important_node_regression": [
+    {
+      "candidate_id": "C01:S05:F35",
+      "case": 1,
+      "node": "S05",
+      "frame": 35,
+      "v001": "reject",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C01:S06:F38",
+      "case": 1,
+      "node": "S06",
+      "frame": 38,
+      "v001": "reject",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C04:S01:F0",
+      "case": 4,
+      "node": "S01",
+      "frame": 0,
+      "v001": "reject",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C04:S02:F5",
+      "case": 4,
+      "node": "S02",
+      "frame": 5,
+      "v001": "reject",
+      "v002": "keep"
+    }
+  ],
+  "api_calls": 42,
+  "retries": 0,
+  "peak_concurrent_tasks": 12,
+  "response_reference_normalizations": 13,
+  "original_model_decisions_and_reasons_unchanged": true,
+  "original_responses_preserved": true,
+  "v001_unchanged_files": 54,
+  "identical_candidates_and_image_windows": true,
+  "five_frame_online_input_bound_checked": true,
+  "credential_scan_matches": 0,
+  "usage": {
+    "prompt_tokens": 100564,
+    "completion_tokens": 42868,
+    "total_tokens": 143432
+  },
+  "quality_note": "Four user-reported candidates are retained. This run rejects none of the 42 candidates, so it does not demonstrate useful elimination or overall accuracy."
+}

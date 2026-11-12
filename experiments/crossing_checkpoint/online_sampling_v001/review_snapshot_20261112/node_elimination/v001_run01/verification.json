@@ -1,0 +1,75 @@
+{
+  "verified_at": "2026-11-11T18:09:26.812346+00:00",
+  "case_counts": [
+    {
+      "case": 1,
+      "before": 6,
+      "after": 1,
+      "rejected": 5
+    },
+    {
+      "case": 2,
+      "before": 9,
+      "after": 7,
+      "rejected": 2
+    },
+    {
+      "case": 3,
+      "before": 6,
+      "after": 4,
+      "rejected": 2
+    },
+    {
+      "case": 4,
+      "before": 6,
+      "after": 4,
+      "rejected": 2
+    },
+    {
+      "case": 7,
+      "before": 15,
+      "after": 6,
+      "rejected": 9
+    }
+  ],
+  "candidates": 42,
+  "api_attempts": 45,
+  "first_attempts": 42,
+  "length_retries": 3,
+  "peak_concurrent_tasks": 12,
+  "worker_processes_total": 15,
+  "usage_all_attempts": {
+    "prompt_tokens": 93405,
+    "completion_tokens": 118986,
+    "total_tokens": 212391
+  },
+  "original_payload_unchanged": true,
+  "frozen_sampler_source_unchanged": true,
+  "all_image_hashes_verified": true,
+  "candidate_centered_windows_only": true,
+  "no_model_input_after_F_plus_2": true,
+  "credential_scan_matches": 0,
+  "browser": {
+    "test_source": "work/test_node_elimination_browser.js",
+    "result": "passed",
+    "reviewed_cases_checked": 5,
+    "unreviewed_cases_checked": 29,
+    "progress_positions_checked": 30,
+    "checks": [
+      "defaults and opt-in independence",
+      "waveform/map node IDs agree",
+      "reject-only removal and restoration",
+      "immutable original samples",
+      "full curves and routes at every progress position",
+      "no premature verdicts",
+      "parameter/image mismatch retains candidates",
+      "uncertain/errors retain candidates",
+      "five-frame audit and Chinese reason",
+      "language and curve toggles"
+    ],
+    "page_errors": [],
+    "external_requests": [],
+    "failed_requests": [],
+    "audit_screenshot": "work/node_elimination_audit.png"
+  }
+}

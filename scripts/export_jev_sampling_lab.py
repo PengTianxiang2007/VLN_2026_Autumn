@@ -108,11 +108,16 @@ def export(source, destination, html_entry=None):
     (destination / 'index.html').write_text(template.replace('@@PAYLOAD_JSON@@', serialized), encoding='utf-8', newline='\n')
     for original, name in [
         ('core/jev_sampling_lab/app.js', 'app.js'),
+        ('core/jev_sampling_lab/node_elimination_results.js', 'node_elimination_results.js'),
+        ('core/jev_sampling_lab/node_deduplication_results.js', 'node_deduplication_results.js'),
         ('core/jev_online_filter_v001.js', 'online_filter.js'),
         ('core/jev_online_sampler_v001.js', 'online_sampler_v001.js'),
     ]:
         shutil.copyfile(ROOT / original, destination / name)
-    files = ['index.html', 'app.js', 'online_filter.js', 'online_sampler_v001.js', *sorted(assets)]
+    reviews = ROOT / 'experiments/crossing_checkpoint/online_sampling_v001/review_snapshot_20261112'
+    for kind in ['node_elimination', 'node_deduplication']:
+        shutil.copytree(reviews / kind, destination / kind)
+    files = ['node_elimination_results.js', 'node_deduplication_results.js', 'index.html', 'app.js', 'online_filter.js', 'online_sampler_v001.js', *sorted(assets)]
     manifest = {
         'entry': 'index.html', 'local_only': True, 'source_name': source.name,
         'source_sha256': hashlib.sha256(source_bytes).hexdigest(),

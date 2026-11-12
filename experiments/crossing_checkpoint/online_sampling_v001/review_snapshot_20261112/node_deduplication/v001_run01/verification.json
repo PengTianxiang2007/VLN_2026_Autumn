@@ -1,0 +1,129 @@
+{
+  "passed": true,
+  "summary": {
+    "candidates": 42,
+    "retained": 17,
+    "removed": 25,
+    "model_calls": 30,
+    "uncertain": 1,
+    "errors": 0,
+    "worker_processes": 5
+  },
+  "peak_concurrent_requests": 5,
+  "max_inflight_per_case": 1,
+  "original_candidates_unchanged": true,
+  "source_payload_unchanged": true,
+  "sampler_unchanged": true,
+  "bounded_evidence": true,
+  "sequential_events_verified": true,
+  "secret_scan_clean": true,
+  "cases": [
+    {
+      "case": 1,
+      "candidates": 6,
+      "retained": 2,
+      "removed": 4,
+      "model_calls": 4,
+      "uncertain": 0,
+      "errors": 0,
+      "final_active_ids": [
+        "S02",
+        "S06"
+      ],
+      "replacements": [
+        "S01→S02",
+        "S03→S04",
+        "S04→S05",
+        "S05→S06"
+      ]
+    },
+    {
+      "case": 2,
+      "candidates": 9,
+      "retained": 6,
+      "removed": 3,
+      "model_calls": 6,
+      "uncertain": 0,
+      "errors": 0,
+      "final_active_ids": [
+        "S01",
+        "S02",
+        "S04",
+        "S05",
+        "S06",
+        "S09"
+      ],
+      "replacements": [
+        "S03→S04",
+        "S07→S08",
+        "S08→S09"
+      ]
+    },
+    {
+      "case": 3,
+      "candidates": 6,
+      "retained": 4,
+      "removed": 2,
+      "model_calls": 4,
+      "uncertain": 1,
+      "errors": 0,
+      "final_active_ids": [
+        "S01",
+        "S02",
+        "S05",
+        "S06"
+      ],
+      "replacements": [
+        "S03→S04",
+        "S04→S05"
+      ]
+    },
+    {
+      "case": 4,
+      "candidates": 6,
+      "retained": 3,
+      "removed": 3,
+      "model_calls": 3,
+      "uncertain": 0,
+      "errors": 0,
+      "final_active_ids": [
+        "S02",
+        "S05",
+        "S06"
+      ],
+      "replacements": [
+        "S01→S02",
+        "S03→S04",
+        "S04→S05"
+      ]
+    },
+    {
+      "case": 7,
+      "candidates": 15,
+      "retained": 2,
+      "removed": 13,
+      "model_calls": 13,
+      "uncertain": 0,
+      "errors": 0,
+      "final_active_ids": [
+        "S02",
+        "S15"
+      ],
+      "replacements": [
+        "S01→S02",
+        "S03→S04",
+        "S04→S05",
+        "S05→S06",
+        "S06→S07",
+        "S07→S08",
+        "S08→S09",
+        "S09→S10",
+        "S10→S11",
+        "S11→S12",
+        "S12→S13",
+        "S13→S14",
+        "S14→S15"
+      ]
+    }
+  ]
+}

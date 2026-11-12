@@ -28,12 +28,35 @@ fieldset.filterBox{min-width:0;margin:12px 0;padding:10px 12px}fieldset.filterBo
 #sampleEvents p{overflow-wrap:anywhere;margin-bottom:0}#timeline{margin-top:10px}#scorePlot{height:230px}#pendingHint{margin:2px 0 8px}
 @media(max-width:1250px){.layout{grid-template-columns:220px minmax(0,1fr)}.layout>aside:last-child{grid-column:2}.stats{grid-template-columns:repeat(4,1fr)}}
 @media(max-width:760px){.layout{display:block}.stats{grid-template-columns:repeat(2,1fr)}.evidenceMap{height:340px}.parameterOptions{display:block}.parameterOptions label{margin:5px 0}.sampleCount{white-space:normal}}
+
+.eliminationOption{display:flex;align-items:center;gap:8px;font-weight:700;cursor:pointer}.eliminationOption input{accent-color:#0f766e}
+#eliminationStatus{line-height:1.6}#eliminationNode{max-width:100%;margin:8px 0}#eliminationReason{line-height:1.7}#eliminationRoutes{padding-left:22px;font-size:12px;line-height:1.6}
+#eliminationEvidence{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px;margin-top:12px}#eliminationEvidence figure{margin:0;border:1px solid #e3e9ef;background:#f8fafc;border-radius:5px;overflow:hidden;min-height:70px}#eliminationEvidence figure.candidateFrame{border:2px solid #0f766e;background:#effaf6}#eliminationEvidence img{display:block;width:100%;height:auto}#eliminationEvidence figcaption{padding:5px;font-size:11px;overflow-wrap:anywhere}
+#eliminationAudit>summary{cursor:pointer;font-size:13px}#eliminationPrompt{white-space:pre-wrap;max-height:420px;overflow:auto}
+@media(max-width:760px){#eliminationEvidence{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+.trajectoryHeader{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}.trajectoryHeader h2{margin:0;min-width:0;overflow-wrap:anywhere}
+.eliminationShortcut{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:8px 12px;white-space:nowrap;border:1px solid #bccbd6;border-radius:7px;background:#fff;color:#365368;font-weight:700;flex-shrink:0;cursor:pointer}
+.eliminationShortcut .toggleMark{display:inline-grid;place-items:center;width:15px;height:15px;border:1px solid #8297a8;border-radius:3px;background:#fff;line-height:1}
+.eliminationShortcut[aria-pressed="true"]{color:#0f766e;background:#eaf8f3;border-color:#0f766e}.eliminationShortcut[aria-pressed="true"] .toggleMark{background:#0f766e;border-color:#0f766e}.eliminationShortcut[aria-pressed="true"] .toggleMark:after{content:'✓';font-size:12px;color:#fff}
+.eliminationShortcut:focus-visible{outline:3px solid #5eead4;outline-offset:2px}.currentNodeStatus{margin:0 0 10px;padding:8px 11px;border:1px solid #70b4a5;border-radius:6px;background:#eaf8f3;color:#0f766e;font-size:13px;font-weight:700;line-height:1.5}.currentNodeStatus[hidden]{display:none}.currentNodeStatus[data-state="removed"]{background:#fff7ed;border-color:#e8bf8d;color:#9a541b}#rgb.isNode{outline:2px solid #0f766e;outline-offset:2px}
+
+.trajectoryActions{display:flex;gap:8px;flex-wrap:wrap}
+#dedupDecision{max-width:100%;margin:8px 0}#dedupReason{line-height:1.7}
+.dedupEvidenceRow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px;margin:10px 0}
+.dedupEvidenceRow figure{margin:0;border:1px solid #dbe5e9;background:#f8fafc;border-radius:5px;overflow:hidden;min-height:65px}
+.dedupEvidenceRow .candidateFrame{border:2px solid #0f766e}.dedupEvidenceRow img{display:block;width:100%;height:auto}
+.dedupEvidenceRow figcaption{padding:5px;font-size:11px;overflow-wrap:anywhere}
+#dedupPrompt{white-space:pre-wrap;max-height:420px;overflow:auto}#dedupAudit>summary{cursor:pointer;font-size:13px}
+#dedupBranches,#dedupEvents{padding-left:24px;font-size:12px;line-height:1.7}
+.currentNodeStatus[data-state="deduplicated"]{background:#f1f5f9;border-color:#a0b3c0;color:#475569}
+@media(max-width:760px){.dedupEvidenceRow{grid-template-columns:repeat(3,minmax(0,1fr))}}
 </style></head><body>
 <header><select id="language" aria-label="Language"><option value="zh">中文</option><option value="en">English</option></select><h1 data-i18n="title"></h1><div class="sub" data-i18n="subtitle"></div></header>
 <div class="stats" id="stats"></div><div class="notice" data-i18n="notice"></div>
 <main class="layout">
 <aside class="panel"><h2 data-i18n="cases"></h2><select id="filters" aria-label="Trajectory group"><option value="all" data-i18n="all"></option><option value="failure" data-i18n="failure"></option><option value="success" data-i18n="success"></option></select><div id="cases"></div><button id="export" data-i18n="export"></button><p class="muted" data-i18n="source"></p></aside>
-<section class="panel"><h2 id="title"></h2><p id="caseStats"></p>
+<section class="panel"><div class="trajectoryHeader"><h2 id="title"></h2><div class="trajectoryActions"><button type="button" id="nodeEliminationTop" class="eliminationShortcut" aria-pressed="false"><span class="toggleMark" aria-hidden="true"></span><span data-i18n="elimination"></span></button><button type="button" id="nodeDeduplicationTop" class="eliminationShortcut" aria-pressed="false"><span class="toggleMark" aria-hidden="true"></span><span data-i18n="dedup"></span></button></div></div><p id="caseStats"></p>
 <div class="mapGrid"><div><p class="mapTitle" data-i18n="map"></p><canvas class="evidenceMap" id="jevMap" aria-label="JEV top-down map"></canvas><div class="legend"><span><i class="swatch" style="background:rgb(250,224,199)"></i>0</span><span><i class="swatch" style="background:rgb(195,127,114)"></i>0.5</span><span><i class="swatch" style="background:rgb(139,29,29)"></i>1</span></div></div></div>
 <div class="playback"><label for="frame" data-i18n="mapProgress"></label><input id="frame" type="range" min="0" value="0"><div id="step"></div></div>
 <div class="controls"><button id="restart" data-i18n="restart"></button><button id="prev" data-i18n="prev"></button><button id="play" data-i18n="play"></button><button id="next" data-i18n="next"></button><label><input id="reference" type="checkbox"> <span data-i18n="reference"></span></label></div>
@@ -43,14 +66,34 @@ fieldset.filterBox{min-width:0;margin:12px 0;padding:10px 12px}fieldset.filterBo
 <div class="parameterOptions"><label><span data-i18n="window"></span><input id="filterWindow" type="range" min="3" max="31" step="2" value="7"><output id="filterWindowValue">7</output></label><label><span data-i18n="delay"></span><input id="streamDelay" type="range" min="0" max="5" step="1" value="5"><output id="streamDelayValue">5</output></label></div><p class="muted" data-i18n="curveHint"></p>
 </fieldset>
 <fieldset class="filterBox" id="samplingControls"><legend data-i18n="samplingTitle"></legend><div id="samplingVersions"></div><p class="muted" data-i18n="samplingHint"></p><p class="muted" id="samplingStatus"></p><div id="sampleEvents"></div></fieldset>
+<fieldset class="filterBox" id="eliminationControls">
+<label class="eliminationOption"><input id="nodeElimination" type="checkbox"><span data-i18n="elimination"></span></label>
+<p class="muted" data-i18n="eliminationHint"></p><p class="muted" id="eliminationStatus" aria-live="polite"></p>
+<details id="eliminationAudit"><summary data-i18n="eliminationAudit"></summary>
+<label for="eliminationNode" data-i18n="eliminationNode"></label> <select id="eliminationNode"></select>
+<p id="eliminationReason"></p><p class="muted" id="eliminationMeta"></p><ul id="eliminationRoutes"></ul><div id="eliminationEvidence"></div>
+<p class="muted" data-i18n="eliminationReplay"></p>
+<details><summary data-i18n="eliminationPrompt"></summary><pre id="eliminationPrompt"></pre></details>
+</details></fieldset>
+<fieldset class="filterBox" id="dedupControls">
+<label class="eliminationOption"><input id="nodeDeduplication" type="checkbox"><span data-i18n="dedup"></span></label>
+<p class="muted" data-i18n="dedupHint"></p><p class="muted" id="dedupStatus" aria-live="polite"></p>
+<details id="dedupAudit"><summary data-i18n="dedupAudit"></summary>
+<label for="dedupDecision" data-i18n="dedupPair"></label> <select id="dedupDecision"></select>
+<p id="dedupReason"></p><p class="muted" id="dedupMeta"></p><ul id="dedupBranches"></ul>
+<div id="dedupEvidence"></div><p class="muted" data-i18n="dedupReplay"></p>
+<details><summary data-i18n="dedupEvents"></summary><ol id="dedupEvents"></ol></details>
+<details><summary data-i18n="dedupPrompt"></summary><pre id="dedupPrompt"></pre></details>
+</details></fieldset>
+
 <p class="muted" id="timeline"></p><canvas id="scorePlot" aria-label="JEV probability waveform"></canvas><p class="muted" id="pendingHint"></p>
 <details><summary data-i18n="rules"></summary><p class="muted" data-i18n="ruleText"></p><p class="muted" data-i18n="rulesNote"></p></details>
 <details><summary data-i18n="prompt"></summary><h3 data-i18n="promptChinese"></h3><pre id="promptChinese"></pre><h3 data-i18n="promptEnglish"></h3><pre id="promptEnglish"></pre></details>
 <details><summary data-i18n="protocol"></summary><p data-i18n="protocolInput"></p><p data-i18n="protocolReplay"></p></details>
 </section>
-<aside class="panel"><h2 data-i18n="current"></h2><img id="rgb" alt="Current RGB observation"><div class="playback"><label for="imageFrame" data-i18n="imageProgress"></label><input id="imageFrame" type="range" min="0" value="0"><div id="imageStep"></div></div><div class="values"><div class="value"><b id="jevValue"></b><span data-i18n="probability"></span></div></div><p class="muted" id="inputInfo"></p><div id="history"></div>
+<aside class="panel" id="observationPanel"><h2 data-i18n="current"></h2><div id="currentNodeStatus" class="currentNodeStatus" role="status" aria-live="polite" hidden></div><img id="rgb" alt="Current RGB observation"><div class="playback"><label for="imageFrame" data-i18n="imageProgress"></label><input id="imageFrame" type="range" min="0" value="0"><div id="imageStep"></div></div><div class="values"><div class="value"><b id="jevValue"></b><span data-i18n="probability"></span></div></div><p class="muted" id="inputInfo"></p><div id="history"></div>
 <h3 data-i18n="review"></h3><select id="category" aria-label="Review category"><option value="" data-i18n="unclassified"></option><option value="jev_high" data-i18n="high"></option><option value="jev_low" data-i18n="low"></option><option value="reasonable" data-i18n="reasonable"></option><option value="other" data-i18n="other"></option></select><textarea id="note"></textarea><p class="muted" data-i18n="noteHint"></p><p class="muted" id="instruction"></p></aside>
 </main><div class="footer" data-i18n="footer"></div>
 <script id="payload" type="application/json">@@PAYLOAD_JSON@@</script>
-<script src="online_filter.js"></script><script src="online_sampler_v001.js"></script><script src="app.js"></script>
+<script src="online_filter.js"></script><script src="online_sampler_v001.js"></script><script src="node_elimination_results.js"></script><script src="node_deduplication_results.js"></script><script src="app.js"></script>
 </body></html>

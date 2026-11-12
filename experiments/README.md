@@ -1,5 +1,7 @@
 # 实验总目录
 
+2026-11-12 最新：[本地节点去重完整快照](crossing_checkpoint/online_sampling_v001/review_snapshot_20261112/README.md)已完成34条：298→165节点，206次实际调用含1次格式错误保留双方；源码和结果保存至原交接分支，网页仅本地使用。此条更新下方“尚未接入后续模型”的历史状态。
+
 2026-11-12：[JEV 在线采样 v001](crossing_checkpoint/online_sampling_v001/README.md)：用户认可固定延迟局部峰、滞回区域与间隔采样。参考实现、41组固定样例和本地网页导出已验证，源码经授权在 `codex/jev-online-sampling-v001` 分支交接；[接手说明](../docs/JEV_SAMPLING_HANDOFF.md)给出合并、验证和运行循环适配步骤。网页仅本地使用；尚未新增模型/导航运行。
 
 2026-11-07 起，所有新生成/重导出的 HTML 可视化须按[统一发布规范](../docs/VISUALIZATION_PUBLISHING.md)

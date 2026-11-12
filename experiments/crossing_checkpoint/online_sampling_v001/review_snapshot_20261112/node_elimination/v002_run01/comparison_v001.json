@@ -1,0 +1,421 @@
+{
+  "cases": [
+    {
+      "case": 1,
+      "candidates": 6,
+      "keep": 6,
+      "uncertain": 0,
+      "reject": 0,
+      "v001_visible": 1,
+      "v002_visible": 6
+    },
+    {
+      "case": 2,
+      "candidates": 9,
+      "keep": 9,
+      "uncertain": 0,
+      "reject": 0,
+      "v001_visible": 7,
+      "v002_visible": 9
+    },
+    {
+      "case": 3,
+      "candidates": 6,
+      "keep": 6,
+      "uncertain": 0,
+      "reject": 0,
+      "v001_visible": 4,
+      "v002_visible": 6
+    },
+    {
+      "case": 4,
+      "candidates": 6,
+      "keep": 6,
+      "uncertain": 0,
+      "reject": 0,
+      "v001_visible": 4,
+      "v002_visible": 6
+    },
+    {
+      "case": 7,
+      "candidates": 15,
+      "keep": 13,
+      "uncertain": 2,
+      "reject": 0,
+      "v001_visible": 6,
+      "v002_visible": 15
+    }
+  ],
+  "nodes": [
+    {
+      "candidate_id": "C01:S01:F0",
+      "case": 1,
+      "node": "S01",
+      "frame": 0,
+      "v001": "reject",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C01:S02:F5",
+      "case": 1,
+      "node": "S02",
+      "frame": 5,
+      "v001": "keep",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C01:S03:F25",
+      "case": 1,
+      "node": "S03",
+      "frame": 25,
+      "v001": "reject",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C01:S04:F30",
+      "case": 1,
+      "node": "S04",
+      "frame": 30,
+      "v001": "reject",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C01:S05:F35",
+      "case": 1,
+      "node": "S05",
+      "frame": 35,
+      "v001": "reject",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C01:S06:F38",
+      "case": 1,
+      "node": "S06",
+      "frame": 38,
+      "v001": "reject",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C02:S01:F0",
+      "case": 2,
+      "node": "S01",
+      "frame": 0,
+      "v001": "reject",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C02:S02:F5",
+      "case": 2,
+      "node": "S02",
+      "frame": 5,
+      "v001": "keep",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C02:S03:F10",
+      "case": 2,
+      "node": "S03",
+      "frame": 10,
+      "v001": "keep",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C02:S04:F15",
+      "case": 2,
+      "node": "S04",
+      "frame": 15,
+      "v001": "keep",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C02:S05:F25",
+      "case": 2,
+      "node": "S05",
+      "frame": 25,
+      "v001": "keep",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C02:S06:F35",
+      "case": 2,
+      "node": "S06",
+      "frame": 35,
+      "v001": "reject",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C02:S07:F40",
+      "case": 2,
+      "node": "S07",
+      "frame": 40,
+      "v001": "keep",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C02:S08:F45",
+      "case": 2,
+      "node": "S08",
+      "frame": 45,
+      "v001": "keep",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C02:S09:F50",
+      "case": 2,
+      "node": "S09",
+      "frame": 50,
+      "v001": "keep",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C03:S01:F0",
+      "case": 3,
+      "node": "S01",
+      "frame": 0,
+      "v001": "keep",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C03:S02:F4",
+      "case": 3,
+      "node": "S02",
+      "frame": 4,
+      "v001": "keep",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C03:S03:F26",
+      "case": 3,
+      "node": "S03",
+      "frame": 26,
+      "v001": "reject",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C03:S04:F31",
+      "case": 3,
+      "node": "S04",
+      "frame": 31,
+      "v001": "keep",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C03:S05:F36",
+      "case": 3,
+      "node": "S05",
+      "frame": 36,
+      "v001": "keep",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C03:S06:F41",
+      "case": 3,
+      "node": "S06",
+      "frame": 41,
+      "v001": "reject",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C04:S01:F0",
+      "case": 4,
+      "node": "S01",
+      "frame": 0,
+      "v001": "reject",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C04:S02:F5",
+      "case": 4,
+      "node": "S02",
+      "frame": 5,
+      "v001": "reject",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C04:S03:F47",
+      "case": 4,
+      "node": "S03",
+      "frame": 47,
+      "v001": "keep",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C04:S04:F52",
+      "case": 4,
+      "node": "S04",
+      "frame": 52,
+      "v001": "keep",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C04:S05:F57",
+      "case": 4,
+      "node": "S05",
+      "frame": 57,
+      "v001": "keep",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C04:S06:F93",
+      "case": 4,
+      "node": "S06",
+      "frame": 93,
+      "v001": "keep",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C07:S01:F0",
+      "case": 7,
+      "node": "S01",
+      "frame": 0,
+      "v001": "keep",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C07:S02:F5",
+      "case": 7,
+      "node": "S02",
+      "frame": 5,
+      "v001": "reject",
+      "v002": "uncertain"
+    },
+    {
+      "candidate_id": "C07:S03:F20",
+      "case": 7,
+      "node": "S03",
+      "frame": 20,
+      "v001": "reject",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C07:S04:F25",
+      "case": 7,
+      "node": "S04",
+      "frame": 25,
+      "v001": "reject",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C07:S05:F30",
+      "case": 7,
+      "node": "S05",
+      "frame": 30,
+      "v001": "reject",
+      "v002": "uncertain"
+    },
+    {
+      "candidate_id": "C07:S06:F35",
+      "case": 7,
+      "node": "S06",
+      "frame": 35,
+      "v001": "reject",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C07:S07:F40",
+      "case": 7,
+      "node": "S07",
+      "frame": 40,
+      "v001": "reject",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C07:S08:F45",
+      "case": 7,
+      "node": "S08",
+      "frame": 45,
+      "v001": "reject",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C07:S09:F50",
+      "case": 7,
+      "node": "S09",
+      "frame": 50,
+      "v001": "reject",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C07:S10:F55",
+      "case": 7,
+      "node": "S10",
+      "frame": 55,
+      "v001": "keep",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C07:S11:F60",
+      "case": 7,
+      "node": "S11",
+      "frame": 60,
+      "v001": "keep",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C07:S12:F65",
+      "case": 7,
+      "node": "S12",
+      "frame": 65,
+      "v001": "keep",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C07:S13:F70",
+      "case": 7,
+      "node": "S13",
+      "frame": 70,
+      "v001": "keep",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C07:S14:F75",
+      "case": 7,
+      "node": "S14",
+      "frame": 75,
+      "v001": "keep",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C07:S15:F80",
+      "case": 7,
+      "node": "S15",
+      "frame": 80,
+      "v001": "reject",
+      "v002": "keep"
+    }
+  ],
+  "important_node_regression": [
+    {
+      "candidate_id": "C01:S05:F35",
+      "case": 1,
+      "node": "S05",
+      "frame": 35,
+      "v001": "reject",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C01:S06:F38",
+      "case": 1,
+      "node": "S06",
+      "frame": 38,
+      "v001": "reject",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C04:S01:F0",
+      "case": 4,
+      "node": "S01",
+      "frame": 0,
+      "v001": "reject",
+      "v002": "keep"
+    },
+    {
+      "candidate_id": "C04:S02:F5",
+      "case": 4,
+      "node": "S02",
+      "frame": 5,
+      "v001": "reject",
+      "v002": "keep"
+    }
+  ]
+}

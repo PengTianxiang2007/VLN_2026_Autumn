@@ -1,0 +1,35 @@
+{
+  "activeRun": "node_elimination_v002_run01",
+  "counts": [
+    {
+      "case": 1,
+      "visible": 6
+    },
+    {
+      "case": 2,
+      "visible": 9
+    },
+    {
+      "case": 3,
+      "visible": 6
+    },
+    {
+      "case": 4,
+      "visible": 6
+    },
+    {
+      "case": 7,
+      "visible": 15
+    }
+  ],
+  "progressPositions": 15,
+  "importantNodeChecks": 4,
+  "uncertaintyPreserved": true,
+  "rejectionLogicChecked": true,
+  "toggleSync": true,
+  "unreviewedPreserved": true,
+  "promptAndReasonChecked": true,
+  "apiCallsFromBrowser": 0,
+  "pageErrors": [],
+  "externalRequests": []
+}

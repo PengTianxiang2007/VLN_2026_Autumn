@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "case_count": 34,
+  "new_cases": 29,
+  "new_summary": {
+    "candidates": 256,
+    "retained": 148,
+    "removed": 108,
+    "model_calls": 176,
+    "uncertain": 22,
+    "errors": 1
+  },
+  "summary": {
+    "candidates": 298,
+    "retained": 165,
+    "removed": 133,
+    "model_calls": 206,
+    "uncertain": 23,
+    "errors": 1,
+    "worker_processes": 32
+  },
+  "new_worker_processes": 27,
+  "peak_new_requests": 27,
+  "per_case_max_inflight": 1,
+  "prior_results_unchanged": true
+}

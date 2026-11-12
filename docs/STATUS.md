@@ -1,5 +1,7 @@
 # 当前项目状态
 
+2026-11-12 最新：[本地节点去重完整快照](../experiments/crossing_checkpoint/online_sampling_v001/review_snapshot_20261112/README.md)已完成34条：298→165节点，206次实际调用含1次格式错误保留双方；源码和结果保存至原交接分支，网页仅本地使用。此条更新下方“尚未接入后续模型”的历史状态。
+
 2026-11-12：[JEV 在线采样 v001](../experiments/crossing_checkpoint/online_sampling_v001/README.md)获用户认可，准备为主要开发机器合并接入；默认总延迟5个反馈步，确认结果固定。独立算法、41组固定样例、本地网页源码及跨机器导出已验证。网页默认关闭采样，曲线和路线始终完整显示；采样器仍只读取当前前缀。源码交接分支为 `codex/jev-online-sampling-v001`，接手先读 [JEV_SAMPLING_HANDOFF.md](JEV_SAMPLING_HANDOFF.md)。用户要求网页仅本地使用；尚未接入实际导航或后续大模型。
 
 2026-11-07 用户随后纠正：发布服务器密码已按明确要求存入仓库专用认证文件，脚本自动读取；

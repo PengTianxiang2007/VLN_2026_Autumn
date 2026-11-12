@@ -1,0 +1,20 @@
+{
+  "source": "explicit_user_feedback",
+  "date": "2026-11-12",
+  "run_id": "node_elimination_v001_run01",
+  "adoption_status": "not_accepted_due_to_important_false_rejections",
+  "original_model_predictions_preserved": true,
+  "scope": "节点消除阶段应保留的候选，不代表已完成空间去重；仅包含用户明确指出的四个点，不是全量人工标注。",
+  "examples": [
+    {"case_number": 4, "node_id": "S01", "frame": 0, "candidate_id": "C04:S01:F0", "model_decision": "reject", "user_expected_action": "retain_candidate"},
+    {"case_number": 4, "node_id": "S02", "frame": 5, "candidate_id": "C04:S02:F5", "model_decision": "reject", "user_expected_action": "retain_candidate"},
+    {"case_number": 1, "node_id": "S05", "frame": 35, "candidate_id": "C01:S05:F35", "model_decision": "reject", "user_expected_action": "retain_candidate"},
+    {"case_number": 1, "node_id": "S06", "frame": 38, "candidate_id": "C01:S06:F38", "model_decision": "reject", "user_expected_action": "retain_candidate"}
+  ],
+  "inspection": {
+    "common_model_rationale": "以客厅内部未见第二条路线，推断候选附近不存在有效分支。",
+    "observed_input_limitation": "窗口内图像主要沿同一方向推进，对侧后方结构覆盖不足；04 S01 右侧边缘有局部开口线索，未被模型保留作为候选依据。",
+    "next_design_principle": "将无效证据与未观察到有效证据分开；视野不完整或只有局部结构时应允许信息不足并保留候选，避免直接剔除。"
+  },
+  "new_api_calls": 0
+}

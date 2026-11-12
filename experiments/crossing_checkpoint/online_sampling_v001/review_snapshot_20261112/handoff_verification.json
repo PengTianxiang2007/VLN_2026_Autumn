@@ -1,0 +1,10 @@
+{
+  "export_matches_current_ui_and_results": true,
+  "cases": 34,
+  "retained": 165,
+  "sampler_unchanged": true,
+  "credential_scan_clean": true,
+  "artifact_bytes": 4913573,
+  "existing_export_tests": 4,
+  "existing_sampler_golden_cases": 41
+}

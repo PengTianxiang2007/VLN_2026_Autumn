@@ -1,0 +1,45 @@
+{
+  "counts": [
+    {
+      "case": 1,
+      "original": 6,
+      "retained": 2
+    },
+    {
+      "case": 2,
+      "original": 9,
+      "retained": 6
+    },
+    {
+      "case": 3,
+      "original": 6,
+      "retained": 4
+    },
+    {
+      "case": 4,
+      "original": 6,
+      "retained": 3
+    },
+    {
+      "case": 7,
+      "original": 15,
+      "retained": 2
+    }
+  ],
+  "sliderPositions": 15,
+  "mapWaveAgreement": true,
+  "originalRestoration": true,
+  "toggleSync": true,
+  "nodeBadges": true,
+  "evidenceChecked": true,
+  "staleResultGuard": true,
+  "unknownCasesPreserved": true,
+  "promptChecked": true,
+  "defaults": {
+    "sampling": false,
+    "dedup": false,
+    "elimination": false
+  },
+  "pageErrors": [],
+  "externalRequests": []
+}

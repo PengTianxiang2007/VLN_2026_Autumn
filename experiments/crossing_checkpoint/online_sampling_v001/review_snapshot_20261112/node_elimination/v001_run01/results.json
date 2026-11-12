@@ -1,0 +1,3580 @@
+{
+  "schema_version": 1,
+  "run_id": "node_elimination_v001_run01",
+  "created_at": "2026-11-11T17:57:47.455Z",
+  "source_tag": "jev_sampling_lab_20261112",
+  "payload_sha256": "a88b7fdbda45a23c80e2815ed7f813eaf5a0c40e7d9d53cd8d0e1a24da6d1ab5",
+  "sampler_version": "v001",
+  "sampler_config": {
+    "window": 7,
+    "delay": 5,
+    "high": 0.6,
+    "low": 0.45,
+    "peakDrop": 0.03,
+    "initialFloor": 0.45,
+    "debounce": 2,
+    "minGap": 3,
+    "plateauGap": 5
+  },
+  "model": "deepseek-flash",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "case_numbers": [
+    1,
+    2,
+    3,
+    4,
+    7
+  ],
+  "evidence_offsets": [
+    -2,
+    -1,
+    0,
+    1,
+    2
+  ],
+  "max_workers": 12,
+  "attempts_per_candidate": 1,
+  "remove_decisions": [
+    "reject"
+  ],
+  "cases": [
+    {
+      "case_number": 1,
+      "case_index": 0,
+      "episode_id": "kujiale_0036_0_0 · F37",
+      "real_episode_id": "kujiale_0036_0_0",
+      "frames": 67,
+      "nodes": [
+        {
+          "id": "S01",
+          "index": 0,
+          "value": 0.7323053839473799,
+          "rawScore": 0.74,
+          "kind": "initial",
+          "drop": null,
+          "emittedAt": 5,
+          "delay": 5,
+          "candidate_id": "C01:S01:F0",
+          "ready_at_frame": 5,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": -2,
+              "missing": true
+            },
+            {
+              "label": "F-1",
+              "frame": -1,
+              "missing": true
+            },
+            {
+              "label": "F0",
+              "frame": 0,
+              "image_id": "e1b834da133a63c9560c1dcbe6d5fd2470c9567430a152e056f7e83dec986494",
+              "path": "assets/e1b834da133a63c9560c1dcbe6d5fd2470c9567430a152e056f7e83dec986494.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 1,
+              "image_id": "e934caedce31cb94060cfd6142e06ed6a4ec37da9a29fb6aafa55b5e0aea5520",
+              "path": "assets/e934caedce31cb94060cfd6142e06ed6a4ec37da9a29fb6aafa55b5e0aea5520.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 2,
+              "image_id": "91ad86c64d8e3e6c2263f0043f5e4e402c83c7accfac50dbd277b8b2d958ac04",
+              "path": "assets/91ad86c64d8e3e6c2263f0043f5e4e402c83c7accfac50dbd277b8b2d958ac04.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C01:S01:F0",
+            "decision": "reject",
+            "routes": [
+              {
+                "description": "穿过门洞进入内侧房间的单一通道",
+                "evidence_frames": [
+                  "F0",
+                  "F+1",
+                  "F+2"
+                ]
+              }
+            ],
+            "reason": "F0位于门洞前，画面仅显示穿过门洞进入内侧房间这一条可通行路线，未发现附近有与地面连接的侧向开口或另一条走廊。沿来路退回不构成有效分支，因此该位置不符合回退点定义。"
+          },
+          "elapsed_seconds": 7.899,
+          "image_count": 3,
+          "started_at": "2026-11-11T17:59:40.681905+00:00",
+          "completed_at": "2026-11-11T17:59:48.580448+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 1729,
+            "completion_tokens": 851,
+            "total_tokens": 2580,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 742
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 1729
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S02",
+          "index": 5,
+          "value": 0.5441505103012962,
+          "rawScore": 0.51,
+          "kind": "plateau",
+          "drop": null,
+          "emittedAt": 10,
+          "delay": 5,
+          "candidate_id": "C01:S02:F5",
+          "ready_at_frame": 10,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 3,
+              "image_id": "bffe1ebff4244a43bf62736227b646f49a17b3e40979efa5371d37cf83d3eb85",
+              "path": "assets/bffe1ebff4244a43bf62736227b646f49a17b3e40979efa5371d37cf83d3eb85.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 4,
+              "image_id": "1450ee898f1aa00924619af6e87ae9af3875d2dd2e5456eedc2f46f035ebf73b",
+              "path": "assets/1450ee898f1aa00924619af6e87ae9af3875d2dd2e5456eedc2f46f035ebf73b.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 5,
+              "image_id": "25743109edd9850d59deb6f3d1f596b4a74c58099296eef220b07ceaaaf51b70",
+              "path": "assets/25743109edd9850d59deb6f3d1f596b4a74c58099296eef220b07ceaaaf51b70.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 6,
+              "image_id": "759e1aa2389c05750a5b0940da0877f1d55fa629d91c19f175eab66d5c1f96b6",
+              "path": "assets/759e1aa2389c05750a5b0940da0877f1d55fa629d91c19f175eab66d5c1f96b6.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 7,
+              "image_id": "590ba667d0c1f1c149eaccf3128593383cf5ecba71bda2f1c63792a5700c0d13",
+              "path": "assets/590ba667d0c1f1c149eaccf3128593383cf5ecba71bda2f1c63792a5700c0d13.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C01:S02:F5",
+            "decision": "keep",
+            "routes": [
+              {
+                "description": "通过右侧门洞进入相邻房间，门洞有门框和连续地面，通向可见的卧室空间。",
+                "evidence_frames": [
+                  "F-2",
+                  "F-1"
+                ]
+              },
+              {
+                "description": "沿当前白色墙面和边柜所在的通道继续前行，经过挂画与绿植一侧。",
+                "evidence_frames": [
+                  "F0",
+                  "F+1",
+                  "F+2"
+                ]
+              }
+            ],
+            "reason": "F0 紧邻前一帧仍可见的右侧门洞，短距离内可选择进入该房间；同时当前墙面一侧仍可沿通道继续前行，构成两条不同通行路线。"
+          },
+          "elapsed_seconds": 15.288,
+          "image_count": 5,
+          "started_at": "2026-11-11T17:59:40.756437+00:00",
+          "completed_at": "2026-11-11T17:59:56.043957+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 1973,
+            "total_tokens": 4102,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1830
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 2129
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S03",
+          "index": 25,
+          "value": 0.7733302013725305,
+          "rawScore": 0.79,
+          "kind": "entry",
+          "drop": null,
+          "emittedAt": 30,
+          "delay": 5,
+          "candidate_id": "C01:S03:F25",
+          "ready_at_frame": 30,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 23,
+              "image_id": "4fbcb22b676e7c7c410294fb5757fc607f7d7894ee80ac31fb8fc96feeddb2b9",
+              "path": "assets/4fbcb22b676e7c7c410294fb5757fc607f7d7894ee80ac31fb8fc96feeddb2b9.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 24,
+              "image_id": "758249a17372dfbe8ee9f0c580e31967387b4bae2bc5e94d2bd97c301e708c33",
+              "path": "assets/758249a17372dfbe8ee9f0c580e31967387b4bae2bc5e94d2bd97c301e708c33.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 25,
+              "image_id": "a520d7392b97b6a6ee6541642e8cf97e782c82d12932ed3d682bb5fc21c02110",
+              "path": "assets/a520d7392b97b6a6ee6541642e8cf97e782c82d12932ed3d682bb5fc21c02110.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 26,
+              "image_id": "62d728e44f94f2f4aad718ee718bd390913eabbc8e14a8db7ceef100c34715f9",
+              "path": "assets/62d728e44f94f2f4aad718ee718bd390913eabbc8e14a8db7ceef100c34715f9.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 27,
+              "image_id": "c7f3b0dc47afe31050ca1035badc0f756b628b0ee8d0810fa0a7a458f46c066a",
+              "path": "assets/c7f3b0dc47afe31050ca1035badc0f756b628b0ee8d0810fa0a7a458f46c066a.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C01:S03:F25",
+            "decision": "reject",
+            "routes": [
+              {
+                "description": "从棕色门框的门洞可进入另一间带吊灯、沙发和家具的客厅，这是 F0 附近唯一可见的可通行路线。",
+                "evidence_frames": [
+                  "F-1",
+                  "F0",
+                  "F+1",
+                  "F+2"
+                ]
+              }
+            ],
+            "reason": "F0 位于卧室通往客厅的单一门洞旁，其余可见空间均为衣柜、床和墙体，没有第二条可通行路线；穿过该门洞与沿来路退回不构成两个有效分支，因此不符合回退点定义。"
+          },
+          "elapsed_seconds": 14.157,
+          "image_count": 5,
+          "started_at": "2026-11-11T17:59:41.103340+00:00",
+          "completed_at": "2026-11-11T17:59:55.260029+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 2124,
+            "total_tokens": 4253,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1993
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 2129
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S04",
+          "index": 30,
+          "value": 0.6651839926205552,
+          "rawScore": 0.72,
+          "kind": "plateau",
+          "drop": null,
+          "emittedAt": 35,
+          "delay": 5,
+          "candidate_id": "C01:S04:F30",
+          "ready_at_frame": 35,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 28,
+              "image_id": "7f4c1e6679c8822a28b3fc4fccd5db89881550af228e64bea09afd55567069ee",
+              "path": "assets/7f4c1e6679c8822a28b3fc4fccd5db89881550af228e64bea09afd55567069ee.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 29,
+              "image_id": "33fdc48c4a60e86c07cb62ee8eb3bcedf94674318b65acbd92fbfb755a7028c2",
+              "path": "assets/33fdc48c4a60e86c07cb62ee8eb3bcedf94674318b65acbd92fbfb755a7028c2.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 30,
+              "image_id": "971b5603071323b158741424a7acda967b843c7d59963349d0bce238eb8e1d14",
+              "path": "assets/971b5603071323b158741424a7acda967b843c7d59963349d0bce238eb8e1d14.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 31,
+              "image_id": "d546bbc99d7d460362f894c2133681aaf2ffde9777c70976c897121351c9426f",
+              "path": "assets/d546bbc99d7d460362f894c2133681aaf2ffde9777c70976c897121351c9426f.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 32,
+              "image_id": "0f4aadf3e85239489fbfd4ae73bb5cceac154f2a5177d9a254f7be21081b965b",
+              "path": "assets/0f4aadf3e85239489fbfd4ae73bb5cceac154f2a5177d9a254f7be21081b965b.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C01:S04:F30",
+            "decision": "reject",
+            "routes": [],
+            "reason": "F0处正对唯一门洞，门内为同一开放客厅，未见与地面连接的侧向开口或走廊入口；右侧白色门板关闭，不能形成第二条可通行路线。"
+          },
+          "elapsed_seconds": 7.071,
+          "image_count": 5,
+          "started_at": "2026-11-11T17:59:41.177552+00:00",
+          "completed_at": "2026-11-11T17:59:48.249463+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 647,
+            "total_tokens": 2776,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 582
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 2129
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S05",
+          "index": 35,
+          "value": 0.5512841672155708,
+          "rawScore": 0.56,
+          "kind": "plateau",
+          "drop": null,
+          "emittedAt": 40,
+          "delay": 5,
+          "candidate_id": "C01:S05:F35",
+          "ready_at_frame": 40,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 33,
+              "image_id": "f7ff43e258b6120d45885647b242c05705279093e5ebca8a0bc660671559e83b",
+              "path": "assets/f7ff43e258b6120d45885647b242c05705279093e5ebca8a0bc660671559e83b.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 34,
+              "image_id": "78a0c77642456dad98b20da5e0b62c5cbe14f596c941b44371211c2f55260f4b",
+              "path": "assets/78a0c77642456dad98b20da5e0b62c5cbe14f596c941b44371211c2f55260f4b.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 35,
+              "image_id": "4d5257b50e8d143c07c00857155b056a1e75fe6ec40f001b8f3fe8dc054b7794",
+              "path": "assets/4d5257b50e8d143c07c00857155b056a1e75fe6ec40f001b8f3fe8dc054b7794.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 36,
+              "image_id": "04a6ed4c6abac725fb88f219967ca7986e3a2cefac05c778520d0c9d5368086c",
+              "path": "assets/04a6ed4c6abac725fb88f219967ca7986e3a2cefac05c778520d0c9d5368086c.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 37,
+              "image_id": "ba916041c6f3d4ce92df12666d6c8198e1c739b2454045f818c87499934528af",
+              "path": "assets/ba916041c6f3d4ce92df12666d6c8198e1c739b2454045f818c87499934528af.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C01:S05:F35",
+            "decision": "reject",
+            "routes": [],
+            "reason": "F0 位于进入客厅的门洞处，画面仅显示一个通向客厅的入口；客厅内未见连接其他空间的侧向门洞或分叉通道，绕过家具不构成不同路线，因此不符合回退点定义。"
+          },
+          "elapsed_seconds": 6.371,
+          "image_count": 5,
+          "started_at": "2026-11-11T17:59:41.209684+00:00",
+          "completed_at": "2026-11-11T17:59:47.580124+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 597,
+            "total_tokens": 2726,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 524
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 2129
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S06",
+          "index": 38,
+          "value": 0.6353016911169532,
+          "rawScore": 0.65,
+          "kind": "peak",
+          "drop": 0.04905856823343946,
+          "emittedAt": 43,
+          "delay": 5,
+          "candidate_id": "C01:S06:F38",
+          "ready_at_frame": 43,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 36,
+              "image_id": "04a6ed4c6abac725fb88f219967ca7986e3a2cefac05c778520d0c9d5368086c",
+              "path": "assets/04a6ed4c6abac725fb88f219967ca7986e3a2cefac05c778520d0c9d5368086c.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 37,
+              "image_id": "ba916041c6f3d4ce92df12666d6c8198e1c739b2454045f818c87499934528af",
+              "path": "assets/ba916041c6f3d4ce92df12666d6c8198e1c739b2454045f818c87499934528af.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 38,
+              "image_id": "1e0fe13bdd573c1305270024e59225d261201a382161bea5546465044ecbb21a",
+              "path": "assets/1e0fe13bdd573c1305270024e59225d261201a382161bea5546465044ecbb21a.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 39,
+              "image_id": "8abe600043dd9e85da68f7f234143ea80d2f4c9e882df6eb04ff5c90e3ed93f2",
+              "path": "assets/8abe600043dd9e85da68f7f234143ea80d2f4c9e882df6eb04ff5c90e3ed93f2.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 40,
+              "image_id": "41f45cdcf971ce67960c033bfd4891ae3c551b74508f8d067c9945ea7356064b",
+              "path": "assets/41f45cdcf971ce67960c033bfd4891ae3c551b74508f8d067c9945ea7356064b.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C01:S06:F38",
+            "decision": "reject",
+            "routes": [],
+            "reason": "F0 处仅是从门口进入同一个客厅的单一通道；客厅内可见沙发、茶几、电视柜和后方窗户，但没有与地面连接的侧向门洞、走廊入口或其他可通行分支。开放空间内绕行家具不构成有效回退路线。"
+          },
+          "elapsed_seconds": 7.211,
+          "image_count": 5,
+          "started_at": "2026-11-11T17:59:41.224585+00:00",
+          "completed_at": "2026-11-11T17:59:48.434731+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 684,
+            "total_tokens": 2813,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 603
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 2129
+          },
+          "response_model": "deepseek-flash"
+        }
+      ]
+    },
+    {
+      "case_number": 2,
+      "case_index": 1,
+      "episode_id": "kujiale_0036_11_0 · F13",
+      "real_episode_id": "kujiale_0036_11_0",
+      "frames": 81,
+      "nodes": [
+        {
+          "id": "S01",
+          "index": 0,
+          "value": 0.7180186653787947,
+          "rawScore": 0.74,
+          "kind": "initial",
+          "drop": null,
+          "emittedAt": 5,
+          "delay": 5,
+          "candidate_id": "C02:S01:F0",
+          "ready_at_frame": 5,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": -2,
+              "missing": true
+            },
+            {
+              "label": "F-1",
+              "frame": -1,
+              "missing": true
+            },
+            {
+              "label": "F0",
+              "frame": 0,
+              "image_id": "c480d13c817fe5ec49644698fed7ca60aac40f894c5c4c349c8955b9ac008bee",
+              "path": "assets/c480d13c817fe5ec49644698fed7ca60aac40f894c5c4c349c8955b9ac008bee.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 1,
+              "image_id": "fa5f98ef7998d4f63b0c5a82d4ec3a4054f17f683118a3432c59a4aa1d012e13",
+              "path": "assets/fa5f98ef7998d4f63b0c5a82d4ec3a4054f17f683118a3432c59a4aa1d012e13.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 2,
+              "image_id": "a090befd153e1eaa0cc1b6979c99de887e6020ea7ac0f4e148598d731f42ea43",
+              "path": "assets/a090befd153e1eaa0cc1b6979c99de887e6020ea7ac0f4e148598d731f42ea43.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C02:S01:F0",
+            "decision": "reject",
+            "routes": [],
+            "reason": "F0处紧邻门框或墙角，F+1、F+2仅显示前方带踢脚线的白墙和左侧铺砖空间，中央通路被墙封住，未见两条有几何依据的不同通行路线，属于普通门口或单一路径转弯。"
+          },
+          "elapsed_seconds": 51.758,
+          "image_count": 3,
+          "started_at": "2026-11-11T18:02:22.850271+00:00",
+          "completed_at": "2026-11-11T18:03:14.607638+00:00",
+          "attempts": 2,
+          "request_settings": {
+            "model": "deepseek-flash",
+            "response_format": {
+              "type": "json_object"
+            },
+            "thinking": {
+              "type": "enabled"
+            },
+            "reasoning_effort": "high",
+            "max_tokens": 32768,
+            "stream": false
+          },
+          "usage": {
+            "prompt_tokens": 1729,
+            "completion_tokens": 7630,
+            "total_tokens": 9359,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 7548
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 193
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S02",
+          "index": 5,
+          "value": 0.7795761922327056,
+          "rawScore": 0.85,
+          "kind": "plateau",
+          "drop": null,
+          "emittedAt": 10,
+          "delay": 5,
+          "candidate_id": "C02:S02:F5",
+          "ready_at_frame": 10,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 3,
+              "image_id": "51a4402c66308bb0f362cf270a8fb35cc83c3f16f93409c76d76b5a511db75f8",
+              "path": "assets/51a4402c66308bb0f362cf270a8fb35cc83c3f16f93409c76d76b5a511db75f8.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 4,
+              "image_id": "5728a2fd021e5e039a923fe024b38396edd07c1808048f2bc555ec33dd86dd95",
+              "path": "assets/5728a2fd021e5e039a923fe024b38396edd07c1808048f2bc555ec33dd86dd95.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 5,
+              "image_id": "3b37f240be0f282a2383400940af178ca01497d2eb5f93b447cd1d42a1d1c87f",
+              "path": "assets/3b37f240be0f282a2383400940af178ca01497d2eb5f93b447cd1d42a1d1c87f.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 6,
+              "image_id": "eb02d7429b789662007b801387700ed4035f12c78730eb1403d7980cb8dea0ba",
+              "path": "assets/eb02d7429b789662007b801387700ed4035f12c78730eb1403d7980cb8dea0ba.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 7,
+              "image_id": "1e3e0e2dace3bcb248e3af3b8d9f5c55910de963e1006dd4b2d47ff44a77a0c2",
+              "path": "assets/1e3e0e2dace3bcb248e3af3b8d9f5c55910de963e1006dd4b2d47ff44a77a0c2.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C02:S02:F5",
+            "decision": "keep",
+            "routes": [
+              {
+                "description": "左侧木质门框内的开口通向铺有瓷砖地面的独立区域，地面可见且与外部木地板连续衔接，构成一条可通行路线。",
+                "evidence_frames": [
+                  "F-2",
+                  "F-1",
+                  "F0",
+                  "F+1"
+                ]
+              },
+              {
+                "description": "右侧木质门框形成另一处开口，门框内可见木地板和白色墙面，通向不同于左侧的相邻空间，构成第二条可通行路线。",
+                "evidence_frames": [
+                  "F0",
+                  "F+1",
+                  "F+2"
+                ]
+              }
+            ],
+            "reason": "F0正前方为白墙，但左右两侧近距离各有一个带有可通行地面的门洞/开口，分别通向铺瓷砖区域和木地板区域，形成两条有视觉依据的不同路线。"
+          },
+          "elapsed_seconds": 11.461,
+          "image_count": 5,
+          "started_at": "2026-11-11T17:59:41.460356+00:00",
+          "completed_at": "2026-11-11T17:59:52.921428+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 1306,
+            "total_tokens": 3435,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1135
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1361
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S03",
+          "index": 10,
+          "value": 0.8572683244596659,
+          "rawScore": 0.86,
+          "kind": "plateau",
+          "drop": null,
+          "emittedAt": 15,
+          "delay": 5,
+          "candidate_id": "C02:S03:F10",
+          "ready_at_frame": 15,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 8,
+              "image_id": "b7f7e8f814431f14a4f690c9841bf833daefb68e303c4012dd54a946cc73f4d1",
+              "path": "assets/b7f7e8f814431f14a4f690c9841bf833daefb68e303c4012dd54a946cc73f4d1.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 9,
+              "image_id": "a9914a7aaf54c1e8bf9ba5571008776da9e09a90139fa0b96e8bb1168763c4b6",
+              "path": "assets/a9914a7aaf54c1e8bf9ba5571008776da9e09a90139fa0b96e8bb1168763c4b6.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 10,
+              "image_id": "5eb4e135c8867b27d316a74204ab69aa1ddf73c88d4548c9b9b52302af62bcbf",
+              "path": "assets/5eb4e135c8867b27d316a74204ab69aa1ddf73c88d4548c9b9b52302af62bcbf.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 11,
+              "image_id": "b1f3e24ace3afb18e582f1f5184d5a7d32735feeb444826d43db10aaaf73f5be",
+              "path": "assets/b1f3e24ace3afb18e582f1f5184d5a7d32735feeb444826d43db10aaaf73f5be.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 12,
+              "image_id": "638b5fef9daf710104618055700c0e51ee95abd6d2e109d58078fbfc92bd59e0",
+              "path": "assets/638b5fef9daf710104618055700c0e51ee95abd6d2e109d58078fbfc92bd59e0.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C02:S03:F10",
+            "decision": "keep",
+            "routes": [
+              {
+                "description": "F0处紧邻一个带木质门框的开放门洞，门洞内可见连续地面，可进入侧方房间/空间。",
+                "evidence_frames": [
+                  "F-1",
+                  "F0"
+                ]
+              },
+              {
+                "description": "F0右侧的走廊地面连续延伸，绕过白色柜体后可通向前方木质门，形成沿走廊继续前进的路线。",
+                "evidence_frames": [
+                  "F0",
+                  "F+1",
+                  "F+2"
+                ]
+              }
+            ],
+            "reason": "F0附近同时存在可进入侧方空间的开放门洞和继续沿走廊前进的通道，二者均有连续地面与门框/走廊几何证据支持，符合回退点定义。"
+          },
+          "elapsed_seconds": 7.557,
+          "image_count": 5,
+          "started_at": "2026-11-11T17:59:41.462361+00:00",
+          "completed_at": "2026-11-11T17:59:49.019578+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 809,
+            "total_tokens": 2938,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 651
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1361
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S04",
+          "index": 15,
+          "value": 0.8057967198135276,
+          "rawScore": 0.76,
+          "kind": "plateau",
+          "drop": null,
+          "emittedAt": 20,
+          "delay": 5,
+          "candidate_id": "C02:S04:F15",
+          "ready_at_frame": 20,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 13,
+              "image_id": "f346ec0d1ef4b8f2689963ec8a76f73ce12955018796de3c8d9c8e5c5198494b",
+              "path": "assets/f346ec0d1ef4b8f2689963ec8a76f73ce12955018796de3c8d9c8e5c5198494b.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 14,
+              "image_id": "560b7b5238daafff1ca08d317369ca7fb873c6b62cf92c9674262e129d2432a7",
+              "path": "assets/560b7b5238daafff1ca08d317369ca7fb873c6b62cf92c9674262e129d2432a7.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 15,
+              "image_id": "c56c5f21f6d78a31d09877aff965cfb0304376288038255c324938a63b2474d4",
+              "path": "assets/c56c5f21f6d78a31d09877aff965cfb0304376288038255c324938a63b2474d4.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 16,
+              "image_id": "219f924fac1278ffee9ec56c2018d9ff56b8a9e15dc335252041e80dafb5b091",
+              "path": "assets/219f924fac1278ffee9ec56c2018d9ff56b8a9e15dc335252041e80dafb5b091.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 17,
+              "image_id": "cfb236fe451765c0fa0ca9bec298e288dbd919c2ff455a10dfbed0cb9f1d4320",
+              "path": "assets/cfb236fe451765c0fa0ca9bec298e288dbd919c2ff455a10dfbed0cb9f1d4320.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C02:S04:F15",
+            "decision": "keep",
+            "routes": [
+              {
+                "description": "进入左侧带木质门框的门洞，洞内可见连续的地面和白色墙面，通向另一处白色空间。",
+                "evidence_frames": [
+                  "F-2",
+                  "F-1",
+                  "F0",
+                  "F+1",
+                  "F+2"
+                ]
+              },
+              {
+                "description": "沿当前走廊继续向前，木地板一直延伸至走廊尽头的木门方向。",
+                "evidence_frames": [
+                  "F-2",
+                  "F-1",
+                  "F0",
+                  "F+2"
+                ]
+              }
+            ],
+            "reason": "候选位置紧邻左侧木框门洞，洞内地面和墙面连续可见，构成进入侧面空间的实际路线；同时走廊向前延伸，两条不同通行路线在 F0 附近即可选择。"
+          },
+          "elapsed_seconds": 11.561,
+          "image_count": 5,
+          "started_at": "2026-11-11T17:59:41.467774+00:00",
+          "completed_at": "2026-11-11T17:59:53.029190+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 1574,
+            "total_tokens": 3703,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1414
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1361
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S05",
+          "index": 25,
+          "value": 0.6834634657198679,
+          "rawScore": 0.64,
+          "kind": "entry",
+          "drop": null,
+          "emittedAt": 30,
+          "delay": 5,
+          "candidate_id": "C02:S05:F25",
+          "ready_at_frame": 30,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 23,
+              "image_id": "cb7f23e6aa2bb6a99353d0f59e326f07b249e6c2fee93028d129cd49c882513f",
+              "path": "assets/cb7f23e6aa2bb6a99353d0f59e326f07b249e6c2fee93028d129cd49c882513f.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 24,
+              "image_id": "945c2b91dab6f97c29041c1c9ef4d67becb3284ede3619dcb5dff4169dfc37b2",
+              "path": "assets/945c2b91dab6f97c29041c1c9ef4d67becb3284ede3619dcb5dff4169dfc37b2.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 25,
+              "image_id": "7173289edaacba0e2ccbb2dc81795043c66cbe1cc7ddfc9fa324e168b820b505",
+              "path": "assets/7173289edaacba0e2ccbb2dc81795043c66cbe1cc7ddfc9fa324e168b820b505.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 26,
+              "image_id": "2ef613f24f4a3cd990e27fdc0b55fa1941814d9f86cbb0a059ead791a19ab0df",
+              "path": "assets/2ef613f24f4a3cd990e27fdc0b55fa1941814d9f86cbb0a059ead791a19ab0df.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 27,
+              "image_id": "c7aaab5033b24d8defc935ecfb52b139022f62b9a27a801497526fc6edd884c8",
+              "path": "assets/c7aaab5033b24d8defc935ecfb52b139022f62b9a27a801497526fc6edd884c8.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C02:S05:F25",
+            "decision": "keep",
+            "routes": [
+              {
+                "description": "进入左侧房间：F0 中门框左侧可见电视柜、窗帘及连续可通行地面，房间空间通过门洞与当前区域相连。",
+                "evidence_frames": [
+                  "F0",
+                  "F-2",
+                  "F+2"
+                ]
+              },
+              {
+                "description": "沿右侧走廊前进：F0 中门框右侧可见连续木地板、白墙走廊并通向远处木门。",
+                "evidence_frames": [
+                  "F0",
+                  "F-1",
+                  "F+1"
+                ]
+              }
+            ],
+            "reason": "F0 位于左侧房间与右侧走廊之间的门洞附近，两侧均有可见的可通行地面和连通开口，短距离内可选择进入房间或沿走廊前进。"
+          },
+          "elapsed_seconds": 14.86,
+          "image_count": 5,
+          "started_at": "2026-11-11T17:59:41.474108+00:00",
+          "completed_at": "2026-11-11T17:59:56.335128+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 1762,
+            "total_tokens": 3891,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1605
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1361
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S06",
+          "index": 35,
+          "value": 0.7709163932271383,
+          "rawScore": 0.83,
+          "kind": "entry",
+          "drop": null,
+          "emittedAt": 40,
+          "delay": 5,
+          "candidate_id": "C02:S06:F35",
+          "ready_at_frame": 40,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 33,
+              "image_id": "047f9e963c84e2a58d96a379fd3dce0e07af1d2402429392a05117e768cb4f10",
+              "path": "assets/047f9e963c84e2a58d96a379fd3dce0e07af1d2402429392a05117e768cb4f10.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 34,
+              "image_id": "7f73f3908c48f9042ee36be2c41558a86c19baebc6019e1bbb7ff2d59db80315",
+              "path": "assets/7f73f3908c48f9042ee36be2c41558a86c19baebc6019e1bbb7ff2d59db80315.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 35,
+              "image_id": "a9574e4dfd66a3aee950e5705122c2a065ad39cfbf34b201b2f664547c83267c",
+              "path": "assets/a9574e4dfd66a3aee950e5705122c2a065ad39cfbf34b201b2f664547c83267c.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 36,
+              "image_id": "d9056dcf7ecb9eeb20e6068475b00933be3f04347051ebd08d2934b2a9ce2506",
+              "path": "assets/d9056dcf7ecb9eeb20e6068475b00933be3f04347051ebd08d2934b2a9ce2506.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 37,
+              "image_id": "1c0c880e9a3b824f25d5519c8602bc9b99109731817ed188b4449f5e08010535",
+              "path": "assets/1c0c880e9a3b824f25d5519c8602bc9b99109731817ed188b4449f5e08010535.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C02:S06:F35",
+            "decision": "reject",
+            "routes": [
+              {
+                "description": "左侧门洞通向带花纹地砖和玻璃门的房间，地面连续可通行，但仅为一条明确路线。",
+                "evidence_frames": [
+                  "F0",
+                  "F+1",
+                  "F+2"
+                ]
+              }
+            ],
+            "reason": "候选F0附近仅见左侧通向浴室门洞的单一路径，右侧主要被木质柜门遮挡；右侧窗帘区域很可能是来路，且没有可见的第二条不同通行路线，不足以构成回退点。"
+          },
+          "elapsed_seconds": 55.667,
+          "image_count": 5,
+          "started_at": "2026-11-11T17:59:41.475260+00:00",
+          "completed_at": "2026-11-11T18:00:37.142272+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 7466,
+            "total_tokens": 9595,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 7351
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1361
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S07",
+          "index": 40,
+          "value": 0.9253847734636609,
+          "rawScore": 0.93,
+          "kind": "plateau",
+          "drop": null,
+          "emittedAt": 45,
+          "delay": 5,
+          "candidate_id": "C02:S07:F40",
+          "ready_at_frame": 45,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 38,
+              "image_id": "918e835db86202beb58d09b62e8020f372c6472ecdc43b93d0c3eaf69ece51e2",
+              "path": "assets/918e835db86202beb58d09b62e8020f372c6472ecdc43b93d0c3eaf69ece51e2.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 39,
+              "image_id": "4c0bc69e015c89d0208183555328bc4810ba2887bee9340b6d9d2575439df65c",
+              "path": "assets/4c0bc69e015c89d0208183555328bc4810ba2887bee9340b6d9d2575439df65c.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 40,
+              "image_id": "18d6efdfaec77d3cc841ce17af6cf4b184022476000c0d72f16b5ebc3f5ef844",
+              "path": "assets/18d6efdfaec77d3cc841ce17af6cf4b184022476000c0d72f16b5ebc3f5ef844.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 41,
+              "image_id": "bc0a480c99980dbbafecfbf7f358040c02dae29cc0ca808a0716a8fb60c8c3ab",
+              "path": "assets/bc0a480c99980dbbafecfbf7f358040c02dae29cc0ca808a0716a8fb60c8c3ab.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 42,
+              "image_id": "e4cad0d496866f3a4f5086ce1873430571a2ed085f6e0998db79da0a093ac56d",
+              "path": "assets/e4cad0d496866f3a4f5086ce1873430571a2ed085f6e0998db79da0a093ac56d.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C02:S07:F40",
+            "decision": "keep",
+            "routes": [
+              {
+                "description": "从F0左侧木框门洞进入左侧房间，门洞与室内可通行浅色地面连续，构成一条侧向路线。",
+                "evidence_frames": [
+                  "F0",
+                  "F-1",
+                  "F+1"
+                ]
+              },
+              {
+                "description": "从F0继续直行，穿过前方木框门洞进入铺有花砖地面的独立小间/卫浴空间，地面与门洞相连，构成另一条路线。",
+                "evidence_frames": [
+                  "F0",
+                  "F+1",
+                  "F+2"
+                ]
+              }
+            ],
+            "reason": "F0附近同时存在左侧门洞和正前方门洞，分别通向可通行的不同空间区域，满足短距离内可选择不同路线的回退点条件。"
+          },
+          "elapsed_seconds": 8.482,
+          "image_count": 5,
+          "started_at": "2026-11-11T17:59:47.582372+00:00",
+          "completed_at": "2026-11-11T17:59:56.064113+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 1242,
+            "total_tokens": 3371,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1075
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1361
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S08",
+          "index": 45,
+          "value": 0.9200026521857722,
+          "rawScore": 0.89,
+          "kind": "plateau",
+          "drop": null,
+          "emittedAt": 50,
+          "delay": 5,
+          "candidate_id": "C02:S08:F45",
+          "ready_at_frame": 50,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 43,
+              "image_id": "7be9ebf23eadc780559556d6ed743c5d5380e1798ee01036994b972385a60062",
+              "path": "assets/7be9ebf23eadc780559556d6ed743c5d5380e1798ee01036994b972385a60062.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 44,
+              "image_id": "2a15450d29c99194965e6ec80b10356c7cc45d6875587ee939f676a8b203e098",
+              "path": "assets/2a15450d29c99194965e6ec80b10356c7cc45d6875587ee939f676a8b203e098.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 45,
+              "image_id": "8a4c98005e946b8ecc04ce777c9f885f35d5a5f9e935e014309976f64610d751",
+              "path": "assets/8a4c98005e946b8ecc04ce777c9f885f35d5a5f9e935e014309976f64610d751.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 46,
+              "image_id": "79d4597257a5c754977c939a6077e6e6fd98bf5d0fc5e4392a9f8b7fb78f56c1",
+              "path": "assets/79d4597257a5c754977c939a6077e6e6fd98bf5d0fc5e4392a9f8b7fb78f56c1.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 47,
+              "image_id": "195ede46aaf81f938e024cd814fbb5260ac8b9a0d1727993704548355726ea84",
+              "path": "assets/195ede46aaf81f938e024cd814fbb5260ac8b9a0d1727993704548355726ea84.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C02:S08:F45",
+            "decision": "keep",
+            "routes": [
+              {
+                "description": "左侧木框门洞通向铺浅木地板的房间，门洞与室内地面连续可见，后续帧还可见室内床铺，构成一条可通行路线。",
+                "evidence_frames": [
+                  "F0",
+                  "F+1",
+                  "F+2"
+                ]
+              },
+              {
+                "description": "前方/右侧开口通向铺几何花砖地面的卫浴区域，可见连续地面、玻璃淋浴隔断及独立空间，构成另一条可通行路线。",
+                "evidence_frames": [
+                  "F-2",
+                  "F-1",
+                  "F0"
+                ]
+              }
+            ],
+            "reason": "F0位于两处相邻门洞/开口附近，左侧通往房间，前方或右侧通往卫浴区域，地面连续且短距离内可选择不同空间路线。"
+          },
+          "elapsed_seconds": 25.172,
+          "image_count": 5,
+          "started_at": "2026-11-11T17:59:48.251782+00:00",
+          "completed_at": "2026-11-11T18:00:13.424091+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 3705,
+            "total_tokens": 5834,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3537
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1361
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S09",
+          "index": 50,
+          "value": 0.7445167609466345,
+          "rawScore": 0.79,
+          "kind": "plateau",
+          "drop": null,
+          "emittedAt": 55,
+          "delay": 5,
+          "candidate_id": "C02:S09:F50",
+          "ready_at_frame": 55,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 48,
+              "image_id": "1889a0948eaed44421f3c8a10d50c4ae6b54730a50ae635cad696b9c33f23ba4",
+              "path": "assets/1889a0948eaed44421f3c8a10d50c4ae6b54730a50ae635cad696b9c33f23ba4.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 49,
+              "image_id": "664a12cbba917ecbe435db31a04e2e304fd7562523e5acaa6bddc1d63e1a2045",
+              "path": "assets/664a12cbba917ecbe435db31a04e2e304fd7562523e5acaa6bddc1d63e1a2045.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 50,
+              "image_id": "cf453829c9e9523566bcf975756652e9bf4279825b8f5d2e7ccd3cb887966041",
+              "path": "assets/cf453829c9e9523566bcf975756652e9bf4279825b8f5d2e7ccd3cb887966041.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 51,
+              "image_id": "441778060b6c7053bdd80c9f8cce9a789bc901a456f337c687544333a67ea38a",
+              "path": "assets/441778060b6c7053bdd80c9f8cce9a789bc901a456f337c687544333a67ea38a.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 52,
+              "image_id": "0a0595f3fdf208a5c0806ea282f854688d236cf7e73bd9639eca9fec339c860f",
+              "path": "assets/0a0595f3fdf208a5c0806ea282f854688d236cf7e73bd9639eca9fec339c860f.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C02:S09:F50",
+            "decision": "keep",
+            "routes": [
+              {
+                "description": "沿左侧/前方开口进入卧室，可见浅色木地板连续通向床、窗帘和柜体，属于可通行空间。",
+                "evidence_frames": [
+                  "F0",
+                  "F+1",
+                  "F+2"
+                ]
+              },
+              {
+                "description": "右转进入右侧木门框后的另一空间，F-2、F-1可见其中黑白瓷砖地面和深色反光墙面，与卧室木地板材质不同，门洞与地面相连。",
+                "evidence_frames": [
+                  "F-2",
+                  "F-1",
+                  "F0"
+                ]
+              }
+            ],
+            "reason": "F0位于卧室入口附近，左侧卧室通道与右侧木门框后的另一地面空间构成两条不同通行路线；右侧分支在前两帧有具体几何证据且仍靠近候选位置。"
+          },
+          "elapsed_seconds": 45.271,
+          "image_count": 5,
+          "started_at": "2026-11-11T17:59:48.437745+00:00",
+          "completed_at": "2026-11-11T18:00:33.708709+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 6108,
+            "total_tokens": 8237,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 5934
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1361
+          },
+          "response_model": "deepseek-flash"
+        }
+      ]
+    },
+    {
+      "case_number": 3,
+      "case_index": 2,
+      "episode_id": "kujiale_0036_3_2 · F0",
+      "real_episode_id": "kujiale_0036_3_2",
+      "frames": 50,
+      "nodes": [
+        {
+          "id": "S01",
+          "index": 0,
+          "value": 0.6625355872817893,
+          "rawScore": 0.71,
+          "kind": "initial",
+          "drop": null,
+          "emittedAt": 5,
+          "delay": 5,
+          "candidate_id": "C03:S01:F0",
+          "ready_at_frame": 5,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": -2,
+              "missing": true
+            },
+            {
+              "label": "F-1",
+              "frame": -1,
+              "missing": true
+            },
+            {
+              "label": "F0",
+              "frame": 0,
+              "image_id": "2367621fcb0bac91f0df8e5a4fae97ef570a5ddff4f814b22e7635aea6b963e4",
+              "path": "assets/2367621fcb0bac91f0df8e5a4fae97ef570a5ddff4f814b22e7635aea6b963e4.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 1,
+              "image_id": "9df022e9ac3824ac046e1eac5c560a59a37d5eb5d8136c0e202df61b70e83118",
+              "path": "assets/9df022e9ac3824ac046e1eac5c560a59a37d5eb5d8136c0e202df61b70e83118.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 2,
+              "image_id": "4e57133bdd0c18e354a3ebc10addf8ecc7b1660b155f36e667ffae3a0dbc3c2a",
+              "path": "assets/4e57133bdd0c18e354a3ebc10addf8ecc7b1660b155f36e667ffae3a0dbc3c2a.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C03:S01:F0",
+            "decision": "keep",
+            "routes": [
+              {
+                "description": "F0 前方木框门洞通向浴室，可见浴室瓷砖地面和淋浴隔断，形成一条可通行路线。",
+                "evidence_frames": [
+                  "F0",
+                  "F+1"
+                ]
+              },
+              {
+                "description": "F0 左侧木框开口后可见相邻空间或通道，木地板向左侧延伸并有墙面及开关，形成另一条可通行路线。",
+                "evidence_frames": [
+                  "F0",
+                  "F+1",
+                  "F+2"
+                ]
+              }
+            ],
+            "reason": "F0 近处同时出现直行进入浴室的门洞和左侧可进入的相邻空间开口，二者均有地面延伸等几何依据，符合回退点定义。"
+          },
+          "elapsed_seconds": 13.42,
+          "image_count": 3,
+          "started_at": "2026-11-11T17:59:48.582444+00:00",
+          "completed_at": "2026-11-11T18:00:02.002411+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 1729,
+            "completion_tokens": 1885,
+            "total_tokens": 3614,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1731
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 961
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S02",
+          "index": 4,
+          "value": 0.7566450140171319,
+          "rawScore": 0.82,
+          "kind": "peak",
+          "drop": 0.06679476627286107,
+          "emittedAt": 9,
+          "delay": 5,
+          "candidate_id": "C03:S02:F4",
+          "ready_at_frame": 9,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 2,
+              "image_id": "4e57133bdd0c18e354a3ebc10addf8ecc7b1660b155f36e667ffae3a0dbc3c2a",
+              "path": "assets/4e57133bdd0c18e354a3ebc10addf8ecc7b1660b155f36e667ffae3a0dbc3c2a.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 3,
+              "image_id": "e25bfab93a0dd35607bb26f9c8ceab3aecc4ccaf51c79f35697b00f8f93beff3",
+              "path": "assets/e25bfab93a0dd35607bb26f9c8ceab3aecc4ccaf51c79f35697b00f8f93beff3.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 4,
+              "image_id": "039cbe89823facf8e6c333d48abf9308d06ae9588a4f0e7a3e17493b13cd2b66",
+              "path": "assets/039cbe89823facf8e6c333d48abf9308d06ae9588a4f0e7a3e17493b13cd2b66.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 5,
+              "image_id": "2172b30fa05ddf86485bc2515388c077f3b8fe8eba0a690476b4451008c2eb09",
+              "path": "assets/2172b30fa05ddf86485bc2515388c077f3b8fe8eba0a690476b4451008c2eb09.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 6,
+              "image_id": "aba19e00e5f463f289655e4421ca21735ad0c3d615e34de00f5c6b7dc8453b8e",
+              "path": "assets/aba19e00e5f463f289655e4421ca21735ad0c3d615e34de00f5c6b7dc8453b8e.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C03:S02:F4",
+            "decision": "keep",
+            "routes": [
+              {
+                "description": "从 F0 右侧的木框门洞进入另一间浅米色房间/通道，门洞与地面连续可见。",
+                "evidence_frames": [
+                  "F-2",
+                  "F-1",
+                  "F0"
+                ]
+              },
+              {
+                "description": "从 F0 左侧绕过白色墙体进入带黑色长凳和窗户的开放空间，地面连续延伸。",
+                "evidence_frames": [
+                  "F0",
+                  "F+1",
+                  "F+2"
+                ]
+              }
+            ],
+            "reason": "F0 附近存在左右两个有实际几何依据的通行方向：右侧木框门洞通向浅色房间，左侧绕过白墙进入带长凳和窗户的空间。两者均与候选位置近邻且可短距离到达，构成有效路线选择。"
+          },
+          "elapsed_seconds": 12.588,
+          "image_count": 5,
+          "started_at": "2026-11-11T18:02:22.877352+00:00",
+          "completed_at": "2026-11-11T18:02:35.465165+00:00",
+          "attempts": 2,
+          "request_settings": {
+            "model": "deepseek-flash",
+            "response_format": {
+              "type": "json_object"
+            },
+            "thinking": {
+              "type": "enabled"
+            },
+            "reasoning_effort": "high",
+            "max_tokens": 32768,
+            "stream": false
+          },
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 1723,
+            "total_tokens": 3852,
+            "prompt_tokens_details": {
+              "cached_tokens": 1920
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1555
+            },
+            "prompt_cache_hit_tokens": 1920,
+            "prompt_cache_miss_tokens": 209
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S03",
+          "index": 26,
+          "value": 0.8159890083319973,
+          "rawScore": 0.89,
+          "kind": "entry",
+          "drop": null,
+          "emittedAt": 31,
+          "delay": 5,
+          "candidate_id": "C03:S03:F26",
+          "ready_at_frame": 31,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 24,
+              "image_id": "bec5771eb8a3d51f835ba701127721f5ea708d85a0253c343e20afbfcaa0424b",
+              "path": "assets/bec5771eb8a3d51f835ba701127721f5ea708d85a0253c343e20afbfcaa0424b.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 25,
+              "image_id": "2ad041be0acb8420927e4987148c6713d2490b0798913aa6cb81bdbde3fe5e4e",
+              "path": "assets/2ad041be0acb8420927e4987148c6713d2490b0798913aa6cb81bdbde3fe5e4e.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 26,
+              "image_id": "333d724f5e0eed9d91aeffbfd98c41ddfeeed95c2de74cf28e8503ee963494bf",
+              "path": "assets/333d724f5e0eed9d91aeffbfd98c41ddfeeed95c2de74cf28e8503ee963494bf.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 27,
+              "image_id": "8f7550da6f9e422d547f4c6a39588bf908960ebab6f18c3affac2021517f2c02",
+              "path": "assets/8f7550da6f9e422d547f4c6a39588bf908960ebab6f18c3affac2021517f2c02.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 28,
+              "image_id": "f0e8eff8b26b34de32ed75818bb0083c6939fdd99483a3298ee3e98c50ec08c6",
+              "path": "assets/f0e8eff8b26b34de32ed75818bb0083c6939fdd99483a3298ee3e98c50ec08c6.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C03:S03:F26",
+            "decision": "reject",
+            "routes": [
+              {
+                "description": "左侧门洞通向餐桌/厨房区域，木地板连续延伸至门洞内。",
+                "evidence_frames": [
+                  "F0",
+                  "F+1",
+                  "F+2"
+                ]
+              }
+            ],
+            "reason": "F0处客厅前方和右侧被沙发、茶几及墙面封闭，附近仅左侧有一个可通行门洞通向餐厅区域，未形成两条不同通行路线；后续餐厅内部开口不属于F0附近的局部决策位置。"
+          },
+          "elapsed_seconds": 11.841,
+          "image_count": 5,
+          "started_at": "2026-11-11T17:59:52.923426+00:00",
+          "completed_at": "2026-11-11T18:00:04.764708+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 1446,
+            "total_tokens": 3575,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1337
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1361
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S04",
+          "index": 31,
+          "value": 0.9436180486250278,
+          "rawScore": 0.94,
+          "kind": "plateau",
+          "drop": null,
+          "emittedAt": 36,
+          "delay": 5,
+          "candidate_id": "C03:S04:F31",
+          "ready_at_frame": 36,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 29,
+              "image_id": "2735c6a00d0c687699de2e3b158424e555386d6c5d424ac3f47f2de8d34d7669",
+              "path": "assets/2735c6a00d0c687699de2e3b158424e555386d6c5d424ac3f47f2de8d34d7669.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 30,
+              "image_id": "8223a20bfcb042fe9f4dba08134bf45f1e349501f6a490e91838a6e91f5ea31f",
+              "path": "assets/8223a20bfcb042fe9f4dba08134bf45f1e349501f6a490e91838a6e91f5ea31f.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 31,
+              "image_id": "07d12c45726b2b235671b716bd3cdadad96af4c37772995d02cdb28f4ccd9292",
+              "path": "assets/07d12c45726b2b235671b716bd3cdadad96af4c37772995d02cdb28f4ccd9292.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 32,
+              "image_id": "0f1c21d0489317624da8b5c6f61dd0ad390b2d1ef65c05e908bbb98ae5253bf0",
+              "path": "assets/0f1c21d0489317624da8b5c6f61dd0ad390b2d1ef65c05e908bbb98ae5253bf0.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 33,
+              "image_id": "2dd23e0ae3f6e39fd6ae020d461750759906dd3167dbee009b45a01f9834ab23",
+              "path": "assets/2dd23e0ae3f6e39fd6ae020d461750759906dd3167dbee009b45a01f9834ab23.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C03:S04:F31",
+            "decision": "keep",
+            "routes": [
+              {
+                "description": "从F0左侧带木框门洞进入粉色窗帘与植物所在的侧室，门洞与地面连续，近处可直接通行。",
+                "evidence_frames": [
+                  "F0",
+                  "F-1",
+                  "F+1"
+                ]
+              },
+              {
+                "description": "从F0正前方穿过餐桌区域，可到达后方墙面另一处带木框的开口/门洞，通往厨房或另一房间；底部虽被桌椅局部遮挡，但门框和空间延伸可见。",
+                "evidence_frames": [
+                  "F0",
+                  "F-2",
+                  "F+2"
+                ]
+              }
+            ],
+            "reason": "F0附近可清楚看到左侧房门及正前方后方的另一处门洞，分别通往不同空间，且均在短距离可达范围内，因此构成有效路线选择。"
+          },
+          "elapsed_seconds": 21.729,
+          "image_count": 5,
+          "started_at": "2026-11-11T17:59:53.031664+00:00",
+          "completed_at": "2026-11-11T18:00:14.760565+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 3043,
+            "total_tokens": 5172,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2869
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1361
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S05",
+          "index": 36,
+          "value": 0.9450061906889536,
+          "rawScore": 0.95,
+          "kind": "plateau",
+          "drop": null,
+          "emittedAt": 41,
+          "delay": 5,
+          "candidate_id": "C03:S05:F36",
+          "ready_at_frame": 41,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 34,
+              "image_id": "57da8a399e0fe32b80a5166e8c6dba17840743594d6709c4477f0b0bdf36c0e9",
+              "path": "assets/57da8a399e0fe32b80a5166e8c6dba17840743594d6709c4477f0b0bdf36c0e9.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 35,
+              "image_id": "85a6ea5155595035ddc2503f31ca9d72df7bdf3e2fd819dee14d21755c746606",
+              "path": "assets/85a6ea5155595035ddc2503f31ca9d72df7bdf3e2fd819dee14d21755c746606.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 36,
+              "image_id": "b59351868012b60bf9c90419843f5ad0b913fe8bd0020a4496b9863255fead3e",
+              "path": "assets/b59351868012b60bf9c90419843f5ad0b913fe8bd0020a4496b9863255fead3e.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 37,
+              "image_id": "2c59b8169691f65bd68e93fee1ade325645bc705c320194986700af0583657d3",
+              "path": "assets/2c59b8169691f65bd68e93fee1ade325645bc705c320194986700af0583657d3.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 38,
+              "image_id": "1fcae75f469199e31f2e8cfc7fb1eaa8275957d45c948adeaac4456b63f4feaa",
+              "path": "assets/1fcae75f469199e31f2e8cfc7fb1eaa8275957d45c948adeaac4456b63f4feaa.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C03:S05:F36",
+            "decision": "keep",
+            "routes": [
+              {
+                "description": "从F0左侧的木框开口可进入带粉色、蓝色窗帘和床的房间，门洞与连续地面构成明确的可通行入口。",
+                "evidence_frames": [
+                  "F-2",
+                  "F-1",
+                  "F0",
+                  "F+1"
+                ]
+              },
+              {
+                "description": "从F0前方沿开放地面经过餐桌区域，可到达右侧带橱柜和窗户的厨房门洞，形成另一条通往不同空间的路线。",
+                "evidence_frames": [
+                  "F0",
+                  "F+1",
+                  "F+2"
+                ]
+              }
+            ],
+            "reason": "F0附近同时可见左侧房间入口和前方通往厨房门洞的开放通道，二者均有连续地面与明确门洞作为几何依据，符合短距离内可选择不同通行路线的回退点定义。"
+          },
+          "elapsed_seconds": 26.999,
+          "image_count": 5,
+          "started_at": "2026-11-11T17:59:55.263021+00:00",
+          "completed_at": "2026-11-11T18:00:22.262330+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 3759,
+            "total_tokens": 5888,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3586
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1361
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S06",
+          "index": 41,
+          "value": 0.8858235400525688,
+          "rawScore": 0.87,
+          "kind": "plateau",
+          "drop": null,
+          "emittedAt": 46,
+          "delay": 5,
+          "candidate_id": "C03:S06:F41",
+          "ready_at_frame": 46,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 39,
+              "image_id": "bd9eda6a9a7adab0c942454e6355d6a199d78fc5f7e990c855e162b47481d60a",
+              "path": "assets/bd9eda6a9a7adab0c942454e6355d6a199d78fc5f7e990c855e162b47481d60a.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 40,
+              "image_id": "6d8f36e97e2177e74ad8ebeb0a2b4daf711eebe33e432b2abeabc53ca6e5a733",
+              "path": "assets/6d8f36e97e2177e74ad8ebeb0a2b4daf711eebe33e432b2abeabc53ca6e5a733.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 41,
+              "image_id": "1d6a50141c17b603e31864f98e852227228a4af6c601ce09114ac8212238a489",
+              "path": "assets/1d6a50141c17b603e31864f98e852227228a4af6c601ce09114ac8212238a489.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 42,
+              "image_id": "9a3ba1ffa3b3cae4fc8e3a852099d9f56b03ef1115fb95323402794ab769447d",
+              "path": "assets/9a3ba1ffa3b3cae4fc8e3a852099d9f56b03ef1115fb95323402794ab769447d.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 43,
+              "image_id": "ba3a8b2340ec71584966b6f94788c728f5b796d9d655bbd4d3c2aee6a0a81107",
+              "path": "assets/ba3a8b2340ec71584966b6f94788c728f5b796d9d655bbd4d3c2aee6a0a81107.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C03:S06:F41",
+            "decision": "reject",
+            "routes": [
+              {
+                "description": "右侧有门洞通向厨房，可见厨房台面、窗户和墙砖，是唯一可见的新通行方向。",
+                "evidence_frames": [
+                  "F0",
+                  "F+1",
+                  "F+2"
+                ]
+              }
+            ],
+            "reason": "F0附近除右侧厨房入口外，正前方为窗户和窗帘，左侧为柜体，未见其他可短距离到达的有效分支；原路返回不构成有效路线。"
+          },
+          "elapsed_seconds": 19.161,
+          "image_count": 5,
+          "started_at": "2026-11-11T17:59:56.045964+00:00",
+          "completed_at": "2026-11-11T18:00:15.207538+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 2500,
+            "total_tokens": 4629,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2393
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1361
+          },
+          "response_model": "deepseek-flash"
+        }
+      ]
+    },
+    {
+      "case_number": 4,
+      "case_index": 3,
+      "episode_id": "kujiale_0036_43_0 · F0",
+      "real_episode_id": "kujiale_0036_43_0",
+      "frames": 100,
+      "nodes": [
+        {
+          "id": "S01",
+          "index": 0,
+          "value": 0.6866936314449169,
+          "rawScore": 0.71,
+          "kind": "initial",
+          "drop": null,
+          "emittedAt": 5,
+          "delay": 5,
+          "candidate_id": "C04:S01:F0",
+          "ready_at_frame": 5,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": -2,
+              "missing": true
+            },
+            {
+              "label": "F-1",
+              "frame": -1,
+              "missing": true
+            },
+            {
+              "label": "F0",
+              "frame": 0,
+              "image_id": "bf5fe3931f1ffb56b7c3f64ea632b9f2c42d5f7c32e9057e6eb4819f823a9d15",
+              "path": "assets/bf5fe3931f1ffb56b7c3f64ea632b9f2c42d5f7c32e9057e6eb4819f823a9d15.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 1,
+              "image_id": "3552c9a4132fd36b7a34766e76f5353cdc99044b8a72f90a990b09028fc350ac",
+              "path": "assets/3552c9a4132fd36b7a34766e76f5353cdc99044b8a72f90a990b09028fc350ac.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 2,
+              "image_id": "3cb5ea1496d9dadf4bdb6e84c698891cd887bf4fa31db661c81e0ff94c748d29",
+              "path": "assets/3cb5ea1496d9dadf4bdb6e84c698891cd887bf4fa31db661c81e0ff94c748d29.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C04:S01:F0",
+            "decision": "reject",
+            "routes": [],
+            "reason": "F0位于进入客厅的门洞处，视野内仅见进入同一开放客厅的单一路径；客厅内部虽宽敞，但左右及后方均未显示可通行的独立分支或侧向通道，不构成有效回退点。"
+          },
+          "elapsed_seconds": 4.179,
+          "image_count": 3,
+          "started_at": "2026-11-11T17:59:56.066121+00:00",
+          "completed_at": "2026-11-11T18:00:00.244128+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 1729,
+            "completion_tokens": 423,
+            "total_tokens": 2152,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 348
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 961
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S02",
+          "index": 5,
+          "value": 0.6016921314954458,
+          "rawScore": 0.55,
+          "kind": "plateau",
+          "drop": null,
+          "emittedAt": 10,
+          "delay": 5,
+          "candidate_id": "C04:S02:F5",
+          "ready_at_frame": 10,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 3,
+              "image_id": "cd7be4a7421190bbd53c5d11d3ad7eedf04d742b7e48584f6291ecd3c3e34c10",
+              "path": "assets/cd7be4a7421190bbd53c5d11d3ad7eedf04d742b7e48584f6291ecd3c3e34c10.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 4,
+              "image_id": "047e1b9c2bde23aeb1f8a635efb418499f84b6e5919f591f618991bf7a01ee4f",
+              "path": "assets/047e1b9c2bde23aeb1f8a635efb418499f84b6e5919f591f618991bf7a01ee4f.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 5,
+              "image_id": "c5adeaa131229d1c55cbf34cf2ec8d514690552a241fbea7e44e66cb3bad9298",
+              "path": "assets/c5adeaa131229d1c55cbf34cf2ec8d514690552a241fbea7e44e66cb3bad9298.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 6,
+              "image_id": "111969ff0c691b707fee6f48e10813501cd75e13b71be6012e093db7a965203b",
+              "path": "assets/111969ff0c691b707fee6f48e10813501cd75e13b71be6012e093db7a965203b.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 7,
+              "image_id": "9c296d2e94e0151b7887243a83b9a588f4bce63b5234066ba33458dd4bf2050b",
+              "path": "assets/9c296d2e94e0151b7887243a83b9a588f4bce63b5234066ba33458dd4bf2050b.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C04:S02:F5",
+            "decision": "reject",
+            "routes": [],
+            "reason": "F0位于一个开放式客厅中部，正前方为窗户，周围空间开阔，未发现近距离存在两条通往不同空间区域的具体通行路线，仅为同一开放区域内的移动，不符合回退点定义。"
+          },
+          "elapsed_seconds": 8.282,
+          "image_count": 5,
+          "started_at": "2026-11-11T17:59:56.338680+00:00",
+          "completed_at": "2026-11-11T18:00:04.620551+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 1244,
+            "total_tokens": 3373,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1176
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1361
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S03",
+          "index": 47,
+          "value": 0.7856971528395323,
+          "rawScore": 0.81,
+          "kind": "entry",
+          "drop": null,
+          "emittedAt": 52,
+          "delay": 5,
+          "candidate_id": "C04:S03:F47",
+          "ready_at_frame": 52,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 45,
+              "image_id": "5f2d87465c75608919ae0ba6f969416dcfc890afa8776ad7790f40c0d2532be6",
+              "path": "assets/5f2d87465c75608919ae0ba6f969416dcfc890afa8776ad7790f40c0d2532be6.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 46,
+              "image_id": "3b618c94c1755cef4a5e49c4f8399935111faf91cbd0fcfb61ad722c71ff59b2",
+              "path": "assets/3b618c94c1755cef4a5e49c4f8399935111faf91cbd0fcfb61ad722c71ff59b2.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 47,
+              "image_id": "c5a4efadf9c261c287fc2e6eb6c0d9b83b9ab273cacb17acd8e63ff3ec29a8d3",
+              "path": "assets/c5a4efadf9c261c287fc2e6eb6c0d9b83b9ab273cacb17acd8e63ff3ec29a8d3.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 48,
+              "image_id": "7324e26c22c623764fe0608740866c3a1bc0e3481098b550bd51f341379efe28",
+              "path": "assets/7324e26c22c623764fe0608740866c3a1bc0e3481098b550bd51f341379efe28.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 49,
+              "image_id": "5753d216a48ef5bd4ba71a9b7032e18a052e2164df968c61a33b40c33f2ed817",
+              "path": "assets/5753d216a48ef5bd4ba71a9b7032e18a052e2164df968c61a33b40c33f2ed817.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C04:S03:F47",
+            "decision": "keep",
+            "routes": [
+              {
+                "description": "F0前方偏左可见带木框的开放门洞，门洞内地面连续并通向有植物的侧室；F+1、F+2中该门洞仍清晰可见。",
+                "evidence_frames": [
+                  "F0",
+                  "F+1",
+                  "F+2"
+                ]
+              },
+              {
+                "description": "F0右侧有连续可通行地面，通向摆放餐桌椅和扶手椅的开放餐起居区域，与左侧门洞后的空间不同。",
+                "evidence_frames": [
+                  "F0",
+                  "F+1",
+                  "F+2"
+                ]
+              }
+            ],
+            "reason": "F0附近同时存在通向侧室的木框门洞和右侧开放的餐起居区域，具有两条具体可通行的不同路线。"
+          },
+          "elapsed_seconds": 18.701,
+          "image_count": 5,
+          "started_at": "2026-11-11T18:00:00.247125+00:00",
+          "completed_at": "2026-11-11T18:00:18.947947+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 2758,
+            "total_tokens": 4887,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2595
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1361
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S04",
+          "index": 52,
+          "value": 0.8384227027039666,
+          "rawScore": 0.84,
+          "kind": "plateau",
+          "drop": null,
+          "emittedAt": 57,
+          "delay": 5,
+          "candidate_id": "C04:S04:F52",
+          "ready_at_frame": 57,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 50,
+              "image_id": "10c956562e376631830f950eeafa89a1f0b739660a93e75e32fa8b99c8bc89b5",
+              "path": "assets/10c956562e376631830f950eeafa89a1f0b739660a93e75e32fa8b99c8bc89b5.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 51,
+              "image_id": "fd6c116754d65189cc676a9a9c094d3b631e3ef0e59f692d174ee9e60fd7d5ce",
+              "path": "assets/fd6c116754d65189cc676a9a9c094d3b631e3ef0e59f692d174ee9e60fd7d5ce.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 52,
+              "image_id": "e67c46cd0818534a4da4b972d1e4388b75fc0a01907b0778d54f7ab358cc420a",
+              "path": "assets/e67c46cd0818534a4da4b972d1e4388b75fc0a01907b0778d54f7ab358cc420a.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 53,
+              "image_id": "3e404f338c1429f53ada6f929e0253bc14feb55df3ba39df4f44528d3e5a575e",
+              "path": "assets/3e404f338c1429f53ada6f929e0253bc14feb55df3ba39df4f44528d3e5a575e.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 54,
+              "image_id": "bab07abd3b03c3b952ee6fd2fa92f2a21c1c413e583b3f4139b5123bfce37151",
+              "path": "assets/bab07abd3b03c3b952ee6fd2fa92f2a21c1c413e583b3f4139b5123bfce37151.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C04:S04:F52",
+            "decision": "keep",
+            "routes": [
+              {
+                "description": "左前方木框门洞通向带粉色窗帘的侧室，可见连续地面与门洞开口。",
+                "evidence_frames": [
+                  "F0",
+                  "F-1",
+                  "F+1"
+                ]
+              },
+              {
+                "description": "前方开放通道通向摆放餐桌椅的餐厨区域，可见可通行地面和与客厅相连的开口。",
+                "evidence_frames": [
+                  "F0",
+                  "F-1",
+                  "F+1"
+                ]
+              }
+            ],
+            "reason": "F0位于客厅开放区域，左前方门洞与前方餐厨开口分别通向不同空间，距离较近且均有地面和开口的几何证据，构成有效分支。"
+          },
+          "elapsed_seconds": 9.702,
+          "image_count": 5,
+          "started_at": "2026-11-11T18:00:02.004411+00:00",
+          "completed_at": "2026-11-11T18:00:11.705833+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 1339,
+            "total_tokens": 3468,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1193
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1361
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S05",
+          "index": 57,
+          "value": 0.7966913986127758,
+          "rawScore": 0.78,
+          "kind": "plateau",
+          "drop": null,
+          "emittedAt": 62,
+          "delay": 5,
+          "candidate_id": "C04:S05:F57",
+          "ready_at_frame": 62,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 55,
+              "image_id": "fdab1f383f6c87b10ac0fb3f402c4edaac77f3600204aa8c3e6a6a85a644dff9",
+              "path": "assets/fdab1f383f6c87b10ac0fb3f402c4edaac77f3600204aa8c3e6a6a85a644dff9.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 56,
+              "image_id": "8e7c56d8131e001157b71889c2c840379471ed58e7d7b931b00f8242508e7a4a",
+              "path": "assets/8e7c56d8131e001157b71889c2c840379471ed58e7d7b931b00f8242508e7a4a.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 57,
+              "image_id": "ffe991831c263d752b38260935651336da5171f7916e04df2356e95693b491fa",
+              "path": "assets/ffe991831c263d752b38260935651336da5171f7916e04df2356e95693b491fa.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 58,
+              "image_id": "2e78c2dd6aa43408c3c592d5289f79461aa71b4947c30ba6d28d6b20e7e8bb24",
+              "path": "assets/2e78c2dd6aa43408c3c592d5289f79461aa71b4947c30ba6d28d6b20e7e8bb24.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 59,
+              "image_id": "fd807e38e3643b88dd25b35775abd22cbd1147acdaae6483c206feaf1922cc53",
+              "path": "assets/fd807e38e3643b88dd25b35775abd22cbd1147acdaae6483c206feaf1922cc53.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C04:S05:F57",
+            "decision": "keep",
+            "routes": [
+              {
+                "description": "穿过前方左侧门洞进入粉色墙面、有植物的侧室；门洞与可通行地面连续可见。",
+                "evidence_frames": [
+                  "F-1",
+                  "F0",
+                  "F+1",
+                  "F+2"
+                ]
+              },
+              {
+                "description": "从右侧柜体/隔断旁进入餐桌所在的开阔餐区，地面连续可通行，并有窗户等空间特征。",
+                "evidence_frames": [
+                  "F-2",
+                  "F0",
+                  "F+1",
+                  "F+2"
+                ]
+              }
+            ],
+            "reason": "F0附近同时可见左侧门洞通往独立侧室，以及右侧连通餐桌区域的开阔地面，形成两条有具体几何依据的不同通行路线，且均位于短距离可达范围。"
+          },
+          "elapsed_seconds": 9.268,
+          "image_count": 5,
+          "started_at": "2026-11-11T18:00:04.622558+00:00",
+          "completed_at": "2026-11-11T18:00:13.890013+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 1187,
+            "total_tokens": 3316,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1025
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1361
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S06",
+          "index": 93,
+          "value": 0.8369566109085267,
+          "rawScore": 0.9,
+          "kind": "entry",
+          "drop": null,
+          "emittedAt": 98,
+          "delay": 5,
+          "candidate_id": "C04:S06:F93",
+          "ready_at_frame": 98,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 91,
+              "image_id": "a6a6db75d3bdd87773871c76a9617153399a5be6afa8b09dba5cbef2606cbff0",
+              "path": "assets/a6a6db75d3bdd87773871c76a9617153399a5be6afa8b09dba5cbef2606cbff0.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 92,
+              "image_id": "ad52d74a23f36fdd37d98e833dca9d605a6f5c9f364168d3efc493512a342a69",
+              "path": "assets/ad52d74a23f36fdd37d98e833dca9d605a6f5c9f364168d3efc493512a342a69.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 93,
+              "image_id": "a339db4e6be4c7ceaa603df2f70b60211edb67e85a98cbd2fe9b50a24f0c3aee",
+              "path": "assets/a339db4e6be4c7ceaa603df2f70b60211edb67e85a98cbd2fe9b50a24f0c3aee.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 94,
+              "image_id": "727bb64c815869b3d586d81f6331608d672f432885a5ce27754a9c82df9dc688",
+              "path": "assets/727bb64c815869b3d586d81f6331608d672f432885a5ce27754a9c82df9dc688.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 95,
+              "image_id": "5e61281b580477261128c3ff89ba7688b9f4a177035dcdd40a9de22aed5a77d2",
+              "path": "assets/5e61281b580477261128c3ff89ba7688b9f4a177035dcdd40a9de22aed5a77d2.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C04:S06:F93",
+            "decision": "keep",
+            "routes": [
+              {
+                "description": "从F0左侧宽门洞进入餐桌椅所在的餐厅/厨房区域，门洞与地面连续，构成一条可通行路线。",
+                "evidence_frames": [
+                  "F0",
+                  "F+1",
+                  "F+2"
+                ]
+              },
+              {
+                "description": "F+2左侧门框通向带粉色窗帘的相邻房间，门框和地面延伸可见，构成另一条可通行路线。",
+                "evidence_frames": [
+                  "F+2"
+                ]
+              }
+            ],
+            "reason": "F0附近存在两个不同空间入口：通往餐厅/厨房的宽门洞，以及左侧通往带粉色窗帘房间的门洞；两者均短距离可达，符合回退点定义。"
+          },
+          "elapsed_seconds": 26.926,
+          "image_count": 5,
+          "started_at": "2026-11-11T18:00:04.766712+00:00",
+          "completed_at": "2026-11-11T18:00:31.692861+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 3920,
+            "total_tokens": 6049,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3767
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1361
+          },
+          "response_model": "deepseek-flash"
+        }
+      ]
+    },
+    {
+      "case_number": 7,
+      "case_index": 6,
+      "episode_id": "kujiale_0113_18_1 · F70",
+      "real_episode_id": "kujiale_0113_18_1",
+      "frames": 97,
+      "nodes": [
+        {
+          "id": "S01",
+          "index": 0,
+          "value": 0.6309189774434417,
+          "rawScore": 0.67,
+          "kind": "initial",
+          "drop": null,
+          "emittedAt": 5,
+          "delay": 5,
+          "candidate_id": "C07:S01:F0",
+          "ready_at_frame": 5,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": -2,
+              "missing": true
+            },
+            {
+              "label": "F-1",
+              "frame": -1,
+              "missing": true
+            },
+            {
+              "label": "F0",
+              "frame": 0,
+              "image_id": "48343118ec09243945992c7151e3ec835883151da2643aa35a7540882635cf95",
+              "path": "assets/48343118ec09243945992c7151e3ec835883151da2643aa35a7540882635cf95.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 1,
+              "image_id": "6c46ecb256b248e6bafed2dadb50dee1ac6655513277613d12f7a0f7c4d75485",
+              "path": "assets/6c46ecb256b248e6bafed2dadb50dee1ac6655513277613d12f7a0f7c4d75485.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 2,
+              "image_id": "d60b4b03236b3d38f14b4cc33ed66775c77daa0400380576af0c1f04005c95e2",
+              "path": "assets/d60b4b03236b3d38f14b4cc33ed66775c77daa0400380576af0c1f04005c95e2.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C07:S01:F0",
+            "decision": "keep",
+            "routes": [
+              {
+                "description": "进入电视墙左侧的门洞，可见白色门框及通向内部空间的地面延伸。",
+                "evidence_frames": [
+                  "F0",
+                  "F+1",
+                  "F+2"
+                ]
+              },
+              {
+                "description": "继续沿客厅开放空间向前，通往画面右侧远处的餐厅入口，可见连续可通行地面和远处门洞。",
+                "evidence_frames": [
+                  "F0",
+                  "F+1",
+                  "F+2"
+                ]
+              }
+            ],
+            "reason": "F0附近电视墙左侧存在可通行的门洞入口，同时客厅开放空间可继续向前通往远处餐厅入口，构成两条不同空间路线的选择。"
+          },
+          "elapsed_seconds": 17.832,
+          "image_count": 3,
+          "started_at": "2026-11-11T18:00:11.707805+00:00",
+          "completed_at": "2026-11-11T18:00:29.540005+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 1729,
+            "completion_tokens": 2450,
+            "total_tokens": 4179,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2309
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 961
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S02",
+          "index": 5,
+          "value": 0.5930549893678886,
+          "rawScore": 0.67,
+          "kind": "peak",
+          "drop": 0.03761236624444475,
+          "emittedAt": 10,
+          "delay": 5,
+          "candidate_id": "C07:S02:F5",
+          "ready_at_frame": 10,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 3,
+              "image_id": "28aca5a4f47a28998cd36a272afb8ad0a65dfe7a0f9346a1aacf4552612e6121",
+              "path": "assets/28aca5a4f47a28998cd36a272afb8ad0a65dfe7a0f9346a1aacf4552612e6121.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 4,
+              "image_id": "c7ac63229a2adc4f3b87a850d9f43f5f7ce8ab2992a6a3f115a6f8d1809c6b57",
+              "path": "assets/c7ac63229a2adc4f3b87a850d9f43f5f7ce8ab2992a6a3f115a6f8d1809c6b57.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 5,
+              "image_id": "f44011af8604badb365d12a2020805835eb12abf83fb1d4e957402f7ab900ec5",
+              "path": "assets/f44011af8604badb365d12a2020805835eb12abf83fb1d4e957402f7ab900ec5.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 6,
+              "image_id": "694ad57ac9ef49ac2825a4dede95ce24adf046e1906eb6d6aac0831c79c76141",
+              "path": "assets/694ad57ac9ef49ac2825a4dede95ce24adf046e1906eb6d6aac0831c79c76141.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 7,
+              "image_id": "ad0fddbb36c2c15b90cf04c6e7075d991221bb5bf43464321b9fa3252711c111",
+              "path": "assets/ad0fddbb36c2c15b90cf04c6e7075d991221bb5bf43464321b9fa3252711c111.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C07:S02:F5",
+            "decision": "reject",
+            "routes": [
+              {
+                "description": "从F0向左前方沿客厅连续地面前进，可到达远处的宽门洞并进入相邻房间。",
+                "evidence_frames": [
+                  "F-2",
+                  "F-1",
+                  "F0"
+                ]
+              }
+            ],
+            "reason": "F0附近右侧为书架、墙垛和红帘装饰，底部有台面植物，未见可通行开口；左侧仅有一条客厅主通道通向远处门洞，不构成两条不同路线。"
+          },
+          "elapsed_seconds": 22.418,
+          "image_count": 5,
+          "started_at": "2026-11-11T18:00:13.425098+00:00",
+          "completed_at": "2026-11-11T18:00:35.844301+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 2808,
+            "total_tokens": 4937,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2699
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1361
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S03",
+          "index": 20,
+          "value": 0.6579395288869709,
+          "rawScore": 0.64,
+          "kind": "entry",
+          "drop": null,
+          "emittedAt": 25,
+          "delay": 5,
+          "candidate_id": "C07:S03:F20",
+          "ready_at_frame": 25,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 18,
+              "image_id": "6c472f69d2f36bb61a1904de6f0d829d9b7606bf0a496e08626589194417ab8b",
+              "path": "assets/6c472f69d2f36bb61a1904de6f0d829d9b7606bf0a496e08626589194417ab8b.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 19,
+              "image_id": "c54d29a201656c1ed38e642d919932f56726420698d780ef65b986483b42b7ef",
+              "path": "assets/c54d29a201656c1ed38e642d919932f56726420698d780ef65b986483b42b7ef.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 20,
+              "image_id": "459d710575050dd925b7f70cc684bfc06212262ed1f93b0484074a5cf7fc54d4",
+              "path": "assets/459d710575050dd925b7f70cc684bfc06212262ed1f93b0484074a5cf7fc54d4.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 21,
+              "image_id": "ee03d4782479f48deec1f9c7958408c4bf67ccbd565e0f466986f278c16e10e0",
+              "path": "assets/ee03d4782479f48deec1f9c7958408c4bf67ccbd565e0f466986f278c16e10e0.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 22,
+              "image_id": "5b8d476d170006eb7a40d706aae17eddd38c93dbe567a9ec36501bb6d221cd28",
+              "path": "assets/5b8d476d170006eb7a40d706aae17eddd38c93dbe567a9ec36501bb6d221cd28.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C07:S03:F20",
+            "decision": "reject",
+            "routes": [],
+            "reason": "F0位于客厅入口处，红色帘墙/瓷砖柱与白色置物架之间仅形成一个通往客厅的单一开口；附近未见另一条有视觉依据的可通行分支，背景中的远处门洞不能作为F0附近的回退分叉。"
+          },
+          "elapsed_seconds": 15.945,
+          "image_count": 5,
+          "started_at": "2026-11-11T18:00:13.892013+00:00",
+          "completed_at": "2026-11-11T18:00:29.837431+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 2163,
+            "total_tokens": 4292,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2085
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1361
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S04",
+          "index": 25,
+          "value": 0.5984568233222676,
+          "rawScore": 0.6,
+          "kind": "plateau",
+          "drop": null,
+          "emittedAt": 30,
+          "delay": 5,
+          "candidate_id": "C07:S04:F25",
+          "ready_at_frame": 30,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 23,
+              "image_id": "bfe1e7fa8d7e7dd6363ad859485450ec569899a4aa1c8c850805bb86cd922994",
+              "path": "assets/bfe1e7fa8d7e7dd6363ad859485450ec569899a4aa1c8c850805bb86cd922994.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 24,
+              "image_id": "aa2a24f28076920eec5ef0721e8b3d3dede601afa7785925da5f22de41568d51",
+              "path": "assets/aa2a24f28076920eec5ef0721e8b3d3dede601afa7785925da5f22de41568d51.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 25,
+              "image_id": "405c67fbd90f7688c4ae2569e9cda975e422671f2322449a913ec0087d3fc04d",
+              "path": "assets/405c67fbd90f7688c4ae2569e9cda975e422671f2322449a913ec0087d3fc04d.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 26,
+              "image_id": "369e095a64a95a06998ec17732b4092d28b910b55a21ace4379ab5b974e47cb9",
+              "path": "assets/369e095a64a95a06998ec17732b4092d28b910b55a21ace4379ab5b974e47cb9.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 27,
+              "image_id": "1b35670203860606a8a39916b106a57d14b169091e4c638bc8f4352a986f0422",
+              "path": "assets/1b35670203860606a8a39916b106a57d14b169091e4c638bc8f4352a986f0422.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C07:S04:F25",
+            "decision": "reject",
+            "routes": [],
+            "reason": "F0附近可见的是进入客厅并继续通往远处餐厅门洞的单一开放通道；左侧近景的墙面、绿植和地面材质变化不构成可通行的第二分支，远处餐厅门洞也不在候选位置近旁。"
+          },
+          "elapsed_seconds": 32.803,
+          "image_count": 5,
+          "started_at": "2026-11-11T18:02:22.878353+00:00",
+          "completed_at": "2026-11-11T18:02:55.681407+00:00",
+          "attempts": 2,
+          "request_settings": {
+            "model": "deepseek-flash",
+            "response_format": {
+              "type": "json_object"
+            },
+            "thinking": {
+              "type": "enabled"
+            },
+            "reasoning_effort": "high",
+            "max_tokens": 32768,
+            "stream": false
+          },
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 4586,
+            "total_tokens": 6715,
+            "prompt_tokens_details": {
+              "cached_tokens": 1920
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 4511
+            },
+            "prompt_cache_hit_tokens": 1920,
+            "prompt_cache_miss_tokens": 209
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S05",
+          "index": 30,
+          "value": 0.5476402603339411,
+          "rawScore": 0.56,
+          "kind": "plateau",
+          "drop": null,
+          "emittedAt": 35,
+          "delay": 5,
+          "candidate_id": "C07:S05:F30",
+          "ready_at_frame": 35,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 28,
+              "image_id": "26bfc20d733a90a4d78de8bdaccd9ebd99ac2b68d40f09c0ef4d5f095d7899f5",
+              "path": "assets/26bfc20d733a90a4d78de8bdaccd9ebd99ac2b68d40f09c0ef4d5f095d7899f5.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 29,
+              "image_id": "da7022dfe799429c5b32213c75e444f71b57aa3a1c608087b5ea18d4c465db88",
+              "path": "assets/da7022dfe799429c5b32213c75e444f71b57aa3a1c608087b5ea18d4c465db88.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 30,
+              "image_id": "c685211f6e7a568999fffa0a79ad5de8b1b73963fb3f4874d1153e375e036e71",
+              "path": "assets/c685211f6e7a568999fffa0a79ad5de8b1b73963fb3f4874d1153e375e036e71.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 31,
+              "image_id": "9bbf0ae3af2321a9c4679fca3ea7dc41555614226a190c537a6ee4a201850d7b",
+              "path": "assets/9bbf0ae3af2321a9c4679fca3ea7dc41555614226a190c537a6ee4a201850d7b.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 32,
+              "image_id": "1ead47f398229d3ce1bc7799d6e9f7d5b5f46e44caadaaedbd7aa86257ec8111",
+              "path": "assets/1ead47f398229d3ce1bc7799d6e9f7d5b5f46e44caadaaedbd7aa86257ec8111.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C07:S05:F30",
+            "decision": "reject",
+            "routes": [
+              {
+                "description": "客厅通过背景处的开阔门洞通向相邻餐厅区域，该门洞在 F0、F+1、F+2 中可见连续的墙面开口与地面衔接",
+                "evidence_frames": [
+                  "F0",
+                  "F+1",
+                  "F+2"
+                ]
+              }
+            ],
+            "reason": "F0 位置是客厅与餐厅贯通的开放区域，除通往餐厅的单一路线外，图像中未见其他与地面相连的走廊入口或门洞；由于缺少第二条有效路线，不满足回退点要求。"
+          },
+          "elapsed_seconds": 13.271,
+          "image_count": 5,
+          "started_at": "2026-11-11T18:00:15.210532+00:00",
+          "completed_at": "2026-11-11T18:00:28.482360+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 1561,
+            "total_tokens": 3690,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1433
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1361
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S06",
+          "index": 35,
+          "value": 0.5341966955423822,
+          "rawScore": 0.53,
+          "kind": "plateau",
+          "drop": null,
+          "emittedAt": 40,
+          "delay": 5,
+          "candidate_id": "C07:S06:F35",
+          "ready_at_frame": 40,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 33,
+              "image_id": "392a1ff531c50d41f6e9f667e1918dd4e897357aea9471ec94c51ae4caef6880",
+              "path": "assets/392a1ff531c50d41f6e9f667e1918dd4e897357aea9471ec94c51ae4caef6880.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 34,
+              "image_id": "8b2af15ca19a88476006d35f356a53011895716fb0fda6a3cd677316d960326e",
+              "path": "assets/8b2af15ca19a88476006d35f356a53011895716fb0fda6a3cd677316d960326e.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 35,
+              "image_id": "c0ef38959381c8a4147fce3bd990f257f692b38328e086b8bb4a6e83703abefc",
+              "path": "assets/c0ef38959381c8a4147fce3bd990f257f692b38328e086b8bb4a6e83703abefc.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 36,
+              "image_id": "bd82376c3f73f5f425fa9943ab54e22687f7e03d01ec5e309e1e73c7a029fb7c",
+              "path": "assets/bd82376c3f73f5f425fa9943ab54e22687f7e03d01ec5e309e1e73c7a029fb7c.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 37,
+              "image_id": "5cc1d423c08f4d7d1d2911958388f5a1e7c5fa25b971588812d4d22d6dcda473",
+              "path": "assets/5cc1d423c08f4d7d1d2911958388f5a1e7c5fa25b971588812d4d22d6dcda473.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C07:S06:F35",
+            "decision": "reject",
+            "routes": [
+              {
+                "description": "沿客厅地面向前，经远处带门框的开口进入有桌椅的房间；这是当前可见的单一通道。",
+                "evidence_frames": [
+                  "F-2",
+                  "F-1",
+                  "F0",
+                  "F+1",
+                  "F+2"
+                ]
+              }
+            ],
+            "reason": "F0附近可见的路线只有沿客厅向前进入远处房间，左侧电视墙和右侧沙发区域不构成不同空间分支；远处开口需继续沿唯一通道前进，不能作为附近回退点。"
+          },
+          "elapsed_seconds": 11.682,
+          "image_count": 5,
+          "started_at": "2026-11-11T18:00:18.950940+00:00",
+          "completed_at": "2026-11-11T18:00:30.632355+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 1358,
+            "total_tokens": 3487,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1238
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1361
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S07",
+          "index": 40,
+          "value": 0.4798827932961792,
+          "rawScore": 0.47,
+          "kind": "plateau",
+          "drop": null,
+          "emittedAt": 45,
+          "delay": 5,
+          "candidate_id": "C07:S07:F40",
+          "ready_at_frame": 45,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 38,
+              "image_id": "a05f82b12d90b4d9248487ace5f9b9c70dd238f4f6bd9d4893d8723f4228cc17",
+              "path": "assets/a05f82b12d90b4d9248487ace5f9b9c70dd238f4f6bd9d4893d8723f4228cc17.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 39,
+              "image_id": "b5cac851f18a9e454ee5724bfa80925f4a4060a2ab683a379ef8156c49282110",
+              "path": "assets/b5cac851f18a9e454ee5724bfa80925f4a4060a2ab683a379ef8156c49282110.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 40,
+              "image_id": "5dc6191d6ad13653e1c08528e76643d211f9688441cf0e127bee89317211a2a2",
+              "path": "assets/5dc6191d6ad13653e1c08528e76643d211f9688441cf0e127bee89317211a2a2.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 41,
+              "image_id": "496d91c3402c102c077538b44e28a9da10e887cc89fd1ccf7634099b1799194f",
+              "path": "assets/496d91c3402c102c077538b44e28a9da10e887cc89fd1ccf7634099b1799194f.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 42,
+              "image_id": "9415e35c2280c1225060d9c2c42ca1abe16d8275b9d02cba9fbba7426c8cad8b",
+              "path": "assets/9415e35c2280c1225060d9c2c42ca1abe16d8275b9d02cba9fbba7426c8cad8b.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C07:S07:F40",
+            "decision": "reject",
+            "routes": [
+              {
+                "description": "沿当前客厅通道向前，穿过前方门洞进入餐厅区域；门洞与地面连续，是可见的唯一前进路线。",
+                "evidence_frames": [
+                  "F0",
+                  "F+1",
+                  "F+2"
+                ]
+              }
+            ],
+            "reason": "F0附近左侧为电视墙，右侧为沙发和茶几占据，前方仅有通往餐厅的门洞这一条可通行路线，未发现短距离可达的其他分支。"
+          },
+          "elapsed_seconds": 5.664,
+          "image_count": 5,
+          "started_at": "2026-11-11T18:00:22.264337+00:00",
+          "completed_at": "2026-11-11T18:00:27.928249+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 573,
+            "total_tokens": 2702,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 467
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1361
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S08",
+          "index": 45,
+          "value": 0.48495917493889246,
+          "rawScore": 0.48,
+          "kind": "plateau",
+          "drop": null,
+          "emittedAt": 50,
+          "delay": 5,
+          "candidate_id": "C07:S08:F45",
+          "ready_at_frame": 50,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 43,
+              "image_id": "1967c0b3e928e6ef7c89966a0697e356ab62d57ca422b317cc0d2fdcf9c7325c",
+              "path": "assets/1967c0b3e928e6ef7c89966a0697e356ab62d57ca422b317cc0d2fdcf9c7325c.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 44,
+              "image_id": "c7c0f4e5305d07c40ff44c26c4c5e7fa29801f9ee5c32ee243a49342d5796f9c",
+              "path": "assets/c7c0f4e5305d07c40ff44c26c4c5e7fa29801f9ee5c32ee243a49342d5796f9c.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 45,
+              "image_id": "02a7d8c08b8a2e524cf315738ed307da052fce14c5650cadfd7857e08d4f96f0",
+              "path": "assets/02a7d8c08b8a2e524cf315738ed307da052fce14c5650cadfd7857e08d4f96f0.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 46,
+              "image_id": "ee631d3b72bb946db7423810069215d47eae9f8f058ac510f7bd4d56b267e44c",
+              "path": "assets/ee631d3b72bb946db7423810069215d47eae9f8f058ac510f7bd4d56b267e44c.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 47,
+              "image_id": "c32c25bd58c79424a9097333c5d606a69651e4bac6df9353e40defeb37cd1e96",
+              "path": "assets/c32c25bd58c79424a9097333c5d606a69651e4bac6df9353e40defeb37cd1e96.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C07:S08:F45",
+            "decision": "reject",
+            "routes": [
+              {
+                "description": "仅有一条向前穿过门洞进入餐厅区域的通道，门洞前为单一连通地面，未见可向侧面延伸的可通行开口。",
+                "evidence_frames": [
+                  "F0",
+                  "F+1",
+                  "F+2"
+                ]
+              }
+            ],
+            "reason": "F0附近只能沿当前通道继续前往前方门洞，左侧为柜体/黑色装饰面，右侧为沙发及墙面，均未见可通行的不同分支，因此不符合回退点定义。"
+          },
+          "elapsed_seconds": 5.91,
+          "image_count": 5,
+          "started_at": "2026-11-11T18:00:27.929251+00:00",
+          "completed_at": "2026-11-11T18:00:33.839016+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 647,
+            "total_tokens": 2776,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 531
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1361
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S09",
+          "index": 50,
+          "value": 0.5483066504361591,
+          "rawScore": 0.56,
+          "kind": "plateau",
+          "drop": null,
+          "emittedAt": 55,
+          "delay": 5,
+          "candidate_id": "C07:S09:F50",
+          "ready_at_frame": 55,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 48,
+              "image_id": "b6519e7c23609a7c38a601535fcd505e5d25db778fe4f2c6411a3022aab50434",
+              "path": "assets/b6519e7c23609a7c38a601535fcd505e5d25db778fe4f2c6411a3022aab50434.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 49,
+              "image_id": "6bf2b92a1fef5247cd4b49d7f9a7f392e579fd23fc6a376a3635e3a797d766fe",
+              "path": "assets/6bf2b92a1fef5247cd4b49d7f9a7f392e579fd23fc6a376a3635e3a797d766fe.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 50,
+              "image_id": "457a454b0e9fac4d659f3eb7ee463c9b25870363f834acc910a28ef745ceb822",
+              "path": "assets/457a454b0e9fac4d659f3eb7ee463c9b25870363f834acc910a28ef745ceb822.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 51,
+              "image_id": "841f976ff7eb7f161586ee725674f52b9565effccaf3f5cae9692f3ab508b904",
+              "path": "assets/841f976ff7eb7f161586ee725674f52b9565effccaf3f5cae9692f3ab508b904.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 52,
+              "image_id": "a5b2d07261ef37793167af53030954bbeea9849648dcfb9c2cc1bea0c2cd326f",
+              "path": "assets/a5b2d07261ef37793167af53030954bbeea9849648dcfb9c2cc1bea0c2cd326f.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C07:S09:F50",
+            "decision": "reject",
+            "routes": [
+              {
+                "description": "从F0向前穿过中央宽门洞进入餐厅区域",
+                "evidence_frames": [
+                  "F-2",
+                  "F-1",
+                  "F0",
+                  "F+1",
+                  "F+2"
+                ]
+              }
+            ],
+            "reason": "F0附近可见的可通行结构只有正前方一个宽门洞，左侧为封闭墙或门板，右侧为沙发和带装饰墙的边界，未发现短距离可达的第二条不同路线；餐厅内远端开口需要先经过这一唯一通道，不能作为F0处的有效分支。"
+          },
+          "elapsed_seconds": 18.465,
+          "image_count": 5,
+          "started_at": "2026-11-11T18:00:28.484512+00:00",
+          "completed_at": "2026-11-11T18:00:46.949089+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 2543,
+            "total_tokens": 4672,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2416
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1361
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S10",
+          "index": 55,
+          "value": 0.5699807083170243,
+          "rawScore": 0.54,
+          "kind": "plateau",
+          "drop": null,
+          "emittedAt": 60,
+          "delay": 5,
+          "candidate_id": "C07:S10:F55",
+          "ready_at_frame": 60,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 53,
+              "image_id": "a17b735429b280e7307c356e559ca385469c9792d17889c33a79fc4abe6b7bbb",
+              "path": "assets/a17b735429b280e7307c356e559ca385469c9792d17889c33a79fc4abe6b7bbb.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 54,
+              "image_id": "9ee30ee086da8f7e443a07642a0ec89cb820855ac7ceb5cbd261cb8143e6d535",
+              "path": "assets/9ee30ee086da8f7e443a07642a0ec89cb820855ac7ceb5cbd261cb8143e6d535.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 55,
+              "image_id": "92d57eecf44a89e846b28aeb7303cc67b173fe5b0d75e6f42e384de541fdaa0e",
+              "path": "assets/92d57eecf44a89e846b28aeb7303cc67b173fe5b0d75e6f42e384de541fdaa0e.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 56,
+              "image_id": "320d64ee47a4242648ee165d97c9f010abc39ca30872761fffebbf8de7c0010f",
+              "path": "assets/320d64ee47a4242648ee165d97c9f010abc39ca30872761fffebbf8de7c0010f.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 57,
+              "image_id": "e71fc1b1dc76ddde9d28bfe073070538c00e07c9fd000ba52f6b78ac621aba9d",
+              "path": "assets/e71fc1b1dc76ddde9d28bfe073070538c00e07c9fd000ba52f6b78ac621aba9d.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C07:S10:F55",
+            "decision": "keep",
+            "routes": [
+              {
+                "description": "前方宽大开口通向有圆桌的餐厅区域，地面连续可通行。",
+                "evidence_frames": [
+                  "F0",
+                  "F-1",
+                  "F+1"
+                ]
+              },
+              {
+                "description": "左侧金色隔断旁可见白色门框状开口，通向有灰色物体的侧边空间。",
+                "evidence_frames": [
+                  "F0",
+                  "F+1",
+                  "F+2"
+                ]
+              }
+            ],
+            "reason": "F0处前方有明确开口进入餐厅，左侧金色隔断旁也可见另一通道入口，两者均在候选位置附近短距离可达，构成不同路线选择。"
+          },
+          "elapsed_seconds": 8.524,
+          "image_count": 5,
+          "started_at": "2026-11-11T18:00:29.542011+00:00",
+          "completed_at": "2026-11-11T18:00:38.066406+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 1130,
+            "total_tokens": 3259,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 994
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1361
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S11",
+          "index": 60,
+          "value": 0.9067205734447057,
+          "rawScore": 0.92,
+          "kind": "plateau",
+          "drop": null,
+          "emittedAt": 65,
+          "delay": 5,
+          "candidate_id": "C07:S11:F60",
+          "ready_at_frame": 65,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 58,
+              "image_id": "f927e9c2429ff5df3f0223807e7672ad53f18ccdf7bac30d69b47290a93c451a",
+              "path": "assets/f927e9c2429ff5df3f0223807e7672ad53f18ccdf7bac30d69b47290a93c451a.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 59,
+              "image_id": "3367510875ca7a3594ff69055dbde929b51a6bbd11083ce55e090e7b88e3ba10",
+              "path": "assets/3367510875ca7a3594ff69055dbde929b51a6bbd11083ce55e090e7b88e3ba10.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 60,
+              "image_id": "a34e10b24fdcfcc76eb7d6c3921c229f9393f0d9bf9289bd8d42307394fce455",
+              "path": "assets/a34e10b24fdcfcc76eb7d6c3921c229f9393f0d9bf9289bd8d42307394fce455.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 61,
+              "image_id": "3dab4baaa5732e66dc5841899e3af26b7e8b39abe12a1821c8b24e1737497dd8",
+              "path": "assets/3dab4baaa5732e66dc5841899e3af26b7e8b39abe12a1821c8b24e1737497dd8.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 62,
+              "image_id": "ce85787d068bdeef62d8f0a68671beaaa1ef96dcf4ed6d66837c17a509373df5",
+              "path": "assets/ce85787d068bdeef62d8f0a68671beaaa1ef96dcf4ed6d66837c17a509373df5.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C07:S11:F60",
+            "decision": "keep",
+            "routes": [
+              {
+                "description": "从 F0 正前方的宽门洞进入餐厅/厨房区域，门洞与地面连续，内部可见餐桌椅和可通行地面。",
+                "evidence_frames": [
+                  "F-1",
+                  "F0",
+                  "F+1"
+                ]
+              },
+              {
+                "description": "从 F0 左侧的独立门洞进入卧室，门洞与地面连接，内部可见床和可通行地面。",
+                "evidence_frames": [
+                  "F0",
+                  "F+1",
+                  "F+2"
+                ]
+              }
+            ],
+            "reason": "F0 附近存在两个相邻且均可短距离到达的通行入口：正前方通往餐厅/厨房，左侧通往卧室，构成实际的不同路线选择。"
+          },
+          "elapsed_seconds": 6.601,
+          "image_count": 5,
+          "started_at": "2026-11-11T18:00:29.839430+00:00",
+          "completed_at": "2026-11-11T18:00:36.439843+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 853,
+            "total_tokens": 2982,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 700
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1361
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S12",
+          "index": 65,
+          "value": 0.9265673806230438,
+          "rawScore": 0.92,
+          "kind": "plateau",
+          "drop": null,
+          "emittedAt": 70,
+          "delay": 5,
+          "candidate_id": "C07:S12:F65",
+          "ready_at_frame": 70,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 63,
+              "image_id": "5e01d02517da456593026e83770cc13f8cdad9bb8855dd446362d6e30284fbb6",
+              "path": "assets/5e01d02517da456593026e83770cc13f8cdad9bb8855dd446362d6e30284fbb6.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 64,
+              "image_id": "de4323c56a38f9007aa433676e0d8da5b7149f9f4bba80910875378a4452411f",
+              "path": "assets/de4323c56a38f9007aa433676e0d8da5b7149f9f4bba80910875378a4452411f.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 65,
+              "image_id": "d1b5c1b8bd5a8689478ba81a1363cc8ca87004742467d104a153a9e7127a5f22",
+              "path": "assets/d1b5c1b8bd5a8689478ba81a1363cc8ca87004742467d104a153a9e7127a5f22.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 66,
+              "image_id": "71e097135801d4a1f7ce9e5789af090be1bb55b62207224b981c560f89ad4c76",
+              "path": "assets/71e097135801d4a1f7ce9e5789af090be1bb55b62207224b981c560f89ad4c76.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 67,
+              "image_id": "4f2e303bf7a0fed39941c300615e0deaf0ceb85dd87444a300ea971a7e9eb036",
+              "path": "assets/4f2e303bf7a0fed39941c300615e0deaf0ceb85dd87444a300ea971a7e9eb036.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C07:S12:F65",
+            "decision": "keep",
+            "routes": [
+              {
+                "description": "从F0左侧带门洞的开口进入卧室，门洞内可见床铺与连续地面，构成一条独立通行路线。",
+                "evidence_frames": [
+                  "F-1",
+                  "F0",
+                  "F+1"
+                ]
+              },
+              {
+                "description": "从F0正前方宽开口进入餐桌所在的公共区域，地面连续延伸，构成另一条通行路线。",
+                "evidence_frames": [
+                  "F0",
+                  "F+1"
+                ]
+              }
+            ],
+            "reason": "F0附近可见左侧卧室入口和正前方通向餐桌区域的宽开口，两者均短距离可达并通往不同空间区域，符合回退点定义。"
+          },
+          "elapsed_seconds": 7.95,
+          "image_count": 5,
+          "started_at": "2026-11-11T18:00:30.634354+00:00",
+          "completed_at": "2026-11-11T18:00:38.584111+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 1013,
+            "total_tokens": 3142,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 869
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1361
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S13",
+          "index": 70,
+          "value": 0.9289476557927528,
+          "rawScore": 0.92,
+          "kind": "plateau",
+          "drop": null,
+          "emittedAt": 75,
+          "delay": 5,
+          "candidate_id": "C07:S13:F70",
+          "ready_at_frame": 75,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 68,
+              "image_id": "03fde60383560a85ed264112f8a673b00c6499e1e0a436708e9a93ae6621d737",
+              "path": "assets/03fde60383560a85ed264112f8a673b00c6499e1e0a436708e9a93ae6621d737.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 69,
+              "image_id": "04625daa630f32e35864d09f6346ffdb03f73bc96034a8955acf6f5b18d8eff0",
+              "path": "assets/04625daa630f32e35864d09f6346ffdb03f73bc96034a8955acf6f5b18d8eff0.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 70,
+              "image_id": "641dd41241441d53f2a5fcea0b8857b6b3d206832c95673640cc3fae40da58ee",
+              "path": "assets/641dd41241441d53f2a5fcea0b8857b6b3d206832c95673640cc3fae40da58ee.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 71,
+              "image_id": "ba33d342e513554505f1e3d4bda8f16b5af4d87251672357c235e8c3650098b3",
+              "path": "assets/ba33d342e513554505f1e3d4bda8f16b5af4d87251672357c235e8c3650098b3.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 72,
+              "image_id": "86faab9bcb52e35eb288635c78a9d49c8ba4dc9ecc87bb136b405d00433e6fbf",
+              "path": "assets/86faab9bcb52e35eb288635c78a9d49c8ba4dc9ecc87bb136b405d00433e6fbf.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C07:S13:F70",
+            "decision": "keep",
+            "routes": [
+              {
+                "description": "左侧卧室门洞：可见门框和向室内延伸的可通行地面，通向卧室区域。",
+                "evidence_frames": [
+                  "F-1",
+                  "F0",
+                  "F+1",
+                  "F+2"
+                ]
+              },
+              {
+                "description": "右侧开放餐厅入口：地面连续向餐厅区域延伸，可见餐桌椅，可进入另一空间区域。",
+                "evidence_frames": [
+                  "F-2",
+                  "F-1",
+                  "F0",
+                  "F+1"
+                ]
+              }
+            ],
+            "reason": "F0位于左侧卧室门洞与右侧餐厅开放入口之间的近处分叉位置，两侧均有明确可通行地面和空间开口，短距离内可选择进入卧室或前往餐厅，符合回退点定义。"
+          },
+          "elapsed_seconds": 7.955,
+          "image_count": 5,
+          "started_at": "2026-11-11T18:00:31.695371+00:00",
+          "completed_at": "2026-11-11T18:00:39.649949+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 1058,
+            "total_tokens": 3187,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 900
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1361
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S14",
+          "index": 75,
+          "value": 0.8859891178320058,
+          "rawScore": 0.9,
+          "kind": "plateau",
+          "drop": null,
+          "emittedAt": 80,
+          "delay": 5,
+          "candidate_id": "C07:S14:F75",
+          "ready_at_frame": 80,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 73,
+              "image_id": "43c783e84ec05f641580b7828f3887d559c82edd212aa648195b3a2f0427a2d7",
+              "path": "assets/43c783e84ec05f641580b7828f3887d559c82edd212aa648195b3a2f0427a2d7.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 74,
+              "image_id": "2a0bcff884b93578c2322d5e81fbc66b3694a42d28e75b679676575dfde670ea",
+              "path": "assets/2a0bcff884b93578c2322d5e81fbc66b3694a42d28e75b679676575dfde670ea.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 75,
+              "image_id": "e2c25d6bba942423f97c05af049088db1ffc7cd4b54c2b937dd7e1122f06975a",
+              "path": "assets/e2c25d6bba942423f97c05af049088db1ffc7cd4b54c2b937dd7e1122f06975a.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 76,
+              "image_id": "329c3a2a333298f2f762ccfaffcef1aebf7d4d0d0e9a21744338796293d0b4e8",
+              "path": "assets/329c3a2a333298f2f762ccfaffcef1aebf7d4d0d0e9a21744338796293d0b4e8.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 77,
+              "image_id": "33154ad238468448cb8a31273c3be2ca20f31bf067acf37435ca1b3934f4aa97",
+              "path": "assets/33154ad238468448cb8a31273c3be2ca20f31bf067acf37435ca1b3934f4aa97.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C07:S14:F75",
+            "decision": "keep",
+            "routes": [
+              {
+                "description": "正前方卧室门洞与室内地面连续，可经门洞进入卧室。",
+                "evidence_frames": [
+                  "F-1",
+                  "F0",
+                  "F+1"
+                ]
+              },
+              {
+                "description": "门框右侧可见与走廊相连的开敞区域/相邻起居空间，F-2、F-1中可见座椅及可通行地面延伸，构成另一条路线。",
+                "evidence_frames": [
+                  "F-2",
+                  "F-1"
+                ]
+              }
+            ],
+            "reason": "F0附近正前方有明确的卧室入口，同时前一帧显示门框右侧另有近距离可达的相邻开敞空间，存在进入卧室或转向右侧区域两种通行选择。"
+          },
+          "elapsed_seconds": 40.416,
+          "image_count": 5,
+          "started_at": "2026-11-11T18:00:33.711712+00:00",
+          "completed_at": "2026-11-11T18:01:14.127779+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 5966,
+            "total_tokens": 8095,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 5815
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1361
+          },
+          "response_model": "deepseek-flash"
+        },
+        {
+          "id": "S15",
+          "index": 80,
+          "value": 0.6034148912277579,
+          "rawScore": 0.6,
+          "kind": "plateau",
+          "drop": null,
+          "emittedAt": 85,
+          "delay": 5,
+          "candidate_id": "C07:S15:F80",
+          "ready_at_frame": 85,
+          "images": [
+            {
+              "label": "F-2",
+              "frame": 78,
+              "image_id": "340c407553801440759c6bfdfa0aac56c61322934c9f1e96beeac18b27326be8",
+              "path": "assets/340c407553801440759c6bfdfa0aac56c61322934c9f1e96beeac18b27326be8.webp"
+            },
+            {
+              "label": "F-1",
+              "frame": 79,
+              "image_id": "42cb64bcdcb4322767b6c251a2741ec2248c40f4b3da452ffcf21dcc9a92fe7f",
+              "path": "assets/42cb64bcdcb4322767b6c251a2741ec2248c40f4b3da452ffcf21dcc9a92fe7f.webp"
+            },
+            {
+              "label": "F0",
+              "frame": 80,
+              "image_id": "91b27e309f6d340608c4404f97d57ce261be132b09b9b817bcb90b422c639281",
+              "path": "assets/91b27e309f6d340608c4404f97d57ce261be132b09b9b817bcb90b422c639281.webp"
+            },
+            {
+              "label": "F+1",
+              "frame": 81,
+              "image_id": "54f82ee98c9feccacabfe669e2ea7a49d86ca3f1a18cb972a23d2d74a9a5c336",
+              "path": "assets/54f82ee98c9feccacabfe669e2ea7a49d86ca3f1a18cb972a23d2d74a9a5c336.webp"
+            },
+            {
+              "label": "F+2",
+              "frame": 82,
+              "image_id": "b3c87dee0fc3d6564e10227b407309c0415cfc861317a4f2f59b6a3f1ec99885",
+              "path": "assets/b3c87dee0fc3d6564e10227b407309c0415cfc861317a4f2f59b6a3f1ec99885.webp"
+            }
+          ],
+          "status": "ok",
+          "answer": {
+            "candidate_id": "C07:S15:F80",
+            "decision": "reject",
+            "routes": [],
+            "reason": "F0位于普通卧室门洞处，F+1/F+2显示卧室内为单一封闭空间，除进入卧室外没有可见的第二条有效通行路线；门外左侧仅有画墙，未显示可继续通往不同区域的分支。"
+          },
+          "elapsed_seconds": 16.851,
+          "image_count": 5,
+          "started_at": "2026-11-11T18:00:33.842024+00:00",
+          "completed_at": "2026-11-11T18:00:50.692395+00:00",
+          "attempts": 1,
+          "usage": {
+            "prompt_tokens": 2129,
+            "completion_tokens": 1996,
+            "total_tokens": 4125,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1920
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1361
+          },
+          "response_model": "deepseek-flash"
+        }
+      ]
+    }
+  ],
+  "prompt_sha256": "2ef892eb180605a2186a44bd9a6047e525ea90775bfa6af30b31bdbe5310e694",
+  "request_settings": {
+    "model": "deepseek-flash",
+    "response_format": {
+      "type": "json_object"
+    },
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_tokens": 8192,
+    "stream": false
+  },
+  "retry_settings": {
+    "reason": "length-truncated responses only; original response files preserved",
+    "candidates": [
+      "C02:S01:F0",
+      "C03:S02:F4",
+      "C07:S04:F25"
+    ],
+    "request_settings": {
+      "model": "deepseek-flash",
+      "response_format": {
+        "type": "json_object"
+      },
+      "thinking": {
+        "type": "enabled"
+      },
+      "reasoning_effort": "high",
+      "max_tokens": 32768,
+      "stream": false
+    }
+  },
+  "prompt_zh": "你是室内导航机器人的回退候选点审核器。\n\n你的任务是根据候选帧及其前后观测，判断这个候选位置是否符合回退点定义。你只负责候选点有效性审核，不判断导航路线是否正确，不选择下一步动作，不与其他候选节点去重。\n\n【输入与判断对象】\n图像按时间顺序提供：F-2、F-1、F0、F+1、F+2。F0 是本次唯一需要判断的候选位置，不是最后一张图像的位置。前后图像仅用于补充 F0 附近的空间结构，不能把判断对象移到其他帧。\n每张图像前附有相对标签和实际帧号。缺失图像会明确标记；不得假设缺失内容。本次不提供动作或距离测量。\n\n【回退点定义】\n回退点是指：机器人在该位置，或从该位置短距离可达的附近，能够选择不同的通行路线，进入不同的空间区域。\n通常考虑约 5 个动作步以内可以到达的决策位置，最多考虑 7 步。候选位置不必正好位于分叉中心，但必须足够靠近实际可以做出路线选择的位置。\n单纯“继续前进”与“沿来路原路退回”，不能作为两个有效分支。\n\n【审核规则】\n1. 核实真实的空间选择。\n需要存在至少两条有具体视觉依据的不同通行路线，例如继续沿走廊前进或进入侧面房间，或者在附近分叉选择两条不同走廊。不同方向本身不等于不同路线。同一开放区域内随意改变方向，或绕过同一件家具，不能仅凭这些现象认定存在有效分支。\n\n2. 使用几何证据，允许局部可见。\n有效证据包括可通行地面向侧面延伸、墙体之间存在与地面连接的开口、局部可见的门洞或走廊入口。不要求完整看清整个房间或整条走廊。但不能仅凭阴影、颜色变化、墙面纹理，或猜测遮挡后可能存在道路，就认定分支存在。\n\n3. 跨帧补充，但不要重复计数或拼接路口。\n同一入口在多张图像中出现只能算一条路线；一个门洞和门洞后的房间不能算两条路线。机器人转头后左右方向可能变化，不能因此认定出现新分支。\n各条路线应对应候选位置附近真实存在的局部决策位置，不能把机器人在不同位置先后经过的单一路径拼成一个并不存在的分叉。历史分支只有仍然靠近候选位置、短距离可达时才有效。后续图像的分支也必须与 F0 附近空间有关，不能因为后来到达路口就认定 F0 有效。\n\n4. 核实距离。\n即使看见分叉，如果仍需要沿唯一通道前进较长距离才能到达，也应剔除。本次没有动作和可靠距离测量，不得编造“还需几步到达”的精确数字。如果近远关系影响结论而现有图像不足以判断，应输出 uncertain。\n\n5. 排除没有实际选择的情况。\n普通直走、没有额外分支的单一路径转弯、单纯原路返回、只有一条路线可走的普通门口、缺乏分支证据的开放空间、不可通行的窗户/镜面/柜体/墙面凹陷，以及距离过远的分叉，不能单独构成回退点。不要仅因为出现门、画面变化或机器人转弯就保留候选。\n\n【决策】\nkeep：有具体可信的视觉证据支持候选位置附近存在有效的不同通行路线。允许部分遮挡，但不能依赖无依据的猜测。\nreject：现有证据支持该位置不符合定义，例如只有单一路径、普通转弯、虚假开口或分支过远。\nuncertain：关键证据缺失，无法可靠区分有效与无效。缺少历史帧不必自动输出 uncertain；其余图像足够时仍应给出 keep 或 reject。\n\n【输出】\n只输出一个合法 JSON 对象，不输出 Markdown 或额外说明。字段为：\n- candidate_id：原样返回用户消息的候选编号。\n- decision：只能为 keep、reject 或 uncertain。\n- routes：有视觉依据的不同路线数组。每条包含 description（中文简短描述路线及可见几何证据）和 evidence_frames（实际提供的图像标签列表）。\n- reason：一至两句中文说明判定依据，围绕 F0 对应的位置。\nkeep 至少包含两条不同路线，不能把单纯沿来路返回作为其中一条。reject 或 uncertain 只记录实际有依据的路线，可以为空数组。不得为凑数而虚构。\n以下仅示范 JSON 字段格式，不代表本次候选的答案：\n{\"candidate_id\":\"由输入原样填入\",\"decision\":\"uncertain\",\"routes\":[],\"reason\":\"用中文填写当前候选的实际观察依据。\"}\n",
+  "summary": {
+    "requested": 42,
+    "completed": 42,
+    "errors": 0,
+    "keep": 22,
+    "reject": 20,
+    "uncertain": 0,
+    "max_workers": 12,
+    "worker_processes_in_final_results": 14,
+    "total_api_attempts": 45,
+    "median_latency_seconds": 12.93
+  },
+  "replay_timing": "Cached verdicts may be applied only after node confirmation and F+2 arrival. Network latency is recorded separately, not simulated as robot steps."
+}

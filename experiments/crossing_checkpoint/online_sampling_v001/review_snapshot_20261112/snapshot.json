@@ -1,0 +1,10 @@
+{
+  "snapshot": "jev_sampling_lab_saved_20261112_all34.zip",
+  "sha256": "778b436aeaf2a44756c0112c2ce18d6263533fde2fdd940db73c75a9f45ff82b",
+  "base_commit": "932ae62d0c018d3735d50f28fdecba372a3063cf",
+  "source_provenance": "Local iteration outside Git; captured source and completed results in this commit. Do not attribute historical API runs to this future commit.",
+  "local_archive_contains_raw_api_responses": true,
+  "github_contains_results_prompts_runners_verification": true,
+  "assets_source": "wrong_choices34_fullwave_site_20261109_05.zip",
+  "no_new_api_calls": true
+}
