@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>StreamVLN + Isaac Sim 实时 JEV</title>
+<style>
+:root{--ink:#17344e;--muted:#64788a;--line:#d8e2eb;--bg:#edf2f6;--card:#fff;--red:#b33a3a;--cyan:#0793ad;--green:#27825d;--robot:#111}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.55 system-ui,"Noto Sans CJK SC","Microsoft YaHei",sans-serif}header{background:linear-gradient(115deg,#17344e,#1b6571);color:#fff;padding:20px 26px}header h1{margin:0 0 5px;font-size:24px}.sub{font-size:12px;opacity:.86}.topline{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}.stats{display:grid;grid-template-columns:repeat(7,minmax(100px,1fr));gap:10px;padding:14px 16px 0}.metric,.panel{background:var(--card);border:1px solid var(--line);border-radius:10px}.metric{padding:10px 13px}.metric b{display:block;font-size:21px;font-variant-numeric:tabular-nums}.metric span{font-size:11px;color:var(--muted)}.notice{margin:12px 16px 0;padding:9px 13px;border-left:4px solid #b07b20;background:#fff8e8;font-size:13px}.layout{display:grid;grid-template-columns:minmax(650px,1fr) 400px;gap:14px;padding:14px 16px 18px}.panel{padding:14px;min-width:0}h2{font-size:18px;margin:0 0 10px}h3{font-size:14px;margin:14px 0 7px}p{margin:6px 0}.muted{font-size:12px;color:var(--muted)}.toolbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:9px}button,select,input,textarea{font:inherit}button,select{border:1px solid #c6d3df;border-radius:6px;background:#fff;color:var(--ink);padding:6px 8px}button{cursor:pointer}button:hover{background:#e8f0f6}#map{display:block;width:100%;height:470px;background:#f5f8fa;border-radius:8px}.playback{display:grid;grid-template-columns:110px 1fr 70px;align-items:center;gap:9px;margin:8px 0}input[type=range]{width:100%;accent-color:#2377bb}.rgbWrap{position:relative}#rgb{display:block;width:100%;aspect-ratio:4/3;object-fit:contain;background:#122432;border-radius:8px}.frameBadge{position:absolute;left:10px;top:10px;background:#0b202dee;color:#fff;padding:4px 8px;border-radius:5px;font-size:12px}.values{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:9px 0}.value{border:1px solid var(--line);border-radius:7px;padding:7px}.value b{display:block;font-size:17px}.value span{font-size:11px;color:var(--muted)}#caseList{display:grid;grid-template-columns:repeat(2,1fr);gap:5px;max-height:250px;overflow:auto}#caseList button{text-align:left;font-size:12px;padding:5px 7px}#caseList button.active{background:#17344e;color:#fff}.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;align-items:center}.swatch{display:inline-block;width:30px;height:5px;vertical-align:middle;margin-right:5px;border-radius:4px}.plot{display:block;width:100%;height:230px;background:#fff;border:1px solid var(--line);border-radius:8px}.checks{display:flex;gap:14px;flex-wrap:wrap;margin:8px 0}.checks label{font-size:12px}pre{white-space:pre-wrap;word-break:break-word;max-height:300px;overflow:auto;background:#f3f6fa;padding:10px;border-radius:7px;font:12px/1.5 ui-monospace,monospace}details{margin:9px 0}summary{cursor:pointer;font-weight:700}.split{display:grid;grid-template-columns:1fr 1fr;gap:10px}.instruction{border:1px solid var(--line);border-radius:7px;padding:9px;min-height:76px}.history{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.history button{padding:3px}.history img{display:block;width:100%;aspect-ratio:4/3;object-fit:contain}.footer{padding:0 18px 20px;color:var(--muted);font-size:12px}textarea{width:100%;min-height:70px;border:1px solid var(--line);border-radius:7px;padding:8px}@media(max-width:1100px){.stats{grid-template-columns:repeat(4,1fr)}.layout{grid-template-columns:1fr}.layout>aside{grid-row:auto}}@media(max-width:700px){.stats{grid-template-columns:repeat(2,1fr)}.split{grid-template-columns:1fr}.layout{padding:10px}.panel{padding:10px}h1{font-size:20px}#map{height:350px}}
+</style>
+</head>
+<body>
+<header><div class="topline"><div><h1 id="title">StreamVLN + Isaac Sim 实时 JEV</h1><div class="sub" id="runInfo"></div></div><select id="language"><option value="zh">中文</option><option value="en">English</option></select></div></header>
+<div class="stats" id="stats"></div>
+<div class="notice" id="notice"></div>
+<main class="layout">
+<section>
+<div class="panel">
+<div class="toolbar"><h2 data-i18n="trajectory"></h2><select id="groupFilter"><option value="all" data-i18n="all"></option><option value="success" data-i18n="success"></option><option value="failure" data-i18n="failure"></option></select><span id="caseStats" class="muted"></span></div>
+<div id="caseList"></div>
+<div class="legend"><span><i class="swatch" style="background:#b33a3a"></i><span data-i18n="probLegend"></span></span><span><i class="swatch" style="background:#27825d"></i><span data-i18n="refLegend"></span></span><span><i class="swatch" style="background:#111"></i><span data-i18n="robotLegend"></span></span></div>
+<canvas id="map" width="900" height="470"></canvas>
+<div class="playback"><button id="mapPrev" data-i18n="prev"></button><input id="frame" type="range" min="0" max="0" value="0"><span id="step"></span></div>
+</div>
+<div class="panel" style="margin-top:14px">
+<div class="checks"><label><input id="showRaw" type="checkbox" checked> <span data-i18n="rawLine"></span></label><label><input id="showStreaming" type="checkbox" checked> <span data-i18n="streamLine"></span></label><label><input id="showMapNodes" type="checkbox"> <span data-i18n="mapNodes"></span></label></div>
+<canvas id="plot" class="plot" width="1100" height="230"></canvas>
+<div id="sampleSummary" class="muted"></div>
+</div>
+</section>
+<aside>
+<div class="panel">
+<div class="toolbar"><h2 data-i18n="observation"></h2><button id="play" data-i18n="play"></button></div>
+<div class="rgbWrap"><img id="rgb" alt="RGB observation"><span id="frameBadge" class="frameBadge"></span></div>
+<div class="playback"><button id="imagePrev" data-i18n="prev"></button><input id="imageFrame" type="range" min="0" max="0" value="0"><span id="imageStep"></span></div>
+<div class="values"><div class="value"><b id="prob">—</b><span data-i18n="probability"></span></div><div class="value"><b id="latency">—</b><span data-i18n="apiLatency"></span></div><div class="value"><b id="lag">—</b><span data-i18n="stepLag"></span></div></div>
+<div id="instruction" class="instruction"></div>
+<h3 data-i18n="inputFrames"></h3><div id="history" class="history"></div>
+</div>
+<div class="panel" style="margin-top:14px">
+<h2 data-i18n="result"></h2><pre id="raw"></pre>
+<details><summary data-i18n="prompt"></summary><div class="split"><pre id="promptEnglish"></pre><pre id="promptChinese"></pre></div></details>
+<h3 data-i18n="review"></h3><select id="category"><option value="likely" data-i18n="likely"></option><option value="uncertain" data-i18n="uncertain"></option><option value="unlikely" data-i18n="unlikely"></option></select><textarea id="note" placeholder="复核意见"></textarea><button id="export" data-i18n="export"></button>
+</div>
+</aside>
+</main>
+<div class="footer" id="footer"></div>
+<script>window.JEV_LIVE_DATA=__DATA__;</script>
+<script>__SCRIPT__</script>
+</body>
+</html>

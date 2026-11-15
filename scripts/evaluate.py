@@ -32,11 +32,14 @@ def build_command(args):
                 command += [flag, str(value)]
         if getattr(args, 'scenes', None):
             command += ['--scenes', *args.scenes]
+        if getattr(args, 'jev_live_output', None):
+            command += ['--jev-live-output', str(args.jev_live_output)]
         if getattr(args, 'allow_shared_gpu', False):
             command.append('--allow-shared-gpu')
         return command, env, PROJECT, None
-    if getattr(args, 'seed', None) is not None or getattr(args, 'scenes', None) or getattr(args, 'run_id', None):
-        raise ValueError('--seed, --scenes and --run-id currently apply to VLNVerse only.')
+    if (getattr(args, 'seed', None) is not None or getattr(args, 'scenes', None)
+            or getattr(args, 'run_id', None) or getattr(args, 'jev_live_output', None)):
+        raise ValueError('--seed, --scenes, --run-id and --jev-live-output currently apply to VLNVerse only.')
     if args.resume or args.sim_gpu is not None or args.mode != 'physical':
         raise ValueError('--resume, --sim-gpu and --mode apply to VLNVerse only.')
     stamp = datetime.now(timezone.utc).strftime('%Y%m%d_%H%M%S_%f')
@@ -93,6 +96,7 @@ def main():
     parser.add_argument('--run-id', help='Explicit new VLNVerse run ID')
     parser.add_argument('--seed', type=int, help='StreamVLN VLNVerse run seed')
     parser.add_argument('--scenes', nargs='+', help='Complete VLNVerse scenes; incompatible with --episodes')
+    parser.add_argument('--jev-live-output', help='Causal JEV scoring output for VLNVerse')
     parser.add_argument('--dry-run', action='store_true')
     parser.add_argument('--preflight-only', action='store_true')
     parser.add_argument('--allow-shared-gpu', action='store_true', help='Only after coordinating access to an occupied GPU')

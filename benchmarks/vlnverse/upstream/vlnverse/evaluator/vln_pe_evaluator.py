@@ -68,6 +68,14 @@ class VlnPeEvaluator(Evaluator):
             from core.vlnverse_review import EpisodeReview
             self.review = EpisodeReview(config.eval_settings['review_output'], self.task_name,
                                         config.dataset.dataset_settings['base_data_dir'])
+        self.jev_live = None
+        if config.eval_settings.get('jev_live_output'):
+            from core.jev_live_stream import JevLiveReview
+            self.jev_live = JevLiveReview(
+                config.eval_settings['jev_live_output'],
+                self.task_name,
+                config.dataset.dataset_settings['base_data_dir'],
+            )
 
         # generate episode
         episodes = generate_episode(self.dataloader, config)
@@ -232,6 +240,11 @@ class VlnPeEvaluator(Evaluator):
                 )  # save data to dataset
                 if self.review:
                     self.review.finish(self.now_path_key(reset_info), obs['metrics'][list(obs['metrics'].keys())[0]][0])
+                if self.jev_live:
+                    self.jev_live.finish(
+                        self.now_path_key(reset_info),
+                        obs['metrics'][list(obs['metrics'].keys())[0]][0],
+                    )
                 # log data
                 progress_log_multi_util.trace_end(
                     trajectory_id=self.now_path_key(reset_info),
@@ -293,6 +306,8 @@ class VlnPeEvaluator(Evaluator):
                 continue
             if self.review:
                 self.review.start(self.now_path_key(reset_info))
+            if self.jev_live:
+                self.jev_live.start(self.now_path_key(reset_info))
             progress_log_multi_util.trace_start(
                 trajectory_id=self.now_path_key(reset_info),
             )
@@ -322,6 +337,8 @@ class VlnPeEvaluator(Evaluator):
                 continue
             if self.review:
                 self.review.start(self.now_path_key(info))
+            if self.jev_live:
+                self.jev_live.start(self.now_path_key(info))
             progress_log_multi_util.trace_start(
                 trajectory_id=self.now_path_key(info),
             )
@@ -346,18 +363,30 @@ class VlnPeEvaluator(Evaluator):
         self.runner_status[[info is None for info in reset_info]] = runner_status_code.TERMINATED
 
         while self.env.is_running():
-            review_observations = obs if self.review else None
+            review_observations = obs if (self.review or self.jev_live) else None
             obs, action = self.get_action(obs, action)
             if self.review:
                 for index, (ob, info, act) in enumerate(zip(review_observations, reset_info, action)):
                     if info is not None and self.runner_status[index] == runner_status_code.NORMAL:
                         self.review.observe(self.now_path_key(info), ob, act[self.robot_name])
+            if self.jev_live:
+                for index, (ob, info, act) in enumerate(zip(review_observations, reset_info, action)):
+                    if info is not None and self.runner_status[index] == runner_status_code.NORMAL:
+                        self.jev_live.observe(
+                            self.now_path_key(info), ob, act[self.robot_name]
+                        )
             obs, terminated = self.env_step(action)
             if self.review:
                 # Capture before terminate_ops resets the environment / episode ID.
                 for index, (ob, info, ended) in enumerate(zip(obs, reset_info, terminated)):
                     if ended and info is not None and self.runner_status[index] != runner_status_code.TERMINATED:
                         self.review.observe(self.now_path_key(info), ob, {}, terminal=True)
+            if self.jev_live:
+                for index, (ob, info, ended) in enumerate(zip(obs, reset_info, terminated)):
+                    if ended and info is not None and self.runner_status[index] != runner_status_code.TERMINATED:
+                        self.jev_live.observe(
+                            self.now_path_key(info), ob, {}, terminal=True
+                        )
             env_term, reset_info = self.terminate_ops(obs, reset_info, terminated)
             if env_term:
                 break
@@ -375,6 +404,8 @@ class VlnPeEvaluator(Evaluator):
                     )
 
         self.env.close()
+        if self.jev_live:
+            self.jev_live.close()
         progress_log_multi_util.report()
 
         print('--- VlnPeEvaluator end ---')

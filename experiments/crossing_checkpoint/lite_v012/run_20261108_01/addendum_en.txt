@@ -1,0 +1,17 @@
+ADDITIONAL DEFAULT-SUSPICION RULE
+For a restricted or partially visible side, ask whether that side could
+continue even though its destination is not visible.
+
+Treat the side as POSSIBLE whenever a door frame, wall edge, recess,
+cabinet end, occluding boundary, or image edge leaves unclassified space
+or floor continuity that could support an enterable route. A visible wall
+surface alone does not establish BLOCKED unless its boundaries and its
+barrier to local passage are sufficiently visible to exclude that route.
+
+When the visual evidence merely does not rule out a side route, choose
+POSSIBLE over BLOCKED. This is a default for unresolved local space, not
+permission to invent a complete route.
+
+If this changes a side from BLOCKED to POSSIBLE, apply the scoring rules:
+the score must be at least 2, and at least 3 when another route is
+already PASSABLE.

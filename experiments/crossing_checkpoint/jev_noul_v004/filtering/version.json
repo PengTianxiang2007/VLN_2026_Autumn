@@ -1,0 +1,32 @@
+{
+  "name": "JEV Noul v004 Streaming Prominence filter",
+  "version": "jev_noul_v004_filter_v001",
+  "status": "current_best",
+  "designation": "当前最好 JEV prompt + 部署滤波组合",
+  "designated_at": "2026-11-09T00:22:38Z",
+  "prompt_version": "jev_noul_v004",
+  "deployment_defaults": {
+    "method": "streamingProminence",
+    "window_n": 7,
+    "max_delay_steps": 5,
+    "sampling_interval_frames": 5,
+    "sampling_plateau_min_frames": 3,
+    "sampling_min_spacing_frames": 3,
+    "prefix_invariant": true,
+    "frozen_after_delay": true
+  },
+  "comparison_only_methods": [
+    "gaussian_offline_centered",
+    "ema_causal",
+    "moving_average_offline_centered",
+    "relative_prominence_offline"
+  ],
+  "implementation_sha256": {
+    "core/jev_noul_compare_review.js": "71da6f988272807b827d45ba5764e9342df51aa744dabe133936626cf51b2c60",
+    "scripts/export_jev_noul_compare.py": "2841c56825cf4dfcf7bf4e9b5b8e20c7b7f3028778078a5651d37e709644b1b1",
+    "scripts/export_jev_noul_v004_qwen_compare.py": "66dd3631f442bbfd0b1eee317d88f3587f2f8cfb580deb9ffb56396a783d5f74"
+  },
+  "html_sha256": "779b6772346d34b8640acfe0c5eddac0d96b8956426548bd71dced12757b10d5",
+  "url": "http://134.175.18.101/vln/jev_noul_v004_vs_qwen4b_12cases_nodes_20261109_04/jev_noul_v004_vs_qwen4b.html",
+  "limitation": "User-designated best combination; not an independent accuracy or superiority result."
+}

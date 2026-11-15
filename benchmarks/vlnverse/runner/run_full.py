@@ -27,7 +27,7 @@ def cleanup(process):
     except subprocess.TimeoutExpired:
         os.killpg(process.pid,signal.SIGKILL); process.wait(timeout=10)
 
-def write_config(path,method,port,task,dataset,mode,review=None):
+def write_config(path,method,port,task,dataset,mode,review=None,jev_live=None):
     model='streamvln_rgb' if method=='StreamVLN' else 'janusvln'
     ckpt='StreamVLN_R2R_v1_3' if method=='StreamVLN' else 'JanusVLN_Extra'
     # Official defaults: 25k physics ticks; the official fine flash configs use 500 ticks.
@@ -40,7 +40,7 @@ eval_cfg=EvalCfg(
  env=EnvCfg(env_type='vln_pe',env_settings={{'headless':True,'use_fabric':False}}),
  task=TaskCfg(task_name={task!r},task_settings={{'env_num':1,'proc_num':1,'use_distributed':False,'max_step':{max_step},'warm_up_step':500}},scene=SceneCfg(scene_type='kujiale',scene_data_dir=resource+'/assets/VLNVerse/scenes'),robot_name='h1',robot_flash={mode=='flash'},flash_collision=False,robot_usd_path=resource+'/assets/VLNVerse/Embodiments/vln-pe/h1/h1_vln_pointcloud.usd',camera_resolution=[640,480],camera_prim_path='torso_link/h1_pano_camera_0'),
  dataset=EvalDatasetCfg(dataset_type='kujiale',dataset_settings={{'base_data_dir':{str(dataset)!r},'split_data_types':['val_unseen'],'filter_stairs':False}}),
- eval_settings={{'save_to_json':True,'vis_output':False,'review_output':{review!r}}},
+    eval_settings={{'save_to_json':True,'vis_output':False,'review_output':{review!r},'jev_live_output':{jev_live!r}}},
 )
 """)
 
@@ -58,6 +58,7 @@ def main():
     ap.add_argument('--scenes',nargs='+',help='Run every episode of these scenes')
     ap.add_argument('--allow-shared-gpu',action='store_true')
     ap.add_argument('--preflight-only',action='store_true')
+    ap.add_argument('--jev-live-output',type=Path,help='Causal JEV v004 scoring output directory')
     ap.add_argument('--rss-budget-mib',type=int,default=24000)
     a=ap.parse_args()
     if a.limit_episodes < 0: ap.error('limit-episodes must be nonnegative')
@@ -131,6 +132,23 @@ def main():
     if a.sim_gpu != a.gpu: check_gpu(a.sim_gpu, 12000, a.allow_shared_gpu)
     print(json.dumps({'status':'preflight_passed','method':a.method,'mode':a.mode,'episodes':len(episodes),'scenes':len(needed_scenes),'gpu':a.gpu,'sim_gpu':a.sim_gpu}),flush=True)
     if a.preflight_only: return
+    jev_live = None
+    if a.jev_live_output:
+        if not os.environ.get('JEV_API_KEY'):
+            raise RuntimeError('JEV_API_KEY is required for --jev-live-output')
+        jev_live = {
+            'output_dir': str(a.jev_live_output.resolve()),
+            'seed': 0 if a.seed is None else a.seed,
+            'window_n': 11,
+            'max_delay_steps': 5,
+            'max_in_flight': 5,
+            'attempts': 5,
+            'timeout': 120,
+            'endpoint': 'https://api.site/v1/systemone',
+            'model': 'jev-1.14.0',
+            'response_type': 'noul',
+            'question_version': 'v004',
+        }
     if not a.resume:
         output.mkdir(parents=True,exist_ok=False)
         target=dataset/'val_unseen/val_unseen.json.gz'; target.parent.mkdir(parents=True,exist_ok=True)
@@ -141,10 +159,13 @@ def main():
         meta={'method':a.method,'mode':a.mode,'run_id':run_id,'dataset':str(dataset),'episode_ids':episodes,'gpu':a.gpu,'sim_gpu':a.sim_gpu,'model_action_cap':None,'physics_tick_cap':25000 if a.mode=='physical' else 500,'camera_resolution':[640,480],'warm_up_step':500}
         meta.update(seed=a.seed,seed_scheme=SEED_SCHEME if a.seed is not None else None,
                     scenes=needed_scenes,complete_scenes=bool(a.scenes),dataset_sha256=digest_json(selected),
-                    code_commit=os.environ.get('VLN_CODE_COMMIT'),review_visualization=review)
+                    code_commit=os.environ.get('VLN_CODE_COMMIT'),review_visualization=review,
+                    jev_live=jev_live)
         atomic_json(output/'run.json',meta)
+    lock_root=output_root()/'locks'
+    lock_root.mkdir(parents=True,exist_ok=True)
     locks=[]
-    for path in [*[Path('/tmp')/f'peng_vlnverse_gpu_{gpu}.lock' for gpu in sorted({a.gpu,a.sim_gpu})],output/'run.lock']:
+    for path in [*[lock_root/f'peng_vlnverse_gpu_{gpu}.lock' for gpu in sorted({a.gpu,a.sim_gpu})],output/'run.lock']:
         lock=path.open('a'); fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB); locks.append(lock)
     # Keep run-specific LMDB and caches inside this project's output directory.
     storage=output/'storage'
@@ -165,9 +186,13 @@ def main():
     if a.seed is not None:
         env.update(VLN_EVAL_SEED=str(a.seed),PYTHONHASHSEED=str(a.seed))
     env.update(CUDA_VISIBLE_DEVICES=str(a.gpu),OMP_NUM_THREADS='4',MKL_NUM_THREADS='4',OPENBLAS_NUM_THREADS='4',HF_HUB_OFFLINE='1',TRANSFORMERS_OFFLINE='1',PYTHONDONTWRITEBYTECODE='1',NO_PROXY='127.0.0.1,localhost',no_proxy='127.0.0.1,localhost',VLN_RSS_BUDGET_MIB=str(a.rss_budget_mib))
+    model_ready_timeout=float(os.environ.get('VLN_MODEL_READY_TIMEOUT','900'))
     if a.method=='JanusVLN': env['PYTORCH_CUDA_ALLOC_CONF']='expandable_segments:True'
     eval_env=env.copy()
     eval_env.update(CUDA_VISIBLE_DEVICES=str(a.sim_gpu),VLN_SIM_RENDER_GPU=str(a.sim_gpu))
+    tmp_dir=output/'tmp'
+    tmp_dir.mkdir(parents=True,exist_ok=True)
+    eval_env.update(TMPDIR=str(tmp_dir),TEMP=str(tmp_dir),TMP=str(tmp_dir))
     checkpoint=RESOURCE/'models'/('StreamVLN_R2R_v1_3' if a.method=='StreamVLN' else 'JanusVLN_Extra')
     opener=urllib.request.build_opener(urllib.request.ProxyHandler({}))
     server=evaluator=None; failures=0
@@ -183,16 +208,16 @@ def main():
             chunk_dir=output/chunk_name
             chunk_dir.symlink_to(chunk_storage,target_is_directory=True)
             start_count=count()
-            atomic_json(chunk_dir/'execution.json', {'model_gpu':a.gpu,'sim_gpu':a.sim_gpu,'seed':a.seed,'started_at':time.time()})
+            atomic_json(chunk_dir/'execution.json', {'model_gpu':a.gpu,'sim_gpu':a.sim_gpu,'seed':a.seed,'started_at':time.time(),'model_ready_timeout_seconds':model_ready_timeout})
             with (chunk_dir/'agent.log').open('w') as log:
                 server=subprocess.Popen([str(python),'-u',str(RUNNER/'service.py'),'--method',a.method,'--checkpoint',str(checkpoint),'--output',str(chunk_dir),'--smoke-steps','0','--compact-trace','--save-rgb','2'],env=env,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)
             atomic_json(output/'owned_processes.json',{'agent_pid':server.pid,'gpu':a.gpu,'sim_gpu':a.sim_gpu,'launcher_pid':os.getpid(),'launcher_start_ticks':Path('/proc/self/stat').read_text().split()[21],'chunk':str(chunk_dir)})
-            port=wait_for_model_ready(server,chunk_dir)['port']
+            port=wait_for_model_ready(server,chunk_dir,timeout=model_ready_timeout)['port']
             # Explicit post-load reset; official evaluator resets again between episodes.
             req=urllib.request.Request(f'http://127.0.0.1:{port}/agent/{a.method}/reset',data=b'{"reset_index":null}',headers={'Content-Type':'application/json'})
             with opener.open(req,timeout=60) as response: assert json.load(response)['status']=='success'
             config=chunk_dir/'eval_config.py'
-            write_config(config,a.method,port,run_id,dataset,a.mode,review)
+            write_config(config,a.method,port,run_id,dataset,a.mode,review,jev_live)
             with (chunk_dir/'evaluator.log').open('w') as log:
                 evaluator=subprocess.Popen(['bash',str(RUNNER/'run_eval.sh'),str(config)],env=eval_env,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)
             atomic_json(output/'owned_processes.json',{'agent_pid':server.pid,'evaluator_pid':evaluator.pid,'gpu':a.gpu,'sim_gpu':a.sim_gpu,'launcher_pid':os.getpid(),'launcher_start_ticks':Path('/proc/self/stat').read_text().split()[21],'chunk':str(chunk_dir)})

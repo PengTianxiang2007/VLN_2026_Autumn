@@ -15,6 +15,10 @@
 重新运行前先检查错误日志与进程归属、修复原因并更新 README；本次整理不恢复队列。
 实际启动、环境与 schema 审计见下方说明。Flash 与 StreamVLN physical 协议不同，结果分开报告。
 
+2026-11-09 已在 GPU3 恢复：保留 `kujiale_0020`、`kujiale_0031` 的50条，
+优先整 scene 重跑历史阻塞的 `kujiale_0030`；仅允许 GPU3。
+见[GPU3续跑记录](run_20261109_01_gpu3_resume/README.md)。
+
 ## 代码、启动说明与产物
 
 - [历史状态](../../../outputs/reproduction/internvla_n1_fine825_seed0_20261102/status.json)

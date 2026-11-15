@@ -16,6 +16,28 @@
 
 2026-11-12：[JEV 在线采样 v001](crossing_checkpoint/online_sampling_v001/README.md)：用户认可固定延迟局部峰、滞回区域与间隔采样。参考实现、41组固定样例和本地网页导出已验证，源码经授权在 `codex/jev-online-sampling-v001` 分支交接；[接手说明](../docs/JEV_SAMPLING_HANDOFF.md)给出合并、验证和运行循环适配步骤。网页仅本地使用；尚未新增模型/导航运行。
 
+2026-11-09：人工标定集 34 个错误选择点已完成 JEV v004 与最初 Qwen4B 对照。
+29 个新调用、5 个完整请求 SHA256 精确复用，34/34 有效；JEV 平均 yes 概率
+0.762，19/34 ≥0.75，无低于 0.50 的点；Qwen4B 均分 3.353。用户指定并发上限
+500，实际提交 29 个缺失任务并使用 29 个 worker。新端点 `jev-1` 上游持续 429 后，
+按用户指令切回此前可用端点。三栏双语页面已发布：
+http://134.175.18.101/vln/jev_noul_v004_wrong_choices34_qwen4b_template_20261109_05/jev_noul_v004_vs_qwen4b.html 。
+见
+[`run_20261109_03_wrong_choices34_prevapi`](crossing_checkpoint/jev_noul_v004/run_20261109_03_wrong_choices34_prevapi/README.md)。
+
+2026-11-09：InternVLA-N1 fine Val Unseen seed0 正在 GPU3 继续，当前
+195/825条、8个完整scene，局部SR44.62%。`kujiale_0093`的Isaac/PhysX停顿已改为
+仿真420秒无进展后重启并复用LMDB，最多5次，当前已继续。见
+[`run_20261109_01_gpu3_resume`](reproduction/internvla_n1_vlnverse/run_20261109_01_gpu3_resume/README.md)。
+
+2026-11-09：本地 StreamVLN + Isaac Sim 实时 JEV 实验已完成并发布。
+`kujiale_0272`全部40条新 episode、seed 0、H1 physical；StreamVLN/仿真使用
+GPU4/GPU5，导航过程中实时提交JEV v004，最多5个未决调用并使用`N=11,D=5`。
+40/40完成，SR45%；2878次JEV回答0错误，215个节点。在线入口：
+http://134.175.18.101/vln/streamvln_live_jev_0272_40_template_20261109_03/streamvln_live_jev_0272_40.html 。
+见
+[`jev_live_vlnverse/run_20261109_01_0272_40`](crossing_checkpoint/jev_live_vlnverse/run_20261109_01_0272_40/README.md)。
+
 2026-11-07 起，所有新生成/重导出的 HTML 可视化须按[统一发布规范](../docs/VISUALIZATION_PUBLISHING.md)
 上传到用户指定服务器，并在具体实验/导出 README 记录源文件、网址、SHA256、发布时间及在线验证结果。
 本地导出成功不等于完成交付；回复必须提供可直接打开的完整网址。历史原件与版本保持不变。
@@ -313,3 +335,38 @@ DeepSeek r2r_v00734例图文并行收尾：{"phase": "complete", "supervisor_pid
 2026-11-08：部署lite_v002/run_20261108_01，20条（10失败10成功，含kujiale_0113_66_1），八步局部选择与部分可见支路新提示词；后台评分→Qwen4B翻译→与最优版本1同帧对比→检查发布；不持续人工轮询。
 
 2026-11-08T09:34:56.502540+00:00 v002_20后台流程状态：{"phase": "complete", "pid": 57834, "started_at": "2026-11-08T08:40:54.323042+00:00", "expected_calls": 1824, "updated_at": "2026-11-08T09:34:56.297353+00:00", "service": "http://127.0.0.1:58317/v1", "service_reused": true, "server_max_num_seqs": 1, "finished_at": "2026-11-08T09:34:56.297326+00:00", "url": "http://134.175.18.101/vln/crossing_lite_v002_20_compare_best1_run_20261108_01_web_01/crossing_lite_review.html", "html": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/crossing_checkpoint/lite_v002/run_20261108_01/exports/final/crossing_lite_review.html", "html_sha256": "02612d5aeca697dcab73fcdc8a813a0564823e57cb15a6c155bf934cfde20c7d", "summary": {"episodes": 20, "groups": {"failure": 10, "success": 10}, "expected_calls": 1824, "attempted_calls": 1824, "responses": 1824, "valid_calls": 1824, "invalid_or_missing": 0, "audited_requests": 1824, "score_histogram": {"1": 1406, "4": 194, "5": 224}, "replay_frames": 1844, "annotation_points": 47, "mean_latency_seconds": 3.183620818345317, "evaluation": "Raw score distribution and exact annotated-point scores only. No unlabeled-frame negatives or PR/F1.", "created_at": "2026-11-08T09:32:59.733707+00:00"}, "comparison": {"episodes": 20, "paired_frames": 1824, "changed": 281, "increased": 38, "decreased": 243, "baseline_histogram": {"1": 1367, "5": 456, "4": 1}, "new_histogram": {"1": 1406, "4": 194, "5": 224}, "diagnostic": [{"episode_id": "kujiale_0113_66_1", "frame": 84, "new": 1, "baseline": 1}], "interpretation": "Score changes only, not accuracy gains; user-selected diagnostic is development data."}, "publication_records": ["/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/visualization_publishing/publish_20261108_093423_410947/publication.json"], "published_at": "2026-11-08T09:34:56.081204+00:00"}
+
+2026-11-08：[lite_v003 单帧诊断](crossing_checkpoint/lite_v003/README.md)完成。仅在v002 prompt加入“短距离侧向转弯不要求与当前朝向平行”，对`kujiale_0113_1_4` frame 56只调用1次；仍返回1分且理由与v002相同。未更新最优版本，不启动整批。
+
+2026-11-08：[lite_v004 单帧诊断](crossing_checkpoint/lite_v004/README.md)完成。以`best_v001`为底稿，仅加入逐方向显式检查（前方、左侧、右侧、来路，各方向可含多个候选支路）；对`kujiale_0257_11_2` frame 26只调用1次，仍返回1分。未更新最优版本，不启动整批。
+
+2026-11-08：[lite_v005 单帧诊断](crossing_checkpoint/lite_v005/README.md)完成。进一步展开逐方向证据检查，要求各方向枚举多个入口并在全部检查后评分；`kujiale_0257_11_2` frame 26仍返回1分。未更新最优版本，不启动整批。
+
+2026-11-08：[lite_v006 双帧诊断](crossing_checkpoint/lite_v006/README.md)完成。显式要求怀疑墙边、门框、柜体或画面边界后的空间延伸；`kujiale_0207_14_4` F58、F96均仍返回1分。未更新最优版本，不启动整批。
+
+2026-11-08：[lite_v007 双帧诊断](crossing_checkpoint/lite_v007/README.md)完成。进一步规定受限视野不能直接判成墙壁，只有明确封闭才能支持1分；`kujiale_0207_14_4` F58、F96仍均为1分。未更新最优版本，不启动整批。
+
+2026-11-08：[lite_v012 候选与控制面板](crossing_checkpoint/lite_v012/README.md)完成。门洞内部延续及受限侧面默认候选规则使F58=2、F96=3、F105=1；47个人工标注帧 `>=3` 从25增至30，20个稳定性控制帧中3个升至2、0个达到3以上。出现可测效果，尚未更新最优版本。
+
+2026-11-08：[JEV Noul v002 完整61条](crossing_checkpoint/jev_noul_v002/README.md)完成。首轮按用户要求1000 worker运行，API高并发传输故障产生371条失败并导致进程池收尾阻塞；5007条成功结果保留，371条以100并发补跑全部成功。最终5378/5378有效、0失败。网页以Qwen同一轨迹对照Qwen 1–5分和JEV回退概率，路径颜色深浅表示数值高低，地图仅保留路线与机器人位置。[在线入口](http://134.175.18.101/vln/jev_noul_v002_full61_vs_qwen_20261108_02/jev_noul_vs_qwen.html)。
+
+2026-11-08：[JEV Noul v003](crossing_checkpoint/jev_noul_v003/README.md)邻近候选回退点prompt已在`kujiale_0123_fix_15_3`完成90/90全观测、90进程同时判断。新版平均概率0.317，上一版0.223；80帧更高、8帧更低、2帧相同。网页地图仅绘制同一Qwen轨迹上按概率深浅染色的两条路线和机器人位置。[在线对照](http://134.175.18.101/vln/jev_noul_v003_kujiale_0123_fix_15_3_20261108_01/jev_noul_v002_vs_v003.html)。
+
+2026-11-08：[JEV Noul v004](crossing_checkpoint/jev_noul_v004/README.md)精简邻近回退点prompt在`kujiale_0123_fix_15_3`和`kujiale_0257_13_4`完成188/188有效判断，并补齐第二条轨迹v003对照。两版各188/188有效；v003平均概率0.388、v004为0.446。网页可切换两条轨迹，仅显示同一Qwen轨迹的概率深浅路线与机器人位置。[在线对照](http://134.175.18.101/vln/jev_noul_v004_two_cases_20261108_01/jev_noul_v003_vs_v004.html)。
+
+2026-11-08：[JEV Noul v004十条新增轨迹](crossing_checkpoint/jev_noul_v004/run_20261108_03_ten_final/README.md)完成862/862有效判断；最多200并发worker，首轮3个空响应以3并发补跑成功。与v002相比平均回退概率0.380→0.495，753帧升高、91帧降低、18帧相同。网页可切换10条轨迹，地图仅保留同一Qwen轨迹的概率深浅路线和机器人位置。[在线对照](http://134.175.18.101/vln/jev_noul_v004_ten_cases_20261108_01/jev_noul_v002_vs_v004.html)。
+
+2026-11-08：用户指定 `jev_noul_v004` 为**当前最好 JEV 版本**，指针为
+`experiments/crossing_checkpoint/current_jev_version.json`。该状态与Qwen当前最优
+版本1分开记录，不覆盖Qwen `current_best.json`。
+
+2026-11-08：[v004与最初Qwen4B 12条轨迹对照](crossing_checkpoint/jev_noul_v004/combined12_qwen/README.md)已发布。合并v004全部12条已运行轨迹，1050/1050个同帧结果；Qwen平均分1.891、JEV平均概率0.486。网页仅显示同一Qwen轨迹的两条概率深浅路线与机器人位置。[在线对照](http://134.175.18.101/vln/jev_noul_v004_vs_qwen4b_12cases_20261108_01/jev_noul_v004_vs_qwen4b.html)。
+
+2026-11-09：[v004概率增强可视化](crossing_checkpoint/jev_noul_v004/filtering/README.md)完成。折线图支持Gaussian、EMA、Moving Average、离线Relative Prominence和Streaming Prominence，统一N=3..31窗口及D=0..5最大延迟，原始两线可独立勾选。流式突出度只使用过去及最多D个未来观测，达到i+D后冻结历史。所有增强只改变图表，不改地图或原始结果。[在线增强版](http://134.175.18.101/vln/jev_noul_v004_vs_qwen4b_12cases_filters_20261109_01/jev_noul_v004_vs_qwen4b.html)。
+
+2026-11-09：用户指定 **v004 prompt + Streaming Prominence（N=7,D=5）** 为当前
+最好 JEV 流水线。滤波版本登记为`jev_noul_v004_filter_v001`，指针为
+`experiments/crossing_checkpoint/current_jev_version.json`。其余滤波保留为对照，
+该指定不代表独立准确率结论。
+
+2026-11-09：[流式突出度横轴采样](crossing_checkpoint/jev_noul_v004/sampling/README.md)完成。流式曲线勾选后，按高点0.6/低峰0.18、相对峰谷差0.03、节点间距3帧、最短3帧平台中心起每5帧采样，在波形横轴绘制圆点、竖虚线和S编号；新增地图勾选项可同步显示节点。修复开头短平台漏采，`kujiale_0207_41_0` 在N=5时首峰F3已采样。不调用大模型、不改变路线或原始结果。[在线采样页](http://134.175.18.101/vln/jev_noul_v004_vs_qwen4b_12cases_nodes_20261109_04/jev_noul_v004_vs_qwen4b.html)。

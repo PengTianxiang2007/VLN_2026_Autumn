@@ -1,0 +1,22 @@
+{
+  "version": "jev_noul_v004",
+  "directory": "experiments/crossing_checkpoint/jev_noul_v004",
+  "status": "current_best",
+  "designation": "当前最好 JEV 版本",
+  "designated_at": "2026-11-08T15:38:07Z",
+  "pipeline_status": "current_best",
+  "pipeline_designated_at": "2026-11-09T00:22:38Z",
+  "filter_version": "jev_noul_v004_filter_v001",
+  "best_filter_mode": "streamingProminence",
+  "best_filter_defaults": {
+    "window_n": 7,
+    "max_delay_steps": 5,
+    "prefix_invariant": true,
+    "frozen_after_delay": true
+  },
+  "latest_run": "outputs/crossing_checkpoint/jev_noul_v004/run_20261108_03_ten_final",
+  "url": "http://134.175.18.101/vln/jev_noul_v004_ten_cases_20261108_01/jev_noul_v002_vs_v004.html",
+  "qwen4b_best_v001_comparison_url": "http://134.175.18.101/vln/jev_noul_v004_vs_qwen4b_12cases_20261108_01/jev_noul_v004_vs_qwen4b.html",
+  "filtered_visualization_url": "http://134.175.18.101/vln/jev_noul_v004_vs_qwen4b_12cases_nodes_20261109_04/jev_noul_v004_vs_qwen4b.html",
+  "sampled_node_visualization_url": "http://134.175.18.101/vln/jev_noul_v004_vs_qwen4b_12cases_nodes_20261109_04/jev_noul_v004_vs_qwen4b.html"
+}

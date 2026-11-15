@@ -20,6 +20,17 @@ ASSETS = RESOURCE / 'assets/VLNVerse'
 CHECKPOINT = RESOURCE / 'models/InternVLA-N1-wo-dagger'
 PYTHON = MODEL / '.venv/bin/python'
 SIM_PYTHON = ROOT / 'benchmarks/vlnverse/.venv/bin/python'
+LOCK_ROOT = ROOT / 'outputs/vlnverse/locks'
+
+
+def allowed_gpus():
+    value = os.environ.get('INTERNVLA_N1_ALLOWED_GPUS', '').strip()
+    if not value:
+        return None
+    gpus = {int(item) for item in value.split(',') if item.strip()}
+    if not gpus or any(gpu < 0 for gpu in gpus):
+        raise ValueError('Invalid INTERNVLA_N1_ALLOWED_GPUS')
+    return gpus
 
 
 def atomic(path, data):
@@ -103,10 +114,14 @@ eval_cfg.dataset.dataset_settings['base_data_dir'] = {str(output / 'dataset/fine
 
 
 def worker(scene, gpu, sim_gpu):
+    allowed = allowed_gpus()
+    if allowed is not None and (gpu not in allowed or sim_gpu not in allowed):
+        raise RuntimeError('Worker GPU assignment violates INTERNVLA_N1_ALLOWED_GPUS')
     # Lock names match the existing StreamVLN queue, preventing cross-campaign races.
+    LOCK_ROOT.mkdir(parents=True, exist_ok=True)
     locks = []
     for g in sorted({gpu, sim_gpu}):
-        f = open(f'/tmp/peng_vlnverse_gpu_{g}.lock', 'a')
+        f = open(LOCK_ROOT / f'peng_vlnverse_gpu_{g}.lock', 'a')
         fcntl.flock(f, fcntl.LOCK_EX | fcntl.LOCK_NB)
         locks.append(f)
     current = gpu_snapshot()
@@ -116,6 +131,8 @@ def worker(scene, gpu, sim_gpu):
         raise RuntimeError('GPU headroom changed before startup')
     output = CAMPAIGN / 'runs' / scene / str(time.time_ns())
     output.mkdir(parents=True)
+    tmp_dir = output / 'tmp'
+    tmp_dir.mkdir()
     episodes = json.loads((CAMPAIGN / 'datasets' / (scene + '.json')).read_text())
     atomic(output / 'episodes.json', episodes)
     target = output / 'dataset/fine/val_unseen/val_unseen.json.gz'
@@ -131,7 +148,8 @@ def worker(scene, gpu, sim_gpu):
         env.pop(key, None)
     env.update(CUDA_VISIBLE_DEVICES=str(gpu), PYTHONHASHSEED='0', OMP_NUM_THREADS='4', MKL_NUM_THREADS='4', OPENBLAS_NUM_THREADS='4',
                HF_HUB_OFFLINE='1', TRANSFORMERS_OFFLINE='1', PYTHONDONTWRITEBYTECODE='1',
-               NO_PROXY='127.0.0.1,localhost', no_proxy='127.0.0.1,localhost', N1_RUN_ROOT=str(output))
+               NO_PROXY='127.0.0.1,localhost', no_proxy='127.0.0.1,localhost', N1_RUN_ROOT=str(output),
+               TMPDIR=str(tmp_dir), TEMP=str(tmp_dir), TMP=str(tmp_dir))
     agent = sim = None
     result = {'scene': scene, 'seed': 0, 'gpu': gpu, 'sim_gpu': sim_gpu, 'output': str(output), 'expected': len(episodes), 'started': time.time()}
     def interrupted(signum, frame):
@@ -151,19 +169,71 @@ def worker(scene, gpu, sim_gpu):
         port = json.loads((output / 'ready.json').read_text())['port']
         config = write_config(output, port)
         sim_env = dict(env, CUDA_VISIBLE_DEVICES=str(sim_gpu), VLN_SIM_RENDER_GPU=str(sim_gpu))
-        with (output / 'simulator.log').open('w') as log:
-            sim = subprocess.Popen(['bash', str(MODEL / 'run_sim.sh'), str(config)], cwd=output, env=sim_env,
-                                   stdout=log, stderr=subprocess.STDOUT, start_new_session=True)
-        result['simulator_pid'] = sim.pid
-        atomic(output / 'execution.json', result)
-        while sim.poll() is None:
-            if agent.poll() is not None: raise RuntimeError('Model service exited')
-            if (output / 'inference_error.txt').exists() or (output / 'service_error.txt').exists():
-                raise RuntimeError('Model inference error; scores rejected')
-            newest = max((output / 'agent.log').stat().st_mtime, (output / 'simulator.log').stat().st_mtime)
-            if time.time() - newest > 900: raise RuntimeError('No runtime progress for 15 minutes')
-            time.sleep(5)
-        if sim.returncode != 0: raise RuntimeError(f'Simulator exited {sim.returncode}')
+        inactivity_timeout = float(os.environ.get('N1_SIM_INACTIVITY_TIMEOUT', '420'))
+        restart_limit = int(os.environ.get('N1_SIM_RESTART_LIMIT', '5'))
+        if inactivity_timeout < 120 or not 1 <= restart_limit <= 10:
+            raise ValueError('Invalid N1 simulator restart settings')
+        simulator_complete = False
+        events = []
+        for attempt in range(1, restart_limit + 1):
+            log_path = output / (
+                'simulator.log' if attempt == 1
+                else 'simulator_restart_%02d.log' % (attempt - 1)
+            )
+            with log_path.open('w') as log:
+                sim = subprocess.Popen(
+                    ['bash', str(MODEL / 'run_sim.sh'), str(config)],
+                    cwd=output,
+                    env=sim_env,
+                    stdout=log,
+                    stderr=subprocess.STDOUT,
+                    start_new_session=True,
+                )
+            result.update(
+                simulator_pid=sim.pid,
+                simulator_attempt=attempt,
+                simulator_restarts=attempt - 1,
+                simulator_log=str(log_path),
+            )
+            atomic(output / 'execution.json', result)
+            stalled = False
+            while sim.poll() is None:
+                if agent.poll() is not None:
+                    raise RuntimeError('Model service exited')
+                if ((output / 'inference_error.txt').exists()
+                        or (output / 'service_error.txt').exists()):
+                    raise RuntimeError('Model inference error; scores rejected')
+                newest = max(
+                    (output / 'agent.log').stat().st_mtime,
+                    log_path.stat().st_mtime,
+                )
+                if time.time() - newest > inactivity_timeout:
+                    stalled = True
+                    break
+                time.sleep(5)
+            stop(sim)
+            event = {
+                'attempt': attempt,
+                'returncode': sim.returncode,
+                'inactivity_timeout': inactivity_timeout,
+                'stalled': stalled,
+                'log': str(log_path),
+                'time': time.time(),
+            }
+            events.append(event)
+            with (output / 'simulator_restart_events.jsonl').open('a') as stream:
+                stream.write(json.dumps(event) + '\n')
+            sim = None
+            result['simulator_events'] = events
+            atomic(output / 'execution.json', result)
+            if not stalled and event['returncode'] == 0:
+                simulator_complete = True
+                break
+            print(json.dumps({'event': 'simulator_restart', 'scene': scene, **event}), flush=True)
+        if not simulator_complete:
+            raise RuntimeError(
+                'Simulator did not complete after %d restart attempts' % restart_limit
+            )
         subprocess.run([str(SIM_PYTHON), str(MODEL / 'validate_results.py'), str(output)], check=True, env=env,
                        stdout=(output / 'validation.log').open('w'), stderr=subprocess.STDOUT)
         result.update(status='complete', completed=len(episodes), finished=time.time())
@@ -202,6 +272,7 @@ def supervise():
     active = {}
     previous = {}
     failures = {}
+    allowed = allowed_gpus()
     while True:
         for scene, job in list(active.items()):
             if job['process'].poll() is not None:
@@ -209,9 +280,14 @@ def supervise():
                     failures[scene] = {'returncode': job['process'].returncode, 'log': job['log']}
                 del active[scene]
         snapshot = gpu_snapshot()
-        eligible = {g: v for g, v in snapshot.items() if g in previous and v['util'] <= 15 and previous[g]['util'] <= 15}
+        eligible = {
+            g: v for g, v in snapshot.items()
+            if (allowed is None or g in allowed)
+            and g in previous and v['util'] <= 15 and previous[g]['util'] <= 15
+        }
         progress = status()
-        state = dict(progress, pid=os.getpid(), updated=time.time(), active={s: {k: v for k, v in j.items() if k != 'process'} for s, j in active.items()}, failures=failures)
+        state = dict(progress, pid=os.getpid(), updated=time.time(), allowed_gpus=sorted(allowed) if allowed else None,
+                     active={s: {k: v for k, v in j.items() if k != 'process'} for s, j in active.items()}, failures=failures)
         ready = (CAMPAIGN / 'assets_verified.json').exists() and (CAMPAIGN / 'imports_verified.json').exists()
         smoke_passed = (CAMPAIGN / 'completed/smoke.json').exists()
         state['phase'] = 'waiting_assets_or_dependencies' if not ready else ('evaluation' if smoke_passed else 'smoke_validation')
@@ -242,13 +318,14 @@ def supervise():
             atomic(CAMPAIGN / 'status.json', state)
             return
         atomic(CAMPAIGN / 'status.json', state)
-        if ready and not failures and len(active) < 8:
+        if ready and not failures and len(active) < (1 if allowed is not None else 8):
             scenes = list(json.loads((CAMPAIGN / 'manifest.json').read_text())['scene_counts']) if smoke_passed else ['smoke']
             pending = [s for s in scenes if s not in active and not (CAMPAIGN / 'completed' / (s + '.json')).exists()]
             excluded = {g for j in active.values() for g in (j['gpu'], j['sim_gpu'])}
             # Existing queue holds these same advisory locks; probe before starting.
             for g in eligible:
-                f = open(f'/tmp/peng_vlnverse_gpu_{g}.lock', 'a')
+                LOCK_ROOT.mkdir(parents=True, exist_ok=True)
+                f = open(LOCK_ROOT / f'peng_vlnverse_gpu_{g}.lock', 'a')
                 try: fcntl.flock(f, fcntl.LOCK_EX | fcntl.LOCK_NB)
                 except BlockingIOError: excluded.add(g)
                 finally: f.close()

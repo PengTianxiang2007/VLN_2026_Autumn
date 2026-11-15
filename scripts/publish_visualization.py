@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SAFE_PART = re.compile(r'[A-Za-z0-9][A-Za-z0-9._-]*\Z')
 STATIC_SUFFIXES = {'.html', '.htm', '.css', '.js', '.json', '.png', '.jpg', '.jpeg',
                    '.webp', '.gif', '.svg', '.ico', '.mp4', '.webm', '.woff',
-                   '.woff2', '.ttf', '.otf', '.ttc', '.vtt'}
+                   '.woff2', '.ttf', '.otf', '.ttc', '.vtt', '.zip'}
 
 
 def digest(stream):

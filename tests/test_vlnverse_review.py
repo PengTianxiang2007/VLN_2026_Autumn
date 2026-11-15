@@ -62,7 +62,7 @@ class ReviewVideoTests(unittest.TestCase):
         terminal=dict(globalgps=[1,0,0])
         review=SimpleNamespace(start=lambda key:events.append(('start',key)),
             observe=lambda key,ob,action,terminal=False:events.append(('terminal' if terminal else 'action',key,ob)))
-        obj=SimpleNamespace(review=review,vis_output=False,run_seed=None,env_num=1,proc_num=1,robot_name='h1',
+        obj=SimpleNamespace(review=review,jev_live=None,vis_output=False,run_seed=None,env_num=1,proc_num=1,robot_name='h1',
             env=SimpleNamespace(reset=lambda:([{'h1':observation}],[info]),is_running=lambda:True,close=lambda:None),
             now_path_key=lambda value:value.data['path_key'],warm_up=lambda:[{'h1':observation}],
             _obs_remove_robot_name=lambda obs:[x['h1'] for x in obs],
