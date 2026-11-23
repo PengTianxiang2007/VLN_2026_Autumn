@@ -1,0 +1,17 @@
+{
+  "first_requests_compared": 29,
+  "distinct_worker_processes": 29,
+  "matching_fields": [
+    "previous_id",
+    "current_id",
+    "mode",
+    "previous_frame",
+    "current_frame",
+    "instruction_en",
+    "prior_semantic_progress",
+    "coverage",
+    "images",
+    "prompt_sha256"
+  ],
+  "model": "deepseek-flash"
+}

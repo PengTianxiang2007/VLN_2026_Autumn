@@ -1,0 +1,19 @@
+{
+  "at": "2026-11-17T09:04:06.500221+00:00",
+  "model": {
+    "episode_id": "kujiale_0128_fix_19_1",
+    "step_id": 22,
+    "pending_count": 2,
+    "pending": [
+      1,
+      2
+    ],
+    "calls": 10586,
+    "resets": 479,
+    "history_images": 22,
+    "sha256": "da3e5a2a6ceded6769986aae97c34d1a58bb449aa6107cdc6ede98d283f44921",
+    "deep": false,
+    "state": null
+  },
+  "tests": "15 CPU tests passed"
+}

@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "completed_cases": 4,
+  "review_rounds": 51,
+  "alarm_cases": 2,
+  "final_nodes": 517,
+  "terminal_nodes": 30,
+  "redChecks": [
+    {
+      "episode": "837",
+      "before": 0,
+      "after": 291
+    },
+    {
+      "episode": "1825",
+      "before": 0,
+      "after": 379
+    },
+    {
+      "episode": "1504",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "episode": "6858",
+      "before": 0,
+      "after": 0
+    }
+  ],
+  "actual_pose_edges": true,
+  "accepted_alarms_only": true,
+  "bilingual_alignment": true,
+  "raw_answers_preserved": true,
+  "pending_distinguished": true,
+  "mobile": true,
+  "page_errors": []
+}

@@ -1,5 +1,21 @@
 # 外部 Agent 独立 R2R 纠错
 
+2026-11-21 [Recovery 两阶段同模型对照 · v006 全部 47 例](branch_instruction_v001/run_20261121_02_paired47/README.md)完成。Qwen 两阶段生成 43 条指令，DeepSeek 两阶段生成 45 条；各 47 份有效回答。[双语对照回放](http://134.175.18.101/vln/recovery_instruction_v001_paired47_web_20261121_01/index.html)已发布。
+
+2026-11-21 [Recovery 第二次调用 v001 · DeepSeek 十例](branch_instruction_v001/run_20261121_01/README.md)完成。十例各输出一条替代支路和一句 8–12 词的英文局部指令，全部排除第一次匹配的已走支路。仅做离线指令生成。[双语回放](http://134.175.18.101/vln/recovery_instruction_v001_deepseek10_web_20261121_02/index.html)已发布。
+
+2026-11-21 [DeepSeek v1 全部 47 例](branch_review_v001/run_20261121_04_deepseek47/README.md)完成，45 例并行新跑、2 例复用，47 份原答格式有效，共 111 条支路。[统一对照网页](http://134.175.18.101/vln/recovery_branch_models_v006_47_web_20261121_02/index.html)已发布，支持勾选模型，回放标记仅取 v006 有效节点。
+
+2026-11-21 [Recovery v1.1 两例试跑](branch_review_v001.1/run_20261121_01/README.md)完成。逐视图候选和跨视图分组可追溯；Qwen 在 C50、C07 均合并了右视图候选，未保留独立右支路。GPU3 原服务已回到待用状态。
+
+2026-11-21 [DeepSeek 两例并行复核](branch_review_v001/run_20261121_03_deepseek2/README.md)完成。v006 C50、C07 复用原七图和 Prompt，两例均返回格式有效的结果，且均列出右前方支路。
+
+2026-11-21 10:43 UTC，[v006 全部回退节点的第一次调用](branch_review_v001/run_20261121_02_all47/README.md)完成。已处理 47/47 个回退节点，其中新增 37 例、复用 10 例。格式有效 47 例，共列出 101 条支路，匹配到此前所走支路 47 例、模型回答不确定 0 例。
+
+2026-11-21 09:20 UTC，[Recovery 第一次调用 v001 十例](branch_review_v001/run_20261121_01/README.md)完成：按用户指定使用 v006 的 C42、C46、C49、C50、C07、C05、C09、C10、C20、C21，GPU3 Qwen27B，每例固定七图且不输入任务指令。10/10 格式有效，模型共列 24 条支路、10 次 identified；无准确率评分。没有第二次指令调用或导航，GPU3 模型按要求继续保留。[双语可视化已发布](http://134.175.18.101/vln/recovery_branch_review_v001_ten_web_20261121_02/index.html)，支路清单、此前所走支路与七图证据醒目展示，附完整离线包。
+
+2026-11-21：[Recovery 第一次调用 v001](branch_review_v001/README.md)已整理为独立草稿：节点 ±70°／0° 三图，加 C+2、+5、+8、+10 四张原生前视，共七图；一次识别当前直接可选支路和此前已走支路，明确排除建立在另一项选择之上的后续分叉。中英文 Prompt、输入协议与输出 Schema 已保存。用户明确本次只编写版本，不运行模型；第二次 R2R 指令调用尚未定义。
+
 **当前最优 prompt：v007（用户于2026-11-08指定）。** [英文](r2r_v007/prompt_en.txt) · [中文](r2r_v007/prompt_zh.txt) · [七例运行结果](r2r_v007/run_20261108_01/README.md) · [版本索引](current_best.json)。此标记针对指令生成审阅，未验证实际恢复导航；后续以此版为当前参考，不自动重跑。
 
 [首版七例部署](r2r_v001/run_20261107_01/README.md)：复用选路，清空StreamVLN记忆，局部任务。

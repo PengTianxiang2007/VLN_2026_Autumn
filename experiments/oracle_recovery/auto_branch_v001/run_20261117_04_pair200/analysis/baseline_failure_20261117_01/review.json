@@ -1,0 +1,1437 @@
+{
+  "completed_at": "2026-11-17T07:52:12.375724+00:00",
+  "reviewer": "Codex: offline trajectory and instruction review",
+  "classification_frozen_before_paired_outcome_join": true,
+  "source_cases_sha256": "cd71f8969b9383acf5ecd76563e4c003d7940aa1bc1d486ea7f38ff04a8e9258",
+  "notes_sha256": "c3a475f5b755cbdfaec7323d5defb8338b7789f11eb88e1d1b6b0127240647aa",
+  "cases": [
+    {
+      "number": "1",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "沿走廊通过参考路线要求左转的目标卧室入口，继续到更远的房间后才停止；三米范围内经过并未进入该目标卧室。",
+      "episode_id": "kujiale_0243_29_2",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "2",
+      "category": "goal_overshoot",
+      "confidence": "moderate",
+      "reason_zh": "已进入目标所在的开放客厅，最近距目标0.93米，随后继续穿过客厅走向餐区，未在目标家具附近停下；归为末端停止/定位问题，未计入严格选错分支。",
+      "episode_id": "kujiale_0243_19_1",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "3",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "进入走廊后漏掉右侧目标浴室入口，继续走到更远卧室后停止；目标附近的经过与实际进入目标房间不同。",
+      "episode_id": "kujiale_0243_11_2",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "4",
+      "category": "route_backtrack",
+      "confidence": "high",
+      "reason_zh": "在起始卧室与出口附近多次掉头，最终沿已经走过的线路退回起点附近；参考进度由约3.3米退至0.5米，没有继续沿走廊前进。",
+      "episode_id": "kujiale_0243_2_0",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "5",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "从厨房进入走廊后未按路线右转进入目标房间，持续走向走廊远端的另一房间。",
+      "episode_id": "kujiale_0243_18_3",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "6",
+      "category": "stop_incomplete",
+      "confidence": "high",
+      "reason_zh": "基本贴合正确走廊行走，尚未走到目标房间便输出STOP；最终距目标3.28米，全程横向误差很小。",
+      "episode_id": "kujiale_0243_81_0",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "7",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "到达通道交会处后继续向前进入远端卧室，没有沿参考路线转入向客厅方向的走廊。",
+      "episode_id": "kujiale_0243_35_4",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "8",
+      "category": "fall_onroute",
+      "confidence": "high",
+      "reason_zh": "在起始卧室向门口前进时跌倒；轨迹尚未发生明确分支选择，最大路线距离0.43米。",
+      "episode_id": "kujiale_0258_24_0",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "9",
+      "category": "route_choice",
+      "confidence": "moderate",
+      "reason_zh": "出起始通道后没有沿横向主走廊前进，而继续向对侧卧室入口运动并停止；错误方向在终止前持续存在。",
+      "episode_id": "kujiale_0258_35_1",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "10",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "先进入旁侧区域，又沿主厅向餐区行走，未进入指令指定的浴室；长期轨迹位于错误路线一侧。",
+      "episode_id": "kujiale_0258_14_0",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "11",
+      "category": "uncertain",
+      "confidence": "uncertain",
+      "reason_zh": "出门后出现约1.17米局部偏移和回转，随后回到距参考线0.57米处停止；缺少分叉时RGB，无法可靠区分选错入口、绕障和局部控制失败。",
+      "episode_id": "kujiale_0258_36_1",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "12",
+      "category": "fall_onroute",
+      "confidence": "high",
+      "reason_zh": "在起始卧室靠近出口的位置跌倒，仍处于参考线路附近，没有进入错误分支的轨迹证据。",
+      "episode_id": "kujiale_0258_11_0",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "13",
+      "category": "fall_onroute",
+      "confidence": "high",
+      "reason_zh": "反复转向后只在起始卧室向出口小幅前进即跌倒；最大路线距离0.36米，未进入别的通路。",
+      "episode_id": "kujiale_0258_16_4",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "14",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "从客厅走向走廊入口时漏掉通往目标卧室的转向，转而进入餐区远端。",
+      "episode_id": "kujiale_0258_33_2",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "15",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "起始位置应沿走廊向卧室区域前进，实际朝相反一侧的餐区行走，最终停在餐区末端。",
+      "episode_id": "kujiale_0258_27_0",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "16",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "出起始小通道后选择通往开放餐区的方向，未走向参考路线指定的上下床房间。",
+      "episode_id": "kujiale_0258_5_0",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "17",
+      "category": "fall_onroute",
+      "confidence": "high",
+      "reason_zh": "尚未离开起始卧室的出口附近即跌倒；轨迹最大偏离仅0.25米，没有错分支证据。",
+      "episode_id": "kujiale_0258_29_2",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "18",
+      "category": "fall_onroute",
+      "confidence": "high",
+      "reason_zh": "主要在起始卧室内转向和小幅前进，未完成出门即跌倒；没有进入错误通道。",
+      "episode_id": "kujiale_0258_37_3",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "19",
+      "category": "route_backtrack",
+      "confidence": "moderate",
+      "reason_zh": "到达出口附近后转向并沿来路返回，越过起始位置走入房间内部；未沿指令继续进入走廊。",
+      "episode_id": "kujiale_0159_56_3",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "20",
+      "category": "uncertain",
+      "confidence": "uncertain",
+      "reason_zh": "出门时先越过参考拐点约1米，随后转回正确通道方向，但在门边停止；可能是局部转弯/避障后未推进，不能确认独立错分支。",
+      "episode_id": "kujiale_0159_51_4",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "21",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "出起始房间后越过横向走廊的转向，直行进入对侧卧室；在错误房间内继续移动后跌倒。",
+      "episode_id": "kujiale_0159_50_0",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "22",
+      "category": "fall_onroute",
+      "confidence": "high",
+      "reason_zh": "沿开放区进入正确走廊的路线前进时跌倒，最大路线距离0.44米；OS=1来自目标的空间邻近，尚未进入目标房间。",
+      "episode_id": "kujiale_0159_40_0",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "23",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "出门后在通道口向与参考路线相反的一侧行走，进入错误的房间区域后停止。",
+      "episode_id": "kujiale_0159_35_3",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "24",
+      "category": "route_backtrack",
+      "confidence": "high",
+      "reason_zh": "到达卧室出口后连续转向，沿刚走过的路线返回原卧室；进度从约3米退回0.34米，随后STOP。",
+      "episode_id": "kujiale_0159_18_3",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "25",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "在开放区应转入走廊和目标卧室，实际继续在客厅/餐区绕行；远离正确分支之后才跌倒。",
+      "episode_id": "kujiale_0159_44_0",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "26",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "离开入口后未沿长走廊向目标卧室前进，先绕入客厅再到入口另一侧的小房间停止。",
+      "episode_id": "kujiale_0165_57_0",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "27",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "沿走廊经过目标卧室入口而未左转，继续直行到另一侧区域后停止。",
+      "episode_id": "kujiale_0165_53_0",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "28",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "任务要求从房间进入主厅，实际转向并向起始房间深处前进，方向与参考出口相反。",
+      "episode_id": "kujiale_0165_36_0",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "29",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "从客厅起点应走向长走廊另一端，实际进入相反侧的短通道，在该方向往返后停止。",
+      "episode_id": "kujiale_0165_30_2",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "30",
+      "category": "stuck_onroute",
+      "confidence": "high",
+      "reason_zh": "在正确路线的门口/拐角附近长时间无法推进，原生判定stuck；最大横向偏离0.25米，无明确错路。",
+      "episode_id": "kujiale_0165_51_4",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "31",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "到目标卧室入口没有转入，继续走廊向前并进入另一侧区域；最终停在目标房间外。",
+      "episode_id": "kujiale_0165_49_4",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "32",
+      "category": "route_choice",
+      "confidence": "moderate",
+      "reason_zh": "虽在开放区有侧向偏移，但决定性错误发生在末端：越过应右转的卧室入口，继续直行到另一门口停止。",
+      "episode_id": "kujiale_0165_40_1",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "33",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "从入口走入客厅方向，而没有沿参考路线进入通往浴室的走廊；绕到客厅家具附近后跌倒。",
+      "episode_id": "kujiale_0165_55_1",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "34",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "离开入口区后没有转向目标客厅，反而进入左侧短通道/小房间，远离目标停止。",
+      "episode_id": "kujiale_0165_58_1",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "35",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "出浴室后在走廊口选了相反方向，走到走廊另一端并进入错误卧室。",
+      "episode_id": "kujiale_0165_45_0",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "36",
+      "category": "uncertain",
+      "confidence": "uncertain",
+      "reason_zh": "在开放区中向餐桌方向走，约偏离0.9米后停止，未进入清晰的另一通道；缺少中途画面，无法确认是选路错误还是家具避障/停滞。",
+      "episode_id": "kujiale_0128_fix_7_1",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "37",
+      "category": "route_choice",
+      "confidence": "moderate",
+      "reason_zh": "进入开放客厅后未沿参考路线转向目标窗边区域，而持续横穿房间到另一侧墙边；属于开放区域内的方向选择错误，不声称存在拓扑岔口。",
+      "episode_id": "kujiale_0128_fix_20_0",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "38",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "从开放区进入卧室区域时，应进入下侧目标卧室，实际进入对侧上方卧室后停止。",
+      "episode_id": "kujiale_0128_fix_18_1",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "39",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "起点应转向客厅并向窗边前进，实际走向后方厨房/入口一侧，与目标方向相反。",
+      "episode_id": "kujiale_0128_fix_12_4",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "40",
+      "category": "uncertain",
+      "confidence": "uncertain",
+      "reason_zh": "在同一开放客厅向家具前进后长时间原地调整并跌倒，偏离约1米；无法从位置记录判定是错误选路、避障不足还是控制失败。",
+      "episode_id": "kujiale_0128_fix_8_2",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "41",
+      "category": "stuck_onroute",
+      "confidence": "high",
+      "reason_zh": "沿正确通道到达门口后不能继续推进，原生stuck；全程路线距离不超过0.30米。",
+      "episode_id": "kujiale_0285_7_0",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "42",
+      "category": "stuck_onroute",
+      "confidence": "high",
+      "reason_zh": "在起始房间出口附近卡住，没有完成进入正确横向走廊；无明确错误分支，最大路线距离0.28米。",
+      "episode_id": "kujiale_0285_5_0",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "43",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "走廊交会处选了通往客餐厅的方向，没有进入目标书房/扶手椅所在房间，随后在错误区域跌倒。",
+      "episode_id": "kujiale_0285_2_1",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "44",
+      "category": "route_choice",
+      "confidence": "moderate",
+      "reason_zh": "离开起始房间后未向左侧客厅通道前进，而持续向对面卧室门口运动并停下；错误方向不只是终末跌倒抖动。",
+      "episode_id": "kujiale_0285_7_3",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "45",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "离开入口后向客厅家具一侧行走，没有沿参考线路转入目标书房所在的通道。",
+      "episode_id": "kujiale_0285_2_3",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "46",
+      "category": "uncertain",
+      "confidence": "uncertain",
+      "reason_zh": "沿正确走廊前进一段后向侧边门口偏约1米并停止，未进入另一房间；难以区分错认入口与局部避障/碰撞停滞。",
+      "episode_id": "kujiale_0285_6_0",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "47",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "沿走廊应转入目标书房时继续直行进入客厅；最近目标距离虽小，但与目标之间仍隔着墙，没有进入指定房间。",
+      "episode_id": "kujiale_0285_2_0",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "48",
+      "category": "warmup_fall",
+      "confidence": "high",
+      "reason_zh": "原生记录500 ticks、0次策略动作，预热阶段即跌倒；不能归为模型选错路。",
+      "episode_id": "kujiale_0285_5_3",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "49",
+      "category": "stop_incomplete",
+      "confidence": "high",
+      "reason_zh": "沿正确路线走到门口拐角就输出STOP，尚需继续横穿房间到目标；无明确偏航。",
+      "episode_id": "kujiale_0226_13_4",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "50",
+      "category": "stuck_onroute",
+      "confidence": "high",
+      "reason_zh": "沿正确路线走到门口后卡住，尚未进入后续走廊；原生stuck且最大路线偏离0.29米。",
+      "episode_id": "kujiale_0226_23_1",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "51",
+      "category": "fall_onroute",
+      "confidence": "high",
+      "reason_zh": "从起始房间向门口运动时跌倒，尚未离开初始区域，最大路线距离0.34米。",
+      "episode_id": "kujiale_0226_89_2",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "52",
+      "category": "uncertain",
+      "confidence": "uncertain",
+      "reason_zh": "到门口后向参考转弯相反的一侧短距离移动并停止，最大偏移0.72米；未进入明确错误房间，无法排除局部门框避障或停止误判。",
+      "episode_id": "kujiale_0226_95_0",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "53",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "从卧室出口进入交会处后，直行进入对面卧室，未沿参考路线转向餐厅。",
+      "episode_id": "kujiale_0226_38_4",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "54",
+      "category": "route_choice",
+      "confidence": "moderate",
+      "reason_zh": "在正确门口附近徘徊后，连续前进越过应转弯位置，进入相反方向的通道后跌倒；偏移在跌倒终帧前已持续增加。",
+      "episode_id": "kujiale_0226_56_2",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "55",
+      "category": "stop_incomplete",
+      "confidence": "high",
+      "reason_zh": "只在正确门口附近前进和调整，尚未进入目标客厅区域就STOP；全程距离参考线不超过0.30米。",
+      "episode_id": "kujiale_0226_91_1",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "56",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "离开餐厅后应转入卧室方向的走廊，实际横穿客厅走向另一侧门口，偏离后停止。",
+      "episode_id": "kujiale_0226_14_2",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "57",
+      "category": "route_choice",
+      "confidence": "moderate",
+      "reason_zh": "沿走廊到交会处后未转向开放客餐区，而继续直行到对面房间门边停止；动作和位置显示越过应转弯点。",
+      "episode_id": "kujiale_0226_2_4",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "58",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "到走廊出口附近后转回反方向，越过起点进入另一卧室，未进入正确客餐区。",
+      "episode_id": "kujiale_0226_36_2",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "59",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "出起始小房间后应向下进入目标卧室区域，实际转向相反方向的走廊，停止在另一房间入口。",
+      "episode_id": "kujiale_0226_94_0",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "60",
+      "category": "route_choice",
+      "confidence": "moderate",
+      "reason_zh": "沿通道越过应转向客厅的路口，直行到对面卧室门口后卡住；原生stuck是走错方向之后的终止方式。",
+      "episode_id": "kujiale_0226_88_0",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "61",
+      "category": "route_backtrack",
+      "confidence": "high",
+      "reason_zh": "曾向正确走廊出口推进，之后连续转向并沿来路返回，越过起点向后方移动，最后跌倒；倒退进度发生于终末跌倒之前。",
+      "episode_id": "kujiale_0226_96_0",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "62",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "出门后先越过正确转弯位置，再掉头回到起始房间深处；始终未进入参考路线要求的客餐区通道。",
+      "episode_id": "kujiale_0226_80_4",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "63",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "走到卧室区域的交会处时转入左侧小房间/入口，未进入参考路线右侧的目标卧室。",
+      "episode_id": "kujiale_0290_37_3",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "64",
+      "category": "route_choice",
+      "confidence": "moderate",
+      "reason_zh": "从走廊进入开放区域后转向餐桌一侧并停止，没有沿指定通道朝客厅窗边继续；为开放区域内的方向选择错误。",
+      "episode_id": "kujiale_0290_31_1",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "65",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "走出厨房后在交会处继续向另一入口运动，没有转入参考路线要求的左侧卧室。",
+      "episode_id": "kujiale_0290_20_2",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "66",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "未转向客餐厅方向，反而沿走廊进入旁侧房间；终止点位于错误分支内部。",
+      "episode_id": "kujiale_0290_12_2",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "67",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "初始位置应沿通道进入厨房，实际朝相反方向进入客厅并绕家具移动，之后跌倒。",
+      "episode_id": "kujiale_0290_42_4",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "68",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "到达分离处后沿长通道直行到尽头，漏掉应转入浴室的方向。",
+      "episode_id": "kujiale_0290_10_0",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "69",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "起点附近没有转向卧室入口，而持续沿客餐区向反方向走，最终停在客厅一侧。",
+      "episode_id": "kujiale_0290_1_1",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "70",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "穿过交会处后进入右侧大卧室，参考路线则通向左侧目标房间；这是明确的错误房间选择。",
+      "episode_id": "kujiale_0290_40_1",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "71",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "在初始交会处反复调整后走向左侧错误房间，未转入参考路线规定的客厅方向。",
+      "episode_id": "kujiale_0290_16_1",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "72",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "沿走廊走到目标区域前提前进入下侧卧室，未继续到上侧衣帽间/浴室，随后在错误卧室内跌倒。",
+      "episode_id": "kujiale_0147_61_1",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "73",
+      "category": "route_choice",
+      "confidence": "moderate",
+      "reason_zh": "指令要求离开衣帽间，实际转向后向衣帽间内部前进并反复转动，偏离早于末端跌倒；属于初始方向错误。",
+      "episode_id": "kujiale_0147_56_4",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "74",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "漏掉起点附近目标卧室入口，沿长走廊持续走到另一端卧室。",
+      "episode_id": "kujiale_0147_65_1",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "75",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "出浴室后未进入附近应右转的卧室，而继续长距离穿过走廊进入远端另一卧室。",
+      "episode_id": "kujiale_0147_14_0",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "76",
+      "category": "uncertain",
+      "confidence": "uncertain",
+      "reason_zh": "主要在起点附近反复转向并向侧边入口移动不到1米即停止；方向有疑点，但不足以区分误选入口与局部控制/避障。",
+      "episode_id": "kujiale_0147_66_2",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "77",
+      "category": "stop_incomplete",
+      "confidence": "high",
+      "reason_zh": "沿正确路线从卧室走到出口附近后STOP，没有继续进入开放餐区；最大路线距离0.21米。",
+      "episode_id": "kujiale_0147_8_4",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "78",
+      "category": "stop_incomplete",
+      "confidence": "high",
+      "reason_zh": "从衣帽间沿正确走廊走出一段后STOP，未继续走到目标卧室；OS=1为空间邻近，不代表进入目标。",
+      "episode_id": "kujiale_0147_29_2",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "79",
+      "category": "stop_incomplete",
+      "confidence": "high",
+      "reason_zh": "出衣帽间后沿正确通道走了一段，尚未走到主厅和目标餐区就STOP；未发生明确分支偏航。",
+      "episode_id": "kujiale_0147_18_3",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "80",
+      "category": "route_backtrack",
+      "confidence": "high",
+      "reason_zh": "走到卧室出口后发生连续转向，沿来路回到原卧室内部，随后跌倒；反向位移在跌倒前已有完整前进动作支持。",
+      "episode_id": "kujiale_0147_52_3",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "81",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "从餐区向前走时漏掉通往目标门口的转向，继续穿过客厅到另一端餐桌附近，远离目标后停止。",
+      "episode_id": "kujiale_0147_57_1",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "82",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "离开卧室后沿走廊转向与目标衣帽间/浴室相反的一侧，进入客餐厅和其他房间区域。",
+      "episode_id": "kujiale_0147_1_1",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "83",
+      "category": "stop_incomplete",
+      "confidence": "high",
+      "reason_zh": "沿正确路线走到门口后停止，仍距目标8.51米，未继续横穿主厅；无明确错路。",
+      "episode_id": "kujiale_0147_46_4",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "84",
+      "category": "stop_incomplete",
+      "confidence": "high",
+      "reason_zh": "在起始卧室和出口附近小范围调整后STOP，尚未沿走廊到达第二卧室；最大路线距离0.44米。",
+      "episode_id": "kujiale_0294_11_0",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "85",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "从开放区域出发后漏掉应进入卧室的转向，继续直行到另一侧入口/通道，之后跌倒。",
+      "episode_id": "kujiale_0294_36_4",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "86",
+      "category": "warmup_fall",
+      "confidence": "high",
+      "reason_zh": "原生记录500 ticks、0次策略动作，预热阶段跌倒；不存在模型导航选路行为。",
+      "episode_id": "kujiale_0294_46_2",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "87",
+      "category": "stop_incomplete",
+      "confidence": "high",
+      "reason_zh": "只走到起始卧室出口附近即STOP，尚未沿走廊进入第二卧室；轨迹最大偏离0.21米。",
+      "episode_id": "kujiale_0294_4_4",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "88",
+      "category": "route_backtrack",
+      "confidence": "high",
+      "reason_zh": "向正确方向走了一段后连续转向，沿原路反向返回并越过起点，末段跌倒；反向运动发生于倒地终帧之前。",
+      "episode_id": "kujiale_0294_37_2",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "89",
+      "category": "route_choice",
+      "confidence": "moderate",
+      "reason_zh": "起始门口反复调整后，没有转入正确走廊，而向原房间内部的床侧前进；方向偏离在最终跌倒之前已经形成。",
+      "episode_id": "kujiale_0294_22_2",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "90",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "在起始卧室出口应转向右侧开放区，实际掉头向卧室内部和床侧前进，最终停在错误区域。",
+      "episode_id": "kujiale_0294_25_3",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "91",
+      "category": "uncertain",
+      "confidence": "uncertain",
+      "reason_zh": "起始房间内大量转向，随后向床侧移动约1米并跌倒；缺少中途RGB，无法可靠判定为选错路径还是起步控制/碰撞问题。",
+      "episode_id": "kujiale_0294_53_4",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "92",
+      "category": "stop_incomplete",
+      "confidence": "high",
+      "reason_zh": "长期停留在起始位置附近反复转向后STOP，未沿参考路线开始有效推进；偏移较小，没有错误分支进入证据。",
+      "episode_id": "kujiale_0294_23_1",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "93",
+      "category": "warmup_fall",
+      "confidence": "high",
+      "reason_zh": "原生记录500 ticks、0次策略动作，预热阶段即跌倒；不计入偏航失败。",
+      "episode_id": "kujiale_0294_60_2",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "94",
+      "category": "route_choice",
+      "confidence": "high",
+      "reason_zh": "长时间在门口转向后，最终向卧室深处而不是正确走廊前进，连续错误方向运动超过2米，之后跌倒。",
+      "episode_id": "kujiale_0294_43_3",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "95",
+      "category": "fall_onroute",
+      "confidence": "high",
+      "reason_zh": "在开放区域沿正确路线向餐桌/走廊方向行走时跌倒；最大路线距离0.34米，未到分支选择位置。",
+      "episode_id": "kujiale_0294_57_0",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "96",
+      "category": "route_backtrack",
+      "confidence": "high",
+      "reason_zh": "已进入正确的客餐厅通道，之后掉头沿原路返回入口方向；参考进度由约4米退到1.1米后STOP。",
+      "episode_id": "kujiale_0291_6_3",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "97",
+      "category": "route_backtrack",
+      "confidence": "moderate",
+      "reason_zh": "向正确方向前进约1.3米后转向，沿来路退回起点附近才停止；位置和连续前进动作支持反向行走，未计为横向错分支。",
+      "episode_id": "kujiale_0291_3_1",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "98",
+      "category": "stop_incomplete",
+      "confidence": "high",
+      "reason_zh": "只在起始门口约1米范围内往返和转向，最后STOP，未完成后续房间/走廊导航；作为局部停滞，未计入明确选路偏航。",
+      "episode_id": "kujiale_0291_0_3",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "99",
+      "category": "stop_incomplete",
+      "confidence": "high",
+      "reason_zh": "沿正确路线进入开放区后在餐桌边附近调整并STOP，尚未走到目标门；未发生明确错误分支，路线距离最大0.47米。",
+      "episode_id": "kujiale_0291_15_0",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "100",
+      "category": "fall_onroute",
+      "confidence": "high",
+      "reason_zh": "从初始通道向正确开放区前进时跌倒，轨迹仍在参考路线0.34米范围内。",
+      "episode_id": "kujiale_0291_0_4",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "101",
+      "category": "stuck_onroute",
+      "confidence": "high",
+      "reason_zh": "在初始门口正确路线附近卡住，未完成出门进入客餐区，最大路线偏离0.16米。",
+      "episode_id": "kujiale_0291_20_1",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    },
+    {
+      "number": "102",
+      "category": "route_choice",
+      "confidence": "moderate",
+      "reason_zh": "走到出口后转向与参考路线相反的一侧，连续前进回到墙边后跌倒；虽横向距离不足0.75米，仍可见沿错误方向行走的时序证据。",
+      "episode_id": "kujiale_0291_12_2",
+      "review_evidence": [
+        "instruction",
+        "recorded_trajectory",
+        "static_floorplan",
+        "policy_actions"
+      ],
+      "full_rgb_review": false
+    }
+  ]
+}

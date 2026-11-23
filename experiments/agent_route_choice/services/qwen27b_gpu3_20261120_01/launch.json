@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-11-20T07:14:39.146376+00:00",
+  "command": [
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/crossing_vllm27/bin/python",
+    "-Bu",
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/scripts/serve_qwen27b_standby.py",
+    "--config",
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/experiments/agent_route_choice/services/qwen27b_gpu3_20261120_01/model.json",
+    "--output",
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/model_services/qwen27b_gpu3_20261120_02",
+    "--gpu",
+    "3",
+    "--allow-shared-gpu",
+    "--process-only"
+  ],
+  "process_launch_verified": true,
+  "gpu": 3,
+  "server_pid": 3800879,
+  "supervisor_pid": 3800779,
+  "base_url": "http://127.0.0.1:57295/v1",
+  "model": "route53-qwen27b",
+  "readiness": "not_probed"
+}

@@ -199,8 +199,15 @@ class VLNEvaluator:
 
     def eval_action(self, idx) -> None:
         env = self.config_env()
+        selected_ids = None
+        if self.args.capture_manifest:
+            from rxr_capture import EpisodeCapture
+            with open(self.args.capture_manifest) as stream:
+                selected_ids = {str(row["episode_id"]) for row in json.load(stream)["episodes"]}
         scene_episode_dict = {}
         for episode in env.episodes:
+            if selected_ids is not None and episode.episode_id not in selected_ids:
+                continue
             if episode.scene_id not in scene_episode_dict:
                 scene_episode_dict[episode.scene_id] = []
             scene_episode_dict[episode.scene_id].append(episode)
@@ -237,6 +244,11 @@ class VLNEvaluator:
                 self.model.reset_for_env(idx)
                 env.current_episode = episode
                 observations = env.reset()
+                capture = None
+                if selected_ids is not None:
+                    capture = EpisodeCapture(self.output_path, scene_id, episode,
+                                             self.gt_by_episode[str(episode_id)]["locations"])
+                    capture.frame(0, None, observations, env)
                 path_locations = [env.sim.get_agent_state().position.tolist()]
                 os.makedirs(os.path.join(self.output_path, f'check_sim_{self.epoch}'), exist_ok=True)
                 Image.fromarray(observations['rgb']).save(os.path.join(self.output_path, f'check_sim_{self.epoch}', f'rgb_{idx}.jpg'))
@@ -355,6 +367,8 @@ class VLNEvaluator:
                     action = action_seq.pop(0)
                     
                     observations = env.step(action)
+                    if capture is not None:
+                        capture.frame(step_id + 1, action, observations, env)
                     location = env.sim.get_agent_state().position.tolist()
                     if location != path_locations[-1]:
                         path_locations.append(location)
@@ -396,6 +410,8 @@ class VLNEvaluator:
                     "episode_instruction": episode_instruction
                 }
                 
+                if capture is not None:
+                    result.update(capture=capture.relative_path, frames=step_id + 1)
                 with open(os.path.join(self.output_path, f'result.json'), 'a') as f:
                     f.write(json.dumps(result) + "\n")
 
@@ -526,6 +542,7 @@ def eval():
     parser.add_argument("--num_future_steps", type=int, default=4)
     parser.add_argument("--num_frames", type=int, default=32)
     parser.add_argument("--save_video", action="store_true", default=False)
+    parser.add_argument("--capture_manifest", help="Evaluate these RxR episodes and record raw RGB and poses at every action boundary")
     parser.add_argument("--num_history", type=int, default=8)
     parser.add_argument("--max_eval_episodes", type=int, default=0,
                         help="Limit newly evaluated episodes for a smoke run; 0 runs the full split")

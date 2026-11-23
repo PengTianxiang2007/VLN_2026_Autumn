@@ -1,0 +1,5 @@
+{
+  "worker_pid": 1032832,
+  "log": "outputs/agent_recovery/branch_review_v001/run_20261121_01.worker2.log",
+  "prior_start_failed_before_any_request": "worker 1032277, Python syntax error; corrected and checked"
+}

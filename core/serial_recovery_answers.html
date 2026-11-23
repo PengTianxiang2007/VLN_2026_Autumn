@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,"><title>在线恢复事件回放</title><style>
+/* REPLAY_STYLE */
+</style></head><body>
+<header><div><h1 id="heading"></h1><div id="subtitle"></div></div><select id="language" aria-label="中文 / English"><option value="zh">中文</option><option value="en">English</option></select></header>
+<div class="scorebar" id="stats"></div>
+<main>
+<section class="selectbar"><label><b id="caseHeader"></b><select id="filter"></select></label><label class="casepick"><b id="caseTitle"></b><select id="caseJump"></select></label><label><b id="roundHeader"></b><select id="roundFilter"></select></label><label class="roundpick"><b id="eventLabel"></b><select id="rounds"></select></label></section>
+<div class="caseinfo"><p id="instruction"></p><p id="caseStats"></p></div>
+<div class="grid">
+<section class="panel mapPane"><div class="panelheading"><h2 id="mapTitle"></h2><div class="mapTools" id="mapTools"><button data-fit="floor"></button><button data-fit="case"></button><button data-fit="event"></button><button id="mapMinus">−</button><button id="mapPlus">+</button></div></div>
+<svg id="map" viewBox="0 0 760 394" aria-labelledby="mapTitle"></svg>
+<p class="hint" id="gestureHint"></p>
+<div class="stages" id="stages"></div><div class="legend" id="layers"></div><p class="hint" id="mapHint"></p>
+<details id="nodesPanel"><summary id="nodeTitle"></summary><div class="nodeList" id="nodeList"></div></details>
+<h3 id="waveTitle"></h3><svg id="wave" viewBox="0 0 500 72" preserveAspectRatio="none" aria-labelledby="waveTitle"></svg>
+<div class="seek"><label for="mapFrame" id="mapLabel"></label><input type="range" id="mapFrame" min="0"></div>
+<div class="rollbackJumps" id="rollbackJumps"></div></section>
+<section class="panel eventPane"><div class="panelheading"><h2 id="eventTitle"></h2><span id="eventStatus"></span></div>
+<div id="eventSummary"></div><div id="branchQuick"></div></section>
+</div>
+<div class="grid lower">
+<section class="panel"><div class="panelheading"><h2 id="observationHeader"></h2><select id="arm"></select></div>
+<canvas id="rgb" width="480" height="360"></canvas><div class="seek"><label for="imageFrame" id="rgbLabel"></label><input type="range" id="imageFrame" min="0"><b id="step"></b></div>
+<div class="controls"><button id="restart">↤</button><button id="prev">‹</button><button id="play"></button><button id="next">›</button><button id="end">↦</button></div><p id="armStats"></p></section>
+<section class="panel"><h2 id="evidenceTitle"></h2><div id="judgment"></div><div id="execution"></div></section>
+</div>
+<section id="branchInputs"></section><section id="branchReview"></section><section id="recoveryInstruction"></section>
+<footer><details><summary id="skipHeader"></summary><ul id="skips"></ul></details><nav><a id="download" href="replay_offline.zip" download></a><a id="scores" href="paired_results.zip" download></a><a id="allAnswers" href="answers.json" download></a></nav></footer>
+</main><dialog class="brDialog" id="dialog"><button id="close"></button><p id="caption"></p><img id="large" alt=""></dialog>
+<script src="data.js"></script><script src="answers.js"></script><script src="player.js"></script></body></html>

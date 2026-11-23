@@ -1,0 +1,37 @@
+{
+  "checked_at": "2026-11-23T20:40:30+00:00",
+  "phase": "complete",
+  "started_at": "2026-11-23T10:19:36.040123+00:00",
+  "finished_at": "2026-11-23T19:53:23.673755+00:00",
+  "wall_seconds_including_loading": 34427.63,
+  "dedup": {
+    "candidates": 725,
+    "retained": 517,
+    "removed": 208,
+    "model_calls": 656,
+    "uncertain": 29,
+    "errors": 4
+  },
+  "effective_nodes": 517,
+  "terminal_nodes": 30,
+  "deviation_cases": 30,
+  "deviation_calls": 349,
+  "deviation_outcomes": {
+    "consistent": 309,
+    "format_error": 22,
+    "deviated": 18
+  },
+  "alarm_cases": 18,
+  "no_alarm_cases": 12,
+  "timing_counts": {
+    "after_confirmation": 11,
+    "no_alarm": 12,
+    "before_decision": 6,
+    "decision_to_confirmation": 1
+  },
+  "supervisor_and_service_and_engine_exited": true,
+  "gpu3_memory_mib_after_exit": 9,
+  "navigation_scored_episodes": 0,
+  "source_status": "outputs/deviation_progress/rxr30_v006/run_20261123_02_startup_timeout/status.json",
+  "source_results": "outputs/deviation_progress/rxr30_v006/run_20261123_02_startup_timeout/deviation/v006_results.json"
+}

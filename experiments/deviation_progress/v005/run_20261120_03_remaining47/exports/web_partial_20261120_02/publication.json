@@ -1,0 +1,29 @@
+{
+  "url": "http://134.175.18.101/vln/deepseek_v004_six_web_20261120_02/index.html",
+  "updated_at": "2026-11-20T11:46:42.358698+00:00",
+  "immutable_release": "qwen_v005_partial_48_web_20261120_02",
+  "old_sha256": "4f5eabbaa93b152c4ac071329cc5d511b9e93568cda497e99cd3cee6885d905a",
+  "entry_sha256": "4bc9afc2cd82a3d5ea64478f4023977efb193cf6a7c79559d72980952692fc7a",
+  "backup": "index_before_v005_partial48_20261120.html",
+  "http": {
+    "index.html": {
+      "status": 200,
+      "bytes": 5762122,
+      "mime": "text/html",
+      "sha256": "4bc9afc2cd82a3d5ea64478f4023977efb193cf6a7c79559d72980952692fc7a"
+    },
+    "qwen_v005_partial_48_model_returns.json": {
+      "status": 200,
+      "bytes": 3239794,
+      "mime": "application/json",
+      "sha256": "0039e48ed0f2eb5492a183c33538423b65840d687feb5ac782932559466b9578"
+    },
+    "qwen_v005_completed_48_offline.zip": {
+      "status": 200,
+      "bytes": 350269313,
+      "mime": "application/zip"
+    }
+  },
+  "assets_verified": 5430,
+  "assets_added": 4877
+}

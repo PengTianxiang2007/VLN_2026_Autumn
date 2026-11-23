@@ -1,0 +1,20 @@
+{
+  "completed_cases": 4,
+  "effective_nodes": 71,
+  "terminal_nodes": 4,
+  "original_candidates": 139,
+  "model_calls": 134,
+  "translations": 357,
+  "frames": 4465,
+  "html_sha256": "e0411c4431d4821127eaa93394219a747c9e350675d4bbba14ebd0d8507e904c",
+  "archive_sha256": "61e89ab060450144ba7ed53d405e2ce628e00372e80abe2eda1c50ce3263740b",
+  "archive_bytes": 226636929,
+  "sources": {
+    "scripts/export_rxr_offline_snapshot.py": "2bbe252181a2c44adfc0d9919dbfa40741423e9fc3fbf2906989e3dfbae15d80",
+    "core/rxr_offline_snapshot.js": "83ac27cbdeb330bbd22447237ef601d62b4afe839213b8b171321da236663ce0",
+    "core/rxr_offline_snapshot.css": "6866b42367d12d7856d4a4411fcd86d569efd259818ec075133f82a34864673c",
+    "core/rxr_offline_snapshot_panel.html": "de8ba00222f184c0bf44a82b5f55316cc7e716410e2c6c75e74d70dfe9d149fb",
+    "experiments/deviation_progress/rxr30_v006/run_20261123_02_startup_timeout/exports/snapshot4_20261123_01/review_en.txt": "24582713e68597dd727f8c0434643b61719104bb69929b6922a6fe32a09c7fb4"
+  },
+  "git_commit": "7ce5f9fee30686bae304425bc84c36b3fbedc39c"
+}

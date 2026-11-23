@@ -1,0 +1,33 @@
+{
+  "verified_at": "2026-11-16T17:06:02.348080+00:00",
+  "simulation_started": true,
+  "actual_navigation_started": true,
+  "episode_id": "kujiale_0294_57_0",
+  "observations": 129,
+  "latest_action_index": 128,
+  "observed_xy_motion_m": 18.81945140678064,
+  "first_episode_terminal": true,
+  "formal_scored": 3,
+  "expected_auto_branch": 400,
+  "expected_baseline": 400,
+  "model_pid": 3194667,
+  "simulation_pid": 1332521,
+  "supervisor_pid": 1332457,
+  "followup_pid": 1332458,
+  "report_pid": 1335661,
+  "model_gpu": 3,
+  "simulation_gpu": 2,
+  "model_reloaded": false,
+  "native_episode_reset_verified": true,
+  "policy_actions_and_memory_reset_verified": true,
+  "actual_memory_preservation_proofs": [
+    "outputs/oracle_crossing/auto_branch_v001/run_20261116_03_gpu2sim_gpu3model/auto_branch/oracle_records/auto_branch/kujiale_0294_49_4/attempt_1794848663087351732/correction_001/memory_proof.json",
+    "outputs/oracle_crossing/auto_branch_v001/run_20261116_03_gpu2sim_gpu3model/auto_branch/oracle_records/auto_branch/kujiale_0294_57_0/attempt_1794848329405147320/correction_001/memory_proof.json",
+    "outputs/oracle_crossing/auto_branch_v001/run_20261116_03_gpu2sim_gpu3model/auto_branch/oracle_records/auto_branch/kujiale_0294_57_0/attempt_1794848329405147320/correction_002/memory_proof.json",
+    "outputs/oracle_crossing/auto_branch_v001/run_20261116_03_gpu2sim_gpu3model/auto_branch/oracle_records/auto_branch/kujiale_0294_67_4/attempt_1794848477328308718/correction_001/memory_proof.json"
+  ],
+  "baseline_queued": true,
+  "final_services_retained": true,
+  "manual_continuous_monitoring_ended": true,
+  "real_branch_localization_accuracy_validated": false
+}

@@ -1,4 +1,4 @@
-"""Lossless local policy checkpoints at an empty action queue. No weight copies."""
+"""Checkpoint navigation memory, optionally interrupting unexecuted actions."""
 import hashlib
 import json
 import random
@@ -32,17 +32,29 @@ def checkpoint(agent, resets, steps, body):
     path = root / (key + '.pt')
     operation = body['operation']
     e = agent.evaluator
-    if operation == 'save':
-        if agent.pending: raise ValueError('Checkpoint requires empty action queue')
-        if path.exists(): raise FileExistsError(path)
-        proof = content_proof(agent,resets)
-        payload = dict(evaluator={k:getattr(e,k) for k in FIELDS},
-                       cache=e.model.cache,curr_t=e.model.curr_t,
-                       agent={k:getattr(agent,k) for k in ('pending','calls','current_episode_id','current_episode_seed')},
-                       resets=resets,steps=steps,proof=proof,
-                       rng=(random.getstate(),np.random.get_state(),torch.get_rng_state(),torch.cuda.get_rng_state_all()))
-        torch.save(payload,path)
-        if content_proof(agent,resets)!=proof: raise RuntimeError('Snapshot mutated policy')
+    extra = {}
+    if operation in ('save', 'interrupt_and_save'):
+        if operation == 'save' and agent.pending:
+            raise ValueError('Checkpoint requires empty action queue')
+        with path.open('xb') as output:
+            previous_queue = agent.pending
+            try:
+                if operation == 'interrupt_and_save':
+                    extra['discarded_actions'] = list(previous_queue)
+                    agent.pending = []
+                proof = content_proof(agent,resets)
+                payload = dict(evaluator={k:getattr(e,k) for k in FIELDS},
+                               cache=e.model.cache,curr_t=e.model.curr_t,
+                               agent={k:getattr(agent,k) for k in ('pending','calls','current_episode_id','current_episode_seed')},
+                               resets=resets,steps=steps,proof=proof,
+                               rng=(random.getstate(),np.random.get_state(),torch.get_rng_state(),torch.cuda.get_rng_state_all()))
+                torch.save(payload,output)
+                output.flush()
+                if content_proof(agent,resets)!=proof: raise RuntimeError('Snapshot mutated policy')
+            except BaseException:
+                agent.pending = previous_queue
+                path.unlink()
+                raise
     elif operation == 'restore':
         payload = torch.load(path,weights_only=False)
         if payload['agent']['current_episode_id']!=agent.current_episode_id:
@@ -57,4 +69,4 @@ def checkpoint(agent, resets, steps, body):
         if proof!=payload['proof']: raise RuntimeError('Policy restore content mismatch')
     else: raise ValueError('Unknown snapshot operation')
     return dict(operation=operation,key=key,path=str(path),content_sha256=proof,
-                step_id=e.step_id,pending_count=len(agent.pending),verified=True),resets,steps
+                step_id=e.step_id,pending_count=len(agent.pending),verified=True,**extra),resets,steps

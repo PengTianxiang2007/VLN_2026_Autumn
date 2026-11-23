@@ -270,8 +270,8 @@ def start_local(config, gpus, output, handles):
     return child, 'http://127.0.0.1:%d/v1' % port, {'command': command, 'process': process(child.pid), 'gpus': gpus}
 
 
-def wait_local(child, base, model):
-    deadline = time.monotonic() + 2700
+def wait_local(child, base, model, timeout_seconds=2700):
+    deadline = time.monotonic() + timeout_seconds
     opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
     while time.monotonic() < deadline:
         if child.poll() is not None:
@@ -284,7 +284,7 @@ def wait_local(child, base, model):
         except (OSError, ValueError, KeyError):
             pass
         time.sleep(2)
-    raise TimeoutError('Local service not ready within 2700 seconds')
+    raise TimeoutError(f'Local service not ready within {timeout_seconds} seconds')
 
 
 def record_completion(output, state):

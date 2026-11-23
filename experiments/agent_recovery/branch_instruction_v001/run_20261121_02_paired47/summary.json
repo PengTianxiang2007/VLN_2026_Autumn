@@ -1,0 +1,784 @@
+{
+  "qwen": {
+    "total": 47,
+    "valid": 47,
+    "new": 47,
+    "reused": 0,
+    "instructions": 43,
+    "nulls": [
+      "C11",
+      "C28",
+      "C33",
+      "C50"
+    ],
+    "completed_at": "2026-11-21T12:21:15.931510+00:00",
+    "cases": {
+      "C01": {
+        "node": "S01",
+        "frame": 0,
+        "branch_count": 2,
+        "previous": "B2",
+        "selected": "B1",
+        "instruction_en": "Turn to face the dark wooden doorway and walk straight through it into the living room."
+      },
+      "C02": {
+        "node": "S09",
+        "frame": 89,
+        "branch_count": 3,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn left to enter the doorway with the white display cabinet."
+      },
+      "C03": {
+        "node": "S03",
+        "frame": 25,
+        "branch_count": 3,
+        "previous": "B1",
+        "selected": "B3",
+        "instruction_en": "Turn right to enter the living area with the couch and lamp."
+      },
+      "C05": {
+        "node": "S06",
+        "frame": 26,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn right to enter the living room."
+      },
+      "C06": {
+        "node": "S06",
+        "frame": 46,
+        "branch_count": 2,
+        "previous": "B2",
+        "selected": "B1",
+        "instruction_en": "Turn to face the narrow white hallway ahead and walk straight down it."
+      },
+      "C07": {
+        "node": "S03",
+        "frame": 41,
+        "branch_count": 2,
+        "previous": "B2",
+        "selected": "B1",
+        "instruction_en": "Turn left to face the hallway and walk straight down it."
+      },
+      "C08": {
+        "node": "S06",
+        "frame": 74,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn left and go through the doorway."
+      },
+      "C09": {
+        "node": "S02",
+        "frame": 5,
+        "branch_count": 3,
+        "previous": "B3",
+        "selected": "B2",
+        "instruction_en": "Turn right to face the living room with the sofa and TV."
+      },
+      "C10": {
+        "node": "S01",
+        "frame": 0,
+        "branch_count": 3,
+        "previous": "B2",
+        "selected": "B3",
+        "instruction_en": "Turn left towards the open doorway with the dark frame next to the TV console."
+      },
+      "C11": {
+        "node": "S01",
+        "frame": 0,
+        "branch_count": 1,
+        "previous": "B1",
+        "selected": null,
+        "instruction_en": null
+      },
+      "C12": {
+        "node": "S03",
+        "frame": 51,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn left into the doorway with the window and curtains."
+      },
+      "C13": {
+        "node": "S01",
+        "frame": 2,
+        "branch_count": 2,
+        "previous": "B2",
+        "selected": "B1",
+        "instruction_en": "Turn right to face the opening past the glass-fronted cabinet and step out of the closet."
+      },
+      "C14": {
+        "node": "S04",
+        "frame": 58,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn right to face the gray sofa and the open passage."
+      },
+      "C15": {
+        "node": "S02",
+        "frame": 16,
+        "branch_count": 2,
+        "previous": "B2",
+        "selected": "B1",
+        "instruction_en": "Turn left to face the dining table and walk straight past the living room entrance on your right."
+      },
+      "C16": {
+        "node": "S01",
+        "frame": 0,
+        "branch_count": 2,
+        "previous": "B2",
+        "selected": "B1",
+        "instruction_en": "Turn right to enter the opening with the shelving and white chair."
+      },
+      "C17": {
+        "node": "S01",
+        "frame": 0,
+        "branch_count": 2,
+        "previous": "B2",
+        "selected": "B1",
+        "instruction_en": "Turn to face the opening into the living room with the coffee table and chandelier."
+      },
+      "C19": {
+        "node": "S04",
+        "frame": 19,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn right to enter the bathroom with the white sink and round mirror."
+      },
+      "C20": {
+        "node": "S03",
+        "frame": 19,
+        "branch_count": 3,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn left to enter the bedroom with the hexagonal wall shelves."
+      },
+      "C21": {
+        "node": "S04",
+        "frame": 21,
+        "branch_count": 2,
+        "previous": "B2",
+        "selected": "B1",
+        "instruction_en": "Turn right to face the long hallway with the built-in cabinets on your left."
+      },
+      "C22": {
+        "node": "S02",
+        "frame": 34,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn right and enter the doorway beside the tall dark cabinet."
+      },
+      "C24": {
+        "node": "S04",
+        "frame": 30,
+        "branch_count": 3,
+        "previous": "B3",
+        "selected": "B1",
+        "instruction_en": "Turn left to face the open living room passage and walk forward."
+      },
+      "C25": {
+        "node": "S04",
+        "frame": 54,
+        "branch_count": 2,
+        "previous": "B2",
+        "selected": "B1",
+        "instruction_en": "Turn to face the hallway and walk straight down it."
+      },
+      "C26": {
+        "node": "S02",
+        "frame": 5,
+        "branch_count": 3,
+        "previous": "B2",
+        "selected": "B1",
+        "instruction_en": "Turn left to enter the hallway with the dark curtains."
+      },
+      "C27": {
+        "node": "S02",
+        "frame": 5,
+        "branch_count": 2,
+        "previous": "B2",
+        "selected": "B1",
+        "instruction_en": "Turn left to face the bathroom doorway with the visible sink and towel."
+      },
+      "C28": {
+        "node": "S01",
+        "frame": 0,
+        "branch_count": 1,
+        "previous": "B1",
+        "selected": null,
+        "instruction_en": null
+      },
+      "C29": {
+        "node": "S01",
+        "frame": 0,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn right to face the bathroom entrance with the glass shower partition."
+      },
+      "C30": {
+        "node": "S08",
+        "frame": 47,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn right into the open living room area."
+      },
+      "C31": {
+        "node": "S07",
+        "frame": 64,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn left into the open tiled area with the sofa."
+      },
+      "C32": {
+        "node": "S04",
+        "frame": 26,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn left into the open living room area with the grey sofa."
+      },
+      "C33": {
+        "node": "S01",
+        "frame": 62,
+        "branch_count": 1,
+        "previous": "B1",
+        "selected": null,
+        "instruction_en": null
+      },
+      "C34": {
+        "node": "S04",
+        "frame": 28,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn right into the doorway leading to the tiled area."
+      },
+      "C36": {
+        "node": "S01",
+        "frame": 3,
+        "branch_count": 2,
+        "previous": "B2",
+        "selected": "B1",
+        "instruction_en": "Turn right to face the built-in wardrobes and corner shelving."
+      },
+      "C37": {
+        "node": "S05",
+        "frame": 41,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn right into the hallway with the four framed pictures on the wall."
+      },
+      "C38": {
+        "node": "S01",
+        "frame": 0,
+        "branch_count": 2,
+        "previous": "B2",
+        "selected": "B1",
+        "instruction_en": "Turn right into the hallway with the green framed artwork on your left."
+      },
+      "C39": {
+        "node": "S01",
+        "frame": 0,
+        "branch_count": 2,
+        "previous": "B2",
+        "selected": "B1",
+        "instruction_en": "Turn right and go through the doorway into the tiled hallway."
+      },
+      "C42": {
+        "node": "S02",
+        "frame": 27,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn right into the hallway."
+      },
+      "C43": {
+        "node": "S10",
+        "frame": 48,
+        "branch_count": 2,
+        "previous": "B2",
+        "selected": "B1",
+        "instruction_en": "Turn right to face the bedroom and walk forward into the room."
+      },
+      "C44": {
+        "node": "S11",
+        "frame": 75,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn left to enter the narrow hallway."
+      },
+      "C45": {
+        "node": "S08",
+        "frame": 101,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn right to face the wooden doorway next to the bird painting and walk through it."
+      },
+      "C46": {
+        "node": "S01",
+        "frame": 6,
+        "branch_count": 3,
+        "previous": "B3",
+        "selected": "B2",
+        "instruction_en": "Turn left into the narrow hallway."
+      },
+      "C47": {
+        "node": "S04",
+        "frame": 52,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn right into the bathroom entrance with the mirror and sink."
+      },
+      "C48": {
+        "node": "S01",
+        "frame": 15,
+        "branch_count": 3,
+        "previous": "B1",
+        "selected": "B3",
+        "instruction_en": "Turn right to enter the opening past the plant and dining table."
+      },
+      "C49": {
+        "node": "S04",
+        "frame": 22,
+        "branch_count": 3,
+        "previous": "B1",
+        "selected": "B3",
+        "instruction_en": "Turn right to enter the doorway with the pink curtains."
+      },
+      "C50": {
+        "node": "S04",
+        "frame": 15,
+        "branch_count": 1,
+        "previous": "B1",
+        "selected": null,
+        "instruction_en": null
+      },
+      "C51": {
+        "node": "S02",
+        "frame": 5,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn right to face the living room with the TV wall."
+      },
+      "C52": {
+        "node": "S02",
+        "frame": 27,
+        "branch_count": 3,
+        "previous": "B3",
+        "selected": "B2",
+        "instruction_en": "Turn right to face the bathroom doorway."
+      },
+      "C53": {
+        "node": "S02",
+        "frame": 3,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn left into the bathroom with the patterned tile floor."
+      }
+    }
+  },
+  "deepseek": {
+    "total": 47,
+    "valid": 47,
+    "new": 37,
+    "reused": 10,
+    "instructions": 45,
+    "nulls": [
+      "C11",
+      "C28"
+    ],
+    "completed_at": "2026-11-21T12:20:00.973751+00:00",
+    "cases": {
+      "C01": {
+        "node": "S01",
+        "frame": 0,
+        "branch_count": 2,
+        "previous": "B2",
+        "selected": "B1",
+        "instruction_en": "Walk straight through the dark wooden doorway ahead."
+      },
+      "C02": {
+        "node": "S09",
+        "frame": 89,
+        "branch_count": 3,
+        "previous": "B3",
+        "selected": "B1",
+        "instruction_en": "Turn left and walk straight through the wooden doorway toward the pink curtain."
+      },
+      "C03": {
+        "node": "S03",
+        "frame": 25,
+        "branch_count": 3,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn left toward the dining table."
+      },
+      "C05": {
+        "node": "S06",
+        "frame": 26,
+        "branch_count": 3,
+        "previous": "B1",
+        "selected": "B3",
+        "instruction_en": "Turn right toward the living room with the grey sofa."
+      },
+      "C06": {
+        "node": "S06",
+        "frame": 46,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn right toward the dark doorway and step onto the wooden floor."
+      },
+      "C07": {
+        "node": "S03",
+        "frame": 41,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn slightly right and walk forward between the white cabinets."
+      },
+      "C08": {
+        "node": "S06",
+        "frame": 74,
+        "branch_count": 2,
+        "previous": "B2",
+        "selected": "B1",
+        "instruction_en": "Walk straight ahead past the black cabinet on your right."
+      },
+      "C09": {
+        "node": "S02",
+        "frame": 5,
+        "branch_count": 3,
+        "previous": "B1",
+        "selected": "B3",
+        "instruction_en": "Turn right toward the living room with the TV and sofa."
+      },
+      "C10": {
+        "node": "S01",
+        "frame": 0,
+        "branch_count": 3,
+        "previous": "B3",
+        "selected": "B2",
+        "instruction_en": "Turn left toward the open white doorway and walk through it."
+      },
+      "C11": {
+        "node": "S01",
+        "frame": 0,
+        "branch_count": 3,
+        "previous": "B1",
+        "selected": null,
+        "instruction_en": null
+      },
+      "C12": {
+        "node": "S03",
+        "frame": 51,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn right and step toward the opening beside the white wall pillar."
+      },
+      "C13": {
+        "node": "S01",
+        "frame": 2,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn right and move toward the open floor area beside the white wall."
+      },
+      "C14": {
+        "node": "S04",
+        "frame": 58,
+        "branch_count": 3,
+        "previous": "B2",
+        "selected": "B1",
+        "instruction_en": "Walk forward past the white armchair toward the dark sofa."
+      },
+      "C15": {
+        "node": "S02",
+        "frame": 16,
+        "branch_count": 3,
+        "previous": "B1",
+        "selected": "B3",
+        "instruction_en": "Turn right toward the living room with the TV wall."
+      },
+      "C16": {
+        "node": "S01",
+        "frame": 0,
+        "branch_count": 2,
+        "previous": "B2",
+        "selected": "B1",
+        "instruction_en": "Turn right toward the doorway with the white chair and shelves."
+      },
+      "C17": {
+        "node": "S01",
+        "frame": 0,
+        "branch_count": 3,
+        "previous": "B2",
+        "selected": "B1",
+        "instruction_en": "Walk straight ahead through the wide wooden-floor opening into the living room."
+      },
+      "C19": {
+        "node": "S04",
+        "frame": 19,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn right and enter the open doorway beside the sink."
+      },
+      "C20": {
+        "node": "S03",
+        "frame": 19,
+        "branch_count": 3,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn left toward the room with the desk and hexagonal shelves."
+      },
+      "C21": {
+        "node": "S04",
+        "frame": 21,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn left and walk toward the narrow hallway beside the white cabinets."
+      },
+      "C22": {
+        "node": "S02",
+        "frame": 34,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn right toward the doorway with the checkerboard floor and step through it."
+      },
+      "C24": {
+        "node": "S04",
+        "frame": 30,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn right toward the open doorway beside the TV stand and step into the bedroom."
+      },
+      "C25": {
+        "node": "S04",
+        "frame": 54,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn left and walk down the hallway."
+      },
+      "C26": {
+        "node": "S02",
+        "frame": 5,
+        "branch_count": 2,
+        "previous": "B2",
+        "selected": "B1",
+        "instruction_en": "Turn left toward the wide white-framed doorway with the wooden floor."
+      },
+      "C27": {
+        "node": "S02",
+        "frame": 5,
+        "branch_count": 2,
+        "previous": "B2",
+        "selected": "B1",
+        "instruction_en": "Turn left toward the white doorway with the sink and towel."
+      },
+      "C28": {
+        "node": "S01",
+        "frame": 0,
+        "branch_count": 1,
+        "previous": "B1",
+        "selected": null,
+        "instruction_en": null
+      },
+      "C29": {
+        "node": "S01",
+        "frame": 0,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn right and step through the white door frame into the bathroom entrance."
+      },
+      "C30": {
+        "node": "S08",
+        "frame": 47,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn right toward the living room with the sofa and TV."
+      },
+      "C31": {
+        "node": "S07",
+        "frame": 64,
+        "branch_count": 3,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn left toward the gray sofa and enter the living room."
+      },
+      "C32": {
+        "node": "S04",
+        "frame": 26,
+        "branch_count": 3,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn left toward the grey sofa in the open tiled area."
+      },
+      "C33": {
+        "node": "S01",
+        "frame": 62,
+        "branch_count": 2,
+        "previous": "B2",
+        "selected": "B1",
+        "instruction_en": "Turn right toward the white door frame and enter the bright room."
+      },
+      "C34": {
+        "node": "S04",
+        "frame": 28,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn right toward the tiled doorway."
+      },
+      "C36": {
+        "node": "S01",
+        "frame": 3,
+        "branch_count": 3,
+        "previous": "B2",
+        "selected": "B3",
+        "instruction_en": "Turn left toward the TV and decorative stand."
+      },
+      "C37": {
+        "node": "S05",
+        "frame": 41,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn left and walk down the narrow passage between the white walls."
+      },
+      "C38": {
+        "node": "S01",
+        "frame": 0,
+        "branch_count": 2,
+        "previous": "B2",
+        "selected": "B1",
+        "instruction_en": "Turn right toward the open doorway with the white frame and floral artwork."
+      },
+      "C39": {
+        "node": "S01",
+        "frame": 0,
+        "branch_count": 2,
+        "previous": "B2",
+        "selected": "B1",
+        "instruction_en": "Walk forward through the doorway ahead."
+      },
+      "C42": {
+        "node": "S02",
+        "frame": 27,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn right and walk down the white hallway."
+      },
+      "C43": {
+        "node": "S10",
+        "frame": 48,
+        "branch_count": 3,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn left and walk into the narrow white-walled passage."
+      },
+      "C44": {
+        "node": "S11",
+        "frame": 75,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn left and walk straight down the narrow white-walled passage."
+      },
+      "C45": {
+        "node": "S08",
+        "frame": 101,
+        "branch_count": 2,
+        "previous": "B2",
+        "selected": "B1",
+        "instruction_en": "Turn left toward the open doorway beside the wooden slats."
+      },
+      "C46": {
+        "node": "S01",
+        "frame": 6,
+        "branch_count": 3,
+        "previous": "B3",
+        "selected": "B2",
+        "instruction_en": "Turn left and walk down the white hallway."
+      },
+      "C47": {
+        "node": "S04",
+        "frame": 52,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn left toward the bedroom with the bed."
+      },
+      "C48": {
+        "node": "S01",
+        "frame": 15,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn right and walk past the white slatted partition toward the dining table."
+      },
+      "C49": {
+        "node": "S04",
+        "frame": 22,
+        "branch_count": 3,
+        "previous": "B1",
+        "selected": "B3",
+        "instruction_en": "Turn right and enter the doorway with the pink curtain."
+      },
+      "C50": {
+        "node": "S04",
+        "frame": 15,
+        "branch_count": 3,
+        "previous": "B1",
+        "selected": "B3",
+        "instruction_en": "Turn right and walk toward the orange artwork."
+      },
+      "C51": {
+        "node": "S02",
+        "frame": 5,
+        "branch_count": 2,
+        "previous": "B1",
+        "selected": "B2",
+        "instruction_en": "Turn right toward the open doorway with the white frame."
+      },
+      "C52": {
+        "node": "S02",
+        "frame": 27,
+        "branch_count": 2,
+        "previous": "B2",
+        "selected": "B1",
+        "instruction_en": "Turn right toward the bathroom doorway with the patterned tile floor."
+      },
+      "C53": {
+        "node": "S02",
+        "frame": 3,
+        "branch_count": 3,
+        "previous": "B3",
+        "selected": "B1",
+        "instruction_en": "Walk straight ahead through the doorway toward the bed with yellow bedding."
+      }
+    }
+  }
+}

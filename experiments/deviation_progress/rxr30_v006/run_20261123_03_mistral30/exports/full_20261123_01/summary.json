@@ -1,0 +1,22 @@
+{
+  "created_at": "2026-11-23T17:59:34.189585+00:00",
+  "dedup": {
+    "candidates": 725,
+    "retained": 295,
+    "removed": 430,
+    "model_calls": 656,
+    "uncertain": 71,
+    "errors": 0
+  },
+  "deviation": {
+    "outcomes": {
+      "format_error": 7,
+      "deviated": 23,
+      "consistent": 107
+    },
+    "calls": 137,
+    "alarm_cases": 23
+  },
+  "translation_strings": 2037,
+  "translations_reused": 24
+}

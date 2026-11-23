@@ -6,10 +6,14 @@
 
 ## 当前方法
 
+术语约定（2026-11-18 用户明确）：被去重删除的候选不再算作节点。本文后续的
+“节点”默认指去重后保留的有效节点及按协议追加的终止节点；去重前称为“原始候选”。
+被删除候选对应的图像可作为普通区间观测被采样，但不参与节点序列或节点数量统计。
+
 1. 沿用 [JEV 在线采样 v001](JEV_SAMPLING_V001.md)，默认 N=7、D=5。
    去重规则见 [节点去重快照](../experiments/crossing_checkpoint/online_sampling_v001/review_snapshot_20261112/README.md)。
 2. 本轮直接使用最终去重后的有效节点，按轨迹重新编号为 S01、S02……。
-   被删除的节点不参与判断链、进度维护或节点展示；原有 RGB 录像仍然存在，
+   被去重删除的候选不再算节点，不参与判断链、进度维护或节点展示；原有 RGB 录像仍然存在，
    区间均匀取图可能取到同一时刻的普通观测，这不等于恢复该节点。
 3. 把录像终止帧追加为最后一个节点；若已存在则不重复。终止节点立即可用，
    没有额外五帧等待，不伪造 JEV 概率。
@@ -131,7 +135,7 @@ python scripts/export_deviation_progress_snapshot.py --source /path/to/wrong_cho
 直接打开新目录的 `index.html`；原始 JSON 查看同样离线可用。
 导出拒绝覆盖既有目录，不调用模型、不发布网站，不修改历史结果。
 
-`scripts/run_deviation_progress_review.py` 是实际 run05 runner 的逐字节副本，
+`scripts/run_deviation_progress_review.py` 源自 run05 runner。2026-11-18 增加了原生 PNG 的 MIME 声明，历史 WebP 仍沿用原声明。run05 的逐字节副本保存在 `experiments/deviation_progress/v003/run_20261112_05/snapshot/run/run_review.py`。
 模型调用依赖 `httpx`，API key 仅从 `DEEPSEEK_API_KEY` 或隐藏标准输入读取。
 不要为查看结果运行它。新的模型实验需另建输入、manifest 和输出目录，保留历史记录；
 归档内 prepare/derive/finalize 脚本包含当时 Windows 路径，仅作历史源码证据，
@@ -140,3 +144,8 @@ python scripts/export_deviation_progress_snapshot.py --source /path/to/wrong_cho
 本轮在基线提交 `ccda30c25002f7b690313162cb573a51e3acca72` 上使用未提交脚本运行。
 源码及其历史哈希随本次提交冻结，不能把本次提交写成历史模型运行时已使用的 Git 版本。
 保留所有既有失败和复用记录，密钥不进入 Git。网页继续只在本地打开。
+
+
+## 2026-11-17 历史结果公开网页
+
+用户随后明确要求将本版发布到指定服务器，现已发布：[v003 全部34案例](http://134.175.18.101/vln/jev_deviation_progress_v003_34cases_web_20261117_01/index.html)。本次恢复原资源、补齐缺失汉字字体及更新浏览器标题，原节点、提示词、响应和判断保持不变；没有新模型调用或导航。[发布记录](../experiments/deviation_progress/v003/run_20261112_05/exports/web_20261117_01/README.md)。本次授权针对该历史页面，不自动改变其他 JEV 本地迭代的发布约定。

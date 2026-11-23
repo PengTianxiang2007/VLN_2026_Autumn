@@ -1,0 +1,205 @@
+[
+  {
+    "case_number": 1,
+    "episode_id": "kujiale_0036_0_0",
+    "nodes": 6,
+    "terminal_frame": 65,
+    "qwen_result_sha256": "cf76d5f7bbacdac8703422623731a0ab8ece1f8b72f4ad59577835c843bb679a"
+  },
+  {
+    "case_number": 2,
+    "episode_id": "kujiale_0036_3_2",
+    "nodes": 15,
+    "terminal_frame": 129,
+    "qwen_result_sha256": "e76fe84746ab0e890100145b4b13545197d60de47d0815095be95fbbad28f953"
+  },
+  {
+    "case_number": 3,
+    "episode_id": "kujiale_0036_52_4",
+    "nodes": 4,
+    "terminal_frame": 45,
+    "qwen_result_sha256": "faad59be042477c72aa58cb630a6e781ef31ef27f576e83518133de792d02663"
+  },
+  {
+    "case_number": 4,
+    "episode_id": "kujiale_0113_18_1",
+    "nodes": 5,
+    "terminal_frame": 102,
+    "qwen_result_sha256": "334589584296adcde8ca0c1720b8729debed700e4aefec93c015b65915b8c3a6"
+  },
+  {
+    "case_number": 5,
+    "episode_id": "kujiale_0113_1_4",
+    "nodes": 9,
+    "terminal_frame": 68,
+    "qwen_result_sha256": "d4adce0c0af75eebdf145c9e59e7844bfe3cb7fbb6dba57ebcbd3ca74940faf8"
+  },
+  {
+    "case_number": 6,
+    "episode_id": "kujiale_0123_fix_13_3",
+    "nodes": 11,
+    "terminal_frame": 131,
+    "qwen_result_sha256": "d792e34b93a6bc108f9ec78d7f7d05c8d2f98677f2b2266116d81d60ee0cc177"
+  },
+  {
+    "case_number": 7,
+    "episode_id": "kujiale_0123_fix_19_3",
+    "nodes": 4,
+    "terminal_frame": 75,
+    "qwen_result_sha256": "cb89cfeca7db418d6494130102ab54cd57399ff82941b4c81f819b59f5da47f2"
+  },
+  {
+    "case_number": 8,
+    "episode_id": "kujiale_0123_fix_43_3",
+    "nodes": 10,
+    "terminal_frame": 162,
+    "qwen_result_sha256": "e301ef9edff7738e8d113194e1cc03c72ec959073bbc9e9e2dbe5ab22b4693a2"
+  },
+  {
+    "case_number": 9,
+    "episode_id": "kujiale_0128_fix_12_4",
+    "nodes": 4,
+    "terminal_frame": 43,
+    "qwen_result_sha256": "3de46879a7431d46fb5d583d5bf8ceb7fa3da54be3765855a98e2feb4cfa90a3"
+  },
+  {
+    "case_number": 10,
+    "episode_id": "kujiale_0128_fix_18_1",
+    "nodes": 5,
+    "terminal_frame": 101,
+    "qwen_result_sha256": "bf7e823756fe008fbf61e1ad775cdeab5505a805ef199d40840471bbc2c92e9f"
+  },
+  {
+    "case_number": 11,
+    "episode_id": "kujiale_0128_fix_20_0",
+    "nodes": 6,
+    "terminal_frame": 57,
+    "qwen_result_sha256": "7a68e9dff1e06f9badf0d8e82eb8fb7ebe16170a056f805767e08bea806e6d42"
+  },
+  {
+    "case_number": 12,
+    "episode_id": "kujiale_0147_14_0",
+    "nodes": 5,
+    "terminal_frame": 93,
+    "qwen_result_sha256": "653275d447f3210cd1295c747059447e1e65e0baa32ab0679785241fab950772"
+  },
+  {
+    "case_number": 13,
+    "episode_id": "kujiale_0147_56_4",
+    "nodes": 7,
+    "terminal_frame": 130,
+    "qwen_result_sha256": "8d9eddc62819ab2b77b606c8473b4d8fe4bc1f67aa39f7b808233501a5f61857"
+  },
+  {
+    "case_number": 14,
+    "episode_id": "kujiale_0147_57_1",
+    "nodes": 9,
+    "terminal_frame": 95,
+    "qwen_result_sha256": "4ad60c59398d0da8aa2267889a2b7ca2edb6e8c2844d0356916c285971833fb4"
+  },
+  {
+    "case_number": 15,
+    "episode_id": "kujiale_0147_65_1",
+    "nodes": 10,
+    "terminal_frame": 90,
+    "qwen_result_sha256": "4b4395ba42d98884e59ad7720bb0b5850211fa2492414dcf43a35b5482737a20"
+  },
+  {
+    "case_number": 16,
+    "episode_id": "kujiale_0159_35_3",
+    "nodes": 5,
+    "terminal_frame": 84,
+    "qwen_result_sha256": "8ba5c3225c5fb821729e6f448e38942a90469fc1a0d3a1cf890ec643785b335a"
+  },
+  {
+    "case_number": 17,
+    "episode_id": "kujiale_0165_40_1",
+    "nodes": 15,
+    "terminal_frame": 91,
+    "qwen_result_sha256": "5d2d2daf99445e817ee649862f3d971685f51c5f1045bded1e971690e27620b3"
+  },
+  {
+    "case_number": 18,
+    "episode_id": "kujiale_0165_45_0",
+    "nodes": 9,
+    "terminal_frame": 72,
+    "qwen_result_sha256": "cb93aeb45603569e4b482e2596ff33401243b801bf4ce44b307006cc27bab2d1"
+  },
+  {
+    "case_number": 19,
+    "episode_id": "kujiale_0165_49_4",
+    "nodes": 6,
+    "terminal_frame": 49,
+    "qwen_result_sha256": "ba788d430ae07e3910e865155eaeea3f6df3f223887d81c6227438af6708465a"
+  },
+  {
+    "case_number": 20,
+    "episode_id": "kujiale_0165_53_0",
+    "nodes": 5,
+    "terminal_frame": 47,
+    "qwen_result_sha256": "9190355f8733415f3652e973d2269172c874fa7724219c4ee26d2bf8aa3d9bed"
+  },
+  {
+    "case_number": 21,
+    "episode_id": "kujiale_0165_57_0",
+    "nodes": 10,
+    "terminal_frame": 79,
+    "qwen_result_sha256": "42052c793df059eb8e7e8ef615ae8e93c699531440247041da6f7baac9779e9f"
+  },
+  {
+    "case_number": 22,
+    "episode_id": "kujiale_0207_69_4",
+    "nodes": 7,
+    "terminal_frame": 107,
+    "qwen_result_sha256": "523882e15732a78282e3c4b61fefe27e87b11260b46fc63d6b642fef4112fa1f"
+  },
+  {
+    "case_number": 23,
+    "episode_id": "kujiale_0208_21_4",
+    "nodes": 7,
+    "terminal_frame": 32,
+    "qwen_result_sha256": "b980812fd051834b990a3ebe3472f3e54e3af1cce4f06ac0b066b986ffe01bc8"
+  },
+  {
+    "case_number": 24,
+    "episode_id": "kujiale_0226_14_2",
+    "nodes": 8,
+    "terminal_frame": 70,
+    "qwen_result_sha256": "dde0489b07d3ac269bc757d160d6d3dd332565ef31fb1afedc9a00f3ef84a679"
+  },
+  {
+    "case_number": 25,
+    "episode_id": "kujiale_0226_2_4",
+    "nodes": 5,
+    "terminal_frame": 90,
+    "qwen_result_sha256": "5d17620ba4363503b5b48dfaa3ecf5ef783a06a0a1c123253af5fecf9418eab2"
+  },
+  {
+    "case_number": 26,
+    "episode_id": "kujiale_0226_36_2",
+    "nodes": 9,
+    "terminal_frame": 80,
+    "qwen_result_sha256": "dc06ac7ae75124330660562f10fc9988c4654aadd1dc721ea9657b39437a71aa"
+  },
+  {
+    "case_number": 27,
+    "episode_id": "kujiale_0226_38_4",
+    "nodes": 3,
+    "terminal_frame": 42,
+    "qwen_result_sha256": "1b88494bcb56601c2e72bb5235bae8c5ec34b0e4a6ddd480519079f2d1106109"
+  },
+  {
+    "case_number": 28,
+    "episode_id": "kujiale_0226_80_4",
+    "nodes": 3,
+    "terminal_frame": 63,
+    "qwen_result_sha256": "7d53a2c7dbbeb7939491b9bf46d117e37cf50745b33af64d38801b4cc5e921d0"
+  },
+  {
+    "case_number": 29,
+    "episode_id": "kujiale_0226_88_0",
+    "nodes": 8,
+    "terminal_frame": 75,
+    "qwen_result_sha256": "66435b9d195313051d642ae4d0c2eec7d1c1b10841ffa278b42ba9d827129e90"
+  }
+]

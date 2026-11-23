@@ -1,5 +1,9 @@
 # 原模型复现
 
+- [R2R-CE 原版 StreamVLN，400 条与逐帧 RGB](streamvln_r2r/run_20261123_01/README.md)
+
+- [RxR-CE 原版 StreamVLN，400 条与逐帧 RGB](streamvln_rxr/run_20261123_01/README.md)
+
 更新时间：2026-11-04。本文依据既有记录整理；本次整理没有启动实验。
 
 保留原生推理协议，原模型复现与研究干预分开统计。

@@ -1,0 +1,12 @@
+{
+  "model": "deepseek",
+  "model_switch_same_case_round_frame": true,
+  "cases": 6,
+  "rounds": 29,
+  "unreviewed": 10,
+  "thumbnails": 155,
+  "raw_answer_verbatim": true,
+  "bilingual_every_round": true,
+  "synchronized_sliders": true,
+  "errors": []
+}

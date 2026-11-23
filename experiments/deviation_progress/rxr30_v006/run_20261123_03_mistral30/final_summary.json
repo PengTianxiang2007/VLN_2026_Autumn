@@ -1,0 +1,38 @@
+{
+  "started_at": "2026-11-23T16:55:14.807749+00:00",
+  "finished_at": "2026-11-23T17:42:12.407677+00:00",
+  "elapsed_seconds": 2817.599928,
+  "dedup": {
+    "candidates": 725,
+    "retained": 295,
+    "removed": 430,
+    "model_calls": 656,
+    "uncertain": 71,
+    "errors": 0
+  },
+  "deviation": {
+    "format_error": 7,
+    "deviated": 23,
+    "consistent": 107
+  },
+  "alarm_cases": 23,
+  "alarm_rate": 0.7666666666666667,
+  "format_error_types": {
+    "ValueError: Invalid uncertainties": 4,
+    "ValueError: Incomplete response: length": 1,
+    "ValueError: Instruction quote is not an exact supplied excerpt": 2
+  },
+  "workers_exited": true,
+  "navigation_scores": {
+    "current": {
+      "scored": 0,
+      "SR": null,
+      "mean_SPL": null
+    },
+    "matched_original": {
+      "scored": 0,
+      "SR": null,
+      "mean_SPL": null
+    }
+  }
+}

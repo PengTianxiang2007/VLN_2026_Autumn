@@ -1,0 +1,32 @@
+{
+  "name": "v006_node_multiview_web_20261121_01",
+  "url": "http://134.175.18.101/vln/v006_node_multiview_web_20261121_01/index.html",
+  "phase": "published",
+  "verify_only": false,
+  "http_check": "head",
+  "http_route": "direct",
+  "created_at": "2026-11-21T03:00:57.549757+00:00",
+  "git_head": "7ce5f9fee30686bae304425bc84c36b3fbedc39c",
+  "script_sha256": "8a54c944fe424cec439dc51257e8a0ae16438665d2153625cf4f6c7d2c8e5fc9",
+  "config_sha256": "9f04504b3d9af51896d3a92af9f8d82359d37d502d003defc2d85a58c87e6c90",
+  "updated_at": "2026-11-21T03:02:31.027672+00:00",
+  "remote_sha256_verified": true,
+  "browser_check": "optional; not run by the publishing tool",
+  "publication_record": "outputs/visualization_publishing/publish_20261121_030057_593413/publication.json",
+  "source_directory": "outputs/visualization_publishing/v006_node_multiview_web_20261121_01",
+  "file_count": 8349,
+  "html": {
+    "path": "index.html",
+    "sha256": "012c134b84639538f206dda739fb294b4c772dc016b51d6eb99553429e9eead2",
+    "bytes": 18823198,
+    "http_route": "direct",
+    "http_status": 200,
+    "http_sha256_verified": false
+  },
+  "archive": {
+    "path": "v006_node_multiview_offline.zip",
+    "sha256": "cb6289ac82a77e5e61371cf301157cac4d2fd333939a75247c699503c6f0413f",
+    "bytes": 138031101,
+    "http_check": "not_requested; remote_sha256_verified"
+  }
+}

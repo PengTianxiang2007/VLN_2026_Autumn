@@ -1,0 +1,238 @@
+{
+  "status": "awaiting_explicit_translation_approval",
+  "endpoint": "https://api.mistral.ai/v1/chat/completions",
+  "model": "deepseek-v4-1-flash-1017",
+  "purpose": "Chinese-to-English display translations only",
+  "text_count": 2013,
+  "request_batches": 45,
+  "max_parallel": 16,
+  "max_attempts_per_batch": 3,
+  "files": [
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_001.request.json",
+      "sha256": "4631a599c521f97ba38e045f1bdf7afb1705c16e4006e6290adddff5f749838a",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_002.request.json",
+      "sha256": "8a6306dd6e94b90b73f320a57adfed67b1209bfd9c64afe82f6d10772f60e9b4",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_003.request.json",
+      "sha256": "78c0368d43f12a3e511a805aefaae2a09726942c2fd5908bc1c3e35f4ee925fb",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_004.request.json",
+      "sha256": "4f3b6576568d3268748a0eb5c212f00d719b6bb1628087bda0310117db94f2d9",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_005.request.json",
+      "sha256": "2ac75c9006220e7f6fb86d0379381e4c3458ee65613ee07cb0ee5e527786bc19",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_006.request.json",
+      "sha256": "d606eb96d5f09222459db5e9e16274e2ac7c1478721fac56574b5c686fa15924",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_007.request.json",
+      "sha256": "29d67a94f8b820778472479b9a87d39cf53ffdb0ebff0150fa14483987531718",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_008.request.json",
+      "sha256": "a5bb4df0922647ab6679f15a80b54b5968fd9659840b744008c781baac3fe4be",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_009.request.json",
+      "sha256": "6e40beb9356bc8a5c5e04376a44db82825ee0bdb1fe42198821ee44386a54750",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_010.request.json",
+      "sha256": "1f55ee0485ce6e371f5820ce4dffa952600b83762f684630031f1293e52d6726",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_011.request.json",
+      "sha256": "9adb460090ff7cb15c34182ae104a6bfa6e1ad606f76133d1ec8f4ac466c6932",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_012.request.json",
+      "sha256": "df83f83282c8eabcde5c3eb0d4fd53aea9feaec1c4cc22a9e363989df914d6aa",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_013.request.json",
+      "sha256": "a368777728a3b2f07373043594c5aec73c5c9bdb220f76ad26ea6a3e5a7c9d50",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_014.request.json",
+      "sha256": "8ec9a549f3a30ee3d3c526effff83342a535f78a748468a3308a002d40c4dbba",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_015.request.json",
+      "sha256": "57e538f238933c7da457fd59af86c93573c943cb098e220cf2cdd5cc0f28c740",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_016.request.json",
+      "sha256": "8a50f44eb1d4366430970bfd1311c2f6bec35ce4d1b1312a0310d725f974f603",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_017.request.json",
+      "sha256": "d02bd777f4c439da76bf34b29138950339f609208a660a28a70f0efd4e5ac412",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_018.request.json",
+      "sha256": "bb1323fbdf76190c8eafc6dc3f19d4c9880bbe44c15c8c0067bb34175b81a207",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_019.request.json",
+      "sha256": "ac9ecbfe87dae339e37c94555628dd99951bf9d6b0127f683ee0585c3230bfa4",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_020.request.json",
+      "sha256": "362f2b40eb5cc93e27b798236ed1dab6163b5cf84e38cb22ad238d6c44dae832",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_021.request.json",
+      "sha256": "2224a85fb5a10b43a137e972305bdf4c152053a0298f4e38b6f2033ef7ac794c",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_022.request.json",
+      "sha256": "27d53fb453bb9971f527dd3c8de539d46c2c93bf68d34e0dd15417672134cc4b",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_023.request.json",
+      "sha256": "fbaef7fd357e14d49ebdba9c5781e12e1af7710b7a56d5aee2f7cd0139f00441",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_024.request.json",
+      "sha256": "88d4b674c8e417ce42279afd7b871f4855d189c3c69ab56c112be7a185dd803f",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_025.request.json",
+      "sha256": "a5100ee19341910ce6d16af41d548d1a4901aabe87fc2cbc1d8c2b717e7efcb1",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_026.request.json",
+      "sha256": "ab335df89ee91fa1d0a0510c64c159b48b36721637d052eba9fbff70b47be449",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_027.request.json",
+      "sha256": "af8e4e775ecd0b614cbaf06693b814a4767fbc99ff17ad009144f9812fd547c4",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_028.request.json",
+      "sha256": "814d4034754f8b7fc010e31c9e483c64e6f78e218ccd2d347ea7afa37f8bb85c",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_029.request.json",
+      "sha256": "8a1d1c233499dd9636c339a9e8ca9767fc5104088a46e0cad568948733ef99d5",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_030.request.json",
+      "sha256": "2c1dac7e51449206f2fbb6d6ba811acbb94b88c369e6db164c648c973d4fb087",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_031.request.json",
+      "sha256": "6c91064f144fc570e2f8477e99ee65166d18f4193a1bd8bed83c28bef2d17fa7",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_032.request.json",
+      "sha256": "266f31a29bf3af16d539066e820018dcc67e5566bf8808d150e6d1185fa9448c",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_033.request.json",
+      "sha256": "3c28717b639e6a7f7ceb0316987778a2a62073645606d2baec11ffba44d965a1",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_034.request.json",
+      "sha256": "51d8fde517de3620ce421871c42a781eb3971d0e3fae92b7b54211f1b5ca84a0",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_035.request.json",
+      "sha256": "4fe56222a88480f16e97ace5fb3170e72b559e0dfe8630081b8cbb7056af7c2e",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_036.request.json",
+      "sha256": "5d94e563035d0ff54b5f374a9e1f1a1e3898291d4c65d6f97011486b805f8d02",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_037.request.json",
+      "sha256": "5da16a5347931042dc43919b6669915115f4759f91c83537856a63541bdf6e19",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_038.request.json",
+      "sha256": "2527e120d6bf26642e09685221dd840a7ba3be7ebcb0f91bfef1770a4713cdaf",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_039.request.json",
+      "sha256": "fc8397ec54a0368a4e71731fc162cbd5bd1e1d52ee69ec2971bdd2d5373e007f",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_040.request.json",
+      "sha256": "437f8097c1e206b90539fa1767bc20718d93adcf43712f36985bf64b208cf505",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_041.request.json",
+      "sha256": "a7b02ca94a95967975b4badc206d9af2da0058cc0f699b31d4c1c701373e4d0e",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_042.request.json",
+      "sha256": "7fd65c25ec1dcae1d68a708d6376ff3359b648e6286f2cd4c9ca3c390c13910a",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_043.request.json",
+      "sha256": "599332b9976009bf00ecb9fb691d3b736a6545bac63d79b95f6e8bff767eed98",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_044.request.json",
+      "sha256": "ae2811f55f0b468f71d8f6f5444a56df822f1357f9c0d1d64ddcf4bf46066362",
+      "texts": 45
+    },
+    {
+      "file": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01/display_translation/batch_045.request.json",
+      "sha256": "e5c8ab2b9a79bc72a26ae90c098fed5960a808a58c0af42d6b65cfd2493287e7",
+      "texts": 33
+    }
+  ],
+  "network_requests_sent": 0
+}

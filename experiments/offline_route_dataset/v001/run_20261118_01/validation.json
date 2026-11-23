@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "completed_at": "2026-11-18T05:17:33.974227+00:00",
+  "dataset": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/offline_route_dataset/v001/run_20261118_01/dataset",
+  "dataset_manifest_sha256": "bcf64509c87b55cabc667964253509595e1983f188f737d59c907b0f19cdf3c5",
+  "checksum_manifest_sha256": "8a9c03d18a9169c213250d26e32b08b8d41123e4cd62b440ef83e61295bdc189",
+  "summary": {
+    "reviewed_failures": 69,
+    "selected": 53,
+    "excluded": 13,
+    "uncertain": 3,
+    "branch_core": 43,
+    "direction_extension": 10,
+    "selected_events": 54,
+    "scenes": 19,
+    "selected_by_source_batch": {
+      "older48": 25,
+      "newer56": 28
+    },
+    "selected_by_subtype": {
+      "missed_turn": 24,
+      "wrong_branch": 7,
+      "wrong_doorway": 12,
+      "wrong_open_area_direction": 6,
+      "wrong_initial_direction": 4
+    },
+    "observations": 4890,
+    "navigation_actions": 4837,
+    "multiview_unique_png": 39120,
+    "native_front_png": 4890,
+    "aliases_180": 14670,
+    "unique_png_files": 44010,
+    "unique_png_bytes": 10384196699,
+    "logical_png_paths": 58680,
+    "logical_png_path_bytes": 13854971424
+  },
+  "metadata_and_review_files_freshly_rehashed": 434,
+  "png_paths_indexed": 58680,
+  "png_files_sampled_and_freshly_rehashed": 267,
+  "full_png_rehash_this_check": false,
+  "alias_pairs_checked": 159,
+  "hardlink_alias_pairs": 159,
+  "every_input_action_pose_view_and_event_index_checked": true,
+  "isolated_relocation_reader_passed": true,
+  "reader_modes_checked": [
+    "front",
+    "180",
+    "360"
+  ],
+  "metadata_and_review_bytes": 132450852,
+  "checksum_manifest_bytes": 7114028,
+  "external_files_needed_for_reader": false,
+  "delivery_validation_report_sha256": "c5bfc7386b0567e03ee14ac42054bd77dbdf1961b8772e51318f930eaa02f1eb",
+  "validation_source_sha256": "ec3e09c6f6b9e56c7f41f3a87e29b93a445540b0c0e07be41d52a78dd67231cf",
+  "validation_source_snapshot": "outputs/offline_route_dataset/v001/run_20261118_01/code/validate_offline_route_dataset.py",
+  "unit_tests": {
+    "passed": true,
+    "count": 5,
+    "scope": "tests/test_offline_route_dataset.py; causal cutoff, views, paths, reference bearings",
+    "source_sha256": "15ef71dac5c238ece26fd84f9def94c1cd7445bfcebcc76c899f7ed14b430f5a"
+  },
+  "registered_at": "2026-11-18T05:19:35.303926+00:00",
+  "portable_file_bytes_preserving_links": 10523761579,
+  "portable_file_bytes_without_preserving_links": 13994536304
+}

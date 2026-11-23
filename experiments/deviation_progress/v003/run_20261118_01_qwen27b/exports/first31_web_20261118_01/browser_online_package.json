@@ -1,0 +1,10 @@
+{
+  "trajectories": 31,
+  "scored_frames": 2602,
+  "raw": 270,
+  "retained": 204,
+  "compared": 191,
+  "reasons_and_evidence_checked_both_languages": true,
+  "sliders_and_dedup_toggle": true,
+  "errors": []
+}

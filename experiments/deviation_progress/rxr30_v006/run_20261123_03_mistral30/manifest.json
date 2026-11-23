@@ -1,0 +1,187 @@
+{
+  "created_at": "2026-11-23T16:52:34.227304+00:00",
+  "provider": "mistral",
+  "endpoint": "https://api.mistral.ai/v1",
+  "proxy": "http://127.0.0.1:7892",
+  "settings": {
+    "model": "deepseek-v4-1-flash-1017",
+    "reasoning_effort": "high",
+    "max_tokens": 32768,
+    "response_format": {
+      "type": "json_object"
+    },
+    "stream": false
+  },
+  "workers": 30,
+  "source_sha256": {
+    "scripts/run_rxr_mistral_semantics.py": "5b1d1f001553762c21d9b121af6a8af7fcd89caf8854539b7825ef6448ea1e4c",
+    "scripts/run_rxr_offline_semantics.py": "af78ecfd127fd1d89fa3d88c0d044edf6abc87a36839d54a9364d3fe4b22c5a7",
+    "scripts/run_deviation_progress_v004.py": "99d8f5803fd25a53fcdcaded88cd2bf26e1f6d262a824036536cae4872703841",
+    "scripts/run_deviation_progress_review.py": "eda5521fbab8ee184c6e028ee9fe3c7d04a8607377cb35c175e9221594babeba",
+    "experiments/crossing_checkpoint/online_sampling_v001/review_snapshot_20261112/node_deduplication/v001_run02_all/run_dedup.py": "cada61946659425143a28f4e05150c48ca17b1d5f2a5185da302a8f0408a32fc",
+    "experiments/crossing_checkpoint/online_sampling_v001/review_snapshot_20261112/node_deduplication/v001_run02_all/prompt_zh.txt": "c43d21a0c63692ddd4a57babbb50742d8ff37b3192186b4a3f0747e9b4cd99a5",
+    "experiments/deviation_progress/v006/prompt_zh.txt": "d3fb3fe87b61fa1ff51ba45480721f4d5e20eed2b1c8f1fff0e259f99bbae3ea",
+    "experiments/deviation_progress/v006/prompt_en.txt": "1e7bd323b05ed86d5c7ec71abe139a0a21ede129a9d7543905d114a130c5be67"
+  },
+  "git_head": "7ce5f9fee30686bae304425bc84c36b3fbedc39c",
+  "trajectory_seed": 2,
+  "model_seed": null,
+  "upstream": "outputs/deviation_progress/rxr30_v006/run_20261123_02_startup_timeout",
+  "candidates_sha256": "9ee01899ce8ed14ea18732cc545b253736c7452358f222cc3831ca9c0e4e6276",
+  "settings_note": "reasoning_effort explicitly high; Mistral defaults for sampling; no DeepSeek-specific thinking field",
+  "protocol": "fresh v001 dedup on JEV candidates; freeze all 30; fresh v006 on these nodes only",
+  "transport_retries": 6,
+  "request_timeout_seconds": 600,
+  "cases": [
+    {
+      "case_number": 1,
+      "episode_id": "837",
+      "original_candidates": 13
+    },
+    {
+      "case_number": 2,
+      "episode_id": "1825",
+      "original_candidates": 95
+    },
+    {
+      "case_number": 3,
+      "episode_id": "1504",
+      "original_candidates": 13
+    },
+    {
+      "case_number": 4,
+      "episode_id": "6858",
+      "original_candidates": 18
+    },
+    {
+      "case_number": 5,
+      "episode_id": "2978",
+      "original_candidates": 91
+    },
+    {
+      "case_number": 6,
+      "episode_id": "5103",
+      "original_candidates": 13
+    },
+    {
+      "case_number": 7,
+      "episode_id": "3998",
+      "original_candidates": 10
+    },
+    {
+      "case_number": 8,
+      "episode_id": "3420",
+      "original_candidates": 22
+    },
+    {
+      "case_number": 9,
+      "episode_id": "697",
+      "original_candidates": 36
+    },
+    {
+      "case_number": 10,
+      "episode_id": "2828",
+      "original_candidates": 10
+    },
+    {
+      "case_number": 11,
+      "episode_id": "8272",
+      "original_candidates": 24
+    },
+    {
+      "case_number": 12,
+      "episode_id": "7267",
+      "original_candidates": 12
+    },
+    {
+      "case_number": 13,
+      "episode_id": "9387",
+      "original_candidates": 24
+    },
+    {
+      "case_number": 14,
+      "episode_id": "7076",
+      "original_candidates": 16
+    },
+    {
+      "case_number": 15,
+      "episode_id": "8351",
+      "original_candidates": 16
+    },
+    {
+      "case_number": 16,
+      "episode_id": "9383",
+      "original_candidates": 37
+    },
+    {
+      "case_number": 17,
+      "episode_id": "4379",
+      "original_candidates": 33
+    },
+    {
+      "case_number": 18,
+      "episode_id": "8427",
+      "original_candidates": 14
+    },
+    {
+      "case_number": 19,
+      "episode_id": "311",
+      "original_candidates": 21
+    },
+    {
+      "case_number": 20,
+      "episode_id": "10197",
+      "original_candidates": 13
+    },
+    {
+      "case_number": 21,
+      "episode_id": "99",
+      "original_candidates": 12
+    },
+    {
+      "case_number": 22,
+      "episode_id": "3237",
+      "original_candidates": 9
+    },
+    {
+      "case_number": 23,
+      "episode_id": "3551",
+      "original_candidates": 10
+    },
+    {
+      "case_number": 24,
+      "episode_id": "10243",
+      "original_candidates": 14
+    },
+    {
+      "case_number": 25,
+      "episode_id": "3275",
+      "original_candidates": 7
+    },
+    {
+      "case_number": 26,
+      "episode_id": "10484",
+      "original_candidates": 14
+    },
+    {
+      "case_number": 27,
+      "episode_id": "4096",
+      "original_candidates": 14
+    },
+    {
+      "case_number": 28,
+      "episode_id": "10847",
+      "original_candidates": 7
+    },
+    {
+      "case_number": 29,
+      "episode_id": "4408",
+      "original_candidates": 19
+    },
+    {
+      "case_number": 30,
+      "episode_id": "10879",
+      "original_candidates": 88
+    }
+  ]
+}

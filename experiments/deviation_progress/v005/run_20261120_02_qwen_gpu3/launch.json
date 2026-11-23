@@ -1,0 +1,28 @@
+{
+  "launched_at": "2026-11-20T07:38:11.072155+00:00",
+  "pid": 3827248,
+  "model": "route53-qwen27b",
+  "model_server_pid": 3800879,
+  "gpu": 3,
+  "health_http_status": 200,
+  "model_id_verified": true,
+  "command": [
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/crossing_vllm27/bin/python",
+    "-Bu",
+    "scripts/run_deviation_progress_v004.py",
+    "--version",
+    "v005",
+    "--qwen-service",
+    "outputs/model_services/qwen27b_gpu3_20261120_02/service.json",
+    "--cases",
+    "7",
+    "11",
+    "19",
+    "30",
+    "47",
+    "50",
+    "--output",
+    "outputs/deviation_progress/v005/run_20261120_02_qwen_gpu3"
+  ],
+  "log": "outputs/deviation_progress/v005/run_20261120_02_qwen_gpu3.log"
+}

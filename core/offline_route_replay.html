@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>选路错误轨迹回放</title><link rel="stylesheet" href="style.css"></head>
+<body><header><div><small>VLNVerse &nbsp; / &nbsp; StreamVLN</small><h1 data-en="Route-choice replay">选路错误轨迹回放</h1></div><label class="language"><span data-en="Language">语言</span> <select id="language"><option value="0">中文</option><option value="1">English</option></select></label></header>
+<main>
+<section class="taskbar"><div><label for="task" data-en="Navigation task">导航任务</label><select id="task"></select></div><div class="metadata"><span id="group"></span><span id="batch"></span><span id="subtype"></span></div></section>
+<section class="instruction"><h2 data-en="Instruction">任务指令</h2><p id="instruction"></p></section>
+<div class="columns">
+<section class="card"><div class="cardhead"><h2 data-en="Floor plan">俯视地图</h2><div class="layers">
+<label><input id="actual" type="checkbox" checked><i class="actual"></i><span data-en="Actual route">实际路线</span></label>
+<label><input id="ref" type="checkbox" checked><i class="ref"></i><span data-en="Reference route">参考路线</span></label></div></div>
+<svg id="map" role="img" aria-label="俯视地图"><image id="floor" x="0" y="0"></image><g id="actualLayer"><polyline id="actualLine"></polyline><circle id="end"></circle></g><g id="refLayer"><polyline id="refLine"></polyline><rect id="goal"></rect></g><g id="robot"><path d="M 9 0 L -6 -6 L -3 0 L -6 6 Z"></path></g><g id="scale"><path id="bar"></path><text id="scaleText">1 m</text></g></svg>
+<div class="caption"><span data-en="Arrow · current position and heading">箭头 · 当前位置与朝向</span><span data-en="● actual end　■ reference goal">● 实际终点　■ 参考目标</span></div>
+<input class="slider" id="mapStep" type="range" min="0" value="0" aria-label="地图步数"></section>
+<section class="card"><div class="cardhead"><h2 data-en="Observation">逐步观测</h2><select id="mode" aria-label="观测模式"><option value="front" data-en="Native front">原生前视</option><option value="180" selected>180°</option><option value="360">360°</option></select></div>
+<div class="media"><div id="focus" class="tile" role="img"></div><div id="viewCaption"></div><div id="thumbs"></div><span id="load" role="status"></span></div>
+<input class="slider" id="imageStep" type="range" min="0" value="0" aria-label="观测步数"></section></div>
+<nav class="transport" aria-label="回放"><button id="prev" data-en="← Previous">← 上一步</button><button id="play"></button><button id="next" data-en="Next →">下一步 →</button><output id="counter"></output><span id="elapsed"></span></nav>
+<div class="details"><section class="card"><div class="cardhead"><h2 data-en="Annotated events">错误事件</h2><span id="confidence"></span></div><div class="inside"><div id="events"></div><p id="reason"></p><small data-en="Offline trajectory and keyframe review by Codex. Human review pending.">Codex 根据轨迹和关键帧完成的离线初标，待人工复核。</small></div></section>
+<section class="card"><div class="cardhead"><h2 data-en="Pose at this step">当前步位姿</h2><small data-en="World coordinates">世界坐标系</small></div><div class="inside"><table><thead><tr><th></th><th>XYZ (m)</th><th data-en="Heading">朝向</th></tr></thead><tbody><tr><th data-en="Robot">机器人</th><td id="robotXYZ"></td><td id="robotHeading"></td></tr><tr><th data-en="Native camera">原生相机</th><td id="camXYZ"></td><td id="camHeading"></td></tr></tbody></table><details><summary data-en="Quaternions (w, x, y, z)">四元数 (w, x, y, z)</summary><div id="quats"></div></details></div></section></div>
+</main><script src="tasks.js"></script><script src="player.js"></script></body></html>

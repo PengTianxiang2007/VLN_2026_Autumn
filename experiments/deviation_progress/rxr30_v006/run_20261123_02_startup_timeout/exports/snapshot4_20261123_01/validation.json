@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "completed_cases": 4,
+  "retained_nodes": 71,
+  "terminal_nodes": 4,
+  "raw_model_calls": 134,
+  "translations": 357,
+  "dual_sliders": true,
+  "bilingual_alignment": true,
+  "raw_answers_preserved": true,
+  "pending_cases_have_no_nodes": true,
+  "notes_export": true,
+  "playback": true,
+  "mobile": true,
+  "page_errors": [],
+  "embedded_cjk_font": true,
+  "font_and_mobile_recheck": true
+}

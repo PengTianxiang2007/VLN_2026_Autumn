@@ -1,0 +1,93 @@
+{
+  "seed": 2,
+  "pairs": [
+    {
+      "case": "C15",
+      "episode_id": "kujiale_0147_65_1",
+      "original": {
+        "passed": false,
+        "xy_m": 3.4461324636352875,
+        "yaw_deg": 155.47730042682053,
+        "return_actions": 32,
+        "arrived": true,
+        "terminal_reason": ""
+      },
+      "current": {
+        "passed": false,
+        "xy_m": 3.431672904650438,
+        "yaw_deg": 155.144136310901,
+        "return_actions": 8,
+        "arrived": true,
+        "terminal_reason": ""
+      }
+    },
+    {
+      "case": "C21",
+      "episode_id": "kujiale_0165_57_0",
+      "original": {
+        "passed": false,
+        "xy_m": 4.309771034983573,
+        "yaw_deg": 57.61737958167629,
+        "return_actions": 24,
+        "arrived": true,
+        "terminal_reason": ""
+      },
+      "current": {
+        "passed": false,
+        "xy_m": 4.176462800520845,
+        "yaw_deg": 91.2310607325424,
+        "return_actions": 12,
+        "arrived": true,
+        "terminal_reason": ""
+      }
+    },
+    {
+      "case": "C31",
+      "episode_id": "kujiale_0232_23_2",
+      "original": {
+        "passed": false,
+        "xy_m": 2.784695593228421,
+        "yaw_deg": 145.25285468716623,
+        "return_actions": 16,
+        "arrived": true,
+        "terminal_reason": ""
+      },
+      "current": {
+        "passed": false,
+        "xy_m": 4.150363816999894,
+        "yaw_deg": 124.84535130030154,
+        "return_actions": 376,
+        "arrived": false,
+        "terminal_reason": "fall"
+      }
+    },
+    {
+      "case": "C34",
+      "episode_id": "kujiale_0232_72_1",
+      "original": {
+        "passed": false,
+        "xy_m": 3.8179366740144434,
+        "yaw_deg": 173.58688312651185,
+        "return_actions": 20,
+        "arrived": true,
+        "terminal_reason": ""
+      },
+      "current": {
+        "passed": false,
+        "xy_m": 4.955787489456791,
+        "yaw_deg": 177.30096478577138,
+        "return_actions": 52,
+        "arrived": true,
+        "terminal_reason": ""
+      }
+    }
+  ],
+  "original": {
+    "passed": 0,
+    "mean_final_xy_m": 3.589633941465431
+  },
+  "current": {
+    "passed": 0,
+    "mean_final_xy_m": 4.178571752906992
+  }
+}

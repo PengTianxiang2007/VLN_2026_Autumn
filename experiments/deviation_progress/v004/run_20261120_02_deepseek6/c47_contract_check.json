@@ -1,0 +1,16 @@
+{
+  "case": "C47",
+  "round": "S04",
+  "original_status": "error",
+  "original_error": "ValueError: Unexpected/missing answer fields: ['type']",
+  "unchanged_response_sha256": "2969accbf5fe999acc56a3344ea6ab93f0a8f7dcef3dbf2bac9e95431d350b00",
+  "ignored_for_offline_check": {
+    "type": "json_object"
+  },
+  "all_nine_original_fields_passed": true,
+  "model_calls": 0,
+  "verdict": "deviated",
+  "from_frame": 0,
+  "to_frame": 52,
+  "rollback_node": "S01"
+}

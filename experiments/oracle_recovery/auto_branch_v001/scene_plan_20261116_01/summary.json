@@ -1,0 +1,134 @@
+{
+  "status": "draft_no_execution",
+  "official_tasks": 825,
+  "recorded_streamvln_tasks": 290,
+  "excluded_scenes": 11,
+  "candidate_tasks": 535,
+  "candidate_scenes": 22,
+  "selected_tasks": 400,
+  "selected_scenes": 22,
+  "selection_seed": 20261116,
+  "allocation_histogram": {
+    "19": 4,
+    "18": 18
+  },
+  "official_split_sha256": "15c04c1e842354a824d81213333c7c7e119615f96fd53566510020b2f8145e3b",
+  "draft_ids_sha256": "579c835e83dcf7b9701e32f672ebaaa7de1e67d488de90946d470ced33d860b5",
+  "audit_files": 1321,
+  "parse_issues": 0,
+  "exclusion_scope": "All recorded StreamVLN runs/attempts in audited project roots, any seed; not other models.",
+  "selection": "Round-robin scene balance, SHA256 seed ranking within scenes; no result-based selection.",
+  "simulation_started": false,
+  "scene_counts": [
+    {
+      "scene": "kujiale_0020",
+      "candidates": 25,
+      "selected": 18
+    },
+    {
+      "scene": "kujiale_0030",
+      "candidates": 25,
+      "selected": 18
+    },
+    {
+      "scene": "kujiale_0031",
+      "candidates": 25,
+      "selected": 18
+    },
+    {
+      "scene": "kujiale_0047",
+      "candidates": 25,
+      "selected": 18
+    },
+    {
+      "scene": "kujiale_0063",
+      "candidates": 21,
+      "selected": 18
+    },
+    {
+      "scene": "kujiale_0066",
+      "candidates": 24,
+      "selected": 18
+    },
+    {
+      "scene": "kujiale_0090",
+      "candidates": 25,
+      "selected": 18
+    },
+    {
+      "scene": "kujiale_0093",
+      "candidates": 25,
+      "selected": 18
+    },
+    {
+      "scene": "kujiale_0096",
+      "candidates": 25,
+      "selected": 18
+    },
+    {
+      "scene": "kujiale_0102",
+      "candidates": 25,
+      "selected": 18
+    },
+    {
+      "scene": "kujiale_0114",
+      "candidates": 24,
+      "selected": 18
+    },
+    {
+      "scene": "kujiale_0128_fix",
+      "candidates": 25,
+      "selected": 18
+    },
+    {
+      "scene": "kujiale_0147",
+      "candidates": 23,
+      "selected": 19
+    },
+    {
+      "scene": "kujiale_0159",
+      "candidates": 25,
+      "selected": 18
+    },
+    {
+      "scene": "kujiale_0165",
+      "candidates": 24,
+      "selected": 18
+    },
+    {
+      "scene": "kujiale_0226",
+      "candidates": 25,
+      "selected": 18
+    },
+    {
+      "scene": "kujiale_0243",
+      "candidates": 25,
+      "selected": 18
+    },
+    {
+      "scene": "kujiale_0258",
+      "candidates": 25,
+      "selected": 19
+    },
+    {
+      "scene": "kujiale_0285",
+      "candidates": 25,
+      "selected": 19
+    },
+    {
+      "scene": "kujiale_0290",
+      "candidates": 22,
+      "selected": 19
+    },
+    {
+      "scene": "kujiale_0291",
+      "candidates": 25,
+      "selected": 18
+    },
+    {
+      "scene": "kujiale_0294",
+      "candidates": 22,
+      "selected": 18
+    }
+  ]
+}

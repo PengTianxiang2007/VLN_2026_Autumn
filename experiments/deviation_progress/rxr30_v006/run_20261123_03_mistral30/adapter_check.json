@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "scope": [
+    "string and thinking/text chunk extraction",
+    "original response array is unchanged",
+    "ordinary JSON storage remains unchanged",
+    "unsupported or thinking-only content is rejected"
+  ],
+  "model_calls_in_check": 0
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DeepSeek · H1 实走回退</title>
+<style>/*__ROUNDTRIP_STYLE__*/
+body{margin:0}.brand{display:flex;align-items:baseline;gap:12px}.brand small{font-size:12px;letter-spacing:.04em;color:#c0d1c7}
+.tools{justify-content:flex-start}.layerList{padding:8px 15px;display:grid;gap:5px}.layerRow{display:grid;grid-template-columns:minmax(0,1fr) 90px 46px;align-items:center;gap:8px;font-size:13px}.layerRow label{display:flex;align-items:center;gap:6px;cursor:pointer}.layerRow output{text-align:right;color:var(--muted)}
+.layerRow input[type=range]{width:100%;margin:0}.layerRow i{display:inline-block;width:16px;border-top:3px solid var(--c)}.layerRow i.dash{border-top-style:dashed}
+.rgbPane{padding:10px 13px 2px}.rgbPane img{display:block;width:100%;max-height:430px;aspect-ratio:4/3;object-fit:contain;background:#182922;border-radius:4px}.rgbPane figcaption{min-height:1.4em;margin-top:4px}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:9px}.metrics span{display:block;font-size:12px;color:var(--muted)}.metrics strong{font-size:19px}.decision{font-size:15px;line-height:1.65;margin-top:5px}
+#cursorShape,#markA,#markB{pointer-events:none}.minor em{font-style:normal}.foot{align-items:start}.group select{max-width:65vw}#caseId{color:var(--muted)}
+[hidden]{display:none!important}.range input,.layerRow input{accent-color:#376653}#pairStats{font-variant-numeric:tabular-nums}.modes{flex-wrap:wrap}
+@media(max-width:850px){.twocol{grid-template-columns:1fr 1fr}.layerRow{grid-template-columns:minmax(0,1fr) 68px 39px}}
+@media(max-width:710px){.twocol{grid-template-columns:1fr}.brand small{display:none}.foot{grid-template-columns:1fr}.rgbPane img{max-height:360px}}
+</style></head><body>
+<header><div><div class="brand"><h1 data-en="DeepSeek · H1 rollback replay">DeepSeek · H1 实走回退</h1><small>VLNVerse / H1</small></div><select id="lang" aria-label="中文 / English"><option value="zh">中文</option><option value="en">English</option></select></div></header>
+<main>
+<section class="panel pad"><div class="bar"><div class="group"><label><span data-en="Case">案例</span> <select id="cases"></select></label><span class="minor" id="caseId"></span></div><p class="summary" id="aggregate"></p></div>
+<p id="instruction"></p><div class="bar" style="margin-top:10px"><nav class="modes"><button id="returnMode" data-en="Actual return">实际回退</button><button id="originalMode" hidden data-en="Original return">旧版回退</button><button id="outMode" data-en="Historical outbound">历史去程</button></nav><span id="interval" class="minor"></span></div><p id="error" role="alert"></p></section>
+<div class="twocol">
+<section class="panel"><div class="panelhead titlebar"><h2 data-en="Floor plan">俯视地图</h2><span class="minor" data-en="A · target　B · return start">A · 回退目标　B · 回退起点</span></div>
+<div class="mapwrap"><svg id="map" viewBox="0 0 640 365" role="img" aria-label="俯视地图">
+<image id="mapImage" preserveAspectRatio="none"/>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <polyline id="taskLine" stroke="#8055a1" stroke-dasharray="3 5"/>
+  <polyline id="afterLine" stroke="#884054" stroke-dasharray="2 4"/>
+  <polyline id="historyLine" stroke="#355e99" stroke-dasharray="8 5"/>
+  <polyline id="originalLine" stroke="#007873" stroke-dasharray="7 3"/><polyline id="originalWalked" stroke="#007873"/>
+  <polyline id="actualLine" stroke="#ad4a21" opacity=".35"/><polyline id="walkedLine" stroke="#ad4a21"/>
+</g>
+<g id="endPoints" fill="white" stroke-width="2"><circle id="originalEnd" r="5.5" stroke="#007873"/><circle id="currentEnd" r="3.5" stroke="#ad4a21"/></g>
+<g id="nodes"></g><g id="markA"><circle r="4" fill="#355e99" stroke="white"/><text x="-17" y="-7">A</text></g>
+<g id="markB"><circle r="4" fill="#ad4a21" stroke="white"/><text x="7" y="-7">B</text></g>
+<g id="cursorShape"><circle r="6" stroke="white" stroke-width="2"/><g id="heading"><path d="M5 0H24m-6 -4 6 4-6 4" fill="none" stroke="white" stroke-width="5"/><path d="M5 0H24m-6 -4 6 4-6 4" fill="none" stroke="#16392f" stroke-width="2.5"/></g></g>
+<g transform="translate(16 351)"><path id="scaleBar" stroke="#243b32" stroke-width="2" fill="none"/><text y="-6" id="scaleText"></text></g>
+<style>text{font-family:inherit;font-weight:600;paint-order:stroke;stroke:white;stroke-width:3px;fill:#203e32}</style>
+</svg></div>
+<div class="tools"><button id="minus" aria-label="−">−</button><button id="plus" aria-label="+">+</button><button id="fit" data-en="Fit routes">适配轨迹</button><button id="full" data-en="Full map">完整底图</button><label><input id="nodeToggle" type="checkbox" checked><span data-en="Retained nodes">有效节点</span></label></div>
+<div class="tools" id="pointTools" hidden><label><input id="pointToggle" type="checkbox" checked><span data-en="Return start B and actual endpoints">回退起点 B 与实际落点</span></label></div>
+<div class="layerList" id="layers"></div>
+<label class="range"><span data-en="Map frame">地图帧</span><input id="mapStep" type="range" min="0" value="0"><output></output></label></section>
+<section class="panel"><div class="panelhead titlebar"><h2 data-en="Current observation">当前观测</h2><span class="minor" id="source"></span></div>
+<figure class="rgbPane"><img id="rgb" alt="RGB"><figcaption class="caption" id="frameCaption"></figcaption></figure>
+<label class="range"><span data-en="RGB frame">观测帧</span><input id="rgbStep" type="range" min="0" value="0"><output></output></label>
+<div class="transport"><button id="start" data-en="Start">起点</button><button id="prev" data-en="Previous">上一步</button><button id="play">播放</button><button id="next" data-en="Next">下一步</button><button id="end" data-en="Endpoint">终点</button></div></section></div>
+<section class="panel pad foot"><div><div class="titlebar"><h2 data-en="Return outcome">回退结果</h2><strong id="outcome"></strong></div><div class="metrics"><div><span data-en="Final distance to A">终点距 A</span><strong id="finalDist"></strong></div><div><span data-en="Final heading error">终点朝向差</span><strong id="yaw"></strong></div><div><span data-en="Return actions">回程动作数</span><strong id="count"></strong></div></div>
+<p class="caption" id="why"></p><p class="caption" id="pairStats" hidden></p></div><div><h2 id="decisionHead"></h2><p class="decision" id="decision"></p><p class="caption" id="note"></p></div></section>
+</main><script src="catalog.js"></script><script src="player.js"></script></body></html>

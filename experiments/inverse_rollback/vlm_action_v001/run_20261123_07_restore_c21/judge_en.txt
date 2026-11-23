@@ -1,0 +1,3 @@
+The robot is walking back to A to restore its original physical position. The seven outbound images and the recorded steps between them show the trip from A to B. The last image, CURRENT, was taken after executing the latest four return actions.
+
+Is the robot now back at the position where the first outbound image was taken? Its heading may differ. Return only {"arrived": true} or {"arrived": false}.

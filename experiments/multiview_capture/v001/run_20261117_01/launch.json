@@ -1,0 +1,28 @@
+{
+  "pid": 2342111,
+  "command": [
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/benchmarks/vlnverse/.venv/bin/python",
+    "-B",
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/multiview_capture/v001/run_20261117_01/code/scripts/run_oracle_existing_model.py",
+    "--campaign",
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/multiview_capture/v001/run_20261117_01",
+    "--arm",
+    "baseline",
+    "--run-id",
+    "peng_fine_multiview104_20261117_01",
+    "--gpu",
+    "2",
+    "--model-gpu",
+    "3",
+    "--model-pid",
+    "3194667",
+    "--port",
+    "40617",
+    "--model-trace",
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/distance_v001/run_20261115_05/runs/vlnverse/streamvln/results/peng_fine_distance_native_166c2cb6c4_short/chunk_1794755945472217903/agent_trace.jsonl"
+  ],
+  "time": 1794906445.0767293,
+  "model_pid": 3194667,
+  "model_gpu": 3,
+  "sim_gpu": 2
+}

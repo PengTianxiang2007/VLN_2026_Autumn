@@ -1,0 +1,29 @@
+{
+  "url": "http://134.175.18.101/vln/jev_route53_sampling_v001_web_20261118_01/index.html",
+  "published_utc": "2026-11-18T07:00:43.421606+00:00",
+  "publication_record": "outputs/visualization_publishing/publish_20261118_065938_476932/publication.json",
+  "verified_files": 4859,
+  "remote_sha256_verified": true,
+  "html": {
+    "path": "index.html",
+    "sha256": "92cfab126dd4c4cabba29841725e30ac582ff5088722642f5a4f37cb64e495f4",
+    "bytes": 1986010,
+    "http_route": "direct",
+    "http_status": 200,
+    "http_sha256_verified": false
+  },
+  "representative_assets": [
+    {
+      "path": "front/00078f040eb5f48202de9610d1ae10428f99ca38f3b04e938febd01b256f4fdb.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 31976
+    },
+    {
+      "path": "maps/kujiale_0036.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": 14000
+    }
+  ]
+}

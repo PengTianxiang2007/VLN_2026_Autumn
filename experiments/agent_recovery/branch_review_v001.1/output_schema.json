@@ -1,0 +1,250 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Recovery branch review v001.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "view_candidates",
+    "candidate_groups",
+    "branches",
+    "previous_attempt",
+    "uncertainties"
+  ],
+  "properties": {
+    "view_candidates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "C_left70",
+        "C_front",
+        "C_right70"
+      ],
+      "properties": {
+        "C_left70": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "description"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^L[1-9][0-9]*$"
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "C_front": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "description"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^F[1-9][0-9]*$"
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "C_right70": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "description"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^R[1-9][0-9]*$"
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "candidate_groups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "candidate_ids",
+          "reason",
+          "branch_id"
+        ],
+        "properties": {
+          "candidate_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[LFR][1-9][0-9]*$"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          },
+          "branch_id": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^B[1-9][0-9]*$"
+          }
+        }
+      }
+    },
+    "branches": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "direction",
+          "entrance_description",
+          "current_choice_basis",
+          "evidence_image_ids"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^B[1-9][0-9]*$"
+          },
+          "direction": {
+            "enum": [
+              "front",
+              "front_left",
+              "left",
+              "front_right",
+              "right",
+              "back",
+              "unknown"
+            ]
+          },
+          "entrance_description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "current_choice_basis": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_image_ids": {
+            "$ref": "#/$defs/evidence",
+            "minItems": 1
+          }
+        }
+      }
+    },
+    "previous_attempt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "branch_id",
+        "evidence_image_ids",
+        "reason"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "identified",
+            "uncertain"
+          ]
+        },
+        "branch_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^B[1-9][0-9]*$"
+        },
+        "evidence_image_ids": {
+          "$ref": "#/$defs/evidence"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "identified"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "branch_id": {
+                "type": "string"
+              },
+              "evidence_image_ids": {
+                "minItems": 1
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "branch_id": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "uncertainties": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "$defs": {
+    "evidence": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "C_left70",
+          "C_front",
+          "C_right70",
+          "C_plus2",
+          "C_plus5",
+          "C_plus8",
+          "C_plus10"
+        ]
+      }
+    }
+  }
+}

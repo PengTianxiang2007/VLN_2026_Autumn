@@ -1,0 +1,35 @@
+<section class="panel snapshot" id="nodeSection">
+  <div class="sectionHead"><h2 data-zh="去重后的有效节点" data-en="Effective nodes after deduplication"></h2><span id="nodeCount" class="small"></span></div>
+  <div class="noteBody"><p id="nodeStatus"></p><div id="nodeButtons" class="review"></div><p id="currentNode" class="small"></p></div>
+  <canvas id="jevPlot" width="1200" height="180" aria-label="JEV" tabindex="0"></canvas>
+  <p class="noteBody small" data-zh="曲线为逐帧 JEV 分数；紫线只标有效节点，灰线为终止节点。删除候选不画节点标记。点击曲线可跳帧。" data-en="The curve shows frame-wise JEV scores. Purple lines mark effective nodes only; grey marks the terminal node. Removed candidates have no node markers. Click the plot to seek."></p>
+</section>
+<section class="panel snapshot" id="dedupSection">
+  <div class="sectionHead"><h2 data-zh="原始候选的去重评审" data-en="Deduplication reviews of original candidates"></h2><span id="roundCount" class="small"></span></div>
+  <div class="noteBody"><p id="reviewEmpty" class="notice"></p><a id="dedupRawLink" download data-zh="下载本例完整去重原始结果" data-en="Download the full original deduplication result"></a><div id="reviewBody">
+    <div class="bar"><button id="roundPrev" data-zh="上一评审" data-en="Previous review"></button><select id="roundPicker" aria-label="Review"></select><button id="roundNext" data-zh="下一评审" data-en="Next review"></button><button id="roundJump" data-zh="跳到候选 B" data-en="Seek candidate B"></button></div>
+    <p id="reviewDecision" class="reviewVerdict"></p><p id="reviewTiming" class="small"></p><p id="reviewReason"></p>
+    <div class="notes reviewEvidence"><div><h3 data-zh="A：此前保留的候选位置" data-en="A: previously retained candidate location"></h3><div id="imagesA" class="evidenceStrip"></div></div><div><h3 data-zh="B：本次比较的原始候选" data-en="B: original candidate being compared"></h3><div id="imagesB" class="evidenceStrip"></div></div></div>
+    <div id="branchDetails"></div>
+    <details><summary data-zh="完整最终回答与实际请求元数据" data-en="Complete final answer and actual request metadata"></summary><p class="small" data-zh="原始 JSON 保持不变；上方提供逐字段双语展示。图像展示副本来自同一动作帧，输入原图哈希保留在请求中。" data-en="Original JSON is unchanged; the fields are displayed bilingually above. Display images come from the same action frames; original input hashes are retained in the request."></p><pre id="rawAnswer"></pre><pre id="rawRequest"></pre><a id="dedupResponseLink" download hidden data-zh="下载原始服务端响应" data-en="Download original server response"></a></details>
+  </div></div>
+</section>
+<section class="panel snapshot" id="deviationSection">
+  <div class="sectionHead"><h2 data-zh="第二轮：偏航识别" data-en="Round 2: deviation identification"></h2><span id="deviationStatus" class="badge"></span></div>
+  <div class="noteBody"><p id="deviationOverview"></p><p class="small" data-zh="地图勾选“显示偏航区间”后，已被模型有效判为偏航的 A→B 实际轨迹显示为红色。红线为模型报警，不是新的人工归因或实际回退；D/C仍为先前离线错误归因。" data-en="Check “Show deviation intervals” on the map to color the actual A→B paths of accepted model alarms red. Red paths are model alarms, not new manual labels or actual rollback actions; D/C remain the earlier offline error attribution."></p>
+    <div id="deviationBody">
+      <div class="bar"><button id="devPrev" data-zh="上一轮" data-en="Previous round"></button><select id="devPicker" aria-label="Deviation review"></select><button id="devNext" data-zh="下一轮" data-en="Next round"></button><button id="devJumpA" data-zh="跳到 A" data-en="Seek A"></button><button id="devJumpB" data-zh="跳到 B" data-en="Seek B"></button></div>
+      <p id="devVerdict" class="reviewVerdict"></p><p id="devTiming" class="small"></p><p id="devError" class="notice"></p>
+      <h3 data-zh="实际输入帧" data-en="Actual input frames"></h3><div id="devImages" class="evidenceStrip"></div>
+      <div id="devAnswer"></div>
+      <details><summary data-zh="完整偏航最终回答与实际请求元数据" data-en="Full final deviation answer and actual request metadata"></summary><p class="small" data-zh="JSON与原始回答完整保留，上方按语言逐字段展示；无效原答只供核查，不会被改写为有效结论。" data-en="JSON and original answers are preserved in full, with fields displayed above in the selected language. Invalid answers are shown for inspection and are never rewritten as accepted decisions."></p><pre id="devRawAnswer"></pre><pre id="devRawRequest"></pre><a id="devResponseLink" download hidden data-zh="下载原始服务端响应" data-en="Download original server response"></a></details>
+    </div>
+  </div>
+</section>
+<section class="panel snapshot"><div class="sectionHead"><h2 data-zh="提示词、下载与复核" data-en="Prompt, downloads, and review notes"></h2></div><div class="noteBody">
+  <details><summary data-zh="去重提示词（实际中文原文 / 完整英文译文）" data-en="Dedup prompt (actual Chinese original / full English translation)"></summary><pre id="dedupPrompt"></pre></details>
+  <details><summary data-zh="偏航提示词（实际中文原文 / 完整英文译文）" data-en="Deviation prompt (actual Chinese original / full English translation)"></summary><pre id="deviationPrompt"></pre></details>
+  <div class="review"><a href="rxr30_dedup_snapshot4_offline.zip" download data-zh="下载完整离线包" data-en="Download complete offline package"></a><a href="snapshot_public.json" download data-zh="下载快照数据与完整原答" data-en="Download snapshot data and full answers"></a></div>
+  <label for="reviewNote" data-zh="当前任务 / 帧 / 评审的复核意见（保存在本浏览器）" data-en="Review note for this case / frame / review (stored in this browser)"></label><textarea id="reviewNote" rows="3"></textarea>
+  <div class="review"><button id="saveNote" data-zh="保存复核意见" data-en="Save note"></button><button id="downloadNotes" data-zh="导出复核意见" data-en="Export notes"></button><span id="noteFeedback" class="small"></span></div>
+</div></section>

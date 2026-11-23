@@ -1,0 +1,49 @@
+{
+  "phase": "complete",
+  "dedup_complete": 30,
+  "deviation_complete": 30,
+  "workers": 30,
+  "target_episodes": 30,
+  "updated_at": "2026-11-23T17:42:12.407686+00:00",
+  "pid": 2081596,
+  "started_at": "2026-11-23T16:55:14.807749+00:00",
+  "provider": "mistral",
+  "settings": {
+    "model": "deepseek-v4-1-flash-1017",
+    "reasoning_effort": "high",
+    "max_tokens": 32768,
+    "response_format": {
+      "type": "json_object"
+    },
+    "stream": false
+  },
+  "failed_cases": {},
+  "active_stage_completed": 30,
+  "dedup_counts": {
+    "candidates": 725,
+    "retained": 295,
+    "removed": 430,
+    "model_calls": 656,
+    "uncertain": 71,
+    "errors": 0
+  },
+  "frozen_nodes_sha256": "36c8b9b20a71c92d9d9f073978463c7b9424ff9a9acd4d24958cd91805b13c33",
+  "deviation_counts": {
+    "format_error": 7,
+    "deviated": 23,
+    "consistent": 107
+  },
+  "finished_at": "2026-11-23T17:42:12.407677+00:00",
+  "summary": {
+    "episodes": 30,
+    "alarm_episodes": 23,
+    "timing_counts": {
+      "before_decision": 11,
+      "decision_to_confirmation": 3,
+      "no_alarm": 7,
+      "after_confirmation": 9
+    },
+    "format_errors": 7
+  },
+  "workers_exited": true
+}

@@ -1,0 +1,37 @@
+{
+  "dataset_manifest_sha256": "bcf64509c87b55cabc667964253509595e1983f188f737d59c907b0f19cdf3c5",
+  "source_sha256": {
+    "scripts/export_offline_route_replay.py": "61f5f2d78ada056ca8be226443432e36d054fba1689a9d15e9ff83e98cbe319f",
+    "scripts/check_offline_route_replay.cjs": "951b947ffc2911436b707f45271ed247431bc535cf0e8280e53625da4f5a8e96",
+    "core/offline_route_replay.html": "d642bc216840f24a49d5538e00485cda1cc4dd1cb96132b34f6ae8e8062addd6",
+    "core/offline_route_replay_player.js": "aff47f347a0c232f4bd119b293c37e88675a5036a0d85cab458544a477710e0a",
+    "core/offline_route_replay_style.css": "b5f197ea6f04a7755b004a2a178f303eb6cf7ef815e9443960572c94f430a71f",
+    "experiments/offline_route_dataset/v001/run_20261118_01/exports/replay_20261118_01/reasons_en.json": "c557ad3af924c698a6064636e4853c3eea11355accd3c8c3ff8f0b9ebf484a3d",
+    "experiments/offline_route_dataset/v001/run_20261118_01/exports/replay_20261118_01/instructions_zh_additions.json": "0b134f2ac0410b9ce43f0ca475a2e8359f1ebf639a5ead2d482cb2fc2dfa9cef"
+  },
+  "html_sha256": "d642bc216840f24a49d5538e00485cda1cc4dd1cb96132b34f6ae8e8062addd6",
+  "assets": {
+    "all_previews_decoded": 4890,
+    "maps": 19,
+    "tasks": 53,
+    "public_files": 4915,
+    "preview_size_per_view": [
+      320,
+      240
+    ],
+    "site_bytes": 184467847
+  },
+  "browser": {
+    "checked_at": "2026-11-18T05:33:44.604Z",
+    "passed": true,
+    "tasks": 53,
+    "events": 54,
+    "steps": 4890,
+    "layer_combinations": 4,
+    "both_languages": true,
+    "mobile_layout": true,
+    "playback": true,
+    "all_modes": true,
+    "browser_errors": []
+  }
+}

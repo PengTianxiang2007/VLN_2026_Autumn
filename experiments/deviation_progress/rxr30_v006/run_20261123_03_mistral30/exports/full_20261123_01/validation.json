@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "cases": 30,
+  "effective_nodes": 295,
+  "terminal_nodes": 30,
+  "dedup_calls": 656,
+  "deviation_rounds": 137,
+  "alarms": 23,
+  "invalid_answers": 7,
+  "raw_answers_preserved": true,
+  "actual_pose_edges_all_cases": true,
+  "bilingual_samples": [
+    "837",
+    "5103",
+    "7267",
+    "10197",
+    "10243",
+    "10879"
+  ],
+  "red_toggle_pixels": {
+    "before": 0,
+    "after": 24
+  },
+  "mobile": true,
+  "page_errors": []
+}

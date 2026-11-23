@@ -1,0 +1,32 @@
+{
+  "name": "rxr30_deepseek_full_web_20261123_01",
+  "source_directory": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30/exports/full_20261123_01",
+  "url": "http://134.175.18.101/vln/rxr30_deepseek_full_web_20261123_01/index.html",
+  "phase": "published",
+  "verify_only": false,
+  "http_check": "head",
+  "http_route": "direct",
+  "created_at": "2026-11-23T18:14:16.418813+00:00",
+  "git_head": "7ce5f9fee30686bae304425bc84c36b3fbedc39c",
+  "script_sha256": "8a54c944fe424cec439dc51257e8a0ae16438665d2153625cf4f6c7d2c8e5fc9",
+  "config_sha256": "9f04504b3d9af51896d3a92af9f8d82359d37d502d003defc2d85a58c87e6c90",
+  "updated_at": "2026-11-23T18:16:03.841939+00:00",
+  "remote_sha256_verified": true,
+  "browser_check": "optional; not run by the publishing tool",
+  "source_record": "outputs/visualization_publishing/publish_20261123_181416_448999/publication.json",
+  "file_count": 2225,
+  "entry": {
+    "path": "index.html",
+    "sha256": "3b044b3f6bdd93afcadef84b6f865a281b9c9a9d805613d8f8e21f678022148c",
+    "bytes": 23703,
+    "http_route": "direct",
+    "http_status": 200,
+    "http_sha256_verified": false
+  },
+  "archive": {
+    "path": "rxr30_deepseek_full_offline.zip",
+    "sha256": "f20d9624b65d04e9788d22683a471dac3653d08da6ceee7892c21cdbe5cf1e89",
+    "bytes": 239769472,
+    "http_check": "not_requested; remote_sha256_verified"
+  }
+}

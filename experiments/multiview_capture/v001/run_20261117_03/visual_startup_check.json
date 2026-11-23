@@ -1,0 +1,15 @@
+{
+  "at": "2026-11-17T09:39:30.496666+00:00",
+  "checked_step": 0,
+  "episode_id": "kujiale_0294_43_3",
+  "images": [
+    "policy_front.png",
+    "360/view_00.png",
+    "360/view_02.png",
+    "360/view_04.png",
+    "360/view_06.png"
+  ],
+  "rear_robot_self_occlusion_removed": true,
+  "left_view_observes_near_wall": true,
+  "protocol": "Robot appearance hidden only for auxiliary renders, restored before navigation; native front preserved."
+}

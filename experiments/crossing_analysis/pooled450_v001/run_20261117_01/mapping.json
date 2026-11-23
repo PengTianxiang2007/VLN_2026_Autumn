@@ -1,0 +1,59 @@
+{
+  "old": {
+    "crossing": "route_selection",
+    "initial_orientation": "route_selection",
+    "backtracking": "backtracking",
+    "early_stop": "incomplete_progress",
+    "local_motion": "incomplete_progress",
+    "fall": "termination_only_unreviewed",
+    "stuck": "termination_only_unreviewed",
+    "mixed_motion": "uncertain",
+    "mixed_backtracking": "uncertain",
+    "reference_ambiguity": "uncertain",
+    "alternative_or_stop": "uncertain"
+  },
+  "new": {
+    "route_choice": "route_selection",
+    "route_backtrack": "backtracking",
+    "stop_incomplete": "incomplete_progress",
+    "goal_overshoot": "goal_overshoot",
+    "fall_onroute": "fall_without_route_evidence",
+    "warmup_fall": "fall_without_route_evidence",
+    "stuck_onroute": "stuck_without_route_evidence",
+    "uncertain": "uncertain"
+  },
+  "category_labels": {
+    "route_selection": [
+      "选错路／漏转弯／起步方向错误",
+      "Wrong route / turn / initial direction"
+    ],
+    "backtracking": [
+      "反向回返／原路往返",
+      "Reversal / backtracking"
+    ],
+    "incomplete_progress": [
+      "路线未完成即停止／局部无效移动",
+      "Incomplete progress / local motion"
+    ],
+    "goal_overshoot": [
+      "目标区域附近未停并走过头",
+      "Goal-area overshoot"
+    ],
+    "fall_without_route_evidence": [
+      "无明确选路偏航的跌倒（含预热）",
+      "Falls without route-error evidence"
+    ],
+    "stuck_without_route_evidence": [
+      "无明确选路偏航的卡住",
+      "Stuck without route-error evidence"
+    ],
+    "termination_only_unreviewed": [
+      "历史跌倒／卡住，路线原因未复核",
+      "Historical fall/stuck: route unreviewed"
+    ],
+    "uncertain": [
+      "证据不足／混合现象不确定",
+      "Uncertain / mixed evidence"
+    ]
+  }
+}

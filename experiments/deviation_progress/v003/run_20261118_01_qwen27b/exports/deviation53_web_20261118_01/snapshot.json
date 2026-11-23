@@ -1,0 +1,596 @@
+{
+  "files": {
+    "online": {
+      "source": "outputs/visualization_publishing/qwen27b_route53_dedup_v001_web_20261118_01/index_deepseek29.html",
+      "export": "outputs/visualization_publishing/qwen27b_route53_dedup_v001_web_20261118_01/index_qwen53_deepseek29.html",
+      "sha256": "10c10e30ea87a7d069d4a7095c91137de8a20086f383afc11bbc0a9db76a06f2"
+    },
+    "offline": {
+      "source": "outputs/deviation_progress/v003/run_20261118_01_qwen27b/exports/terminal53_01/index_deepseek29.html",
+      "export": "outputs/deviation_progress/v003/run_20261118_01_qwen27b/exports/terminal53_01/index_qwen53_deepseek29.html",
+      "sha256": "6dca901e3a087dac16662537cb064b51b015c3674d6a0efb0f68483e37cddeaf"
+    }
+  },
+  "layers": {
+    "qwen": {
+      "kujiale_0036_0_0": {
+        "interval": {
+          "from_frame": 0,
+          "to_frame": 5
+        },
+        "errors": 0
+      },
+      "kujiale_0036_3_2": {
+        "interval": null,
+        "errors": 0
+      },
+      "kujiale_0036_52_4": {
+        "interval": null,
+        "errors": 0
+      },
+      "kujiale_0113_18_1": {
+        "interval": null,
+        "errors": 0
+      },
+      "kujiale_0113_1_4": {
+        "interval": {
+          "from_frame": 7,
+          "to_frame": 21
+        },
+        "errors": 0
+      },
+      "kujiale_0123_fix_13_3": {
+        "interval": {
+          "from_frame": 4,
+          "to_frame": 29
+        },
+        "errors": 0
+      },
+      "kujiale_0123_fix_19_3": {
+        "interval": null,
+        "errors": 0
+      },
+      "kujiale_0123_fix_43_3": {
+        "interval": null,
+        "errors": 0
+      },
+      "kujiale_0128_fix_12_4": {
+        "interval": {
+          "from_frame": 0,
+          "to_frame": 5
+        },
+        "errors": 0
+      },
+      "kujiale_0128_fix_18_1": {
+        "interval": {
+          "from_frame": 0,
+          "to_frame": 5
+        },
+        "errors": 0
+      },
+      "kujiale_0128_fix_20_0": {
+        "interval": {
+          "from_frame": 0,
+          "to_frame": 5
+        },
+        "errors": 0
+      },
+      "kujiale_0147_14_0": {
+        "interval": {
+          "from_frame": 27,
+          "to_frame": 61
+        },
+        "errors": 0
+      },
+      "kujiale_0147_56_4": {
+        "interval": {
+          "from_frame": 2,
+          "to_frame": 44
+        },
+        "errors": 0
+      },
+      "kujiale_0147_57_1": {
+        "interval": null,
+        "errors": 0
+      },
+      "kujiale_0147_65_1": {
+        "interval": {
+          "from_frame": 16,
+          "to_frame": 40
+        },
+        "errors": 0
+      },
+      "kujiale_0159_35_3": {
+        "interval": {
+          "from_frame": 0,
+          "to_frame": 24
+        },
+        "errors": 0
+      },
+      "kujiale_0165_40_1": {
+        "interval": {
+          "from_frame": 0,
+          "to_frame": 14
+        },
+        "errors": 0
+      },
+      "kujiale_0165_45_0": {
+        "interval": null,
+        "errors": 0
+      },
+      "kujiale_0165_49_4": {
+        "interval": {
+          "from_frame": 19,
+          "to_frame": 38
+        },
+        "errors": 0
+      },
+      "kujiale_0165_53_0": {
+        "interval": {
+          "from_frame": 10,
+          "to_frame": 41
+        },
+        "errors": 0
+      },
+      "kujiale_0165_57_0": {
+        "interval": {
+          "from_frame": 17,
+          "to_frame": 52
+        },
+        "errors": 0
+      },
+      "kujiale_0207_69_4": {
+        "interval": {
+          "from_frame": 34,
+          "to_frame": 47
+        },
+        "errors": 0
+      },
+      "kujiale_0208_21_4": {
+        "interval": {
+          "from_frame": 10,
+          "to_frame": 25
+        },
+        "errors": 0
+      },
+      "kujiale_0226_14_2": {
+        "interval": null,
+        "errors": 0
+      },
+      "kujiale_0226_2_4": {
+        "interval": {
+          "from_frame": 49,
+          "to_frame": 90
+        },
+        "errors": 0
+      },
+      "kujiale_0226_36_2": {
+        "interval": {
+          "from_frame": 0,
+          "to_frame": 15
+        },
+        "errors": 0
+      },
+      "kujiale_0226_38_4": {
+        "interval": null,
+        "errors": 0
+      },
+      "kujiale_0226_80_4": {
+        "interval": {
+          "from_frame": 0,
+          "to_frame": 63
+        },
+        "errors": 0
+      },
+      "kujiale_0226_88_0": {
+        "interval": null,
+        "errors": 0
+      },
+      "kujiale_0232_13_0": {
+        "interval": null,
+        "errors": 0
+      },
+      "kujiale_0232_23_2": {
+        "interval": {
+          "from_frame": 59,
+          "to_frame": 90
+        },
+        "errors": 0
+      },
+      "kujiale_0232_2_4": {
+        "interval": {
+          "from_frame": 26,
+          "to_frame": 39
+        },
+        "errors": 0
+      },
+      "kujiale_0232_33_1": {
+        "interval": {
+          "from_frame": 62,
+          "to_frame": 81
+        },
+        "errors": 0
+      },
+      "kujiale_0232_72_1": {
+        "interval": {
+          "from_frame": 22,
+          "to_frame": 66
+        },
+        "errors": 0
+      },
+      "kujiale_0234_23_1": {
+        "interval": {
+          "from_frame": 0,
+          "to_frame": 4
+        },
+        "errors": 0
+      },
+      "kujiale_0234_27_4": {
+        "interval": {
+          "from_frame": 3,
+          "to_frame": 20
+        },
+        "errors": 0
+      },
+      "kujiale_0234_28_3": {
+        "interval": {
+          "from_frame": 0,
+          "to_frame": 88
+        },
+        "errors": 0
+      },
+      "kujiale_0234_34_4": {
+        "interval": null,
+        "errors": 0
+      },
+      "kujiale_0234_55_1": {
+        "interval": {
+          "from_frame": 0,
+          "to_frame": 48
+        },
+        "errors": 0
+      },
+      "kujiale_0234_58_1": {
+        "interval": {
+          "from_frame": 0,
+          "to_frame": 50
+        },
+        "errors": 0
+      },
+      "kujiale_0243_29_2": {
+        "interval": null,
+        "errors": 0
+      },
+      "kujiale_0243_35_4": {
+        "interval": {
+          "from_frame": 22,
+          "to_frame": 56
+        },
+        "errors": 0
+      },
+      "kujiale_0257_4_3": {
+        "interval": {
+          "from_frame": 18,
+          "to_frame": 38
+        },
+        "errors": 0
+      },
+      "kujiale_0257_73_4": {
+        "interval": {
+          "from_frame": 4,
+          "to_frame": 75
+        },
+        "errors": 4
+      },
+      "kujiale_0257_82_4": {
+        "interval": null,
+        "errors": 0
+      },
+      "kujiale_0258_27_0": {
+        "interval": {
+          "from_frame": 6,
+          "to_frame": 67
+        },
+        "errors": 1
+      },
+      "kujiale_0258_35_1": {
+        "interval": null,
+        "errors": 0
+      },
+      "kujiale_0259_55_0": {
+        "interval": null,
+        "errors": 0
+      },
+      "kujiale_0285_2_1": {
+        "interval": {
+          "from_frame": 12,
+          "to_frame": 22
+        },
+        "errors": 0
+      },
+      "kujiale_0290_10_0": {
+        "interval": null,
+        "errors": 0
+      },
+      "kujiale_0290_1_1": {
+        "interval": {
+          "from_frame": 0,
+          "to_frame": 21
+        },
+        "errors": 0
+      },
+      "kujiale_0294_22_2": {
+        "interval": {
+          "from_frame": 5,
+          "to_frame": 104
+        },
+        "errors": 0
+      },
+      "kujiale_0294_43_3": {
+        "interval": {
+          "from_frame": 0,
+          "to_frame": 23
+        },
+        "errors": 0
+      }
+    },
+    "deepseek": {
+      "kujiale_0036_0_0": {
+        "interval": {
+          "from_frame": 5,
+          "to_frame": 26
+        },
+        "errors": 1
+      },
+      "kujiale_0036_3_2": {
+        "interval": {
+          "from_frame": 0,
+          "to_frame": 35
+        },
+        "errors": 0
+      },
+      "kujiale_0036_52_4": {
+        "interval": {
+          "from_frame": 15,
+          "to_frame": 25
+        },
+        "errors": 1
+      },
+      "kujiale_0113_18_1": {
+        "interval": {
+          "from_frame": 0,
+          "to_frame": 20
+        },
+        "errors": 0
+      },
+      "kujiale_0113_1_4": {
+        "interval": {
+          "from_frame": 7,
+          "to_frame": 12
+        },
+        "errors": 1
+      },
+      "kujiale_0123_fix_13_3": {
+        "interval": {
+          "from_frame": 9,
+          "to_frame": 29
+        },
+        "errors": 0
+      },
+      "kujiale_0123_fix_19_3": {
+        "interval": {
+          "from_frame": 2,
+          "to_frame": 75
+        },
+        "errors": 0
+      },
+      "kujiale_0123_fix_43_3": {
+        "interval": {
+          "from_frame": 74,
+          "to_frame": 118
+        },
+        "errors": 0
+      },
+      "kujiale_0128_fix_12_4": {
+        "interval": {
+          "from_frame": 0,
+          "to_frame": 5
+        },
+        "errors": 0
+      },
+      "kujiale_0128_fix_18_1": {
+        "interval": {
+          "from_frame": 5,
+          "to_frame": 25
+        },
+        "errors": 1
+      },
+      "kujiale_0128_fix_20_0": {
+        "interval": {
+          "from_frame": 0,
+          "to_frame": 5
+        },
+        "errors": 0
+      },
+      "kujiale_0147_14_0": {
+        "interval": {
+          "from_frame": 27,
+          "to_frame": 46
+        },
+        "errors": 0
+      },
+      "kujiale_0147_56_4": {
+        "interval": {
+          "from_frame": 2,
+          "to_frame": 15
+        },
+        "errors": 0
+      },
+      "kujiale_0147_57_1": {
+        "interval": {
+          "from_frame": 53,
+          "to_frame": 72
+        },
+        "errors": 0
+      },
+      "kujiale_0147_65_1": {
+        "interval": {
+          "from_frame": 0,
+          "to_frame": 16
+        },
+        "errors": 0
+      },
+      "kujiale_0159_35_3": {
+        "interval": {
+          "from_frame": 0,
+          "to_frame": 24
+        },
+        "errors": 0
+      },
+      "kujiale_0165_40_1": {
+        "interval": {
+          "from_frame": 14,
+          "to_frame": 28
+        },
+        "errors": 0
+      },
+      "kujiale_0165_45_0": {
+        "interval": {
+          "from_frame": 15,
+          "to_frame": 33
+        },
+        "errors": 0
+      },
+      "kujiale_0165_49_4": {
+        "interval": {
+          "from_frame": 19,
+          "to_frame": 38
+        },
+        "errors": 0
+      },
+      "kujiale_0165_53_0": {
+        "interval": {
+          "from_frame": 14,
+          "to_frame": 19
+        },
+        "errors": 0
+      },
+      "kujiale_0165_57_0": {
+        "interval": {
+          "from_frame": 9,
+          "to_frame": 17
+        },
+        "errors": 0
+      },
+      "kujiale_0207_69_4": {
+        "interval": {
+          "from_frame": 34,
+          "to_frame": 47
+        },
+        "errors": 0
+      },
+      "kujiale_0208_21_4": {
+        "interval": {
+          "from_frame": 0,
+          "to_frame": 5
+        },
+        "errors": 0
+      },
+      "kujiale_0226_14_2": {
+        "interval": {
+          "from_frame": 55,
+          "to_frame": 70
+        },
+        "errors": 0
+      },
+      "kujiale_0226_2_4": {
+        "interval": null,
+        "errors": 0
+      },
+      "kujiale_0226_36_2": {
+        "interval": {
+          "from_frame": 5,
+          "to_frame": 10
+        },
+        "errors": 0
+      },
+      "kujiale_0226_38_4": {
+        "interval": {
+          "from_frame": 5,
+          "to_frame": 42
+        },
+        "errors": 1
+      },
+      "kujiale_0226_80_4": {
+        "interval": {
+          "from_frame": 0,
+          "to_frame": 27
+        },
+        "errors": 0
+      },
+      "kujiale_0226_88_0": {
+        "interval": {
+          "from_frame": 0,
+          "to_frame": 23
+        },
+        "errors": 0
+      }
+    }
+  },
+  "qwen_results_sha256": {
+    "kujiale_0036_0_0": "cf76d5f7bbacdac8703422623731a0ab8ece1f8b72f4ad59577835c843bb679a",
+    "kujiale_0036_3_2": "e76fe84746ab0e890100145b4b13545197d60de47d0815095be95fbbad28f953",
+    "kujiale_0036_52_4": "faad59be042477c72aa58cb630a6e781ef31ef27f576e83518133de792d02663",
+    "kujiale_0113_18_1": "334589584296adcde8ca0c1720b8729debed700e4aefec93c015b65915b8c3a6",
+    "kujiale_0113_1_4": "d4adce0c0af75eebdf145c9e59e7844bfe3cb7fbb6dba57ebcbd3ca74940faf8",
+    "kujiale_0123_fix_13_3": "d792e34b93a6bc108f9ec78d7f7d05c8d2f98677f2b2266116d81d60ee0cc177",
+    "kujiale_0123_fix_19_3": "cb89cfeca7db418d6494130102ab54cd57399ff82941b4c81f819b59f5da47f2",
+    "kujiale_0123_fix_43_3": "e301ef9edff7738e8d113194e1cc03c72ec959073bbc9e9e2dbe5ab22b4693a2",
+    "kujiale_0128_fix_12_4": "3de46879a7431d46fb5d583d5bf8ceb7fa3da54be3765855a98e2feb4cfa90a3",
+    "kujiale_0128_fix_18_1": "bf7e823756fe008fbf61e1ad775cdeab5505a805ef199d40840471bbc2c92e9f",
+    "kujiale_0128_fix_20_0": "7a68e9dff1e06f9badf0d8e82eb8fb7ebe16170a056f805767e08bea806e6d42",
+    "kujiale_0147_14_0": "653275d447f3210cd1295c747059447e1e65e0baa32ab0679785241fab950772",
+    "kujiale_0147_56_4": "8d9eddc62819ab2b77b606c8473b4d8fe4bc1f67aa39f7b808233501a5f61857",
+    "kujiale_0147_57_1": "4ad60c59398d0da8aa2267889a2b7ca2edb6e8c2844d0356916c285971833fb4",
+    "kujiale_0147_65_1": "4b4395ba42d98884e59ad7720bb0b5850211fa2492414dcf43a35b5482737a20",
+    "kujiale_0159_35_3": "8ba5c3225c5fb821729e6f448e38942a90469fc1a0d3a1cf890ec643785b335a",
+    "kujiale_0165_40_1": "5d2d2daf99445e817ee649862f3d971685f51c5f1045bded1e971690e27620b3",
+    "kujiale_0165_45_0": "cb93aeb45603569e4b482e2596ff33401243b801bf4ce44b307006cc27bab2d1",
+    "kujiale_0165_49_4": "ba788d430ae07e3910e865155eaeea3f6df3f223887d81c6227438af6708465a",
+    "kujiale_0165_53_0": "9190355f8733415f3652e973d2269172c874fa7724219c4ee26d2bf8aa3d9bed",
+    "kujiale_0165_57_0": "42052c793df059eb8e7e8ef615ae8e93c699531440247041da6f7baac9779e9f",
+    "kujiale_0207_69_4": "523882e15732a78282e3c4b61fefe27e87b11260b46fc63d6b642fef4112fa1f",
+    "kujiale_0208_21_4": "b980812fd051834b990a3ebe3472f3e54e3af1cce4f06ac0b066b986ffe01bc8",
+    "kujiale_0226_14_2": "dde0489b07d3ac269bc757d160d6d3dd332565ef31fb1afedc9a00f3ef84a679",
+    "kujiale_0226_2_4": "5d17620ba4363503b5b48dfaa3ecf5ef783a06a0a1c123253af5fecf9418eab2",
+    "kujiale_0226_36_2": "dc06ac7ae75124330660562f10fc9988c4654aadd1dc721ea9657b39437a71aa",
+    "kujiale_0226_38_4": "1b88494bcb56601c2e72bb5235bae8c5ec34b0e4a6ddd480519079f2d1106109",
+    "kujiale_0226_80_4": "7d53a2c7dbbeb7939491b9bf46d117e37cf50745b33af64d38801b4cc5e921d0",
+    "kujiale_0226_88_0": "66435b9d195313051d642ae4d0c2eec7d1c1b10841ffa278b42ba9d827129e90",
+    "kujiale_0232_13_0": "b7bda4242210e76aa94a0425a4f1724614a1a86f9c0c216c738a5e328bb27e82",
+    "kujiale_0232_23_2": "2ee6cbd97aaae0796471111e74ec239cfc201f1b781435976bfeb7cc8ad3515c",
+    "kujiale_0232_2_4": "0da2adca729b7650416d4322a0909ce4f6210f8fddded3333c47ea38a740d38b",
+    "kujiale_0232_33_1": "7863051a8b1f58ea04a2107d6f946ce443f975af103c9cf49770c3803a8d8db2",
+    "kujiale_0232_72_1": "eb6df3539ae4a78536a00d333c2f057e1ceab74d72089e90c1e9c97937dfb3a1",
+    "kujiale_0234_23_1": "dbc33d6d3d36c324dc007245a8d2be71a91a12ecb21559661dc090d5c974457d",
+    "kujiale_0234_27_4": "57097c0afbcbb73da73404f0304ef934c156124c09395c144662925aff63af0b",
+    "kujiale_0234_28_3": "59226f8d7a138a8cc1ac9cf1ee732b51b854e3f61c11fe74bd9d5f88a64a5693",
+    "kujiale_0234_34_4": "b5fc561b49d53b9b330d6a5a03b3a82d1764aeab6b8a17be2b575b2f6857b2cc",
+    "kujiale_0234_55_1": "4e96f5054827d72ef238d4b131df131815010e15aff3e9203c284145d455773b",
+    "kujiale_0234_58_1": "6d77ab4de77555d13556b3d5cb2b772ee21e09ab3489d9452d0792e2e7bf375e",
+    "kujiale_0243_29_2": "f049cb6e81a6d8ce64d1df366284cc492a5dc9cd68cb4d469c828cc1ab134278",
+    "kujiale_0243_35_4": "857b901f48ce752e9ee3f1506add198b66e6dd2fd05eca5245d9590a195f671a",
+    "kujiale_0257_4_3": "d3187a2160ae3440c288eb5c569a0d57e0eee9dec3c19de2e0763d63b850d2cf",
+    "kujiale_0257_73_4": "8cff1a49084c2390c04f24beefe6b5f94ca7d57bad9afc5e25a5588e442cab97",
+    "kujiale_0257_82_4": "6454b40da34dccb4f5dfc36f2fee075d9ba393f1c122fb9fb44a3d2479dc4d24",
+    "kujiale_0258_27_0": "235a4d60996fc00ed58865eab79fcaea5d1efe67872b9eb0000ddd8fab5ee6a4",
+    "kujiale_0258_35_1": "b2206bf2603fdef19210737b08855534d7a44939d8c377231a7d9f759947cbd6",
+    "kujiale_0259_55_0": "45252bf8059dc6ecf20e08c1730da902e15211b116b2a9b1a934d867df032d39",
+    "kujiale_0285_2_1": "e392bc2f00312849bfa509b79ab7ac27851f221021cfad5b1797c54afc859c40",
+    "kujiale_0290_10_0": "70b62df65d822b21d19c1a5490cda2b6a429ca33853d3cc023234b83c822f7fa",
+    "kujiale_0290_1_1": "1b80cd5836030e008681925f778488e49e236ad1567587268526ba22febbfc4f",
+    "kujiale_0294_22_2": "1d5cf9ccc223a0314ea71892f622ae0f1727dac3eec093872fd3eaaedac269a3",
+    "kujiale_0294_43_3": "e98dca39f9ff38b1400f7e595c13481ef9bf3da38cbdfbf79b11c82cf35c36f1"
+  },
+  "frozen_at": "2026-11-18T17:05:28.407988+00:00"
+}

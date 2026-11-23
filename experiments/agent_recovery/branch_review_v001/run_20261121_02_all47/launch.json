@@ -1,0 +1,14 @@
+{
+  "pid": 1177777,
+  "command": [
+    ".runtime/crossing_vllm27/bin/python",
+    "-Bu",
+    "scripts/run_recovery_branch_review.py",
+    "--continue-from",
+    "outputs/agent_recovery/branch_review_v001/run_20261121_01",
+    "--output",
+    "outputs/agent_recovery/branch_review_v001/run_20261121_02_all47",
+    "--execute"
+  ],
+  "log": "outputs/agent_recovery/branch_review_v001/run_20261121_02_all47.worker.log"
+}

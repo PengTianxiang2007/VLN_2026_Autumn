@@ -1,0 +1,53 @@
+{
+  "source": "outputs/serial_recovery/v001/run_20261116_03_full33/episodes/kujiale_0257_4_3/attempt_1794829217013429550/requests/00069_deviation",
+  "source_answer_sha256": "aa5eb93400760a3cd3a4745f0d39380b417198d40b913861ddf275c479691b1c",
+  "request": {
+    "mode": "initialization",
+    "previous_id": "S01",
+    "current_id": "S01",
+    "previous_frame": 0,
+    "current_frame": 0,
+    "instruction_en": "Walk forward past the bookshelves on your right. Turn left to enter the first doorway, with a painting on the wall to your right. Proceed straight through this doorway and continue straight through the next doorway immediately ahead. After passing the second doorway, turn left. Walk forward into the open room, keeping the dining table and chairs on your right and the living room area with sofas and a TV on your left. Turn slightly left and stop in front of the large window, with the television on your right and a sofa on your left.",
+    "prior_semantic_progress": "截至B（S06，帧23），当前在门洞右侧的白墙前，门洞位于画面左侧；透过门洞可看到木地板、内侧房间中的深色家具或床及远处窗户或门口外的绿色景物。此前路线进度尚未确认，无法确认是否已完成经过右侧书架、左转进入带画门洞、穿过第二个门洞，以及在开放房间内保持餐桌椅在右、沙发电视在左等要求。",
+    "coverage": "Endpoints plus up to five uniform intermediate frames; no images after B.",
+    "images": [
+      {
+        "frame": 0,
+        "role": "A=B"
+      }
+    ]
+  },
+  "answer": {
+    "previous_id": "S01",
+    "current_id": "S01",
+    "verdict": "consistent",
+    "segment_summary": {
+      "zh": "初始化节点仅显示：高大书架位于画面左侧和中央，右侧近处有白色桌面与椅子，右后方靠窗可见绿色景物；未看到门洞或任何穿门动作。",
+      "en": "The initialization node only shows tall bookshelves on the left and center of the frame, a white tabletop and chairs nearby on the right, and green scenery through a window at the rear right; no doorway or passing through a doorway is visible."
+    },
+    "reason": {
+      "zh": "本轮为初始化，A=B 且仅有一帧，不能据此确认此前的书架经过、左转进入第一门洞、穿过第二门洞及开放房间内左右参照关系；当前画面也未提供门洞或画作证据。单帧不构成偏航证据，只能建立当前语义状态。",
+      "en": "This round is initialization: A=B with only one frame, so it cannot confirm earlier passing the bookshelves, turning left into the first doorway, passing through the second doorway, or the left/right reference relationships in the open room; the current view also provides no evidence of a doorway or painting. A single frame is not evidence of deviation and can only establish the current semantic state."
+    },
+    "instruction_evidence": [],
+    "visual_evidence": [
+      {
+        "frames": [
+          0
+        ],
+        "description": {
+          "zh": "该帧显示木地板房间内的书架、右侧白桌和椅子，以及右后方窗户和绿色景物；未见门洞、画作或电视/沙发。",
+          "en": "This frame shows bookshelves in a wood-floored room, a white table and chairs on the right, and a window with green scenery at the rear right; no doorway, painting, or TV/sofa is visible."
+        }
+      }
+    ],
+    "semantic_progress": {
+      "zh": "截至B（S01，帧0），当前位于有高大书架和木地板的房间内，右侧近处有白色桌面和椅子，右后方有窗及绿色景物。此前是否经过右侧书架、左转进入带画门洞、穿过第二个门洞，以及在开放房间内按左右关系行进均未确认；尚未见门洞、画作、餐桌椅与沙发电视组合等后续关键参照物。",
+      "en": "As of B (S01, frame 0), the robot is in a wood-floored room with tall bookshelves, a white tabletop and chairs nearby on the right, and a window with green scenery at the rear right. It is unconfirmed whether the robot previously passed bookshelves on the right, turned left into a doorway with a painting, passed through the second doorway, or moved through the open room with the required left/right relationships; the doorway, painting, dining table and chairs, and sofa/TV combination have not yet been seen."
+    },
+    "uncertainties": {
+      "zh": "无法确认当前朝向与任务中“书架在右侧”的空间关系；无法确认当前单帧处于任务路线的哪个阶段；第一门洞、画作、第二门洞及开放房间尚未在画面中定位。",
+      "en": "It cannot be confirmed how the current orientation relates spatially to the task requirement that the bookshelves be on the right; it cannot be confirmed which stage of the task this single frame belongs to; the first doorway, painting, second doorway, and open room have not yet been located in the view."
+    }
+  }
+}

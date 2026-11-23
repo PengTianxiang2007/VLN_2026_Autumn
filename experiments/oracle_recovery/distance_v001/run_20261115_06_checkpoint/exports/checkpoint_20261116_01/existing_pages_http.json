@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-11-16T12:53:29.988436+00:00",
+  "checks": [
+    {
+      "group": "early",
+      "url": "http://134.175.18.101/vln/oracle_distance_075m_33_run05_web_20261115_02/oracle_075m_33.html",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 2270517
+    },
+    {
+      "group": "early_plus05",
+      "url": "http://134.175.18.101/vln/oracle_distance_plus05_33_run07_web_20261116_01/oracle_plus05_33.html",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 2148417
+    }
+  ],
+  "scope": "HEAD only; existing browser and remote-resource integrity records retained"
+}

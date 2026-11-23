@@ -1,0 +1,185 @@
+1 In A+1 and A+2, the dining-room opening on the left at the far end of the living room matches the distant opening throughout B. The frame, dining table and chairs, window, and plants keep the same relative positions. Neither group shows another passable branch.
+2 Opening at the far end of the living room into the dining room. The table and chairs, window, and doorframe are visible. A and B show the same entrance.
+3 Both groups show the same wide doorway from the far end of the living room into the dining room. Its position between the TV wall on the left and the sofa on the right matches, and no additional branch is visible.
+4 Wide doorway or opening at the far end of the living room into the dining room.
+5 Both groups show the same doorway to the dining room to the right of the TV wall. The frame, dining table and chairs, adjacent black cabinet, and living-room sofa align. Neither group shows a unique branch.
+6 Wide doorway or opening into the dining room to the right of the TV wall, with the dining table and chairs, window, and adjacent black cabinet in view.
+7 The dining-room entrances straight ahead in both groups match in frame shape, the arrangement of the table and chairs beyond, and the position of fixtures on the left. No clearly distinct branch is unique to either group.
+8 Wide doorway into the dining room straight ahead. The frames on each side, table and chairs, and pendant light align. The TV wall, gold trim, and tall black cabinet on the left help identify the same space.
+9 Every frame in both groups shows the same central dining-room doorway and the same spatial relationships among nearby fixtures. Neither node provides unique branch information.
+10 Wide central doorway or opening into the dining room. Both groups show the same arrangement of the black cabinet and vertical gold trim on its left, the photo wall and sofa on its right, and the dining table and chairs.
+11 The two groups show the same living-room view a few steps apart. The central dining-room opening and left side-room entrance match by their frames, the dining table in the background, and the relative positions of the gold grille and black cabinet. No unique branch was found.
+12 Large central opening with a gray frame, leading to the dining room with a table, chairs, and pendant light.
+13 Entrance on the left beside the gold grille and black cabinet, leading to a side room or short corridor.
+14 Both groups show a wide doorway straight ahead into the dining room. B also clearly shows a left opening into a bedroom. A's window provides no corresponding branch information, so the same set of physical branches cannot be confirmed.
+15 Wide doorway or opening straight ahead into the dining room.
+16 Left opening or doorway into a bedroom. The bed is visible in B+1 and B+2, and B-2 and B-1 also show the corresponding space.
+17 The central dining-room opening, left bedroom doorway, and doorway into the kitchen at the back right of the dining room match one to one by shape, wall relationships, and nearby fixtures. Neither group alone shows an additional physical branch.
+18 Large central opening toward the table and dining area.
+19 Left doorway into a bedroom.
+20 Doorway at the back right of the dining room into the kitchen or work area.
+21 Adjacent views in the two groups show the same left bedroom doorway, central dining-room opening, and kitchen entrance at the back right. Their shapes and nearby fixtures match one to one, with no unique branch.
+22 Left doorway to a bedroom with a bed and a black throw visible inside.
+23 Wide central doorway or opening to the dining room, with a round table, dining chairs, window, and pendant light visible.
+24 Doorway or opening into the kitchen at the back right of the dining room, with white cabinets and a worktop visible.
+25 The two local windows overlap in sequence. Both show the same left bedroom doorway and the same right opening to the open dining/kitchen area. The positions of the table, window, pillar, and artwork on the left match. No additional independent branch is visible.
+26 Left bedroom doorway leading to a room with a visible bed and headboard decoration.
+27 Right opening into the open dining/kitchen area, with a round table, dining chairs, window, and shelving visible.
+28 The left doorways match. The right-hand open dining-room entrance in A is outside B's view. It is unclear whether it is obscured by the viewpoint or absent, so the sets cannot be judged identical.
+29 Left doorway into a bedroom or inner room. The picture on the left, doorframe, and thick wall or pillar on the right have the same spatial relationship in both groups.
+30 On A's right is an open entrance into the dining/living area, with a round table, seating, and window. B's images provide no corresponding branch evidence.
+31 The botanical picture, doorframe, threshold, and white shelf inside align across the sequence. The bedroom bed beyond the door in B does not constitute a new branch.
+32 Central white doorway with the same threshold, frame, and white shelf inside. B sees farther into the bedroom and shows the bed beyond this same entrance.
+33 Both groups show the same doorway into the same bedroom. The picture on the left, white curved shelf and small photo frame, sound-wave motif on the headboard wall, and bed match one to one. B shows more of the window inside, which does not add a branch.
+34 The same entrance from the corridor through a doorframe into a bedroom. There is a picture on the entrance's left, a white curved shelf and small photo frame just inside on the left, and the same bed and sound-wave headboard decoration inside.
+35 A+2 and B-2 show the very same scene frame. The following adjacent frames in B continue to show the same open doorway on the right. No other branch is unique to A or B.
+36 Open doorway on the right into a corridor or room. A's and B's frames show the same passable opening.
+37 Both groups show the same framed opening on the right. Its shape, relationship to the walls, and the continuation of the wooden floor match. Neither group provides unique branch information.
+38 The same framed opening to the right of the white cabinet or wall, leading into an adjacent space with a wooden floor.
+39 The rectangular doorway's shape, walls, and nearby fixtures match across the two groups. A+2 matches B-2 directly. The other cabinet-door seams and the washbasin are fixtures in the same scene and add no branches.
+40 Rectangular doorway or corridor entrance leading into another area of flooring.
+41 Both groups show the same left doorway. Its shape, wooden floor inside, and inner doorframe align across the sequence. The washbasin or black cabinet on the right is a fixture and supplies no additional branch.
+42 White doorway or corridor entrance on the left, with the wooden floor and inner doorframe extending beyond it.
+43 A and B are successive views of the same white doorway in the same position relative to a black wardrobe, giving a one-to-one match. The bed and curtains on B's right are furnishings in the same space and add no branch.
+44 White doorway or passage entrance between a white wall and a black wardrobe, leading into an inner corridor or room.
+45 The groups view the same doorway from the bedroom side and corridor side respectively. The entrance deep inside A's doorway matches the bathroom entrance on B's right. B's fuller view of the bathroom interior adds no new branch.
+46 White doorway between bedroom and corridor. Fixed objects including a black wardrobe, curtains, and a bed are visible from both sides.
+47 Bathroom entrance on one side of the corridor. A shows its frame deeper inside the doorway, while B shows the washbasin and toilet more clearly.
+48 The central corridor entrance and the open continuation into the dining area on the left match one to one by the positions of fixtures. Neither group shows an unmatched branch of its own.
+49 Central corridor entrance between the white cabinet on the left and the brown wood paneling on the right, with a dark door visible at the end.
+50 Open continuation to the dining area and toward the window on the left, with a wine cabinet, dining table and chairs, and window visible.
+51 Both groups show the same central corridor entrance. The geometry of the cabinets, wood-paneled wall, and doorway at the far end aligns throughout. No branch is unique to either group.
+52 Central corridor entrance between white cabinets and a dark wood-paneled wall on the right. The doorway at the end and the space inside match.
+53 The storage-room doorway ahead and the narrow opening on the right match across the groups. A additionally shows an opening on the left into a bedroom with a bed and light-blue bedding. B lacks a corresponding branch, so the information is not entirely the same.
+54 Entrance or doorway ahead to a storage room with a black wardrobe and wooden floor.
+55 Narrow opening or passage close to the right side of the main doorway, indicated by the continuation of the wooden floor.
+56 Opening on the left into a bedroom with a visible bed and light-blue bedding.
+57 Both groups show the same doorway straight ahead and the same bathroom entrance on the left. The interior furnishings and walls have matching relationships, with no unique branch in either group.
+58 Doorway into a room with a wooden floor at the end of the corridor straight ahead.
+59 Left bathroom entrance with washbasin and shower area.
+60 The central corridor entrance and bathroom area on the left match. B+1 and B+2 additionally show a clear opening on the right to the living-room sofa area. A has no corresponding branch, so a complete one-to-one match is absent.
+61 Entrance straight ahead through a white doorframe into a wood-floored corridor.
+62 Opening or continuation on the left into a bathroom with a shower and washbasin.
+63 Side opening to the living-room sofa area beside the wood paneling or door on the right, seen in B+1 and B+2.
+64 Both groups show the same entrance to a corridor with light wood flooring, the same right opening into the living room, and the same doorway in the corridor's left wall. Fixtures such as the curtains at the corridor end and the picture on its right wall align. No branch is unique to either group.
+65 Wide doorway or entrance to a corridor with light wood flooring.
+66 Opening to the living area on the right of the doorway, with a sofa and greenery visible.
+67 Doorway or entrance in the corridor's left wall.
+68 The same left doorway matches. A also shows a wooden door or living-room opening on the right, with no corresponding branch in B. The two sets of branches cannot be confirmed identical.
+69 White-trimmed doorway on the left of the corridor into a dark gray space. Its position relative to the adjacent picture frame and cabinet matches.
+70 Wooden door on the right and the living-room entrance beyond it, visible in A-2, A-1, and A0. B's window has no corresponding branch.
+71 The wide living-room opening on the left matches across both groups. A-2 and A-1 also show a wooden-door entrance on the right. B's window provides no corresponding information, preventing a complete one-to-one match.
+72 Wide opening or entrance on the left into the living room.
+73 Wooden-door entrance with a white handle on the right, visible in A-2 and A-1. B has no corresponding information.
+74 Both groups show the same wide opening into the living room. The artwork, bamboo, patterned floor inlay, and sofa arrangement match. The curtain area on the right of B does not establish a clearly passable branch.
+75 Wide doorway or opening to the living room, with artwork and a partition wall on the left and a white wall on the right, leading into the same living space.
+76 Both groups show the same living room and entrance. Fixed furnishings and wall openings match one to one, with no branch unique to either group.
+77 Entrance or opening into the same living space between the edge of the white wall on the right and the living-room interior. Both groups show the same spatial arrangement of a screen, sofa, coffee table, pendant light, and curtains on the right.
+78 Both groups show the main area of the same living room. A provides entrance information beside the grille on the left, outside B's field of view. A complete one-to-one match cannot be confirmed.
+79 Open passage or entryway beside the grille partition on the left, visible from A-2 to A0.
+80 Both groups show the same living room and the same doorway or corridor entrance on the right. The frame, tall plant stand, white cabinet, and layout beside the curtains match. Neither group shows a unique branch.
+81 Corridor entrance on the right of the image marked by the doorframe, tall plant stand, and white cabinet.
+82 The groups show successive views of the same living room. The doorway on the right and the entrance behind the TV wall on its right match one to one by position, shape, and relation to fixed furniture. No branch is unique to A or B.
+83 Open doorway on the right into an inner room or counter area. Later views in B see farther inside, but the location of the opening and its relation to the walls identify the same branch.
+84 Corridor or space entrance behind and to the right of the TV wall. Both groups show the same recessed opening.
+85 Both groups show a central corridor entrance and a wide right-hand doorway in the same living-room layout. The openings occupy the same positions relative to fixed furniture. Neither group shows a unique physical branch.
+86 Corridor entrance to the right of the TV wall, beside a tall white cabinet or partition.
+87 Wide doorway on the right of the image into a washroom or bathroom area.
+88 Both groups show the same corridor entrance beside the tall central white panel and the same right doorway with a washbasin and cabinets. The right doorway moving out of view later in B does not add or remove a branch.
+89 Corridor entrance leading back on the right of the tall central white panel.
+90 Right doorway into an adjacent room with a washbasin and white cabinet.
+91 The frames in both groups center on the same right-hand doorway. The successive frames A+2 and B-2 match directly. The later frames in B simply move closer to the entrance and show no distinct new branch.
+92 Doorway or passage entrance in the corridor's right wall leading into the space on the right. The opening, frame, and corner align in successive frames A+2 and B-2.
+93 Both groups show only the same right-hand doorway or entrance. The frame, side wall, and wall at the end of the corridor maintain their relative positions throughout. Neither group shows unique branch information.
+94 Right doorway or corridor entrance leading into the adjacent space on the right.
+95 Both groups show the same corridor's left patterned doorway and right doorway. B shows the bedroom inside the right doorway more clearly, with no additional branch.
+96 Left-hand doorway with pale patterned wallpaper.
+97 Opening or doorway on the right into a bedroom.
+98 The right doorway in A and the opening in B-2 are the same. B0, B+1, and B+2 view the doorway from the other side. The bed, window, and exterior wallpaper align, with no unique branch.
+99 The same bedroom doorway. The right opening in A0, A+1, and A+2 matches the left opening in B0, B+1, and B+2. B-2 also shows the doorway and bed inside. A bed is visible inside, and a window is also visible from B's side.
+100 The bedroom doorway with the rocking horse and the opening into the room with yellow curtains match individually across the two groups. No new branch is supported by only A or only B.
+101 Left doorway into a bedroom with a rocking horse, black window drapery, and a bed.
+102 Adjacent opening on the left into a room with yellow curtains, a cabinet by the window, and greenery.
+103 The bedroom entrance and the entrance to the yellow-curtained room match. A additionally shows a distant doorway on the right, outside B's window. The branch information cannot be confirmed identical.
+104 Bedroom entrance, with black curtains, a pink bed, and a large stuffed toy inside.
+105 Entrance to a room with yellow curtains, a window, a gray cabinet, and a plant.
+106 A0 and A+1 show an additional white doorway or corridor entrance in the distant white wall on the right. The frames in B do not cover it.
+107 The entrance to the room with a window and gray cabinet matches by fixtures and layout. A also shows a bedroom doorway on the right, with no corresponding observation in B's window. It is unclear whether this branch is obscured by the viewpoint or actually absent, so the sets cannot be judged identical.
+108 Entrance to a room with a window, yellow curtains, and a gray cabinet.
+109 Right doorway into a bedroom with black curtains, a bed, pink bedding, and a stuffed toy. The main evidence is A-2 and A-1.
+110 The left bathroom doorway and central white double-door opening match in A and B. From B-1 onward, B clearly shows a bedroom opening on the right that A does not show. The two sets of branches cannot be judged the same.
+111 Left bathroom doorway with a washbasin and mirror.
+112 Central opening leading toward the white double doors or wardrobe area.
+113 Right opening into a bedroom, visible only in B-1, B0, B+1, and B+2. A's window has no matching branch.
+114 The central dressing-room opening and right bedroom opening match. A also shows a left opening to a bathroom or washbasin. B provides no corresponding information, so identical branch sets cannot be confirmed.
+115 Central or left opening to a dressing room with white cabinet doors. The cabinet doors, wooden floor, and adjacent walls have matching spatial relationships.
+116 Right opening into a bedroom. The bed, wood-paneled wall, and layout match. B also shows a large window.
+117 Left opening in A to a bathroom or washbasin area, with a picture and basin visible. B's window provides no corresponding branch information.
+118 A clearly shows the left dressing-room entrance. It is partly visible at the left edge of B-2 with the same side wall and floor relationship. Fixed features of the same space, including the bed and window, confirm the match. Neither group shows a unique branch.
+119 White doorway on the left to a wardrobe or dressing room, with continuous light-colored flooring and the same wall relationship.
+120 The right bedroom entrance and the entrance to the space with white cabinet doors match. B also shows a bathroom entrance on the left, with no corresponding branch in A. The information is not identical.
+121 Right bedroom entrance with a wooden frame, connected to the corridor or outside space.
+122 Entrance ahead or on the left to a dressing room or narrow space with white double cabinet doors.
+123 Left bathroom entrance. B+1 and B+2 show a washbasin and mirror leading into another small space. A provides no corresponding branch information.
+124 The bathroom entrance and white double-door storage entrance match across the groups. A clearly shows an extra entrance on the right into a bedroom with a bed. No frame in B provides matching information, so the same branch set cannot be confirmed.
+125 Entrance to a bathroom with a washbasin and mirror.
+126 White double-door storage-room entrance ahead or to the right.
+127 Entrance on the right in A-2, A-1, and A0 leading to a bedroom with a bed.
+128 The central doorway and right bedroom opening match. B also shows a bathroom entrance on the left that A's window does not show. Whether that branch is present at A cannot be confirmed.
+129 Central white-framed entrance into a small wood-floored space containing white cabinet doors.
+130 Right opening into a bedroom with a bed visible.
+131 Left bathroom entrance leading to a washbasin and mirror, visible in B-1, B0, and B+2. A's window provides no corresponding entrance information.
+132 The right bedroom entrance matches in the two sequences. A clearly shows an entrance on the left to a bathroom or washbasin area, which B's window does not cover or show. Identical branch information cannot be confirmed.
+133 Doorway or entrance to a bedroom on the right, with the bed and bedroom interior visible.
+134 Left doorway to a bathroom or washbasin area. Interior features including a mirror and washbasin can be seen in A-1, A0, A+1, and A+2.
+135 Both groups show the same storage-room entrance on the left and bedroom entrance on the right. B gives successive views after moving forward along the same opening and shows no independent new branch.
+136 Left entrance with white double doors into a storage or dressing room.
+137 Opening at the corner on the right, leading from a wood-floored corridor into a bedroom.
+138 A shows an opening into a bedroom from the corridor side. B-2 and B-1 show the bedroom-side edge of the same opening. The layout of the bed, window, and TV cabinet aligns across the sequence. No unique branch is visible.
+139 Doorless opening from the white corridor or dressing area into a bedroom.
+140 Both groups show the same open living/dining space. The left entrance and the stairs or passage behind the right partition match one to one by the walls, partition, and furniture layout. B gives a clearer view of the same branch from a different angle and adds no unique branch.
+141 Entrance formed by the near edge of the wall on the left, leading into the same open living/dining space.
+142 Entrance to stairs or a local passage behind the white branch-shaped partition on the right.
+143 Both groups show the same passage beside the partition on the right. A also shows the living-room entrance on the left in the direction of approach. B's window provides no corresponding entrance information, preventing a complete one-to-one match.
+144 Passage beside the white tree-branch-shaped partition on the right.
+145 In A, the entrance into the living room on the left or approach side forms a large opening along a white wall edge. It is visible in A-2, A-1, and A0.
+146 The opening in the right partition and storage area beyond it match one to one by location, wall relationships, and nearby fixtures. The change in viewpoint makes the same branch clearer, with no distinguishable unique branch.
+147 Passage into a side room beside the decorative partition on the right, with the same shelving or stepped furniture area visible beyond.
+148 Several frames in A clearly show a stair entrance behind the white grille on the right. B mainly shows living-room furniture, a TV, plants, and a metal rack on the right, with no entrance that can reliably be matched. A one-to-one branch match is impossible, so the judgment is uncertain.
+149 Stair or passage entrance behind the white grille on the right.
+150 Both groups show the same entrance to the room with pink curtains. A also shows a bathroom or shower-room branch on the right, while B shows a branch on the left into a room with a green picture. There is no evidence matching those two branches.
+151 Entrance to a room with pink curtains, three pictures, a gray armchair, and an orange throw.
+152 White bathroom or shower-room entrance on the right from A0 through A+2.
+153 Entrance on the left from B0 through B+2 into a room with a green picture and a white table and chairs.
+154 Both groups show an entrance to the room with a green picture. A clearly shows another entrance to the armchair room, and B has an opening with a wooden rack on the left. B does not show the full geometry of the armchair-room entrance, so the branches do not match one to one.
+155 Entrance to the room with a green picture and a white table and chairs.
+156 Entrance to the room with curtains, an armchair, and an orange blanket. A clearly shows the entrance, while B gives no clear evidence of its opening.
+157 Opening or alcove with a wooden rack or shelves on the left of the corridor. A does not show this branch.
+158 Both groups show the same doorway at the end of the corridor. The doorframe, green picture, table, and chairs maintain their relative positions, with no branch unique to either group.
+159 Open doorway at the end of the corridor into a room with a green picture, dining table and chairs, and pendant light.
+160 The doorway and frame, and the arrangement of the sofa, dining table, and green picture beyond, align across the sequence. Neither node shows a unique branch. The difference comes only from the changing viewpoint while moving down the corridor.
+161 The same doorway at the end of the corridor into a room with a sofa, dining table, and green picture.
+162 The green picture, white dining table, sofa, and pendant light have the same arrangement, indicating the same room. A clearly shows the entrance doorway, while B shows only an incomplete white border at the left edge of B-2. Its identity with A's physical doorway cannot be confirmed, so the nodes cannot be judged duplicates.
+163 White doorway in A's window leading into the living/dining room with the green picture.
+164 The sofa, picture, and spatial layout match. The living-room entrance traversed in A and the doorway with yellow curtains on the left in B correspond geometrically to the same spatial branch. No other unique branch was found.
+165 Entrance or doorway between the living room and an adjacent room with yellow curtains.
+166 Both groups show only the same doorway or passage at the back left. Its yellow curtains, sheers, shape, and position relative to the sofa and walls match. Neither group shows unique branch information.
+167 Doorway or passage at the back left of the living room, with yellow curtains and sheers, leading into another space with a white floor.
+168 Both groups show the same entrance between yellow curtains and the same curtain arrangement beyond it. The walls, furniture layout, and opening align, with no unique branch information.
+169 Doorway or entrance between two yellow curtains at the back of the living room, leading to an adjacent space with a window.
+170 The bedroom doorway matches across the groups. A also shows an open living-room space on the right, while B shows a kitchen opening on the left in B+2. Those branches do not match one to one.
+171 Mid-frame bedroom doorway with a white frame and the bed visible inside.
+172 Open space to the right in A0 leading to the living room, TV wall, and seating area.
+173 Opening to the left in B+2 leading into the kitchen or worktop area.
+174 The wooden door on the right and black open shelving match across both groups. B also clearly shows an opening on the left into the living room that A's window does not show. This branch is unique to B, so the nodes cannot be deduplicated.
+175 Light wood-colored door on the right with a white handle.
+176 Black open shelving or closet entrance.
+177 Opening on the left through a white doorframe into the living/dining room, with a sofa, dining table, and chairs visible.
+178 Both groups show the open living/dining space. A also shows a dark shelved storage or dressing-room opening on the right, with no corresponding information in B. B also shows a bedroom doorway on the left with a visible bed, with no corresponding information in A. There are therefore unique branches.
+179 Open space leading to the living/dining room, with the same TV wall, dining table, and seating area visible.
+180 Dark opening on the right into a storage or dressing room with shelves.
+181 Left doorway into a bedroom with a bed visible inside.
+182 A and B both show the same left-hand bedroom doorway, and the TV wall, dining table, and living-room layout match. Neither group shows unique branch information.
+183 Left doorway into a bedroom, with fixed features such as the frame and the bed inside visible.
+184 Both groups show the same left-hand doorway, and the spatial relationship between the TV wall, black platform, and living-room furniture matches. Neither group shows unique branch information.
+185 Left doorway or entrance to an adjacent room, in the fixed layout between the TV wall and a light-colored wall.

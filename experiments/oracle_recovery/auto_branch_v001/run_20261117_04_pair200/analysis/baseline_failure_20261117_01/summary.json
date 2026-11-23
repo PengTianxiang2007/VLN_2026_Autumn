@@ -1,0 +1,214 @@
+{
+  "status": "complete",
+  "completed_at": "2026-11-17T07:53:45.669531+00:00",
+  "total_baseline": 200,
+  "baseline_successes": 98,
+  "baseline_failures": 102,
+  "reviewed": 102,
+  "scenes": 11,
+  "categories": [
+    {
+      "category": "route_choice",
+      "label_zh": "选错方向、分支或错过转弯",
+      "count": 56,
+      "percent_failures": 54.90196078431372,
+      "percent_all_tasks": 28.0,
+      "auto_successes": 49,
+      "baseline_termination": {
+        "not_reach_goal": 43,
+        "fall": 12,
+        "stuck": 1
+      }
+    },
+    {
+      "category": "route_backtrack",
+      "label_zh": "掉头沿来路反向回返",
+      "count": 8,
+      "percent_failures": 7.8431372549019605,
+      "percent_all_tasks": 4.0,
+      "auto_successes": 4,
+      "baseline_termination": {
+        "not_reach_goal": 5,
+        "fall": 3
+      }
+    },
+    {
+      "category": "stop_incomplete",
+      "label_zh": "沿正确路线未走完即停止／局部徘徊",
+      "count": 12,
+      "percent_failures": 11.764705882352942,
+      "percent_all_tasks": 6.0,
+      "auto_successes": 4,
+      "baseline_termination": {
+        "not_reach_goal": 12
+      }
+    },
+    {
+      "category": "fall_onroute",
+      "label_zh": "正确路线附近跌倒，无明确选路偏航",
+      "count": 9,
+      "percent_failures": 8.823529411764707,
+      "percent_all_tasks": 4.5,
+      "auto_successes": 1,
+      "baseline_termination": {
+        "fall": 9
+      }
+    },
+    {
+      "category": "warmup_fall",
+      "label_zh": "预热阶段跌倒，尚无策略动作",
+      "count": 3,
+      "percent_failures": 2.9411764705882355,
+      "percent_all_tasks": 1.5,
+      "auto_successes": 0,
+      "baseline_termination": {
+        "fall": 3
+      }
+    },
+    {
+      "category": "stuck_onroute",
+      "label_zh": "正确路线附近卡住",
+      "count": 5,
+      "percent_failures": 4.901960784313726,
+      "percent_all_tasks": 2.5,
+      "auto_successes": 2,
+      "baseline_termination": {
+        "stuck": 5
+      }
+    },
+    {
+      "category": "goal_overshoot",
+      "label_zh": "目标区域附近未停，继续走过头",
+      "count": 1,
+      "percent_failures": 0.9803921568627451,
+      "percent_all_tasks": 0.5,
+      "auto_successes": 1,
+      "baseline_termination": {
+        "not_reach_goal": 1
+      }
+    },
+    {
+      "category": "uncertain",
+      "label_zh": "证据不足，局部偏移原因不确定",
+      "count": 8,
+      "percent_failures": 7.8431372549019605,
+      "percent_all_tasks": 4.0,
+      "auto_successes": 8,
+      "baseline_termination": {
+        "not_reach_goal": 6,
+        "fall": 2
+      }
+    }
+  ],
+  "deviation_failures": 64,
+  "deviation_percent_failures": 62.745098039215684,
+  "deviation_percent_all": 32.0,
+  "deviation_confidence": {
+    "high": 51,
+    "moderate": 13
+  },
+  "deviation_termination": {
+    "not_reach_goal": 48,
+    "fall": 15,
+    "stuck": 1
+  },
+  "deviation_auto_successes": 53,
+  "deviation_auto_failures": 11,
+  "paired_baseline_failures_saved": 69,
+  "naive_075_distance_count": 65,
+  "scene_summary": [
+    {
+      "scene": "kujiale_0128_fix",
+      "baseline_failures": 5,
+      "deviation_failures": 3,
+      "route_choice": 3,
+      "backtrack": 0,
+      "uncertain": 2
+    },
+    {
+      "scene": "kujiale_0147",
+      "baseline_failures": 12,
+      "deviation_failures": 7,
+      "route_choice": 6,
+      "backtrack": 1,
+      "uncertain": 1
+    },
+    {
+      "scene": "kujiale_0159",
+      "baseline_failures": 7,
+      "deviation_failures": 5,
+      "route_choice": 3,
+      "backtrack": 2,
+      "uncertain": 1
+    },
+    {
+      "scene": "kujiale_0165",
+      "baseline_failures": 10,
+      "deviation_failures": 9,
+      "route_choice": 9,
+      "backtrack": 0,
+      "uncertain": 0
+    },
+    {
+      "scene": "kujiale_0226",
+      "baseline_failures": 14,
+      "deviation_failures": 9,
+      "route_choice": 8,
+      "backtrack": 1,
+      "uncertain": 1
+    },
+    {
+      "scene": "kujiale_0243",
+      "baseline_failures": 7,
+      "deviation_failures": 5,
+      "route_choice": 4,
+      "backtrack": 1,
+      "uncertain": 0
+    },
+    {
+      "scene": "kujiale_0258",
+      "baseline_failures": 11,
+      "deviation_failures": 5,
+      "route_choice": 5,
+      "backtrack": 0,
+      "uncertain": 1
+    },
+    {
+      "scene": "kujiale_0285",
+      "baseline_failures": 8,
+      "deviation_failures": 4,
+      "route_choice": 4,
+      "backtrack": 0,
+      "uncertain": 1
+    },
+    {
+      "scene": "kujiale_0290",
+      "baseline_failures": 9,
+      "deviation_failures": 9,
+      "route_choice": 9,
+      "backtrack": 0,
+      "uncertain": 0
+    },
+    {
+      "scene": "kujiale_0291",
+      "baseline_failures": 7,
+      "deviation_failures": 3,
+      "route_choice": 1,
+      "backtrack": 2,
+      "uncertain": 0
+    },
+    {
+      "scene": "kujiale_0294",
+      "baseline_failures": 12,
+      "deviation_failures": 5,
+      "route_choice": 4,
+      "backtrack": 1,
+      "uncertain": 1
+    }
+  ],
+  "full_navigation_rgb_available": false,
+  "interpretation": "Retrospective trajectory/instruction/floorplan attribution, not full visual review or counterfactual causal proof. Route choice includes wrong movement direction in open space, not only topological junctions. Missing RGB limits semantic certainty; unknown cases are not counted as confirmed deviation.",
+  "classification_frozen_before_paired_outcome_join": true,
+  "new_navigation": false,
+  "new_model_calls": 0
+}

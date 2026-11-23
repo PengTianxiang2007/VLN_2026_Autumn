@@ -194,8 +194,15 @@ class VLNEvaluator:
 
     def eval_action(self, idx) -> None:
         env = self.config_env()
+        selected_ids = None
+        if self.args.capture_manifest:
+            from rxr_capture import EpisodeCapture
+            with open(self.args.capture_manifest) as stream:
+                selected_ids = {str(row["episode_id"]) for row in json.load(stream)["episodes"]}
         scene_episode_dict = {}
         for episode in env.episodes:
+            if selected_ids is not None and str(episode.episode_id) not in selected_ids:
+                continue
             if episode.scene_id not in scene_episode_dict:
                 scene_episode_dict[episode.scene_id] = []
             scene_episode_dict[episode.scene_id].append(episode)
@@ -230,6 +237,10 @@ class VLNEvaluator:
                 self.model.reset_for_env(idx)
                 env.current_episode = episode
                 observations = env.reset()
+                capture = None
+                if selected_ids is not None:
+                    capture = EpisodeCapture(self.output_path, scene_id, episode, episode.reference_path)
+                    capture.frame(0, None, observations, env)
                 os.makedirs(os.path.join(self.output_path, f'check_sim_{self.epoch}'), exist_ok=True)
                 Image.fromarray(observations['rgb']).save(os.path.join(self.output_path, f'check_sim_{self.epoch}', f'rgb_{idx}.jpg'))
                 
@@ -348,6 +359,8 @@ class VLNEvaluator:
                     
                     observations = env.step(action)
                     step_id += 1
+                    if capture is not None:
+                        capture.frame(step_id, action, observations, env)
                     if step_id % self.num_frames == 0:
                         self.model.reset_for_env(idx)
                         output_ids = None
@@ -378,6 +391,8 @@ class VLNEvaluator:
                     "episode_instruction": episode_instruction
                 }
                 
+                if capture is not None:
+                    result.update(capture=capture.relative_path, frames=step_id + 1)
                 with open(os.path.join(self.output_path, f'result.json'), 'a') as f:
                     f.write(json.dumps(result) + "\n")
 
@@ -505,6 +520,7 @@ def eval():
     parser.add_argument("--num_history", type=int, default=8)
     parser.add_argument("--episode_limit", type=int, default=0,
                         help="0 evaluates all episodes; positive values are smoke checks only")
+    parser.add_argument("--capture_manifest", help="Record RGB and poses for the listed R2R episodes")
     parser.add_argument("--model_max_length", type=int, default=4096,
                         help= "Maximum sequence length. Sequences will be right padded (and possibly truncated).")
     

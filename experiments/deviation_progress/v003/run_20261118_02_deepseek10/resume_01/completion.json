@@ -1,0 +1,121 @@
+{
+  "completed_at": "2026-11-18T08:03:32.524437+00:00",
+  "dedup_completed": 10,
+  "dedup": {
+    "candidates": 93,
+    "retained": 49,
+    "removed": 44,
+    "model_calls": 67,
+    "uncertain": 9,
+    "errors": 0
+  },
+  "verdicts": {
+    "same": 44,
+    "different": 14,
+    "uncertain": 9
+  },
+  "deviation_completed": 0,
+  "deviation_requests": 0,
+  "case_results": {
+    "kujiale_0113_18_1": {
+      "result": "dedup/cases/C04/result.json",
+      "retained_ids": [
+        "S01",
+        "S08",
+        "S12",
+        "S15"
+      ]
+    },
+    "kujiale_0123_fix_43_3": {
+      "result": "dedup/cases/C08/result.json",
+      "retained_ids": [
+        "S03",
+        "S06",
+        "S07",
+        "S08",
+        "S11"
+      ]
+    },
+    "kujiale_0147_14_0": {
+      "result": "dedup/cases/C12/result.json",
+      "retained_ids": [
+        "S03",
+        "S04",
+        "S05",
+        "S06"
+      ]
+    },
+    "kujiale_0232_72_1": {
+      "result": "dedup/cases/C34/result.json",
+      "retained_ids": [
+        "S02",
+        "S04",
+        "S05"
+      ]
+    },
+    "kujiale_0234_58_1": {
+      "result": "dedup/cases/C40/result.json",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S05",
+        "S07"
+      ]
+    },
+    "kujiale_0243_29_2": {
+      "result": "dedup/cases/C41/result.json",
+      "retained_ids": [
+        "S04",
+        "S09",
+        "S11",
+        "S12",
+        "S13",
+        "S14"
+      ]
+    },
+    "kujiale_0257_73_4": {
+      "result": "dedup/cases/C44/result.json",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S12",
+        "S13"
+      ]
+    },
+    "kujiale_0259_55_0": {
+      "result": "dedup_resume_01/attempts/run_01/cases/C48/result.json",
+      "retained_ids": [
+        "S02",
+        "S04",
+        "S05"
+      ]
+    },
+    "kujiale_0285_2_1": {
+      "result": "dedup/cases/C49/result.json",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S06",
+        "S10"
+      ]
+    },
+    "kujiale_0290_1_1": {
+      "result": "dedup/cases/C51/result.json",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S07"
+      ]
+    }
+  },
+  "source_sha256": "e2f827952ffe40fdeea0ad6155e334a80991f7d6fea3fb906847c4bcb9dfd3b0"
+}

@@ -1,0 +1,26 @@
+{
+  "phase": "complete",
+  "pid": 3696863,
+  "started_at": "2026-11-20T05:53:03.029543+00:00",
+  "workers": 6,
+  "cases": [
+    7,
+    11,
+    19,
+    30,
+    47,
+    50
+  ],
+  "completed": 6,
+  "updated_at": "2026-11-20T06:01:58.938838+00:00",
+  "failed_cases": {},
+  "completed_case_verdicts": {
+    "consistent": 17,
+    "deviated": 4,
+    "uncertain": 8,
+    "format_error": 1
+  },
+  "finished_at": "2026-11-20T06:01:58.938829+00:00",
+  "calls_in_completed_cases": 30,
+  "workers_exited": true
+}

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RxR-CE · 错选支路回放</title>
+<style>
+:root{color-scheme:light;--ink:#182f34;--muted:#50686c;--paper:#f4f6f4;--line:#cbd6d1;--accent:#116451;--orange:#be4318;--blue:#205da5}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 "Source Sans 3","PingFang SC","Microsoft YaHei",sans-serif}
+header{background:#143940;color:white}header>div,main{max-width:1420px;margin:auto;padding:18px clamp(14px,3vw,46px)}header>div,.bar,.sectionHead,.controls,.lang,.layerRow,.meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap}header>div,.sectionHead{justify-content:space-between}
+h1,h2,h3,p{margin:0}h1{font-size:clamp(21px,2.4vw,33px);letter-spacing:.01em;line-height:1.25}h2{font-size:18px}header p{color:#c8dfdc;margin-top:4px}.lang{gap:4px}.lang button{color:#fff;border-color:#769195;background:none}.lang button[aria-pressed=true]{background:#edf6ee;color:#17483f}
+button,select,input{font:inherit}button,select{color:var(--ink);background:white;border:1px solid #aebfb9;border-radius:6px;padding:5px 11px;cursor:pointer}button:hover,select:hover{border-color:var(--accent)}button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #07949c;outline-offset:2px}
+.bar{margin:0 0 12px}.bar select{max-width:100%;font-weight:600}.meta{color:var(--muted);font-size:14px;margin-left:auto}.grid,.notes{display:grid;gap:14px}.grid{grid-template-columns:1fr 1fr}.notes{grid-template-columns:1.12fr 1fr;margin-top:14px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden}.sectionHead{padding:10px 14px;min-height:50px}.small{font-size:13px;color:var(--muted)}.visual{display:block;width:100%;aspect-ratio:4/3;background:#172527}.map{background:#e5e8e3}.controls{padding:10px 12px}.controls input[type=range]{width:100%;accent-color:var(--accent);margin:0}
+.layerRow{padding:0 12px 12px;font-size:13px;gap:4px 12px}.layerRow input{accent-color:var(--accent);vertical-align:middle}.legend{display:inline-block;width:16px;height:3px;vertical-align:middle;margin:0 4px}.layerRow p{width:100%}.noteBody{padding:0 16px 14px}.notes p{line-height:1.75}.labels{display:grid;grid-template-columns:auto 1fr;gap:6px 13px;margin:0}.labels dt{font-weight:650}.labels dd{margin:0}.expected{color:#176d46}.actual{color:var(--orange)}.event{border-color:#dc9d7f;color:#8d3819}.play{background:var(--accent);border-color:var(--accent);color:white}.review{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:11px}.review button{font-size:13px;padding:2px 8px}.review button[aria-current=true]{background:#e5f1ee;border-color:var(--accent)}footer{margin:12px 0;color:var(--muted);font-size:13px}
+@media(max-width:860px){.grid,.notes{grid-template-columns:1fr}.meta{margin-left:0;width:100%}header>div{align-items:flex-start}.sectionHead{min-height:40px}.bar{gap:6px}.bar select{flex:1;min-width:0}.notes{gap:10px}}
+</style></head><body>
+<header><div><div><h1 data-zh="RxR-CE 错选支路回放" data-en="RxR-CE wrong-branch replay"></h1><p data-zh="原版 StreamVLN · 80 条明确错选中随机抽取 30 条" data-en="Original StreamVLN · 30 randomly sampled from 80 confirmed wrong-branch failures"></p></div><div class="lang"><button id="zh">中文</button><button id="en">English</button></div></div></header>
+<main><div class="bar"><label for="task" data-zh="案例" data-en="Case"></label><select id="task"></select><button id="prev" data-zh="上一例" data-en="Previous case"></button><button id="next" data-zh="下一例" data-en="Next case"></button><span class="meta" id="meta"></span></div>
+<div class="grid">
+<section class="panel"><div class="sectionHead"><h2 data-zh="前视 RGB" data-en="Front RGB"></h2><span id="action" class="small"></span></div>
+<canvas id="rgb" class="visual" width="640" height="480" aria-label="RGB"></canvas>
+<div class="controls"><input type="range" id="imageStep" min="0" aria-label="RGB"><button class="play" id="play"></button><button id="back" data-zh="上一步" data-en="Back one"></button><button id="forward" data-zh="下一步" data-en="Forward one"></button><span class="small" id="readout"></span></div></section>
+<section class="panel"><div class="sectionHead"><h2 data-zh="俯视轨迹" data-en="Top-down paths"></h2><button id="zoom"></button></div>
+<canvas id="map" class="visual map" width="800" height="600" aria-label="Map"></canvas><div class="controls"><input type="range" id="mapStep" min="0" aria-label="Map"></div>
+<div class="layerRow"><label><input id="ref" type="checkbox" checked><i class="legend" style="background:#18844f"></i><span data-zh="参考路线" data-en="Reference"></span></label><label><input id="walk" type="checkbox" checked><i class="legend" style="background:#205da5"></i><span data-zh="实际轨迹" data-en="Actual"></span></label><label><input id="branch" type="checkbox" checked><i class="legend" style="background:#be4318"></i><span data-zh="决策到确认" data-en="Decision to confirmation"></span></label><p class="small" id="mapNote"></p></div></section>
+</div><div class="notes">
+<section class="panel"><div class="sectionHead"><h2 data-zh="错在哪里" data-en="Branch attribution"></h2><span id="type"></span></div><div class="noteBody"><dl class="labels"><dt class="expected" data-zh="应走" data-en="Expected"></dt><dd id="expected"></dd><dt class="actual" data-zh="实走" data-en="Actual"></dt><dd id="actual"></dd><dt data-zh="判据" data-en="Evidence"></dt><dd id="reason"></dd></dl><div class="review"><button class="event" id="decision"></button><button class="event" id="confirm"></button><button id="end"></button></div><div class="review"><span class="small" data-zh="审阅过的帧" data-en="Reviewed frames"></span><span id="keyframes"></span></div></div></section>
+<section class="panel"><div class="sectionHead"><h2 data-zh="任务指令" data-en="Navigation instruction"></h2><span class="small" id="instructionLang"></span></div><p class="noteBody" id="instruction"></p></section>
+</div><footer data-zh="每步画面取自同一次导航的原始 RGB 记录。决策步和确认步来自离线归因。" data-en="Every frame comes from the original RGB recording of this run. Decision and confirmation steps come from the offline review."></footer></main>
+<script src="cases.js"></script><script>
+"use strict";
+const byId=id=>document.getElementById(id);
+const types={wrong_door:["进错门或房间","Wrong door or room"],wrong_branch:["走错通道分支","Wrong passage"],missed_turn:["漏掉转弯或楼梯入口","Missed turn or stair entrance"]};
+const actions=[["停止","Stop"],["前进","Move forward"],["左转","Turn left"],["右转","Turn right"]];
+let lang=0, item=CASES[0], step=0, local=false, timer=null, floor=null, loadedRGB=false;
+const cache=new Map();
+const L=(zh,en)=>lang?en:zh;
+const set=(id,text)=>{byId(id).textContent=text};
+function updateLanguage(){
+  document.documentElement.lang=lang?"en":"zh-CN";
+  document.querySelectorAll("[data-zh]").forEach(el=>el.textContent=lang?el.dataset.en:el.dataset.zh);
+  document.title=L("RxR-CE · 错选支路回放","RxR-CE · Wrong-branch replay");
+  byId("zh").setAttribute("aria-pressed",String(!lang));byId("en").setAttribute("aria-pressed",String(!!lang));
+  byId("task").replaceChildren(...CASES.map((c,i)=>new Option((i+1)+"/"+CASES.length+" · ep "+c.id+" · "+types[c.label][lang],c.id)));
+  byId("task").value=item.id;
+  const termination=item.termination==="STOP"?L("模型停止","Model STOP"):L("500 步上限","500-step limit");
+  set("meta",L("场景 ","Scene ")+item.scene+" · "+termination+" · NE "+item.ne.toFixed(2)+" m");
+  set("type",types[item.label][lang]);set("instructionLang",L("中文译文","Original English"));
+  for(const key of ["instruction","expected","actual","reason"])set(key,item[key][lang]);
+  set("decision",L("决策步 ","Decision ")+item.decision);set("confirm",L("确认步 ","Confirmation ")+item.confirm);
+  set("end",L("终止步 ","Final step ")+(item.pose.length-1));
+  byId("keyframes").replaceChildren(...item.frames.map(f=>{const b=document.createElement("button");b.textContent=f;b.onclick=()=>jump(f);return b}));
+  render();
+}
+function rgb(){
+  const ctx=byId("rgb").getContext("2d");
+  const url="assets/"+item.id+"/"+Math.floor(step/9)+".jpg";
+  let im=cache.get(url);
+  if(!im){
+    im=new Image();cache.set(url,im);
+    if(cache.size>5)cache.delete(cache.keys().next().value);
+    im.onload=()=>{if(url==="assets/"+item.id+"/"+Math.floor(step/9)+".jpg")rgb()};
+    im.onerror=()=>{if(url==="assets/"+item.id+"/"+Math.floor(step/9)+".jpg"){stop();rgb()}};
+    im.src=url;
+  }
+  loadedRGB=im.complete && im.naturalWidth>0;
+  if(loadedRGB){const s=step%9;ctx.drawImage(im,(s%3)*640,Math.floor(s/3)*480,640,480,0,0,640,480)}
+  else{ctx.fillStyle="#172527";ctx.fillRect(0,0,640,480);ctx.fillStyle="white";ctx.font="18px sans-serif";ctx.fillText(im.complete?L("图像读取失败","Image unavailable"):L("正在载入画面…","Loading frame…"),20,36)}
+}
+function map(){
+  const ctx=byId("map").getContext("2d"), w=800,h=600, g=item.floor, d=item.pose[item.decision];
+  const span=local?9:Math.max(g.width,g.height*w/h);
+  const scale=w/span, cx=local?d[0]:g.x+g.width/2, cz=local?d[2]:g.z+g.height/2;
+  const px=x=>(x-cx)*scale+w/2, pz=z=>(z-cz)*scale+h/2;
+  ctx.fillStyle="#bababa";ctx.fillRect(0,0,w,h);ctx.imageSmoothingEnabled=false;
+  if(floor && floor.complete && floor.naturalWidth)ctx.drawImage(floor,px(g.x),pz(g.z),g.width*scale,g.height*scale);
+  function line(points,color,width){
+    ctx.lineWidth=width;ctx.strokeStyle=color;ctx.lineCap="round";
+    for(let i=1;i<points.length;i++){const a=points[i-1],b=points[i];
+      ctx.setLineDash(Math.abs((a[1]+b[1])/2-g.floor)>.85?[3,6]:[]);
+      ctx.beginPath();ctx.moveTo(px(a[0]),pz(a[2]));ctx.lineTo(px(b[0]),pz(b[2]));ctx.stroke()}
+    ctx.setLineDash([]);
+  }
+  if(byId("ref").checked)line(item.ref,"#18844f",6);
+  if(byId("walk").checked)line(item.pose,"#205da5",3.5);
+  function marker(p,letter,color,offset){
+    const x=px(p[0]),y=pz(p[2]);ctx.strokeStyle=color;ctx.lineWidth=2;ctx.beginPath();ctx.arc(x,y,6,0,Math.PI*2);ctx.stroke();
+    ctx.font="bold 16px sans-serif";ctx.lineWidth=4;ctx.strokeStyle="white";ctx.strokeText(letter,x+offset,y-8);ctx.fillStyle=color;ctx.fillText(letter,x+offset,y-8)
+  }
+  if(byId("branch").checked){
+    line(item.pose.slice(item.decision,item.confirm+1),"#be4318",6);
+    marker(d,"D","#963715",-16);marker(item.pose[item.confirm],"C","#953a20",7);
+  }
+  if(byId("ref").checked)marker(item.goal,"G","#146f41",6);
+  const pos=item.pose[step];ctx.save();ctx.translate(px(pos[0]),pz(pos[2]));ctx.rotate(-pos[3]*Math.PI/180);
+  ctx.beginPath();ctx.moveTo(0,-12);ctx.lineTo(8,8);ctx.lineTo(0,4);ctx.lineTo(-8,8);ctx.closePath();ctx.fillStyle="#162d3b";ctx.fill();ctx.lineWidth=2;ctx.strokeStyle="white";ctx.stroke();ctx.restore();
+  ctx.fillStyle="white";ctx.fillRect(12,h-35,scale+14,26);ctx.fillStyle="#23383b";ctx.font="13px sans-serif";ctx.fillText("1 m",18,h-21);ctx.fillRect(18,h-17,scale,2);
+}
+function render(){
+  const n=item.pose.length-1, act=item.pose[step][4];
+  for(const id of ["mapStep","imageStep"]){byId(id).max=n;byId(id).value=step}
+  set("action",(act===null?L("初始观测","Initial observation"):actions[act][lang])+" · "+step+" / "+n);
+  set("play",timer?L("暂停","Pause"):L("播放","Play"));set("readout",L("第 ","Step ")+step+" / "+n);
+  set("zoom",local?L("查看全程","Show full route"):L("放大分岔","Zoom to junction"));
+  set("mapNote",L("箭头为当前位姿，D 为决策，C 为确认，G 为目标。底图取决策高度 ","Arrow: current pose. D: decision. C: confirmation. G: goal. Map at decision elevation ")+item.floor.floor.toFixed(1)+L(" 米，虚线为其他高度。"," m. Dashed paths are at other elevations."));
+  [...byId("keyframes").children].forEach(b=>b.setAttribute("aria-current",String(Number(b.textContent)===step)));
+  rgb();map();
+}
+function stop(){if(timer!==null){clearInterval(timer);timer=null;set("play",L("播放","Play"))}}
+function jump(f){stop();step=Math.min(item.pose.length-1,Math.max(0,f));render()}
+function select(c,start){
+  stop();item=c;step=Number.isInteger(start)?Math.max(0,Math.min(c.pose.length-1,start)):c.decision;
+  cache.clear();floor=new Image();floor.onload=map;floor.src="assets/"+c.id+"/floor.png";updateLanguage();
+}
+byId("task").onchange=e=>select(CASES.find(c=>c.id===e.target.value));
+for(const [id,delta] of [["prev",-1],["next",1]])byId(id).onclick=()=>select(CASES[(CASES.indexOf(item)+delta+CASES.length)%CASES.length]);
+for(const [id,delta] of [["back",-1],["forward",1]])byId(id).onclick=()=>jump(step+delta);
+for(const id of ["mapStep","imageStep"])byId(id).oninput=e=>jump(Number(e.target.value));
+for(const id of ["ref","walk","branch"])byId(id).onchange=map;
+for(const id of ["decision","confirm"])byId(id).onclick=()=>jump(item[id]);
+byId("end").onclick=()=>jump(item.pose.length-1);
+byId("zoom").onclick=()=>{local=!local;render()};
+byId("play").onclick=()=>{if(timer){stop();return}if(step===item.pose.length-1)step=0;
+  timer=setInterval(()=>{if(!loadedRGB)return;if(step===item.pose.length-1){stop();return}step++;render()},230);render()};
+byId("zh").onclick=()=>{lang=0;updateLanguage()};byId("en").onclick=()=>{lang=1;updateLanguage()};
+select(CASES[0]);
+</script></body></html>

@@ -1,0 +1,14 @@
+{
+  "published_at": "2026-11-16T12:59:04.470573+00:00",
+  "urls": {
+    "early": "http://134.175.18.101/vln/oracle_distance_075m_33_run05_web_20261115_02/oracle_075m_33.html",
+    "checkpoint": "http://134.175.18.101/vln/oracle_checkpoint_33_run06_web_20261116_01/oracle_checkpoint_33.html",
+    "early_plus05": "http://134.175.18.101/vln/oracle_distance_plus05_33_run07_web_20261116_01/oracle_plus05_33.html"
+  },
+  "checkpoint_publication_record": "outputs/visualization_publishing/publish_20261116_125846_172323/publication.json",
+  "template_reused": true,
+  "browser_validation_passed": true,
+  "checkpoint_remote_sha256_verified": true,
+  "checkpoint_files": 6943,
+  "no_new_navigation": true
+}

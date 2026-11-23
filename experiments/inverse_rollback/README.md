@@ -1,0 +1,26 @@
+# 历史动作逆向回退
+
+[C21 七图回退](vlm_action_v001/run_20261123_08_restore_c21/README.md)直接使用去程原图和动作序列，每执行四个动作单独判断是否复原。
+
+[选路位置版回退 · C15、C21、C31、C34](vlm_action_v001/run_20261123_06_choice_position4/README.md)使用相同去程描述和物理协议，比较加强退出条件后的实际落点。
+
+[DeepSeek 实走回退 22 例逐帧回放](exports/deepseek_h1_22_20261123_01/README.md)同步呈现地图、当前 RGB 和模型动作。
+
+[DeepSeek 实际动作回退全 22 例](vlm_action_v001/run_20261123_05_finish22/README.md)汇总首批、追加十例与最后九例。
+
+[DeepSeek 实际动作回退追加十例](vlm_action_v001/run_20261123_04_deepseek10/README.md)沿用三例协议，单独记录结果。
+
+[DeepSeek 三例实际动作回退](vlm_action_v001/run_20261123_03_deepseek3/README.md)使用 C03、C05、C07，检验闭环控制和到点退出。
+
+[VLM 动作回退样本集 · 原报警 22 例](vlm_action_v001/run_20261123_02/README.md)已完成，含全部去程动作、每例 7 张历史前视图及 B 的 H1 初始化状态。
+
+[RxR-CE 20 组与 H1 22 组 · 完整实采对照回放及发布记录](exports/paired_rgb_20261122_01/README.md)
+
+在原生 VLNVerse H1 物理仿真中，比较按历史动作返回离线节点和直接恢复节点位姿的落点误差。
+
+[v001 · seed 2，30 个案例](v001/run_20261122_02/README.md)
+[原始报警距离 ≥1.5 米的 22 组原生 RGB 采集](v001/run_20261122_03_rgb22/README.md)
+
+[v002 · 同 22 组保持 B 点初始朝向的倒走回退](v002/run_20261122_01_backward_rgb22/README.md)
+
+[RxR-CE · 五场景 20 组实走去程、掉头与倒走回退](rxr_ce_v001/run_20261122_01_rgb20/README.md)

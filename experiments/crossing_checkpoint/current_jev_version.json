@@ -4,19 +4,21 @@
   "status": "current_best",
   "designation": "当前最好 JEV 版本",
   "designated_at": "2026-11-08T15:38:07Z",
-  "pipeline_status": "current_best",
-  "pipeline_designated_at": "2026-11-09T00:22:38Z",
-  "filter_version": "jev_noul_v004_filter_v001",
-  "best_filter_mode": "streamingProminence",
-  "best_filter_defaults": {
-    "window_n": 7,
-    "max_delay_steps": 5,
-    "prefix_invariant": true,
-    "frozen_after_delay": true
+  "pipeline_status": "current_fixed",
+  "pipeline_designation": "当前最新固定版本",
+  "pipeline_designated_at": "2026-11-18",
+  "fixed_pipeline": {
+    "sampling_branch": "codex/jev-online-sampling-v001",
+    "sampling_branch_commit": "9cd8f75180fa3a3ff0c296f937396b1eca738cd9",
+    "scorer_version": "jev_noul_v004",
+    "scorer": "core/jev_node.py",
+    "scorer_sha256": "d6829524cc9d7628d1ac41e4e6ddeaa454a92a63079fdb390d9b6827d471d8e2",
+    "sampler": "core/jev_online_sampler_v001.js",
+    "sampler_sha256": "a2d9e945e806d2ff774aaf6f6a20ad55659c6c08406cbbaf30ffa81f6d621923",
+    "config": "core/jev_online_sampling_v001.json",
+    "config_sha256": "f8e7a94a2633f7484d4bf153798fe6cc245c9217d6cf3a5ccbbb042304ee6bbf",
+    "deduplication": "experiments/crossing_checkpoint/online_sampling_v001/review_snapshot_20261112/node_deduplication/v001_run02_all",
+    "reference_viewer": "outputs/jev_sampling_lab/branch_v001_review_20261118_01/index.html"
   },
-  "latest_run": "outputs/crossing_checkpoint/jev_noul_v004/run_20261108_03_ten_final",
-  "url": "http://134.175.18.101/vln/jev_noul_v004_ten_cases_20261108_01/jev_noul_v002_vs_v004.html",
-  "qwen4b_best_v001_comparison_url": "http://134.175.18.101/vln/jev_noul_v004_vs_qwen4b_12cases_20261108_01/jev_noul_v004_vs_qwen4b.html",
-  "filtered_visualization_url": "http://134.175.18.101/vln/jev_noul_v004_vs_qwen4b_12cases_nodes_20261109_04/jev_noul_v004_vs_qwen4b.html",
-  "sampled_node_visualization_url": "http://134.175.18.101/vln/jev_noul_v004_vs_qwen4b_12cases_nodes_20261109_04/jev_noul_v004_vs_qwen4b.html"
+  "previous_filter_and_sampling_record": "experiments/crossing_checkpoint/jev_noul_v004/version.json"
 }

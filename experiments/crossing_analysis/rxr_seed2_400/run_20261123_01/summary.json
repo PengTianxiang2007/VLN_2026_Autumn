@@ -1,0 +1,57 @@
+{
+  "attempts": 400,
+  "valid": 389,
+  "successes": 224,
+  "mean_spl": 0.49146400566375814,
+  "technically_invalid": [
+    "1723",
+    "4351",
+    "5274",
+    "5361",
+    "6892",
+    "7060",
+    "7654",
+    "7956",
+    "8135",
+    "9593",
+    "9967"
+  ],
+  "groups": {
+    "STOP": {
+      "failures": 141,
+      "crossing": 74,
+      "uncertain": 33,
+      "other": 34,
+      "subtypes": {
+        "missed_turn": 24,
+        "wrong_branch": 24,
+        "wrong_door": 26
+      }
+    },
+    "step_limit": {
+      "failures": 24,
+      "crossing": 6,
+      "uncertain": 8,
+      "other": 10,
+      "subtypes": {
+        "missed_turn": 1,
+        "wrong_branch": 3,
+        "wrong_door": 2
+      }
+    },
+    "all": {
+      "failures": 165,
+      "crossing": 80,
+      "uncertain": 41,
+      "other": 44,
+      "subtypes": {
+        "missed_turn": 25,
+        "wrong_branch": 27,
+        "wrong_door": 28
+      }
+    }
+  },
+  "matched_unique_episodes": 165,
+  "extra_review_cases": 25,
+  "distinct_reviewed_episode_steps": 1053
+}

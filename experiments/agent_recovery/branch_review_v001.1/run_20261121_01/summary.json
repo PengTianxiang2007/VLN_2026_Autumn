@@ -1,0 +1,71 @@
+{
+  "C50": {
+    "status": "ok",
+    "candidate_groups": [
+      {
+        "candidate_ids": [
+          "L1"
+        ],
+        "reason": "左侧深色门洞是一个独立的入口，与正前方的走廊入口不同，属于当前节点左侧的可选支路。",
+        "branch_id": "B1"
+      },
+      {
+        "candidate_ids": [
+          "F1"
+        ],
+        "reason": "左侧金属门框（疑似电梯）是一个独立的入口，位于正前方走廊入口的左侧，属于当前节点左前方的可选支路。",
+        "branch_id": "B2"
+      },
+      {
+        "candidate_ids": [
+          "F2",
+          "R1"
+        ],
+        "reason": "正前方的明亮门洞（F2）与右侧视图中看到的门洞（R1）实际上是同一个入口的不同视角。F2展示了走廊的正面，R1展示了走廊入口的右侧墙面和装饰画，两者共同构成了通往走廊的单一通路。",
+        "branch_id": "B3"
+      }
+    ],
+    "branches": [
+      [
+        "B1",
+        "left"
+      ],
+      [
+        "B2",
+        "front_left"
+      ],
+      [
+        "B3",
+        "front"
+      ]
+    ],
+    "previous_attempt": "B3"
+  },
+  "C07": {
+    "status": "ok",
+    "candidate_groups": [
+      {
+        "candidate_ids": [
+          "L1"
+        ],
+        "reason": "该区域为卧室内部空间，属于当前所在房间，并非从节点 C 处可以直接选择并离开的独立支路入口。",
+        "branch_id": null
+      },
+      {
+        "candidate_ids": [
+          "F1",
+          "R1"
+        ],
+        "reason": "F1 和 R1 均指向正前方走廊及其左侧的开口。R1 是 F1 中左侧开口在右侧视角下的呈现，两者属于同一连续通路。",
+        "branch_id": "B1"
+      }
+    ],
+    "branches": [
+      [
+        "B1",
+        "front"
+      ]
+    ],
+    "previous_attempt": "B1"
+  }
+}

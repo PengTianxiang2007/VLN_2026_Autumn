@@ -1,0 +1,64 @@
+You are reviewing a robot's route choice at a rollback node C. In one call, identify the directly available branches at C and use subsequent chronological observations to identify which branch the robot actually selected and entered during its previous attempt.
+
+[Fixed seven-image input]
+
+1. C_left70: the view 70 degrees to the left at node C.
+2. C_front: the forward 0-degree view at node C.
+3. C_right70: the view 70 degrees to the right at node C.
+4. C_plus2: the actual forward observation at step C+2.
+5. C_plus5: the actual forward observation at step C+5.
+6. C_plus8: the actual forward observation at step C+8.
+7. C_plus10: the actual forward observation at step C+10.
+
+The first three images show different viewing directions at the same node position and pose; they do not represent robot turns or movements. The last four chronologically show actions that have already occurred. Their sampling intervals are unequal, and each uses the robot's actual forward orientation at that step. Describe every branch direction relative to C_front's 0-degree orientation, not directly in the coordinates of a side view or later image.
+
+[What counts as a current branch]
+
+A branch is a distinct passage the robot can directly choose at this same decision location. It must represent a choice available now, not a subsequent choice that depends on first making another choice.
+
+For example, if the robot can currently enter a corridor ahead and that corridor splits into two rooms farther away, record one current branch, "enter the corridor ahead." Do not list those two distant rooms as two current branches. If a forward passage, a left entrance, and a right entrance are directly available at this same location, they can form three current branches.
+
+"Directly choose" does not require turning in place. A short approach needed to enter an immediately available opening can belong to the same choice. However, an entrance that requires first committing to and travelling along another passage, then making a further choice, belongs to a downstream junction.
+
+An entrance and the space beyond it form one branch. Record the same entrance only once even when it appears in multiple views. Different direction words or room names alone do not establish distinct branches. Passing around opposite sides of furniture and rejoining the same space does not by itself establish two distinct route choices.
+
+[Task 1: Inventory each view, match candidates across views, then form the branch list]
+
+Start with the three views at C. Independently list candidate entrances in C_left70, C_front and C_right70, including nearby doorways, side passages and continuous floor by which the robot could leave directly. Initially register an entrance separately in each view where it appears. A candidate is provisional. Assign local IDs (L1... for the left view, F1... for the front, R1... for the right). Describe its position in the image, visible boundary or floor, and fixed landmarks nearby. Return an empty array for a view with no candidates. A view can contain several candidates.
+
+Match candidates to physical entrances using shared corners, partitions, doorframes, floor connections and relative landmark positions. Explain which observations depict the same opening and which should remain distinct. Merge only with concrete evidence of identity. Similar colors, room appearance or direction alone are insufficient. An entrance visible in only one view can stand on its own. Record unresolved correspondence in uncertainties.
+
+Assign each candidate to exactly one candidate_groups entry, including singletons. Each group contains candidate_ids, its reason and the resulting branch_id. Each directly available choice corresponds to one B branch. For a closed surface, downstream junction or insufficient evidence of a current passage, use null for branch_id and explain why. Do not force a count or guess occluded destinations.
+
+Build the complete branches list from the retained groups, using C_front as the directional reference. The four subsequent images are used to match actual travel. Absence of a current entrance from those images is not by itself grounds to exclude it.
+
+[Task 2: Identify the previously selected branch]
+
+Match C_plus2, C_plus5, C_plus8, and C_plus10 to the current branch inventory to determine which branch the robot selected and entered when leaving C.
+
+Use evidence such as crossing an entrance, continuity of the traversed passage, and changes in fixed landmarks relative to the camera. Distinguish looking toward an entrance from entering it, rotating in place from turning into a passage, a room becoming clearer from actually entering it, and approaching an entrance from departing along that branch. Do not misclassify a necessary short approach to an immediate entrance as first choosing another branch.
+
+Identify the choice made at C. A route chosen farther away cannot replace the branch ID at C. If the images show only rotation, short adjustments, or insufficiently sampled travel to identify the branch, return uncertain rather than forcing a match.
+
+The upstream process has marked this attempt as requiring correction. This call identifies the physically traversed branch; that trigger alone is not evidence for a particular branch ID. Do not invent the original task, select the correct replacement route, or generate a recovery instruction.
+
+[Output format]
+
+Return only JSON with exactly these top-level fields: view_candidates, candidate_groups, branches, previous_attempt, uncertainties. Use Chinese for natural-language descriptions.
+
+Return per-view candidates with id and description under C_left70, C_front and C_right70 in view_candidates. Return cross-view decisions in candidate_groups.
+
+branches is an array and may be empty. Each item has exactly:
+- id: B1, B2, ..., unique and consecutive.
+- direction: one of front, front_left, left, front_right, right, back, unknown, relative to C_front; back also requires image evidence.
+- entrance_description: local visual features identifying the entrance or passage.
+- current_choice_basis: why this is a direct current choice rather than a downstream choice after taking another passage.
+- evidence_image_ids: an array of image IDs supporting this item.
+
+previous_attempt has exactly:
+- status: identified or uncertain.
+- branch_id: an ID from this response's branches when identified; null when uncertain.
+- evidence_image_ids: an array of image IDs supporting the match or explaining the evidence limitation; it must be nonempty when identified.
+- reason: how the observed travel matches the branch, or why no match can be confirmed.
+
+uncertainties is an array of Chinese strings; use an empty array if there are no additional uncertainties. All evidence IDs must refer to the seven input images above. Do not invent images, branches, or observation times.

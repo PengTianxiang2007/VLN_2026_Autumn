@@ -1,0 +1,95 @@
+{
+  "request": {
+    "previous_id": "S01",
+    "current_id": "S04",
+    "instruction_en": "Walk forward through the hallway, passing a bedroom on your left and a bedroom on your right. Continue straight down the hallway, passing a bathroom entrance on your left. Enter the open room, keeping the dining table and chairs on your left. Turn slightly to your right and stop in the main open area, with the dining table on your left and a living area with a couch on your right.",
+    "mode": "segment",
+    "images": [
+      {
+        "frame": 0
+      },
+      {
+        "frame": 1
+      },
+      {
+        "frame": 13
+      },
+      {
+        "frame": 26
+      },
+      {
+        "frame": 39
+      },
+      {
+        "frame": 51
+      },
+      {
+        "frame": 52
+      }
+    ]
+  },
+  "answer": {
+    "type": "json_object",
+    "verdict": "deviated",
+    "previous_id": "S01",
+    "current_id": "S04",
+    "segment_summary": {
+      "zh": "F0-F26可见白色走廊及左右卧室入口，右侧卧室内有床和电视。F39中同一电视位于左墙、床在右侧的近景占据画面，走廊门框不再可见，显示已进入右侧卧室内部；F51-F52则显示另一个带书桌或椅子的侧室，未呈现餐桌在左、沙发在右的主开放区。",
+      "en": "F0-F26 show a white hallway with bedroom entrances on the left and right; the right-hand bedroom contains a bed and TV. In F39 the same TV is on the left wall with the bed on the right filling a close view, with the hallway doorway no longer visible, indicating entry into the right bedroom; F51-F52 instead show another side room with a desk or chair, not the main open area with the dining table on the left and couch on the right."
+    },
+    "reason": {
+      "zh": "当时生效的要求是沿走廊向前并从左右卧室旁经过，同时继续直行；不应进入卧室。F26仍从走廊中看见右侧卧室，而F39已进入其内部，构成与“从右侧卧室旁经过”和“继续沿走廊直行”冲突的明确通行选择；后续目标尚未到达不能推翻这一冲突。",
+      "en": "The applicable requirement was to walk forward through the hallway, pass the bedrooms on the left and right, and continue straight; entering a bedroom was not required. F26 still shows the right bedroom from the hallway, while F39 is inside that bedroom, constituting a clear passage choice that conflicts with passing the right bedroom and continuing straight down the hallway; the later target not being reached does not overturn this conflict."
+    },
+    "instruction_evidence": [
+      {
+        "quote_en": "Walk forward through the hallway, passing a bedroom on your left and a bedroom on your right.",
+        "quote_zh": "沿走廊向前走，从你左侧的一间卧室和右侧的一间卧室旁经过。"
+      },
+      {
+        "quote_en": "Continue straight down the hallway",
+        "quote_zh": "继续沿走廊直行"
+      }
+    ],
+    "visual_evidence": [
+      {
+        "frames": [
+          0,
+          1,
+          26
+        ],
+        "description": {
+          "zh": "这些帧显示一条白色走廊，左侧卧室开口可见床，右侧卧室内有床和壁挂电视；F26仍通过走廊开口看见右侧卧室。",
+          "en": "These frames show a white hallway with a bed visible through the left bedroom opening and a bed and wall-mounted TV in the right bedroom; F26 still views the right bedroom through the hallway opening."
+        }
+      },
+      {
+        "frames": [
+          26,
+          39
+        ],
+        "description": {
+          "zh": "F39的近景中，同一台电视位于左墙、床在右侧，窗户在前方，走廊侧的门框和通道边缘不再可见，显示视角已进入右侧卧室内部。",
+          "en": "In the close view of F39, the same TV is on the left wall, the bed is on the right, and the window is ahead; the hallway-side doorway edges are no longer visible, indicating the viewpoint has entered the right bedroom."
+        }
+      },
+      {
+        "frames": [
+          51,
+          52
+        ],
+        "description": {
+          "zh": "抵达B时看到的是带窗、椅子和桌子的侧室，未能看到餐桌在左、带沙发客厅在右的主开放区。",
+          "en": "At B, a side room with a window, chair, and table is visible; the main open area with the dining table on the left and living area with a couch on the right is not shown."
+        }
+      }
+    ],
+    "semantic_progress": null,
+    "uncertainties": [
+      {
+        "zh": "B处的书桌/椅子房间与目标开放区的关系、餐桌在左及沙发在右的最终停靠位置均尚未确认；F13中的书桌房间是否属于指令路线也未确认。",
+        "en": "The relationship of the desk/chair room at B to the target open area, and the final stop position with the dining table on the left and couch on the right, remain unconfirmed; it is also unconfirmed whether the desk room in F13 belongs to the instructed route."
+      }
+    ]
+  }
+}

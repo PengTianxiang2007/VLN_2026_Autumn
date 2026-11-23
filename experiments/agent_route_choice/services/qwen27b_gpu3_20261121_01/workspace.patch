@@ -1,0 +1,38 @@
+diff --git a/scripts/serve_qwen27b_standby.py b/scripts/serve_qwen27b_standby.py
+index 3fa01a6..8bdb362 100644
+--- a/scripts/serve_qwen27b_standby.py
++++ b/scripts/serve_qwen27b_standby.py
+@@ -23,13 +23,16 @@ def main():
+     parser.add_argument('--config', type=Path, required=True)
+     parser.add_argument('--gpu', type=int, required=True)
+     parser.add_argument('--allow-shared-gpu', action='store_true')
++    parser.add_argument('--process-only', action='store_true',
++                        help='Keep the server running without a readiness probe or loading deadline')
+     args = parser.parse_args()
+     out = args.output.resolve()
+     out.mkdir(parents=True, exist_ok=False)
+     config = read(args.config)
+     state = dict(phase='admission', gpu=args.gpu, model=config['model'],
+                  supervisor_pid=os.getpid(), started_at=now(), keep_alive=True,
+-                 retention_authorization='User explicitly requested GPU0 Qwen27B kept ready for later use.',
++                 retention_authorization=config.get('retention_authorization',
++                     'User explicitly requested Qwen27B on GPU%d for authorized work.' % args.gpu),
+                  model_config=config)
+     stop_requested = False
+     child = None
+@@ -47,6 +50,15 @@ def main():
+     update()
+     try:
+         child, base = start_local(config, args.gpu, out, locks, args.allow_shared_gpu)
++        if args.process_only:
++            update(phase='running', readiness='not_probed', server_pid=child.pid,
++                   process=process(child.pid), base_url=base)
++            while not stop_requested:
++                if child.poll() is not None:
++                    raise RuntimeError(f'Model service exited with code {child.returncode}')
++                time.sleep(2)
++            update(phase='stopping')
++            return
+         update(phase='loading', server_pid=child.pid, process=process(child.pid), base_url=base)
+         deadline = time.monotonic() + 1800
+         while not stop_requested:

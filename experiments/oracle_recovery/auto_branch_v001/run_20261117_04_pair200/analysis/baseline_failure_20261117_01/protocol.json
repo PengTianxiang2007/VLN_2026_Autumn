@@ -1,0 +1,26 @@
+{
+  "status": "complete",
+  "created_at": "2026-11-17T07:38:55.332351+00:00",
+  "scope": "All 102 native-SR=0 episodes from the completed baseline200; paired oracle outcome used only after classification.",
+  "seed": 2,
+  "git_commit": "7ce5f9fee30686bae304425bc84c36b3fbedc39c",
+  "evidence": [
+    "native pred_path and metrics",
+    "official reference_path and instruction",
+    "all policy actions",
+    "existing static scene floorplan",
+    "only first two model RGB frames, not full trajectory video"
+  ],
+  "classification": "Mutually exclusive primary failure category plus secondary termination/outcome tags; chronological route evidence required; distance threshold alone is not semantic branch error. Goal passing and physical failures treated separately when supported; uncertain cases retained.",
+  "denominators": [
+    102,
+    200
+  ],
+  "new_navigation": false,
+  "external_model_calls": false,
+  "completed_at": "2026-11-17T07:56:47.180525+00:00",
+  "reviewed": 102,
+  "deviation_failures": 64,
+  "uncertain": 8,
+  "confidence_definition": "high/moderate are qualitative evidence-strength judgments by one reviewer, not calibrated probabilities or inter-rater agreement."
+}

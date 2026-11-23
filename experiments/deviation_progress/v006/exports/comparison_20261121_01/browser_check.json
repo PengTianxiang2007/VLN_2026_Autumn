@@ -1,0 +1,12 @@
+{
+  "cases": 53,
+  "versions": 5,
+  "rounds": 1131,
+  "default_review": "qwen_v006",
+  "maximum_layers": 3,
+  "bilingual": true,
+  "truncated_raw_preserved": true,
+  "input_frame_sync": true,
+  "missing_coverage_preserved": true,
+  "errors": []
+}

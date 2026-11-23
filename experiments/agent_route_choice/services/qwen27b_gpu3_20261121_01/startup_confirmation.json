@@ -1,0 +1,23 @@
+{
+  "scope": "process_start_only_no_readiness_or_inference_probe",
+  "service_state": "outputs/model_services/qwen27b_gpu3_20261121_01/service.json",
+  "phase": "running",
+  "readiness": "not_probed",
+  "base_url": "http://127.0.0.1:56923/v1",
+  "processes": [
+    {
+      "role": "supervisor_pid",
+      "pid": 993933,
+      "alive": true,
+      "command": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/crossing_vllm27/bin/python -Bu /mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/scripts/serve_qwen27b_standby.py --config /mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/experiments/agent_route_choice/services/qwen27b_gpu3_20261121_01/model.json --output /mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/model_services/qwen27b_gpu3_20261121_01 --gpu 3 --allow-shared-gpu --process-only ",
+      "cwd": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn"
+    },
+    {
+      "role": "server_pid",
+      "pid": 994127,
+      "alive": true,
+      "command": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/crossing_vllm27/bin/python -B -m vllm.entrypoints.openai.api_server --model /mnt/nas/gezuhao/shared_dataset/Resource_Peng/models/Qwen3.8-27B-FP8 --served-model-name route53-qwen27b --host 127.0.0.1 --port 56923 --dtype bfloat16 --tensor-parallel-size 1 --cpu-offload-gb 0 --gpu-memory-utilization 0.7 --max-model-len 16384 --max-num-seqs 1 --max-num-batched-tokens 4096 --limit-mm-per-prompt {\"image\": 10, \"video\": 0} --mm-processor-kwargs {\"max_pixels\":307200} --enforce-eager --no-enable-log-requests --seed 2 --reasoning-parser qwen3 ",
+      "cwd": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn"
+    }
+  ]
+}

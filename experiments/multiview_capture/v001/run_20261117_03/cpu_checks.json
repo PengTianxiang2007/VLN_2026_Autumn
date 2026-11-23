@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "tests": 18,
+  "command": "benchmarks/vlnverse/.venv/bin/python -B -m unittest tests.test_step_multiview tests.test_oracle_existing_model -v"
+}

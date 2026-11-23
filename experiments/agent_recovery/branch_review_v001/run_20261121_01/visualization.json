@@ -1,0 +1,13 @@
+{
+  "url": "http://134.175.18.101/vln/recovery_branch_review_v001_ten_web_20261121_02/index.html",
+  "archive_url": "http://134.175.18.101/vln/recovery_branch_review_v001_ten_web_20261121_02/recovery_branch_review_v001_ten_offline.zip",
+  "publication_record": "outputs/visualization_publishing/publish_20261121_092921_326287/publication.json",
+  "published_at": "2026-11-21T09:29:30.577726+00:00",
+  "html_sha256": "ad0cb8f22ffd8b1d9013215c6312054d29a80f61c5d692d772cc56b8b8a28ebe",
+  "assets_plus_html": 723,
+  "remote_sha256_verified": true,
+  "http_status": 200,
+  "local_interaction_check": "outputs/visualization_publishing/recovery_branch_review_v001_ten_web_20261121_01/browser_check.json",
+  "font_check": "outputs/visualization_publishing/recovery_branch_review_v001_ten_web_20261121_02/font_check.json",
+  "final_display_check": "outputs/visualization_publishing/recovery_branch_review_v001_ten_web_20261121_02/browser_final_check.json"
+}

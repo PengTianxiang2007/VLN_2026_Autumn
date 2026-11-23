@@ -1,0 +1,40 @@
+{
+  "cases": 53,
+  "versions": {
+    "qwen_v003": {
+      "cases": 53,
+      "calls": 288,
+      "flagged": 36,
+      "invalid": 5,
+      "nodes": 429
+    },
+    "deepseek_v003": {
+      "cases": 29,
+      "calls": 99,
+      "flagged": 28,
+      "invalid": 5,
+      "nodes": 210
+    },
+    "qwen_v005": {
+      "cases": 53,
+      "calls": 272,
+      "flagged": 40,
+      "invalid": 0,
+      "nodes": 429
+    },
+    "deepseek_v005": {
+      "cases": 53,
+      "calls": 219,
+      "flagged": 47,
+      "invalid": 11,
+      "nodes": 429
+    }
+  },
+  "selection_limit": 3,
+  "zero_selection": true,
+  "missing_coverage": true,
+  "invalid_raw_preserved": true,
+  "bilingual": true,
+  "input_frame_sync": true,
+  "errors": []
+}

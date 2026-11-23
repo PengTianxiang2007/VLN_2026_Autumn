@@ -1,5 +1,7 @@
 # Crossing Checkpoint 方法迭代
 
+2026-11-18 用户将[JEV 在线采样 v001](online_sampling_v001/README.md)指定为当前最新固定版本。[53 条前视轨迹候选点](online_sampling_v001/run_20261118_01/README.md)已完成，得到 4,837 个有效评分和 494 个去重前候选。
+
 2026-11-12：[JEV 在线采样 v001](online_sampling_v001/README.md)获用户认可；历史结果不可回改的验证通过。独立参考实现、测试与本地网页源码在交接分支提供，另一台机器按[接手说明](../../docs/JEV_SAMPLING_HANDOFF.md)适配实际运行循环。网页仅本地使用；检测/导航收益尚未建立。
 
 2026-11-09：新的本地 StreamVLN + Isaac Sim 实时 JEV 实验已启动。VLNVerse fine

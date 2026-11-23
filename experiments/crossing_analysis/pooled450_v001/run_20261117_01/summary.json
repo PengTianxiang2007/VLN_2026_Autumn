@@ -1,0 +1,159 @@
+{
+  "episodes": 450,
+  "scenes": 21,
+  "seed": 2,
+  "successes": 197,
+  "failures": 253,
+  "metrics": {
+    "SR": 0.43777777777777777,
+    "SPL": 0.3666471511048899,
+    "NE": 4.078332866277248,
+    "OS": 0.5488888888888889,
+    "TL": 8.188300872299722,
+    "FR": 0.18222222222222223,
+    "StR": 0.035555555555555556
+  },
+  "cohorts": {
+    "old250": {
+      "episodes": 250,
+      "scenes": 10,
+      "successes": 99,
+      "metrics": {
+        "SR": 0.396,
+        "SPL": 0.33179464897502126,
+        "NE": 4.40126850455999,
+        "OS": 0.488,
+        "TL": 8.492404682401764,
+        "FR": 0.188,
+        "StR": 0.024
+      }
+    },
+    "new200": {
+      "episodes": 200,
+      "scenes": 11,
+      "successes": 98,
+      "metrics": {
+        "SR": 0.49,
+        "SPL": 0.41021277876722506,
+        "NE": 3.6746633184238173,
+        "OS": 0.625,
+        "TL": 7.808171109672173,
+        "FR": 0.175,
+        "StR": 0.05
+      }
+    }
+  },
+  "categories": [
+    {
+      "category": "route_selection",
+      "category_zh": "选错路／漏转弯／起步方向错误",
+      "count": 107,
+      "pct_failures": 42.29249011857708,
+      "pct_all": 23.77777777777778,
+      "old250": 51,
+      "new200": 56
+    },
+    {
+      "category": "backtracking",
+      "category_zh": "反向回返／原路往返",
+      "count": 13,
+      "pct_failures": 5.138339920948616,
+      "pct_all": 2.888888888888889,
+      "old250": 5,
+      "new200": 8
+    },
+    {
+      "category": "incomplete_progress",
+      "category_zh": "路线未完成即停止／局部无效移动",
+      "count": 45,
+      "pct_failures": 17.786561264822133,
+      "pct_all": 10.0,
+      "old250": 33,
+      "new200": 12
+    },
+    {
+      "category": "goal_overshoot",
+      "category_zh": "目标区域附近未停并走过头",
+      "count": 1,
+      "pct_failures": 0.3952569169960474,
+      "pct_all": 0.2222222222222222,
+      "old250": 0,
+      "new200": 1
+    },
+    {
+      "category": "fall_without_route_evidence",
+      "category_zh": "无明确选路偏航的跌倒（含预热）",
+      "count": 12,
+      "pct_failures": 4.743083003952569,
+      "pct_all": 2.6666666666666665,
+      "old250": 0,
+      "new200": 12
+    },
+    {
+      "category": "stuck_without_route_evidence",
+      "category_zh": "无明确选路偏航的卡住",
+      "count": 5,
+      "pct_failures": 1.976284584980237,
+      "pct_all": 1.1111111111111112,
+      "old250": 0,
+      "new200": 5
+    },
+    {
+      "category": "termination_only_unreviewed",
+      "category_zh": "历史跌倒／卡住，路线原因未复核",
+      "count": 46,
+      "pct_failures": 18.181818181818183,
+      "pct_all": 10.222222222222221,
+      "old250": 46,
+      "new200": 0
+    },
+    {
+      "category": "uncertain",
+      "category_zh": "证据不足／混合现象不确定",
+      "count": 24,
+      "pct_failures": 9.486166007905139,
+      "pct_all": 5.333333333333333,
+      "old250": 16,
+      "new200": 8
+    }
+  ],
+  "evidence_counts": {
+    "per_case_review": 207,
+    "official_termination_only": 46
+  },
+  "failure_terminations": {
+    "not_reach_goal": 172,
+    "fall": 70,
+    "stuck": 11
+  },
+  "all_terminations": {
+    "not_reach_goal": 172,
+    "success": 179,
+    "fall": 82,
+    "stuck": 16,
+    "exceed_total_max_step": 1
+  },
+  "uncertain_cases": 24,
+  "historical_route_unreviewed_cases": 46,
+  "source_candidate_set": {
+    "old_crossing": 48,
+    "new_route_choice": 56,
+    "total": 104
+  },
+  "route_selection_plus_backtracking": {
+    "count": 120,
+    "pct_failures": 47.43083003952569,
+    "pct_all": 26.666666666666668,
+    "interpretation": "Descriptive existing route/direction/backtracking labels; not 120 confirmed Crossing errors or recoverable cases."
+  },
+  "scope": "Original baseline scores only; existing-label harmonization, no new per-frame reannotation or intervention evaluation.",
+  "limitations_zh": [
+    "本次合并既有标签，不宣称重新逐帧审阅全部253条失败。",
+    "早期46条跌倒/卡住缺少同口径的失败前路线归因，不能认定全为纯物理错误。",
+    "107条含3条起步方向错误；13条回返中旧5条为现象描述，不等同于明确错选支路。",
+    "24条不确定维持原结论，不并入确认选路错误。",
+    "两批场景和历史执行版本不同，合并为描述性样本池，不外推为825条全集指标或版本提升。",
+    "新200条原版没有全程RGB；旧批仅部分逐例查看关键RGB，证据深度不同。",
+    "未合并Oracle成功率；已确认的Oracle收益只属于另行评测的200条独立运行对照。"
+  ]
+}

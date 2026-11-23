@@ -1,0 +1,12 @@
+{
+  "model": "route53-qwen27b",
+  "python": ".runtime/crossing_vllm27/bin/python",
+  "model_path": "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/models/Qwen3.8-27B-FP8",
+  "max_model_len": 16384,
+  "max_images": 10,
+  "gpu_memory_utilization": 0.7,
+  "seed": 2,
+  "reasoning_parser": "qwen3",
+  "minimum_host_memory_gib": 64,
+  "retention_authorization": "2026-11-21 用户明确要求在 GPU3 挂起 Qwen27B 待用，确认进程正常启动即交后台，随后继续编写第一次调用版本；不执行该版本推理。服务正常空闲时保留。"
+}

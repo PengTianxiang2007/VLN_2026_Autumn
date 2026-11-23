@@ -1,0 +1,12 @@
+{
+  "model": "qwen",
+  "model_switch_same_case_round_frame": true,
+  "cases": 6,
+  "rounds": 35,
+  "unreviewed": 4,
+  "thumbnails": 198,
+  "raw_answer_verbatim": true,
+  "bilingual_every_round": true,
+  "synchronized_sliders": true,
+  "errors": []
+}

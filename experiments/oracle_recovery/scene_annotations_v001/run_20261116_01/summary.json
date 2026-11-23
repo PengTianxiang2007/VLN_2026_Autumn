@@ -1,0 +1,13 @@
+{
+  "updated_at": "2026-11-16T16:08:07.464510+00:00",
+  "phase": "geometry_complete_actual_divergence_anchors_not_determined",
+  "scenes_geometry_complete": 22,
+  "geometry_candidate_points": 162,
+  "scenes_initial_assistant_visual_inspection": 22,
+  "accepted_runtime_anchors": 0,
+  "fixed_task_landings": 0,
+  "navigation_episodes": 0,
+  "gpu_used": false,
+  "user_correction": "No actual trajectory is available for these tasks. Static geometry candidates cannot determine where a particular rollout will diverge. Do not treat candidate review as completed actual recovery landing annotation.",
+  "next_requirement": "Use observed rollout history and reference route to infer the actual departure location; scene geometry can only support validation. No evaluation is authorized by this annotation request."
+}

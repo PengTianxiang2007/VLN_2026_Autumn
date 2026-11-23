@@ -1,0 +1,19 @@
+{
+  "phase": "complete",
+  "started_at": "2026-11-18T10:52:25.271293+00:00",
+  "pid": 3821951,
+  "workers": 29,
+  "episodes": 29,
+  "completed": 29,
+  "updated_at": "2026-11-18T10:59:19.130781+00:00",
+  "totals": {
+    "calls": 99,
+    "flagged": 28,
+    "consistent": 57,
+    "deviated": 28,
+    "format_error": 5,
+    "uncertain": 9
+  },
+  "failed_cases": {},
+  "finished_at": "2026-11-18T10:59:19.130760+00:00"
+}

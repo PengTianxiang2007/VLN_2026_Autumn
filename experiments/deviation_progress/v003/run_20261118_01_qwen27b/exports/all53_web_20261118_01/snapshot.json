@@ -1,0 +1,775 @@
+{
+  "run": "outputs/deviation_progress/v003/run_20261118_01_qwen27b",
+  "tag": "qwen27b_route53_all_dedup",
+  "model": "route53-qwen27b",
+  "display_model": "Qwen27B",
+  "model_detail": "Qwen3.8-27B-FP8",
+  "phase_note_zh": "53 条轨迹去重完成",
+  "phase_note_en": "Deduplication completed for all 53 trajectories",
+  "scene_count": 19,
+  "dedup": {
+    "candidates": 494,
+    "retained": 376,
+    "removed": 118,
+    "model_calls": 338,
+    "uncertain": 10,
+    "errors": 1
+  },
+  "verdicts": {
+    "different": 210,
+    "same": 118,
+    "uncertain": 9,
+    "validation_error": 1
+  },
+  "case_results": {
+    "kujiale_0036_0_0": {
+      "case_number": 1,
+      "result": "dedup/cases/C01/result.json",
+      "sha256": "2aadaf535cbbf2842ffcfb48c9b5ebb8d66ce644211c7655140442c12fabc17e",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05"
+      ]
+    },
+    "kujiale_0036_3_2": {
+      "case_number": 2,
+      "result": "dedup/cases/C02/result.json",
+      "sha256": "fba5408eb5087b7d1adb8f40cabf2a31a140ff7c7e6c4296b24658c85ea9f4be",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S14",
+        "S15"
+      ]
+    },
+    "kujiale_0036_52_4": {
+      "case_number": 3,
+      "result": "dedup/cases/C03/result.json",
+      "sha256": "40a9f50ebd1e44b1ad9e0889fa641e2bbb611b4dfa1ffef9c397fa8ed5e646ee",
+      "retained_ids": [
+        "S04",
+        "S05",
+        "S06"
+      ]
+    },
+    "kujiale_0113_18_1": {
+      "case_number": 4,
+      "result": "dedup/cases/C04/result.json",
+      "sha256": "ad4ee238906fda1f4a5d3ec7adc88b6fc620e5f2740431714b0863f68ccef889",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S12",
+        "S15"
+      ]
+    },
+    "kujiale_0113_1_4": {
+      "case_number": 5,
+      "result": "dedup/cases/C05/result.json",
+      "sha256": "c9e1c0d2827544b05101ad48bbb073588400353dc690c86ddd544d49b6d2c55e",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S06",
+        "S07",
+        "S09",
+        "S10"
+      ]
+    },
+    "kujiale_0123_fix_13_3": {
+      "case_number": 6,
+      "result": "dedup/cases/C06/result.json",
+      "sha256": "b1da6219510617c2a5466f1f2e88c96d486536750cd12725ed636f85fa259b8f",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10"
+      ]
+    },
+    "kujiale_0123_fix_19_3": {
+      "case_number": 7,
+      "result": "dedup/cases/C07/result.json",
+      "sha256": "58269d04b916a5d688017877232869ddf87095e9239d93f92f80efd241e7fcca",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S04"
+      ]
+    },
+    "kujiale_0123_fix_43_3": {
+      "case_number": 8,
+      "result": "dedup/cases/C08/result.json",
+      "sha256": "2cfdf864c357c1bf584f1389ddca4570d16e80a0aba84b5b08a024fdd9aa209c",
+      "retained_ids": [
+        "S03",
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11"
+      ]
+    },
+    "kujiale_0128_fix_12_4": {
+      "case_number": 9,
+      "result": "dedup/cases/C09/result.json",
+      "sha256": "bdf7cf0daa6c9e675e379872c07c2219b0d1203872997b404299ddb0aaaf03fa",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S06"
+      ]
+    },
+    "kujiale_0128_fix_18_1": {
+      "case_number": 10,
+      "result": "dedup/cases/C10/result.json",
+      "sha256": "807fcdcc8ea5c75d26b499a04137904d76848b4b0ee3e3c33a16d42bd34e270c",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S06",
+        "S07"
+      ]
+    },
+    "kujiale_0128_fix_20_0": {
+      "case_number": 11,
+      "result": "dedup/cases/C11/result.json",
+      "sha256": "410707833cefa63d34a2d9c4d6cdb2f9c5abe9132c6d725b1ebf77ad8001c9e4",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S04",
+        "S05",
+        "S07"
+      ]
+    },
+    "kujiale_0147_14_0": {
+      "case_number": 12,
+      "result": "dedup/cases/C12/result.json",
+      "sha256": "f7b8fa5560f47aa92cdea847994601ba6267804a7a07fef1332d54a7f984b002",
+      "retained_ids": [
+        "S03",
+        "S04",
+        "S05",
+        "S06"
+      ]
+    },
+    "kujiale_0147_56_4": {
+      "case_number": 13,
+      "result": "dedup/cases/C13/result.json",
+      "sha256": "972449755d28f682b9e83acd203d7d1f234f99281fee2451e8a04d0eb6f319d9",
+      "retained_ids": [
+        "S01",
+        "S03",
+        "S05",
+        "S14",
+        "S15",
+        "S16"
+      ]
+    },
+    "kujiale_0147_57_1": {
+      "case_number": 14,
+      "result": "dedup/cases/C14/result.json",
+      "sha256": "4c06bb7cbba945b85930cd5d4cc8fb03c46da02b268fb967129324eb0aec9ffb",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08"
+      ]
+    },
+    "kujiale_0147_65_1": {
+      "case_number": 15,
+      "result": "dedup/cases/C15/result.json",
+      "sha256": "556be6cee59a55469635d0f396baf1d8c3944b38480eed33886870d742595383",
+      "retained_ids": [
+        "S01",
+        "S03",
+        "S04",
+        "S05",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11"
+      ]
+    },
+    "kujiale_0159_35_3": {
+      "case_number": 16,
+      "result": "dedup/cases/C16/result.json",
+      "sha256": "f0fdb0e4dd29dd7748686d3780cfb66ab5db19ee6f1fc8c835c5b162f94f4772",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S07",
+        "S08"
+      ]
+    },
+    "kujiale_0165_40_1": {
+      "case_number": 17,
+      "result": "dedup/cases/C17/result.json",
+      "sha256": "690550360102f4b2ba68d9939876bf97ecf5951acd7814bd1011ef83785d78a2",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S14",
+        "S15",
+        "S16"
+      ]
+    },
+    "kujiale_0165_45_0": {
+      "case_number": 18,
+      "result": "dedup/cases/C18/result.json",
+      "sha256": "4088dd8a2c37f31ce34fd6089ffd7d8103c1269cf8b6348c21c8171032c8f19e",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S07",
+        "S08",
+        "S11"
+      ]
+    },
+    "kujiale_0165_49_4": {
+      "case_number": 19,
+      "result": "dedup/cases/C19/result.json",
+      "sha256": "000627dd3a2cf688f7be4d07b6eaeaa672e92b3b7314bb5da70ff842a5eb329f",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05"
+      ]
+    },
+    "kujiale_0165_53_0": {
+      "case_number": 20,
+      "result": "dedup/cases/C20/result.json",
+      "sha256": "242bb1c9d1366268a4ab853f35fd514b7b927b9a16fb87029c6bd4357bf75a37",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04"
+      ]
+    },
+    "kujiale_0165_57_0": {
+      "case_number": 21,
+      "result": "dedup/cases/C21/result.json",
+      "sha256": "85cca46d0bf38b9c3e93860050f6d7a2504ea71bf7d908e4f38c96fc267470d3",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09"
+      ]
+    },
+    "kujiale_0207_69_4": {
+      "case_number": 22,
+      "result": "dedup/cases/C22/result.json",
+      "sha256": "3497af354fead08c785acae4084efd4ab3998dc0dd1f18660eb31c3bbf436da2",
+      "retained_ids": [
+        "S01",
+        "S05",
+        "S08",
+        "S09",
+        "S10",
+        "S11"
+      ]
+    },
+    "kujiale_0208_21_4": {
+      "case_number": 23,
+      "result": "dedup/cases/C23/result.json",
+      "sha256": "651643f89589fd7072c1118c6aebb913648558ac3bff0dd9dc7971d89c7cf164",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S06"
+      ]
+    },
+    "kujiale_0226_14_2": {
+      "case_number": 24,
+      "result": "dedup/cases/C24/result.json",
+      "sha256": "d35ccc68a52a17feb834c07454f40027bda74fcfb29bd98289c4dbb82b8b9df7",
+      "retained_ids": [
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S08",
+        "S09",
+        "S10"
+      ]
+    },
+    "kujiale_0226_2_4": {
+      "case_number": 25,
+      "result": "dedup/cases/C25/result.json",
+      "sha256": "ede20ff64556cfe22b519bd23e65146fe97959ddd8bf7ad048572ea1e5f63b95",
+      "retained_ids": [
+        "S02",
+        "S03",
+        "S04",
+        "S05"
+      ]
+    },
+    "kujiale_0226_36_2": {
+      "case_number": 26,
+      "result": "dedup/cases/C26/result.json",
+      "sha256": "6174f344f89cb2b5d680817414f12059ef56a4486ef775a61c21f85f787bdc22",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08"
+      ]
+    },
+    "kujiale_0226_38_4": {
+      "case_number": 27,
+      "result": "dedup/cases/C27/result.json",
+      "sha256": "0314a93c14cf35de67122a5318999e26e0283b7b757301cd9f603998639e6274",
+      "retained_ids": [
+        "S01",
+        "S02"
+      ]
+    },
+    "kujiale_0226_80_4": {
+      "case_number": 28,
+      "result": "dedup/cases/C28/result.json",
+      "sha256": "5e8ab4cdcfcd2898691f04ed069e8a7a8ae126d4aa91b81abbbb584265cd8d31",
+      "retained_ids": [
+        "S01",
+        "S02"
+      ]
+    },
+    "kujiale_0226_88_0": {
+      "case_number": 29,
+      "result": "dedup/cases/C29/result.json",
+      "sha256": "e27d1bd71a1dfe153ab3ea4ddc314d601b1f90ee90e4aae271db74d3e342ac75",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S06",
+        "S07"
+      ]
+    },
+    "kujiale_0232_13_0": {
+      "case_number": 30,
+      "result": "dedup/cases/C30/result.json",
+      "sha256": "6550413b8cc148c9ea2bbddc53e06e440255a99714c2ffc60fa607538c80c93d",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S14",
+        "S15",
+        "S17"
+      ]
+    },
+    "kujiale_0232_23_2": {
+      "case_number": 31,
+      "result": "dedup/cases/C31/result.json",
+      "sha256": "6564b340ea54428ce2bce8c3662f626c8868559a1f4f84f6f9897ee1800fe08b",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S12"
+      ]
+    },
+    "kujiale_0232_2_4": {
+      "case_number": 32,
+      "result": "dedup/cases/C32/result.json",
+      "sha256": "8bfc3bf21d7a008557531726a7261fc3b0206756b6e5bb72a22560c1e6006dc4",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S05",
+        "S06",
+        "S07",
+        "S08"
+      ]
+    },
+    "kujiale_0232_33_1": {
+      "case_number": 33,
+      "result": "dedup/cases/C33/result.json",
+      "sha256": "b96f208a71949c5f4855d0a1d09487c39c3306f9eeb2b5d72b4351db262beed5",
+      "retained_ids": [
+        "S13",
+        "S14",
+        "S15",
+        "S16",
+        "S17"
+      ]
+    },
+    "kujiale_0232_72_1": {
+      "case_number": 34,
+      "result": "dedup/cases/C34/result.json",
+      "sha256": "c1e418ba62316be9810f74ccbbe89b2cb92ae28a8cce6d51e860d8748e53bfc1",
+      "retained_ids": [
+        "S02",
+        "S03",
+        "S04",
+        "S05"
+      ]
+    },
+    "kujiale_0234_23_1": {
+      "case_number": 35,
+      "result": "dedup/cases/C35/result.json",
+      "sha256": "e277c1ad0b11450ac8ec64815029ed311b10ced02ad5372146ea4f6ce56fab70",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S05"
+      ]
+    },
+    "kujiale_0234_27_4": {
+      "case_number": 36,
+      "result": "dedup/cases/C36/result.json",
+      "sha256": "b890eb9345a490f9fab22b53b60ce041f0532535cb5112f5a6b9ca26d5858cef",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S12"
+      ]
+    },
+    "kujiale_0234_28_3": {
+      "case_number": 37,
+      "result": "dedup/cases/C37/result.json",
+      "sha256": "6002eae57290c734b812ee26cce9f0f53a33d0a9e62b44ed113672ea719b2d03",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S12"
+      ]
+    },
+    "kujiale_0234_34_4": {
+      "case_number": 38,
+      "result": "dedup/cases/C38/result.json",
+      "sha256": "d03350a33db39109a026d2b229a4df88307cdea1ca41aac16ce99c3bcecf4315",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S04",
+        "S06",
+        "S08",
+        "S09"
+      ]
+    },
+    "kujiale_0234_55_1": {
+      "case_number": 39,
+      "result": "dedup/cases/C39/result.json",
+      "sha256": "5d8044490bd379640cc187d3ab947891be0d1e5ed26f65dca3a34fbb7ba831bf",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13"
+      ]
+    },
+    "kujiale_0234_58_1": {
+      "case_number": 40,
+      "result": "dedup/cases/C40/result.json",
+      "sha256": "4fb2c8be4b35d807340f03d2ce5cf4a80a0ca13697eb2c9dfe18f984f4b14401",
+      "retained_ids": [
+        "S01",
+        "S04",
+        "S05",
+        "S06",
+        "S07"
+      ]
+    },
+    "kujiale_0243_29_2": {
+      "case_number": 41,
+      "result": "dedup/cases/C41/result.json",
+      "sha256": "0b4779153674ec999a67ce1813e08f49cda279b81ee04ff896cb3d7fec0f2ee9",
+      "retained_ids": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S14"
+      ]
+    },
+    "kujiale_0243_35_4": {
+      "case_number": 42,
+      "result": "dedup/cases/C42/result.json",
+      "sha256": "c3696a5786927f009310a31f706950b7bcde4ac47d68ebf36aa9b11160fdeac6",
+      "retained_ids": [
+        "S02",
+        "S03"
+      ]
+    },
+    "kujiale_0257_4_3": {
+      "case_number": 43,
+      "result": "dedup/cases/C43/result.json",
+      "sha256": "2fd1e5a3f3cb324beb252591a6495d7e6235155e21717105510c711780ae467b",
+      "retained_ids": [
+        "S01",
+        "S03",
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11"
+      ]
+    },
+    "kujiale_0257_73_4": {
+      "case_number": 44,
+      "result": "dedup/cases/C44/result.json",
+      "sha256": "eec9cdaf133b41ad8ec121e956e94edb12fdfb1a902a14c2147943e7e2a72d78",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13"
+      ]
+    },
+    "kujiale_0257_82_4": {
+      "case_number": 45,
+      "result": "dedup/cases/C45/result.json",
+      "sha256": "3e64519a3746776a92dfc905ece37a43eb0a1d68dc195ee353921c8054fad449",
+      "retained_ids": [
+        "S01",
+        "S04",
+        "S05",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S14",
+        "S15"
+      ]
+    },
+    "kujiale_0258_27_0": {
+      "case_number": 46,
+      "result": "dedup/cases/C46/result.json",
+      "sha256": "86436f7aa85bdca5d5e8da2e5a594437089582b7d8afc7f95709cdc9a08c9c40",
+      "retained_ids": [
+        "S01",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13"
+      ]
+    },
+    "kujiale_0258_35_1": {
+      "case_number": 47,
+      "result": "dedup/cases/C47/result.json",
+      "sha256": "4fdf57843c099643cfa816a13ca1fa7856ed6fe719e2a9566edd3d5a2f4937e6",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S04",
+        "S05"
+      ]
+    },
+    "kujiale_0259_55_0": {
+      "case_number": 48,
+      "result": "dedup/cases/C48/result.json",
+      "sha256": "1490990a1ba36b9aa31169b572fe17cf987451e3c1205426d50d2abf2542d8ff",
+      "retained_ids": [
+        "S04",
+        "S05"
+      ]
+    },
+    "kujiale_0285_2_1": {
+      "case_number": 49,
+      "result": "dedup/cases/C49/result.json",
+      "sha256": "0ff3126bbc7297b71f39584d5e05d49248e161eee973ee43a4080284b035647c",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S06",
+        "S07",
+        "S08",
+        "S10"
+      ]
+    },
+    "kujiale_0290_10_0": {
+      "case_number": 50,
+      "result": "dedup/cases/C50/result.json",
+      "sha256": "bc64407534ea0774fe652c17928bf4cfbde73bbc399c32a5fc15a506d8038cb8",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04"
+      ]
+    },
+    "kujiale_0290_1_1": {
+      "case_number": 51,
+      "result": "dedup/cases/C51/result.json",
+      "sha256": "e0aa8e17d30e05819012a96f0e79a51c44489c90f9176cb6228760f91c20cc8f",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S06",
+        "S07"
+      ],
+      "invalid_response_sha256": "c94bffc7268813b685d582fcf1101b414b00f4d91bf8f931da120f78cf8d8605"
+    },
+    "kujiale_0294_22_2": {
+      "case_number": 52,
+      "result": "dedup/cases/C52/result.json",
+      "sha256": "5da451646605cdfc0167cd35ae7a0d9ce97fc23bd2bc477b4f02a417fb3529f1",
+      "retained_ids": [
+        "S02",
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S10",
+        "S11"
+      ]
+    },
+    "kujiale_0294_43_3": {
+      "case_number": 53,
+      "result": "dedup/cases/C53/result.json",
+      "sha256": "07a7b5cc509dd8cc794e99b69fbbb7a2f2335e1ff9db6417295f2dd028a1441c",
+      "retained_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S07",
+        "S08",
+        "S11",
+        "S13",
+        "S14",
+        "S18",
+        "S19",
+        "S20",
+        "S21",
+        "S22",
+        "S23",
+        "S24",
+        "S25"
+      ]
+    }
+  },
+  "text_sha256": "a90406b6e6be305dba084046c58845b305a5efdd7aafe7f64690a63876c7eebc"
+}

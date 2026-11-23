@@ -1,0 +1,26 @@
+{
+  "at": "2026-11-20T07:13:18.577343+00:00",
+  "model_config_from": "outputs/deviation_progress/v004/run_20261120_01/qwen_gpu2_01/manifest.json",
+  "command": [
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/crossing_vllm27/bin/python",
+    "-Bu",
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/scripts/serve_qwen27b_standby.py",
+    "--config",
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/experiments/agent_route_choice/services/qwen27b_gpu3_20261120_01/model.json",
+    "--output",
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/model_services/qwen27b_gpu3_20261120_01",
+    "--gpu",
+    "3",
+    "--allow-shared-gpu",
+    "--process-only"
+  ],
+  "git_head": "7ce5f9fee30686bae304425bc84c36b3fbedc39c",
+  "source_sha256": {
+    "scripts/serve_qwen27b_standby.py": "0528ecaa1ebd656014341bca33e39e3dac120ecdefa09c0d4ede1954da82c2fd",
+    "scripts/run_human_route_choice.py": "25bbaee707647012070d6026b72a1652c9a9402a434601da62cf1b6378e4f226",
+    "scripts/run_crossing_local_batch.py": "3e928d605e3eebb103accb0c2976679093c8feb3c7b4397f908ca80e20562b11",
+    "scripts/test_crossing_single_gpu.py": "bfad9553e6752c51148f62d8fd6b1afac12748a9b49ab95e22efc79dc025d937",
+    "scripts/serve_crossing_vlm.py": "5b27bf55db7d6db431f6012c16bfc276cfda4701576d0545f278bb7e5ec2030d"
+  },
+  "config_sha256": "d83fa085fe35e6caabbbb05b72697ea759c18ed66c75c29986bfb256e316280d"
+}

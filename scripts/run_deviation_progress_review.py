@@ -7,6 +7,7 @@ from __future__ import annotations
 import argparse, base64, concurrent.futures, copy, getpass, hashlib, json, os, re, sys, time
 from datetime import datetime, timezone
 from pathlib import Path
+import re
 import httpx
 
 API = 'https://api.deepseek.com'
@@ -63,15 +64,56 @@ def validate(answer, request):
         if not isinstance(item,dict) or not bilingual(item.get('description')) or not isinstance(item.get('frames'),list) or not item['frames'] or any(type(f) is not int or f not in allowed for f in item['frames']): raise ValueError('Evidence references an unsupplied frame')
     return answer
 
-def call_model(request, site, key, prompt, settings, folder):
+PROGRESS_HEADINGS = {
+    'zh': ('已完成', '当前', '待执行', '未决'),
+    'en': ('Completed', 'Current', 'Pending', 'Unresolved'),
+}
+
+
+def validate_v004(answer, request):
+    # Some providers echo the requested JSON format alongside the answer fields.
+    # Keep the raw response intact and validate the nine task fields as usual.
+    if isinstance(answer, dict) and answer.get('type') == 'json_object':
+        answer = {key: value for key, value in answer.items() if key != 'type'}
+    validate(answer, request)
+    if answer['verdict'] != 'consistent':
+        return answer
+    counts = []
+    for language, headings in PROGRESS_HEADINGS.items():
+        value = answer['semantic_progress'][language].strip()
+        pattern = '(' + '|'.join(headings) + r')\s*[:：]'
+        matches = list(re.finditer(pattern, value))
+        labels = tuple(match[1] for match in matches)
+        if labels not in (headings[:3], headings) or matches[0].start() != 0:
+            raise ValueError(f'Missing or unordered {language} progress headings')
+        ends = [match.start() for match in matches[1:]] + [len(value)]
+        if any(not value[match.end():end].strip() for match, end in zip(matches, ends)):
+            raise ValueError(f'Empty {language} progress section')
+        counts.append(len(labels))
+    if counts[0] != counts[1]:
+        raise ValueError('Unresolved progress section differs between languages')
+    return answer
+
+
+def validate_v005(answer, request):
+    answer = validate_v004(answer, request)
+    if answer['verdict'] not in ('consistent', 'deviated'):
+        raise ValueError('v005 verdict must be consistent or deviated')
+    return answer
+
+
+def call_model(request, site, key, prompt, settings, folder, *, api_base=None, validate_answer=None,
+               request_timeout=300):
     content=[{'type':'text','text':json.dumps({k:v for k,v in request.items() if k not in ('images',)},ensure_ascii=False)}]
     refs=[]
     for im in request['images']:
         path=site / im['path']; data=path.read_bytes()
         if sha(data)!=im['image_id']: raise ValueError('Input image hash mismatch')
         refs.append({**im,'sha256':sha(data),'bytes':len(data)})
+        # Historical bundles use WebP. Native-front bundles retain the PNG bytes.
+        mime = 'image/png' if path.suffix.lower()=='.png' else 'image/webp'
         content.extend([{'type':'text','text':f"角色 {im['role']}；实际观测帧 F{im['frame']}。"},
-                        {'type':'image_url','image_url':{'url':'data:image/webp;base64,'+base64.b64encode(data).decode(),'detail':'high'}}])
+                        {'type':'image_url','image_url':{'url':f'data:{mime};base64,'+base64.b64encode(data).decode(),'detail':'high'}}])
     body={**settings,'messages':[{'role':'system','content':prompt},{'role':'user','content':content}]}
     started=now(); start=time.perf_counter()
     meta={**request,'images':refs,'settings':settings,'prompt_sha256':sha(prompt.encode()),'request_sha256':sha(json.dumps(body,ensure_ascii=False,sort_keys=True).encode()),'started_at':started,'worker_pid':os.getpid()}
@@ -79,8 +121,8 @@ def call_model(request, site, key, prompt, settings, folder):
     result={'started_at':started,'worker_pid':os.getpid(),'status':'error'}
     try:
         # One application-level request. No retry based on semantic content or invalid JSON.
-        with httpx.Client(timeout=httpx.Timeout(300,connect=30),follow_redirects=False) as client:
-            response=client.post(API+'/chat/completions',headers={'Authorization':'Bearer '+key},json=body)
+        with httpx.Client(timeout=httpx.Timeout(request_timeout,connect=30),follow_redirects=False) as client:
+            response=client.post((api_base or API)+'/chat/completions',headers={'Authorization':'Bearer '+key},json=body)
         result['http_status']=response.status_code
         response.raise_for_status()
         raw=response.json(); result['response']=raw
@@ -88,14 +130,14 @@ def call_model(request, site, key, prompt, settings, folder):
         if choice.get('finish_reason')!='stop': raise ValueError('Incomplete response: '+str(choice.get('finish_reason')))
         answer=json.loads(choice['message']['content'])
         result['parsed_original']=answer
-        result['answer']=validate(answer,request);result['status']='ok'
+        result['answer']=(validate_answer or validate)(answer,request);result['status']='ok'
     except Exception as error:
         result['error']=(type(error).__name__+': '+str(error)).replace(key,'[redacted]')[:1500]
     result['completed_at']=now();result['elapsed_seconds']=round(time.perf_counter()-start,3)
     save(folder.with_suffix('.response.json'),result)
     return meta,result
 
-def run_case(case, site_string, key, prompt, settings):
+def run_case(case, site_string, key, prompt, settings, *, model_call=None):
     site=Path(site_string); folder=site/'run'/'cases'/f"C{case['case_number']:02d}"
     folder.mkdir(parents=True,exist_ok=True)
     if (folder/'result.json').exists(): return json.loads((folder/'result.json').read_text(encoding='utf-8'))
@@ -118,7 +160,7 @@ def run_case(case, site_string, key, prompt, settings):
                  'coverage':'Endpoint observations plus up to five uniformly sampled intermediate observations. Frames are not necessarily consecutive. Review ends at B.',
                  'images':refs}
         event('request_started',node=node['id'],from_frame=anchor['index'],to_frame=node['index'],image_count=len(refs))
-        meta,response=call_model(request,site,key,prompt,settings,folder/node['id'])
+        meta,response=(model_call or call_model)(request,site,key,prompt,settings,folder/node['id'])
         item={'node_id':node['id'],'node_frame':node['index'],'available_at_frame':node['emittedAt'],'terminal_node':node.get('terminal_node',False),
               'mode':request['mode'],'previous_id':anchor['id'],'from_frame':anchor['index'],'to_frame':node['index'],
               'prior_progress':copy.deepcopy(progress),'images':refs,

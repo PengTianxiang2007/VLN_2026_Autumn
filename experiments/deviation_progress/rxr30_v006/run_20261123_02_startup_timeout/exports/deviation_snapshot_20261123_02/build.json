@@ -1,0 +1,30 @@
+{
+  "completed_cases": 30,
+  "effective_nodes": 517,
+  "terminal_nodes": 30,
+  "original_candidates": 725,
+  "model_calls": 656,
+  "translations": 357,
+  "frames": 4465,
+  "deviation_complete": 4,
+  "deviation_summary": {
+    "outcomes": {
+      "consistent": 42,
+      "format_error": 7,
+      "deviated": 2
+    },
+    "calls": 51,
+    "alarm_cases": 2
+  },
+  "html_sha256": "9fa33f4da63cab5bb34f967d8fa76217ff53e27a90991954de75c88f8600ffaa",
+  "archive_sha256": "52567187a3dc5493fb6211628f2a72540bca33c1e2c5b14c7cf297efbfe90a43",
+  "archive_bytes": 227842657,
+  "sources": {
+    "scripts/export_rxr_offline_snapshot.py": "3a091fa7f035eb367af59e0e24ed1b742c49c320623ac35b2f11d2c1bf08b8e4",
+    "core/rxr_offline_snapshot.js": "7d2b60caea829a2df03da1e32eca7b3dccaae1226f03e6bd3d166dfbd96dcc4d",
+    "core/rxr_offline_snapshot.css": "aea9b658cbe36d3b607fb391082f192bfa143060f5db210bc7e3fe349e290922",
+    "core/rxr_offline_snapshot_panel.html": "5e34e4bfe968469b6614f8323c2c87fb075355804759f06b639f175bd626278a"
+  },
+  "git_commit": "7ce5f9fee30686bae304425bc84c36b3fbedc39c",
+  "working_tree": "contains pre-existing uncommitted changes; exact exporter and UI copies preserved under source/"
+}

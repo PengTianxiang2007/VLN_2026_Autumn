@@ -1,0 +1,6 @@
+{
+  "C15": "outputs/inverse_rollback/vlm_action_v001/run_20261123_04_deepseek10/cases/C15/requests/outbound",
+  "C21": "outputs/inverse_rollback/vlm_action_v001/run_20261123_04_deepseek10/cases/C21/requests/outbound",
+  "C31": "outputs/inverse_rollback/vlm_action_v001/run_20261123_05_finish22/attempt_01/cases/C31/requests/outbound",
+  "C34": "outputs/inverse_rollback/vlm_action_v001/run_20261123_05_finish22/attempt_01/cases/C34/requests/outbound"
+}

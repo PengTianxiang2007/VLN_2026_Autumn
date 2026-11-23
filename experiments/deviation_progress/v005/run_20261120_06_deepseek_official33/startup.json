@@ -1,0 +1,17 @@
+{
+  "phase": "reviewing",
+  "pid": 4097663,
+  "workers_configured": 33,
+  "live_workers": 33,
+  "reused_complete_cases": 20,
+  "pending_cases": 33,
+  "new_requests": 35,
+  "new_request_processes": 33,
+  "new_response_http": {
+    "200": 6
+  },
+  "new_valid_responses": 6,
+  "completed": 20,
+  "failed_count": 0,
+  "error": null
+}

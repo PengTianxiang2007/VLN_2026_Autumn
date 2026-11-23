@@ -1,0 +1,15 @@
+{
+  "trajectories": 10,
+  "scored_frames": 901,
+  "raw": 93,
+  "retained": 49,
+  "compared": 67,
+  "c48": [
+    "S02",
+    "S04",
+    "S05"
+  ],
+  "reasons_and_evidence_checked_both_languages": true,
+  "sliders_and_dedup_toggle": true,
+  "errors": []
+}

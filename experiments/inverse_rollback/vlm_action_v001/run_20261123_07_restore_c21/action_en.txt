@@ -1,0 +1,3 @@
+Walk back to A to restore the robot to the physical position where the first outbound image was taken. The seven outbound images are in travel order from A to B. The recorded steps between each pair of images tell you how the robot moved. At B the robot already turned around by 180 degrees. The last image, CURRENT, shows its position and heading now.
+
+Using the outbound images, the recorded steps and CURRENT, choose the next four actions to take toward A. Actions are relative to the current heading: FORWARD is a nominal 0.25 m step, LEFT and RIGHT are nominal 15-degree turns. Return only a JSON object with one field, "actions", containing exactly four actions in execution order.

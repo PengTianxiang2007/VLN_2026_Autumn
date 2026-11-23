@@ -1,0 +1,27 @@
+{
+  "phase": "cpu_validated",
+  "completed_at": "2026-11-16T15:04:54.030458+00:00",
+  "protocol": "auto_route_oracle_v001",
+  "git_head": "7ce5f9fee30686bae304425bc84c36b3fbedc39c",
+  "worktree_dirty": true,
+  "tests_passed": 38,
+  "official_geometry_tasks": 825,
+  "geometry_probes": 39958,
+  "prepared_probe_tasks": 2,
+  "plan_only_arms": {
+    "baseline": 2,
+    "auto_route": 2
+  },
+  "native_launcher_unchanged": true,
+  "streamvln_environment_passed": true,
+  "frozen_source_files": 1322,
+  "simulation_started": false,
+  "navigation_completed": 0,
+  "formal_400_cohort_frozen": false,
+  "output": "outputs/oracle_crossing/auto_route_v001/code_validation_20261116_01",
+  "limitations": [
+    "CPU validation only; live physical correction untested.",
+    "Reference-route privileged Oracle; no human crossing annotation.",
+    "Formal unseen-task audit and visualization adaptation remain for future execution."
+  ]
+}

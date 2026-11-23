@@ -1,0 +1,16 @@
+{
+  "source_run": "outputs/deviation_progress/rxr30_v006/run_20261123_03_mistral30",
+  "authorized_experiment_endpoint": "https://api.mistral.ai/v1",
+  "translation_endpoint": "https://api.mistral.ai/v1/chat/completions",
+  "source_model": "deepseek-v4-1-flash-1017",
+  "pending_text_count": 2013,
+  "texts_not_found_in_same_provider_original_answers": [],
+  "all_texts_are_same_provider_outputs": true,
+  "user_authorization": [
+    "用户指定供应商mistral、模型deepseek-v4-1-flash-1017，并提供该供应商密钥，授权执行30条两轮实验。",
+    "用户随后明确要求：不用，去重也用它跑一遍。",
+    "用户当前要求：将Deepseek版本的进行可视化导出。",
+    "用户提供的AGENTS.md要求所有新导出HTML有完整中文/English显示，翻译仅用于展示，不改实验输入或模型原答。"
+  ],
+  "data_scope": "Only exact Chinese text already returned by this same authorized Mistral endpoint; no new images, source data, files, instructions, credentials, or identifiers beyond translation IDs are included as translation content."
+}

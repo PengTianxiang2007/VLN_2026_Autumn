@@ -1,0 +1,48 @@
+{
+  "phase": "complete_services_retained",
+  "completed_at": 1794900728.8730145,
+  "planned_total": 400,
+  "completed_total": 400,
+  "arms": {
+    "auto_branch": {
+      "episodes": 200,
+      "successes": 156,
+      "metrics": {
+        "SR": 0.78,
+        "SPL": 0.6030445599739958,
+        "NE": 1.862378498249759,
+        "OS": 0.825,
+        "TL": 9.314166037657015,
+        "FR": 0.125,
+        "StR": 0.015
+      },
+      "validation": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/auto_branch_v001/run_20261117_04_pair200/auto_branch/imported_native_run/validation.json"
+    },
+    "baseline": {
+      "episodes": 200,
+      "successes": 98,
+      "metrics": {
+        "SR": 0.49,
+        "SPL": 0.410212778767225,
+        "NE": 3.6746633184238173,
+        "OS": 0.625,
+        "TL": 7.808171109672171,
+        "FR": 0.175,
+        "StR": 0.05
+      },
+      "validation": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/oracle_crossing/auto_branch_v001/run_20261117_04_pair200/baseline/runs/vlnverse/streamvln/results/peng_fine_baseline200_20261117_04/validation.json"
+    }
+  },
+  "paired_wins": 69,
+  "paired_losses": 11,
+  "interventions": null,
+  "recorded_interventions": 192,
+  "oracle_results_verified": 198,
+  "oracle_results_missing": [
+    "kujiale_0285_5_3",
+    "kujiale_0294_60_2"
+  ],
+  "intervention_counts_complete": false,
+  "interpretation": "Same tasks and seeds, independent runs; no shared-prefix causal claim.",
+  "services_retained": true
+}

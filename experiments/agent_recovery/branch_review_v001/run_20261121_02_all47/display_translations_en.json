@@ -1,0 +1,693 @@
+{
+  "C42": {
+    "branches": [
+      [
+        "Directly ahead is a bedroom entrance. A bed, a window with yellow curtains, and a long cabinet against the wall are visible through the doorway.",
+        "The entrance is directly in front of the current node. The robot can enter straight ahead without first choosing another corridor."
+      ],
+      [
+        "To the right is an extending corridor, with a decorative picture at its far end and another room entrance visible along the left wall.",
+        "The corridor connects directly to the current node and is an independent passage that the robot can immediately choose to enter to the right."
+      ]
+    ],
+    "reason": "Starting at C_plus2, the robot has already passed through the front doorway into the bedroom. In C_plus5, C_plus8, and C_plus10 it continues farther into that room, with the bed, window, and long cabinet consistently in view; it has not entered the corridor on the right.",
+    "uncertainties": []
+  },
+  "C46": {
+    "branches": [
+      [
+        "Ahead is a dining area containing a dining table, a bench, and decorative wall art. The floor extends continuously farther into the room.",
+        "This is the direct passage in the robot's current facing direction, which it can enter without turning."
+      ],
+      [
+        "To the left is a long, narrow corridor with light-colored floor tiles and white walls on both sides. A doorway is visible at its far end.",
+        "The corridor entrance is to the robot's left and is another independent passage directly selectable at the current node."
+      ],
+      [
+        "To the right is a kitchen area with white cabinets, a refrigerator, and a doorway leading into the interior kitchen space.",
+        "The entrance to this area is to the robot's right and is another independent passage directly selectable at the current node."
+      ]
+    ],
+    "reason": "The subsequent images show the robot turning right and entering the kitchen area. In C_plus2 it is already facing the kitchen; from C_plus5 through C_plus10 it continues approaching and moving farther into the area with kitchen cabinets and the refrigerator, indicating that it actually selected the right-hand branch.",
+    "uncertainties": []
+  },
+  "C49": {
+    "branches": [
+      [
+        "The corridor directly ahead has several framed pictures on its right wall, with a doorway into another room visible at the far end.",
+        "This is the main passage the robot currently faces, and it can enter by walking directly forward."
+      ],
+      [
+        "The entrance on the left contains a visible wooden shelving unit with multiple tiers.",
+        "This entrance lies to the left of the current node and is another selectable passage independent of the corridor ahead."
+      ],
+      [
+        "The entrance on the right contains visible pink curtains, an armchair, and decorative wall art.",
+        "This entrance lies to the right of the current node and is another selectable passage independent of the corridor ahead."
+      ]
+    ],
+    "reason": "The subsequent images show the robot moving forward along the corridor directly ahead and gradually approaching the doorway at its far end. The pictures on the right wall pass through the view in sequence, consistent with entering branch B1.",
+    "uncertainties": []
+  },
+  "C50": {
+    "branches": [
+      [
+        "The white doorway directly ahead leads to a long, narrow kitchen corridor, with a window visible at its far end and a cabinet countertop on the right.",
+        "This doorway is directly in front of the robot and is the most direct passage out of the current node, accessible without a substantial turn."
+      ]
+    ],
+    "reason": "The subsequent images show the robot passing through the front doorway and moving forward along the narrow kitchen corridor. The stove and sink on the right gradually appear in view, entirely consistent with the trajectory after entering branch B1.",
+    "uncertainties": []
+  },
+  "C07": {
+    "branches": [
+      [
+        "Directly ahead is a long, narrow corridor with wooden flooring. Its left wall has a doorway into a toilet/bathroom, and there are white cabinets on the right.",
+        "This is the main passage the robot currently faces, and it can enter by walking directly forward."
+      ],
+      [
+        "A doorway on the left of the corridor leads to a bathroom. Gray terrazzo flooring, a glass shower enclosure, and a window are visible inside.",
+        "This entrance is on the left of the current corridor. The robot can turn directly into it without first traveling far, so it is a direct choice at the current node."
+      ]
+    ],
+    "reason": "From C_plus5 onward, the robot's view clearly turns toward the doorway on the left. C_plus8 shows the robot very close to that entrance, and C_plus10 shows it already through the doorway inside the bathroom, with bathroom fixtures filling the view. This indicates that the robot chose to enter the bathroom on the left.",
+    "uncertainties": []
+  },
+  "C05": {
+    "branches": [
+      [
+        "Ahead is a corridor with white floor tiles. A group of picture frames is on the left wall, while a potted plant, a bench, and an opening into the living room are on the right. A doorway is visible at the far end.",
+        "This corridor extends directly forward from node C and can be entered without first choosing another passage, so it is directly selectable now."
+      ],
+      [
+        "The living room area on the right contains a gray sofa, yellow cushions, a coffee table, a rug, and windows in the distance.",
+        "The living room entrance shares the same decision point as node C. It can be entered directly to the right, without first walking along the corridor and then making another choice."
+      ]
+    ],
+    "reason": "All four subsequent front views show the robot advancing along the corridor ahead: the picture-frame wall on the left and the potted plant and bench on the right approach in sequence, while the doorway at the corridor's far end grows larger. This indicates that the robot actually selected and entered corridor B1.",
+    "uncertainties": []
+  },
+  "C09": {
+    "branches": [
+      [
+        "The kitchen entrance ahead and to the left contains visible beige cabinets, a stainless-steel countertop, a sink, and dark floor tiles.",
+        "This entrance connects directly to the current node and can be entered without first choosing another passage."
+      ],
+      [
+        "The living/dining area ahead and to the right contains a TV stand, a sofa, a coffee table, and a pendant light.",
+        "This area connects directly to the current node and can be entered without first choosing another passage."
+      ],
+      [
+        "The white doorway on the left has a closed door leaf and a clearly visible door frame.",
+        "This doorway is to the left of the current node and represents an independent entrance choice."
+      ]
+    ],
+    "reason": "The subsequent images show the robot gradually approaching and finally facing the white door on the left, indicating that it chose this branch.",
+    "uncertainties": []
+  },
+  "C10": {
+    "branches": [
+      [
+        "Ahead is a living room area with a TV stand, a sofa, a coffee table, and floor-to-ceiling windows. The floor is light-colored marble.",
+        "This is an open space extending directly forward from the current dining-table position and can be entered without first choosing another path."
+      ],
+      [
+        "To the left is a kitchen area with beige cabinets, dark floor tiles, and a worktop, connected to the dining room through a wide doorway.",
+        "This is a direct entrance to the left of the current node. The robot can turn left and enter the kitchen space directly."
+      ],
+      [
+        "A doorway in the wall to the left of the TV stand leads to an interior corridor or room; its dark door frame is visible.",
+        "This entrance is ahead and to the left within the living room area. The robot can walk directly toward it from the current dining-table position without first moving deep into other parts of the living room."
+      ]
+    ],
+    "reason": "C_plus5 shows the robot turned left and facing the kitchen entrance. C_plus8 shows it already through the doorway inside the kitchen, with cabinets and floor tiles visible. C_plus10 shows it inside the kitchen, facing a white door. This sequence indicates that the robot chose the kitchen branch on the left.",
+    "uncertainties": []
+  },
+  "C20": {
+    "branches": [
+      [
+        "Directly ahead is a wood-floored corridor with a dark door frame on the left, a white bathroom entrance on the right, and a white door visible at its far end.",
+        "This is the most direct and widest passage at node C and can be entered without turning."
+      ],
+      [
+        "To the left is a room entrance. Inside are a wall with hexagonal decorations, a small white table, a chair, and a visible corner of a bed.",
+        "This entrance lies to the left of node C and leads to a separate room space, forming a different choice from the corridor directly ahead."
+      ],
+      [
+        "To the right is a narrow passage with light-colored floor tiles and a blue door at its far end.",
+        "This passage is to the right of node C and is a separate long, narrow space, distinct from the corridor ahead and the room on the left."
+      ]
+    ],
+    "reason": "The subsequent images from C_plus2 through C_plus10 show the robot moving forward along the corridor directly ahead. The bathroom and door frames along the corridor gradually approach and pass, indicating that the robot chose to enter the corridor ahead.",
+    "uncertainties": []
+  },
+  "C21": {
+    "branches": [
+      [
+        "Ahead is a wood-floored corridor, with white cabinets and a dining table on the left and a wall of light-colored curtains on the right. Another doorway is visible at its far end.",
+        "This corridor extends directly forward from node C and can be entered without first choosing another passage, so it is directly selectable now."
+      ],
+      [
+        "To the right is a living room space with a ring-shaped pendant light, a curved sofa, a black oval coffee table, and a red chair. The floor is light-colored wood.",
+        "This living room space opens directly to the right of node C. The robot can turn in place and enter directly, so it is a choice directly available now."
+      ]
+    ],
+    "reason": "C_plus2 already shows the robot facing the living room, directly toward the sofa and coffee table. In C_plus5, C_plus8, and C_plus10, the coffee table, sofa, red chair, and black cabinet on the right continuously approach and fill the view. This indicates that the robot entered and continued forward into the living room on the right, rather than along the corridor directly ahead.",
+    "uncertainties": []
+  },
+  "C01": {
+    "branches": [
+      [
+        "An opening with a dark wooden frame leads straight into a living room with herringbone flooring, a pendant light and a white coffee table.",
+        "This doorway directly ahead of C is a separate passage the robot can choose to enter now."
+      ],
+      [
+        "To the right is a bedroom with a white wardrobe, a nightstand and palm-leaf wallpaper.",
+        "This area is on the right of C. It is a second independent choice available now, distinct from the living-room doorway ahead."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "The later observations show the robot turning into the bedroom on the right instead of entering the living room ahead. C_plus2 shows it crossing the right entrance. From C_plus5 through C_plus10 it is fully inside the bedroom and gradually approaches the bed and wardrobe, matching B2 exactly."
+  },
+  "C02": {
+    "branches": [
+      [
+        "The open living area ahead contains a white armchair, a sofa, a coffee table and a photo gallery on the wall.",
+        "This passage runs directly along the robot's heading and can be entered without turning."
+      ],
+      [
+        "A doorway ahead on the left leads to a room with a white display cabinet and a wooden chair, possibly a dining room or study.",
+        "This entrance towards the front-left offers another direct path at the same decision point."
+      ],
+      [
+        "A doorway to the left (+70°) leads to a bathroom with a shower enclosure and a washbasin.",
+        "This entrance is on the left of the current view and offers another path directly available at this same decision point."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "The subsequent views show the robot entering the living room ahead. In C_plus2 it has crossed the doorframe. C_plus5, C_plus8 and C_plus10 all show movement inside the living room, with the view consistently centered on its furniture (sofa and coffee table), indicating the branch directly ahead."
+  },
+  "C03": {
+    "branches": [
+      [
+        "Directly ahead is a narrow corridor ending at a closed wooden door. A white wall or cabinet is on the right.",
+        "This is the main passage the robot currently faces and can enter directly ahead."
+      ],
+      [
+        "On the left is a dining area with a table, chairs and a doorway leading to another space.",
+        "This is open space to the left of the node. The robot can turn left to enter."
+      ],
+      [
+        "On the right is a living area with a sofa, coffee table, lamp and window.",
+        "This is open space to the right of the node. The robot can turn right to enter."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "The later images show the robot moving along the corridor ahead and gradually approaching the wooden door at the end. The view stays within the corridor throughout, indicating that the robot chose the branch leading forward into it."
+  },
+  "C06": {
+    "branches": [
+      [
+        "Ahead is a long, narrow white corridor with a doorway on the right and furniture visible at the far end.",
+        "This passage is directly ahead and accessible without turning."
+      ],
+      [
+        "On the right is an entrance with a black doorframe leading to a wood-floored room with a bed visible inside.",
+        "This is a direct entrance on the right that branches off at the same node as the corridor ahead."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "The later images show the robot leaving the forward corridor, turning and approaching the black-framed room entrance on the right. C_plus8 and C_plus10 clearly show the shower enclosure and wooden floor inside that room, proving that the robot actually entered the right branch."
+  },
+  "C08": {
+    "branches": [
+      [
+        "Ahead is a long, narrow indoor passage with a black glass-fronted wardrobe close on the right, a white wall on the left, wood flooring and curtains visible at the far end.",
+        "It is directly ahead of the robot and is the most direct passage at C, accessible without turning."
+      ],
+      [
+        "A doorway at +70° on the left leads into another space. Some furniture (possibly a bed) and wooden flooring can be seen through it.",
+        "The doorway is on the left of C and offers another direct passage at the same decision point."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "C_plus2 shows travel along the passage ahead (B1) with the black wardrobe on the right. C_plus5 and C_plus8 show travel close alongside the wardrobe's gray side surface, consistent with proceeding farther along B1. C_plus10 shows arrival at a bathroom area at the end, consistent with the direction in which B1 continues."
+  },
+  "C11": {
+    "branches": [
+      [
+        "The white-framed opening straight ahead leads to an outer room with gray floor tiles, a sofa and a chair.",
+        "The opening directly ahead provides a direct way out of the current bathroom area into the outer space."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "C_plus2 shows the robot crossing the doorframe into the outer room. C_plus5 through C_plus10 show it moving in that room and looking back into the bathroom, confirming that it chose the exit straight ahead."
+  },
+  "C12": {
+    "branches": [
+      [
+        "In the white doorway ahead, a dark open wardrobe, a clothes rail and light wooden flooring are visible.",
+        "This doorway connects directly to the current standing position and can be entered without first selecting another passage."
+      ],
+      [
+        "A doorway to the left reveals a window, curtains, wooden flooring and the edge of a bed.",
+        "The entrance is directly visible to the left of C and offers another passage available at this same decision point."
+      ]
+    ],
+    "uncertainties": [
+      "C_right70 shows almost entirely a white wall, so it is unclear whether other branches are available on the right."
+    ],
+    "reason": "C_plus2 shows that the robot crossed the front doorway and approached the wardrobe. C_plus5 and C_plus8 show it proceeding farther into the wardrobe space, indicating it actually chose and entered the forward branch."
+  },
+  "C13": {
+    "branches": [
+      [
+        "Directly ahead are a white wall and a corner with light-colored floor tiles, forming the main route out of the wardrobe area.",
+        "This is the passage directly ahead at the current node and can be entered without choosing another branch first."
+      ],
+      [
+        "To the right is a black-framed glass door leading into a separate space with a window, possibly a bathroom or balcony.",
+        "This entrance on the right of the node provides a direct choice independent of the forward passage."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "The subsequent C_plus8 and C_plus10 observations show the robot already through the glass door on the right and inside the separate space with a window, indicating that it actually chose the right-hand branch."
+  },
+  "C14": {
+    "branches": [
+      [
+        "Ahead is a spacious seating area with floor-to-ceiling windows, a marble floor, a blue lounge chair, a round side table and a white armchair.",
+        "This is the main activity area the robot faces and it can move straight ahead into it."
+      ],
+      [
+        "The living room to the right contains a gray sofa, a round white coffee table and an open passage toward the kitchen/dining room.",
+        "This area connects directly to the node and can be entered without passing another junction, so it is a right-hand choice available now."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "The later images show movement towards the window straight ahead. In C_plus2 the robot is close to the blue chair, and in C_plus5 it moves closer to the window. In C_plus8 and C_plus10 it is close to the left wall (the TV wall), facing the window, indicating the route through the forward seating area."
+  },
+  "C15": {
+    "branches": [
+      [
+        "Ahead is an open dining area with a round dining table, chairs and a window in the distance.",
+        "The open space extends straight ahead from this node and can be entered without turning."
+      ],
+      [
+        "To the right is a long, narrow corridor with a cabinet and wine rack on the left, a dark wall with a painting on the right and a dark door visible at the far end.",
+        "The corridor entrance on the right of the node is another direct choice independent of the dining area ahead."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "The subsequent images show the robot turning into the corridor on the right. C_plus2 already faces the corridor. C_plus5, C_plus8 and C_plus10 show travel farther along it, passing the wine rack and painting in sequence, consistent with entering B2."
+  },
+  "C16": {
+    "branches": [
+      [
+        "An opening ahead and to the right reveals a shelving unit, plants and a white chair inside.",
+        "This entrance on the right of the current node is one directly available route away from this position."
+      ],
+      [
+        "A passage or doorway on the left has dark skirting at floor level and leads to another space.",
+        "This entrance on the left of the current node is another direct route out of this position."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "The later images show the robot entering a room with a window and a bed, with its view gradually turning into the room. This is consistent with the path after entering the left passage (B2), rather than entering the room with shelves on the right (B1)."
+  },
+  "C17": {
+    "branches": [
+      [
+        "The opening ahead leads to a living room with wooden flooring, a coffee table, a pendant light and a sofa farther away.",
+        "This is a direct forward passage at C that can be entered without first taking another path."
+      ],
+      [
+        "On the left is a corridor with a bench and cushions, a white tiled floor and a black door visible at its far end.",
+        "This direct passage on the left at C is a current choice alongside the living-room entrance ahead."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "After leaving C, the robot's view and position gradually turn toward and enter the left corridor with the bench and black door. C_plus2 shows the turn toward it. C_plus5 through C_plus10 show the robot farther inside, facing the black door and bench, indicating that it actually chose B2."
+  },
+  "C19": {
+    "branches": [
+      [
+        "Ahead is a wood-floored corridor with a black-framed fireplace/TV wall on the left, a doorway on the right and a white door at the far end.",
+        "This is the main passage the robot currently faces and can enter directly ahead."
+      ],
+      [
+        "On the right is a bathroom entrance with a white washbasin, round mirror and shower area visible.",
+        "This direct entrance on the right of the node can be entered without passing any other junction first."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "The later images show the robot moving straight along the corridor and gradually approaching the white door at the far end. The fireplace wall on the left stays in view throughout, indicating the branch leading forward into the corridor."
+  },
+  "C22": {
+    "branches": [
+      [
+        "A white doorway ahead leads to a bedroom with light wooden flooring, a window and a bed visible.",
+        "This doorway directly ahead of the node is accessible from the same decision point."
+      ],
+      [
+        "At the right entrance a tall dark cabinet stands beside the doorframe. Inside are a black-and-white checkerboard floor, a small window and, farther to the right, a bedroom area with patterned wallpaper and a bed.",
+        "This entrance is directly visible on the right of the node. It is another passage available at the same location, rather than a fork encountered after proceeding ahead."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "Successive front views show the robot crossing the white doorway ahead and entering the bedroom with light wooden flooring. The bed, window and hanging light grow closer and their positions change continuously, consistent with leaving C along the forward branch B1."
+  },
+  "C24": {
+    "branches": [
+      [
+        "A wood-floored passage runs through the middle of the living room ahead, between a sofa and a TV stand. It continues farther into the room or toward the curtains.",
+        "A continuous floor route is directly visible ahead from the node and can be entered without choosing another branch first."
+      ],
+      [
+        "A white doorway to the right of the TV stand has a bed visible through it and leads into a bedroom.",
+        "This doorway is ahead on the right at the node. It is a separate direct entrance alongside the forward living-room passage."
+      ],
+      [
+        "A closed wooden door on the right wall, next to a low wooden cabinet.",
+        "This door is to the right of the node and is a separate entrance visible at the same position. Although closed, it exists as a physical entrance."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "The subsequent images show the robot gradually approaching and facing the closed wooden door on the right (B3). From C_plus2 to C_plus10 it takes up an increasing portion of the view and the robot visibly moves toward it, indicating that it actually chose the branch toward that door."
+  },
+  "C25": {
+    "branches": [
+      [
+        "Ahead is a wood-floored corridor with a closed wooden door at the far end and a doorway on its left side.",
+        "The corridor extends directly forward from C and can be entered without first choosing another path."
+      ],
+      [
+        "On the right is a room entrance with a desk, computer, bookcase and window visible inside.",
+        "The entrance on the right of C is another directly selectable passage independent of the corridor."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "The subsequent images show the robot turning from the corridor and entering the room on the right. The desk, computer and bookcase come into view, matching the features of B2 exactly."
+  },
+  "C26": {
+    "branches": [
+      [
+        "A white doorframe ahead on the left leads to a corridor or room with wooden flooring, black curtains and a window.",
+        "This entrance is front-left of the current node and the robot can choose to enter it directly."
+      ],
+      [
+        "The entrance ahead on the right leads into a bathroom with white floor tiles, a toilet and a shower enclosure.",
+        "This entrance is front-right of the current node and opens into a separate space the robot can enter directly."
+      ],
+      [
+        "A dark wooden doorframe on the right leads to a wood-floored bedroom with a bed and a mosquito net.",
+        "This entrance on the right of the current node opens into a separate space the robot can enter directly."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "C_plus2 and C_plus5 show the robot in the bathroom with the white tiled floor, facing the toilet and shower enclosure. This exactly matches B2 and indicates that the robot actually entered that branch."
+  },
+  "C27": {
+    "branches": [
+      [
+        "A white doorway ahead on the left reveals a washbasin, mirror and towels and leads to a bathroom.",
+        "This entrance is front-left of C, beside the study entrance on the right. It can be chosen directly at this decision point."
+      ],
+      [
+        "A white doorway ahead on the right reveals wood flooring, a desk, a chair, a window and a wooden bookcase on the right. It leads to a study/work area.",
+        "This entrance is front-right of C, beside the bathroom entrance on the left. It can be chosen directly at this decision point."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "Later observations show the robot crossing the right doorway into the room containing a desk and bookcase. C_plus2 already places the robot inside the doorway. C_plus5 through C_plus10 show it gradually approaching the desk and window in the room, exactly matching B2's visual features."
+  },
+  "C28": {
+    "branches": [
+      [
+        "A white-framed corridor entrance straight ahead reveals wooden flooring, a painting on the left wall and a chair in the distance.",
+        "This entrance is directly ahead of the current node and is a passage the robot can choose to enter now."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "The later images show the robot leaving C, crossing the white doorframe ahead into the corridor and moving forward along it. The painting on the left becomes clearer, indicating that it actually chose B1."
+  },
+  "C29": {
+    "branches": [
+      [
+        "A white doorframe ahead and to the right leads into a wood-floored corridor, with another room and black curtains visible at its far end.",
+        "The doorframe lies in the forward view at C and is accessible directly from the robot's current position."
+      ],
+      [
+        "Immediately to the right is a bathroom entrance with a glass shower partition, a washbasin and dark wooden cabinetry.",
+        "The entrance lies in the right-hand view at C beside the corridor entrance, offering another direct choice at this same decision point."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "In C_plus2 the robot crosses the doorframe into the corridor; C_plus5 shows it proceeding along the corridor. C_plus8 and C_plus10 show it already inside the bedroom at the far end, with a bed and a chair visible. This continuous trajectory confirms that it selected corridor branch B1."
+  },
+  "C30": {
+    "branches": [
+      [
+        "Ahead is a long, narrow passage between wood-paneled bookshelves on the left and a long table on the right. The floor is gray tile, and curtains and floor-to-ceiling windows are visible at the far end.",
+        "In C_front the passage is directly ahead, with a continuous floor that can be entered without taking another path first."
+      ],
+      [
+        "On the right is an open living area with a gray sofa, coffee table, TV stand and floor-to-ceiling windows leading to a balcony.",
+        "C_right70 shows the area connecting directly to the current position. It is another passage available at this same decision point."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "Later images show continuous forward movement between the shelves and the long table. The shelves remain to the left and the table to the right as the robot approaches the window at the far end, consistent with entering passage B1."
+  },
+  "C31": {
+    "branches": [
+      [
+        "A doorway ahead leads to a wood-floored room containing a TV, long table, chairs, a bed and a window.",
+        "The doorway is directly ahead of the robot and is a passage directly accessible from this position."
+      ],
+      [
+        "On the left is an open tiled area with a sofa and a distant door visible.",
+        "This area connects directly to the robot's current position and can be entered from here."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "The later images show the robot crossing the front doorway and moving progressively farther into the wood-floored room. Details such as the TV, table and bed become visible, matching the description of B1 exactly."
+  },
+  "C32": {
+    "branches": [
+      [
+        "A doorway ahead leads into a wood-floored room with a TV, a long table, chairs and a bed.",
+        "The doorway directly ahead is the most direct forward route out of the current position."
+      ],
+      [
+        "To the left is an open space with gray floor tiles, a sofa and a door visible in the distance.",
+        "The space directly connects to the current position and the robot can turn left to enter."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "The subsequent images show the robot crossing the doorway ahead, entering the wood-floored room and gradually approaching the TV and bed inside."
+  },
+  "C33": {
+    "branches": [
+      [
+        "The right doorway visible in C_right70 opens onto a light-tiled corridor containing a gray armchair, a wall mirror and a shelving unit farther away.",
+        "The doorway is directly visible in the view to the right at C and is a passage that can be entered directly from the robot's current position."
+      ]
+    ],
+    "uncertainties": [
+      "C_left70 and C_front are blurry, so it is unclear whether other branches exist.",
+      "C_plus2, C_plus5 and C_plus8 are blurry and do not directly confirm the intervening path. The endpoint in C_plus10 was used to infer that B1 was selected."
+    ],
+    "reason": "C_right70 shows the corridor entrance on the right. C_plus10 shows that the robot ultimately entered a bathroom space whose features match those visible at the corridor's far end in C_right70 (such as the basin and mirror), indicating that the robot chose the corridor on the right and eventually reached the bathroom."
+  },
+  "C34": {
+    "branches": [
+      [
+        "Ahead is a wood-floored corridor. Two botanical pictures hang on its right wall; white cabinets and a gray stone wall are on the left. Curtains, a low stool and a side cabinet are visible at the far end.",
+        "In C_front the corridor is directly ahead of the robot and accessible at this same decision point without choosing another branch first."
+      ],
+      [
+        "A doorway on the right at roughly -70° opens into an adjoining space with light-colored tiles. A white door and a small framed picture on the wall can be seen in the distance.",
+        "The doorway in C_right70 is directly visible from this node, a side entrance one can turn into at the same position rather than a fork reached farther along the corridor."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "Consecutive front views show the robot moving along the wood-floored corridor ahead. The botanical pictures on the right approach and pass, the cabinets and gray stone wall persist on the left, and the curtains, low stool and side cabinet at the far end grow larger. This indicates entry into corridor B1 rather than the tiled doorway on the right."
+  },
+  "C36": {
+    "branches": [
+      [
+        "Ahead is a relatively enclosed, wood-floored area with wood-paneled walls, a corner bookcase and a wardrobe.",
+        "This is the direction the robot is facing and it can move straight ahead into this area."
+      ],
+      [
+        "A doorway on the right leads to a bathroom with white tiles, a basin, a toilet and a window.",
+        "This entrance is on the right of the present view and is a direct choice independent of the area ahead."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "Later images show the robot crossing the right doorway into the bathroom. C_plus2 places it near the entrance; C_plus5 through C_plus10 show it fully inside the bathroom and record details of the basin, toilet and window, matching the description of B2 exactly."
+  },
+  "C37": {
+    "branches": [
+      [
+        "A white doorway ahead and to the right reveals wooden flooring, a white bench and curtains farther away.",
+        "This doorway is in front of the current node and is a separate room entrance the robot can choose directly."
+      ],
+      [
+        "The corridor to the right has light-colored tiles, a four-panel ink painting on its right wall and a plant visible at the far end.",
+        "The corridor and the doorway are in different directions at the same node. It is another directly accessible passage."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "The later images show the robot crossing the doorway beside the decorative painting of green lotuses, entering the wood-floored room and continuing forward inside it, exactly matching the description of B1."
+  },
+  "C38": {
+    "branches": [
+      [
+        "Ahead to the right is an open doorway into an adjacent wood-floored space. A green floral painting hangs on the wall to the left of the opening.",
+        "The doorway ahead and to the right provides a continuous route from the present bathroom area to an outer corridor or room and is an exit available directly now."
+      ],
+      [
+        "The sink area along the right wall contains a white basin, a faucet and a mirror above it and forms a fixture area inside the bathroom.",
+        "To the right of the node, this is a functional part of the bathroom that the robot can turn toward and approach, making it a direct choice within the current node."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "C_plus2 shows the robot facing the doorway (B1), but at C_plus5 the view turns toward the wall on the right. C_plus8 and C_plus10 clearly show the robot facing the sink and mirror, indicating that it gave up entering the doorway and instead chose and approached the sink area on the right (B2)."
+  },
+  "C39": {
+    "branches": [
+      [
+        "An opening ahead and to the right leads to a light-tiled corridor with a black-framed picture on its right wall. A wood-floored area is visible in the distance.",
+        "The opening is within the forward field of view at C and is a direct way out of the bathroom into the outer corridor."
+      ],
+      [
+        "The shower area to the left has a frosted glass window, a shower head and metal supports.",
+        "This area is to the left of C and is a separate functional space within the bathroom that can be entered directly by turning."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "The later observations show the robot turning left instead of entering corridor B1. In C_plus2 and C_plus5 it approaches the towel rail and shower area to the left. C_plus8 and C_plus10 clearly show details inside the shower (shower head and window), indicating that it actually selected and entered the left shower branch."
+  },
+  "C43": {
+    "branches": [
+      [
+        "Ahead is the interior of a bedroom with a bed, a nightstand, a lamp and a window on the right.",
+        "This is the main passage directly into the bedroom from the node and is a route directly available now."
+      ],
+      [
+        "To the left is a narrow passage or doorway leading into another space, with part of its walls and floor visible.",
+        "This separate entrance on the left can be chosen directly without first traversing another area."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "Instead of entering the bedroom ahead (B1), the robot turns left. C_plus2 and C_plus5 show it passing through a narrow passage matching the left entrance in C_left70. C_plus8 and C_plus10 show that it has passed through and reached a new space (possibly a corridor or another room), confirming that it chose the left branch B2."
+  },
+  "C44": {
+    "branches": [
+      [
+        "Ahead is a bedroom entrance with a bed, a window and a TV stand visible.",
+        "This is the main passage directly into the bedroom from the node."
+      ],
+      [
+        "On the left is a narrow corridor or passage with a door at its far end.",
+        "This is another selectable direction alongside the bedroom entrance, accessible directly to the left."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "The subsequent images show the robot inside the bedroom, with the view filled by the bed, window and TV stand. This exactly matches the features of the entrance straight ahead (B1)."
+  },
+  "C45": {
+    "branches": [
+      [
+        "Ahead is an open stretch of floor leading toward the living room, with a wooden slatted partition on the left and a wall with a decorative bird picture on the right.",
+        "This is the only continuous route directly forward into the living room from the current node."
+      ],
+      [
+        "A wooden-framed entrance to the right of the bird picture leads into a narrow space with a cabinet and cardboard boxes inside.",
+        "The entrance is ahead and to the right in the current view and is a direct choice separate from the living-room passage."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "The later images show the robot passing through the wooden slatted partition and entering the living room. It moves around in that area and eventually approaches the side of the partition."
+  },
+  "C47": {
+    "branches": [
+      [
+        "An opening ahead on the right leads to a room with a desk, a chair and a window.",
+        "This entrance appears in both C_front and C_right70 and is a passage the robot can enter directly from its present position."
+      ],
+      [
+        "The opening on the right leads to a bathroom with a mirror and a basin.",
+        "This entrance is clearly visible in C_right70 and is another passage directly accessible from the robot's present position."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "The subsequent images show the robot entering the room with the desk and window, exactly matching the description of B1."
+  },
+  "C48": {
+    "branches": [
+      [
+        "Ahead is an open passage through the middle of the living room. A sofa and a TV stand are on either side, and the floor extends continuously to the curtained wall.",
+        "The robot can choose the main living-room passage straight ahead at this node without passing another fork first."
+      ],
+      [
+        "There is a clock and a large picture on the left wall. The floor beside it forms a passage along the wall and a doorway is visible in the distance.",
+        "The robot can turn directly left into the passage along the wall, which separates from the central living-room passage at this same decision point."
+      ],
+      [
+        "On the right are a partition, a plant, a dining table and chairs. A doorway is visible behind the partition.",
+        "The robot can choose to enter the passage behind the partition directly to the right. It separates from the central living-room passage at the same decision point."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "The subsequent images show continuous movement through the middle of the living room. The sofa and TV stand area remain directly ahead throughout, and the robot enters neither the passage along the left wall nor the one behind the partition on the right."
+  },
+  "C51": {
+    "branches": [
+      [
+        "Ahead is a long, narrow kitchen corridor with white cabinets and a stove on the right, a gray wall on the left, and floor-to-ceiling windows visible at its far end.",
+        "This corridor is a direct passage ahead of C that the robot can enter without first choosing another path."
+      ],
+      [
+        "On the right is a spacious living room with a TV wall, a sofa, an armchair and a doorway leading to a bedroom.",
+        "This area on the right of C is the entrance into a separate open space and offers a direction distinct from the corridor ahead."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "The subsequent images show the robot moving along the kitchen corridor ahead. C_plus2 and C_plus5 show it inside the corridor, C_plus8 close to the far window, and C_plus10 at the end of the corridor, turning left. This sequence indicates that it chose to enter the corridor straight ahead."
+  },
+  "C52": {
+    "branches": [
+      [
+        "A white wall is directly ahead and a doorway or passage toward a bathroom is visible at its right edge.",
+        "This is the direction the robot faces. Although the wall blocks most of the view, the opening on the right offers the possibility of direct passage."
+      ],
+      [
+        "The entrance to the bathroom is on the right, with a basin, shower fittings and floor tiles visible inside.",
+        "This entrance is to the robot's right and is a direct choice independent of the white wall ahead."
+      ],
+      [
+        "The bedroom area on the left contains a bed, chair, floor-to-ceiling window and low white cabinet.",
+        "This area is to the robot's left and is a direct choice independent of the forward and right-hand passages."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "The subsequent images show the robot turning into the bedroom on the left. C_plus2 shows it facing the low cabinet and bed in the bedroom, C_plus5 and C_plus8 further confirm motion within that area, and C_plus10 shows it approaching a bedroom wall. These actions indicate that it chose the bedroom branch to the left."
+  },
+  "C53": {
+    "branches": [
+      [
+        "The opening ahead leads to a bedroom with light wooden flooring, the foot of a bed, a nightstand and two decorative pictures on the wall.",
+        "This bedroom can be entered directly ahead from C and forms a direct passage at the current decision point."
+      ],
+      [
+        "To the left is a bathroom with gray patterned floor tiles, a toilet, a basin, a shower head and a window.",
+        "The bathroom can be entered directly to the left from C and forms a direct passage at the current decision point."
+      ]
+    ],
+    "uncertainties": [],
+    "reason": "The subsequent images show the robot going through the front opening into the bedroom. C_plus2 shows it crossing the doorframe; C_plus5 shows it inside, facing the bed. C_plus8 and C_plus10 show further movement in the bedroom, with features including floor-to-ceiling windows and a chair appearing in view."
+  }
+}

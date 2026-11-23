@@ -1,0 +1,43 @@
+{
+  "phase": "published",
+  "cases_frozen": 30,
+  "effective_nodes": 295,
+  "terminal_nodes": 30,
+  "dedup_reviews": 656,
+  "deviation_reviews": 137,
+  "alarm_cases": 23,
+  "invalid_answers": 7,
+  "original_raw_files_archived": true,
+  "ui_source_ready": true,
+  "javascript_syntax_passed": true,
+  "translation_requests_prepared": 45,
+  "translation_texts": 2013,
+  "publication_started": true,
+  "git_head": "7ce5f9fee30686bae304425bc84c36b3fbedc39c",
+  "sources": {
+    "scripts/export_rxr_deepseek_snapshot.py": "779ae638a8755e4d92dfcb05d8fb767e8cc79ec0fdd92555f419e9b9cb86e8f7",
+    "scripts/export_rxr_offline_snapshot.py": "9969e6453cc1582146346ade13572861bb8bb1b3db7b06247cfec09c04ec0e70",
+    "scripts/check_rxr_deepseek_snapshot.cjs": "520a8b7737dbf98125496905d2665b94c88adc3545f036b4cf62fd279f86c7f8",
+    "core/rxr_offline_snapshot.js": "754720b9a3309ec42e1dd1f914daefc0c50be1f8c9ae3b5582ca151e142897fa",
+    "core/rxr_offline_snapshot.css": "aea9b658cbe36d3b607fb391082f192bfa143060f5db210bc7e3fe349e290922",
+    "core/rxr_offline_snapshot_panel.html": "e024660098e4a76e9b5589376c9c13e044e577f1b9893ba45ac3f5e2613b2969"
+  },
+  "translation_authorized": true,
+  "translation_batches_completed": 202,
+  "translation_texts_completed": 2013,
+  "source_sha256": {
+    "scripts/export_rxr_offline_snapshot.py": "9969e6453cc1582146346ade13572861bb8bb1b3db7b06247cfec09c04ec0e70",
+    "core/rxr_offline_snapshot.js": "754720b9a3309ec42e1dd1f914daefc0c50be1f8c9ae3b5582ca151e142897fa",
+    "core/rxr_offline_snapshot.css": "aea9b658cbe36d3b607fb391082f192bfa143060f5db210bc7e3fe349e290922",
+    "core/rxr_offline_snapshot_panel.html": "e024660098e4a76e9b5589376c9c13e044e577f1b9893ba45ac3f5e2613b2969",
+    "scripts/export_rxr_deepseek_snapshot.py": "c928a5ee26d3dd49015fab73de52d18192fee57f460ac04f9dd6f254c0af7d3d",
+    "scripts/check_rxr_deepseek_snapshot.cjs": "520a8b7737dbf98125496905d2665b94c88adc3545f036b4cf62fd279f86c7f8"
+  },
+  "translation_batches_submitted": 202,
+  "translation_http_responses_archived": 202,
+  "browser_check_passed": true,
+  "publication_completed": true,
+  "url": "http://134.175.18.101/vln/rxr30_deepseek_full_web_20261123_01/index.html",
+  "remote_sha256_verified": true,
+  "published_at": "2026-11-23T18:16:03.841939+00:00"
+}

@@ -1,0 +1,10 @@
+{
+  "before_template_sha256": "d184b6ae9552832bd181fc6180efaa1e46b659bd6851167cd0a35086125c8799",
+  "after_template_sha256": "5b627272b797889b07487783730ec7561c769583b288033a190a9a73fd039dcd",
+  "css_and_layout_preserved": true,
+  "changes": [
+    "Skip T when no actual checkpoint exists",
+    "Display actual restored policy action index in after caption"
+  ],
+  "checked_at": "2026-11-16T12:51:55.378767+00:00"
+}

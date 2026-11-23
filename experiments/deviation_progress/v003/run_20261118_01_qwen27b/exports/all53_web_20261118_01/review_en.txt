@@ -1,0 +1,933 @@
+1 A looks from the corridor through a doorway into the living room. B shows the inside of a bedroom with a bed and wardrobe. The locations and branch information are entirely different.
+2 Doorway to the living room.
+3 Bedroom interior with bed and bedside table.
+4 A is in the corridor beside a clearly visible white wardrobe front on the right. B has crossed the doorframe into the room. The viewpoint and position have changed substantially, so this is no longer the same branching point.
+5 Wood-framed entrance to an inner lounge.
+6 Adjacent white double-door wardrobe or storage cabinet front on the right.
+7 View from inside the room after entry, including the sofa, coffee table, and decoration on the right wall.
+8 A is in the corridor outside the doorway. B is fully inside the living room. They occupy different physical locations.
+9 Doorway into the living room.
+10 Corridor space outside the doorway.
+11 Space inside the living room.
+12 A mainly shows the bathroom entrance. After moving, B shows an opening to a bedroom. The groups provide different branch information.
+13 Doorway to the bathroom.
+14 Opening to the bedroom or living area, with bed, curtains, and TV cabinet visible.
+15 B clearly shows a white glass-fronted display cabinet to the right of the doorway. In A that location is hidden by a wall or outside the view. This branch information is unique to B.
+16 Wood-framed doorway into a room with pink and blue curtains and greenery.
+17 White glass-fronted display cabinet to the right of the wooden doorframe.
+18 Both groups show the bedroom doorway. A clearly shows a wardrobe entrance on the right, while B shows a bathroom doorway on the left. Their branch information differs distinctly.
+19 Doorway into the bedroom with pink and blue curtains and greenery.
+20 Entrance to the white glass-fronted wardrobe on the right.
+21 Left-hand bathroom doorway, with shower enclosure and floor tiles visible.
+22 A-2 through A0 clearly show the bedroom doorway. It is entirely outside the view in B-2 through B+2. The groups' branch information differs.
+23 Doorway into the bathroom.
+24 Bedroom doorway with pink curtains and greenery visible.
+25 Both groups show only the same bathroom doorway. It is clearly visible in both, its features match exactly, and neither group shows any other unique branch.
+26 Bathroom entrance straight ahead with a wood-colored frame. Inside are a shower enclosure, dark cabinet, and patterned floor tiles.
+27 A shows the bathroom doorway at the corridor end. B shows a bedroom entrance to the side. They represent entirely different physical branches.
+28 Wood-framed bathroom entrance straight ahead.
+29 Left bedroom entrance with white drapery and a bed.
+30 As the view turns right, B clearly shows a doorway into a room with a glass cabinet and a dark wooden door on the right. Neither appears in A. The groups differ in branch information.
+31 Doorway into a room with pink curtains and a white bench.
+32 Doorway into a room with a glass display cabinet and wooden chair.
+33 Dark wooden door on the right wall.
+34 A, particularly A-2 through A0, clearly shows a bedroom doorway. In B-2 through B+2 it has disappeared completely from view, replaced by the living-room sofa and window area. The branch information differs.
+35 Doorway to the kitchen or dining area.
+36 Dark wooden door to the corridor.
+37 Wood-framed doorway to a bedroom or dressing room with pink curtains and a bench.
+38 A, particularly A-2, A-1, and A0, clearly shows a left doorway to the dining room. In B-2 through B+2 it is entirely outside the view, indicating that the observation points supply different branch information.
+39 Wooden door at the end of the corridor straight ahead.
+40 Left doorway to the dining area.
+41 B, particularly B+1 and B+2, shows a bedroom doorway on the left. A does not show this branch from the corresponding angle. Node B therefore provides unique branch information absent from A.
+42 Doorway to the dining area.
+43 Wooden door to the corridor.
+44 Doorway into the bedroom area, with pink curtains and a bed visible on the left.
+45 A shows the wooden door straight ahead at the corridor end. B shows a left doorway into a bedroom. The branch information differs.
+46 Doorway to the dining or kitchen area.
+47 Left doorway into a bedroom with pink curtains and a bed visible.
+48 A clearly shows the right doorway to the dining room. In B it is entirely outside the view, so the groups provide different branch information.
+49 Doorway on the left into a bedroom.
+50 Right doorway into the dining room or kitchen.
+51 Both groups show the same corridor. The left doorway, wooden door at the end, and living-room entrance on the right are all clearly visible in matching positions. No unique branch was found.
+52 Wood-framed opening on the left of the corridor.
+53 Dark wooden door at the corridor end.
+54 Opening on the right of the corridor into the living area.
+55 Both groups show the same corridor, including the left doorframe, right living-room opening, and wooden door at the end. Their branch information is identical.
+56 Wooden door at the end of the corridor.
+57 Opening into the living room on the right.
+58 Wood-framed entrance on the left.
+59 Both groups show the same layout, including a wooden frame or cabinet on the left, a sitting area on the right with a sofa, chair, and table lamp, and a wooden door straight ahead to the corridor. The branch information matches exactly.
+60 B-2 through B+2 clearly show a doorway into the kitchen on the left. In A-2 through A+2 a white display cabinet obscures that location. B therefore shows a unique branch absent from A.
+61 Doorway on the left into the kitchen or dining area.
+62 A clearly shows a left opening or doorway to the kitchen or dining room. In B that location is hidden by a wall or disappears entirely. This indicates different physical node positions and branch information.
+63 Wood-framed kitchen or dining-room entrance on the left.
+64 A-2 through A0 clearly show a separate entrance screened by a red curtain. B-1 through B+2 show a corridor entrance to the left of the TV wall. The groups provide different branch information.
+65 Entrance to a separate space screened by a red curtain beside a bookcase.
+66 Corridor entrance or doorway to the left of the TV wall.
+67 Both groups show the same living room. The only branch is the same doorway into the dining area. The layout and fixtures, including TV, sofa, and greenery, match exactly.
+68 Doorway at the far end of the living room into the dining area.
+69 Both groups show the same living room and the single branch into the dining area. The layout and fixtures, including TV, sofa, and coffee table, match exactly.
+70 Both groups clearly show the doorway straight ahead to the dining room and the corridor entrance beside the TV wall on the left. The layout and branch information match exactly.
+71 Doorway straight ahead into the dining area.
+72 Opening to the corridor beside the TV wall on the left.
+73 Corridor entrance beside the TV wall on the left.
+74 Both groups clearly show the dining-room doorway straight ahead and the corridor entrance beside the wooden grille on the left. The layout and branch information match exactly.
+75 Wide doorway straight ahead to the dining room.
+76 Corridor entrance beside the wooden grille on the left.
+77 Both groups clearly show the dining-room doorway ahead and the corridor entrance behind the screen on the left. The layout and branch information match exactly.
+78 Corridor entrance behind the wooden slatted screen on the left.
+79 Both groups clearly show the left bedroom entrance and the dining-room entrance straight ahead. The layout, walls, and fixtures, such as the sculpture on the left and the wall of picture frames on the right, match exactly, confirming the same branch set.
+80 Doorway into the bedroom on the left.
+81 Doorway straight ahead to the dining room.
+82 Both groups clearly show the bedroom entrance on the left, dining-room entrance ahead, and kitchen entrance on the right. The layout and branches match exactly, with only slight changes in camera distance and angle.
+83 Right opening into the kitchen or corridor.
+84 Both groups clearly show the left bedroom entrance and the dining-room entrance straight ahead. The layout and branches match exactly, with only slight changes in camera distance and angle.
+85 A clearly shows a right opening to the dining room. A wall blocks that direction in B, which provides no corresponding branch information. The groups therefore differ.
+86 Right opening into the dining room.
+87 Both groups show the same bedroom doorway to the right of a floral picture and no other visible independent branch. The spatial features match exactly.
+88 Bedroom doorway to the right of the floral picture.
+89 Both groups show the same corridor, with the same botanical picture on its left wall and a single bedroom doorway on the right. Features inside, such as the bed and decorative picture, match exactly. No other branch was found.
+90 Doorway into the bedroom.
+91 The wall on the right obscures any right branch in A. B, particularly B+1 and B+2, clearly shows a right dining-room doorway, providing information absent from A.
+92 Doorway straight ahead into a bedroom.
+93 Right doorway to the dining or kitchen area.
+94 A0 through A+2 clearly show the dining/kitchen doorway on the right. In B-2 through B0 it is outside the view, behind the observer. This indicates different spatial branching locations.
+95 A clearly shows a doorway into the dining/kitchen area on the right. B shows a right-hand doorway toward the corridor end. Their branch information differs.
+96 Doorway to a bedroom.
+97 Doorway toward the corridor end.
+98 A is at the junction of the bedroom and kitchen and shows the bedroom entrance. B is midway along the corridor and shows branches toward the living room and corridor end. They provide different sets of spatial branches.
+99 Bedroom doorway with the bed visible on the left.
+100 Opening into the living or sitting area, with a sofa and greenery visible on the right.
+101 Both groups show the same corridor. The kitchen entrance on the left, living-room entrance on the right, and doorway at the corridor end are clearly visible at corresponding positions. No unique branch was found.
+102 Left doorway into the kitchen or dining area.
+103 Right opening into the living room or sofa area.
+104 Doorway at the end of the corridor.
+105 A, particularly A-1 through A+1, clearly shows a wide doorway to the kitchen/dining area on the left. It has moved entirely out of view in B. The nodes occupy different positions in the corridor and show different branches.
+106 Wide left doorway into the kitchen or dining area.
+107 Both groups show the same corridor, including the doorway at its end and the left entrance with a wall niche. The branch information is identical.
+108 Left entrance with a wall niche.
+109 A clearly shows a room entrance with white shelving on the left. In B the entrance is entirely outside the view, indicating different physical observation locations.
+110 Open room entrance with white shelving on the left.
+111 A mainly shows the entrance to the bathroom shower area. B shows a doorway to the corridor on the right. Their physical branch information differs.
+112 Entrance to the bathroom shower area on the left.
+113 Right doorway to the corridor.
+114 A shows a right opening to a white corridor or stairwell. B shows a black doorway on the same side. These are different branches and cannot be matched one to one.
+115 Right opening to a white corridor or stairwell.
+116 Black doorway or entrance on the right.
+117 A shows the bathroom shower entrance. B shows the doorway at the corridor end. Their spatial branch information is entirely different.
+118 Left shower entrance with glass partition and window.
+119 Right doorway into a corridor or stairwell.
+120 A shows a bathroom entrance at the corridor end. B shows a bedroom entrance there with a bed visible. They correspond to different physical branches.
+121 Doorway into a toilet or bathroom.
+122 Doorway to a bedroom with a bed visible.
+123 B-1, B0, B+1, and B+2 clearly show an opening on the left to an outside space. In A-2 through A+2 this location is hidden by a wall or outside the view. It is unique branch information from B.
+124 White doorway on the right with a vertical groove or handle.
+125 Left opening to the outside or a balcony, with greenery visible.
+126 Both groups show the same long, narrow corridor and the same opening to the outside on the left, with white cabinets on the right. No other branch differences were found.
+127 Left opening to the outside or a balcony.
+128 Both groups show the same corridor entrance to the right of the white wardrobe and shower fixtures on the left. The layout and branch information match exactly.
+129 Right-hand doorway into the corridor.
+130 Both groups show the same white wardrobe with long black handles and the same doorway branch on the right. The layout and features match exactly.
+131 B-2 through B+2 clearly show a bathroom entrance with a washbasin and round mirror on the right. A-2 through A+2 show only a wardrobe and corridor doorway, with no information about this bathroom entrance.
+132 White doorway to an inner corridor or room.
+133 Right bathroom entrance with a washbasin and round mirror.
+134 A shows a bathroom washbasin area on the right. B shows a dressing room with black glass doors on the right. They provide different physical branches.
+135 White doorway on the left to an inner corridor.
+136 Bathroom entrance on the right with a round mirror and washbasin.
+137 Right-hand dressing-room entrance with black-framed glass doors.
+138 A mainly shows a white wall and doorway and does not include the black wardrobe. Beyond the doorway B clearly shows the black wardrobe opening leading to the bedroom, providing information absent from A.
+139 White doorway to the inner corridor.
+140 Opening beside the black wardrobe leading into the bedroom area.
+141 A includes the white doorway on the left, while B includes the bathroom entrance on the right. The groups provide different branch information.
+142 Opening into the bedroom area, with a black wardrobe and bed visible.
+143 White doorway on the left into another room.
+144 Bathroom entrance on the right, with a washbasin and toilet visible.
+145 A mainly shows the living area. B shows the kitchen area. They provide different spatial branch information.
+146 Doorway to a bedroom or corridor.
+147 Living area with sofa, TV cabinet, and floor-to-ceiling windows.
+148 Kitchen area with cabinets, stove, and window.
+149 A clearly shows a corridor doorway to the right of the painting. B shows a white paneled door on the left side of the kitchen. The branch information differs.
+150 Opening into the kitchen.
+151 Doorway to a corridor or bathroom to the right of the painting.
+152 White paneled door to the left of the kitchen opening.
+153 Both groups clearly show the same white paneled door and opening to the kitchen, with an identical layout and relative positions. No unique branch was found.
+154 Opening leading to the kitchen.
+155 White paneled door.
+156 Both groups show the same kitchen doorway with a gray dining chair to its right. The layout and branch information match exactly.
+157 Doorway to the kitchen.
+158 Both groups show only one doorway into the kitchen. The L-shaped cabinets, stove, sink, and window have the same layout inside. No other branch was found.
+159 A mainly covers the living-room sofa and floor-to-ceiling windows. B mainly covers the kitchen entrance. Each shows a unique branch absent from the other.
+160 Doorway to the corridor on the TV-wall side.
+161 Open continuation toward the living-room sofa and floor-to-ceiling windows.
+162 Entrance to the kitchen.
+163 A-2 and A-1 clearly show the corridor doorway to the right of the painting. B-1, B0, B+1, and B+2 show a white paneled door to the left of the kitchen opening. The observations differ in branch information.
+164 Opening to the kitchen area.
+165 Doorway to the corridor or living room to the right of the painting.
+166 Both groups clearly show the same white paneled door and doorway to the kitchen. The layout, handle position, and kitchen features such as cabinets and window match exactly, confirming the same set of branches.
+167 Doorway into the kitchen.
+168 Both groups clearly show the same kitchen doorway with the same surrounding walls and furniture layout. No other branch was found.
+169 Both groups show only the same kitchen doorway. Interior features such as cabinets, window, and stove match exactly, and no other branch was found.
+170 A looks from the corridor toward the living room, showing a branch into it. B shows the inside of a bathroom and provides branch information from within that room. They show entirely different physical branches.
+171 Bathroom interior.
+172 Both groups show the same doorway with the same arrangement of sofa, chair, and shelving visible beyond, confirming the same spatial branch.
+173 Doorway to a living or sitting area with a sofa and shelving.
+174 A shows a corridor entrance to the left of the doorway. B shows a corridor or dressing-room entrance to the right of the doorway. Their branch information differs.
+175 Central opening into the living or dining area.
+176 Left corridor entrance visible to the left of the doorway from A-2 through A+2.
+177 Right corridor or dressing-room entrance visible to the right of the doorway from B-2 through B+2.
+178 B, particularly B-2 through B+2, clearly shows a white room door on the right. A-2 through A+2 show only a wall or cabinet at that location and no door. This information is unique to B.
+179 Right opening to the entryway or storage area.
+180 White room door on the right.
+181 Both groups show the same living room and clearly show a doorway to the entryway on the right. No other unique branch was found, confirming the same branch set.
+182 Right doorway into the entryway or corridor.
+183 Both groups clearly show the same doorway between a white cabinet and a dark wood-paneled wall. The layout and fixtures, such as the blue beanbag sofa and TV wall, match exactly. No other unique branch was found.
+184 Doorway between the white cabinet and the dark wood-paneled wall.
+185 Both groups clearly show the same corridor entrance between the wine cabinet and the wood-paneled wall. The change in viewpoint is continuous, and no other unique branch was found.
+186 Corridor entrance between a white wine cabinet and a dark wood-paneled wall.
+187 A clearly shows a bedroom opening on the left of the corridor with a bed visible. In B that location is hidden by a wall, leaving no information about this branch. The branch sets differ.
+188 Dressing-room entrance at the end of the corridor.
+189 Left bedroom entrance in the corridor, with bed visible.
+190 A shows the wardrobe area and a wall opening on its right. B shows a glass-door entrance to a balcony or bathroom with a window. The spatial branch information is entirely different.
+191 Wall opening or corridor entrance to the right of the wardrobe.
+192 Glass-door entrance to a balcony or bathroom with a window.
+193 Both groups show the same black-framed glass shower door. The same window and outdoor view are visible beyond it, confirming the same spatial branch.
+194 Black-framed glass door into a shower enclosure containing a window.
+195 Both groups show the same corner with a washbasin and a picture. The only branch, a dressing-room entrance on the right, is clear in both. The spatial features match exactly.
+196 Doorway to the dressing room to the right of the washbasin.
+197 Both groups show the same washbasin area and only one branch, to the dressing room on the right. The layout and fixtures match exactly.
+198 Both groups show exactly the same entryway with artwork on the left, washbasin in the middle, and bedroom doorway on the right. The layout and branch information match exactly.
+199 Right doorway into the bedroom or dressing room.
+200 Both groups show exactly the same washbasin area and single doorway into the bedroom on the right. The layout and branch information match exactly.
+201 Doorway into a bedroom on the right.
+202 Both groups show exactly the same washbasin area with a single branch opening to the dressing room on the right. The layout and fixtures, including artwork, mirror, and basin, match exactly.
+203 Both groups show exactly the same washbasin area with a dressing-room doorway on the right. The layout and branch information match exactly.
+204 Both groups show the same washbasin area and only one branch to the dressing room on the right. The layout and fixtures match exactly.
+205 Both groups show exactly the same washbasin area and only one branch to the bedroom on the right. The layout and positions of the fixtures match exactly.
+206 Bedroom doorway to the right of the washbasin.
+207 A mainly shows branches on the left of the living room toward the window and armchair and on the right toward the kitchen. B mainly shows the right side toward the kitchen and the far right toward the dining room or storage cabinet. Their unique branches differ.
+208 Opening to the kitchen or bar area to the right of the sofa.
+209 Left entrance to an area with floor-to-ceiling windows and a white armchair.
+210 Right entrance to an area with black and white storage cabinets and a dining table and chairs.
+211 A mainly shows the branch from the living room to the kitchen on the right and the corridor ahead. B turns left toward an area with floor-to-ceiling windows and a lounge chair. The spatial branches are entirely different.
+212 Right doorway into the kitchen or dining area.
+213 Doorway straight ahead into a corridor or bathroom.
+214 Area on the left with floor-to-ceiling windows and a lounge chair.
+215 B-1 through B+2 clearly show the bedroom doorway on the right. In A-2 through A+2 that location is hidden by a wall or outside the view. This branch information is unique to B.
+216 Opening to the dining area.
+217 Doorway into the bedroom area.
+218 B, particularly B+2, shows an extra doorway into a dressing or storage room that A does not show. The groups therefore provide different branch information.
+219 Doorway to a dressing room or storage room.
+220 A shows an opening on the left to the dining room. B shows a right doorway into the dressing room. The groups show different branches.
+221 Opening into the dining or living area.
+222 Doorway to the dressing room.
+223 Both groups show the same living room and a single clear corridor entrance between the wine cabinet and a dark wood-paneled wall. No other traversable branch was found. The spatial features match completely.
+224 Corridor entrance between a white wine cabinet and the dark wood-paneled wall on the right.
+225 A shows a right-hand opening in the corridor. B shows a left bedroom entrance where A shows a solid wall. They provide different branch information.
+226 Opening to wood flooring on the right of the corridor, visible from A-2 through A+2.
+227 Left bedroom entrance in the corridor, clearly visible from B-2 through B+2 with a bed and desk inside.
+228 A clearly shows a bedroom opening on the left. In B a wall obscures that location, and B provides no information about the branch. The branch sets do not fully match.
+229 Dressing-room doorway straight ahead.
+230 Left opening into the bedroom, with bed and desk visible.
+231 Both groups clearly show the dressing-room entrance ahead and the room entrance on the right. The layout, walls, and fixed black wardrobe match exactly, with no unique branch.
+232 Dressing-room entrance straight ahead leading toward a black wardrobe.
+233 Right entrance into a room with a wooden floor.
+234 Both groups show the doorway leading to the black wardrobe. B, particularly B+1 and B+2, clearly shows the adjacent entrance to a wood-floored room on the right. A wall hides that location in A, which gives no information about the branch.
+235 Doorway into the space with a black wardrobe.
+236 Adjacent entrance on the right to a room with a wooden floor.
+237 A, particularly A0, clearly shows the right branch to a large gray door into the entryway. B, particularly B0, has turned left and shows an entrance to a sitting area with floor-to-ceiling windows. The branch information differs.
+238 Doorway to an inner corridor or bathroom.
+239 Large gray door and passage on the right leading to the entryway or main entrance.
+240 Left entrance to a sitting area with floor-to-ceiling windows.
+241 A-2 through A0 clearly show a corridor entrance to the right of the sofa. B-1 through B+2 show a corridor entrance to the left of the TV cabinet. They represent different spatial branches.
+242 White-framed corridor entrance to the right of the sofa.
+243 Dark-framed corridor entrance to the left of the TV cabinet.
+244 Both groups show the same stretch of corridor. The relative positions and appearance of the bathroom doorway on the right and the floral painting at the far end match exactly. No unique branch was found.
+245 Doorway to a bathroom on the right of the corridor.
+246 Wall at the corridor end with a floral painting.
+247 Both groups show the same stretch of corridor and clearly show the right bathroom entrance and left doorway. The layout and branch information match exactly.
+248 Doorway on the left of the corridor.
+249 Both groups show the same corridor stretch and three distinct branches: the left doorway, the right bedroom doorway, and the right bathroom entrance. The layout and fixtures such as the painting match exactly, with a one-to-one branch correspondence.
+250 White doorway on the left of the corridor.
+251 Bedroom doorway on the right of the corridor.
+252 Bathroom entrance on the right of the corridor next to the bedroom doorway.
+253 Both groups show the same floral picture at the corridor end. The doorways into bedrooms on the left and right match exactly in location and geometry. No unique branch was found.
+254 Bedroom doorway on the left of the corridor.
+255 A shows bedroom entrances on both sides of the corridor, blue on the left and pink on the right. In B the camera has moved to the left bedroom door. Only that entrance is visible and the right is out of view. The branch information differs.
+256 Doorway to the left bedroom with a teal bed runner.
+257 Doorway to the right bedroom with a pink bed runner.
+258 A shows an opening into the living room. B shows a corridor area with a black door and white storage cabinet. Their spatial branches are entirely different.
+259 Opening into the living room, with sofa, coffee table, and pendant light visible.
+260 Black room door.
+261 White storage cabinet.
+262 A shows a black doorway and a white storage cabinet on the left. B shows a black doorway and a vertically striped wall with hooks. The groups provide different spatial branch information.
+263 Black doorway.
+264 White storage cabinet and counter area on the left.
+265 White vertically striped wall and hook area.
+266 B, particularly B+2, additionally shows a corridor entrance to the left of the living-room opening. In A that location is obscured by a wall or outside the view. The branch information differs.
+267 Opening into a living area with a sofa, coffee table, and picture.
+268 Corridor entrance to the left of the living-room opening, clearly visible in B+2.
+269 B, particularly B+1 and B+2, clearly shows a branch on the left to the corridor and wine cabinet area. In A that area is obscured by a wall or outside the view. This branch information is unique to B.
+270 Opening into the living area.
+271 Left opening into the corridor and wine cabinet area.
+272 Both groups show the same living room and clearly show a corridor entrance on the left to inner rooms. No other differing branch was found.
+273 Corridor entrance on the left leading to inner rooms.
+274 Both groups show the same living room and clearly show just one corridor branch between the cabinet on the left and the sofa wall on the right. The layout and fixtures match exactly.
+275 Corridor entrance between the white storage cabinet on the left and the wall behind the sofa on the right.
+276 A, for example A0, clearly shows a left-hand corridor doorway next to the wine cabinet. In B, for example B0, a wall hides that location. B looks farther into the corridor and shows its middle doorway. The branch information differs.
+277 First doorway on the left of the corridor, to the right of the wine cabinet.
+278 A clearly shows two doorways on the left of the corridor. Both are outside B's view. This indicates that B is farther into the corridor and supplies different branch information.
+279 Near doorway on the left of the corridor.
+280 Doorway midway along the left of the corridor.
+281 A clearly shows two left-hand corridor doorways that are outside B's view. B shows a right-hand corridor doorway absent from A. The observation positions differ and their branch information does not overlap.
+282 Doorway at the corridor end into a bedroom.
+283 First left-hand corridor doorway with a white door panel.
+284 Second left-hand corridor doorway with a dark frame.
+285 Doorway on the right of the corridor.
+286 A shows a marble-wall opening on the left, while B shows a dressing-room entrance on the left. They represent different physical branches.
+287 Gray doorway on the right.
+288 Opening in the marble wall on the left.
+289 Dressing-room entrance on the left.
+290 A-1 through A+2 clearly show a doorway on the left of the corridor into a study. In B-2 through B+2 a wall or change of angle hides that location. The groups provide different branch information.
+291 Opening on the right of the corridor.
+292 Left-hand corridor doorway into a study.
+293 A clearly shows a left branch into a study with a desk and shelves visible. In B a wall hides that location, leaving only a single bedroom branch. The branch information differs.
+294 Left doorway into a study or office area.
+295 A shows a branch to the dining room on the left of the corridor. B shows a branch to a balcony on the right of the bedroom. The branch information differs.
+296 Corridor entrance into the bedroom.
+297 Left opening to the dining or kitchen area, with dining table and chairs visible.
+298 Opening on the right of the bedroom to a balcony or floor-to-ceiling window area, with white curtains visible.
+299 A mainly shows the corridor entrance on the left of the bedroom. B mainly shows a corridor entrance on the right of the bedroom. They provide different branch information.
+300 Bedroom interior.
+301 Left corridor entrance leading outside the bedroom, clearly visible from A-2 through A+1.
+302 Right corridor entrance leading outside the bedroom, clearly visible from B-1 through B+2.
+303 B-2 and B-1 clearly show a left corridor entrance leading toward a white textured wall. A0, A+1, and A+2 show only a closed white wall at that location and provide no corresponding branch information.
+304 Bathroom entrance with a black frame on the right.
+305 Left corridor entrance with a white textured wall.
+306 A+1 and A+2 clearly show a left opening with white textured wallpaper. In B a wall hides that location and B provides no information about this branch. Their information is therefore not identical.
+307 Black-framed opening on the right into a furnished room.
+308 Opening on the left with white textured wallpaper, visible in A+1 and A+2.
+309 B, particularly B+1 and B+2, clearly shows an extra opening on the right inside the living room. A's narrower view shows only the main doorway into the living room and misses that interior branch.
+310 Doorway to a living area containing a TV and fireplace.
+311 Opening on the right inside the living room into a corridor or secondary bedroom.
+312 A is near the corridor start with a left branch into a bathroom. B is farther down the corridor with a left branch into a study. They show different physical branches.
+313 Bathroom entrance with a window on the left.
+314 Left doorway into a study or dressing room.
+315 Both groups clearly show three branches in the same corridor: the study entrance on the left, bedroom entrance straight ahead, and bathroom entrance on the right. The layout and positions match exactly, with only a slight difference in viewing distance.
+316 Left doorway into a study or office area.
+317 Doorway straight ahead into the bedroom.
+318 Right doorway to the bathroom or toilet.
+319 A clearly shows the branch on the left into a study with shelves and a desk visible. In B that branch has disappeared completely, indicating different spatial positions.
+320 B, particularly B+1 and B+2, clearly shows a new doorway on the left inside the bedroom. A only shows the corridor entrance and misses this interior branch.
+321 Corridor entrance leading into the bedroom.
+322 Separate doorway on the left inside the bedroom, possibly into a dressing room or bathroom.
+323 Both groups show the same bedroom and clearly show the bathroom doorway on the left. The layout and fixtures, including bed, bedside table, and wall clock, match exactly. No unique branch was found.
+324 Left doorway to the bathroom.
+325 Both groups show the same bedroom with just one branch, the bathroom entrance on the left. The layout and fixtures, including bedside table, bed, and wall clock, match exactly.
+326 A+1 and A+2 clearly show a bedroom entrance on the left of the corridor. From B-2 onward a wall hides that location. B's viewpoint is farther back and does not include the branch.
+327 Bathroom entrance on the right of the corridor.
+328 Bedroom entrance on the left of the corridor, visible in A+1 and A+2.
+329 A clearly shows a bedroom entrance on the left. In B that location is hidden by a wall. The nodes are at different corridor positions and provide different branches.
+330 Toilet or bathroom entrance on the right of the corridor.
+331 A+1 and A+2 clearly show a bedroom entrance on the left of the corridor. In B, from step 12 onward, that entrance is behind the observer and out of view. The branch information differs.
+332 Door at the end of the corridor.
+333 A clearly shows the left bedroom entrance. In B that entrance is outside the view. The branch information differs.
+334 Bedroom entrance on the left of the corridor.
+335 B, particularly B-1 and B0, clearly shows a corridor entrance on the left of the living room leading to the bedroom. A shows only the doorway into the living room and gives no information about that corridor entrance.
+336 Corridor entrance on the left of the living room leading to a bedroom or bathroom.
+337 A at step 17 is near the corridor entrance with a clearly visible left doorway. B at step 21 is farther inside the room. The doorway appears tiny or disappears, and the black wall on the right obscures more space. The observations differ in branch visibility.
+338 Left doorway into a corridor or bathroom.
+339 The left doorway is clear in A and is the main branch in the current view.
+340 In B the left doorway has receded to the edge of the view or disappeared, and the right black wall hides more space. Branch visibility has changed significantly.
+341 A shows a corridor doorway to the left of the sofa. B shows an entrance leading to a dark doorway on the left of the image. Their positions differ, and A lacks information about B's left branch.
+342 Doorway to the corridor or bathroom to the left of the sofa.
+343 Entrance on the left of the image leading to a dark doorway, possibly to the main bedroom or study.
+344 A, particularly A+1 and A+2, clearly shows a left doorway into the kitchen or a storage room. In B a wall or change in angle makes that branch invisible. Their branch information does not fully match.
+345 Opening straight ahead into the dining area.
+346 Right doorway into a corridor or bathroom.
+347 Left doorway into a kitchen or storage room, clearly visible in A+1 and A+2.
+348 A, particularly A-2, clearly shows a left opening to the kitchen or corridor. B's view moves right and that opening is entirely out of sight. The branch information differs.
+349 White doorway on the right.
+350 Left opening to the kitchen or corridor.
+351 B, particularly B0, B+1, and B+2, clearly shows a corridor entrance into a dark space by the wood-grain wall on the right. In A that wall obscures the corresponding location, so A lacks this branch information.
+352 Doorway in the beige wall to the right of the white storage cabinet.
+353 Dark corridor entrance to the right of the beige wall and left of the decorative wood-grain wall.
+354 Both groups show the same corridor and clearly show the doorway at its end and an open niche on the right. The layout and branch information match exactly.
+355 Open niche or entrance on the right.
+356 Both groups show the same corridor and clearly show the doorway at its end and a room entrance with a black-and-white checkered floor on the right. The branch information matches exactly.
+357 Right entrance to a room with a black-and-white checkered floor.
+358 Both groups clearly show the bedroom doorway straight ahead and the entrance on the right into the checkered-floor room. The layout and branch features match exactly, with only slight differences in viewing distance and angle.
+359 Doorway straight ahead into a room with a window and a bed.
+360 Right entrance to a room with black-and-white checkered flooring.
+361 A clearly shows a stairwell entrance with black-and-white checkered flooring on the right. In B this branch has disappeared completely, indicating different spatial positions.
+362 Stairwell entrance with a black-and-white checkered floor on the right.
+363 Both groups show the same bedroom doorway from highly similar viewpoints and with a highly similar layout. No other branch was found.
+364 Both groups show only the same bedroom doorway. The bed, window, pendant light, and other bedroom features match exactly, with no other branch found.
+365 A shows a corridor entrance to a bedroom. B shows a corridor entrance to a study or work area. They correspond to different physical branches.
+366 Opening to a bedroom with bed, curtains, and bedside table visible.
+367 Opening to a study or work area with desk, chair, and shelving visible.
+368 A shows a balcony entrance at the far end of the living room. B shows a doorway in the right wall. They provide different branch sets.
+369 Narrow doorway to the right of the TV cabinet.
+370 Curtained entrance to a balcony or floor-to-ceiling window area at the far end of the living room.
+371 White doorway in the right wall.
+372 B clearly shows a bathroom entrance farther down the right-hand corridor. A wall obscures that location in A, which provides no information about this branch.
+373 Doorway in the wall to the right of the TV cabinet.
+374 Bathroom entrance with a washbasin visible in the corridor on the right.
+375 A+2 clearly shows a bedroom entrance on the left of the corridor. A wall obscures it in B, which provides no information about the branch. The observations therefore do not provide identical information.
+376 Bedroom entrance on the left of the corridor, with a bed visible in A+2.
+377 A-2 through A+2 clearly show a bedroom doorway on the left. In B-2 through B+2 that doorway is entirely outside the view. This indicates different corridor positions and different branch information.
+378 Right doorway into the bathroom or washbasin area.
+379 Left doorway into the bedroom or bed area.
+380 A clearly shows another bedroom doorway on the left. In B a wall obscures that location. The observations are at different corridor positions and provide different branches.
+381 Washbasin area on the right.
+382 Both groups clearly show the same two main dining-room branches: the opening on the left to the living room or TV area and the wooden door straight ahead to the bedroom. The layout and fixtures, including the sideboard and dining table, match exactly.
+383 Open doorway into the TV cabinet area.
+384 Dark wooden door to the bedroom.
+385 A is at the boundary between the dining and living rooms. It shows the dining table and bedroom doorway. B is farther into the living room and shows the sofa and TV wall, with the dining area no longer in view. Their spatial branch information differs.
+386 A includes a right doorway to the bedroom. B includes a left doorway to a room on the left. Their branch information differs.
+387 Opening into the living-room sofa area.
+388 Bedroom doorway to the right of the TV cabinet.
+389 Doorway into the room on the left, to the left of the sofa.
+390 A shows a dark wooden-door entrance on the left. B shows a framed wooden room door on the right. The branch information differs.
+391 Bedroom doorway to the right of the TV cabinet.
+392 Dark wooden-door entrance on the left.
+393 Wooden room door with a frame on the right.
+394 Both groups clearly show the same two main branches in the living room: the wooden room door on the right and bedroom doorway beside the TV cabinet. The layout and fixtures such as TV cabinet and sofa match exactly. No unique branch was found.
+395 Wooden room door on the right with arched decoration.
+396 Both groups clearly show the same open doorway from the living room into the bedroom. It is the sole branch entrance in both. The layout and positions of the TV cabinet and sofa match, confirming the same branch information.
+397 Open doorway to the bedroom.
+398 A shows a wooden door in the right foreground. At the same location B shows a dark tall cabinet, indicating different physical branch information.
+399 Wooden-door opening in the right foreground.
+400 Dark tall cabinet in the right foreground.
+401 A clearly shows a left branch into the living room with a sofa and TV cabinet visible. B faces entirely toward the bedroom and does not include that living-room branch. Their information does not fully match.
+402 Opening into the living or sitting area, with sofa, TV cabinet, and floor-to-ceiling windows visible on the left.
+403 Both groups show the same white-framed corridor entrance on the right, with a white wall on the left. The layout and branch information match exactly.
+404 White-framed corridor entrance on the right.
+405 Both groups show the same doorway, but B shows artwork on the right wall entirely absent from A. B also clearly shows the window and desk beyond the doorway, details that A's narrower view misses. The observation positions and information about the surroundings of the branch differ.
+406 Doorway into an inner corridor.
+407 Large decorative picture on the right wall.
+408 Window and desk furniture visible beyond the doorway.
+409 B, particularly B-2 through B+2, clearly shows a bathroom doorway on the left. A shows only a white wall there and provides no information about that branch.
+410 Doorway to a room with black curtains and a desk.
+411 Left doorway into the bathroom or toilet.
+412 A clearly shows a bathroom branch entrance on the left. It is entirely outside the view in B. The groups' branch information differs.
+413 Doorway to a room with a desk and a window.
+414 Left-hand doorway to the bathroom.
+415 B-1, B0, B+1, and B+2 clearly show a bathroom entrance absent from A, indicating different spatial branch information.
+416 Doorway into a room with black curtains and a window.
+417 Entrance to a bathroom with a toilet and shower enclosure.
+418 A includes an entrance to the corridor. B includes a bedroom entrance. The two groups provide different branch information.
+419 Entrance into a bathroom with a toilet and shower enclosure.
+420 Entrance to a corridor or room with black curtains and a window.
+421 Bedroom entrance with a bed and dark wood wardrobe inside.
+422 A is in the corridor and shows two branches, to the bathroom and bedroom. B is inside the bedroom and shows only branches within that space. It lacks the bathroom branch, so the information differs.
+423 A shows bedroom and bathroom branches, while B shows bedroom and corridor branches. The bathroom and corridor branches differ, so the judgment is different.
+424 Bathroom doorway visible in A+1 and A+2.
+425 Doorway into a corridor or living room visible in B+2.
+426 A0 shows a dark wooden door on the right. B0 shows a doorway on the left into a wood-floored corridor. The branch information differs.
+427 Dark wooden door on the right.
+428 Doorway into a wood-floored corridor.
+429 A shows a bathroom entrance on the right. B shows a bathroom entrance on the left, and the right bathroom entrance is no longer visible. The observations correspond to different physical branches.
+430 Doorway to a corridor or room with black curtains and a window.
+431 Right bathroom entrance with shower enclosure and toilet visible.
+432 Left bathroom entrance with towel rack visible.
+433 A, particularly A+1 and A+2, clearly shows a bathroom branch on the left. In B the branch is entirely out of view, indicating different node locations and branch information.
+434 Doorway into a long narrow room with a desk and window.
+435 Left doorway into a bathroom with a towel rack and shower visible.
+436 B, particularly B-2, B-1, and B0, clearly shows a bathroom entrance on the left. In A the location is obscured by a wall or outside the view. This branch information is unique to B.
+437 Doorway into a room with black curtains, a window, and a desk.
+438 Left doorway into a bathroom with a towel rack and white tiles visible.
+439 A-2 and A-1 clearly show a bedroom entrance on the left. A wall obscures that location in B, which provides no information about the branch. The groups do not provide identical information.
+440 Bathroom entrance on the right.
+441 Left bedroom entrance, with a bedside table, lamp, and bed visible.
+442 A is beside the bathroom entrance and shows the bathroom branch on the right. B has moved forward along the corridor, where the right branch becomes a wall with a decorative picture. The local branch information differs.
+443 Doorway straight ahead into a room with black curtains and a window.
+444 Bathroom entrance immediately to the right with a basin and shower enclosure visible.
+445 Large floral artwork on the right corridor wall.
+446 B-2 through B+2 clearly show a left doorway into a bathroom. In A-2 through A+2 that location is hidden by a wall or outside the view. The groups provide different branch information.
+447 Doorway into a room with black and white curtains and a desk.
+448 Left doorway into a bathroom or shower enclosure.
+449 A, particularly A-1 through A+2, clearly shows the left bathroom entrance. In B that entrance is entirely out of view. The nodes are at different positions and show different branches.
+450 Doorway on the left into a bathroom.
+451 B-2 through B+2 clearly show a bathroom entrance with a washbasin and round mirror on the left of the corridor. In A0 through A+2 that location is obscured by a wall or outside the view. This information is unique to B.
+452 Doorway at the corridor end leading into a wood-floored room.
+453 Bathroom entrance on the left with a washbasin and round mirror.
+454 A clearly shows the bathroom entrance on the left, and B clearly shows the living-room entrance on the right. The nodes provide different branch information.
+455 Doorway straight ahead into a wood-floored corridor.
+456 Living-room entrance on the right with sofa and coffee table.
+457 B, particularly B+1 and B+2, shows a doorway deep inside the living room, providing branch information that A lacks. Their information does not fully match.
+458 Left corridor entrance leading to the bedroom.
+459 Entrance on the right into the living room.
+460 Doorway inside the living room leading to other areas, clearly visible in B+1 and B+2.
+461 A, particularly A-2 and A-1, clearly shows a left opening to a bedroom or corridor. B, particularly B+1 and B+2, shows a right doorway to a corridor or bathroom. The observed branch information differs.
+462 Opening to the bedroom or corridor on the left, with wood flooring.
+463 Doorway to the corridor or bathroom on the right, with a white wall.
+464 A mainly shows a white doorway on the right. B mainly shows a left opening to the outside. The groups provide different branches.
+465 Dark doorway to the right of the living-room TV wall.
+466 White doorway in the right wall, clearly visible in A+1 and A+2.
+467 Left opening to the balcony or outside, clearly visible from B-2 through B+2.
+468 Both groups show the same living room and only one branch, the right doorway to other areas. The layout and fixtures such as the TV, sofa, and dining table match exactly.
+469 Doorway to the right of the TV cabinet and behind the sofa on its right.
+470 Both groups clearly show the same living room with a single right doorway to the corridor. The layout and fixtures, including TV cabinet, sofa, and dining table, match exactly. No unique branch was found.
+471 A clearly shows a doorway to the right of the TV cabinet. In B the doorway disappears and a bookcase area appears on the left instead. The observations provide different spatial branch information.
+472 Floor-to-ceiling glass door to the balcony or outdoors.
+473 White doorway to the right of the TV cabinet leading into another room.
+474 Wooden bookcase and white storage cabinet area visible on the left of the image.
+475 A-2 and A-1 clearly show the corridor entrance to the right of the living-room TV cabinet. In B-2 through B+2 the view turns entirely toward the bookcase area on the left, excluding that corridor entrance and showing a passage beside the bookcase. The information differs.
+476 Corridor doorway to the right of the TV cabinet.
+477 Narrow passage between the bookcase and curtains.
+478 A-2 through A+2 clearly show the floor-to-ceiling window or door area on the right leading to the lawn outside. B-2 through B+2 mainly focus on the bookcase and cabinets on the left. The right window or door is invisible or severely obscured in all supplied B frames. It is unclear whether both groups show the same branch set.
+479 Floor-to-ceiling window or door area leading to the outside lawn, visible in A.
+480 Floor-to-ceiling window or door area leading to the outside lawn, visible in B.
+481 A, particularly A-2 and A-1, shows space continuing to the left of the bookcase. B, particularly B+1 and B+2, shows the sofa area beside the long table on the right. The branches do not entirely overlap and the viewpoints differ considerably, so the same branch set cannot be confirmed.
+482 Passage to the living room or window area to the right of the bookcase.
+483 Space extending to the left of the bookcase, visible in A-2 and A-1.
+484 Sofa area beside the long table on the right, visible in B+1 and B+2.
+485 Both groups show an identical interior layout: bookcase on the left, long table on the right, passage in the middle, and floor-to-ceiling window at the end. No unique branches or structural differences were found.
+486 Long narrow passage between the wooden bookcase on the left and long table on the right.
+487 Floor-to-ceiling window area straight ahead, with white curtains and a lounge chair.
+488 Both groups show the same long narrow passage with a bookcase on the left, a long table on the right, and a floor-to-ceiling window at the end. The layout and branch information match exactly.
+489 Long narrow passage between the bookcase on the left and long table on the right.
+490 Opening straight ahead toward the balcony or floor-to-ceiling window area.
+491 Both groups show the same living area, but neither clearly shows a passable doorway, corridor entrance, or other branching structure. It is unclear whether the groups provide the same branch information.
+492 A, particularly A-2, clearly shows the TV cabinet area behind the sofa on the right. B, particularly B+1 and B+2, shifts left to focus on the passage between the bookcase and curtains. The right-hand view is obscured. It is unclear whether the groups provide identical branch information.
+493 TV cabinet and wall-opening area behind the sofa on the right.
+494 Narrow passage between the bookcase and curtains on the left.
+495 Both groups show the same narrow passage entrance between a wooden bookcase and floor-length curtains. The layout, wall relationships, and fixtures, including the bookcase, curtains, and lounge chair, match exactly. No unique branch was found.
+496 Narrow passage entrance between the wooden bookcase and curtains on the left.
+497 A is inside the bedroom and supplies two branches, the bedroom space and the exit to the corridor. B is in the corridor and shows only the corridor exit, lacking the bedroom interior information. Their branch sets differ.
+498 Exit to the outer corridor.
+499 Bedroom interior with bed, wardrobe, and desk.
+500 A is in a wood-floored corridor with the bathroom entrance immediately on the right. B is in a gray-tiled corridor with another corridor entrance on the right. Their spatial positions and branch information differ.
+501 Bathroom entrance on the right with a glass door.
+502 Right-hand corridor entrance inside the gray-tiled corridor.
+503 A shows a bathroom entrance on the right. B shows a bedroom entrance on the left. The groups provide different branches.
+504 Glass-door bathroom entrance on the right.
+505 Bedroom entrance on the left.
+506 Both groups show the same corridor and the same three clear branch entrances: bedroom on the left, study straight ahead, and bathroom on the right. The layout and branch information match exactly.
+507 Doorway straight ahead into a study or work area.
+508 Right doorway to the bathroom.
+509 A clearly shows a bedroom doorway on the left. A wall obscures that location in B, which supplies no information about this branch. The observations differ.
+510 Doorway into a room with a TV cabinet and chair.
+511 B-2 through B+2 clearly show a bathroom entrance on the left containing a washbasin, mirror, and shower enclosure. In A-2 through A+2 a wall hides that location or it lies outside the view, so A provides no corresponding branch information.
+512 Bathroom entrance on the left with a washbasin and mirror.
+513 A is at the bathroom doorway and shows both the bathroom interior and a right opening to the bedroom. B is fully inside the bedroom, facing the bed and window. It no longer shows the bathroom doorway's branch information.
+514 Right opening to the bedroom or corridor.
+515 Bedroom interior with bed, chair, and window.
+516 A shows a shower entrance immediately on the right. B shows a room door on the right. The branches differ.
+517 Room entrance at the end of the corridor.
+518 Shower entrance immediately on the right.
+519 Room door on the right side of the corridor.
+520 B-1, B0, B+1, and B+2 clearly show a bedroom entrance on the left of the corridor. A shows only a closed wall there and gives no information about this branch.
+521 Bathroom entrance on the right.
+522 Both groups show the same corridor and clearly show three matching branches: the bedroom entrance on the left, the tiled-wall entrance on the right, and the entrance at the end to the room with a desk. The layout matches exactly.
+523 Room with a desk and chair at the corridor end.
+524 Left branch to a bedroom with a bed.
+525 Right branch into a space with gray tiled walls.
+526 Both groups clearly show three branches in the same corridor: bedroom on the left, study straight ahead, and bathroom on the right. The layout and fixtures match exactly. Neither group shows a unique branch.
+527 A clearly shows a bedroom doorway on the left. It is entirely out of view in B, so the branch information differs.
+528 Doorway straight ahead into a room with a TV cabinet and chair.
+529 Both groups show the same entrance from a wood-floored area into a tiled room containing a gray sofa. The layout, walls, and furnishings match exactly. No other unique branch was found.
+530 Room entrance with a gray armchair and white tiled floor inside.
+531 Both groups show the same doorway to the living area. Beyond it, the sofa, floor tiles, and wall decorations match exactly. No other branch was found.
+532 Entrance to a room with a gray sofa and white tiled floor.
+533 Both groups show the same opening into the living room. The gray sofa, bookcase, and tall narrow decoration on the opposite wall are visible in both. The spatial features match exactly.
+534 Main entrance to the living area with a gray sofa and bookcase.
+535 Both groups look from the same corridor position toward the same living-room entrance. The gray sofa, bookcase, and wall decorations inside match exactly. No other branch was found.
+536 Both groups look from the same wall corner into the same living space. The same gray sofa, white doorway, and floor texture are visible. The spatial branch information is identical.
+537 Route to the living area with a gray sofa and white doorway.
+538 Both groups show the same right-hand doorway. The sofa, floor tiles, and wall features beyond it match exactly. No other unique branch was found.
+539 Right doorway into the living room with a gray sofa and white floor tiles visible.
+540 Both groups look into the living room from the same junction of wood and tile flooring. Both clearly show the gray sofa, bookcase, and opening from the living room into a corridor. The spatial branch information matches exactly.
+541 Doorway into the living area.
+542 Opening from inside the living room into the corridor.
+543 Both groups show the same doorway into the living room. The sofa, bookcase, and wall decorations beyond it match exactly. No other unique branch was found.
+544 Main entrance to the living area containing a gray sofa and bookcase.
+545 Both groups show the same right doorway. The gray sofa and white floor tiles beyond it match exactly, confirming the same spatial branch.
+546 Right doorway to the living area with a gray sofa and white floor tiles visible.
+547 Both groups show the same living-room doorway from highly similar viewpoints with a highly similar layout. No other unique branch was found.
+548 Doorway to the living area with a gray sofa and bookcase visible on the right.
+549 Both groups look right into the living room from the same wall corner. The sofa, bookcase, and wall decorations match exactly, confirming the same spatial branch.
+550 Route to the living area on the right with a gray sofa and bookcase.
+551 A-1 through A+2 clearly show a bathroom opening with a toilet and shower enclosure. It is completely invisible in B-2 through B+2, indicating that node B is past this branch. The two groups provide different branch information.
+552 Opening to the bedroom area.
+553 Opening to the bathroom area.
+554 Both groups show the same corridor. Three branches are clearly visible with matching features: the bathroom on the left, corridor ahead, and wooden frame on the right. Neither group has a unique branch.
+555 Wood-framed entrance on the right.
+556 A clearly shows the left bathroom entrance. A wall hides it in B, which shows a living-room entrance on the right that is absent from A. The branch information differs.
+557 Left entrance to the bathroom washbasin and shower enclosure.
+558 Living space beyond the wooden frame on the right.
+559 A includes the left bathroom entrance and B the right living-room entrance. The branch information differs and does not meet the deduplication criteria.
+560 Entrance straight ahead to the wood-floored corridor.
+561 Left bathroom or wash area entrance with a washbasin and glass partition visible.
+562 Right living or sitting area entrance with a sofa and wood-paneled wall visible.
+563 A shows an opening into the living room on the right. B shows a bathroom entrance on the left. Their branch information differs.
+564 Window and curtains at the corridor end.
+565 Wooden frame and opening into the living room on the right.
+566 Left bathroom entrance with a gray tiled wall.
+567 A mainly shows a right corridor branch with green artwork. B mainly shows a glass-fronted wardrobe area on the left. They provide different spatial branch information.
+568 Doorway into an area with green artwork and wooden flooring.
+569 Corridor space on the right with green artwork.
+570 Glass-fronted wardrobe area on the left.
+571 Both groups show the same bedroom and clearly show the same doorway into the bathroom. No other unique branch was found.
+572 A shows the doorway between the bedroom and bathroom. B shows the doorway between the bathroom and the corridor or study. Their branch information differs.
+573 Doorway into the corridor or study.
+574 A is at the bathroom/corridor junction and shows a branch into the bathroom. B is at the dressing-room/corridor junction and shows a branch into the dressing room. Both include the corridor branch, but their unique branches, bathroom and dressing room, differ. These are different spatial locations.
+575 Doorway into a corridor with a mirror and wall lamp.
+576 Bathroom doorway with a toilet and window visible.
+577 Dressing-room doorway with a wardrobe visible.
+578 A+1 and A+2 clearly show an opening to the bathroom. B+2 shows an opening to a corridor with a wall lamp. The groups provide different branch information.
+579 Opening into the bathroom area.
+580 Opening to the corridor with a wall lamp.
+581 A, particularly A-2 and A-1, clearly shows a bedroom branch. B, particularly B+1 and B+2, shows a corridor branch. Their branch information differs.
+582 Entrance to a bathroom with a window and shower fixtures.
+583 Bedroom entrance with a bed and bedside table visible.
+584 Corridor entrance with a picture and floor lamp visible.
+585 A shows a bathroom entrance on the right. B shows a wardrobe area on the left. The branch information differs.
+586 Entrance to the corridor with a green decorative panel and wall lamp.
+587 Right bathroom entrance with a metal window frame and showerhead.
+588 Wardrobe area on the left with a glass door and a wooden door.
+589 B, particularly B+2, clearly shows a doorway to a table-and-chair area to the left of the pale green artwork. In A that location is hidden by a wall or outside the view. This information is unique to B.
+590 Doorway to the right of the pale green artwork leading to a wood-floored area.
+591 Doorway to the left of the pale green artwork leading to an area with a table, chairs, and window.
+592 B clearly shows a doorway on the left into a room with a window and chair. In A the location is obscured by a wall or outside the view. This branch information is unique to B.
+593 Doorway straight ahead to a wood-floored corridor.
+594 Left doorway into a room with a window and chair.
+595 A clearly shows a doorway into a room with a chair to the left of the lotus artwork. A wall hides this location in B, which gives no information about that branch. The groups do not fully match.
+596 Doorway to the right of the lotus artwork leading to a wood-floored corridor.
+597 Doorway to the left of the lotus artwork leading to a room with a chair and window.
+598 A mainly shows the bathroom interior. B mainly shows the bedroom interior. They provide different physical branch information.
+599 Bathroom interior with a washbasin, toilet, and shower area.
+600 Bedroom interior with a wardrobe and bookcase.
+601 A's central observation is at the bathroom door and supplies branch information about the window inside. B's central observation is farther inside the bedroom and supplies branch information about the curtain to the left of the wardrobe. The physical branches differ.
+602 Window inside the bathroom.
+603 Curtain or partition opening to the left of the wardrobe.
+604 Both groups show the same bedroom and clearly show the doorway to the bathroom and the opening to the dressing room or corridor. The branch information matches exactly.
+605 Doorway to a toilet or bathroom.
+606 Opening to a dressing room or corridor.
+607 Both groups show the same bedroom and clearly show the same bathroom doorway. Neither shows another unique branch, confirming the same set of branch information.
+608 Doorway to a bathroom or toilet.
+609 A mainly shows a wall with floral decoration and a doorway. B, particularly B0 and B+1, shows a sink and mirror. These are independent spatial features absent from A, indicating different branch information.
+610 Doorway to a wood-floored corridor.
+611 Pale green wall on the left with two yellow floral decorations.
+612 Wash area on the right with a mirror and sink.
+613 Both groups show the same doorway on the right into a wood-floored area. The green picture on the left, black-and-white picture on the right, and spatial layout match exactly. No other unique branch was found.
+614 Doorway on the right into a wood-floored area.
+615 Both groups show just one branch in the same space: a doorway to the right of the lotus artwork into a wood-floored corridor. Its relative position and geometry match exactly.
+616 Doorway to the right of the hanging lotus artwork leading to a wood-floored corridor.
+617 B clearly shows a left entrance into a room with a table, chairs, and window. A wall obscures the location in A, which provides no information about this branch.
+618 Left entrance into a room with a table, chairs, and window.
+619 Both groups show the same corridor. The left room entrance and bedroom doorway straight ahead correspond clearly across both observations. Neither group shows a unique branch.
+620 Left entrance to a room with a table, chairs, and window.
+621 Doorway straight ahead to the inner corridor and bedroom.
+622 A, particularly A-1 through A+2, clearly shows a washbasin and bathroom space, providing evidence for a separate branch. B-2 through B+2 show only a doorway to an inner corridor and do not show the basin or bathroom entrance. The groups provide different branch information.
+623 Doorway to an inner corridor or room.
+624 Entrance to the washbasin and bathroom area.
+625 Both groups show the same corridor with only a single doorway straight ahead to a wood-floored area. The layout and decorative features, including the picture on the right and decorations on the left, match exactly.
+626 Doorway straight ahead into a wood-floored area.
+627 B, particularly B+1 and B+2, clearly shows a new doorway on the left into a room with a window and chair. A wall obscures that location in A, which provides no information about that branch.
+628 Doorway into a wood-floored room.
+629 Doorway into a room with a window and chair.
+630 B, particularly B+1 and B+2, shows a new branch into a bedroom with a bed visible. A does not show that branch. The branch information differs.
+631 Doorway into a room with a black clothes rack and wooden flooring.
+632 Doorway to a room with a window and chair.
+633 Doorway to a room with a bed and bedside table.
+634 A is at a corridor junction and provides two branches, toward the balcony and right-hand corridor. B is at a bedroom door and provides a branch into the bedroom. They show different physical branches.
+635 Entrance to a long narrow space with a window and chair, possibly a balcony or corridor.
+636 Right entrance to a wood-floored corridor, to the right of the lotus artwork.
+637 Left entrance to a bedroom with a bed and curtains visible.
+638 A is in the transition area between bedroom and balcony and shows two branches, to the bedroom and balcony. B is between the shower and balcony and shows three branches, to the shower, balcony, and another room. Their branch information differs.
+639 Doorway into a balcony or small room with a window and chair.
+640 Bedroom doorway with a bed visible.
+641 Shower doorway with a showerhead visible.
+642 Doorway into another room with wooden flooring visible on the right.
+643 A is at the junction of the bathroom entrance and a separate small space. B is at the junction of the main bedroom entrance and that small space. The groups provide different branch information.
+644 Doorway into a separate small space with a window and chair.
+645 Right bathroom or shower entrance with lotus artwork.
+646 Left entrance to the main bedroom with a bed and curtains.
+647 A shows the partition between the bedroom and balcony, with both entrances visible. B shows the partition between the balcony and corridor, with those two entrances visible. Their branch information differs.
+648 Doorway to a separate small space with a window and chair, possibly a balcony or study.
+649 Doorway to a bedroom with a bed and curtains visible.
+650 Right opening to a corridor or living room, with wooden flooring extending beyond.
+651 A, particularly A-2 through A0, clearly shows a left entrance into a space with wooden shelving and cabinets. A white wall obscures that location in B-2 through B0, which give no information about this branch. The groups do not fully match.
+652 Left entrance into a space with wooden shelving and cabinets.
+653 Both groups show the same doorway beside a low white cabinet, leading to the same living room. Both show no other visible independent branch. The spatial features match exactly.
+654 Doorway into a living room with a sofa and greenery.
+655 Both groups show the same doorway to the living room. The screen on the left, greenery, and white wall on the right align exactly. No other branch was found.
+656 Doorway into the living-room sofa area.
+657 A shows a view from the corridor with a clear corridor branch on the right. B is inside the living room, the right corridor entrance has disappeared, and new furniture features appear. This indicates different locations.
+658 Right corridor entrance clearly visible in A but no longer visible in B.
+659 Black metal rack or furniture on the right, clearly visible in B and absent from A.
+660 A mainly shows the entrance area on the left of the living room and B the entrance area on the right. Each provides branch information outside the other's view. It cannot be confirmed that the two are entirely redundant.
+661 Wall opening on the left with a landscape picture and a grille.
+662 Wall opening on the right with a raised cabinet and a sculpture.
+663 Both groups show the same living-room interior, but furniture and curtains obscure most of the view. Neither clearly shows a traversable doorway or corridor entrance. There is insufficient evidence of branches to establish a correspondence.
+664 Both groups show the same living room and clearly show the corridor ahead and the doorway on the right. Their branch information matches exactly.
+665 Passage straight ahead leading farther into the corridor.
+666 Doorway in the right wall.
+667 Both groups clearly show two main branches in the same living room: the corridor entrance beside the TV cabinet and the doorway in the right wall. The layout and fixtures, including the TV, coffee table, and low stool, match exactly. No unique branch was found.
+668 Corridor entrance to the right of the TV cabinet.
+669 Doorway in the right wall into the washbasin area.
+670 Both groups show the same living area, with the corridor entrance straight ahead and the bathroom entrance on the right clearly visible. The branch information matches exactly.
+671 Doorway straight ahead leading farther into the corridor.
+672 Right doorway to the washbasin or bathroom.
+673 A shows a doorway on the left of the corridor, where B shows a solid wall. The physical branch information differs.
+674 Left corridor doorway, visible from A-2 through A+2.
+675 A clearly shows a doorway branch on the left of the corridor. A wall obscures it in B, which gives no information about the branch. The groups differ.
+676 A0 through A+2 clearly show two doorways, one on each side. In B-2 through B+2 the left doorway disappears, leaving only the one on the right. The observed spatial branches differ.
+677 Left doorway into another space.
+678 A shows a bedroom doorway on the right. B shows a left doorway into a room with a window. The spatial branch information differs.
+679 Left doorway into a room with a window and bed.
+680 A clearly shows the branch at the corridor end, including the opening on the left and artwork. B's viewpoint changes: from B0 onward the white wall mainly obscures the view or the view shifts away. B does not show that branch, so the observations do not fully correspond.
+681 Bedroom doorway on the right of the corridor, with a gray stuffed toy inside.
+682 Opening or doorway on the left at the corridor end.
+683 Artwork on the wall at the corridor end.
+684 A+1 and A+2 clearly show two adjacent room entrances: bedroom on the left, playroom on the right. B-2 through B+2 show only the left bedroom entrance. The playroom entrance is entirely absent in B, so the branch information differs.
+685 Doorway to the bedroom with a gray cabinet and greenery.
+686 Doorway to a room with a gray stuffed toy and pink blanket.
+687 A, particularly A-2 and A-1, clearly shows a bedroom doorway on the right. In B it has moved completely out of sight, indicating different physical branch information.
+688 Doorway to a room with yellow curtains and a gray cabinet.
+689 Doorway to a room with a bed and dark wardrobe.
+690 Both groups clearly show two branches at the same corridor end: ahead to a room with yellow curtains and right to a room with a bed. The layout and fixed features match exactly.
+691 Entrance straight ahead to a room with yellow curtains and a gray cabinet.
+692 Right entrance to a room with a bed and dark curtains.
+693 A clearly shows the entrance on the right into a second room with a pink bed. In B this branch has disappeared completely. The two nodes are at different locations and supply different branch information.
+694 Doorway into a room with yellow curtains and a gray cabinet.
+695 Doorway into a room with a pink bed and dark curtains.
+696 B additionally shows a gold floor lamp and more open space on the left, providing unique branch information absent from A.
+697 Corridor doorway to the left of the painting.
+698 Gold floor lamp on the left and a possible entrance to another space on that side.
+699 Both groups show the abstract painting on the same wall and just one doorway branch to its left. The layout and fixtures match exactly, with no other unique branch.
+700 White doorway to the left of the abstract painting, leading to the inner corridor.
+701 A shows artwork on the right wall. In B a new doorway appears in the left wall, and the artwork is no longer visible. The spatial branch information differs.
+702 Doorway straight ahead.
+703 Artwork on the right wall.
+704 Doorway in the left wall.
+705 B, particularly from B0 onward, clearly shows a bathroom entrance on the left. In A that location is hidden by a wall or outside the view. This branch information is unique to B.
+706 Right doorway into a wood-floored corridor.
+707 Left bathroom doorway with the shower enclosure visible.
+708 B, particularly B+1 and B+2, clearly shows a new doorway to a bedroom on the right. A shows a solid wall there and supplies no corresponding branch information.
+709 Central doorway to the corridor.
+710 Right doorway to the bedroom.
+711 B, particularly B0, B+1, and B+2, clearly shows a bedroom entrance on the right. A wall hides that location in A, which provides no information about this branch.
+712 Right entrance to the bedroom.
+713 A clearly shows a shower entrance on the left. B shows a bathtub entrance on the right. The branches differ.
+714 Doorway into a bedroom with floor-to-ceiling windows and a bed.
+715 Left entrance to a bathroom with shower facilities.
+716 Right entrance to a bathroom with a bathtub.
+717 A clearly shows an opening on the right to the bathroom. A wall hides it in B, which provides no information about this branch.
+718 Opening into the bedroom.
+719 Right opening into the bathroom.
+720 A clearly shows a corridor entrance on the left. In B that entrance is entirely out of view, indicating different physical branch information.
+721 Opening into the bedroom interior.
+722 Corridor entrance on the left.
+723 A-2 shows a wall opening on the left. All B frames face the bed and window, with no branch information in that direction. An exact branch match cannot be confirmed.
+724 Wall opening or doorway visible on the left in A-2.
+725 B, particularly B+1 and B+2, clearly shows a right doorway into a bedroom. A does not show this branch from the corresponding angle. Node B therefore provides unique branch information absent from A.
+726 Corridor entrance ahead leading to white double doors.
+727 Left doorway to the washbasin area.
+728 Right doorway into the bedroom, with the bed visible.
+729 A shows a branch to the washbasin on the left. B shows a branch to the bedroom on the right. Their branch information differs.
+730 Doorway to the white wardrobe area.
+731 Doorway to the washbasin or bathroom on the left.
+732 Doorway to the bedroom on the right with a bed and window inside.
+733 A clearly shows a separate doorway on the left to a white wardrobe area. In B that doorway has moved entirely out of view. The branch information differs.
+734 Opening into the bedroom toward the bed and window.
+735 Separate left doorway to the white wardrobe area.
+736 B+1 and B+2 clearly show a bathroom doorway. A contains no information about that branch, so the observations do not fully match.
+737 Doorway into the bathroom.
+738 Node A is at a three-way junction with branches to the bedroom, washroom, and inner corridor. B is in the inner corridor and shows only the corridor continuation and washroom branch. The bedroom branch is missing, so the information differs.
+739 Doorway to the inner corridor.
+740 Bedroom doorway with the bed visible.
+741 Washroom doorway with a washbasin visible.
+742 Node A is at the bathroom entrance and provides a bathroom branch. B is in the corridor between the bedroom and washroom and provides bedroom and washroom branches. The sets of physical branches differ.
+743 Doorway to an inner white wardrobe area.
+744 Bathroom doorway with a bathtub and window visible.
+745 Washroom doorway with the washbasin visible.
+746 A clearly shows a left branch into the bathroom. B's view shifts right and excludes that bathroom entrance. Their information does not fully match.
+747 Corridor entrance straight ahead toward a white wardrobe.
+748 Right bedroom opening with a bed visible.
+749 Left bathroom opening with a washbasin and mirror visible.
+750 A clearly shows a corridor entrance on the left. In B it is entirely out of view, and a TV cabinet area appears on the right that A does not show. The branch information differs.
+751 Opening into the bedroom area.
+752 Corridor entrance on the left leading to a white wardrobe area.
+753 Wall area on the right with a TV cabinet and TV.
+754 A is at the junction of the bedroom entrance and the left corridor, and shows both branches. B is inside the bedroom, shows only its interior, and omits the left corridor branch. The information differs.
+755 Opening into the bedroom toward the bed, window, and TV cabinet.
+756 Left corridor or passage entrance visible in A-2, A-1, and A0.
+757 Both groups clearly show the room entrance at the corridor end and the bathroom entrance on the left. The layout, wall relationships, and fixtures such as the toilet and cabinet match exactly, confirming the same set of branches.
+758 Doorway at the corridor end leading to a room with a wooden cabinet and window.
+759 Left bathroom entrance with the toilet and washbasin visible inside.
+760 Both groups clearly show the bathroom entrance on the left and storage-room entrance straight ahead. The layout, wall relationships, and fixtures such as the toilet and cabinet match exactly, confirming the same set of branches.
+761 Left doorway to the bathroom.
+762 Storage-room doorway straight ahead.
+763 A is in the corridor with a clear bathroom entrance on the left. B has passed this point, the left bathroom entrance has disappeared, and a right entrance to the dining/kitchen area appears that A did not show. The branch information differs.
+764 Room entrance straight ahead, with a window and wooden shelving inside.
+765 Left bathroom entrance with a beige textured wall and a white toilet.
+766 Open entrance on the right with dining table and chairs and the kitchen area.
+767 B, particularly B-2 through B+2, clearly shows a wooden door on the left. In A-2 through A+2 the location is hidden by a wall or outside the view. This information is unique to B.
+768 Doorway straight ahead into a room with a window and cabinet.
+769 Opening to the dining area on the right.
+770 Wooden door on the left to a corridor or bedroom.
+771 Both groups show exactly the same three branches: wooden door on the left, entrance to the room with a window straight ahead, and dining area behind the screen on the right. Their positions match, with no unique branch.
+772 Wooden door on the left with a picture frame.
+773 Opening straight ahead to a room with a window.
+774 Dining area behind the wooden slatted screen on the right.
+775 Both groups clearly show the wooden door on the left, small-room entrance ahead, and dining area behind the screen on the right. The layout and branch information match exactly.
+776 Wooden door on the left with artwork.
+777 Opening straight ahead to a small room with a window.
+778 A's center frame A0 clearly shows a wooden door on the left and a dining-room entrance on the right. By B0 the camera has moved forward, both have left the view, and only the corridor entrance straight ahead remains. The branch information differs.
+779 Corridor entrance straight ahead leading to a room with a window.
+780 Wooden door on the left.
+781 Entrance to the dining/kitchen area behind the wooden grille on the right.
+782 A clearly shows the right corridor and bedroom ahead as two branches. B at steps 75–79 is almost entirely obscured by a wooden door panel, and no branch information can be seen. A match cannot be confirmed.
+783 Corridor entrance on the right.
+784 Bedroom entrance ahead.
+785 A, particularly A0 and A+1, clearly shows a doorway to the left of the painting. In B-2 through B+2 a wooden partition obscures that location or it is outside the view. The branch information differs.
+786 Doorway into a corridor or storage room to the left of the painting.
+787 A shows a space with openings to a bedroom and a corridor. B shows a closed wall with zebra-pattern artwork. Their spatial branch information is entirely different.
+788 Opening to the bedroom.
+789 Opening to the corridor.
+790 Zebra-pattern artwork on the wall.
+791 A+1 and A+2 clearly show a dark brown wooden door. In B-2 through B+2 the door is outside the view. B0, B+1, and B+2 show a sofa area to the right of the refrigerator, which A does not show.
+792 Dark brown wooden door.
+793 Sofa area to the right of the refrigerator.
+794 Both groups clearly show the dark wooden door on the left and kitchen entrance between the central cabinets. The layout and positions of the refrigerator and dining table match, confirming the same set of branches.
+795 Dark wooden door on the left.
+796 Kitchen entrance between the white cabinets in the middle.
+797 Both groups clearly show the dark brown wooden door on the left and kitchen entrance between the central storage cabinets. The layout and fixed objects, such as the refrigerator on the right, match exactly, confirming the same set of branches.
+798 Dark brown wooden door on the left.
+799 Kitchen entrance between two white storage cabinets in the middle.
+800 Both groups clearly show the same two branches, a wooden door on the left and a central doorway to the sink. Their layout and relative positions match exactly. No unique branch was found.
+801 Central doorway to the sink area.
+802 A, particularly A-2 and A-1, shows a corridor entrance on the right leading to gray flooring. B, particularly B-2 and B-1, shows a corridor entrance on the left leading to a bookcase area. The branch information differs.
+803 Entrance to the dining area.
+804 Right corridor entrance leading to gray flooring.
+805 Left corridor entrance leading to the bookcase area.
+806 B, particularly B+1 and B+2, shows a window and sofa area to the left of the bookcase. This branch information is absent from A, so node B supplies an additional spatial branch.
+807 Dark doorway to the right of the bookcase.
+808 Entrance to the window and sofa area to the left of the bookcase.
+809 B, particularly B-1, B0, and B+1, clearly shows a dark brown wooden-door entrance on the left. A shows only a wall or the side of furniture at that location, with no information about the doorway. The branch information differs.
+810 Opening into a kitchen or laundry area with a gray counter and white sink.
+811 Dark brown wooden-door entrance on the left.
+812 A includes a dark wooden door on the right. B includes a white cabinet opening on the left. They provide different branch information.
+813 Corridor entrance leading to the bookcase and window area.
+814 Dark wooden-door entrance on the right.
+815 Opening in a white cabinet or wall on the left.
+816 A includes two adjacent entrances, to a bedroom and a long narrow room. B includes only a bedroom entrance and corridor wall decorations. The branch information differs.
+817 Doorway into a bedroom with gray bedding and a bedside table.
+818 Doorway into a long narrow room with a window and another bed.
+819 Set of floral pictures on the corridor wall.
+820 Both groups clearly show the left bedroom entrance and the long narrow corridor entrance straight ahead. The layout and positions of fixtures such as the TV and bed match exactly. No unique branch was found.
+821 Long narrow corridor entrance straight ahead.
+822 Both groups show the same transition between living and dining rooms and provide branch information only on the living-room side. The layout and fixed items, including sofa, TV, and partition, match exactly.
+823 Both groups show the same living room and clearly show a single branch entrance behind the white openwork partition on the right. No other unique branch was found.
+824 Entrance to the space behind the white openwork partition on the right.
+825 Both groups show the same living room and clearly show a single corridor entrance behind the white openwork partition on the right. No other branch was found. The layout and fixtures match exactly.
+826 Corridor entrance behind the white openwork partition on the right.
+827 A clearly shows the entrance behind the grille partition to the right of the TV wall. After moving, B turns to the left of the sofa and shows a bookcase opening. The right grille entrance is no longer visible in B. The branch information differs.
+828 Opening formed by a white grille partition to the right of the TV wall.
+829 Entrance to a separate space behind the grille partition to the right of the TV wall.
+830 Bookcase opening in the wall to the left of the sofa.
+831 A shows a right branch into a room with a full-length mirror. B shows a left branch into a room with a green picture. The branch information differs.
+832 Entrance to a room with pink curtains and an armchair.
+833 Right entrance to a room with a full-length mirror.
+834 Left entrance to a room with a green picture and dining table.
+835 A shows a right branch into a room with pink curtains. B shows a left branch into a wooden shelving area. Their branch information differs.
+836 Doorway into a room with a green picture and white dining table.
+837 Right entrance into a room with pink curtains and an armchair.
+838 Left corridor entrance with wooden shelving.
+839 A clearly shows a left-hand corridor opening with white shelving. A wall obscures the location in B, which provides no information about this branch. Their information does not fully match.
+840 Doorway at the corridor end into a room with a green picture and white dining table.
+841 Opening with white shelving on the left of the corridor.
+842 Both groups show the same corridor and single dining-room entrance at its end. The artwork on both corridor walls, including the JOLIN poster and oval portrait, and the spatial layout match exactly. No other branch was found.
+843 Doorway at the corridor end into the dining room with a green picture and dining table.
+844 A is at the corridor doorway. Its frame limits the view, and the right corridor wall is visible. B is fully inside the living room with a wide view of its wall decorations. The branch information differs: A includes the side wall of the corridor, while B includes the walls inside the room.
+845 Doorway into the living or dining area.
+846 Artwork on the right corridor wall: a JOLIE poster.
+847 Artwork on the left wall inside the living room: a seascape.
+848 Artwork on the right wall inside the living room: a black-and-white picture.
+849 A looks into the living room from the entrance, with the doorway behind as its main branch. B turns left inside the living room, revealing a balcony opening and cabinet area absent from A. A does not show B's balcony branch, so the information differs.
+850 Doorway entrance straight ahead in A0.
+851 Balcony or floor-to-ceiling window opening with yellow curtains on the left from B-2 through B+2.
+852 Wooden cabinet area in the lower left from B-2 through B+2.
+853 A, particularly A-2, clearly shows a right opening to the dining area. B's view moves left, placing this opening outside the view. The branch information differs.
+854 Doorway to a balcony or outside space.
+855 Right opening to the dining area, with dining table and chairs visible.
+856 Both groups show the same living room and only a single branch straight ahead to the balcony or outer room. The layout and fixed items, including sofa, coffee table, and artwork, match exactly.
+857 Entrance straight ahead to a balcony or outer room with yellow curtains and white sheers.
+858 B, particularly B0, clearly shows a large mirrored or glass decoration on the right wall. A shows a solid wall there. This spatial feature is unique to B.
+859 Opening straight ahead to an outside balcony or corridor.
+860 Large mirrored or glass decorative area on the right wall.
+861 A, particularly A-2 through A0, clearly shows a right corridor entrance and the space inside. In B-2 through B0 the right entrance is completely out of sight, indicating different physical branch information.
+862 Doorway straight ahead to a balcony or outside space.
+863 Right corridor entrance, with the sofa area visible.
+864 Doorway at the end of the right corridor.
+865 A shows an opening on the right. B shows an elevator entrance on the left. Their branch information differs and the camera position has shifted noticeably.
+866 White-framed opening on the right, possibly a bathroom or another room entrance.
+867 Elevator entrance on the left with a metal doorframe.
+868 A shows a bedroom doorway and living area. B shows the kitchen area. Their branch information differs.
+869 Living area.
+870 Kitchen area.
+871 A mainly shows a closed light wooden door. B shows dark storage cabinets to the left of that door and an opening into the living room. The spatial branch information differs.
+872 Opening into the living or dining area.
+873 Light wooden door straight ahead in A0 and A+1.
+874 Dark built-in storage cabinet on the left in B-2, B-1, B0, and B+1.
+875 A mainly shows a dark recessed niche on the right. B shows a bedroom doorway on the left. The branch information differs.
+876 Dark recessed niche or storage compartment opening on the right.
+877 A, particularly A-2, A-1, and A0, clearly shows the left bedroom doorway. In B it is entirely outside the view. The nodes are at different locations and supply different branch information.
+878 Open space leading to the living room or sofa area.
+879 Both groups show the same bathroom entrance. The basin, floor tile pattern, and spatial layout inside match exactly, confirming the same branch.
+880 Bathroom entrance with a basin and patterned floor tiles.
+881 Both groups clearly show the same bathroom entrance. The basin, floor tile pattern, and spatial layout inside match exactly. No other unique branch was found.
+882 Bathroom entrance with gray geometric floor tiles and a basin.
+883 B, particularly B-1 and B0, clearly shows another spatial branch to a corridor or room to the right of the bathroom doorway. A shows only a closed wall there and gives no information about the branch.
+884 Doorway to the inner bathroom.
+885 Corridor continuation to the right of the bathroom doorway, with a picture and wooden flooring visible.
+886 A shows only a bathroom entrance. Alongside the bathroom entrance B also clearly shows a bedroom entrance on the right, supplying branch information absent from A.
+887 Entrance to a bathroom with a basin and toilet.
+888 Bedroom entrance with a yellow bed runner and a window.
+889 Both groups show two branches at the same location: bathroom on the left and bedroom on the right. The layout, fixtures such as the toilet, bed, and window, and their relative positions match exactly. No unique branch was found.
+890 Bathroom entrance on the left with gray floor tiles, a toilet, and shower fixtures.
+891 Bedroom entrance on the right with a yellow bed runner and window.
+892 In A a bedroom entrance is immediately to the right of the bathroom entrance. In B a dining-room entrance is immediately to its left. The observed combinations of branches differ and represent different spatial locations.
+893 Entrance to a bathroom with a toilet and shower.
+894 Entrance to a bedroom with a yellow bed runner.
+895 Entrance to a dining room or kitchen with a dining table.
+896 A shows a node with entrances to both bathroom and bedroom. B shows a node with a bedroom entrance and another corridor or room entrance. The groups provide different branch information.
+897 Entrance to a bedroom with yellow bedding and a window.
+898 Bathroom entrance with a shower and toilet.
+899 Corridor or room entrance with pale blue walls and a bench at the foot of the bed.
+900 A, particularly A+1 and A+2, clearly shows the bathroom entrance. B-2 through B+2 mainly show the bathroom from within and do not show the entrance as a branch. B is deeper inside the bathroom than A's corridor or entrance viewpoint.
+901 Entrance to a room with yellow bedding and a window.
+902 Entrance to a bathroom with a toilet and shower fixtures.
+903 Both groups show the same corridor and clearly show two branches, to the bathroom and bedroom. The layout and fixtures such as the toilet and bed match exactly.
+904 Doorway to the bathroom containing a toilet, basin, and shower.
+905 Bedroom doorway with a bed and window visible.
+906 B, particularly B+1 and B+2, clearly shows a bedroom branch to the right of the bathroom. A wall obscures the location in A, which provides no information about that branch.
+907 Doorway to the inner bathroom.
+908 Doorway to the bedroom on the right, with yellow bedding visible.
+909 Both groups show the same bedroom and clearly show a single doorway branch on the right. The layout and fixed features such as the bed and flooring match exactly. No other unique branch was found.
+910 White-framed opening on the right leading to an inner space.
+911 Both groups show the same white wall and the same opening on the right. The edge of the bed is visible on the left in both. The layout and branch information match exactly.
+912 Doorway on the right into another space.
+913 B clearly shows a bathroom entrance at the corridor end. A wall obscures the location in A, which provides no information about the branch.
+914 Right doorway into a corridor with gray flooring.
+915 Bathroom entrance at the end of the right corridor, with a basin and patterned floor tiles.
+916 Both groups show the same right bathroom entrance, identified by its distinctive floor tiles and washbasin. No other unique branch was found.
+917 Right bathroom entrance with gray geometric floor tiles and a basin.
+918 Both groups clearly show the same bathroom entrance on the right, but a wall blocks B's later frames B+1 and B+2. Other branches cannot be confirmed, and A does not show B's later viewpoint, so differences cannot be entirely ruled out.
+919 Right-hand entrance to a bathroom with gray geometric floor tiles and a washbasin.
+920 Both groups clearly show the bedroom's sole exit, a doorway on the right. Its geometry relative to the bed and desk matches exactly, confirming the same spatial branch.
+921 White doorway on the right side of the room beside the foot of the bed.
+922 Both groups show the same bedroom and a single clear doorway branch on the right. The window and desk are on the left, with no other branch. The spatial features match exactly.
+923 Right doorway into a corridor or outside space.
+924 Both groups show the same bedroom and clearly show the same right doorway into a gray-tiled corridor. No other unique branch was found.
+925 Right doorway into a corridor with gray floor tiles.
+926 A mainly shows the corridor and a doorway leading to gray flooring. In B the camera is inside the bedroom, showing interior features such as a bed, desk, and window that A does not include. The branch information differs.
+927 Doorway leading to an area with gray flooring.
+928 Bedroom interior with a bed, desk, and window.
+929 Both groups clearly show the entrance to the same bathroom, but the latter half of B, B+1 and B+2, is almost entirely white. It is unclear whether B includes other corridor continuations or branches visible in A, so identical information cannot be confirmed.
+930 Bathroom entrance with gray floor tiles and a toilet.
+931 A is inside the bedroom with the bathroom entrance as its main branch. B has moved to just outside the bathroom doorway. The corridor continuation to the right of the bathroom appears and the bedroom interior features are no longer visible, indicating different positions.
+932 Bedside table and bed area in the bedroom.
+933 Corridor continuation to the right of the bathroom doorway.

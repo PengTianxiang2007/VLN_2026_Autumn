@@ -1,0 +1,72 @@
+[
+  {
+    "case_number": 4,
+    "episode_id": "kujiale_0113_18_1",
+    "scene": "kujiale_0113",
+    "candidates": 15,
+    "comparisons": 13
+  },
+  {
+    "case_number": 8,
+    "episode_id": "kujiale_0123_fix_43_3",
+    "scene": "kujiale_0123_fix",
+    "candidates": 11,
+    "comparisons": 6
+  },
+  {
+    "case_number": 12,
+    "episode_id": "kujiale_0147_14_0",
+    "scene": "kujiale_0147",
+    "candidates": 6,
+    "comparisons": 3
+  },
+  {
+    "case_number": 34,
+    "episode_id": "kujiale_0232_72_1",
+    "scene": "kujiale_0232",
+    "candidates": 5,
+    "comparisons": 4
+  },
+  {
+    "case_number": 40,
+    "episode_id": "kujiale_0234_58_1",
+    "scene": "kujiale_0234",
+    "candidates": 7,
+    "comparisons": 5
+  },
+  {
+    "case_number": 41,
+    "episode_id": "kujiale_0243_29_2",
+    "scene": "kujiale_0243",
+    "candidates": 14,
+    "comparisons": 10
+  },
+  {
+    "case_number": 44,
+    "episode_id": "kujiale_0257_73_4",
+    "scene": "kujiale_0257",
+    "candidates": 13,
+    "comparisons": 9
+  },
+  {
+    "case_number": 48,
+    "episode_id": "kujiale_0259_55_0",
+    "scene": "kujiale_0259",
+    "candidates": 5,
+    "comparisons": 4
+  },
+  {
+    "case_number": 49,
+    "episode_id": "kujiale_0285_2_1",
+    "scene": "kujiale_0285",
+    "candidates": 10,
+    "comparisons": 8
+  },
+  {
+    "case_number": 51,
+    "episode_id": "kujiale_0290_1_1",
+    "scene": "kujiale_0290",
+    "candidates": 7,
+    "comparisons": 5
+  }
+]

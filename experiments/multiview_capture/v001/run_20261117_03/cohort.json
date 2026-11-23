@@ -1,0 +1,741 @@
+{
+  "schema": 1,
+  "episodes": 104,
+  "events": 0,
+  "seed": 2,
+  "cases": [
+    {
+      "episode_id": "kujiale_0234_31_4",
+      "scene": "kujiale_0234",
+      "seed": 2,
+      "episode_seed": 1150730970,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0234_23_1",
+      "scene": "kujiale_0234",
+      "seed": 2,
+      "episode_seed": 637261339,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0234_28_3",
+      "scene": "kujiale_0234",
+      "seed": 2,
+      "episode_seed": 1411932039,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0234_34_4",
+      "scene": "kujiale_0234",
+      "seed": 2,
+      "episode_seed": 878687607,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0234_27_4",
+      "scene": "kujiale_0234",
+      "seed": 2,
+      "episode_seed": 1223738927,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0234_63_3",
+      "scene": "kujiale_0234",
+      "seed": 2,
+      "episode_seed": 1043577748,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0243_29_2",
+      "scene": "kujiale_0243",
+      "seed": 2,
+      "episode_seed": 803104587,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0243_11_2",
+      "scene": "kujiale_0243",
+      "seed": 2,
+      "episode_seed": 1411761770,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0243_18_3",
+      "scene": "kujiale_0243",
+      "seed": 2,
+      "episode_seed": 1860895582,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0243_35_4",
+      "scene": "kujiale_0243",
+      "seed": 2,
+      "episode_seed": 555556187,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0258_35_1",
+      "scene": "kujiale_0258",
+      "seed": 2,
+      "episode_seed": 515067081,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0258_14_0",
+      "scene": "kujiale_0258",
+      "seed": 2,
+      "episode_seed": 1327711342,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0258_33_2",
+      "scene": "kujiale_0258",
+      "seed": 2,
+      "episode_seed": 1261423479,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0258_27_0",
+      "scene": "kujiale_0258",
+      "seed": 2,
+      "episode_seed": 575173424,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0258_5_0",
+      "scene": "kujiale_0258",
+      "seed": 2,
+      "episode_seed": 2139031668,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0240_7_0",
+      "scene": "kujiale_0240",
+      "seed": 2,
+      "episode_seed": 1925777851,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0240_50_2",
+      "scene": "kujiale_0240",
+      "seed": 2,
+      "episode_seed": 1629246577,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0240_8_4",
+      "scene": "kujiale_0240",
+      "seed": 2,
+      "episode_seed": 1106871798,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0159_50_0",
+      "scene": "kujiale_0159",
+      "seed": 2,
+      "episode_seed": 308302737,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0159_35_3",
+      "scene": "kujiale_0159",
+      "seed": 2,
+      "episode_seed": 1118043323,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0159_44_0",
+      "scene": "kujiale_0159",
+      "seed": 2,
+      "episode_seed": 804301954,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0123_fix_43_3",
+      "scene": "kujiale_0123_fix",
+      "seed": 2,
+      "episode_seed": 476748041,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0123_fix_19_3",
+      "scene": "kujiale_0123_fix",
+      "seed": 2,
+      "episode_seed": 689955747,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0123_fix_30_2",
+      "scene": "kujiale_0123_fix",
+      "seed": 2,
+      "episode_seed": 492992941,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0123_fix_17_3",
+      "scene": "kujiale_0123_fix",
+      "seed": 2,
+      "episode_seed": 1556057421,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0123_fix_26_0",
+      "scene": "kujiale_0123_fix",
+      "seed": 2,
+      "episode_seed": 673154518,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0123_fix_13_3",
+      "scene": "kujiale_0123_fix",
+      "seed": 2,
+      "episode_seed": 1881136838,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0113_37_2",
+      "scene": "kujiale_0113",
+      "seed": 2,
+      "episode_seed": 860391652,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0113_18_1",
+      "scene": "kujiale_0113",
+      "seed": 2,
+      "episode_seed": 1721892948,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0113_1_4",
+      "scene": "kujiale_0113",
+      "seed": 2,
+      "episode_seed": 839767911,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0165_57_0",
+      "scene": "kujiale_0165",
+      "seed": 2,
+      "episode_seed": 2119017930,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0165_53_0",
+      "scene": "kujiale_0165",
+      "seed": 2,
+      "episode_seed": 316806801,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0165_36_0",
+      "scene": "kujiale_0165",
+      "seed": 2,
+      "episode_seed": 311886221,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0165_30_2",
+      "scene": "kujiale_0165",
+      "seed": 2,
+      "episode_seed": 634224160,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0165_49_4",
+      "scene": "kujiale_0165",
+      "seed": 2,
+      "episode_seed": 1750887107,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0165_40_1",
+      "scene": "kujiale_0165",
+      "seed": 2,
+      "episode_seed": 520105431,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0165_55_1",
+      "scene": "kujiale_0165",
+      "seed": 2,
+      "episode_seed": 1241731806,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0165_58_1",
+      "scene": "kujiale_0165",
+      "seed": 2,
+      "episode_seed": 2145954258,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0165_45_0",
+      "scene": "kujiale_0165",
+      "seed": 2,
+      "episode_seed": 936985772,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0259_65_4",
+      "scene": "kujiale_0259",
+      "seed": 2,
+      "episode_seed": 2139303071,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0259_55_0",
+      "scene": "kujiale_0259",
+      "seed": 2,
+      "episode_seed": 1709187880,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0128_fix_20_0",
+      "scene": "kujiale_0128_fix",
+      "seed": 2,
+      "episode_seed": 720003071,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0128_fix_18_1",
+      "scene": "kujiale_0128_fix",
+      "seed": 2,
+      "episode_seed": 467968990,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0128_fix_12_4",
+      "scene": "kujiale_0128_fix",
+      "seed": 2,
+      "episode_seed": 1576460566,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0257_82_4",
+      "scene": "kujiale_0257",
+      "seed": 2,
+      "episode_seed": 1038112731,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0257_73_4",
+      "scene": "kujiale_0257",
+      "seed": 2,
+      "episode_seed": 1049919164,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0257_8_1",
+      "scene": "kujiale_0257",
+      "seed": 2,
+      "episode_seed": 1259671074,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0257_41_2",
+      "scene": "kujiale_0257",
+      "seed": 2,
+      "episode_seed": 581987259,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0257_4_3",
+      "scene": "kujiale_0257",
+      "seed": 2,
+      "episode_seed": 1759680424,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0257_53_3",
+      "scene": "kujiale_0257",
+      "seed": 2,
+      "episode_seed": 83644557,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0285_2_1",
+      "scene": "kujiale_0285",
+      "seed": 2,
+      "episode_seed": 184213337,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0285_7_3",
+      "scene": "kujiale_0285",
+      "seed": 2,
+      "episode_seed": 596921779,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0285_2_3",
+      "scene": "kujiale_0285",
+      "seed": 2,
+      "episode_seed": 1374780445,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0285_2_0",
+      "scene": "kujiale_0285",
+      "seed": 2,
+      "episode_seed": 267218710,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0207_41_0",
+      "scene": "kujiale_0207",
+      "seed": 2,
+      "episode_seed": 437501748,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0207_60_4",
+      "scene": "kujiale_0207",
+      "seed": 2,
+      "episode_seed": 296969250,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0207_69_4",
+      "scene": "kujiale_0207",
+      "seed": 2,
+      "episode_seed": 967003970,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0208_21_4",
+      "scene": "kujiale_0208",
+      "seed": 2,
+      "episode_seed": 98296561,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0226_38_4",
+      "scene": "kujiale_0226",
+      "seed": 2,
+      "episode_seed": 221390934,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0226_56_2",
+      "scene": "kujiale_0226",
+      "seed": 2,
+      "episode_seed": 1434653449,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0226_14_2",
+      "scene": "kujiale_0226",
+      "seed": 2,
+      "episode_seed": 2121024565,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0226_2_4",
+      "scene": "kujiale_0226",
+      "seed": 2,
+      "episode_seed": 1856533810,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0226_36_2",
+      "scene": "kujiale_0226",
+      "seed": 2,
+      "episode_seed": 482304559,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0226_94_0",
+      "scene": "kujiale_0226",
+      "seed": 2,
+      "episode_seed": 334967813,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0226_88_0",
+      "scene": "kujiale_0226",
+      "seed": 2,
+      "episode_seed": 1152191346,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0226_80_4",
+      "scene": "kujiale_0226",
+      "seed": 2,
+      "episode_seed": 1058909137,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0036_0_0",
+      "scene": "kujiale_0036",
+      "seed": 2,
+      "episode_seed": 684081691,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0036_37_1",
+      "scene": "kujiale_0036",
+      "seed": 2,
+      "episode_seed": 1652295632,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0036_43_0",
+      "scene": "kujiale_0036",
+      "seed": 2,
+      "episode_seed": 1981863221,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0036_52_4",
+      "scene": "kujiale_0036",
+      "seed": 2,
+      "episode_seed": 282920556,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0036_11_0",
+      "scene": "kujiale_0036",
+      "seed": 2,
+      "episode_seed": 495588414,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0036_7_2",
+      "scene": "kujiale_0036",
+      "seed": 2,
+      "episode_seed": 1617801332,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0036_3_2",
+      "scene": "kujiale_0036",
+      "seed": 2,
+      "episode_seed": 1508916141,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0036_50_1",
+      "scene": "kujiale_0036",
+      "seed": 2,
+      "episode_seed": 1554831861,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0290_37_3",
+      "scene": "kujiale_0290",
+      "seed": 2,
+      "episode_seed": 1340466509,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0290_31_1",
+      "scene": "kujiale_0290",
+      "seed": 2,
+      "episode_seed": 1241929932,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0290_20_2",
+      "scene": "kujiale_0290",
+      "seed": 2,
+      "episode_seed": 1322284215,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0290_12_2",
+      "scene": "kujiale_0290",
+      "seed": 2,
+      "episode_seed": 1814317763,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0290_42_4",
+      "scene": "kujiale_0290",
+      "seed": 2,
+      "episode_seed": 1699178548,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0290_10_0",
+      "scene": "kujiale_0290",
+      "seed": 2,
+      "episode_seed": 781785724,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0290_1_1",
+      "scene": "kujiale_0290",
+      "seed": 2,
+      "episode_seed": 767003451,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0290_40_1",
+      "scene": "kujiale_0290",
+      "seed": 2,
+      "episode_seed": 166141126,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0290_16_1",
+      "scene": "kujiale_0290",
+      "seed": 2,
+      "episode_seed": 6473914,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0147_61_1",
+      "scene": "kujiale_0147",
+      "seed": 2,
+      "episode_seed": 2103616010,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0147_56_4",
+      "scene": "kujiale_0147",
+      "seed": 2,
+      "episode_seed": 729625344,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0147_65_1",
+      "scene": "kujiale_0147",
+      "seed": 2,
+      "episode_seed": 255806841,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0147_14_0",
+      "scene": "kujiale_0147",
+      "seed": 2,
+      "episode_seed": 562589447,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0147_57_1",
+      "scene": "kujiale_0147",
+      "seed": 2,
+      "episode_seed": 1591285092,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0147_1_1",
+      "scene": "kujiale_0147",
+      "seed": 2,
+      "episode_seed": 201778119,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0294_36_4",
+      "scene": "kujiale_0294",
+      "seed": 2,
+      "episode_seed": 822835561,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0294_22_2",
+      "scene": "kujiale_0294",
+      "seed": 2,
+      "episode_seed": 86257713,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0294_25_3",
+      "scene": "kujiale_0294",
+      "seed": 2,
+      "episode_seed": 1520694318,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0294_43_3",
+      "scene": "kujiale_0294",
+      "seed": 2,
+      "episode_seed": 1944708686,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0291_12_2",
+      "scene": "kujiale_0291",
+      "seed": 2,
+      "episode_seed": 55671330,
+      "source_batch": "newer56"
+    },
+    {
+      "episode_id": "kujiale_0232_68_1",
+      "scene": "kujiale_0232",
+      "seed": 2,
+      "episode_seed": 1789824656,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0232_2_4",
+      "scene": "kujiale_0232",
+      "seed": 2,
+      "episode_seed": 2073375560,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0232_33_1",
+      "scene": "kujiale_0232",
+      "seed": 2,
+      "episode_seed": 648055464,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0232_9_3",
+      "scene": "kujiale_0232",
+      "seed": 2,
+      "episode_seed": 1071415417,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0232_13_0",
+      "scene": "kujiale_0232",
+      "seed": 2,
+      "episode_seed": 1768187697,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0232_75_4",
+      "scene": "kujiale_0232",
+      "seed": 2,
+      "episode_seed": 790548569,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0232_72_1",
+      "scene": "kujiale_0232",
+      "seed": 2,
+      "episode_seed": 1645831180,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0232_23_2",
+      "scene": "kujiale_0232",
+      "seed": 2,
+      "episode_seed": 2028988925,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0234_58_1",
+      "scene": "kujiale_0234",
+      "seed": 2,
+      "episode_seed": 1496120761,
+      "source_batch": "older48"
+    },
+    {
+      "episode_id": "kujiale_0234_55_1",
+      "scene": "kujiale_0234",
+      "seed": 2,
+      "episode_seed": 413191147,
+      "source_batch": "older48"
+    }
+  ],
+  "source_sha256": {
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/checkpoint_review/seed2_crossing_attribution_20261103/attribution_reviews.json": "ebfbf18fc7730567e2a327ef7fe62c7cb76fe0855800c210485b0f0961ef64ac",
+    "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/experiments/oracle_recovery/auto_branch_v001/run_20261117_04_pair200/exports/route_choice56_20261117_01/selection.json": "c742586fb19176276ed302e2a37b0e18c522fb634ed7b6436b6c4047c34f1f6c",
+    "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/assets/VLNVerse/data/raw_data/final_splits/fine_val_unseen.json.gz": "15c04c1e842354a824d81213333c7c7e119615f96fd53566510020b2f8145e3b"
+  }
+}

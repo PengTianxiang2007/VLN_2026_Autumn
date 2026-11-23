@@ -1,0 +1,28 @@
+{
+  "C50": {
+    "画面右侧可见一个深色门洞或通道入口，紧邻白色墙体，地面为灰色石材，通向内部空间。": "A dark doorway or passage is visible on the right of the image, next to a white wall. Gray stone flooring leads into the interior.",
+    "画面左侧可见一个带有金属边框的入口，疑似电梯门或金属门，位于白色墙体旁。": "On the left of the image is a metal-framed entrance next to a white wall, possibly an elevator door or metal door.",
+    "画面正前方是一个明亮的门洞，通向一条狭长的走廊，走廊尽头可见窗户和绿色景观，右侧有白色橱柜。": "Directly ahead is a bright doorway leading into a long, narrow corridor. A window and greenery are visible at the end, with white cabinets on the right.",
+    "画面右侧可见一个门洞，通向铺有灰色地面的区域，墙上挂有橙色装饰画，该入口与正前方走廊入口在空间上相连。": "On the right of the image is a doorway into a gray-floored area with orange decorative art on the wall. This entrance connects spatially with the corridor entrance ahead.",
+    "左侧深色门洞是一个独立的入口，与正前方的走廊入口不同，属于当前节点左侧的可选支路。": "The dark doorway on the left is a separate entrance distinct from the corridor entrance directly ahead and is a selectable branch on the left of C.",
+    "左侧金属门框（疑似电梯）是一个独立的入口，位于正前方走廊入口的左侧，属于当前节点左前方的可选支路。": "The metal doorframe on the left (possibly an elevator) is a separate entrance to the left of the corridor ahead and is a selectable branch front-left of C.",
+    "正前方的明亮门洞（F2）与右侧视图中看到的门洞（R1）实际上是同一个入口的不同视角。F2展示了走廊的正面，R1展示了走廊入口的右侧墙面和装饰画，两者共同构成了通往走廊的单一通路。": "The bright entrance directly ahead (F2) and the doorway seen from the right (R1) are actually the same entrance from different angles. F2 shows the corridor from the front and R1 shows the right-hand wall and decorative art at the corridor entrance. Together they form a single passage into the corridor.",
+    "左侧深色门洞，紧邻白色墙体，通向内部较暗的空间。": "A dark doorway on the left adjoining a white wall leads into a darker space.",
+    "该入口位于节点C的左侧，是直接从当前位置可以进入的独立通路。": "This entrance is on the left of C and is an independent passage that can be entered directly from here.",
+    "带有金属边框的入口，疑似电梯门，位于正前方走廊入口的左侧。": "A metal-framed entrance, possibly an elevator door, to the left of the corridor entrance ahead.",
+    "该入口位于节点C的左前方，是直接从当前位置可以进入的独立通路。": "This entrance lies front-left of C and is an independent passage directly accessible here.",
+    "正前方明亮的门洞，通向狭长走廊，走廊右侧有白色橱柜，尽头有窗户。": "A bright doorway straight ahead leads into a long, narrow corridor with white cabinets on the right and a window at the far end.",
+    "该入口位于节点C的正前方，是直接从当前位置可以进入的独立通路。": "This doorway is directly ahead of C and is a direct passage the robot can enter without first turning.",
+    "后续图像显示机器人穿过了正前方的门洞（C_plus2），并沿着走廊向前移动（C_plus5, C_plus8, C_plus10），走廊右侧的白色橱柜和尽头的窗户与C_front中观察到的特征完全一致，证明机器人选择了正前方的走廊支路。": "The later images show the robot passing through the doorway ahead (C_plus2), then moving forward through the corridor (C_plus5, C_plus8, C_plus10). The white cabinets on the right and the window at the far end exactly match C_front, proving that the robot selected the corridor branch directly ahead."
+  },
+  "C07": {
+    "画面左侧可见卧室床铺、床头柜及深色背景墙，右侧为白色墙体边缘，地面为木地板，未见明显的门洞或可通行的独立支路入口。": "On the left of the image are the bed, nightstand and dark accent wall of a bedroom. The edge of a white wall is on the right and the floor is wood. No obvious doorway or independent passable branch entrance is visible.",
+    "正前方为一条狭长的走廊，左侧墙面有开口，可见内部带有窗户和金属设施（疑似卫生间或设备间），右侧为白色柜体，地面为木地板。": "A long, narrow corridor lies straight ahead. An opening in its left wall reveals a space with a window and metal fixtures, possibly a bathroom or equipment room. There are white cabinets on the right and the floor is wood.",
+    "画面右侧可见白色柜体及墙角，左侧可见带有窗户的开口内部，与正前方走廊左侧的开口特征一致。": "White cabinets and a wall corner are visible on the right of the image. On the left is the inside of an opening with a window, consistent with the opening on the left of the corridor ahead.",
+    "该区域为卧室内部空间，属于当前所在房间，并非从节点 C 处可以直接选择并离开的独立支路入口。": "This is the interior of the bedroom the robot is currently in, not an independent entrance that the robot can directly choose to leave through from C.",
+    "F1 和 R1 均指向正前方走廊及其左侧的开口。R1 是 F1 中左侧开口在右侧视角下的呈现，两者属于同一连续通路。": "F1 and R1 both refer to the corridor directly ahead and the opening on its left. R1 depicts the opening on the left in F1 from the right viewing angle. Both belong to the same continuous passage.",
+    "正前方的狭长走廊，左侧墙面有开口通向带有窗户和金属设施的空间，右侧为白色柜体。": "A long, narrow corridor straight ahead, with an opening in its left wall into a space with a window and metal fixtures, and white cabinets on its right.",
+    "这是从节点 C 处可以直接向前进入的唯一连续通路，无需先选择其他方向。": "This is the only continuous passage the robot can enter directly ahead from C without first choosing another direction.",
+    "后续图像显示机器人沿正前方走廊向前移动，逐渐靠近并进入左侧带有窗户的开口，地标（窗户、金属设施）的相对位置变化与沿 B1 支路行进一致。": "The subsequent images show the robot moving forward along the corridor ahead, gradually approaching and entering the opening with a window on the left. The changing positions of the landmarks (window and metal fixtures) match travel along B1."
+  }
+}

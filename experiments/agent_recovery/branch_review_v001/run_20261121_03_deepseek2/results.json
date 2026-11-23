@@ -1,0 +1,108 @@
+{
+  "C50": {
+    "case": "C50",
+    "pid": 1193044,
+    "started_at": "2026-11-21T10:36:05.182865+00:00",
+    "phase": "complete",
+    "http_status": 200,
+    "answer": {
+      "branches": [
+        {
+          "id": "B1",
+          "direction": "front",
+          "entrance_description": "正前方有一处门洞，门洞内是一条狭长走廊，尽头可见窗户和室外绿植，地面为浅色大理石并连续延伸。",
+          "current_choice_basis": "该门洞位于 C_front 正前方，从当前决策位置可直接进入，属于当前可直接选择的通路；门洞后的走廊是同一入口后的空间，不另列为后续分叉。",
+          "evidence_image_ids": [
+            "C_front",
+            "C_plus2"
+          ]
+        },
+        {
+          "id": "B2",
+          "direction": "front_left",
+          "entrance_description": "左前方可见一个浅色门框/入口，入口内为较暗的封闭空间，与正前方走廊入口相邻但独立。",
+          "current_choice_basis": "该入口在 C_front 图像左侧、C_left70 图像中也可辨认，位于当前节点可直接靠近并进入的位置，属于当前可选支路。",
+          "evidence_image_ids": [
+            "C_front",
+            "C_left70",
+            "C_plus2"
+          ]
+        },
+        {
+          "id": "B3",
+          "direction": "front_right",
+          "entrance_description": "右前方有一处侧向开口/通道，通向另一段浅色地面空间，右侧墙面有橙色装饰画。",
+          "current_choice_basis": "该开口在 C_right70 图像中可见，且与 C_front 右侧边缘的通道方向一致，位于当前节点可直接选择进入的位置。",
+          "evidence_image_ids": [
+            "C_front",
+            "C_right70"
+          ]
+        }
+      ],
+      "previous_attempt": {
+        "status": "identified",
+        "branch_id": "B1",
+        "evidence_image_ids": [
+          "C_plus2",
+          "C_plus5",
+          "C_plus8",
+          "C_plus10"
+        ],
+        "reason": "C_plus2 中正前方门洞仍位于画面中央且明显放大，说明机器人已朝该门洞靠近；C_plus5 中相机已穿过门洞进入狭长走廊，左侧浅色门框入口被甩到画面左侧边缘；C_plus8 和 C_plus10 中相机继续沿走廊前进，右侧出现厨房台面、灶具和水槽，走廊尽头窗户逐渐接近。连续前视观测表明机器人实际穿过正前方门洞并沿 B1 走廊离开，而非进入左前方或右前方支路。"
+      },
+      "uncertainties": [
+        "C_left70 中的浅色门框入口与 C_front 左侧门框是否为同一入口，仅凭三向图无法完全确认其内部连通关系。",
+        "C_right70 中的侧向开口是否与正前方走廊在更远处连通，图像中不可见，未作推测。"
+      ]
+    },
+    "validation_errors": [],
+    "finished_at": "2026-11-21T10:36:11.071479+00:00"
+  },
+  "C07": {
+    "case": "C07",
+    "pid": 1193045,
+    "started_at": "2026-11-21T10:36:05.159721+00:00",
+    "phase": "complete",
+    "http_status": 200,
+    "answer": {
+      "branches": [
+        {
+          "id": "B1",
+          "direction": "front",
+          "entrance_description": "正前方偏左的窄门洞，门洞内可见带窗的浅色房间（似浴室/淋浴间），地面木地板延续至门洞前。",
+          "current_choice_basis": "门洞位于当前节点正前方偏左，从 C 处可直接走入，无需先沿其他通路行进，属于当前直接可选支路。",
+          "evidence_image_ids": [
+            "C_front",
+            "C_plus2"
+          ]
+        },
+        {
+          "id": "B2",
+          "direction": "front_right",
+          "entrance_description": "正前方偏右的白色柜体/墙板之间的通道，木地板沿右侧延伸，通向柜体后方的空间。",
+          "current_choice_basis": "右侧通道在当前节点处即可直接进入，与正前门洞并列构成当前选择，不是先走另一条路后才出现的分叉。",
+          "evidence_image_ids": [
+            "C_front",
+            "C_right70"
+          ]
+        }
+      ],
+      "previous_attempt": {
+        "status": "identified",
+        "branch_id": "B1",
+        "evidence_image_ids": [
+          "C_plus2",
+          "C_plus5",
+          "C_plus8",
+          "C_plus10"
+        ],
+        "reason": "C_plus2 至 C_plus10 中，正前方偏左的门洞持续放大并逐渐占据画面中心，门洞内的窗、淋浴间地面和玻璃隔断越来越清楚，相机明显穿过门洞进入该房间；右侧柜体通道始终留在画面右缘且未接近，说明机器人实际选择并走入了 B1。"
+      },
+      "uncertainties": [
+        "C_left70 显示左侧卧室，但该方向与 C_front 之间被墙体遮挡，无法确认卧室是否构成当前节点可直接进入的独立支路，故未列入。"
+      ]
+    },
+    "validation_errors": [],
+    "finished_at": "2026-11-21T10:36:09.279177+00:00"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "seed": 2,
+  "threshold_m": 0.75,
+  "landing_offset_m": 1.25
+}

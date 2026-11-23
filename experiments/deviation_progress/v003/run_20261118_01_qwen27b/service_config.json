@@ -1,0 +1,17 @@
+{
+  "backend": "qwen_local",
+  "model": "route53-qwen27b",
+  "model_path": "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/models/Qwen3.8-27B-FP8",
+  "python": ".runtime/crossing_vllm27/bin/python",
+  "seed": 2,
+  "thinking": false,
+  "max_tokens": 8192,
+  "concurrency": 1,
+  "tensor_parallel_size": 1,
+  "minimum_host_memory_gib": 64,
+  "max_model_len": 32768,
+  "gpu_memory_utilization": 0.88,
+  "max_images": 10,
+  "reasoning_parser": "qwen3",
+  "retention_authorization": "GPU 3 local model for authorized route53 node deduplication and deviation identification."
+}

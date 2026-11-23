@@ -1,0 +1,117 @@
+{
+  "version": "recovery_branch_review_v001",
+  "upstream": "v006",
+  "model": "route53-qwen27b",
+  "seed": 2,
+  "cases": [
+    {
+      "case_id": "C42",
+      "episode_id": "kujiale_0243_35_4",
+      "node_id": "S02",
+      "checkpoint_step": 27,
+      "branch_count": 2,
+      "previous_attempt": "B1",
+      "previous_attempt_direction": "front",
+      "status": "ok"
+    },
+    {
+      "case_id": "C46",
+      "episode_id": "kujiale_0258_27_0",
+      "node_id": "S01",
+      "checkpoint_step": 6,
+      "branch_count": 3,
+      "previous_attempt": "B3",
+      "previous_attempt_direction": "right",
+      "status": "ok"
+    },
+    {
+      "case_id": "C49",
+      "episode_id": "kujiale_0285_2_1",
+      "node_id": "S04",
+      "checkpoint_step": 22,
+      "branch_count": 3,
+      "previous_attempt": "B1",
+      "previous_attempt_direction": "front",
+      "status": "ok"
+    },
+    {
+      "case_id": "C50",
+      "episode_id": "kujiale_0290_10_0",
+      "node_id": "S04",
+      "checkpoint_step": 15,
+      "branch_count": 1,
+      "previous_attempt": "B1",
+      "previous_attempt_direction": "front",
+      "status": "ok"
+    },
+    {
+      "case_id": "C07",
+      "episode_id": "kujiale_0123_fix_19_3",
+      "node_id": "S03",
+      "checkpoint_step": 41,
+      "branch_count": 2,
+      "previous_attempt": "B2",
+      "previous_attempt_direction": "front_left",
+      "status": "ok"
+    },
+    {
+      "case_id": "C05",
+      "episode_id": "kujiale_0113_1_4",
+      "node_id": "S06",
+      "checkpoint_step": 26,
+      "branch_count": 2,
+      "previous_attempt": "B1",
+      "previous_attempt_direction": "front",
+      "status": "ok"
+    },
+    {
+      "case_id": "C09",
+      "episode_id": "kujiale_0128_fix_12_4",
+      "node_id": "S02",
+      "checkpoint_step": 5,
+      "branch_count": 3,
+      "previous_attempt": "B3",
+      "previous_attempt_direction": "left",
+      "status": "ok"
+    },
+    {
+      "case_id": "C10",
+      "episode_id": "kujiale_0128_fix_18_1",
+      "node_id": "S01",
+      "checkpoint_step": 0,
+      "branch_count": 3,
+      "previous_attempt": "B2",
+      "previous_attempt_direction": "left",
+      "status": "ok"
+    },
+    {
+      "case_id": "C20",
+      "episode_id": "kujiale_0165_53_0",
+      "node_id": "S03",
+      "checkpoint_step": 19,
+      "branch_count": 3,
+      "previous_attempt": "B1",
+      "previous_attempt_direction": "front",
+      "status": "ok"
+    },
+    {
+      "case_id": "C21",
+      "episode_id": "kujiale_0165_57_0",
+      "node_id": "S04",
+      "checkpoint_step": 21,
+      "branch_count": 2,
+      "previous_attempt": "B2",
+      "previous_attempt_direction": "right",
+      "status": "ok"
+    }
+  ],
+  "model_calls": 10,
+  "input_images": 70,
+  "valid": 10,
+  "branch_count": 24,
+  "navigation_runs": 0,
+  "recovery_instruction_calls": 0,
+  "accuracy_evaluated": false,
+  "service_retained": true,
+  "git_head": "7ce5f9fee30686bae304425bc84c36b3fbedc39c"
+}

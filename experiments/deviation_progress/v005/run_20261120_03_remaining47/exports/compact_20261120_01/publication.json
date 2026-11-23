@@ -1,0 +1,9 @@
+{
+  "url": "http://134.175.18.101/vln/qwen_v005_all53_compact_download_20261120_01/qwen_v005_all_53_compact_offline.zip",
+  "at": "2026-11-20T12:28:04.474098+00:00",
+  "http_status": 200,
+  "bytes": 78367381,
+  "content_type": "application/zip",
+  "remote_sha256_verified": true,
+  "sha256": "bdf82f772480dfcbdef9c865f4514b84985db3604e4a84c9a478dd150d936b5c"
+}

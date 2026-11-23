@@ -1,0 +1,357 @@
+1 The first node is established directly.
+2 Node A provides a right doorway toward the courtyard and a left opening toward the dining room, whereas node B provides a left opening toward the fireplace lounge. The branch information differs.
+3 Stone archway toward the kitchen work area
+4 Glass door on the right toward the outdoor courtyard
+5 Arched opening on the left toward the dining room
+6 Arched opening on the left toward the fireplace lounge
+7 Node A is in the kitchen area and provides branches toward the kitchen and a rear room; node B is inside the living room and provides branches toward other living-room areas. Although both involve an entrance to the living room, A provides kitchen-specific branches and B provides branches unique to the living-room interior. Their branch sets differ.
+8 Doorway toward the living room with a fireplace and wooden ceiling beams
+9 Stone archway toward the kitchen counter area
+10 Doorway toward the rear room with a window
+11 Arched doorway on the right inside the living room
+12 Corridor entrance on the left inside the living room
+13 Group A provides information about the right stone-wall corridor entrance in A-2, whereas group B provides information about the left corridor entrance with a wall light in B-1 and B0. The actual spatial branches provided are not entirely the same.
+14 Arched doorway on the right toward another space
+15 Corridor entrance by the stone wall on the right
+16 Corridor entrance on the left with a wall light and curtains
+17 Group A images (A-2 through A0) clearly show the corridor entrance on the left. In group B (B-2 through B+2), the view shifts right and that entrance is outside the field of view. The groups therefore do not provide entirely consistent branch information.
+18 Arched doorway on the right
+19 Corridor entrance on the left
+20 Group A clearly shows an open entrance toward the fireplace area on the left. In group B, the view moves right and this entrance is entirely out of view. The branch information is inconsistent.
+21 Arched doorway toward an interior room
+22 Open entrance on the left toward the fireplace area
+23 In frame B+2, group B shows a dark doorway on the left that does not appear in group A, providing branch information absent from A.
+24 Arched doorway on the left toward a room with windows and chairs
+25 Dark doorway/corridor entrance appearing on the left of B+2
+26 Group A (especially A+2) shows a corridor entrance toward a dark doorway, while group B (especially B-2) shows a living-room entrance toward the fireplace and sofa area. These two branches do not overlap between groups, indicating different node locations.
+27 Archway toward a room with a window
+28 Corridor entrance toward a dark doorway
+29 Living-room entrance toward the fireplace and sofa area
+30 Both groups show the same living-room scene and clearly present the same arched doorway toward the adjoining room on the right. No other unique branches were found.
+31 Arched doorway to the right of the sofa, beside the fireplace, leading to an adjoining room with blue carpet
+32 Node A is at the boundary between the living room and gym, with views of the living room on the left and gym entrance on the right. Node B is fully inside the gym; its view no longer includes the living room and instead shows more gym details. Their spatial branch information differs.
+33 Arched doorway toward the gym on the right
+34 Living-room area on the left, including the fireplace, sofa, and television
+35 Gym interior on the right, including a treadmill, exercise bench, and map
+36 Both groups show the same arched doorway between the corridor beside the fireplace and the gym. The viewpoint changes continuously and the branch information is entirely consistent.
+37 Corridor entrance beside the fireplace on the left
+38 Group A clearly shows a corridor entrance toward an outside space behind the white column on the left. In group B, a dark door panel obscures that position, so that branch information is absent.
+39 Dark doorway on the left
+40 Corridor entrance behind the white column on the left
+41 Group A (A-2 through A+2) clearly shows a dark wooden doorway on the left. In group B (B-2 through B+2), that doorway has completely left the field of view. The branch information differs.
+42 Dark wooden doorway on the left
+43 Both groups clearly show the same spatial branches: the opening toward the interior living room on the left and the double glass doors straight ahead. The spatial layout and fixed objects, such as the pool table and barrel, are identical.
+44 Opening toward the interior living room
+45 Double doors with glass panes
+46 Both groups show exactly the same spatial layout, including the double glass doors straight ahead and the opening toward the living room on the left. Key landmarks such as the pool table and barrel have consistent positions, confirming the same branch information.
+47 Double glass doors straight ahead
+48 Opening toward the living-room area on the left
+49 Group A clearly shows the double glass doors toward the outdoor courtyard. In group B, these doors are completely outside the field of view. The actual spatial branch information is inconsistent.
+50 Opening toward the interior living room
+51 Double glass doors toward the outdoor courtyard
+52 Group A mainly shows the glass-door branch toward the outdoors on the right, while group B shows the fireplace and rear-room doorway branches on the left. Their spatial branch information differs.
+53 Opening toward the staircase area
+54 Double glass doors on the right toward the outdoors
+55 Fireplace area on the left and doorway toward the rear room
+56 Group A (especially A+1 and A+2) clearly shows the branch toward the left fireplace area. In group B, that area is obscured by furniture or outside the field of view, so A provides branch information absent from B.
+57 Opening on the right toward the staircase area
+58 Opening toward the fireplace area on the left
+59 Node A mainly shows branches toward the fireplace area on the left and the cabinet at the back. Node B's viewpoint shifts right, revealing new branches toward the kitchen and stairwell on the right. Their spatial branch information differs.
+60 Opening toward the rear area with a glass-door cabinet
+61 Entrance to a separate space beside the fireplace on the left
+62 Corridor entrance on the right toward the kitchen area
+63 Opening on the right toward the stairwell
+64 Group A shows an entrance to a separate space with a glass display cabinet on the left. Group B shows an exit with a large expanse of glass windows on the right. Their branch information differs substantially and cannot be matched one to one.
+65 Opening toward the kitchen area
+66 Entrance on the left to the display-cabinet area with glass doors
+67 Exit on the right with a large expanse of glass windows
+68 Both groups show the same spatial branches, including the opening toward the kitchen area and the space beneath the stairs. The viewpoint changes continuously and no unique branches were found.
+69 Open doorway toward the kitchen and dining areas
+70 Space beneath the stairs
+71 Group A clearly shows large floor-to-ceiling glass doors and windows on the right. In group B, the kitchen counter and stove occupy that location, and the view is closer to the kitchen. Their right-side branch information differs.
+72 Central opening toward the kitchen and dining areas
+73 Space beneath the stairs on the left
+74 Large floor-to-ceiling glass doors and windows on the right
+75 Kitchen counter and stove area on the right
+76 Group A (especially A-2 and A-1) clearly shows a separate passage entrance toward the space beneath the stairs on the left. In group B, the staircase structure occupies that location, indicating that node B has passed this branching point. Their branch information differs.
+77 Central passage toward the kitchen and dining areas
+78 Separate passage entrance on the left toward the space beneath the stairs
+79 Group A mainly covers the kitchen area on the right. As group B's view shifts left, the right kitchen area disappears and distant windows on the left are revealed instead. Their spatial branch information differs substantially.
+80 Space beneath the stairs on the left
+81 Recess/cabinet area with arched decoration straight ahead
+82 Kitchen area on the right, including the sink, windows, and cabinets
+83 Distant windows on the left, clearly visible in B+1 and B+2 but not shown in group A
+84 Both groups show the same dining/kitchen space with very little viewpoint change. Both clearly present the two main spatial features: the arched wooden cabinet on the left and the counter with windows on the right. No unique branches were found.
+85 Wooden cabinet area with an arched opening on the left
+86 Kitchen counter area with a window on the right
+87 Group A mainly shows the branch toward the windows and sewing-machine area on the left, while group B shows the branch toward the stairs on the left. Their actual spatial branch information differs.
+88 Passage toward the kitchen counter area
+89 Passage toward the windows and sewing-machine work area on the left
+90 Passage toward the stairs and outside space on the left
+91 Group A clearly shows the wooden cabinet marked 'SIDE' and the arched recess on the right. Group B's view has moved beside the stairs, where that cabinet is entirely invisible; B also shows space beneath the stairs on the left that A does not show. Their branch information differs.
+92 Passage toward the sewing-machine work area and the window behind it
+93 Large wooden cabinet marked 'SIDE' and arched recess entrance on the right
+94 Entrance to an open space beneath the stairs on the left
+95 Group A mainly shows the fireplace and display-cabinet areas on the right side of the room. As the view moves, group B reveals the wooden door and courtyard entrance on the left. Their spatial branch information differs.
+96 Wooden-wall area with diagonal timber braces straight ahead
+97 Wall structure on the right with an arched fireplace and glass display cabinet
+98 Wooden door with glass panes on the left and opening toward the outdoor courtyard
+99 Both groups clearly show the two main branches in the same space: the glass door toward the courtyard on the left and the narrow doorway toward the interior on the right. The layout and fixed objects, such as wooden chairs and display shelving, are identical, confirming the same branch information.
+100 Wooden-framed glass door on the left toward the outdoor courtyard
+101 Narrow doorway on the right toward the interior corridor
+102 As group B rotates left, it clearly reveals an opening toward another space containing a white display cabinet. In group A, foreground wooden structures obscure that location, so A does not provide this branch information.
+103 Wooden double doors with glass panes
+104 Opening on the left toward another space containing a white display cabinet
+105 Group A includes the fireplace opening on the right, while group B includes a doorway toward the lounge area on the left. Their branch information differs substantially and cannot be matched one to one.
+106 Wooden double doors with glass panes
+107 Fireplace opening beside the wooden wall on the right, containing a wheel-shaped decoration
+108 Open doorway on the left toward the sofa lounge area
+109 Both groups clearly show the double wooden doors on the right and the opening toward an interior room straight ahead in the same space. The layout and fixed objects, such as the display cabinet and columns, are identical. No unique branches were found.
+110 Double wooden doors with panes on the right
+111 Opening straight ahead toward an interior room
+112 Both groups clearly show the double glass doors on the right and the doorway toward the study straight ahead in the same space. The layout and fixed objects, such as the display cabinet and columns, are identical. No unique branches were found.
+113 Double wooden doors with glass panes on the right
+114 Doorway straight ahead toward the study area
+115 Group A (especially A-2 through A0) clearly shows the double-glass-door entrance on the right. In group B (B-2 through B+2), the view has moved forward and right, placing that entrance entirely outside the field of view. Their branch information is inconsistent.
+116 Doorway toward the interior study/office area
+117 Double wooden doors with glass panes on the right, serving as an entrance
+118 Both groups clearly show the doorway toward the study straight ahead and the doorway beside the display cabinet on the right. The layout and furniture positions, including the display cabinet, bookshelf, and fireplace, are identical. No unique branches were found.
+119 Doorway straight ahead toward the study/office area
+120 Doorway beside the display cabinet on the right
+121 Group B (especially B-2 and B-1) clearly shows an opening toward the lounge beside the fireplace on the left. Group A's view in that direction is obscured by furniture or does not show this branch, making the branch information inconsistent.
+122 Opening toward the rear area with windows and a desk
+123 Opening toward the lounge beside the fireplace on the left
+124 Group A clearly shows a doorway toward another space on the left. In group B, furniture and viewpoint changes obscure that location, so this branch is absent and the branch information does not fully correspond.
+125 Entrance to an open area with windows and wooden cabinets on the right
+126 Dark doorway or corridor entrance visible through the wooden columns on the left
+127 Group A (especially A-1 and A0) clearly shows the branch toward the pool-table area on the left. Group B's view shifts right and does not include this branch, so the branch information is not entirely consistent.
+128 Opening toward the area with windows and wooden cabinets on the right
+129 Opening toward the pool-table area on the left
+130 Group A mainly shows the fireplace area and the branch toward the right corridor, whereas group B shows the area with a tall glass-door cabinet on the right. Their branch information differs, with B additionally providing the tall-cabinet-area branch.
+131 Corridor entrance toward the area with windows and wooden cabinets on the right
+132 Room entrance beside the fireplace on the left
+133 Entrance to the area with a tall glass-door cabinet on the right
+134 Group A mainly shows the bookshelf area and the corridor toward the back. Group B mainly shows the glass display cabinet, large double glass doors, and right corridor. Their branch information differs substantially.
+135 Doorway beside the white glass display cabinet
+136 Corridor entrance toward the back of the bookshelf and armchair area
+137 Large double glass doors on the right
+138 Corridor entrance to the right of the glass doors
+139 Group A shows a doorway beside the white display cabinet on the left. Group B shows an opening toward the stairs/lower level on the right. Their branch information differs.
+140 Glass door
+141 Doorway beside the white display cabinet on the left
+142 Opening on the right toward the stairs/lower level
+143 Both groups show exactly the same interior layout, including the glass wooden doors on the left, stair entrance on the right, and corridor straight ahead. All branch information can be matched one to one.
+144 Wooden double doors with glass panes on the left
+145 Stair entrance with metal railings on the right
+146 Corridor entrance with windows straight ahead
+147 Both groups clearly show the glass wooden doors on the left and stair entrance on the right in the same space. The large mechanical apparatus in the middle has a fixed position. Their branch information is entirely consistent.
+148 Wooden door with glass windows on the left
+149 Stair entrance with railings on the right
+150 The separation is 27 steps, exceeding 8 steps. Establish the current node directly.
+151 Group A mainly shows the bed area and windows, whereas group B shows the corridor entrance to the right of the windows and the wheel structure. Their spatial branch information differs.
+152 Window with wooden framing and glass on the right
+153 Bed area with metal decorations on the left
+154 Corridor entrance on the right toward the bedroom
+155 Large wooden wheel structure visible at the upper right
+156 Group A (especially A0) clearly shows a doorway with a window in the left stone wall. In group B (B-2 through B+2), the view has shifted right and that doorway is entirely outside the field of view. Their branch information is inconsistent.
+157 Opening toward the bedroom with a bed and blue door
+158 Doorway with a window in the left stone wall
+159 Group B shifts right, revealing a white doorway and stone sink on the right that group A does not show. This provides unique branch information absent from A.
+160 Light-blue doorway toward the left side of the room containing a bed
+161 White doorway toward the washbasin area on the right
+162 Stone sink fixture beside the right wall
+163 Group B rotates right, revealing a storage-room entrance and stair opening on the right that group A does not show. This provides branch information absent from A.
+164 Doorway toward the bedroom
+165 White door toward the bathroom
+166 Doorway toward the storage room/closet
+167 Opening toward the stairs/loft
+168 Both groups clearly show the two main doorways in the same room: the blue door on the left and the white door in the middle. The layout and furniture positions are identical, and the branch information corresponds one to one.
+169 Doorway with a blue door panel on the left
+170 Doorway with a white door panel in the middle
+171 Both groups clearly show the blue doorway on the left and white doorway in the middle in the same room. The layout and fixed objects, such as the bench and rug, are identical, and the branch information corresponds one to one.
+172 Both groups clearly show the blue doorway on the left and white doorway on the right in the same space. The layout and furniture positions, such as the bench in the middle, are identical, and the branch information corresponds one to one.
+173 Blue doorway on the left
+174 White doorway on the right
+175 Both groups clearly show the blue doorway on the left and white doorway on the right in the same space. The layout and furniture positions, such as the bench in the middle, are identical. No unique branches were found.
+176 Both groups clearly show the blue doorway on the left and white doorway in the middle in the same space. The layout and furniture positions, such as the bench and rug, are identical. No unique branches were found.
+177 White doorway in the middle
+178 Group A mainly shows the blue doorway on the left and white doorway in the middle. Group B's view shifts right to show the wooden double doors and the area with a table on the right. Their spatial branch information differs substantially.
+179 White doorway toward an interior room
+180 Wooden double doors on the right
+181 Entrance to the area with a table on the right
+182 Group B clearly shows a blue doorway on the left that is absent from group A, while the table/counter area on A's right is no longer visible in B. Their branch information is inconsistent.
+183 White doorway toward the interior bathroom
+184 Entrance to the table/counter area with an American flag decoration on the right
+185 Separate doorway with a blue door panel on the left
+186 Group A clearly shows a third branch on the right, the shelving area. In group B, the left-shifted view obscures that branch or excludes it from view. It is not possible to confirm entirely consistent branch information.
+187 Opening with shelving and a washbasin on the right
+188 Both groups show exactly the same interior scene, including the blue doorway on the left and white doorway on the right. The layout and furniture positions, such as the bench in the middle, are identical, confirming the same branch information.
+189 Both groups show exactly the same interior scene, including the blue doorway on the left and white doorway on the right. The layout and positions of fixed objects, such as the bench and rug, are consistent, confirming the same branch information.
+190 Group B (especially B+1 and B+2) clearly shows a wooden-door branch with a window on the right. In group A, that location is obscured or outside the field of view, so B provides branch information absent from A.
+191 Wooden door with a window on the right
+192 Group A includes the blue doorway on the left, while group B includes a wooden doorway with a window on the right. Their branch information differs substantially and cannot be matched one to one.
+193 White doorway toward an interior room
+194 Blue wooden doorway on the left
+195 Wooden doorway with a window on the right
+196 Group B additionally shows a doorway entrance beside the bench on the left. In group A, that location is obscured or outside the field of view, making the branch information not entirely consistent.
+197 Opening toward the storage space at the back
+198 Doorway entrance beside the bench against the left wall
+199 Both groups show exactly the same interior scene, including the white doorway on the left, shelving recess in the middle, and wooden wall on the right. Their spatial branch information is entirely consistent.
+200 White doorway toward an interior room or corridor
+201 Open recess with shelving on the right
+202 Both groups show exactly the same interior layout, including the white doorway on the left and corridor entrance on the right. The viewpoints and positions of fixed objects are highly consistent, confirming the same branch information.
+203 Corridor entrance with shelving on the right
+204 Both groups show exactly the same interior layout, including the white doorway on the left and corridor entrance in the middle. All branch information can be matched one to one.
+205 White doorway on the left toward an interior room
+206 Corridor entrance with shelving in the middle
+207 The groups are visually identical, showing the same room layout, furniture (bench and table), and branch entrances (the white door and right recess), confirming the same spatial location.
+208 White double doors slightly left of center, leading to an interior space
+209 Open recess/storage-shelf area on the right
+210 Within their respective windows, both groups clearly show exactly the same bathroom doorway and storage-room entrance on the right. The layout and positions of fixed objects are identical, and the branch information corresponds one to one.
+211 Bathroom entrance with a white door leaf on the left
+212 Opening on the right toward a storage space
+213 The groups are visually identical, both showing the bathroom entrance and right storage-space opening in the same room. Their branch information corresponds completely.
+214 Both groups show exactly the same three opening branches from the same viewpoint, with no unique branch information.
+215 Opening with a white door leaf on the left, leading to an interior space
+216 Opening in the wooden wall on the right, with shelving and towels inside
+217 Opening slightly right of center, with a stone fixture visible
+218 Both groups show exactly the same three branch openings from the same viewpoint, with no unique branch information.
+219 The groups are visually identical, showing the same room layout, including the bench on the left, white doorway in the center, and recess on the right. All branch information can be matched one to one.
+220 White double doors slightly left of center, leading to an interior room
+221 Open recess/storage space on the right, containing shelves
+222 The groups are visually identical, showing the same white doorway and right recess entrance. The viewing angle and position have not changed noticeably, confirming the same branch information.
+223 The groups are visually identical, showing the same room layout, including the white doorway on the left and wooden-shelf opening on the right. Their branch information corresponds completely.
+224 Opening with wooden shelving and a stone object on the right
+225 Within their respective windows, both groups show exactly the same scene and branches: the central white double doorway and the doorway in the right wooden wall correspond one to one. There are no unique branches.
+226 White double doorway slightly left of center, with the doors open toward an interior space
+227 Doorway/opening in the wooden wall on the right, beside shelving
+228 The groups are visually identical, showing the same white double doors and right recess structure with no unique branch information, confirming the same spatial location.
+229 The groups are visually identical, showing the same white doorway and right recess entrance with no unique branch information, confirming the same spatial location.
+230 The groups are visually identical, showing the same room layout, including the white doorway on the left and wooden-shelving opening on the right, with no unique branch information.
+231 Opening with a white door leaf on the left, leading to an interior space
+232 Opening with wooden shelving on the right, leading to another area
+233 Within their respective windows, both groups show exactly the same viewpoint and spatial layout. The central white doorway, right recess, and opening at the left edge all correspond one to one, with no unique branch information.
+234 White double doorway slightly left of center, with the doors open toward an interior space
+235 Open recess/storage space to the right of the white doorway, containing shelves and objects
+236 Wall opening/doorway at the far left edge of the image
+237 The groups are visually identical, showing the same room layout, including the doorway on the left and storage-space opening on the right. Their branch information corresponds completely.
+238 Doorway on the left toward an interior room
+239 Both groups show exactly the same interior scene, including the bathroom doorway on the left and corridor entrance on the right. The layout and positions of fixed objects are identical, and the spatial branch information overlaps completely.
+240 Bathroom entrance with a white door leaf on the left
+241 The groups are visually identical, showing the bathroom doorway and storage-room entrance on the right in the same room. Their branch information corresponds completely.
+242 The groups are visually identical, showing the bathroom doorway and storage-space opening on the right in the same room. Their branch information corresponds completely.
+243 The groups are visually identical, showing the same room layout, furniture such as the bench and table, and the same two main spatial openings. Their branch information corresponds completely.
+244 Opening area with wooden shelving and a stone object on the right
+245 Within their respective windows, both groups show exactly the same spatial layout and branches: the white doorway on the left and wooden-shelf opening on the right correspond one to one. There are no unique branches.
+246 Opening area with wooden shelving and a stone fixture on the right
+247 The groups are visually identical, showing the bathroom doorway and corridor entrance on the right in the same room. Their branch information corresponds completely.
+248 The groups are visually identical, showing the bathroom doorway and corridor entrance on the right in the same room. Their spatial branch information overlaps completely.
+249 Both groups show exactly the same three main branch openings from the same viewpoint, with no unique branch information.
+250 Opening area with a stone counter in the middle
+251 Corridor entrance with wooden shelving on the right
+252 The groups are visually identical, showing the same white double doors and right recess structure, with no unique branch information.
+253 Within their respective windows, both groups show exactly the same scene layout. The white doorway on the left and wooden-shelf opening on the right are clearly visible in both groups with consistent spatial relationships. No unique branches were found.
+254 Within their respective windows, both groups clearly show the bathroom entrance on the left and corridor entrance on the right. The layout and positions of fixed objects are identical, and the branch information corresponds one to one.
+255 Corridor entrance with shelving on the right
+256 The groups are visually identical, showing the bathroom doorway and storage-room entrance on the right in the same room. Their spatial branch information overlaps completely.
+257 Group A mainly includes the floor-to-ceiling windows and sofa area on the right, whereas group B mainly includes the opening toward the stairs and corridor on the left. Their branch information differs.
+258 White double glass doors
+259 Floor-to-ceiling windows and sofa area on the right
+260 Opening on the left toward the stairs and corridor
+261 Group A (especially A-2 through A0) clearly shows the white double-door branch on the right. Group B (B-2 through B+2) has turned entirely left and does not include this doorway information. Their branch information is inconsistent.
+262 Opening on the left toward the stairwell and corridor
+263 White double doors with glass panes on the right
+264 Both groups clearly show the same spatial branches, including the stairwell entrance on the left and the corridor with a door at its end straight ahead. Fixed reference objects, such as the decorative mirror and vase, have consistent spatial relationships. No unique branches were found.
+265 Opening toward the stairwell
+266 White door at the end of the corridor
+267 Group B (especially B+1 and B+2) clearly shows the doorway to the right of the stairs and the open room entrance on the left. Due to viewpoint limitations and occlusion, group A does not provide information about these two branches. Their branch information is therefore not entirely the same.
+268 Stair entrance
+269 White door to the left of the stairs
+270 Doorway to the right of the stairs
+271 Open room entrance to the left of the stairs
+272 Both groups clearly show the same stair entrance and the doorways on its left and right. The layout and fixed objects, such as wall lights and door frames, are identical, and the branch information corresponds one to one.
+273 Doorway on the left toward the living room
+274 Stair entrance with a black handrail straight ahead
+275 Doorway on the right toward the corridor
+276 Group A (especially A0, A+1, and A+2) clearly shows a doorway toward the living room to the left of the stairs. In group B, a wall or changed viewpoint obscures this branch. Their branch information is not entirely consistent.
+277 Corridor entrance to the right of the stairs
+278 Doorway toward the living room to the left of the stairs
+279 Group A clearly shows a bedroom doorway on the left, whereas group B clearly shows a bathroom doorway at the end of the corridor on the right. Their branch information does not overlap completely.
+280 Corridor entrance on the right
+281 Bedroom doorway on the left
+282 Bathroom doorway at the end of the corridor on the right
+283 Group A clearly shows the stair entrance and white room door on the left. In group B, a wall obscures that area and the stair entrance cannot be seen, indicating different observation locations and inconsistent branch information.
+284 Doorway toward the bathroom at the end of the corridor
+285 Stair entrance and white room door on the left
+286 Group A clearly shows the stair railing and staircase space on the left. Group B shows a glass-door entrance on the right that is absent from A. Their branch information differs substantially.
+287 Doorway straight ahead toward the bathroom
+288 Corridor entrance with picture frames on the left
+289 Stair railing and descending staircase space on the left
+290 Doorway with glass panes on the right
+291 Group A clearly shows an opening toward the stairwell on the left. In group B, a wall obscures that location and this branch information is absent. Their branch information is therefore not entirely the same.
+292 Doorway on the right toward a room with a rug
+293 Opening on the left toward the stairwell
+294 Group A (especially A0) clearly shows the branch toward the bathroom on the left. Group B (B-2 through B+2) has turned entirely toward the right room and does not include the bathroom branch. Their branch sets differ.
+295 Doorway toward a room with windows and baby supplies
+296 Doorway toward the bathroom on the left, with the washbasin and mirror visible
+297 Group A (especially A-2) shows an opening toward an outside corridor or adjoining space on the left. In group B, the door frame or changed viewpoint obscures that location, and this branch is not shown. Their branch information is therefore not entirely the same.
+298 Opening toward an interior room with a window and blackboard
+299 Opening on the left toward an outside corridor or adjoining space, with a stone wall and door frame visible in A-2
+300 Group A clearly shows the shower-room entrance on the left in A+1 and A+2. In group B (B-2 through B+2), this entrance is completely outside the field of view, indicating different observation locations and different branch information.
+301 Doorway toward a corridor/room with black-framed artwork
+302 Shower-room entrance on the left, visible in A+1 and A+2
+303 Node A is at the bathroom doorway and provides branch information about the shower room on the left and washbasin on the right. Node B is farther inside the corridor and provides a branch toward another bathroom on the right. Their actual spatial branch sets differ.
+304 Corridor entrance straight ahead toward black-framed artwork
+305 Shower-room entrance on the left, with a showerhead and glass partition visible
+306 Entrance to the washbasin area on the right
+307 Doorway on the right toward another bathroom, with a toilet visible
+308 Group A shows only a single branch toward the bathroom. Besides that bathroom branch, group B additionally shows doorways toward two different bedrooms. Their branch information is inconsistent.
+309 Doorway toward a bathroom with a toilet and tiled walls
+310 Doorway toward a bedroom with a bed
+311 Doorway toward another bedroom with a window
+312 Group A clearly shows the bathroom entrance on the left. In group B, this entrance is no longer in view, and an additional doorway toward other rooms appears on the right. Their branch information is inconsistent.
+313 Doorway toward the bedroom
+314 Doorway on the left toward the bathroom, with a toilet visible
+315 Doorway on the right toward another room, with a window visible
+316 Group A clearly shows a bathroom entrance on the left. In group B, that entrance is completely outside the field of view. Their branch information is inconsistent.
+317 Doorway toward a bedroom with a bed and orange chair
+318 Doorway toward another bedroom with a bed and window
+319 Doorway on the left toward a bathroom with a toilet and tiled walls
+320 Group A clearly shows two side-by-side doorways, toward the left and right bedrooms. In group B, the right doorway is completely outside the field of view and only the left doorway remains. Their branch information is inconsistent.
+321 Doorway toward a bedroom with an orange chair and bed
+322 Doorway on the right toward a bedroom with dark bedding
+323 Node B's observations (B+1 and B+2) show a new branch toward a bedroom with dark-blue walls that is absent from node A's observations. Their branch information differs.
+324 Doorway toward a narrow bedroom with an orange-cushioned chair and bed
+325 Doorway toward a bedroom with dark-blue walls, a bedside table, and suitcase
+326 Node A is near a bedroom entrance and provides a branch toward the outside corridor. Node B is in the living-room area and provides a branch toward the living-room lounge. Their spatial branch information differs.
+327 Doorway toward the interior bedroom
+328 Opening toward an outside balcony or corridor, on the left of A0
+329 Opening toward the living-room lounge, on the right of B0
+330 Group B (B+1 and B+2) shows a new opening/corridor entrance on the right. In group A, a wall or furniture obscures that location, so this branch information is absent.
+331 Opening toward the corridor or storage room on the right
+332 Group A clearly shows a corridor opening on the right in A-2. Group B is inside the bedroom and does not provide this branch information, so their branch information differs.
+333 Opening on the right toward a corridor or storage room
+334 Group A clearly shows the doorway branch toward the bedroom. Group B (action steps 57–61) is entirely obscured by a wall or door panel and provides no identifiable spatial branch information. It is not possible to confirm whether the groups provide the same branches.
+335 Group A shows an entrance toward the bedroom. Group B shows the corridor area, including an entrance toward the kitchen and the door at the end of the corridor. Their spatial branch information is completely different.
+336 Doorway toward the bedroom, with a bed and blinds visible
+337 Doorway toward the kitchen/preparation area, with cabinets and a counter visible
+338 Doorway at the end of the corridor
+339 Group A shows a doorway at the end of the corridor on the left. Group B shows a doorway with a black decoration on the left. These occupy different spatial locations, and B's viewpoint is farther back and excludes A's left-side branch information.
+340 Doorway toward the kitchen/preparation area
+341 Doorway at the end of the corridor on the left, visible in A-2, A-1, and A0
+342 Doorway with a black decoration on the left, visible in B-1, B0, B+1, and B+2
+343 Group A mainly shows a white double-door cabinet on the right. In group B, this cabinet is no longer visible; instead, black shelving appears on the left. The observed local spatial branch features differ.
+344 Opening on the right toward the kitchen
+345 Door with three black dots at the end of the corridor
+346 Nearby white double-door cabinet on the right
+347 Black shelving marked with the number 6 on the left
+348 Group A shows a kitchen entrance on the right. Group B shows a new corridor entrance on the left, while A's kitchen entrance is no longer visible in B. This indicates that the observations correspond to different spatial branches.
+349 White door with three black circular decorations at the end of the corridor
+350 Kitchen entrance on the right
+351 Black shelving on the left
+352 Both groups show exactly the same corridor layout. The doorway on the left and the door with three black dots at the end are clearly visible in both groups with consistent features. No unique branches were found.
+353 Doorway on the left side of the corridor
+354 White door with three black dots at the end of the corridor
+355 Group A clearly shows a nearby doorway entrance on the left side of the corridor. In group B, a wall obscures that location, indicating different positions along the corridor and different branch information.
+356 White doorway with three black circular decorations at the end of the corridor
+357 Another nearby doorway entrance on the left side of the corridor

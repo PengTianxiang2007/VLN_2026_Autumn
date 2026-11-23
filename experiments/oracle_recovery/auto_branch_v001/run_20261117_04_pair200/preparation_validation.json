@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "cpu_tests": 6,
+  "live_preview_episodes": 172,
+  "same_ids_both_arms": true,
+  "sealed_source_and_geometry_verified": true,
+  "preview_only": true,
+  "simulation_started": false,
+  "source_results_unchanged": true
+}

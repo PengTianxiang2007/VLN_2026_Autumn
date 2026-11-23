@@ -1,5 +1,7 @@
 # JEV 在线采样 v001
 
+2026-11-18 用户指定本版为**当前最新固定版本**。JEV Noul v004 负责前视评分，分支 `codex/jev-online-sampling-v001` 的 v001 采样器建立候选，后续去重复用 `v001_run02_all`。固定提交、文件和 SHA256 见[版本指针](../current_jev_version.json)。[53 条前视轨迹实验](run_20261118_01/README.md)已完成，4,837 个有效评分产生 494 个去重前候选。
+
 2026-11-12。状态：用户认可的方法、参考实现、验证与本地网页完成；实际导航循环及后续大模型适配由主要开发机器继续。
 
 **接手先读 [JEV_SAMPLING_HANDOFF.md](../../../docs/JEV_SAMPLING_HANDOFF.md)**，算法细节见 [JEV_SAMPLING_V001.md](../../../docs/JEV_SAMPLING_V001.md)。用户授权源码分支 `codex/jev-online-sampling-v001` 交接；网页仅在本地使用，不运行外部网页发布脚本。

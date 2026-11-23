@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "seed": 2,
+  "thresholds_m": {"early": 0.75, "short": 1.5, "medium": 3.0, "long": 4.0},
+  "landing_offset_m": 0.75,
+  "checkpoint_capture_radius_m": 1.0,
+  "checkpoint_threshold_m": 0.75,
+  "checkpoint_max_returns": 1,
+  "expected_episodes": 33,
+  "expected_events": 34
+}

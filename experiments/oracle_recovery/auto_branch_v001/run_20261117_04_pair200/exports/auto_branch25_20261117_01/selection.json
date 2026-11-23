@@ -1,0 +1,286 @@
+{
+  "rule": "Two per represented scene: prefer a corrected success without endpoint clamping and a failure; add the inspected example, a no-correction case and a repeated clamped case. Deterministic SHA256 tie-breaks. Demonstration subset, not a random performance estimate.",
+  "cases": [
+    {
+      "id": "kujiale_0128_fix_3_1",
+      "scene": "kujiale_0128_fix",
+      "success": 1,
+      "reason": "success",
+      "events": 1,
+      "clamped": 0,
+      "actions": 41,
+      "instruction": "Go through the doorway into the combined living and dining area. Walk forward, keeping the dining chairs and kitchenette on your right. Continue straight, moving past the coffee tables and the sofa on your right. Turn slightly left, aligning yourself with the TV on your left and the window straight ahead. Turn right to face the sofa, and stop in front of it with the window on your left."
+    },
+    {
+      "id": "kujiale_0128_fix_0_1",
+      "scene": "kujiale_0128_fix",
+      "success": 0,
+      "reason": "not_reach_goal",
+      "events": 0,
+      "clamped": 0,
+      "actions": 53,
+      "instruction": "Walk forward from the hallway, passing the bedroom entrance on your left. Enter the living room by turning right. Walk straight through the living room, keeping the sofa and coffee tables on your right, and stop in front of the TV console with the window on your right."
+    },
+    {
+      "id": "kujiale_0147_48_3",
+      "scene": "kujiale_0147",
+      "success": 1,
+      "reason": "success",
+      "events": 1,
+      "clamped": 0,
+      "actions": 38,
+      "instruction": "Walk forward into the hallway, passing a counter and sink on your left and a living room on your right. Turn right to enter a bedroom, then walk forward, keeping the bed on your right. Stop in front of the window."
+    },
+    {
+      "id": "kujiale_0147_8_4",
+      "scene": "kujiale_0147",
+      "success": 0,
+      "reason": "not_reach_goal",
+      "events": 0,
+      "clamped": 0,
+      "actions": 54,
+      "instruction": "Walk forward, passing a white wardrobe on your right, and enter the doorway. Proceed into the bathroom, approaching the double sink vanity in front of you. Then, turn right, keeping the double sink vanity on your left. Walk forward into the open room, passing kitchen cabinets on your right and a dining table with chairs on your left. Stop in front of the dining table."
+    },
+    {
+      "id": "kujiale_0159_51_4",
+      "scene": "kujiale_0159",
+      "success": 1,
+      "reason": "success",
+      "events": 1,
+      "clamped": 0,
+      "actions": 44,
+      "instruction": "Walk forward through the doorway, keeping the painting on the wall to your right. Upon clearing the doorway, turn left into the hallway. Continue straight down the hallway until you reach an open room. Enter the room and stop with the dining table on your left and the sofa on your right."
+    },
+    {
+      "id": "kujiale_0159_3_4",
+      "scene": "kujiale_0159",
+      "success": 0,
+      "reason": "not_reach_goal",
+      "events": 0,
+      "clamped": 0,
+      "actions": 100,
+      "instruction": "Walk forward through the dining area, passing the dining table on your left and the sofa on your left in the living room. Turn right to enter the hallway, keeping the TV console on your left. Walk straight down the hallway, passing a framed artwork on the far wall. Turn right to go through the open doorway. Walk forward into the bedroom and stop in front of the window, with the bed on your left."
+    },
+    {
+      "id": "kujiale_0165_45_0",
+      "scene": "kujiale_0165",
+      "success": 1,
+      "reason": "success",
+      "events": 2,
+      "clamped": 0,
+      "actions": 49,
+      "instruction": "Go through the doorway in front of you, leaving the tiled wall and sink of the bathroom on your right. Turn right into the hallway, keeping the plain beige wall on your left. Walk straight down the hallway, passing an open room with a dark bookshelf on your left and a decorative wall with hexagonal shelves on your right. Turn left to enter the bedroom. Walk straight through the bedroom, with the bed on your right and a desk with shelves on your left, and stop in front of the desk, facing the window."
+    },
+    {
+      "id": "kujiale_0165_28_3",
+      "scene": "kujiale_0165",
+      "success": 0,
+      "reason": "not_reach_goal",
+      "events": 0,
+      "clamped": 0,
+      "actions": 106,
+      "instruction": "From the initial bedroom position, turn left, passing the bedside table on your right. Walk forward and go through the doorway into the narrow hallway. Turn right to face the long corridor and walk straight down it, keeping the dining area with white cabinets on your left and the living area with a couch on your right. Continue straight until you reach a short hallway on your right. Turn right into this short hallway and walk straight. Upon reaching the bedroom, turn right to face the bed. Then, turn left and walk towards the doorway on your left. Enter the bathroom and stop in front of the window, with the bathtub on your right and the toilet on your left."
+    },
+    {
+      "id": "kujiale_0226_96_0",
+      "scene": "kujiale_0226",
+      "success": 1,
+      "reason": "success",
+      "events": 1,
+      "clamped": 0,
+      "actions": 104,
+      "instruction": "Turn right from the doorway into the hallway. Walk straight down the hallway, passing an open bathroom entrance on your right and a living room entrance on your left. Continue straight to enter the dining room. Walk forward, keeping the dining table on your left and the kitchen on your right. Stop in front of the console table with fruit under the window on your right."
+    },
+    {
+      "id": "kujiale_0226_23_1",
+      "scene": "kujiale_0226",
+      "success": 0,
+      "reason": "not_reach_goal",
+      "events": 1,
+      "clamped": 0,
+      "actions": 59,
+      "instruction": "Walk straight through the doorway into the hallway. Continue straight down the hallway, passing a large painting on your left. Turn left to enter the dining room. Walk forward, passing a wooden cabinet on your left and a dining table on your right, then stop in front of the wall displaying three framed pictures."
+    },
+    {
+      "id": "kujiale_0243_73_4",
+      "scene": "kujiale_0243",
+      "success": 1,
+      "reason": "success",
+      "events": 2,
+      "clamped": 0,
+      "actions": 148,
+      "instruction": "Walk forward past the white storage cabinet on your right and the white bench on your left. Enter the main living area, with a dining table on your left and a living room with a sofa and TV on your right. Turn right, passing the living room with the TV on your left, to enter a hallway. Proceed straight down the hallway, passing a bathroom on your right. Then, turn left into the children's bedroom, and walk towards the bunk beds, stopping directly in front of them."
+    },
+    {
+      "id": "kujiale_0243_76_0",
+      "scene": "kujiale_0243",
+      "success": 0,
+      "reason": "not_reach_goal",
+      "events": 0,
+      "clamped": 0,
+      "actions": 92,
+      "instruction": "Walk forward through the doorway into the living room, passing a decorative cabinet on your right. Proceed straight ahead, with the couch on your left and the TV on your right. Turn right into the hallway. Walk straight down the hallway, then turn left to enter the next room. Stop in front of the window, with a desk and chair on your left and bunk beds on your right."
+    },
+    {
+      "id": "kujiale_0258_14_0",
+      "scene": "kujiale_0258",
+      "success": 1,
+      "reason": "success",
+      "events": 1,
+      "clamped": 0,
+      "actions": 78,
+      "instruction": "Turn left into the hallway, leaving the TV on your right. Walk straight down the hallway, passing a study room on your left. Then, turn left to enter the bathroom. Walk past the sink on your right and the toilet on your left, stopping in front of the window with the shower head to your left."
+    },
+    {
+      "id": "kujiale_0258_34_1",
+      "scene": "kujiale_0258",
+      "success": 0,
+      "reason": "not_reach_goal",
+      "events": 1,
+      "clamped": 0,
+      "actions": 60,
+      "instruction": "Walk forward in the hallway, with the wall-mounted TV on your left. Continue straight, passing a doorway to a room with bunk beds on your left and a doorway to a bathroom on your right. At the end of the hallway, turn right to enter a bedroom. Walk further into the bedroom, passing the wall-mounted TV on your left and the bed on your right. Stop in front of the window."
+    },
+    {
+      "id": "kujiale_0285_8_3",
+      "scene": "kujiale_0285",
+      "success": 1,
+      "reason": "fall",
+      "events": 1,
+      "clamped": 0,
+      "actions": 74,
+      "instruction": "Turn left from your current position, passing the wall with framed pictures on your right, to face the open doorway. Walk straight through this doorway to enter the combined living and dining room. Once inside the room, turn left, keeping the dining table and chairs on your right. Continue walking forward, past the large sofa on your left, and stop in front of the TV console."
+    },
+    {
+      "id": "kujiale_0285_2_0",
+      "scene": "kujiale_0285",
+      "success": 1,
+      "reason": "success",
+      "events": 2,
+      "clamped": 1,
+      "actions": 76,
+      "instruction": "Turn left to enter the powder room, with a vanity and a round illuminated mirror on your left. Turn right to exit the powder room, entering the hallway on your right. Walk straight down the hallway, passing a doorway with a ladder on your left and pictures on the wall on your right. At the end of the hallway, turn right into a room, and stop in front of the armchair with the red throw."
+    },
+    {
+      "id": "kujiale_0290_42_4",
+      "scene": "kujiale_0290",
+      "success": 1,
+      "reason": "success",
+      "events": 1,
+      "clamped": 0,
+      "actions": 46,
+      "instruction": "Walk forward, passing the dark shelving unit on your left and a console table on your right, then enter the galley kitchen through the open doorway. Proceed straight through the galley kitchen, with the built-in oven and refrigerator on your left and the countertop with the stovetop on your right. Stop in front of the large window, with the sink and washing machine on your left."
+    },
+    {
+      "id": "kujiale_0290_49_4",
+      "scene": "kujiale_0290",
+      "success": 0,
+      "reason": "not_reach_goal",
+      "events": 0,
+      "clamped": 0,
+      "actions": 48,
+      "instruction": "Turn right into the hallway. Walk straight down the hallway, passing a large painting on your right. As you exit the hallway, turn left into the open area with a dining table on your left. Walk past the dining table and enter the living room, stopping in front of the sofa and coffee tables, facing the window."
+    },
+    {
+      "id": "kujiale_0291_5_4",
+      "scene": "kujiale_0291",
+      "success": 1,
+      "reason": "success",
+      "events": 1,
+      "clamped": 0,
+      "actions": 63,
+      "instruction": "Turn right into the living room, passing a framed artwork of a bust and white cabinets on your right. Once in the living room, turn left, keeping the main couch and coffee table on your right and a decorative mirrored wall hanging on your left. Stop in front of the kitchen entrance to your left."
+    },
+    {
+      "id": "kujiale_0291_0_4",
+      "scene": "kujiale_0291",
+      "success": 0,
+      "reason": "not_reach_goal",
+      "events": 1,
+      "clamped": 0,
+      "actions": 89,
+      "instruction": "Turn around from facing the bathroom sink. Walk forward, keeping the tall grey cabinet on your right and a dining table with green chairs on your left. Turn left into the hallway, then walk straight down the hallway past a framed picture on your left and a mirror on your right. Turn right into the bedroom, and stop in front of the bed facing the window."
+    },
+    {
+      "id": "kujiale_0294_23_1",
+      "scene": "kujiale_0294",
+      "success": 1,
+      "reason": "success",
+      "events": 2,
+      "clamped": 0,
+      "actions": 138,
+      "instruction": "Go through the doorway, then walk forward, passing the long wooden cabinet on your right and the sofa and coffee table on your left. Continue forward, passing the dining table on your left, then turn right into the hallway. Walk straight down the hallway, passing the white cabinets on your right. Turn left into the bathroom, stopping in front of the toilet and shower. Then, turn right and enter the small bedroom, stopping in front of the shelves above the bed, with the bed on your left."
+    },
+    {
+      "id": "kujiale_0294_67_4",
+      "scene": "kujiale_0294",
+      "success": 0,
+      "reason": "fall",
+      "events": 1,
+      "clamped": 0,
+      "actions": 124,
+      "instruction": "Turn right, with the bathroom opening on your immediate right. Walk straight down the hallway, passing white storage cabinets on your right. Continue straight into the open dining and living area, passing a dining table on your right. Stop in front of the white sofa on your left."
+    },
+    {
+      "id": "kujiale_0294_57_0",
+      "scene": "kujiale_0294",
+      "success": 1,
+      "reason": "success",
+      "events": 2,
+      "clamped": 0,
+      "actions": 128,
+      "instruction": "Walk forward from behind the decorative screen on your right, entering the living room. Continue straight, keeping the sofa and coffee table on your left and the media console on your right. Pass the dining table on your left, then turn right into the hallway, with tall white cabinets on your right. Proceed straight down the hallway, passing a small room on your left, and then turn right into the bedroom. Stop in front of the bed, facing the window."
+    },
+    {
+      "id": "kujiale_0128_fix_16_1",
+      "scene": "kujiale_0128_fix",
+      "success": 1,
+      "reason": "success",
+      "events": 0,
+      "clamped": 0,
+      "actions": 66,
+      "instruction": "Walk forward, passing the dining table on your left and the living room entertainment console on your right. Enter the hallway directly ahead. Proceed straight down the hallway, with a bathroom visible at its end and a bedroom doorway on your left. Turn left into the bedroom. Walk further into the bedroom, past the bed and nightstand on your right. Stop in front of the closet on your left."
+    },
+    {
+      "id": "kujiale_0243_52_3",
+      "scene": "kujiale_0243",
+      "success": 1,
+      "reason": "success",
+      "events": 5,
+      "clamped": 4,
+      "actions": 104,
+      "instruction": "Walk straight down the hallway, with patterned wallpaper on your right. Pass by a doorway on your left and another doorway on your right. At the end of the hallway, turn right to enter the bedroom. Walk forward into the bedroom, keeping the bed on your left and a dresser on your right, and stop in front of the window."
+    }
+  ],
+  "total": 25,
+  "scenes": 11,
+  "successes": 15,
+  "events": 27,
+  "selected_ids": [
+    "kujiale_0128_fix_3_1",
+    "kujiale_0128_fix_0_1",
+    "kujiale_0147_48_3",
+    "kujiale_0147_8_4",
+    "kujiale_0159_51_4",
+    "kujiale_0159_3_4",
+    "kujiale_0165_45_0",
+    "kujiale_0165_28_3",
+    "kujiale_0226_96_0",
+    "kujiale_0226_23_1",
+    "kujiale_0243_73_4",
+    "kujiale_0243_76_0",
+    "kujiale_0258_14_0",
+    "kujiale_0258_34_1",
+    "kujiale_0285_8_3",
+    "kujiale_0285_2_0",
+    "kujiale_0290_42_4",
+    "kujiale_0290_49_4",
+    "kujiale_0291_5_4",
+    "kujiale_0291_0_4",
+    "kujiale_0294_23_1",
+    "kujiale_0294_67_4",
+    "kujiale_0294_57_0",
+    "kujiale_0128_fix_16_1",
+    "kujiale_0243_52_3"
+  ]
+}

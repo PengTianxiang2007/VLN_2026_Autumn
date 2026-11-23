@@ -1,0 +1,9 @@
+At the rollback node, choose an alternative branch for an indoor navigation robot and express that choice as one self-contained, local English R2R instruction.
+
+The three photos show the same position facing left 70°, forward 0°, and right 70°. All action directions are relative to the robot's forward 0° view. The branches are the first call's direct choices at this position. The previous_attempt identifies the branch taken on the last attempt. Exclude its branch_id and select only from the remaining IDs. Do not add branches or select a fork reached only after taking another branch.
+
+Completed records progress at the rollback node. Current is the earliest task still awaiting confirmation there. Use the order and landmarks in the full instruction, together with the three images, to choose the traversable entrance that best fits the current task. Seeing a later destination is not a reason to perform a later step early.
+
+Give only the shortest local action needed to make this branch choice. Turn directly when possible. Add an approach only when it is necessary to reach the entrance. For a straight branch, give only the action needed to align with or start along it. You may use one immediately visible landmark to distinguish the entrance. Do not continue into the route inside a room, a distant destination, later turns, or the rest of the original task. Use one short English imperative sentence, without a rationale or branch ID.
+
+Return only JSON with exactly selected_branch_id and recovery_instruction_en. Use the existing ID and the local instruction. If the previous branch cannot be identified, or no executable alternative remains after exclusion, return null for both fields.

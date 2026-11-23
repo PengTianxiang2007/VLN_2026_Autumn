@@ -1,0 +1,27 @@
+{
+  "cases": 53,
+  "retained": 376,
+  "terminal": 53,
+  "rollback_targets": 47,
+  "checked_cases": [
+    "C01",
+    "C04",
+    "C50",
+    "C53"
+  ],
+  "views_180_and_360": true,
+  "full_resolution": [
+    640,
+    480
+  ],
+  "node_frame_not_alarm_frame": true,
+  "ordinary_frames_clear": true,
+  "node_navigation": true,
+  "terminal_views": true,
+  "modal": true,
+  "bilingual": true,
+  "sliders_synchronized": true,
+  "historical_versions_and_format_error_preserved": true,
+  "mobile": true,
+  "errors": []
+}

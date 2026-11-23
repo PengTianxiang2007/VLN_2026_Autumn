@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "seed": 2,
+  "threshold_m": 0.75,
+  "landing_offset_m": 1.25,
+  "branch": {
+    "shared_distance_m": 0.35,
+    "fit_window_m": 8.0,
+    "resample_m": 0.05,
+    "min_motion_m": 0.03,
+    "min_fit_span_m": 0.5,
+    "min_tail_m": 0.3,
+    "max_fit_rmse_m": 0.12,
+    "projection_slack_m": 0.1,
+    "projection_motion_factor": 1.5,
+    "min_departure_slope": 0.05
+  }
+}

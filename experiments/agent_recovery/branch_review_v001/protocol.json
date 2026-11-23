@@ -1,0 +1,32 @@
+{
+  "version": "recovery_branch_review_v001",
+  "status": "implemented",
+  "purpose": "inventory_current_direct_branches_and_identify_previous_attempt",
+  "prompt": "prompt_zh.txt",
+  "prompt_translation": "prompt_en.txt",
+  "output_schema": "output_schema.json",
+  "model": null,
+  "seed": null,
+  "sample_manifest": null,
+  "image_count": 7,
+  "checkpoint_step_reference": "retained_node_observation_step_not_emission_step",
+  "direction_reference": "C_front_original_camera_heading",
+  "requested_future_window_steps": 15,
+  "sampled_future_offsets": [2, 5, 8, 10],
+  "latest_sample_offset": 10,
+  "images": [
+    {"id": "C_left70", "step_offset": 0, "kind": "checkpoint_view", "yaw_offset_degrees": 70},
+    {"id": "C_front", "step_offset": 0, "kind": "checkpoint_view", "yaw_offset_degrees": 0},
+    {"id": "C_right70", "step_offset": 0, "kind": "checkpoint_view", "yaw_offset_degrees": -70},
+    {"id": "C_plus2", "step_offset": 2, "kind": "subsequent_policy_front"},
+    {"id": "C_plus5", "step_offset": 5, "kind": "subsequent_policy_front"},
+    {"id": "C_plus8", "step_offset": 8, "kind": "subsequent_policy_front"},
+    {"id": "C_plus10", "step_offset": 10, "kind": "subsequent_policy_front"}
+  ],
+  "input_metadata_fields": ["checkpoint_step", "image_id", "actual_step", "view_label"],
+  "missing_image_policy": "input_incomplete_no_padding_or_offset_substitution",
+  "availability_rule": "all_seven_observations_must_already_exist_at_request_time",
+  "previous_attempt_error_source": "upstream_review_not_a_branch_identity_label",
+  "calls_per_complete_input": 1,
+  "output_language": "zh"
+}

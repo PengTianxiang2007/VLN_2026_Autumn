@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "reviewed": 102,
+  "unique_ids": 102,
+  "all_native_failures_covered": true,
+  "native_NE_OS_recomputed": true,
+  "all_action_position_lengths_verified": true,
+  "scenes_and_episode_seeds_verified": true,
+  "input_sha256_unchanged": true,
+  "review_sha256": "cf40ccc990c0f5c6abab0c04bab46c16edc5934a3fd83642460db2889b6af886",
+  "classification_sha256": "bcb1611e407721cadd4fb88536d392ed41b98931210fdd46e7014e967d0f567d",
+  "auto_result_sha256": "839a6eb3ccc28b27a833b22ad03b082c61fba90ba4547840937dd047d825d088",
+  "geometry_sanity_checks": 3,
+  "full_rgb_review_claimed": false
+}

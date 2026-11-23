@@ -1,0 +1,51 @@
+{
+  "scored": 217,
+  "successes": 123,
+  "mean_spl": 0.4932723336530618,
+  "technical": 0,
+  "groups": {
+    "STOP": {
+      "failures": 83,
+      "crossing": 63,
+      "uncertain": 9,
+      "other": 11,
+      "subtypes": {
+        "missed_turn": 9,
+        "wrong_branch": 31,
+        "wrong_door": 23
+      }
+    },
+    "step_limit": {
+      "failures": 11,
+      "crossing": 4,
+      "uncertain": 1,
+      "other": 6,
+      "subtypes": {
+        "missed_turn": 1,
+        "wrong_branch": 2,
+        "wrong_door": 1
+      }
+    },
+    "all": {
+      "failures": 94,
+      "crossing": 67,
+      "uncertain": 10,
+      "other": 17,
+      "subtypes": {
+        "missed_turn": 10,
+        "wrong_branch": 33,
+        "wrong_door": 24
+      }
+    }
+  },
+  "scene_counts": {
+    "2azQ1b91cZZ": 55,
+    "8194nk5LbLH": 8,
+    "EU6Fwq7SyZv": 29,
+    "QUCTc6BB5sX": 55,
+    "TbHJrupSAjP": 57,
+    "X7HyMhZNoso": 13
+  },
+  "extra_review_cases": 12,
+  "distinct_reviewed_episode_steps": 569
+}

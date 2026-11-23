@@ -1,0 +1,34 @@
+{
+  "phase": "cpu_validated",
+  "completed_at": "2026-11-16T15:37:56.680573+00:00",
+  "protocol": "auto_branch_oracle_v001",
+  "git_head": "7ce5f9fee30686bae304425bc84c36b3fbedc39c",
+  "worktree_dirty": true,
+  "tests_passed": 52,
+  "official_geometry_tasks": 825,
+  "landing_probes": 17325,
+  "frozen_source_files": 1324,
+  "native_launcher_unchanged": true,
+  "streamvln_environment_passed": true,
+  "simulation_started": false,
+  "navigation_completed": 0,
+  "formal_400_campaign_frozen": false,
+  "offline_replay": {
+    "protocol": "auto_branch_oracle_v001",
+    "episodes": 33,
+    "observations": 3039,
+    "threshold_frames": 1558,
+    "resolved_threshold_frames": 1524,
+    "candidate_branches": 31,
+    "tasks_with_candidates": 31,
+    "unresolved_reasons": {
+      "divergence_fit_residual_too_large": 34
+    },
+    "simulation_started": false,
+    "annotations_used": false,
+    "corrections_applied": 0,
+    "interpretation": "Existing poses replayed causally, no counterfactual navigation. Candidate counts are not localization accuracy, correction success or navigation gains."
+  },
+  "output": "outputs/oracle_crossing/auto_branch_v001/code_validation_20261116_01",
+  "prepared_probe": "outputs/oracle_crossing/auto_branch_v001/code_validation_20261116_01/prepared_probe_02"
+}

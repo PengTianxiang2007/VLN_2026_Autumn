@@ -1,0 +1,101 @@
+{
+  "run": "qwen_gpu2_01",
+  "status": {
+    "phase": "complete",
+    "version": "v004",
+    "cases": [
+      7,
+      11,
+      19,
+      30,
+      47,
+      50
+    ],
+    "at": "2026-11-20T06:28:50.296026+00:00",
+    "v003_archived_rounds": 34,
+    "v004_model_calls": 35,
+    "verdicts": {
+      "consistent": 14,
+      "uncertain": 20,
+      "deviated": 1
+    }
+  },
+  "cases": [
+    {
+      "case_number": 7,
+      "v003": null,
+      "v004": null,
+      "calls": 4,
+      "outcomes": {
+        "consistent": 1,
+        "uncertain": 3
+      }
+    },
+    {
+      "case_number": 11,
+      "v003": {
+        "previous_id": "S01",
+        "current_id": "S02",
+        "from_frame": 0,
+        "to_frame": 5
+      },
+      "v004": {
+        "previous_id": "S01",
+        "current_id": "S02",
+        "from_frame": 0,
+        "to_frame": 5
+      },
+      "calls": 2,
+      "outcomes": {
+        "consistent": 1,
+        "deviated": 1
+      }
+    },
+    {
+      "case_number": 19,
+      "v003": {
+        "previous_id": "S04",
+        "current_id": "S05",
+        "from_frame": 19,
+        "to_frame": 38
+      },
+      "v004": null,
+      "calls": 6,
+      "outcomes": {
+        "consistent": 3,
+        "uncertain": 3
+      }
+    },
+    {
+      "case_number": 30,
+      "v003": null,
+      "v004": null,
+      "calls": 13,
+      "outcomes": {
+        "consistent": 4,
+        "uncertain": 9
+      }
+    },
+    {
+      "case_number": 47,
+      "v003": null,
+      "v004": null,
+      "calls": 5,
+      "outcomes": {
+        "consistent": 1,
+        "uncertain": 4
+      }
+    },
+    {
+      "case_number": 50,
+      "v003": null,
+      "v004": null,
+      "calls": 5,
+      "outcomes": {
+        "consistent": 4,
+        "uncertain": 1
+      }
+    }
+  ],
+  "own_processes_remaining": []
+}

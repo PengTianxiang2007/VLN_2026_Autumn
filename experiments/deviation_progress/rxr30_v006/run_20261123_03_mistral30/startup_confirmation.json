@@ -1,0 +1,12 @@
+{
+  "checked_at": "2026-11-23T16:56:05.778522+00:00",
+  "supervisor_pid": 2081596,
+  "workers_confirmed": 30,
+  "cases_entered": 30,
+  "phase": "dedup",
+  "first_actual_comparison_http": 200,
+  "first_actual_comparison_valid": true,
+  "first_actual_comparison_elapsed_seconds": 103.464,
+  "first_actual_comparison_reused": true,
+  "continuous_followup": false
+}

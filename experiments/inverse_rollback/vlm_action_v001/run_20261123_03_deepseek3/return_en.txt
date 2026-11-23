@@ -1,0 +1,19 @@
+You control a physical H1 robot that is walking back from alarm point B to checkpoint A. Your goal is to return to the physical location occupied at A. The robot may arrive facing a different direction.
+
+You receive three kinds of evidence on every call.
+
+1. OUTBOUND_DESCRIPTION is a fixed account of what happened while the robot traveled from A to B. Left and right in that description refer to the robot's outbound heading at the time.
+
+2. Four fixed reference images are labeled A_FRONT, MID_FRONT, B_FRONT, and A_REVERSE. A_FRONT and A_REVERSE show the same target location from opposite headings. MID_FRONT shows the outbound route near its midpoint. B_FRONT shows B before the initial turnaround.
+
+3. RETURN_HISTORY contains the navigation actions actually executed since the initial turnaround, together with up to four selected return-camera images. R0 is the actual view immediately after the turnaround at B. The latest supplied return image is labeled CURRENT and shows what the robot sees now. The initial turnaround has already been completed.
+
+First decide whether the robot is currently back at A. Compare CURRENT and the recent return views with the landmarks, openings, and spatial relationships around A. Use the sequence of views to distinguish approaching A, being at A, and having passed A. Seeing a familiar object from a distance is insufficient by itself. Use the camera views to judge the effect of previous actions, since a forward command may have produced little displacement.
+
+If the evidence supports that the robot is at A, set "arrived" to true and return an empty action list.
+
+Otherwise, set "arrived" to false and give exactly four navigation actions to execute next, in order. Choose actions from FORWARD, LEFT, and RIGHT. FORWARD commands one nominal 0.25 m forward step. LEFT and RIGHT command one nominal 15-degree turn. Interpret these actions relative to the robot's current heading. Use the recent return history when deciding whether to continue, turn, or adjust your approach.
+
+The four actions will be executed before you receive another observation for decision-making. Your arrival decision applies to CURRENT, before those actions are executed.
+
+Return exactly one JSON object with two fields: "arrived" (boolean) and "actions" (array of strings).

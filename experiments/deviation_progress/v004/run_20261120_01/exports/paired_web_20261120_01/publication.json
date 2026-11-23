@@ -1,0 +1,40 @@
+{
+  "url": "http://134.175.18.101/vln/deepseek_v004_six_web_20261120_02/index.html",
+  "updated_at": "2026-11-20T06:49:02.753604+00:00",
+  "immutable_release": "qwen_deepseek_v004_six_web_20261120_01",
+  "old_sha256": "672d3985464d81c73d1c5583fc091627b45f845bda2b6529e67d7cf83a257628",
+  "entry_sha256": "5a38d8dc746b2d94fd11993a10b6824d664c86d7aa1240aca74221199171b08c",
+  "backup": "index_before_qwen27b_20261120.html",
+  "http": {
+    "index.html": {
+      "status": 200,
+      "bytes": 1170262,
+      "mime": "text/html",
+      "sha256": "5a38d8dc746b2d94fd11993a10b6824d664c86d7aa1240aca74221199171b08c"
+    },
+    "qwen_model_returns.json": {
+      "status": 200,
+      "bytes": 402031,
+      "mime": "application/json",
+      "sha256": "4332c6a9ac9bd4f1573dbda774cf7c4eaaeaf9c7f49d1bc6c5dd83c1f67776fc"
+    },
+    "deepseek_model_returns.json": {
+      "status": 200,
+      "bytes": 440989,
+      "mime": "application/json",
+      "sha256": "a8a199bfa86d13bb1c16001956ce9e1e3f2ca2eb3f44fd4a570581a47a1c97e0"
+    },
+    "qwen_deepseek_v004_six_offline.zip": {
+      "status": 200,
+      "bytes": 47401336,
+      "mime": "application/zip"
+    },
+    "deepseek_v004_six_offline.zip": {
+      "status": 200,
+      "bytes": 37028146,
+      "mime": "application/zip"
+    }
+  },
+  "assets_verified": 560,
+  "assets_added": 37
+}

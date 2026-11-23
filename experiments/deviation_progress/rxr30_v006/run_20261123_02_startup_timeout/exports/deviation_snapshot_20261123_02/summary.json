@@ -1,0 +1,743 @@
+{
+  "created_at": "2026-11-23T15:20:06.651683+00:00",
+  "dedup": {
+    "candidates": 725,
+    "retained": 517,
+    "removed": 208,
+    "model_calls": 656,
+    "uncertain": 29,
+    "errors": 4
+  },
+  "deviation_complete": 4,
+  "deviation": {
+    "outcomes": {
+      "consistent": 42,
+      "format_error": 7,
+      "deviated": 2
+    },
+    "calls": 51,
+    "alarm_cases": 2
+  },
+  "cases": [
+    {
+      "case_number": 1,
+      "episode_id": "837",
+      "nodes": 12,
+      "calls": 9,
+      "outcomes": {
+        "consistent": 7,
+        "format_error": 1,
+        "deviated": 1
+      },
+      "first_deviation": {
+        "previous_id": "S08",
+        "current_id": "S09",
+        "from_frame": 40,
+        "to_frame": 50
+      },
+      "rounds": [
+        {
+          "node": "S01",
+          "previous": "S01",
+          "frames": [
+            0
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S02",
+          "previous": "S01",
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "verdict": "format_error"
+        },
+        {
+          "node": "S03",
+          "previous": "S01",
+          "frames": [
+            0,
+            1,
+            3,
+            5,
+            7,
+            9,
+            10
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S04",
+          "previous": "S03",
+          "frames": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S05",
+          "previous": "S04",
+          "frames": [
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S06",
+          "previous": "S05",
+          "frames": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S07",
+          "previous": "S06",
+          "frames": [
+            25,
+            26,
+            27,
+            28,
+            29,
+            30
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S08",
+          "previous": "S07",
+          "frames": [
+            30,
+            31,
+            33,
+            35,
+            37,
+            39,
+            40
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S09",
+          "previous": "S08",
+          "frames": [
+            40,
+            41,
+            43,
+            45,
+            47,
+            49,
+            50
+          ],
+          "verdict": "deviated"
+        }
+      ]
+    },
+    {
+      "case_number": 2,
+      "episode_id": "1825",
+      "nodes": 33,
+      "calls": 12,
+      "outcomes": {
+        "consistent": 6,
+        "format_error": 5,
+        "deviated": 1
+      },
+      "first_deviation": {
+        "previous_id": "S10",
+        "current_id": "S12",
+        "from_frame": 67,
+        "to_frame": 82
+      },
+      "rounds": [
+        {
+          "node": "S01",
+          "previous": "S01",
+          "frames": [
+            14
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S02",
+          "previous": "S01",
+          "frames": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "verdict": "format_error"
+        },
+        {
+          "node": "S03",
+          "previous": "S01",
+          "frames": [
+            14,
+            15,
+            17,
+            19,
+            21,
+            23,
+            24
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S04",
+          "previous": "S03",
+          "frames": [
+            24,
+            25,
+            26,
+            27,
+            28,
+            29
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S05",
+          "previous": "S04",
+          "frames": [
+            29,
+            30,
+            31,
+            32
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S06",
+          "previous": "S05",
+          "frames": [
+            32,
+            33,
+            35,
+            37,
+            39,
+            41,
+            42
+          ],
+          "verdict": "format_error"
+        },
+        {
+          "node": "S07",
+          "previous": "S05",
+          "frames": [
+            32,
+            33,
+            36,
+            39,
+            43,
+            46,
+            47
+          ],
+          "verdict": "format_error"
+        },
+        {
+          "node": "S08",
+          "previous": "S05",
+          "frames": [
+            32,
+            33,
+            37,
+            42,
+            47,
+            51,
+            52
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S09",
+          "previous": "S08",
+          "frames": [
+            52,
+            53,
+            55,
+            57,
+            59,
+            61,
+            62
+          ],
+          "verdict": "format_error"
+        },
+        {
+          "node": "S10",
+          "previous": "S08",
+          "frames": [
+            52,
+            53,
+            56,
+            59,
+            63,
+            66,
+            67
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S11",
+          "previous": "S10",
+          "frames": [
+            67,
+            68,
+            69,
+            70,
+            71,
+            72
+          ],
+          "verdict": "format_error"
+        },
+        {
+          "node": "S12",
+          "previous": "S10",
+          "frames": [
+            67,
+            68,
+            71,
+            74,
+            78,
+            81,
+            82
+          ],
+          "verdict": "deviated"
+        }
+      ]
+    },
+    {
+      "case_number": 3,
+      "episode_id": "1504",
+      "nodes": 12,
+      "calls": 12,
+      "outcomes": {
+        "consistent": 11,
+        "format_error": 1
+      },
+      "first_deviation": null,
+      "rounds": [
+        {
+          "node": "S01",
+          "previous": "S01",
+          "frames": [
+            7
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S02",
+          "previous": "S01",
+          "frames": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S03",
+          "previous": "S02",
+          "frames": [
+            12,
+            13,
+            15,
+            17,
+            19,
+            21,
+            22
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S04",
+          "previous": "S03",
+          "frames": [
+            22,
+            23,
+            25,
+            27,
+            29,
+            31,
+            32
+          ],
+          "verdict": "format_error"
+        },
+        {
+          "node": "S05",
+          "previous": "S03",
+          "frames": [
+            22,
+            23,
+            26,
+            29,
+            33,
+            36,
+            37
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S06",
+          "previous": "S05",
+          "frames": [
+            37,
+            38,
+            39,
+            40,
+            41,
+            42
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S07",
+          "previous": "S06",
+          "frames": [
+            42,
+            43,
+            44,
+            45,
+            46,
+            47
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S08",
+          "previous": "S07",
+          "frames": [
+            47,
+            48,
+            49,
+            50,
+            51,
+            52
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S09",
+          "previous": "S08",
+          "frames": [
+            52,
+            53,
+            54,
+            55,
+            56,
+            57
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S10",
+          "previous": "S09",
+          "frames": [
+            57,
+            58,
+            59,
+            60,
+            61,
+            62
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S11",
+          "previous": "S10",
+          "frames": [
+            62,
+            63,
+            64,
+            65,
+            66,
+            67
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S12",
+          "previous": "S11",
+          "frames": [
+            67,
+            68,
+            71,
+            74,
+            77,
+            80,
+            81
+          ],
+          "verdict": "consistent"
+        }
+      ]
+    },
+    {
+      "case_number": 4,
+      "episode_id": "6858",
+      "nodes": 18,
+      "calls": 18,
+      "outcomes": {
+        "consistent": 18
+      },
+      "first_deviation": null,
+      "rounds": [
+        {
+          "node": "S01",
+          "previous": "S01",
+          "frames": [
+            5
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S02",
+          "previous": "S01",
+          "frames": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S03",
+          "previous": "S02",
+          "frames": [
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S04",
+          "previous": "S03",
+          "frames": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S05",
+          "previous": "S04",
+          "frames": [
+            19,
+            20,
+            21,
+            22,
+            23,
+            24
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S06",
+          "previous": "S05",
+          "frames": [
+            24,
+            25,
+            26,
+            27,
+            28,
+            29
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S07",
+          "previous": "S06",
+          "frames": [
+            29,
+            30,
+            31,
+            32,
+            33,
+            34
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S08",
+          "previous": "S07",
+          "frames": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S09",
+          "previous": "S08",
+          "frames": [
+            39,
+            40,
+            41,
+            42,
+            43,
+            44
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S10",
+          "previous": "S09",
+          "frames": [
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S11",
+          "previous": "S10",
+          "frames": [
+            49,
+            50,
+            51,
+            52,
+            53,
+            54
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S12",
+          "previous": "S11",
+          "frames": [
+            54,
+            55,
+            56,
+            57,
+            58,
+            59
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S13",
+          "previous": "S12",
+          "frames": [
+            59,
+            60,
+            61,
+            62,
+            64,
+            65,
+            66
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S14",
+          "previous": "S13",
+          "frames": [
+            66,
+            67,
+            68,
+            69,
+            70,
+            71
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S15",
+          "previous": "S14",
+          "frames": [
+            71,
+            72,
+            73,
+            74,
+            75,
+            76
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S16",
+          "previous": "S15",
+          "frames": [
+            76,
+            77,
+            79,
+            80,
+            81,
+            83,
+            84
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S17",
+          "previous": "S16",
+          "frames": [
+            84,
+            85,
+            86,
+            87,
+            88,
+            89
+          ],
+          "verdict": "consistent"
+        },
+        {
+          "node": "S18",
+          "previous": "S17",
+          "frames": [
+            89,
+            90,
+            92,
+            94,
+            96,
+            98,
+            99
+          ],
+          "verdict": "consistent"
+        }
+      ]
+    }
+  ]
+}

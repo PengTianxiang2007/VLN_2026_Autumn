@@ -1,0 +1,15 @@
+You are documenting the outbound route of a robot so that another controller can later walk back to its starting location.
+
+The robot traveled from checkpoint A to alarm point B. You receive seven chronological front-camera observations: A, five intermediate observations, and B. Each observation has a frame ID. Between each pair of displayed observations, you receive the complete ordered list of navigation actions executed during that interval.
+
+Write one concise outbound route description in English. Describe the following in chronological order:
+1. Where the robot was at A, including visible landmarks and their spatial relationship to the robot.
+2. How the robot moved from A toward B. Connect forward motion and turns to visible changes, such as passing a doorway, entering a corridor, or turning beside an identifiable object.
+3. How the robot approached B and what distinguishes the area around B.
+
+Describe left and right from the robot's outbound heading at that moment. Distinguish seeing a landmark from passing it. Use the action log for action order and the images for evidence of physical progress. If the images do not establish that the robot passed a landmark or crossed an opening, describe only what is visible. A recorded STOP means the outbound robot issued STOP at that point.
+
+Describe the route that actually happened. The return controller will choose its own actions later.
+
+Return one JSON object with a single string field:
+{"route_description":"..."}

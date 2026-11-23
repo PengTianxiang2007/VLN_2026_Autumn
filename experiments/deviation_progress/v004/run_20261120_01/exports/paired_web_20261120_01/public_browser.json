@@ -1,0 +1,27 @@
+{
+  "url": "http://134.175.18.101/vln/deepseek_v004_six_web_20261120_02/index.html",
+  "checked": [
+    {
+      "model": "qwen",
+      "case": "C47",
+      "node": "S04",
+      "frame": 52,
+      "verdict": "uncertain"
+    },
+    {
+      "model": "deepseek",
+      "case": "C47",
+      "node": "S04",
+      "frame": 52,
+      "verdict": "deviated"
+    },
+    {
+      "model": "qwen",
+      "case": "C47",
+      "node": "S04",
+      "frame": 52,
+      "verdict": "uncertain"
+    }
+  ],
+  "errors": []
+}

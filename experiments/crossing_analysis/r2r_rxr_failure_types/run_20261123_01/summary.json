@@ -1,0 +1,114 @@
+{
+  "R2R": {
+    "scored": 217,
+    "successes": 123,
+    "failures": 94,
+    "mean_spl": 0.4932723336530618,
+    "types": {
+      "wrong_door": {
+        "name": "进错门或房间",
+        "count": 24,
+        "pct_failures": 25.53191489361702,
+        "pct_scored": 11.059907834101383
+      },
+      "wrong_branch": {
+        "name": "选错通道分支",
+        "count": 33,
+        "pct_failures": 35.1063829787234,
+        "pct_scored": 15.2073732718894
+      },
+      "missed_turn": {
+        "name": "漏转弯或楼梯入口",
+        "count": 10,
+        "pct_failures": 10.638297872340425,
+        "pct_scored": 4.608294930875576
+      },
+      "premature_stop": {
+        "name": "未完成路线就提前停止",
+        "count": 4,
+        "pct_failures": 4.25531914893617,
+        "pct_scored": 1.8433179723502304
+      },
+      "goal_stop_mismatch": {
+        "name": "到达目标附近后未停准或继续走离",
+        "count": 6,
+        "pct_failures": 6.382978723404255,
+        "pct_scored": 2.7649769585253456
+      },
+      "blocked_no_progress": {
+        "name": "卡住或局部移动无进展",
+        "count": 6,
+        "pct_failures": 6.382978723404255,
+        "pct_scored": 2.7649769585253456
+      },
+      "nonbranch_motion_error": {
+        "name": "反向、折返或开放区域走偏，未确认支路错选",
+        "count": 1,
+        "pct_failures": 1.0638297872340425,
+        "pct_scored": 0.4608294930875576
+      },
+      "uncertain": {
+        "name": "无法确定主因",
+        "count": 10,
+        "pct_failures": 10.638297872340425,
+        "pct_scored": 4.608294930875576
+      }
+    }
+  },
+  "RxR": {
+    "scored": 389,
+    "successes": 224,
+    "failures": 165,
+    "mean_spl": 0.49146400566375814,
+    "types": {
+      "wrong_door": {
+        "name": "进错门或房间",
+        "count": 28,
+        "pct_failures": 16.96969696969697,
+        "pct_scored": 7.197943444730077
+      },
+      "wrong_branch": {
+        "name": "选错通道分支",
+        "count": 27,
+        "pct_failures": 16.363636363636363,
+        "pct_scored": 6.940874035989717
+      },
+      "missed_turn": {
+        "name": "漏转弯或楼梯入口",
+        "count": 25,
+        "pct_failures": 15.151515151515152,
+        "pct_scored": 6.426735218508997
+      },
+      "premature_stop": {
+        "name": "未完成路线就提前停止",
+        "count": 11,
+        "pct_failures": 6.666666666666667,
+        "pct_scored": 2.827763496143959
+      },
+      "goal_stop_mismatch": {
+        "name": "到达目标附近后未停准或继续走离",
+        "count": 11,
+        "pct_failures": 6.666666666666667,
+        "pct_scored": 2.827763496143959
+      },
+      "blocked_no_progress": {
+        "name": "卡住或局部移动无进展",
+        "count": 10,
+        "pct_failures": 6.0606060606060606,
+        "pct_scored": 2.570694087403599
+      },
+      "nonbranch_motion_error": {
+        "name": "反向、折返或开放区域走偏，未确认支路错选",
+        "count": 12,
+        "pct_failures": 7.2727272727272725,
+        "pct_scored": 3.0848329048843186
+      },
+      "uncertain": {
+        "name": "无法确定主因",
+        "count": 41,
+        "pct_failures": 24.848484848484848,
+        "pct_scored": 10.539845758354756
+      }
+    }
+  }
+}

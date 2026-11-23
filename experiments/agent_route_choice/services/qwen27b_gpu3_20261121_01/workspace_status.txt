@@ -1,0 +1,145 @@
+ M AGENTS.md
+ M README.md
+ M docs/DEVIATION_PROGRESS_V003.md
+ M docs/STATUS.md
+ M experiments/README.md
+ M experiments/agent_route_choice/services/README.md
+ M experiments/crossing_analysis/README.md
+ M experiments/crossing_checkpoint/README.md
+ M experiments/crossing_checkpoint/current_jev_version.json
+ M experiments/crossing_checkpoint/online_sampling_v001/README.md
+ M experiments/deviation_progress/README.md
+ M experiments/deviation_progress/v003/README.md
+ M experiments/deviation_progress/v003/run_20261112_05/README.md
+ M experiments/oracle_recovery/README.md
+ M scripts/run_deviation_progress_review.py
+ M scripts/serve_qwen27b_standby.py
+?? core/deviation_four_versions.js
+?? core/deviation_node_multiview.css
+?? core/deviation_node_multiview.js
+?? core/deviation_progress_v004_review.js
+?? core/jev_capture.py
+?? core/jev_sampling_lab/deepseek_deviation.js
+?? core/jev_sampling_lab/terminal_node.js
+?? core/offline_route_dataset.py
+?? core/offline_route_replay.html
+?? core/offline_route_replay_player.js
+?? core/offline_route_replay_style.css
+?? core/oracle_auto_branch.py
+?? core/oracle_auto_route.py
+?? core/oracle_distance.py
+?? core/oracle_distance_native.py
+?? core/oracle_distance_replay.html
+?? core/oracle_distance_runtime.py
+?? core/oracle_landing_geometry.py
+?? core/serial_batch.py
+?? core/serial_jev_template_adapter.js
+?? core/serial_pipeline.py
+?? core/serial_replay.html
+?? core/serial_replay_dedup_prompt_en.txt
+?? core/serial_replay_translations.json
+?? core/serial_runtime.py
+?? core/step_multiview.py
+?? docs/DEVIATION_PROGRESS_V004.md
+?? docs/DEVIATION_PROGRESS_V005.md
+?? experiments/agent_route_choice/services/qwen27b_gpu3_20261120_01/
+?? experiments/agent_route_choice/services/qwen27b_gpu3_20261121_01/
+?? experiments/crossing_analysis/pooled450_v001/
+?? experiments/crossing_checkpoint/online_sampling_v001/run_20261118_01/
+?? experiments/deviation_progress/v003/run_20261112_05/exports/
+?? experiments/deviation_progress/v003/run_20261118_01_qwen27b/
+?? experiments/deviation_progress/v003/run_20261118_02_deepseek10/
+?? experiments/deviation_progress/v003/run_20261118_03_deepseek29/
+?? experiments/deviation_progress/v004/
+?? experiments/deviation_progress/v005.1/
+?? experiments/deviation_progress/v005/
+?? experiments/deviation_progress/v006.1/
+?? experiments/deviation_progress/v006/
+?? experiments/jev_point_capture/
+?? experiments/multiview_capture/
+?? experiments/offline_route_dataset/
+?? experiments/oracle_recovery/auto_branch_v001/
+?? experiments/oracle_recovery/auto_route_v001/
+?? experiments/oracle_recovery/distance_v001/
+?? experiments/oracle_recovery/scene_annotations_v001/
+?? experiments/serial_recovery/
+?? scripts/analyze_oracle_baseline_failures.py
+?? scripts/analyze_pooled450_failures.py
+?? scripts/analyze_route53_checkpoint_coverage.py
+?? scripts/audit_oracle_scene_geometry.py
+?? scripts/build_offline_route_dataset.py
+?? scripts/build_oracle_scene_annotations.py
+?? scripts/check_deviation_progress_v004_replay.cjs
+?? scripts/check_offline_route_jev.cjs
+?? scripts/check_offline_route_replay.cjs
+?? scripts/check_oracle_distance_replay.cjs
+?? scripts/check_serial_jev_template.cjs
+?? scripts/check_serial_qwen.py
+?? scripts/check_serial_replay.cjs
+?? scripts/demonstrate_oracle_auto_branch.py
+?? scripts/export_deviation_four_versions.py
+?? scripts/export_deviation_node_multiview.py
+?? scripts/export_deviation_node_multiview70.py
+?? scripts/export_deviation_progress_v004_replay.py
+?? scripts/export_offline_route_jev.py
+?? scripts/export_offline_route_replay.py
+?? scripts/export_oracle_auto_branch_replay.py
+?? scripts/export_oracle_distance_replay.py
+?? scripts/export_route53_deepseek_dedup.py
+?? scripts/export_route53_deepseek_deviation_comparison.py
+?? scripts/export_serial_jev_template.py
+?? scripts/export_serial_replay.py
+?? scripts/extend_deviation_comparison_v006.py
+?? scripts/jev_sampler_stdio.cjs
+?? scripts/plan_streamvln_new_cohort.py
+?? scripts/prepare_jev_point_capture.py
+?? scripts/prepare_multiview_failure_review.py
+?? scripts/prepare_online_route_jev.py
+?? scripts/prepare_oracle_auto_branch.py
+?? scripts/prepare_oracle_auto_route.py
+?? scripts/prepare_oracle_distance.py
+?? scripts/prepare_serial_pipeline.py
+?? scripts/prepare_step_multiview.py
+?? scripts/probe_jev_header.py
+?? scripts/probe_jev_official_sdk.py
+?? scripts/probe_serial_endpoints.py
+?? scripts/queue_serial_qwen.py
+?? scripts/reduce_oracle_pair.py
+?? scripts/render_jev_point_capture.py
+?? scripts/render_v006_pose_capture.py
+?? scripts/replay_oracle_auto_branch.py
+?? scripts/review_oracle_scene_annotations.py
+?? scripts/run_deviation_progress_v004.py
+?? scripts/run_deviation_progress_v004_deepseek.py
+?? scripts/run_jev_point_capture.py
+?? scripts/run_offline_route_jev.py
+?? scripts/run_oracle_distance.py
+?? scripts/run_oracle_existing_model.py
+?? scripts/run_oracle_retained_followup.py
+?? scripts/run_route53_deepseek_deviation29.py
+?? scripts/run_route53_deepseek_subset.py
+?? scripts/run_route53_qwen_review.py
+?? scripts/run_serial_pipeline.py
+?? scripts/run_step_multiview.py
+?? scripts/v006_pose_capture.py
+?? scripts/validate_offline_route_dataset.py
+?? scripts/verify_oracle_auto_branch_preparation.py
+?? scripts/verify_step_multiview.py
+?? scripts/watch_oracle_comparison.py
+?? tests/fixtures/deviation_v004_c47_s04.json
+?? tests/fixtures/serial_deviation_parallel_uncertainties.json
+?? tests/fixtures/serial_deviation_single_uncertainty.json
+?? tests/test_deviation_progress_v004.py
+?? tests/test_deviation_progress_v005.py
+?? tests/test_jev_capture.py
+?? tests/test_offline_route_dataset.py
+?? tests/test_oracle_auto_branch.py
+?? tests/test_oracle_auto_route.py
+?? tests/test_oracle_comparison_report.py
+?? tests/test_oracle_distance.py
+?? tests/test_oracle_distance_native.py
+?? tests/test_oracle_existing_model.py
+?? tests/test_oracle_landing_geometry.py
+?? tests/test_oracle_pair_reduction.py
+?? tests/test_serial_pipeline.py
+?? tests/test_step_multiview.py
