@@ -38,6 +38,10 @@ class RobotTools:
         if method == "step" and self.phase != "active":
             raise ValueError(f"Local return is {self.phase}; movement is closed.")
         if action in moves and self.move_limit is not None and self.moves >= self.move_limit:
+            cutoff = self.directory / "movement_limit.json"
+            if not cutoff.exists():
+                save(cutoff, dict(limit=self.move_limit, executed=self.moves, rejected_action=action,
+                                  request_id=request_id, state=self.state(), utc=datetime.now(timezone.utc).isoformat()))
             raise ValueError("This session has used its movement allowance.")
         if self.task not in self.env.env.runner.current_tasks.values():
             self.phase = "episode_changed"
@@ -65,11 +69,17 @@ class RobotTools:
 
             frame = save_native_rgb(image_path, self.task, self.world, observation)
             after = self.state()
-            if after["world_ticks"] - before["world_ticks"] != ticks:
-                raise RuntimeError("World tick count does not match the requested operation.")
+            world_ticks = after["world_ticks"] - before["world_ticks"]
+            task_ticks = after["task_ticks"] - before["task_ticks"]
+            # tick_action counts native env.step calls. Isaac's world clock can
+            # advance by more ticks during a movement after a scene switch.
+            if task_ticks != ticks or (world_ticks < ticks if action in moves else world_ticks != 0):
+                raise RuntimeError(f"Unexpected step counts: native={ticks}, task={task_ticks}, world={world_ticks}")
             result = dict(episode_id=self.task.data["episode_id"], live_frame=self.start_frame + self.moves,
                           sequence=self.sequence, tool=method, action=action, status=self.phase,
-                          physics_ticks_advanced=ticks, terminal_reason=terminal_reason)
+                          physics_ticks_advanced=world_ticks, task_ticks_advanced=task_ticks, terminal_reason=terminal_reason)
+            if self.move_limit is not None:
+                result["moves_remaining"] = self.move_limit - self.moves
             audit.update(result=result, after=after, rgb=frame)
             return result
         except Exception as exc:
@@ -98,6 +108,8 @@ def serve(env, directory, start_frame, *, move_limit=None):
         listener.settimeout(1)
         endpoint = dict(socket=str(address), detach_marker=str(detach), pid=os.getpid(),
                         episode_id=robot.task.data["episode_id"], start_frame=start_frame)
+        if move_limit is not None:
+            endpoint["move_limit"] = move_limit
         receipts = {}
         save(directory / "endpoint.json", dict(endpoint, status="ready"))
         try:

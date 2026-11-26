@@ -1,0 +1,7 @@
+Return the robot to checkpoint S05 (F45).
+
+Use the earlier observations to confirm that your current position meets the definition of a rollback checkpoint and that you can see the other branches that were visible from that checkpoint. You do not need to match the original position or orientation exactly. Being in the area near the original position is sufficient.
+
+Use observe() to view the scene ahead. Use step("forward"), step("turn_left"), or step("turn_right") to move or turn. Once these conditions are met, call step("finish_return") to end the return.
+
+You may take at most 60 movement steps. Each forward move or turn counts as one step. Observing and declaring arrival do not count. If you use all 60 steps and cannot confirm arrival, end the attempt.

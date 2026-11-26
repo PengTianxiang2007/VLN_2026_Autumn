@@ -1,0 +1,11 @@
+Return the robot to checkpoint {checkpoint}.
+
+Use the earlier observations to confirm that your current position meets the definition of a rollback checkpoint and that you can see the other branches that were visible from that checkpoint. You do not need to match the original position or orientation exactly. Being in the area near the original position is sufficient.
+
+Once you are in that area, use the original navigation instruction, the route segments already completed, and your current observations to determine which branch matches the next part of the instruction. You may turn to inspect the entrances. Once you identify the correct branch, move through its entrance and use a new first-person observation to confirm that you are inside that branch. You can end the attempt there. You do not need to continue to the original navigation destination.
+
+If, after looking around, you cannot see a suitable branch or the evidence is insufficient to choose one, retrace the route to the next earlier retained rollback checkpoint in your history. Repeat the same process there. Continue until you confirm that you have entered the correct branch. If there are no earlier retained rollback checkpoints left and you still cannot choose a branch, end the attempt and explain why.
+
+Use observe() to view the scene ahead. Use step("forward"), step("turn_left"), or step("turn_right") to move or turn. On reaching a checkpoint, continue with branch selection. Call step("finish_return") only after you have confirmed that the robot has entered the correct branch.
+
+You have a single budget of 120 movement steps for the entire attempt, including all returns, turns, and branch entry. Each forward move or turn counts as one step. Observing and declaring completion do not count. If you use all 120 steps and cannot confirm branch entry, end the attempt and report your progress.

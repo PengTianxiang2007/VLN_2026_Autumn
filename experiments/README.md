@@ -1,5 +1,21 @@
 # 实验总目录
 
+2026-11-26，[120 步回退与支路恢复五例可视化](http://134.175.18.101/vln/c11_codex_region60_f57_f45_web_20261126_01/index.html)已发布，同一网页可切换原 60 步回放。
+
+2026-11-26，[五例回退并进入正确支路 · 120 步](inverse_rollback/codex_tools_v001/run_20261126_07_five_branch120/README.md)已结束，整批用时 33 分 40 秒。4 例声明已进入所选支路，C23 在 56 步触发物理终止。C43、C20 报告使用更早回退点。保留 315 张第一人称 RGB 及 C20 仿真停点。
+
+2026-11-26，[五例回退回放](http://134.175.18.101/vln/c11_codex_region60_f57_f45_web_20261126_01/index.html)已更新，新增 C43、C23、C20，可切换逐步第一人称图像与物理回退轨迹。
+
+2026-11-26，[C17、C43、C23、C20 四例回退与计时](inverse_rollback/codex_tools_v001/run_20261126_06_four_region60/README.md)已完成。四例均在 60 步内主动声明到达，分别使用 55、32、47、5 步，逐帧第一人称 RGB 与分例耗时已保存。最终仿真保留在 C20 停点。
+
+2026-11-26，[C11 英文区域回退 · 60 步上限](inverse_rollback/codex_tools_v001/run_20261126_05_c11_region60/README.md)已结束。从 F57 起步，模型在 31 步后声明到达，终点距 F45 水平位置 1.060 米，仿真保留在现场 F88。
+
+2026-11-26，[C11 Codex 实走回退回放](http://134.175.18.101/vln/c11_codex_return_f57_f45_web_20261126_01/index.html)已发布。[运行与导出记录](inverse_rollback/exports/c11_branch_return_20261126_01/README.md)。控制客户端已退出，H1 保留在 F112，截断点距目标 0.537 米。
+
+2026-11-26，常驻 H1 已切至 [kujiale_0128_fix_20_0 第 58 张观测（F57）](inverse_rollback/pose_hold/run_20261126_03_f57/README.md)，原进程 3122551 等待动作。
+
+2026-11-26，[常驻 H1 已摆到数据集 F65](inverse_rollback/pose_hold/run_20261126_02_f65/README.md)。kujiale_0036_0_0，seed 2，原进程 3122551 等待动作。
+
 [电视前导航回放 · 占据地图与逐调用第一视角](http://134.175.18.101/vln/codex_tv_f38_h1_20261126_01/index.html) · [导出记录](inverse_rollback/exports/codex_tv_20261126_01/README.md)
 
 2026-11-26 [Codex 从 F38 自主走到电视柜前](inverse_rollback/codex_tools_v001/run_20261126_03_tv/README.md)已完成。机身中心距柜子正面 1.13 米，朝向偏差 3.42°，27 个动作由 11 次模型响应发出。当前版与配对原版 SR、平均 SPL 均暂无，已评分 0 条。

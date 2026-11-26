@@ -1,0 +1,1 @@
+请控制机器人返回 S05（F45）。使用 observe() 查看当前前视画面，使用 step("forward")、step("turn_left") 或 step("turn_right") 移动。结合该回退点的历史观测和动作返回的实时画面，自主决定怎么走。确认到达后，调用 step("finish_return") 结束回退。

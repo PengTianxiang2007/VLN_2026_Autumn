@@ -47,7 +47,8 @@ def main():
                                              idempotentHint=False, openWorldHint=False))
     def step(action: Literal["forward", "turn_left", "turn_right", "finish_return"], ctx: Context) -> CallToolResult:
         """Execute one native H1 movement and return the resulting front RGB and status.
-        finish_return declares arrival at A and closes local movement without ending the episode.
+        finish_return declares that the completion condition in the current task has been met.
+        It closes local movement without ending the navigation episode.
         """
         return call("step", action, ctx)
 
