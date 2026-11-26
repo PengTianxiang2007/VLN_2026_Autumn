@@ -1,0 +1,286 @@
+{
+  "utc": "2026-11-26T11:46:29.195648+00:00",
+  "episode": "kujiale_0036_0_0",
+  "seed": 2,
+  "simulator_pid": 3122551,
+  "gpu": 3,
+  "recorded_frames": [
+    26,
+    42,
+    54
+  ],
+  "root_velocity_initialization": "zero, absent from recorded frames",
+  "trials": [
+    {
+      "start_frame": 26,
+      "start_xyz_m": [
+        -2.737490653991699,
+        2.8876640796661377,
+        0.9381421804428101
+      ],
+      "start_heading_deg": -77.30006912972358,
+      "verified_placement": true,
+      "calls": [
+        {
+          "action": "observe",
+          "live_frame": 26,
+          "ticks": 0,
+          "png": "f26/frames/00001.png",
+          "png_sha256": "fdcd8dd9120ce986af3be44a7dd7473415cb4a023cb6053552e39454af1a8b5b",
+          "horizontal_cm": 0.0,
+          "along_start_heading_cm": 0.0,
+          "yaw_change_deg": 0.0
+        },
+        {
+          "action": "forward",
+          "live_frame": 27,
+          "ticks": 50,
+          "png": "f26/frames/00002.png",
+          "png_sha256": "f0464097c1df9d60eba2155f600097a1d8bdf9017c9ebfd2d66b0040d3e33601",
+          "horizontal_cm": 4.9887,
+          "along_start_heading_cm": 3.9365,
+          "yaw_change_deg": -3.6276
+        },
+        {
+          "action": "forward",
+          "live_frame": 28,
+          "ticks": 50,
+          "png": "f26/frames/00003.png",
+          "png_sha256": "af9539cdbabf4c1fe32fa68a25431098c1d2b05c93db038e8a20aff4fb0bb8b2",
+          "horizontal_cm": 9.0833,
+          "along_start_heading_cm": 8.4088,
+          "yaw_change_deg": -0.5789
+        },
+        {
+          "action": "forward",
+          "live_frame": 29,
+          "ticks": 50,
+          "png": "f26/frames/00004.png",
+          "png_sha256": "a9dde6fbbadbf35924ce8c68810a17bd2d27dcba0a89ed7eacf296ae47f4513f",
+          "horizontal_cm": 15.7162,
+          "along_start_heading_cm": 15.5605,
+          "yaw_change_deg": 0.7591
+        },
+        {
+          "action": "forward",
+          "live_frame": 30,
+          "ticks": 50,
+          "png": "f26/frames/00005.png",
+          "png_sha256": "bd422c6313620eb7ac9099fc1c2cd345856bbef80127a608853a27979d49e4f4",
+          "horizontal_cm": 20.3893,
+          "along_start_heading_cm": 20.0969,
+          "yaw_change_deg": -0.2403
+        },
+        {
+          "action": "turn_left",
+          "live_frame": 31,
+          "ticks": 50,
+          "png": "f26/frames/00006.png",
+          "png_sha256": "a93747d61ca339d731e6162ded78694b3e9192fa1ae1050d2e706dd8732c35d7",
+          "horizontal_cm": 18.3086,
+          "along_start_heading_cm": 18.1824,
+          "yaw_change_deg": 12.3799
+        },
+        {
+          "action": "observe",
+          "live_frame": 31,
+          "ticks": 0,
+          "png": "f26/frames/00007.png",
+          "png_sha256": "da7177c8f7446d6460c8de2d8d7897b32fae483c2bae7f1da138ecb85ccb027f",
+          "horizontal_cm": 0.0,
+          "along_start_heading_cm": 0.0,
+          "yaw_change_deg": 0.0
+        }
+      ],
+      "four_forward_net": {
+        "horizontal_cm": 49.3672,
+        "along_start_heading_cm": 48.4936,
+        "yaw_change_deg": -3.6876
+      },
+      "codex_report": "已按顺序完成，逐次读取 text 并显示 image，全程状态为 active，无报错，未调用 finish_return。\n\n起止帧：26 → 31。\n可见变化：结束图中出现了客厅右侧的黑台面白柜，起始图中不可见。"
+    },
+    {
+      "start_frame": 42,
+      "start_xyz_m": [
+        -1.8532023429870605,
+        0.4757024645805359,
+        0.9318723678588867
+      ],
+      "start_heading_deg": -76.19768217853127,
+      "verified_placement": true,
+      "calls": [
+        {
+          "action": "observe",
+          "live_frame": 42,
+          "ticks": 0,
+          "png": "f42/frames/00001.png",
+          "png_sha256": "1f2d8c03361558502626c06e622602e2c015cd972c9c99c124d2c1b88ebca029",
+          "horizontal_cm": 0.0,
+          "along_start_heading_cm": 0.0,
+          "yaw_change_deg": 0.0
+        },
+        {
+          "action": "forward",
+          "live_frame": 43,
+          "ticks": 50,
+          "png": "f42/frames/00002.png",
+          "png_sha256": "43ce399eaa5278075f3738379dad494b7eefa0790ec00ef247eb4f27f13b608e",
+          "horizontal_cm": 3.1357,
+          "along_start_heading_cm": 2.9391,
+          "yaw_change_deg": -0.7053
+        },
+        {
+          "action": "forward",
+          "live_frame": 44,
+          "ticks": 50,
+          "png": "f42/frames/00003.png",
+          "png_sha256": "7b1b911b7fe50850b124036e236dcb0c8cbd498d8bd07e1ac995af9c96d366d8",
+          "horizontal_cm": 8.4599,
+          "along_start_heading_cm": 8.3763,
+          "yaw_change_deg": -0.3652
+        },
+        {
+          "action": "forward",
+          "live_frame": 45,
+          "ticks": 50,
+          "png": "f42/frames/00004.png",
+          "png_sha256": "f96a8e9267e0ce0565c3e87ebfc184b0c5cfa5c7aca1d28ebe3aaff76b67ba31",
+          "horizontal_cm": 15.9128,
+          "along_start_heading_cm": 15.4188,
+          "yaw_change_deg": -0.7385
+        },
+        {
+          "action": "forward",
+          "live_frame": 46,
+          "ticks": 50,
+          "png": "f42/frames/00005.png",
+          "png_sha256": "b3d44b36140f10196cc9327bb840a58d077fce6abd90fed198d65a5b2b750183",
+          "horizontal_cm": 19.6857,
+          "along_start_heading_cm": 19.4505,
+          "yaw_change_deg": 1.0
+        },
+        {
+          "action": "turn_right",
+          "live_frame": 47,
+          "ticks": 50,
+          "png": "f42/frames/00006.png",
+          "png_sha256": "2c156de1c362a4a74076c0a9dab8ea41f690f8dca43e7ce2c3b1a4aea4f3d617",
+          "horizontal_cm": 19.2433,
+          "along_start_heading_cm": 18.9683,
+          "yaw_change_deg": -12.9763
+        },
+        {
+          "action": "observe",
+          "live_frame": 47,
+          "ticks": 0,
+          "png": "f42/frames/00007.png",
+          "png_sha256": "caa16f67c9d11393977715eef76ef5b782c1c0318587e7a4b5d241387be869f0",
+          "horizontal_cm": 0.0,
+          "along_start_heading_cm": 0.0,
+          "yaw_change_deg": 0.0
+        }
+      ],
+      "four_forward_net": {
+        "horizontal_cm": 46.7493,
+        "along_start_heading_cm": 46.3556,
+        "yaw_change_deg": -0.8091
+      },
+      "codex_report": "已按顺序完成，逐次读取 text 并显示 image；全程为 active，无报错，未调用 finish_return。\n\n起始帧：42；结束帧：47。\n可见变化：茶几从画面中部移到左下方，且显得更大。"
+    },
+    {
+      "start_frame": 54,
+      "start_xyz_m": [
+        -1.3156524896621704,
+        -1.9187363386154175,
+        0.9304025173187256
+      ],
+      "start_heading_deg": -85.70517152209918,
+      "verified_placement": true,
+      "calls": [
+        {
+          "action": "observe",
+          "live_frame": 54,
+          "ticks": 0,
+          "png": "f54/frames/00001.png",
+          "png_sha256": "c099a8da8eeee84be2ba68e6f89c10a8f4ee7433228a3a180359b0833a4acc83",
+          "horizontal_cm": 0.0,
+          "along_start_heading_cm": 0.0,
+          "yaw_change_deg": 0.0
+        },
+        {
+          "action": "forward",
+          "live_frame": 55,
+          "ticks": 50,
+          "png": "f54/frames/00002.png",
+          "png_sha256": "713dfed80d8ddbc1259d479c0ac4f494fd2cf1a3cb0a9a1412e674324fe52be7",
+          "horizontal_cm": 2.2024,
+          "along_start_heading_cm": 1.7151,
+          "yaw_change_deg": -1.9268
+        },
+        {
+          "action": "forward",
+          "live_frame": 56,
+          "ticks": 50,
+          "png": "f54/frames/00003.png",
+          "png_sha256": "a50f4e0f48eb26bdedeac0527375488b1e3c75cf3d8e03a3a214498cf34d2c07",
+          "horizontal_cm": 6.4399,
+          "along_start_heading_cm": 6.3875,
+          "yaw_change_deg": -2.1668
+        },
+        {
+          "action": "forward",
+          "live_frame": 57,
+          "ticks": 50,
+          "png": "f54/frames/00004.png",
+          "png_sha256": "db11bcc9a1751d4af61176746433be49f544d2ed86e2575930c49f0b9c390b2c",
+          "horizontal_cm": 13.82,
+          "along_start_heading_cm": 13.4591,
+          "yaw_change_deg": -0.1974
+        },
+        {
+          "action": "forward",
+          "live_frame": 58,
+          "ticks": 50,
+          "png": "f54/frames/00005.png",
+          "png_sha256": "77bcee0d03510ac56f5fdb12b1c8676efbb47256afa86d0ce6b1c6b6722c45d0",
+          "horizontal_cm": 18.13,
+          "along_start_heading_cm": 18.0516,
+          "yaw_change_deg": -0.9492
+        },
+        {
+          "action": "observe",
+          "live_frame": 58,
+          "ticks": 0,
+          "png": "f54/frames/00006.png",
+          "png_sha256": "424fd2ef219ebfad5824ffccf8a246f7abf58cf8b5a7d7d84119a28a6111bf6d",
+          "horizontal_cm": 0.0,
+          "along_start_heading_cm": -0.0,
+          "yaw_change_deg": 0.0
+        }
+      ],
+      "four_forward_net": {
+        "horizontal_cm": 39.9487,
+        "along_start_heading_cm": 39.8472,
+        "yaw_change_deg": -5.2403
+      },
+      "codex_report": "已按顺序完成 observe → 四次 forward → observe，每次均读取文本并显示图像。全程 active，无报错，未调用 finish_return。\n\n起始帧 **54**，结束帧 **58**。可见变化：起始图左侧的台灯在结束图中已移出画面。"
+    }
+  ],
+  "movements": 14,
+  "independent_observations": 6,
+  "verified_model_png_count": 20,
+  "restored_frame": 38,
+  "restored_task_tick": 1901,
+  "restored_world_tick": 1253,
+  "restored_max_errors": {
+    "root_velocity": 0.0,
+    "position": 0.0,
+    "rotation": 5.960464477539063e-08,
+    "joints": 0.0,
+    "joint_velocities": 0.0,
+    "camera_position": 1.1920928955078125e-07,
+    "camera_rotation": 7.450580596923828e-08
+  },
+  "live_endpoint": "outputs/inverse_rollback/codex_tools_v001/run_20261126_01_f38/live/endpoint.json",
+  "canonical_endpoint": "outputs/inverse_rollback/codex_tools_v001/run_20261126_02_multisite/live/endpoint.json"
+}

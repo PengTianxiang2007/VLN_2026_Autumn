@@ -1,0 +1,150 @@
+{
+  "thread_id": "01a217c1-ddc8-7b02-aac9-89655a0f1b60",
+  "start_frame": 38,
+  "end_frame": 65,
+  "counts": {
+    "observe": 1,
+    "forward": 13,
+    "turn_right": 10,
+    "turn_left": 4
+  },
+  "total_robot_calls": 28,
+  "total_physics_ticks": 1350,
+  "individual_observe_sequences": [
+    1
+  ],
+  "total_returned_images": 28,
+  "distinct_simulator_images_in_model_context": 22,
+  "metered_model_responses": 14,
+  "responses_invoking_robot": 12,
+  "responses_invoking_motion": 11,
+  "motion_actions": 27,
+  "response_groups": [
+    [
+      1,
+      []
+    ],
+    [
+      2,
+      [
+        1
+      ]
+    ],
+    [
+      3,
+      [
+        2
+      ]
+    ],
+    [
+      4,
+      [
+        3
+      ]
+    ],
+    [
+      5,
+      [
+        4,
+        5,
+        6
+      ]
+    ],
+    [
+      6,
+      [
+        7,
+        8,
+        9
+      ]
+    ],
+    [
+      7,
+      [
+        10
+      ]
+    ],
+    [
+      8,
+      [
+        11,
+        12,
+        13
+      ]
+    ],
+    [
+      9,
+      [
+        14,
+        15,
+        16,
+        17
+      ]
+    ],
+    [
+      10,
+      [
+        18,
+        19,
+        20
+      ]
+    ],
+    [
+      11,
+      [
+        21,
+        22
+      ]
+    ],
+    [
+      12,
+      [
+        23,
+        24,
+        25,
+        26,
+        27
+      ]
+    ],
+    [
+      13,
+      [
+        28
+      ]
+    ],
+    [
+      14,
+      []
+    ]
+  ],
+  "final_text": "已停下，正面朝向电视。电视位于视野中央，电视柜正面基本对齐，目测距柜子约一米。",
+  "net_horizontal_m": 3.413125475730505,
+  "path_between_action_boundaries_m": 3.453534764773212,
+  "geometry": {
+    "cabinet": "/World/env_0/scene/Meshes/livingroom_802265/cabinet_0010",
+    "screen": "/World/env_0/scene/Meshes/livingroom_802265/television_0000",
+    "end_xy_m": [
+      -1.2280640602111816,
+      -2.100446939468384
+    ],
+    "cabinet_front_world_x_m": -2.3580635346415786,
+    "cabinet_y_bounds_m": [
+      -3.347313937643632,
+      -1.3545195549637905
+    ],
+    "between_cabinet_sides": true,
+    "cabinet_front_distance_m": 1.129999474430397,
+    "cabinet_lateral_offset_from_center_m": 0.25046980683532727,
+    "screen_center_world_m": [
+      -2.824317104205061,
+      -2.3605306385840663,
+      1.2943429200212477
+    ],
+    "screen_center_bearing_deg": -170.74589558419976,
+    "robot_heading_deg": -174.17022957426667,
+    "heading_error_to_screen_center_deg": 3.4243339900669127,
+    "heading_error_to_cabinet_normal_deg": 5.829770425733329
+  },
+  "first_to_last_robot_call_seconds": 87.741766,
+  "restored_f38": true
+}

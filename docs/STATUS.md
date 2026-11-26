@@ -1,5 +1,15 @@
 # 当前项目状态
 
+2026-11-26 [电视前导航交互回放](http://134.175.18.101/vln/codex_tv_f38_h1_20261126_01/index.html)已发布，可逐帧对照占据栅格、原生前视图和每个动作的观测来源。
+
+2026-11-26 [Codex 从 F38 自主走到电视柜前](../experiments/inverse_rollback/codex_tools_v001/run_20261126_03_tv/README.md)已完成，终点距柜子正面 1.13 米，朝向与电视中心相差 3.42°。模型主动观察 1 次，通过 11 次移动决策执行 27 个动作，原仿真已恢复 F38。当前版与配对原版 SR、平均 SPL 均暂无，已评分 0 条。
+
+2026-11-26 [Codex 在三个位置控制同一台 VLNVerse H1](../experiments/inverse_rollback/codex_tools_v001/run_20261126_02_multisite/README.md)已完成。四次前进的净位移分别为 49.37、46.75、39.95 厘米，两个方向的转向均生效，20 次工具回图与仿真原图一致。原进程已恢复 F38 并常驻。当前版与配对原版 SR、平均 SPL 均暂无，已评分 0 条。
+
+2026-11-26 [Codex 直接操作常驻 VLNVerse H1](../experiments/inverse_rollback/codex_tools_v001/run_20261126_01_f38/README.md)，kujiale_0036_0_0 F38 单步实测通过。两个观察各 0 tick，前进 50 tick，水平位移 2.23 厘米。原进程已恢复 F38，工具持续可用。
+
+2026-11-26 [H1 第 38 步常驻摆位](../experiments/inverse_rollback/pose_hold/run_20261126_01/README.md)，kujiale_0036_0_0，供后续回退实验使用。实际状态见运行记录。
+
 2026-11-26 [Terra xhigh 43 例 · 7892](../experiments/deviation_progress/codex_memory_v002/run_20261126_02_terra_xhigh43_7892/README.md) 依用户指令停止剩余评审和自动重试，完成 39/43，取消 C02, C15, C31, C39。 [Astra / Terra 双模型回放](http://134.175.18.101/vln/codex_deviation_v002_terminal4_map_layers_web_20261125_01/index.html)。
 
 2026-11-26 [Terra xhigh 43 例离线评审](../experiments/deviation_progress/codex_memory_v002/run_20261126_01_terra_xhigh43/README.md) 已按用户要求停止，完成 0/43。

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>走到电视前 · Codex 导航回放</title>
+<style>/*__STYLE__*/
+.brand,.choices{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.brand small{color:#c9d9d1}.twocol{grid-template-columns:minmax(0,1fr) minmax(0,1.12fr);align-items:stretch}.mapwrap,#map{background:#e8edf2}#map{height:clamp(275px,28vw,440px);cursor:default;touch-action:auto}#rgb{display:block;width:100%;height:clamp(275px,28vw,440px);object-fit:contain;background:#19251f}.range output{white-space:nowrap}.tools{justify-content:flex-start}.legend{justify-content:flex-start}.legend i{width:11px;height:11px;display:inline-block;margin-right:4px;vertical-align:-1px;border:1px solid #89958e}.readout{padding:8px 14px;color:#284d40;font-size:14px;background:#f7faf7;min-height:2.4em}.transport{justify-content:flex-start;gap:8px}.transport .minor{margin-left:auto}.audit{overflow-x:auto;max-height:360px}.audit table{width:100%;white-space:nowrap;border-collapse:collapse;font-size:13px}.audit thead{position:sticky;top:0;background:white;z-index:1}th,td{text-align:left}.audit td,.audit th{padding:6px 12px;border-bottom:1px solid #e1e9e3}.audit tr[aria-current=true]{background:#d9ece1}.audit tbody tr{cursor:pointer}.audit tbody tr:hover{background:#e7f1eb}.audit button{padding:2px 7px;font-size:12px}.badge{font-weight:650}.bad{color:#8b4426}.good{color:#11664f}.rowbuttons{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}.rowbuttons button{font-size:13px}.report{display:grid;grid-template-columns:1fr 1fr;gap:15px}.report p,.report details{line-height:1.65;margin:5px 0}.report summary{cursor:pointer}.report .body{white-space:pre-line}#map text{font-family:inherit;font-size:8px;paint-order:stroke;stroke:white;stroke-width:2.2px;stroke-linejoin:round;fill:#1e3930;font-weight:bold}.titlebar select{max-width:100%}.range input{cursor:pointer}
+@media(max-width:800px){.twocol,.report{grid-template-columns:1fr}.brand small{font-size:11px}#map,#rgb{height:min(68vw,365px)}.audit{max-height:300px}.transport .minor{margin-left:0}}
+</style></head><body>
+<header><div><div class="brand"><h1 data-en="Walk to the TV">走到电视前</h1><small>Codex · VLNVerse H1</small></div>
+<select id="lang" aria-label="中文 / English"><option value="zh">中文</option><option value="en">English</option></select></div></header>
+<main>
+<section class="panel pad"><div class="bar"><strong>kujiale_0036_0_0 · F38 → F65</strong><span id="totals" class="summary"></span></div>
+<p id="instruction" data-en="Stop about one metre in front of the TV cabinet, facing the screen.">走到电视柜正前方约一米处，面向电视停下。</p></section>
+<div class="twocol"><section class="panel"><div class="panelhead titlebar"><h2 data-en="Occupancy map">占据地图</h2><span class="minor" data-en="Scene geometry · 3.5 cm per cell">场景几何 · 3.5 厘米 / 格</span></div>
+<div class="mapwrap"><svg id="map" role="img"><image id="raster" style="image-rendering:pixelated"/>
+<g id="target"><rect id="cabinet" fill="#eab657" stroke="#80591a" stroke-width=".9"/><rect id="screen" fill="#183c59" stroke="white" stroke-width=".8"/><text id="tvLabel">TV</text></g>
+<g id="route" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline id="totalPath" stroke="#bb8569" stroke-width="1.6" stroke-dasharray="3 3"/><polyline id="pastPath" stroke="#ae471c" stroke-width="2.5"/></g>
+<g id="ends"><circle id="startPt" r="3.5" fill="white" stroke="#2f628c" stroke-width="1.6"/><text id="startLabel">F38</text><circle id="endPt" r="3.5" fill="white" stroke="#a34b28" stroke-width="1.6"/><text id="endLabel">F65</text></g>
+<g id="agent"><path d="M9 0 L-4 -4 L-2 0 L-4 4 Z" stroke="white" stroke-width="1.4" fill="#135b45"/></g></svg></div>
+<label class="range"><span data-en="Map call">地图调用</span><input id="mapStep" type="range" min="1" value="1"><output id="mapNum"></output></label>
+<div class="tools"><button id="fit" data-en="Fit route">适配轨迹</button><button id="full" data-en="Full map">完整底图</button>
+<label><input type="checkbox" id="showRoute" checked><span data-en="Route">轨迹</span></label><label><input type="checkbox" id="showTarget" checked><span data-en="TV and cabinet">电视与柜子</span></label></div>
+<div class="legend"><span><i style="background:#d2ead0"></i><span data-en="Walkable">可通行</span></span><span><i style="background:#313e4f"></i><span data-en="Walls">墙体</span></span><span><i style="background:#99b2bf"></i><span data-en="Furniture">家具</span></span><span><i style="background:#ae7f4c"></i><span data-en="Doors">门</span></span></div></section>
+<section class="panel"><div class="panelhead titlebar"><h2 data-en="First-person RGB">第一视角观测</h2><strong id="frame"></strong></div>
+<img id="rgb" width="640" height="480" alt=""><label class="range"><span data-en="RGB call">画面调用</span><input id="rgbStep" type="range" min="1" value="1"><output id="rgbNum"></output></label>
+<div id="rgbCaption" class="readout"></div><div class="transport"><button id="prev" data-en="Previous">上一步</button><button id="play"></button><button id="next" data-en="Next">下一步</button><span id="motion" class="minor"></span></div></section></div>
+<section class="panel"><div class="panelhead titlebar"><h2 data-en="Robot tool calls">机器人工具调用</h2><span id="callTitle" class="badge"></span></div>
+<div class="audit"><table><thead><tr><th data-en="Call">调用</th><th data-en="Frame">帧</th><th data-en="Model response">模型响应</th><th data-en="Action / tool">输出动作 / 工具</th><th data-en="Called observe()?">主动 observe()？</th><th data-en="RGB source">回图来源</th><th data-en="Image sent to model?">图进入模型？</th><th data-en="Start UTC">开始 UTC</th><th>tick</th></tr></thead><tbody id="calls"></tbody></table></div></section>
+<section class="panel pad"><h2 data-en="Actions by model response">按模型响应查看动作</h2><div id="groups" class="rowbuttons"></div><p id="groupInfo" class="caption"></p></section>
+<section class="panel pad report"><div><h2 data-en="Arrival">到达结果</h2><p id="verdict"></p><p class="caption" id="metrics"></p></div>
+<div><h2 data-en="Model output">模型输出</h2><p class="body" id="answer"></p><details><summary data-en="Full task prompt">完整任务提示</summary><p class="body" id="prompt"></p></details></div></section>
+</main><script>
+'use strict';
+const d=/*__DATA__*/;
+const by=id=>document.getElementById(id), f=d.frames, s=d.summary, n=f.length;
+const ops={observe:['主动观测','Observe'],forward:['前进','Forward'],turn_left:['左转','Turn left'],turn_right:['右转','Turn right']};
+const originals=[...document.querySelectorAll('[data-en]')].map(e=>[e,e.textContent]);
+let english=false, idx=0, timer=null, selectedResponse=f[0].response, wide=false;
+const tr=(zh,en)=>english?en:zh;
+const op=r=>tr(...ops[r.action]);
+const yn=b=>b?tr('是','Yes'):tr('否','No');
+const svg=by('map'), coords=rows=>rows.map(r=>r.point.join(',')).join(' ');
+function attrs(id,values){const e=by(id);for(const [k,v] of Object.entries(values))e.setAttribute(k,v);}
+function mark(id,frame){const [x,y]=frame.point;attrs(id+'Pt',{cx:x,cy:y});attrs(id+'Label',{x:x+5,y:y-5});}
+function setMap(){
+  attrs('raster',{href:d.grid.img,width:d.grid.w,height:d.grid.h});
+  for(const [id,rect] of Object.entries(d.shapes)){const [x,y,width,height]=rect;attrs(id,{x,y,width,height});}
+  const [x,y]=d.shapes.screen;attrs('tvLabel',{x:x-12,y:y-3});mark('start',f[0]);mark('end',f[n-1]);
+  attrs('totalPath',{points:coords(f)});
+  const box=f.map(r=>r.point).concat(Object.values(d.shapes).flatMap(([x,y,w,h])=>[[x,y],[x+w,y+h]]));
+  const xs=box.map(p=>p[0]),ys=box.map(p=>p[1]);
+  svg.setAttribute('viewBox',wide?[0,0,d.grid.w,d.grid.h].join(' '):[Math.min(...xs)-27,Math.min(...ys)-14,Math.max(...xs)-Math.min(...xs)+54,Math.max(...ys)-Math.min(...ys)+30].join(' '));
+  by('full').setAttribute('aria-pressed',String(wide));by('fit').setAttribute('aria-pressed',String(!wide));
+}
+function stop(){clearInterval(timer);timer=null;by('play').textContent=tr('播放','Play');}
+function go(i){idx=Math.min(n-1,Math.max(0,i));selectedResponse=f[idx].response;draw();}
+function buildTable(){
+  const rows=f.map((r,i)=>{
+    const row=document.createElement('tr'), observed=r.action==='observe';
+    const fields=[r.sequence,'F'+r.frame_before+' → F'+r.frame_after,r.response,
+      observed?'observe()':op(r)+' · '+r.action,yn(observed),observed?tr('主动观测','Explicit observation'):tr('动作自动回图','Step feedback'),yn(r.model_visible),r.started_utc.slice(11,23),r.ticks];
+    for(const [col,v] of fields.entries()){
+      const cell=row.insertCell();
+      if(col===0){const button=document.createElement('button');button.textContent=v;cell.append(button);}
+      else{cell.textContent=v;if(col===6)cell.className=r.model_visible?'good':'bad';}
+    }
+    row.onclick=()=>{stop();go(i);};return row;
+  });
+  by('calls').replaceChildren(...rows);
+}
+function groups(){
+  by('groups').replaceChildren(...s.response_groups.map(([id,seqs])=>{
+    const b=document.createElement('button');
+    b.textContent= id+' · '+(seqs.length?op(f[seqs[0]-1])+(seqs.length>1?' ×'+seqs.length:''):id===1?tr('查找工具','Find tools'):tr('报告到达','Report arrival'));
+    b.onclick=()=>{stop();go(seqs.length?seqs[0]-1:id===1?0:n-1);selectedResponse=id;draw();};
+    return b;
+  }));
+}
+function draw(){
+  const r=f[idx],observed=r.action==='observe',g=s.response_groups.find(([id])=>id===selectedResponse)[1];
+  for(const id of ['map','rgb']){by(id+'Step').value=idx+1;by(id+'Num').textContent=(idx+1)+' / '+n;}
+  by('rgb').src=r.img;by('rgb').alt=tr('原生前视图','Native front view')+' F'+r.frame_after;
+  by('frame').textContent='F'+r.frame_after;by('callTitle').textContent='#'+r.sequence+' · '+op(r)+' · '+tr('响应 ','Response ')+r.response;
+  by('rgbCaption').textContent=(observed?tr('主动 observe() 回图','Explicit observe() image'):tr('step() 动作自动回图','Automatic step() image'))+'　·　'+(r.model_visible?tr('已进入模型上下文','Sent to the model'):tr('已记录，未进入模型上下文','Recorded, not sent to the model'));
+  by('motion').textContent=(r.horizontal_m*100).toFixed(1)+' cm　'+r.yaw_change_deg.toFixed(1)+'°　·　'+r.ticks+' tick';
+  attrs('pastPath',{points:coords(f.slice(0,idx+1))});attrs('agent',{transform:'translate('+r.point.join(' ')+') rotate('+(-r.after_heading_deg)+')'});
+  [...by('calls').rows].forEach((e,i)=>e.setAttribute('aria-current',String(i===idx)));
+  const active=by('calls').rows[idx],panel=active.closest('.audit'),top=panel.getBoundingClientRect().top+panel.querySelector('thead').offsetHeight,bottom=panel.getBoundingClientRect().bottom;
+  if(active.getBoundingClientRect().top<top)panel.scrollTop+=active.getBoundingClientRect().top-top;
+  else if(active.getBoundingClientRect().bottom>bottom)panel.scrollTop+=active.getBoundingClientRect().bottom-bottom;
+  [...by('groups').children].forEach((b,i)=>b.setAttribute('aria-pressed',String(i+1===selectedResponse)));
+  by('groupInfo').textContent=tr('响应 ','Response ')+selectedResponse+' · '+(g.length?tr('机器人工具调用 ','Robot calls ')+g.map(x=>'#'+x).join(', '):tr('无机器人调用','No robot call'));
+  by('prev').disabled=idx===0;by('next').disabled=idx===n-1;
+}
+function localize(){
+  document.documentElement.lang=english?'en':'zh-CN';document.title=tr('走到电视前 · Codex 导航回放','Walk to the TV · Codex replay');
+  originals.forEach(([e,zh])=>e.textContent=tr(zh,e.dataset.en));
+  svg.setAttribute('aria-label',tr('占据地图与实测路线','Occupancy map and measured route'));
+  by('totals').textContent=s.motion_actions+tr(' 个动作',' actions')+' · '+s.individual_observe_sequences.length+tr(' 次主动观测',' explicit observation')+' · '+s.distinct_simulator_images_in_model_context+'/'+n+tr(' 张图进入模型',' images sent to model');
+  by('verdict').textContent=tr('已到达客厅电视柜前，面向屏幕。','Reached the living-room TV cabinet facing the screen.');
+  by('metrics').textContent=tr('距柜子正面 ','Distance to cabinet front ')+s.geometry.cabinet_front_distance_m.toFixed(2)+' m · '+tr('朝向屏幕中心偏差 ','Heading error to screen centre ')+s.geometry.heading_error_to_screen_center_deg.toFixed(2)+'°';
+  by('answer').textContent=d.answer[+english];by('prompt').textContent=d.prompt[+english];stop();buildTable();groups();draw();
+}
+for(const id of ['mapStep','rgbStep']){by(id).max=n;by(id).oninput=e=>{stop();go(Number(e.target.value)-1);};}
+by('lang').onchange=e=>{english=e.target.value==='en';localize();};
+by('prev').onclick=()=>{stop();go(idx-1);};by('next').onclick=()=>{stop();go(idx+1);};
+by('play').onclick=()=>{if(timer){stop();return;}if(idx===n-1)go(0);by('play').textContent=tr('暂停','Pause');timer=setInterval(()=>{go(idx+1);if(idx===n-1)stop();},750);};
+by('full').onclick=()=>{wide=true;setMap();};by('fit').onclick=()=>{wide=false;setMap();};
+by('showRoute').onchange=e=>{by('route').style.display=e.target.checked?'':'none';};
+by('showTarget').onchange=e=>{by('target').style.display=e.target.checked?'':'none';};
+setMap();localize();
+</script></body></html>

@@ -1,0 +1,96 @@
+{
+  "utc": "2026-11-26T11:22:07.188538+00:00",
+  "codex_model": "gpt-6-astra",
+  "cli": "0.164.0",
+  "proxy": "http://127.0.0.1:7892",
+  "episode": "kujiale_0036_0_0",
+  "simulator_pid": 3122551,
+  "gpu": 3,
+  "tool_calls": [
+    {
+      "episode_id": "kujiale_0036_0_0",
+      "live_frame": 38,
+      "sequence": 1,
+      "tool": "observe",
+      "action": null,
+      "status": "active",
+      "physics_ticks_advanced": 0,
+      "terminal_reason": null,
+      "png_sha256": "a97b36ee4e8b738f147fac809f24ffbeca8d529e5a0e521dabf7a57177a6827c",
+      "width": 640,
+      "height": 480
+    },
+    {
+      "episode_id": "kujiale_0036_0_0",
+      "live_frame": 39,
+      "sequence": 2,
+      "tool": "step",
+      "action": "forward",
+      "status": "active",
+      "physics_ticks_advanced": 50,
+      "terminal_reason": null,
+      "png_sha256": "4aadd6775cf5caece25723bc41c0c0ab572f2574f2a5b5cf13ba4b877d3d50d6",
+      "width": 640,
+      "height": 480
+    },
+    {
+      "episode_id": "kujiale_0036_0_0",
+      "live_frame": 39,
+      "sequence": 3,
+      "tool": "observe",
+      "action": null,
+      "status": "active",
+      "physics_ticks_advanced": 0,
+      "terminal_reason": null,
+      "png_sha256": "72b7b916a5354ac24130493c74bfc9103ae1c46c724d058c6914dd5249b528a9",
+      "width": 640,
+      "height": 480
+    }
+  ],
+  "all_mcp_png_sha256_match_simulator": true,
+  "before": {
+    "position": [
+      -2.0722904205322266,
+      1.2066223621368408,
+      0.9392238855361938
+    ],
+    "quaternion_wxyz": [
+      0.7730687260627747,
+      0.024251161143183708,
+      -0.0029442093800753355,
+      -0.6338516473770142
+    ],
+    "task_ticks": 1901,
+    "world_ticks": 503
+  },
+  "after": {
+    "position": [
+      -2.0515434741973877,
+      1.1985678672790527,
+      0.9585971236228943
+    ],
+    "quaternion_wxyz": [
+      0.7749425172805786,
+      -0.0029263710603117943,
+      0.006506225094199181,
+      -0.6319913864135742
+    ],
+    "task_ticks": 1951,
+    "world_ticks": 553
+  },
+  "horizontal_displacement_m": 0.022255576146997826,
+  "projection_on_start_heading_m": 0.011974510845696127,
+  "restored_frame": 38,
+  "restored_task_tick": 1901,
+  "retained_world_tick": 553,
+  "restored_max_abs_errors": {
+    "position": 5.960464477539063e-08,
+    "rotation": 5.960464477539063e-08,
+    "joints": 0.0,
+    "joint_velocities": 0.0,
+    "camera_position": 0.0,
+    "camera_rotation": 7.450580596923828e-09,
+    "root_velocity": 0.0
+  },
+  "live_endpoint": "outputs/inverse_rollback/codex_tools_v001/run_20261126_01_f38/live/endpoint.json"
+}

@@ -1,5 +1,15 @@
 # 历史动作逆向回退
 
+[从 F38 到电视前 · 占据地图与动作观测回放](http://134.175.18.101/vln/codex_tv_f38_h1_20261126_01/index.html) · [导出记录](exports/codex_tv_20261126_01/README.md)
+
+2026-11-26 [Codex 从 F38 自主走到电视柜前](codex_tools_v001/run_20261126_03_tv/README.md)，终点距柜子正面 1.13 米，完成 27 个动作，主动观察 1 次，已恢复常驻 F38。
+
+2026-11-26 [Codex 在 F26、F42、F54 连续控制同一台 H1](codex_tools_v001/run_20261126_02_multisite/README.md)，三处四步净移动 39.95–49.37 厘米，20 次调用均收到原生前视图。原仿真已恢复 F38 并常驻。
+
+2026-11-26 [Codex 直接操作常驻 VLNVerse H1](codex_tools_v001/run_20261126_01_f38/README.md)，kujiale_0036_0_0 F38 单步实测通过。两个观察各 0 tick，前进 50 tick，水平位移 2.23 厘米。原进程已恢复 F38，工具持续可用。
+
+2026-11-26 [H1 第 38 步常驻摆位](pose_hold/run_20261126_01/README.md)，kujiale_0036_0_0，供后续回退实验使用。实际状态见运行记录。
+
 [C21 七图回退](vlm_action_v001/run_20261123_08_restore_c21/README.md)直接使用去程原图和动作序列，每执行四个动作单独判断是否复原。
 
 [选路位置版回退 · C15、C21、C31、C34](vlm_action_v001/run_20261123_06_choice_position4/README.md)使用相同去程描述和物理协议，比较加强退出条件后的实际落点。
