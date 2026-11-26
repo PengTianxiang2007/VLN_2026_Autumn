@@ -1,0 +1,53 @@
+{
+  "astra": {
+    "started_at": "2026-11-24T15:30:10.246361+00:00",
+    "completed_at": "2026-11-24T15:35:14.312787+00:00",
+    "model": "gpt-6-astra",
+    "requested_service_tier": "priority",
+    "wall_seconds": 304.066426,
+    "initialization_seconds": 37.294,
+    "candidate_seconds": {
+      "S01": 33.722,
+      "S02": 33.579,
+      "S03": 32.607,
+      "S04": 35.942,
+      "S05": 30.462,
+      "S06": 26.609,
+      "S07": 31.155,
+      "S08": 36.749
+    },
+    "mean_candidate_seconds": 32.603125,
+    "median_candidate_seconds": 33.093,
+    "retained": [
+      "S02",
+      "S03",
+      "S05",
+      "S08"
+    ]
+  },
+  "terra": {
+    "started_at": "2026-11-24T15:30:10.237243+00:00",
+    "completed_at": "2026-11-24T15:34:59.031814+00:00",
+    "model": "gpt-6.1-terra",
+    "requested_service_tier": "priority",
+    "wall_seconds": 288.794571,
+    "initialization_seconds": 35.589,
+    "candidate_seconds": {
+      "S01": 33.321,
+      "S02": 31.259,
+      "S03": 31.112,
+      "S04": 27.75,
+      "S05": 28.308,
+      "S06": 27.719,
+      "S07": 31.352,
+      "S08": 35.663
+    },
+    "mean_candidate_seconds": 30.810499999999998,
+    "median_candidate_seconds": 31.185499999999998,
+    "retained": [
+      "S02",
+      "S08"
+    ]
+  },
+  "start_gap_seconds": 0.009118
+}

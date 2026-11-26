@@ -1,0 +1,219 @@
+1 The living-room entrance shown in both groups can be matched using the wooden doorframe, adjacent wardrobe and layout beyond the doorway. B0 and B+2 show the wardrobe and bed inside the bedroom without providing an additional traversable opening.
+2 The wood-framed doorway leading to the living room; the frame adjoins a white built-in wardrobe on the right, and the light-colored floor, white coffee table and window beyond the doorway occupy matching positions.
+3 Both groups show the same wood-framed entrance to the living room. The frame structure and arrangement of furniture and windows beyond it support a clear correspondence. Group B shows more interior detail from closer up but adds no branch.
+4 The wood-framed doorway leading to the living room; the sofa on the left, central white coffee table and curtained window ahead have matching layouts, and the frame's relationship to the white walls on both sides agrees.
+5 The shower-room entrance and adjacent wood-framed entrance can be matched between the groups. Group B additionally shows traversable space leading to the living room, with no corresponding branch information in A, so a complete one-to-one correspondence is not established.
+6 The wood-framed doorway into the shower room, with a glass partition, dark window frame and patterned floor tiles visible inside.
+7 The adjacent wood-framed entrance to the left of the shower room, with a colored decorative border on the interior wall.
+8 B0 and B+2 show an open continuation into the living room, including a TV cabinet, coffee table and curtains; group A does not show this branch.
+9 The wood-framed room entrance and the continuation beyond the wall corner shown in both groups can be matched. B shows the furnishings inside the doorway more clearly but provides no supported additional branch.
+10 The wood-framed doorway into a room with pink-and-blue curtains, a plant and a low white cabinet; the threshold and adjoining wall relationships agree.
+11 The traversable continuation behind the foreground white wall corner, to the left of the wood-framed doorway; the floor and wall-base relationships agree.
+12 The left doorway, the right entrance to the room with a decorative wall border, and the living-room entrance ahead can all be matched one to one. B shows more of the living room but introduces no unique branch.
+13 The wood-framed doorway on the left of the corridor, before the wooden door at the far end; wall positions and doorframe relationships agree between the groups.
+14 The nearby wood-framed entrance on the right, with a colored decorative wall border and floor visible beyond it, is the same room entrance.
+15 The open entrance to the living room ahead on the right, matched using the positions of the white wooden-trimmed armchair, table lamp and sofa.
+16 The left doorway and living-room entrance can be matched, but A also provides entrance information for the nearby room on the right with a colored wall border, which B does not show. The branch information is therefore not completely identical.
+17 The wood-framed doorway on the left; the threshold, side wall and relationship to the wooden door at the far end agree.
+18 The open space leading to the living room ahead on the right, matched using the layout of the white wooden-trimmed armchair, table lamp and sofa.
+19 Another wood-framed room entrance is visible on the right in A-2 and A0, with a colored decorative wall border and floor beyond it; group B does not show this entrance.
+20 The living-room entrance and distant dining-area entrance can be matched, but the continuation exposed at the near end of the TV wall on the left in B0 and B+2 has no clear counterpart in A. Cropping at the image edge prevents determining whether it forms an independent passage, so completely identical branch information cannot be confirmed.
+21 The open space leading to the living room; the gray corner sofa, round coffee table and TV-wall layout correspond.
+22 The wide opening at the far end of the living room leading to the dining-table area; the dining table, pendant light and rear window positions correspond.
+23 The wide dining-area entrance, narrow passage to its left and continuation outside the near end of the TV wall shown by both groups can be matched using fixed objects and wall relationships. Moving the viewpoint forward changes the visible extent but introduces no confirmable additional branch.
+24 The wide opening at the far end of the living room leading to the dining area; the opening's frame, dining table and rear window correspond.
+25 The narrow passage to the left of the dining-area opening, behind the black pedestal ornament at the end of the TV wall; its wall relationship to the dining area agrees.
+26 The local continuation outside the near end of the TV wall; the adjacent plant, wall corner and floor boundary correspond.
+27 The bedroom entrance directly ahead and the entrance on the right can both be matched using fixed objects, doorframes and thresholds. A0 additionally shows a nearby traversable opening on the left that has no corresponding branch information in B, so the information is not completely identical.
+28 The bedroom entrance directly ahead, with the bed edge, curtains and potted plant visible beyond it.
+29 The entrance to the space on the right, located by a metallic-colored doorframe and black stone threshold; group B further reveals the dining/kitchen space beyond it.
+30 Near the left side of A0, an opening outside the wall pier and extending floor support a branch into the space on the left; group B does not show a corresponding opening.
+31 The bedroom entrance and the dining/kitchen entrance on its right can be matched one to one using the frames, thresholds, wall-pier relationships and fixed interior arrangements. Moving the viewpoint forward only changes the visible extent of the entrances and adds no unique branch.
+32 The bedroom entrance directly ahead: the white doorframe, dark threshold, bed edge, curtains and plant inside correspond, with a floral picture immediately to the left.
+33 The dining/kitchen opening to the right of the bedroom entrance: the metallic trim, white wall pier and black stone floor border correspond, and the same white seating and cabinets are visible inside.
+34 The shower-area opening and passage to the cabinet's right can be matched using the same white cabinet, black handles and walls on either side. B shows more of the right passage but adds no clearly independent branch.
+35 The opening to the gray-tiled shower area on the left of the white cabinet; the shower fixtures and white wall edge occupy matching positions.
+36 The wood-floored passage to the right of the white cabinet with two black handles; A partly shows the traversable space beside the cabinet, while B's turned viewpoint shows it extending into the corridor.
+37 The entrance beside the cabinet leading to the white corridor can be matched, but B additionally shows a side space beside the black cabinet on the right of the wall, while A shows a partial shower-area opening on the other side. The branch information actually provided by the groups is not completely identical.
+38 The entrance to the white corridor on the right of the white cabinet with two black handles; the frame and transition from wooden to light-colored flooring agree.
+39 The left edge of A-2 shows a partial opening into the gray-tiled shower area, with no corresponding information in group B.
+40 B0 and B+2 show a wood-floored continuation on the right of the white wall beside a tall black cabinet; A does not show this lateral traversable space.
+41 The doorway to the tall cabinet's right can be matched using the cabinet and wall-corner relationships. B also shows an independent doorway on the left opposite the cabinet, while A provides no traversable-space evidence for that entrance, so the branch information is not completely identical.
+42 The doorway to the right of the tall white cabinet, immediately beside its end, leading to a space with light-colored flooring.
+43 Another doorway in the left wall opposite the tall cabinet, leading to a gray-floored space with a distant window, shown in B0 and B+2.
+44 The left doorway can be matched between the groups, but A also provides branch information for the doorway on the right at the other end of the tall cabinet. All images in B show only the left entrance, so the branch information is not completely identical.
+45 The doorway in the left wall opposite the tall cabinet, leading to a gray-floored space with a distant window; its relationship to the end wall and tall cabinet agrees.
+46 A-2 and A0 show an independent doorway on the right at the other end of the tall cabinet leading to a light-floored space; B does not show this branch.
+47 The shower-area exit, space in front of the cabinet and passage to the cabinet's right can be matched one by one using the doorframes, wooden floor and cabinet with two long handles. B's later viewpoints only approach and show these spaces more clearly, without showing an additional branch.
+48 The doorway from the shower area to the wood-floored space in front of the white cabinet with two long handles.
+49 The passage extending inward on the right of the white cabinet and the white-framed opening; the cabinet's adjacency to the opening agrees.
+50 The shower-area exit and passage to the cabinet's right shown in both groups can be matched using fixed fixtures and wall layout. Forward movement changes the occlusion extent but reveals no unique branch.
+51 The doorway from the shower area to the wood-floored space in front of the white cabinet with two long handles; the tiled side wall, glass partition and cabinet positions correspond.
+52 The passage to the right of the white cabinet and its white-framed opening, with wooden flooring visible inside and matching adjacent-wall relationships.
+53 The doorway beside the TV wall can be matched. B clearly shows the kitchen entrance, while the partial opening at the far left edge of A0 is insufficient to reliably match it to that entrance, so completely identical branch information cannot be confirmed.
+54 The doorway beside the TV wall and dining table, with wood-colored flooring and a vertical wooden finish visible inside the white frame.
+55 The kitchen entrance to the left of the dining table and floral picture, with corner cabinets, countertops and dark floor tiles inside; A does not provide sufficiently clear corresponding information.
+56 The kitchen entrances can be clearly matched, but A additionally provides branch information for an open doorway beside the TV wall that B does not show. The closed white door beside the kitchen in B has no visible traversable-space evidence and is not counted as another branch.
+57 The kitchen entrance beside the floral picture and dining table, with matching light-colored corner cabinets, gray walls and dark square floor tiles inside.
+58 A-2 and A0 show an open doorway to the right of the floral picture beside the TV wall, with wood-colored flooring inside; B does not show this entrance.
+59 The doorway to the left of the TV can be matched, but B additionally shows the kitchen entrance on the other side of the dining table. A does not show that branch, so the branch information is not completely identical.
+60 The white doorway beside the dining table and to the left of the TV and low cabinet, with light-brown flooring beyond it; wall and furniture positions agree between the groups.
+61 The kitchen opening to the left of the dining table and yellow floral picture, leading to a space with dark-gray floor tiles and L-shaped cabinets, clearly shown in B0 and B+2; A provides no corresponding entrance information.
+62 The kitchen entrance can be clearly matched, but A additionally provides branch information for an open doorway to the left of the TV that B does not show. The closed white door beside the kitchen in B shows no traversable space and is not counted as another branch.
+63 The kitchen opening beside the dining table, with matching layouts of dark-gray square tiles, light-colored L-shaped cabinets and a window inside.
+64 A-2 shows an open doorway on the other side of the dining table, to the left of the TV and low cabinet, with light-brown flooring beyond it; B does not show that branch.
+65 The living-room entrances can be matched, but B also shows a lateral opening to the right of the TV wall and the floor beyond it. This opening and the living-room entrance lie on opposite sides of the wall, providing additional branch information.
+66 The wood-framed entrance into the living room and the connected living space; the sofa on the left, central coffee table, front window and TV cabinet on the right have matching layouts.
+67 The right edges of B-2 and B0 show another wood-framed opening to the right of the TV wall, with continuing floor visible inside; A does not show this lateral entrance.
+68 The entrance to the curtained room and the traversable space beyond the wall corner can be matched. B also reveals an independent shower-room entrance beside that space, while A shows only a partial continuation beyond the corner without branch information for this doorway.
+69 The wood-framed entrance to the room with pink-and-blue curtains; the plant, low white cabinet and wall-mounted screen inside occupy matching positions.
+70 The traversable space beyond the foreground white-wall corner, extending along the wall to the left of the room entrance.
+71 B0 and B+2 show an independent wood-framed shower-room doorway on the left, with patterned floor tiles, tiled walls and a glass shower partition inside; A does not show this entrance.
+72 The shower-room entrances can be matched, but the curtained-room entrance shown in A is absent from B, which instead shows another independent entrance to the shower room's left. The branch information actually provided by the groups differs.
+73 The wood-framed shower-room entrance, with corresponding patterned floor tiles, glass shower partition and dark wall surfaces inside.
+74 The wood-framed entrance to the room with pink-and-blue curtains, with a plant, low white cabinet and wall-mounted screen visible inside.
+75 Another wood-framed entrance to the left of the shower room, with flooring and a wall bearing a colored decorative border visible inside.
+76 The left doorway, living room on the right and short corridor ahead can be matched using the doorframes, cabinet and wall layout. The left doorway gradually leaves B's field of view, but the partial geometry retained in B-2 is sufficient to confirm the correspondence; no unique branch is seen.
+77 The wood-framed doorway on the left; although B-2 shows only part of the frame and interior wall and floor, its relationship to the adjacent white glass-fronted cabinet is sufficient for correspondence.
+78 The open living space on the right, with matching relative positions of the white wooden-trimmed armchair, sofa and table lamp.
+79 The short corridor between the walls ahead leading to the wooden door at the end; the wall corners and continuous flooring agree.
+80 The short corridor and living room on the right can be matched, but B adds direct spatial evidence of a kitchen opening ahead on the left. Imagery inside A's glass-fronted cabinet is insufficient to support that entrance. A's nearby wood-framed entrance on the left and B's kitchen opening occupy different positions relative to the cabinet and cannot be merged into one correspondence.
+81 The short corridor directly ahead leading to the wooden door at the end; wall corners on both sides and the extending floor agree.
+82 The living space on the right, matched by the positions of the white wooden-trimmed seating, sofa and lamp side table.
+83 Parts of the interior wall and floor of a nearby wood-framed entrance are visible on the left of A-2; B does not show this entrance.
+84 The wood-framed opening ahead on the left into a space with white cabinets and gray brick-patterned walls is directly visible in B; A does not show traversable space for this opening.
+85 The dining-area entrance and narrow passage to its left can be matched, but the space outside the nearby wall corner on the left in A-2 is absent from B, and the space exposed to the right of the dining area in B+2 also lacks a clear counterpart in A. Edge occlusion prevents determining whether these areas contain additional branches, so complete duplication cannot be confirmed.
+86 The wide opening into the dining area; the relative positions of the frame, dining table and rear window agree.
+87 The narrow passage to the left of the dining-area entrance, behind the black ornament's base at the end of the TV wall.
+88 All three visible entrances or spatial continuations can be matched one to one using wall boundaries and adjacent fixed objects. B only shows the opening to the dining area's right more clearly and provides no unique branch.
+89 The wide entrance directly ahead leading to the dining area; the dark frame, dining table and rear window correspond.
+90 The narrow passage on the left at the end of the TV wall, behind the black ornament's base; its relationship to the gold vertical strip and wall on the left of the dining-area entrance agrees.
+91 The lateral opening to the right of the dining area leading to the space containing light-wood cabinets; its vertical boundary and extending floor correspond.
+92 The bedroom and dining/kitchen entrances can be matched individually. B+2 also clearly shows a corridor extending into the distance outside the dining/kitchen entrance, with no corresponding branch information in A.
+93 The bedroom entrance; the white doorframe and the bed, window, curtains and plant inside correspond.
+94 The dining/kitchen entrance beside the bedroom; the metallic trim, white wall pier, black stone border and interior cabinets correspond.
+95 B+2 shows a corridor extending into the distance along white floor tiles outside the dining/kitchen opening, with stools and wooden cabinets on the right; A does not show this corridor branch.
+96 The dining/kitchen entrance and corridor continuation can be matched, but A uniquely shows the bedroom entrance, while B uniquely shows the open living-room branch on the right. The branch sets actually presented differ.
+97 The dining/kitchen entrance; the metallic trim, white wall pier, black floor border and interior cabinets correspond.
+98 The corridor extending into the distance along white floor tiles; the pictures, stools and wooden cabinets along its side correspond.
+99 A-2 and A0 show the bedroom entrance and the bed, curtains and plant inside; B does not show a corresponding bedroom opening.
+100 B shows the open space on the corridor's right leading to the living room containing a sofa and tall potted plant; A does not show this lateral branch.
+101 A shows the bathroom opening, while B shows the corridor entrance on the other side of the cabinet. Their flooring, interior layouts and adjacent-wall relationships are clearly different. The shared white cabinet is insufficient to establish correspondence between the branch information.
+102 A-2 and A0 show an opening into a gray-tiled bathroom, with a glass shower partition and window visible inside; B does not show this entrance.
+103 B0 and B+2 show a doorway to the right of the white cabinet with two black handles, leading to a light-floored corridor; A does not show this entrance.
+104 The corridor entrance and doorway on its right can be matched. B additionally shows a lateral branch beside the black cabinet leading to the bed area; this space is outside the corridor entrance and differs from the doorway inside the corridor.
+105 The entrance from the wood-floored area into the light-floored corridor; the white frame and distant beige wall occupy matching positions.
+106 The nearby doorway on the corridor's right, exposing wooden flooring; the side wall and threshold shape correspond.
+107 B0 and B+2 show wood-floored traversable space to the right of the nearby white wall, beside the tall black cabinet, leading to the bed area; A does not show this branch.
+108 The relative positions of the cabinet, white-framed opening, projecting wall and dark surface support one-to-one correspondence of the branches. The washbasin revealed after B turns belongs to the bathroom space on one side of the nearby doorway and does not form a new independent entrance.
+109 The white-framed passage opening to the right of the white cabinet with long handles, with wooden flooring visible inside the frame.
+110 The recessed wood-floored space to the right of the projecting white wall, extending in front of a dark surface.
+111 The nearby doorway between the wood-floored space in front of the cabinet and the bathroom area; the white frame on the right has a matching position and orientation.
+112 The white-framed passage and bathroom doorway can be matched, but A reveals only a small floor area in front of the dark surface, with the right side occluded by the nearby frame. It cannot be confirmed that A provides branch information for B's continuation along the dark cabinet toward the space beside the bed, so complete duplication cannot be confirmed.
+113 The white-framed passage opening to the left of the projecting white wall; the floor inside and adjacent cabinet positions correspond.
+114 The doorway beside the washbasin connecting the bathroom area and wood-floored space.
+115 B0 and B+2 clearly show a traversable continuation along the right side of the dark cabinet toward the space containing a bed and curtains.
+116 Both groups show the same kitchen entrance. The adjacent white door, entrance side wall and interior cabinet layout provide clear correspondence, with no unique branch seen. The closed white door reveals no traversable space and is not counted as another branch.
+117 The kitchen entrance to the right of the closed white door; the white threshold, dark-gray square tiles, light-colored corner cabinets and window have matching spatial relationships.
+118 Both groups show the same kitchen entrance, with matching relationships between the entrance side wall and dining chair and matching fixed interior layouts. B only shows the kitchen interior more clearly; neither group has a unique traversable branch.
+119 The kitchen entrance beside the dining chair; the white threshold, right side wall, dark-gray square tiles, light-colored corner cabinets and window inside all correspond.
+120 Both groups show the same kitchen entrance, clearly matched using the adjacent white door, dining chair and interior kitchen layout, with no additional traversable branch information in either group. The closed white door does not reveal the space beyond it and is not counted as another branch.
+121 The kitchen entrance to the right of the closed white door and beside the gray dining chair; the entrance walls, dark-gray square tiles, light-colored L-shaped cabinets and window occupy matching positions.
+122 The traversable branch actually shown in both groups is the same kitchen entrance, with a fixed layout sufficient for a clear match. B only reveals more of the kitchen interior and adds no branch; the closed white door in A provides no evidence of traversable space beyond it.
+123 The kitchen entrance beside the gray dining chair; the white-wall opening, dark-gray square floor tiles, light-colored L-shaped cabinets and window have matching spatial relationships.
+124 The shower-room entrance and adjacent entrance on the left can both be matched one to one using the frames, interior furnishings and wall relationships. The viewpoint change only reveals the left entrance more clearly and adds no branch information.
+125 The wood-framed shower-room entrance; the patterned floor tiles, glass partition, dark walls and window frame occupy matching positions inside.
+126 The adjacent wood-framed entrance to the left of the shower room, with a colored decorative wall border, white skirting and wooden flooring visible inside.
+127 The shower-room entrance and adjacent wood-framed entrance can be matched between the groups. B additionally provides branch information leading to the living room, so the branch information is not completely identical.
+128 The wood-framed shower-room entrance, with matching patterned floor tiles, glass partition and dark window frame.
+129 The adjacent wood-framed entrance to the left of the shower room, with a colored decorative border inside and matching frame and intervening-wall relationships.
+130 B0 and B+2 show open traversable space around the white wall into the living room, including a TV cabinet, coffee table, sofa and white curtains; A does not show this branch.
+131 The kitchen entrance, short corridor ahead and continuation into the living room on the right can all be matched using fixed objects and wall-floor relationships. Most of the living room leaves B's frame, but local spatial evidence still confirms the same branch; no additional branch is seen.
+132 The wood-framed kitchen entrance on the left, with matching white cabinets, gray brick-patterned walls and light-colored flooring inside.
+133 The short corridor directly ahead leading to the wooden door at the end; the walls on both sides, projecting cabinet on the right and herringbone floor agree.
+134 The open continuation to the living room on the right; B-2 retains the wall corner, lamp side table and continuous traversable floor in front of it, allowing a match with A.
+135 The wide dining-area entrance, narrow passage to its left and opening on the dining area's right can all be matched using walls and fixed objects. B's viewpoint is closer but shows no unique branch.
+136 The wide entrance directly ahead into the dining area; the dark frame, dining table and rear window have matching spatial relationships.
+137 The narrow passage to the left of the dining-area entrance, behind the gold vertical strip and black ornament's base, with corresponding wall boundaries.
+138 The opening on the dining area's right into the space containing light-wood cabinets; the vertical frame and extending floor correspond.
+139 The visible branches in both groups can all be matched one to one using entrance boundaries, partition walls and adjacent fixed objects. B shows the left opening and continuation on the dining area's right more clearly but reveals no additional branch.
+140 The wide entrance directly ahead into the dining area; the dark frame, dining table and rear window correspond.
+141 The opening to the left of the dining-area entrance, behind the gold slats and black sculpture's base; the wall pier and floor boundary between it and the dining area correspond.
+142 The opening to the right of the dining area into the space containing light-wood cabinets; the frame, cabinet and extending floor have matching relationships.
+143 The dining/kitchen entrance on the left, corridor ahead and open living-room branch on the right can all be matched one to one. B only shows more dining-chair and sofa detail, without adding a spatial branch.
+144 The dining/kitchen entrance on the left; the metallic trim, white wall pier, black floor border and interior cabinets correspond.
+145 The corridor continuation ahead; the floor borders on both sides, picture on the left and distant stools and wooden cabinets correspond.
+146 The open living-room branch on the right; the gray sofa, yellow cushion, tall potted plant and adjacent floor border correspond.
+147 The dining/kitchen entrance on the left, corridor ahead and open living-room branch on the right all have clear spatial and fixed-object correspondences. Forward movement only shifts the dining/kitchen entrance toward the image edge, without revealing a unique branch.
+148 The dining/kitchen entrance on the left; the metallic trim, white wall pier, black threshold, interior cabinets and mixed-color floor tiles correspond.
+149 The corridor continuation ahead; the picture on the left wall, bench and wooden cabinet on the right, and floor borders on both sides correspond.
+150 The open living-room branch on the right; the gray sofa, yellow cushion, tall potted plant and geometric wall decorations correspond.
+151 The white-framed opening and right-side passage can be matched individually using the projecting white wall, end of the dark cabinet and continuous flooring. A+2 already reveals the passage to the cabinet's right; B further shows the bed and curtains inside, providing a fuller view of the same branch.
+152 The white-framed passage opening to the left of the projecting white wall; the light-colored flooring inside and wooden flooring at the side occupy matching positions.
+153 The wood-floored passage around the end of the dark cabinet, extending along its right side.
+154 The bedside passage can be matched using the dark cabinet, bed and curtains. A's farther white-framed passage and B's nearby bathroom opening occupy different wall positions, so the branch sets actually provided differ.
+155 The wood-floored passage along the dark glass cabinet toward the bedside and curtains.
+156 A-2 and A0 show the white-framed passage opening to the left of the projecting white wall; B does not show this entrance.
+157 B0 shows an opening on the right of the nearby white wall into the bathroom space containing a washbasin and toilet; A does not show this branch.
+158 B-2 still shows the kitchen entrance side wall, threshold and dining chair outside, clearly matching A. Later close-ups only show the same kitchen interior and provide no additional branch, so the branch information is the same.
+159 The opening into the kitchen and its interior traversable space; the white side wall on the right, threshold, dark-gray square tiles and light-colored corner cabinets have matching spatial relationships.
+160 Both groups show the same kitchen entrance and interior space, clearly matched using the opening boundaries and fixed fixtures. B only approaches the entrance and reveals more kitchen detail, without adding a branch.
+161 The white-wall opening into the kitchen; the dark-gray square floor tiles, light-colored L-shaped cabinets, stove on the left and sink below the window have matching spatial relationships.
+162 The curtained-room entrance can be matched using its frame and fixed interior furnishings. B additionally shows a dining/kitchen opening, a short corridor and a continuation toward the living room, which A does not provide, so the groups are not duplicates.
+163 The wood-framed entrance to the room with pink-and-blue curtains; the plant, low white cabinet and wall-mounted screen inside correspond.
+164 The local traversable continuation to the left of the curtained-room entrance, behind the foreground white wall.
+165 The opening beside the glass display cabinet into the dining/kitchen area, with wooden chairs, white cabinets and tiled walls visible.
+166 The short corridor to the right of the central wall leading to the wooden door at the end.
+167 The open traversable space extending toward the living-room area containing an armchair and sofa on the right.
+168 The dining/kitchen opening, short corridor and living space can be matched, but A also clearly shows the entrance to the room with pink-and-blue curtains. The partial frame at B's edge is insufficient to present that branch, so the branch information is not completely identical.
+169 The opening beside the glass display cabinet into the dining/kitchen area; the wooden chairs, white cabinets and tiled walls correspond.
+170 The short corridor beside the central wall leading to the wooden door at the end; the wall corner and wooden door occupy matching positions.
+171 The open space leading to the living room containing an armchair and sofa; the armchair's spatial relationship to the table lamp agrees.
+172 The wood-framed entrance to the room with pink-and-blue curtains, with a plant, low white cabinet and wall-mounted screen inside; B provides no traversable-space information for this entrance.
+173 The frames, partition walls and adjacent fixed objects of all three branches can be matched one to one. B more clearly reveals the bed behind the left doorway, providing additional interior visibility through the same entrance rather than a new branch.
+174 The wide dining-area entrance directly ahead; the dark frame, round dining table, pendant light and rear window correspond.
+175 The independent doorway to the left of the dining area, behind the gold slats and sculpture base; the wall pier between it and the dining area and the threshold correspond.
+176 The opening to the right of the dining area leading to the space containing light-wood cabinets; the side wall, vertical frame and extending floor correspond.
+177 The dining-area entrance, bedroom entrance on the left and kitchen opening on the right all have clear geometric and fixed-object correspondences. B reveals more bedroom and kitchen interior detail without adding a traversable branch.
+178 The wide dining-area entrance directly ahead; the dark frame, round dining table, pendant light and rear window correspond.
+179 The entrance to the bedroom on the left of the dining area; the light-colored flooring, black threshold and bed with a black blanket beyond the doorway correspond.
+180 The opening into the kitchen to the right of the dining area; the boundary between flooring materials, side wall, light-wood panels and window farther back correspond.
+181 Both groups show two neighboring entrances along the left side, with matching relationships among the wall pier, thresholds, gray end wall and cabinet on the right. B shows the shelving inside the farther entrance more clearly, adding detail about the same branch.
+182 The nearby opening on the left; the white wall pier, dark-brown threshold and light-colored square floor tiles inside correspond.
+183 The second entrance on the left near the corridor's end, behind the nearby wall pier and opposite the wooden-and-white cabinet on the right; the white frame and dark-brown threshold correspond.
+184 The room entrance on the left at the end can be matched using its frame, shelving and relationship to the cabinet on the right. A additionally shows a nearby opening into a square-tiled space, with no corresponding information in B, so the branch sets differ.
+185 The left room entrance near the corridor's end, with a matching white frame, dark-brown threshold and white shelving inside; the entrance is opposite the wooden-and-white cabinet.
+186 A-2 and A0 also show another, nearer opening on the left into a space with light-colored square floor tiles, separated from the end room's entrance by a white wall pier; B does not show this branch.
+187 The dining/kitchen opening, short corridor and open living space shown by both groups can all be matched one to one using fixed furnishings and wall relationships. The viewpoint change neither adds nor omits independent branch information.
+188 The opening beside the glass display cabinet into the dining/kitchen area; the frame, wooden chairs, white cabinets and tiled walls agree.
+189 The short corridor between the central wall and sofa backdrop wall; the wooden door at the end and wall relationships on both sides agree.
+190 The open space leading to the living-room seating and coffee-table area; the armchair, sofa, table lamp and window-side layout agree.
+191 The dining/kitchen opening, short corridor and open living space can all be matched. B additionally provides branch information for the curtained-room entrance, so the groups are not completely identical.
+192 The dining/kitchen opening beside the glass display cabinet; the wooden chairs, white cabinets and tiled walls correspond.
+193 The short corridor beside the central wall leading to the wooden door at the end; the wall corner and wooden door have matching spatial relationships.
+194 The open space leading to the armchair and sofa area, with matching seating and table-lamp layouts.
+195 B0 and B+2 show an independent wood-framed room entrance on the other side of the display cabinet, with pink-and-blue curtains, a plant, a low white cabinet and a wall-mounted screen inside; A does not show this branch.
+196 The dining-area, left bedroom and right kitchen entrances can all be matched one to one using the frames, floor boundaries and fixed objects. B approaches and turns left without exposing an additional branch.
+197 The wide dining-area entrance directly ahead; the metallic frame, black threshold, round dining table and rear window correspond.
+198 The bedroom entrance on the left; the light-colored wooden floor, black threshold and bed with a black blanket beyond the doorway correspond.
+199 The kitchen opening to the right of the dining area; the boundary between flooring materials, white cabinets and rear window correspond.
+200 The bedroom and dining-area entrances can be matched, but A also clearly provides information about the kitchen opening to the dining area's right. That area is outside B's frame, so the branch information is not completely identical.
+201 The wide dining-area entrance; the metallic frame, dining-area display wall and round dining table correspond.
+202 The bedroom entrance on the left; the white frame, dark threshold, light-colored wooden floor and bed beyond the doorway correspond.
+203 A-2 and A0 show an opening into the kitchen to the dining area's right, with continuous tiled flooring and white cabinets visible; B does not show this branch.
+204 The curtained-room entrance, dining/kitchen opening and corridor continuation beyond the wall corner can be matched. A additionally shows open traversable space toward the living room that B does not provide, so the conditions for complete deduplication are not met.
+205 The wood-framed room entrance to the left of the display cabinet; the pink-and-blue curtains, plant, low white cabinet and wall-mounted screen correspond.
+206 The opening to the right of the display cabinet into the dining/kitchen area; the wooden chairs, white cabinets and tiled walls correspond.
+207 The short corridor continuation beyond the wall corner to the right of the dining/kitchen area; although B does not show the wooden door at the end, the wall corner and traversable floor relationships can be matched.
+208 The open traversable space leading to the living-room area containing an armchair, table lamp and sofa; B does not show branch information in this direction.
+209 Both the bedroom and dining-area branches can be matched using the frames, central wall pier and adjacent fixed objects. Although the dining area moves outside the frame in B0 and B+2, B-2 already provides corresponding information, with no unique branch.
+210 The bedroom entrance beside the floral picture; the white frame, dark threshold, rounded-corner shelving and bed inside correspond.
+211 The dining-area entrance to the right of the central wall pier; the metallic frame, display wall, light-colored flooring and white dining chairs correspond.
+212 The bedroom entrance and dining/kitchen opening can be matched; a clearer view of the bedroom interior does not constitute an additional branch. A also shows a traversable continuation beyond the wall corner on the right that B does not provide, so the branch information is not completely identical.
+213 The wood-framed bedroom entrance to the left of the display cabinet; the pink-and-blue curtains, plant, low white cabinet and bed occupy matching positions.
+214 The dining/kitchen opening to the right of the display cabinet; the wooden chairs, white cabinets and tiled walls correspond.
+215 The right side of A-2 shows a traversable continuation beyond the outer wall corner of the dining/kitchen area; B does not show this direction.
+216 The bedroom entrances can be clearly matched, but A-2 also provides information about the dining-area entrance on the right, while B shows only the bedroom entrance, so the branch information is not completely identical.
+217 A-2 shows an opening into the dining area to the right of the central wall pier, with dining chairs, a display wall and continuous flooring visible; B does not show this branch.
+218 Both groups provide information about the same bedroom entrance, with clear correspondences among the frame, shelving and bed. B reveals more of the bedroom interior but adds no doorway or branch leading to another space.
+219 The bedroom entrance beside the floral picture; the white frame, rounded-corner shelving inside, bed with a black blanket and headboard backdrop wall correspond.

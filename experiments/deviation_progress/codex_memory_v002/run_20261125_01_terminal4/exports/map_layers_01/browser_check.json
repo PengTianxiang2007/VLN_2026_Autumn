@@ -1,0 +1,45 @@
+{
+  "results": [
+    {
+      "case": "C17",
+      "frames": 92,
+      "rounds": 6,
+      "terminal_reviewed": true,
+      "alarm_interval": [
+        68,
+        91
+      ]
+    },
+    {
+      "case": "C43",
+      "frames": 59,
+      "rounds": 4,
+      "terminal_reviewed": true,
+      "alarm_interval": [
+        30,
+        58
+      ]
+    },
+    {
+      "case": "C23",
+      "frames": 33,
+      "rounds": 3,
+      "terminal_reviewed": false,
+      "alarm_interval": [
+        7,
+        17
+      ]
+    },
+    {
+      "case": "C20",
+      "frames": 48,
+      "rounds": 4,
+      "terminal_reviewed": true,
+      "alarm_interval": [
+        41,
+        47
+      ]
+    }
+  ],
+  "errors": []
+}

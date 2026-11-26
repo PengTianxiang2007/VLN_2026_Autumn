@@ -1,0 +1,11 @@
+This turn provides images for candidate {candidate_id}. Compare it with recovery checkpoint {previous_checkpoint_id}, whose images were supplied earlier in this conversation, and make the following judgments in order.
+
+1. Does the current candidate meet the definition of a recovery checkpoint?
+
+A recovery checkpoint is a location where the robot currently has multiple selectable branches that can lead to different spatial areas. Even when the field of view is limited and a branch is only partially visible, its existence may be inferred from visible spatial structure. Identify the available branches and explain the visible evidence or inference supporting them. If the candidate does not meet this definition, it should not become a recovery checkpoint.
+
+2. Does the current candidate offer different branch choices?
+
+If the current candidate meets the definition, use the historical images associated with {previous_checkpoint_id} to compare the branches at the two locations. If only the distance, heading, or viewing angle has changed and the same branches are visible, classify the candidate as a duplicate. If different branches are visible, or a new branch appears that was not visible at the specified checkpoint, establish the current candidate as a new recovery checkpoint.
+
+Give the judgment and briefly explain the specific branch evidence. If the images are insufficient to support a judgment, explicitly state the uncertainty.

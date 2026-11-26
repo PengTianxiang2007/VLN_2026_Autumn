@@ -1,0 +1,46 @@
+{
+  "design": {
+    "baseline": {
+      "candidates": 171,
+      "reference": 52,
+      "matches": 52
+    },
+    "near": {
+      "candidates": 166,
+      "reference": 52,
+      "matches": 52
+    },
+    "plateau": {
+      "candidates": 120,
+      "reference": 52,
+      "matches": 51
+    },
+    "active": {
+      "candidates": 110,
+      "reference": 52,
+      "matches": 51
+    }
+  },
+  "validation": {
+    "baseline": {
+      "candidates": 174,
+      "reference": 51,
+      "matches": 51
+    },
+    "near": {
+      "candidates": 171,
+      "reference": 51,
+      "matches": 51
+    },
+    "plateau": {
+      "candidates": 135,
+      "reference": 51,
+      "matches": 50
+    },
+    "active": {
+      "candidates": 114,
+      "reference": 51,
+      "matches": 48
+    }
+  }
+}

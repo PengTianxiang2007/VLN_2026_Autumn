@@ -1,0 +1,20 @@
+{
+  "created": "2026-11-24T17:59:02.376547+00:00",
+  "modes": [
+    "near",
+    "plateau",
+    "active"
+  ],
+  "known_validation": [
+    "near"
+  ],
+  "parent": "run_20261124_01",
+  "sha256": {
+    "core/jev_online_sampler_v001.js": "a2d9e945e806d2ff774aaf6f6a20ad55659c6c08406cbbaf30ffa81f6d621923",
+    "core/jev_online_sampler_v002.js": "0662b5064b2d868f5f0215d4439772cc3f89c318f42376ceb61dda5b1a459b0c",
+    "scripts/evaluate_jev_sampling_v002.cjs": "d48668ecb76f70f9a2cd959faa812ef5039824a2a9e3587982a3aca3ce94a52c",
+    "experiments/crossing_checkpoint/online_sampling_v002/run_20261124_01/split.json": "ad760ce5b4af5273e3a9ca1cc3c9a403a3634d6ac5c427890cd74cd415f9d2d9"
+  },
+  "split": "unchanged",
+  "tolerance": 3
+}

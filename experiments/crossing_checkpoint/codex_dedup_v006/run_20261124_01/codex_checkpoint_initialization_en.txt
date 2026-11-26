@@ -1,0 +1,7 @@
+You will help analyze a robot's visual language navigation (VLN) trajectory. In these tasks, the robot chooses a route using natural-language instructions and visual observations collected along the way.
+
+We have found that many navigation failures arise from route deviation. The robot chooses the wrong branch or direction at an earlier location, and the deviation becomes apparent only after it has traveled some distance. Our idea is to record locations where the robot has an opportunity to choose different routes. We call these locations "recovery checkpoints." When deviation is detected, these records help us trace it back to the original wrong route choice and choose a route again from that location. Recording a recovery checkpoint indicates a route-choice opportunity. Whether the robot made a wrong choice there requires subsequent evidence.
+
+This conversation concerns one trajectory. Each observation group has a unique identifier. When a later task refers to an identifier, use the images associated with that identifier and follow the current request. If the images are insufficient to support a judgment, explicitly state the uncertainty.
+
+Acknowledge this initialization by returning {"ready": true}.

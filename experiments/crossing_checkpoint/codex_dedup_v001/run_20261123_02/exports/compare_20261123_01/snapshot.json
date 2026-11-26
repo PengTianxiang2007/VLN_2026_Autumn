@@ -1,0 +1,74 @@
+{
+  "created_at": "2026-11-23T21:57:25.786305+00:00",
+  "source_sha256": {
+    "outputs/codex_tasks/checkpoint_dedup/v001/run_20261123_02/results.json": "fe0025009d39cd10fa996bb4e6d34f6184cc294eb2020cc6343dc29b744159ed",
+    "outputs/deviation_progress/v003/run_20261118_01_qwen27b/exports/all53_dedup_01/index.html": "d33d6d7303ad5208df442f9b7712857e629a60eaa299bfadbb240b60a2a1f497",
+    "outputs/deviation_progress/v003/run_20261118_02_deepseek10/exports/dedup_01/index.html": "43b1ae111de51adcc4c6c78fe89a5717252ff6e54ebdb7151b22961624f9cfdc",
+    "experiments/crossing_checkpoint/codex_dedup_v001/run_20261123_02/exports/compare_20261123_01/translation_source.json": "e1f93a3a63fdb245fde092ce22939b5a71094a6152b3228611ee3c87b5b9d6e5",
+    "experiments/crossing_checkpoint/codex_dedup_v001/run_20261123_02/exports/compare_20261123_01/review_en.txt": "f64999763f8c661a1a3da6d66aeb477c65d1ef4f5a36d47ae05d737c52eceae6",
+    "scripts/export_codex_dedup_comparison.py": "624c921a7485f52461454a971dd543c9c9b263d14eca89ed5c7b6a537543c775",
+    "core/codex_dedup_comparison.js": "7ef7896d973e5048006fc7923629d5fc451e3c88b32434bcc285a96f822a909a",
+    "outputs/deviation_progress/v003/run_20261118_01_qwen27b/dedup/cases/C01/result.json": "2aadaf535cbbf2842ffcfb48c9b5ebb8d66ce644211c7655140442c12fabc17e",
+    "outputs/deviation_progress/v003/run_20261118_01_qwen27b/dedup/cases/C02/result.json": "fba5408eb5087b7d1adb8f40cabf2a31a140ff7c7e6c4296b24658c85ea9f4be",
+    "outputs/deviation_progress/v003/run_20261118_01_qwen27b/dedup/cases/C03/result.json": "40a9f50ebd1e44b1ad9e0889fa641e2bbb611b4dfa1ffef9c397fa8ed5e646ee",
+    "outputs/deviation_progress/v003/run_20261118_01_qwen27b/dedup/cases/C04/result.json": "ad4ee238906fda1f4a5d3ec7adc88b6fc620e5f2740431714b0863f68ccef889",
+    "outputs/deviation_progress/v003/run_20261118_01_qwen27b/dedup/cases/C05/result.json": "c9e1c0d2827544b05101ad48bbb073588400353dc690c86ddd544d49b6d2c55e",
+    "outputs/deviation_progress/v003/run_20261118_01_qwen27b/dedup/cases/C06/result.json": "b1da6219510617c2a5466f1f2e88c96d486536750cd12725ed636f85fa259b8f",
+    "outputs/deviation_progress/v003/run_20261118_01_qwen27b/dedup/cases/C07/result.json": "58269d04b916a5d688017877232869ddf87095e9239d93f92f80efd241e7fcca",
+    "outputs/deviation_progress/v003/run_20261118_01_qwen27b/dedup/cases/C08/result.json": "2cfdf864c357c1bf584f1389ddca4570d16e80a0aba84b5b08a024fdd9aa209c",
+    "outputs/deviation_progress/v003/run_20261118_01_qwen27b/dedup/cases/C09/result.json": "bdf7cf0daa6c9e675e379872c07c2219b0d1203872997b404299ddb0aaaf03fa",
+    "outputs/deviation_progress/v003/run_20261118_01_qwen27b/dedup/cases/C10/result.json": "807fcdcc8ea5c75d26b499a04137904d76848b4b0ee3e3c33a16d42bd34e270c",
+    "outputs/deviation_progress/v003/run_20261118_02_deepseek10/dedup/cases/C04/result.json": "77b4a6680bc341c79ce046d6f1421c8a4b43064271ba542588a6a9fd5873a318",
+    "outputs/deviation_progress/v003/run_20261118_02_deepseek10/dedup/cases/C08/result.json": "7eb84f21ae91484b731611114db6e93e77b9aced7aa91513e27d802cd7dabb7f"
+  },
+  "cases": [
+    "kujiale_0036_0_0",
+    "kujiale_0036_3_2",
+    "kujiale_0036_52_4",
+    "kujiale_0113_18_1",
+    "kujiale_0113_1_4",
+    "kujiale_0123_fix_13_3",
+    "kujiale_0123_fix_19_3",
+    "kujiale_0123_fix_43_3",
+    "kujiale_0128_fix_12_4",
+    "kujiale_0128_fix_18_1"
+  ],
+  "models": {
+    "astra": {
+      "coverage": 10,
+      "summary": {
+        "candidates": 89,
+        "retained": 56,
+        "removed": 33,
+        "model_calls": 63,
+        "uncertain": 4
+      }
+    },
+    "qwen": {
+      "coverage": 10,
+      "summary": {
+        "candidates": 89,
+        "retained": 63,
+        "removed": 26,
+        "model_calls": 63,
+        "uncertain": 0
+      }
+    },
+    "deepseek": {
+      "coverage": 2,
+      "summary": {
+        "candidates": 26,
+        "retained": 9,
+        "removed": 17,
+        "model_calls": 19,
+        "uncertain": 1
+      }
+    }
+  },
+  "offline": "outputs/codex_tasks/checkpoint_dedup/v001/run_20261123_02/exports/compare_20261123_01",
+  "online": "outputs/visualization_publishing/codex_astra_route10_dedup_compare_web_20261123_01",
+  "html_sha256": "10798a68268af6ace6e9accadfefa8c81b237996900a7e82fddba71209381e6b",
+  "zip": "outputs/codex_tasks/checkpoint_dedup/v001/run_20261123_02/exports/compare_20261123_01_offline.zip",
+  "zip_sha256": "1ea2d8dfad1e346887fd8be80b00d2580412cbfd290e7fadfcaee565a8d86eff",
+  "display_translations": "Local assistant translation; original Chinese responses unchanged"
+}

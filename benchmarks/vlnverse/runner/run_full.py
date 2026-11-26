@@ -59,8 +59,10 @@ def main():
     ap.add_argument('--allow-shared-gpu',action='store_true')
     ap.add_argument('--preflight-only',action='store_true')
     ap.add_argument('--jev-live-output',type=Path,help='Causal JEV v004 scoring output directory')
+    ap.add_argument('--codex-shadow-output',type=Path,help='Stream native observations to an independent JEV/Codex reviewer')
     ap.add_argument('--rss-budget-mib',type=int,default=24000)
     a=ap.parse_args()
+    if a.jev_live_output and a.codex_shadow_output: ap.error('Choose one live observer')
     if a.limit_episodes < 0: ap.error('limit-episodes must be nonnegative')
     if a.episode_ids and a.limit_episodes: ap.error('Choose episode-ids or limit-episodes')
     if a.scenes and (a.episode_ids or a.limit_episodes): ap.error('Complete scenes cannot be combined with episode limits/IDs')
@@ -149,6 +151,8 @@ def main():
             'response_type': 'noul',
             'question_version': 'v004',
         }
+    if a.codex_shadow_output:
+        jev_live = dict(observer='codex_shadow', output_dir=str(a.codex_shadow_output.resolve()), seed=a.seed)
     if not a.resume:
         output.mkdir(parents=True,exist_ok=False)
         target=dataset/'val_unseen/val_unseen.json.gz'; target.parent.mkdir(parents=True,exist_ok=True)

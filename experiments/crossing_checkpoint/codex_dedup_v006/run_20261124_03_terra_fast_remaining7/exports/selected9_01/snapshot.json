@@ -1,0 +1,81 @@
+{
+  "models": {
+    "terra6": {
+      "coverage": 9,
+      "summary": {
+        "candidates": 77,
+        "retained": 18,
+        "removed": 59,
+        "model_calls": 77,
+        "initialization_calls": 9,
+        "uncertain": 0,
+        "format_errors": 0,
+        "not_eligible": 23,
+        "duplicates": 36
+      }
+    },
+    "astra6": {
+      "coverage": 2,
+      "summary": {
+        "candidates": 23,
+        "retained": 4,
+        "removed": 19,
+        "model_calls": 23,
+        "uncertain": 0,
+        "format_errors": 0
+      }
+    },
+    "memory": {
+      "coverage": 9,
+      "summary": {
+        "candidates": 77,
+        "retained": 24,
+        "removed": 53,
+        "model_calls": 77,
+        "uncertain": 4
+      }
+    },
+    "astra3": {
+      "coverage": 9,
+      "summary": {
+        "candidates": 77,
+        "retained": 47,
+        "removed": 30,
+        "model_calls": 59,
+        "uncertain": 8
+      }
+    },
+    "qwen": {
+      "coverage": 9,
+      "summary": {
+        "candidates": 77,
+        "retained": 54,
+        "removed": 23,
+        "model_calls": 59,
+        "uncertain": 0
+      }
+    },
+    "deepseek": {
+      "coverage": 2,
+      "summary": {
+        "candidates": 20,
+        "retained": 7,
+        "removed": 13,
+        "model_calls": 17,
+        "uncertain": 1
+      }
+    }
+  },
+  "source_sha256": {
+    "outputs/codex_tasks/checkpoint_dedup/v003/selected9_20261124_01/exports/selected9/index.html": "260dc7f578622e5c1729bc83b0998673e4096f5a255aff50646c562cf1a895ed",
+    "core/codex_dedup_comparison.js": "e15aeafbf299b24045289e91797332fa30aaac0e05d91c9cc387b29b558c8e32",
+    "scripts/export_terra_v006_selected9.py": "802fe68fdf93c1892754f6b874b03353fdbb98e28c3d5bb309f5c9689ddc0efd",
+    "experiments/crossing_checkpoint/codex_dedup_v006/run_20261124_03_terra_fast_remaining7/exports/selected9_01/translations.json": "61df433b90d5e59088cf9a75a1572ad56f880360bfe21376855c5b72b2e4307e",
+    "outputs/codex_tasks/checkpoint_dedup/v006/run_20261124_03_terra_fast_remaining7/selected9/results.json": "92e88abf3f65ee909de287512aa07abb53fc44dd86e77926522ce7654e4bac28",
+    "outputs/codex_tasks/checkpoint_dedup/v006/run_20261124_01/results.json": "b4217656999e5ef707373a9fb461670e367948f2bf5ac330a3aa97b4ca73ac92"
+  },
+  "offline": "outputs/codex_tasks/checkpoint_dedup/v006/run_20261124_03_terra_fast_remaining7/selected9/exports/terra_selected9_v2",
+  "html_sha256": "1ca8fdec90eb11bf220202387b65f3c29ba11a7394c9fb5016c115f9a9ec6132",
+  "zip": "terra_selected9_v2_offline.zip",
+  "zip_sha256": "851cd0cc03fa7da593cadf2f2f9cb3ebba9ba9f98260c604d217f1086738ea40"
+}

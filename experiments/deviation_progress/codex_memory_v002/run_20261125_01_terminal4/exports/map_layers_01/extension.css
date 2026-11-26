@@ -1,0 +1,6 @@
+#nodeEliminationTop,#nodeDeduplicationTop,#eliminationControls,#dedupControls,#samplingControls{display:none!important}
+#mapLayers .samplingOption{display:inline-flex;align-items:center;gap:5px}
+#routeReviews{border-top:1px solid #d8dfe6;margin:14px 0;padding:0 0 8px}#routeReviews h3,#routeReviews h4{margin:.7em 0 .35em}
+.reviewPicks,.reviewGallery{display:flex;gap:5px;flex-wrap:wrap;margin:8px 0}.reviewPicks button{padding:5px 8px}.reviewPicks .alarm{color:#a72239;border-color:#c65364}.reviewPicks [aria-pressed=true]{background:#254e67;color:white}
+.reviewFields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px 16px}.reviewFields p{white-space:pre-line;line-height:1.55;margin:0 0 6px}.reviewGallery button{width:85px;padding:3px}.reviewGallery img{width:100%;aspect-ratio:4/3;object-fit:contain;display:block}.reviewGallery [aria-current=true]{outline:2px solid #c36f1f}#routeReviews pre{white-space:pre-wrap;overflow-wrap:anywhere;max-height:23em;overflow:auto}#routeReviews details{margin:6px 0}#routeReviews details button{margin:3px}#routeReviews summary{cursor:pointer}
+@media(max-width:700px){.reviewFields{grid-template-columns:1fr}}

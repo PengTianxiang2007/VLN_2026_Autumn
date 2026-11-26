@@ -1,0 +1,89 @@
+{
+  "status": "blocked_model_unavailable",
+  "started_at": "2026-11-23T22:21:41.338750+00:00",
+  "completed_at": "2026-11-23T22:22:24.115629+00:00",
+  "attempted_cases": 10,
+  "completed_cases": 0,
+  "attempted_model_calls": 10,
+  "completed_model_calls": 0,
+  "transport_failures": 10,
+  "model": "gpt-6.2-astra",
+  "observation_offsets": [
+    -2,
+    0,
+    2
+  ],
+  "independent_threads": 10,
+  "cases": [
+    {
+      "case_number": 1,
+      "episode_id": "kujiale_0036_0_0",
+      "thread_id": "01a20a80-7733-7d92-9697-8c9e3cf40914",
+      "attached_images": 5,
+      "error": "The 'gpt-6.2-astra' model is not supported when using Codex with a ChatGPT account."
+    },
+    {
+      "case_number": 2,
+      "episode_id": "kujiale_0036_3_2",
+      "thread_id": "01a20a80-7807-7ff0-9aaa-663cb9372f4a",
+      "attached_images": 5,
+      "error": "The 'gpt-6.2-astra' model is not supported when using Codex with a ChatGPT account."
+    },
+    {
+      "case_number": 3,
+      "episode_id": "kujiale_0036_52_4",
+      "thread_id": "01a20a80-7777-70e3-b769-55ad3a967fdc",
+      "attached_images": 5,
+      "error": "The 'gpt-6.2-astra' model is not supported when using Codex with a ChatGPT account."
+    },
+    {
+      "case_number": 4,
+      "episode_id": "kujiale_0113_18_1",
+      "thread_id": "01a20a80-77e9-7302-a4ff-76039f8f7c8d",
+      "attached_images": 6,
+      "error": "The 'gpt-6.2-astra' model is not supported when using Codex with a ChatGPT account."
+    },
+    {
+      "case_number": 5,
+      "episode_id": "kujiale_0113_1_4",
+      "thread_id": "01a20a80-7256-79d3-8804-7f18b3cf62f8",
+      "attached_images": 5,
+      "error": "The 'gpt-6.2-astra' model is not supported when using Codex with a ChatGPT account."
+    },
+    {
+      "case_number": 6,
+      "episode_id": "kujiale_0123_fix_13_3",
+      "thread_id": "01a20a80-777b-7142-903e-7e294a0c29bb",
+      "attached_images": 5,
+      "error": "The 'gpt-6.2-astra' model is not supported when using Codex with a ChatGPT account."
+    },
+    {
+      "case_number": 7,
+      "episode_id": "kujiale_0123_fix_19_3",
+      "thread_id": "01a20a80-77b7-72b1-bd5b-fbeea4fdf4cb",
+      "attached_images": 6,
+      "error": "The 'gpt-6.2-astra' model is not supported when using Codex with a ChatGPT account."
+    },
+    {
+      "case_number": 8,
+      "episode_id": "kujiale_0123_fix_43_3",
+      "thread_id": "01a20a80-702e-70c1-b935-44943781b250",
+      "attached_images": 5,
+      "error": "The 'gpt-6.2-astra' model is not supported when using Codex with a ChatGPT account."
+    },
+    {
+      "case_number": 9,
+      "episode_id": "kujiale_0128_fix_12_4",
+      "thread_id": "01a20a80-77a1-7911-bc90-637cfc47b5b3",
+      "attached_images": 5,
+      "error": "The 'gpt-6.2-astra' model is not supported when using Codex with a ChatGPT account."
+    },
+    {
+      "case_number": 10,
+      "episode_id": "kujiale_0128_fix_18_1",
+      "thread_id": "01a20a80-7787-7002-b9b3-e97937b59248",
+      "attached_images": 5,
+      "error": "The 'gpt-6.2-astra' model is not supported when using Codex with a ChatGPT account."
+    }
+  ]
+}

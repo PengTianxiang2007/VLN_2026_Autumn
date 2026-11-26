@@ -1,0 +1,26 @@
+[
+  {
+    "case_number": 17,
+    "status": "delegated",
+    "target": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/codex_tasks/checkpoint_dedup/v003/run_20261124_06_parallel4/cases/C17_epkujiale_0165_40_1",
+    "reason": "User requested immediate parallel execution in a separate four-worker run."
+  },
+  {
+    "case_number": 19,
+    "status": "delegated",
+    "target": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/codex_tasks/checkpoint_dedup/v003/run_20261124_06_parallel4/cases/C19_epkujiale_0165_49_4",
+    "reason": "User requested immediate parallel execution in a separate four-worker run."
+  },
+  {
+    "case_number": 32,
+    "status": "delegated",
+    "target": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/codex_tasks/checkpoint_dedup/v003/run_20261124_06_parallel4/cases/C32_epkujiale_0232_2_4",
+    "reason": "User requested immediate parallel execution in a separate four-worker run."
+  },
+  {
+    "case_number": 34,
+    "status": "delegated",
+    "target": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/codex_tasks/checkpoint_dedup/v003/run_20261124_06_parallel4/cases/C34_epkujiale_0232_72_1",
+    "reason": "User requested immediate parallel execution in a separate four-worker run."
+  }
+]

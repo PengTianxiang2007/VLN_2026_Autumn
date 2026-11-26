@@ -1,0 +1,460 @@
+{
+  "checked_at": "2026-11-23T23:31:19.224Z",
+  "cases": 53,
+  "model_filters": true,
+  "combined_union": true,
+  "raw_candidates": true,
+  "bilingual_model_text": true,
+  "original_json_preserved": true,
+  "synchronized_sliders": true,
+  "native_images_loaded": true,
+  "unavailable_deepseek_explicit": true,
+  "mobile_no_overflow": true,
+  "details": [
+    {
+      "case": 1,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "astra",
+        "qwen"
+      ]
+    },
+    {
+      "case": 2,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "astra",
+        "qwen"
+      ]
+    },
+    {
+      "case": 3,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "astra",
+        "qwen"
+      ]
+    },
+    {
+      "case": 4,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "astra",
+        "qwen",
+        "deepseek"
+      ]
+    },
+    {
+      "case": 5,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "astra",
+        "qwen"
+      ]
+    },
+    {
+      "case": 6,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "astra",
+        "qwen"
+      ]
+    },
+    {
+      "case": 7,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "astra",
+        "qwen"
+      ]
+    },
+    {
+      "case": 8,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "astra",
+        "qwen",
+        "deepseek"
+      ]
+    },
+    {
+      "case": 9,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "astra",
+        "qwen"
+      ]
+    },
+    {
+      "case": 10,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "astra",
+        "qwen"
+      ]
+    },
+    {
+      "case": 11,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 12,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen",
+        "deepseek"
+      ]
+    },
+    {
+      "case": 13,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 14,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 15,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 16,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 17,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 18,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 19,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 20,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 21,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 22,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 23,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 24,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 25,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 26,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 27,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 28,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 29,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 30,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 31,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 32,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 33,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 34,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen",
+        "deepseek"
+      ]
+    },
+    {
+      "case": 35,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 36,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 37,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 38,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 39,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 40,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen",
+        "deepseek"
+      ]
+    },
+    {
+      "case": 41,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen",
+        "deepseek"
+      ]
+    },
+    {
+      "case": 42,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 43,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 44,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen",
+        "deepseek"
+      ]
+    },
+    {
+      "case": 45,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 46,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 47,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 48,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen",
+        "deepseek"
+      ]
+    },
+    {
+      "case": 49,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen",
+        "deepseek"
+      ]
+    },
+    {
+      "case": 50,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 51,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen",
+        "deepseek"
+      ]
+    },
+    {
+      "case": 52,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 53,
+      "filter_combinations": 6,
+      "available_models": [
+        "astra3",
+        "qwen"
+      ]
+    }
+  ],
+  "errors": []
+}

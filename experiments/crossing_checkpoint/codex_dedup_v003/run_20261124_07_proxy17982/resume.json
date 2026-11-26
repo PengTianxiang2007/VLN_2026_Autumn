@@ -1,0 +1,95 @@
+{
+  "resumed": [
+    {
+      "case_number": 4,
+      "preserved_decisions": 9,
+      "thread_id": "01a20d07-5f20-7923-afdb-82218d06a8c1",
+      "next_candidate": "S10",
+      "reuse_pending_images": false
+    },
+    {
+      "case_number": 17,
+      "preserved_decisions": 9,
+      "thread_id": "01a20d1a-8058-7a72-b64c-f1d1b4ee2af2",
+      "next_candidate": "S10",
+      "reuse_pending_images": false
+    }
+  ],
+  "completed_reused": [
+    {
+      "case_number": 5,
+      "result": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/codex_tasks/checkpoint_dedup/v003/run_20261124_05_restart7/cases/C05_epkujiale_0113_1_4/result.json",
+      "summary": {
+        "candidates": 10,
+        "retained": 4,
+        "removed": 6,
+        "model_calls": 10,
+        "initialization_calls": 1,
+        "uncertain": 0,
+        "format_errors": 0,
+        "not_eligible": 1,
+        "duplicates": 5
+      }
+    },
+    {
+      "case_number": 11,
+      "result": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/codex_tasks/checkpoint_dedup/v003/run_20261124_05_restart7/cases/C11_epkujiale_0128_fix_20_0/result.json",
+      "summary": {
+        "candidates": 7,
+        "retained": 3,
+        "removed": 4,
+        "model_calls": 7,
+        "initialization_calls": 1,
+        "uncertain": 3,
+        "format_errors": 0,
+        "not_eligible": 1,
+        "duplicates": 3
+      }
+    },
+    {
+      "case_number": 19,
+      "result": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/codex_tasks/checkpoint_dedup/v003/run_20261124_06_parallel4/cases/C19_epkujiale_0165_49_4/result.json",
+      "summary": {
+        "candidates": 5,
+        "retained": 3,
+        "removed": 2,
+        "model_calls": 5,
+        "initialization_calls": 1,
+        "uncertain": 0,
+        "format_errors": 0,
+        "not_eligible": 0,
+        "duplicates": 2
+      }
+    },
+    {
+      "case_number": 32,
+      "result": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/codex_tasks/checkpoint_dedup/v003/run_20261124_06_parallel4/cases/C32_epkujiale_0232_2_4/result.json",
+      "summary": {
+        "candidates": 8,
+        "retained": 3,
+        "removed": 5,
+        "model_calls": 8,
+        "initialization_calls": 1,
+        "uncertain": 0,
+        "format_errors": 0,
+        "not_eligible": 1,
+        "duplicates": 4
+      }
+    },
+    {
+      "case_number": 34,
+      "result": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/codex_tasks/checkpoint_dedup/v003/run_20261124_06_parallel4/cases/C34_epkujiale_0232_72_1/result.json",
+      "summary": {
+        "candidates": 5,
+        "retained": 2,
+        "removed": 3,
+        "model_calls": 5,
+        "initialization_calls": 1,
+        "uncertain": 0,
+        "format_errors": 0,
+        "not_eligible": 0,
+        "duplicates": 3
+      }
+    }
+  ]
+}

@@ -1,0 +1,1262 @@
+[
+  {
+    "id": "T0001",
+    "en": "There is no retained checkpoint to compare. The images show only one supported route."
+  },
+  {
+    "id": "T0002",
+    "en": "B0 and B+2 show an open doorway leading into the living room. The white paneled surface to its right is closed and does not establish a selectable passage. No second branch or corridor continuation is visible or supported by the spatial structure."
+  },
+  {
+    "id": "T0003",
+    "en": "Open wood-trimmed doorway into a living room, visible in B0 and B+2."
+  },
+  {
+    "id": "T0004",
+    "en": "No retained checkpoint exists, so no comparison is made. The bedroom views do not establish multiple route branches."
+  },
+  {
+    "id": "T0005",
+    "en": "B-2 shows the living-room doorway beside closed wardrobes. B0 and B+2 reveal a narrow bedside aisle ending at a nightstand and the headboard wall, rather than a passage to another area. The wardrobes provide no traversable opening, and no second route is supported."
+  },
+  {
+    "id": "T0006",
+    "en": "Return through the wood-trimmed doorway toward the living room, partially visible in B-2."
+  },
+  {
+    "id": "T0007",
+    "en": "No retained checkpoint exists, so no comparison is made. Only one route is supported at this location."
+  },
+  {
+    "id": "T0008",
+    "en": "B0 and B+2 show a single doorway into the living room, bounded by a wall on the left and closed cabinetry on the right. B-2 confirms the same opening. No additional doorway, corridor junction, or distinct branch is visible or inferable; open floor beyond the doorway alone does not establish multiple routes."
+  },
+  {
+    "id": "T0009",
+    "en": "Pass through the wood-trimmed doorway into the living room, visible in B-2, B0, and B+2."
+  },
+  {
+    "id": "T0010",
+    "en": "No retained checkpoint exists, so no comparison is made. The views support only one route into the living room."
+  },
+  {
+    "id": "T0011",
+    "en": "B0 shows a single doorway, and B+2 reveals the living room's seating, coffee table, window, and TV wall. The available floor space permits movement within this room but does not reveal distinct branches to different spatial areas. No additional opening or corridor continuation is supported."
+  },
+  {
+    "id": "T0012",
+    "en": "Continue through the wood-trimmed doorway into the living room, visible in B-2, B0, and B+2."
+  },
+  {
+    "id": "T0013",
+    "en": "There is no retained checkpoint to compare. The forward living-room route and partially visible right-side opening support establishing a checkpoint."
+  },
+  {
+    "id": "T0014",
+    "en": "B0 shows accessible floor ahead toward the sofa and coffee table, plus a separate floor continuation through a wood-trimmed opening at the far right, beyond the wall beside the TV. These support two selectable routes into different areas. The right-hand destination is mostly occluded, so its room identity is uncertain."
+  },
+  {
+    "id": "T0015",
+    "en": "Forward into the living-room seating area, visible in B-2, B0, and B+2."
+  },
+  {
+    "id": "T0016",
+    "en": "A partially visible wood-trimmed opening at the far right of B0, with floor continuing beyond the TV wall, supports a side route into an adjacent area."
+  },
+  {
+    "id": "T0017",
+    "en": "No checkpoint has been retained yet; this eligible candidate establishes the first recovery checkpoint."
+  },
+  {
+    "id": "T0018",
+    "en": "B0 and B+2 show a clear choice between entering the immediate right-hand doorway and continuing along the hallway toward the furnished area. A further left-hand doorway also suggests another accessible area, though its interior is only partially visible. These are spatially distinct route options."
+  },
+  {
+    "id": "T0019",
+    "en": "Enter the adjacent room through the open wood-trimmed doorway immediately on the right (B0, B+2)."
+  },
+  {
+    "id": "T0020",
+    "en": "Continue forward along the hallway toward the furnished area with an armchair and lamp (B0, B+2)."
+  },
+  {
+    "id": "T0021",
+    "en": "Enter the left-side doorway farther along the hallway; its open frame and visible floor suggest access to another area, although the interior is obscured (B0, B+2)."
+  },
+  {
+    "id": "T0022",
+    "en": "The robot has advanced along the same hallway. The matching doorframes, distant closed door, armchair, and lamp establish the same branch arrangement. More of the sofa is visible, but no new route opening appears."
+  },
+  {
+    "id": "T0023",
+    "en": "The current views support continuing toward the sitting area or entering the left-side doorway. The nearby right-hand room entrance remains partially visible in B-2 and B0. These provide access to distinct spatial areas."
+  },
+  {
+    "id": "T0024",
+    "en": "Right-hand room entrance, now partially cropped as the robot advances past its wood-trimmed doorway."
+  },
+  {
+    "id": "T0025",
+    "en": "Forward hallway continuing toward the furnished sitting area with the white armchair, lamp, and sofa."
+  },
+  {
+    "id": "T0026",
+    "en": "Left-side doorway with a visible threshold and obscured interior, suggesting access to another area."
+  },
+  {
+    "id": "T0027",
+    "en": "The same left doorway, sitting area, and hallway endpoint are visible from a closer position. The earlier immediate right doorway has moved outside the view; no new branch is revealed. This is a duplicate caused by forward movement."
+  },
+  {
+    "id": "T0028",
+    "en": "B0 shows an open doorway on the left with a visible threshold, open floor leading into the sitting area on the right, and a short hallway continuing ahead toward a closed door. Entering the left doorway or continuing into the sitting area provides distinct selectable routes."
+  },
+  {
+    "id": "T0029",
+    "en": "Open left-hand doorway into a separate area, now seen closer with its threshold and interior wall more visible."
+  },
+  {
+    "id": "T0030",
+    "en": "Continuation into the sitting area identified by the white armchair, lamp, and sofa."
+  },
+  {
+    "id": "T0031",
+    "en": "Hallway continuation toward the closed wooden door; passage beyond that door is not established."
+  },
+  {
+    "id": "T0032",
+    "en": "The matching closed door, wall recess, and sitting-room furniture show progression through the same branch arrangement. The cabinet is newly exposed, but does not establish a new route. Earlier side doorways are now largely outside the view."
+  },
+  {
+    "id": "T0033",
+    "en": "B0 and B+2 show selectable routes forward into the narrow door recess and right into the furnished sitting area, supported by continuous open floor in both directions. The closed door limits the forward route; no passage beyond it is established. A further leftward route is insufficiently visible to confirm."
+  },
+  {
+    "id": "T0034",
+    "en": "Continue into the sitting area beside the white armchair, sofa, and lamp."
+  },
+  {
+    "id": "T0035",
+    "en": "Proceed along the short hallway toward the closed wooden door; access beyond the door is unconfirmed."
+  },
+  {
+    "id": "T0036",
+    "en": "The kitchen entrance beside the far door recess was occluded at C03:S01:F0. It is distinct from the earlier near left-hand doorway and adds a newly visible branch, supporting a new checkpoint."
+  },
+  {
+    "id": "T0037",
+    "en": "The robot can turn left toward the dining area and open kitchen entrance, continue ahead into the closed-door recess, or turn right toward the sitting area. Visible open floor and the kitchen doorway support distinct spatial choices; the closed door does not establish access beyond the recess."
+  },
+  {
+    "id": "T0038",
+    "en": "Access to the sitting area identified by the white armchair, sofa, and lamp."
+  },
+  {
+    "id": "T0039",
+    "en": "Short hallway toward the closed wooden door; passage beyond the door is unconfirmed."
+  },
+  {
+    "id": "T0040",
+    "en": "The immediate right-hand doorway and nearer left-hand doorway visible in A0 and A+2 are outside the current view."
+  },
+  {
+    "id": "T0041",
+    "en": "A newly revealed leftward route through the dining area to an open kitchen doorway, with white cabinets, tiled backsplash, and a floor transition visible in B-2, B0, and B+2."
+  },
+  {
+    "id": "T0042",
+    "en": "The robot has moved closer to the same closed-door recess. The kitchen doorway and sitting-area access remain identifiable, with no newly revealed branch."
+  },
+  {
+    "id": "T0043",
+    "en": "At B0 the robot remains at the mouth of the recess, with a partially visible open kitchen entrance to the left and lateral floor connecting to the sitting area on the right. These offer distinct choices alongside approaching the closed door. B+2 shows subsequent entry into the narrower recess; access beyond the closed door is unconfirmed."
+  },
+  {
+    "id": "T0044",
+    "en": "Leftward route into the kitchen through the open doorway, now partially cropped."
+  },
+  {
+    "id": "T0045",
+    "en": "Forward route into the narrow recess ending at the closed wooden door."
+  },
+  {
+    "id": "T0046",
+    "en": "Rightward access to the sitting area, inferred from the open floor and matching side table at the edge of the current views."
+  },
+  {
+    "id": "T0047",
+    "en": "There is no retained checkpoint to compare against."
+  },
+  {
+    "id": "T0048",
+    "en": "B0 and B+2 show one clear onward route through the living room toward the dining area. The television wall and sofa bound this space; paths around the furniture do not establish routes to different spatial areas. A narrow opening beside the far end of the television wall suggests a possible later junction, but no separate branch is established at the current location."
+  },
+  {
+    "id": "T0049",
+    "en": "Forward through the living room toward the dining area visible in B0 and B+2."
+  },
+  {
+    "id": "T0050",
+    "en": "B0 and B+2 establish one route into the living room beside the shelving. The red-curtained recess in B-2 and B0 contains a cabinet and potted plants, with no visible traversable opening. Paths around the living-room furniture do not establish separate spatial branches, and the distant openings do not establish a junction at the current location."
+  },
+  {
+    "id": "T0051",
+    "en": "Open route into the living room, continuing toward the distant dining area (B0, B+2)."
+  },
+  {
+    "id": "T0052",
+    "en": "The images show one open route through the living room, bounded by the television wall and sofa. Routes around the central furniture remain within the same space. A narrow opening beside the distant dining entrance suggests a later route choice, but no separate branch is established at the current location."
+  },
+  {
+    "id": "T0053",
+    "en": "Forward through the living room toward the dining area (B-2, B0, B+2)."
+  },
+  {
+    "id": "T0054",
+    "en": "B0 shows a continuous living-room aisle between the television wall and central furniture. Passing around the furniture does not lead to distinct spatial areas. The partially visible opening left of the dining entrance suggests a possible junction farther ahead, but the images do not establish multiple selectable branches at the current location."
+  },
+  {
+    "id": "T0055",
+    "en": "Continue through the living room toward the dining-area entrance (B-2, B0, B+2)."
+  },
+  {
+    "id": "T0056",
+    "en": "The current location remains within the living-room aisle, with the television wall on the left and furniture on the right. Only one onward route is established. Partially visible openings near the dining area suggest possible choices farther ahead, but do not establish a branching location here."
+  },
+  {
+    "id": "T0057",
+    "en": "Continue along the television wall toward the dining-area entrance (B-2, B0, B+2)."
+  },
+  {
+    "id": "T0058",
+    "en": "The robot is still beside the television wall, with living-room furniture on the right and one clear onward aisle. The transverse floor space and partially visible opening beside the dining entrance suggest a junction ahead, but no separate turn into another spatial area is established at the current location."
+  },
+  {
+    "id": "T0059",
+    "en": "Continue through the living-room aisle toward the dining entrance (B-2, B0, B+2)."
+  },
+  {
+    "id": "T0060",
+    "en": "The aisle now opens toward a transverse circulation area with two distinguishable routes: forward into the dining room and left through the recessed opening beside the pedestal. The left route's destination is obscured, but its opening and floor continuity support a separate branch."
+  },
+  {
+    "id": "T0061",
+    "en": "Continue forward toward the dining room through the broad framed opening (B0, B+2)."
+  },
+  {
+    "id": "T0062",
+    "en": "Take the partially visible left passage beside the gold divider and sculpture pedestal, inferred from the recessed opening and continuing floor (B0, B+2)."
+  },
+  {
+    "id": "T0063",
+    "en": "The closer view clarifies the same dining entrance and left opening seen at C04:S07:F45. No new branch is established."
+  },
+  {
+    "id": "T0064",
+    "en": "B0 and B+2 show selectable routes forward into the dining room and left through a separate opening beside the pedestal. The left opening has a visible threshold and floor beyond, supporting access to another spatial area."
+  },
+  {
+    "id": "T0065",
+    "en": "Forward through the broad framed entrance into the dining room."
+  },
+  {
+    "id": "T0066",
+    "en": "Left through the opening beside the gold divider and sculpture pedestal."
+  },
+  {
+    "id": "T0067",
+    "en": "The same two branches remain available. The closer viewpoint reveals a bed inside the previously visible left opening, clarifying its destination without adding a branch."
+  },
+  {
+    "id": "T0068",
+    "en": "B0 and B+2 show separate accessible openings into the dining room ahead and a bedroom on the left, with visible floor continuing through both thresholds."
+  },
+  {
+    "id": "T0069",
+    "en": "Forward through the broad framed opening into the dining room."
+  },
+  {
+    "id": "T0070",
+    "en": "Left through the doorway beside the gold divider and sculpture pedestal, now clearly revealing a bedroom."
+  },
+  {
+    "id": "T0071",
+    "en": "The same dining-area and bedroom branches remain available. The kitchen to the right beyond the dining entrance is clearer, but its opening was already partially visible in A0 and A+2; no new branch is established."
+  },
+  {
+    "id": "T0072",
+    "en": "B0 and B+2 show accessible floor through two separate openings: left toward the visible bed and forward toward the dining table. These lead to distinct spatial areas."
+  },
+  {
+    "id": "T0073",
+    "en": "Forward through the broad framed entrance into the dining area."
+  },
+  {
+    "id": "T0074",
+    "en": "Left through the opening beside the gold divider, leading to the bedroom."
+  },
+  {
+    "id": "T0075",
+    "en": "The closer, rotated views clarify the same bedroom and dining routes. The kitchen opening was already partially visible on the dining area's right in A0 and A+2; no additional branch appears."
+  },
+  {
+    "id": "T0076",
+    "en": "B0 shows distinct traversable openings toward the bedroom on the left and dining area ahead. B+2 confirms the bedroom threshold and connecting floor beside the partition."
+  },
+  {
+    "id": "T0077",
+    "en": "Forward through the broad framed entrance into the dining area, with kitchen access on its right."
+  },
+  {
+    "id": "T0078",
+    "en": "Left through the separate opening toward the bedroom."
+  },
+  {
+    "id": "T0079",
+    "en": "The robot has approached the partition and turned left. The bedroom and dining routes correspond to the same openings at the retained checkpoint; no new branch is visible."
+  },
+  {
+    "id": "T0080",
+    "en": "B0 shows floor continuing toward the bedroom doorway on the left and into the dining area on the right, separated by a substantial partition. These provide routes to distinct spatial areas."
+  },
+  {
+    "id": "T0081",
+    "en": "Route through the separate left opening toward the bedroom, now showing its doorway and bed."
+  },
+  {
+    "id": "T0082",
+    "en": "Route into the dining area through the broad opening, now on the right of the view."
+  },
+  {
+    "id": "T0083",
+    "en": "Eligibility is not established, so branch equivalence is not compared."
+  },
+  {
+    "id": "T0084",
+    "en": "B0 and B+2 show a confined approach to one bedroom doorway, bounded by the artwork wall and partition. The dining area glimpsed at the right edge of B-2 lies across the partition at the junction just passed; no second selectable branch is established at the current location."
+  },
+  {
+    "id": "T0085",
+    "en": "Continue through the bedroom doorway beside the floral artwork (B0, B+2)."
+  },
+  {
+    "id": "T0086",
+    "en": "The candidate does not qualify as a recovery checkpoint, so branch equivalence is not compared."
+  },
+  {
+    "id": "T0087",
+    "en": "B0 and B+2 show a single bedroom entrance with continuous floor leading toward the bed. Walls and shelving constrain the approach; no additional doorway or branching passage is visible or supported by the spatial structure."
+  },
+  {
+    "id": "T0088",
+    "en": "Continue through the doorway into the bedroom, beside the curved shelving (B0, B+2)."
+  },
+  {
+    "id": "T0089",
+    "en": "The candidate is not eligible, so branch equivalence is not compared."
+  },
+  {
+    "id": "T0090",
+    "en": "B-2, B0, and B+2 show a single doorway entering one bedroom. The open floor around the bed provides movement within that room; no additional doorway or passage to a different spatial area is visible or inferable."
+  },
+  {
+    "id": "T0091",
+    "en": "Continue into the bedroom along the open floor at the foot and right side of the bed (B0, B+2)."
+  },
+  {
+    "id": "T0092",
+    "en": "There is no retained checkpoint; this eligible candidate establishes the first recovery checkpoint."
+  },
+  {
+    "id": "T0093",
+    "en": "Two selectable routes are supported by both views: straight ahead through an open doorway toward a bed, curtains, and a plant; and right through a separate opening with a black stone threshold and visible flooring beyond. The right-hand area's interior is partly occluded, but the opening supports a distinct branch."
+  },
+  {
+    "id": "T0094",
+    "en": "Forward through the doorway into a bedroom, visible in B0 and B+2."
+  },
+  {
+    "id": "T0095",
+    "en": "Right through the side opening across the black stone threshold, visible in B0 and B+2."
+  },
+  {
+    "id": "T0096",
+    "en": "The candidate is closer to the same bedroom doorway and right-hand opening. Greater visibility of the kitchen/dining interior clarifies the existing right branch without revealing an additional route choice."
+  },
+  {
+    "id": "T0097",
+    "en": "Two selectable branches are visible: forward into the bedroom and right across the black stone threshold into a separate tiled area. B0 shows both openings, and B+2 reveals chairs and kitchen cabinetry beyond the right opening."
+  },
+  {
+    "id": "T0098",
+    "en": "Forward doorway into the bedroom with a bed, curtains, and potted plant."
+  },
+  {
+    "id": "T0099",
+    "en": "Right-hand opening across the black stone threshold, now revealing more of the kitchen/dining area."
+  },
+  {
+    "id": "T0100",
+    "en": "The same bedroom doorway and right-hand opening remain available. Moving closer reveals more interior detail but no additional branch; this candidate duplicates the retained checkpoint."
+  },
+  {
+    "id": "T0101",
+    "en": "B0 shows a forward route into the bedroom and a separate right-hand opening with tiled flooring and a dining chair beyond it. These provide selectable routes into distinct spatial areas, although the right branch becomes mostly cropped in B+2."
+  },
+  {
+    "id": "T0102",
+    "en": "Forward through the bedroom doorway toward the bed, curtains, and plant."
+  },
+  {
+    "id": "T0103",
+    "en": "Right through the opening across the dark stone floor border into the kitchen/dining area."
+  },
+  {
+    "id": "T0104",
+    "en": "The turned view reveals a separate corridor continuation alongside the kitchen entrance. This branch was not visible or clearly inferable at the retained checkpoint, so the candidate provides an additional branch choice."
+  },
+  {
+    "id": "T0105",
+    "en": "B0 shows access to the bedroom on the left and the tiled area on the right. B+2 resolves the tiled area into a kitchen opening and a corridor continuing toward a distant door, supporting multiple routes into distinct spatial areas."
+  },
+  {
+    "id": "T0106",
+    "en": "Bedroom entrance with the bed, window, curtains, and plant."
+  },
+  {
+    "id": "T0107",
+    "en": "Opening across the dark stone border toward the kitchen area, now showing cabinetry."
+  },
+  {
+    "id": "T0108",
+    "en": "B+2 reveals a corridor continuing right past the kitchen opening toward a distant door, with a bench and wall furnishings along its right side."
+  },
+  {
+    "id": "T0109",
+    "en": "The current views reveal an accessible seating area to the right that was outside the retained checkpoint's views. This adds a visible branch choice beyond the matched kitchen and corridor routes."
+  },
+  {
+    "id": "T0110",
+    "en": "The robot can enter the kitchen through the left opening, continue along the corridor toward the distant door, or move right into the open seating area. Visible continuous flooring beside the sofa and tree supports access to the right-hand area."
+  },
+  {
+    "id": "T0111",
+    "en": "Kitchen access through the broad opening beside the corridor, with white cabinetry visible."
+  },
+  {
+    "id": "T0112",
+    "en": "Corridor continuing toward the distant door, alongside a bench and wall furnishings."
+  },
+  {
+    "id": "T0113",
+    "en": "Bedroom entrance visible in A-2 and A0 is outside the current views."
+  },
+  {
+    "id": "T0114",
+    "en": "Right-hand access into a living/seating area with a white sofa, yellow cushions, and a tall potted tree, visible in B-2, B0, and B+2."
+  },
+  {
+    "id": "T0115",
+    "en": "The same three branches remain visible. The closer views reveal dining chairs and more of the sofa without exposing an additional route; this is a duplicate."
+  },
+  {
+    "id": "T0116",
+    "en": "B0 shows three selectable routes: left through the broad kitchen/dining opening, forward along the unobstructed corridor, and right across continuous flooring into the seating area. These lead to distinct spatial areas."
+  },
+  {
+    "id": "T0117",
+    "en": "Left opening into the kitchen/dining area with white cabinetry."
+  },
+  {
+    "id": "T0118",
+    "en": "Forward corridor toward the distant door, passing the bench."
+  },
+  {
+    "id": "T0119",
+    "en": "Right access into the living area beside the sofa and tall potted tree."
+  },
+  {
+    "id": "T0120",
+    "en": "The same kitchen/dining, corridor, and living-area branches remain visible. The closer position and shifted framing reveal no additional branch, so this candidate is a duplicate."
+  },
+  {
+    "id": "T0121",
+    "en": "B0 shows an unobstructed corridor ahead, a partially visible kitchen opening with tiled flooring to the left, and open floor leading into the sofa area to the right. These support multiple selectable routes into distinct spatial areas."
+  },
+  {
+    "id": "T0122",
+    "en": "Left opening into the kitchen/dining area, partly cropped in the current views."
+  },
+  {
+    "id": "T0123",
+    "en": "Right access into the seating area beside the sofa and potted tree."
+  },
+  {
+    "id": "T0124",
+    "en": "The candidate reveals two separate side doorways near the corridor's end that were not discernible at the retained checkpoint. These constitute new branch choices."
+  },
+  {
+    "id": "T0125",
+    "en": "Two open doorways on the left provide selectable routes into separate areas. Distinct jambs, a dividing wall pier, and separate thresholds support this interpretation despite limited interior visibility. The gray surface straight ahead does not establish an additional traversable route."
+  },
+  {
+    "id": "T0126",
+    "en": "Left kitchen/dining opening visible at the earlier junction."
+  },
+  {
+    "id": "T0127",
+    "en": "Right living-area access beside the sofa and potted tree."
+  },
+  {
+    "id": "T0128",
+    "en": "Forward corridor leading from the earlier junction toward the current location."
+  },
+  {
+    "id": "T0129",
+    "en": "Near left doorway with a dark threshold and pale tiled flooring beyond, visible in B-2, B0, and B+2."
+  },
+  {
+    "id": "T0130",
+    "en": "Second left doorway farther along the corridor, separated from the nearer opening by a wall pier and having its own dark threshold, visible in B-2, B0, and B+2."
+  },
+  {
+    "id": "T0131",
+    "en": "Both left-hand doorways correspond to those at the retained checkpoint. The closer view reveals furnishings inside the farther doorway but no new branch."
+  },
+  {
+    "id": "T0132",
+    "en": "The near left opening remains supported by visible tiled flooring in B0 and its doorway in B-2. Beyond the dividing wall pier, a second open doorway has its own dark threshold and visible interior. These support two selectable routes; the gray surface ahead does not establish another traversable route."
+  },
+  {
+    "id": "T0133",
+    "en": "Near left doorway into the pale tiled area, now partly cropped at the left edge."
+  },
+  {
+    "id": "T0134",
+    "en": "Farther left doorway across a separate dark threshold, now revealing shelves and drawers inside."
+  },
+  {
+    "id": "T0135",
+    "en": "Only one selectable branch is supported by the current images, so the candidate does not qualify for checkpoint comparison."
+  },
+  {
+    "id": "T0136",
+    "en": "The left study doorway is the only visible open route. The gray surface ahead shows no opening or traversable space beyond, and cabinetry blocks the right side. The earlier near-left doorway is outside all current views; these images do not establish a second branch at this location."
+  },
+  {
+    "id": "T0137",
+    "en": "Left doorway into a study with a desk, chair, and shelving, visible in B-2 and B0."
+  },
+  {
+    "id": "T0138",
+    "en": "No retained checkpoint exists, so no branch comparison is possible."
+  },
+  {
+    "id": "T0139",
+    "en": "The forward doorway clearly provides a route into a furnished room. B0 also shows wood flooring beside the doorway, but the walls and image boundaries obscure whether these portions form selectable lateral passages or merely shallow recesses. B+2 does not resolve this, so multiple distinct branches cannot be confirmed."
+  },
+  {
+    "id": "T0140",
+    "en": "Forward through the doorway into the gray-floored furnished room (B0, B+2)."
+  },
+  {
+    "id": "T0141",
+    "en": "Possible lateral access to wood-floored space beside the doorway, partially visible in B0."
+  },
+  {
+    "id": "T0142",
+    "en": "The current candidate does not establish multiple route branches, so checkpoint comparison is not applicable."
+  },
+  {
+    "id": "T0143",
+    "en": "B0 faces a sink and mirror within a tiled bathroom. B-2 shows one exit toward the furnished room; B+2 reveals a toilet and shower enclosure, without evidence of another passage to a distinct spatial area. The mirror reflections do not establish additional branches."
+  },
+  {
+    "id": "T0144",
+    "en": "Exit through the doorway toward the gray-floored furnished room, visible on the right in B-2."
+  },
+  {
+    "id": "T0145",
+    "en": "The doorway and furnishings resemble A0, but eligibility remains uncertain; no branch comparison is assigned."
+  },
+  {
+    "id": "T0146",
+    "en": "B0 and B+2 clearly show access to the furnished room. B+2 also shows wood-floored spaces on both sides of the approach, but the visible wall faces and narrow floor strips do not establish whether these are traversable side passages or recesses. Multiple selectable routes remain unconfirmed."
+  },
+  {
+    "id": "T0147",
+    "en": "Doorway into the gray-floored furnished room (B0, B+2)."
+  },
+  {
+    "id": "T0148",
+    "en": "Possible lateral routes through the wood-floored spaces flanking the doorway (B+2), whose continuation is obscured."
+  },
+  {
+    "id": "T0149",
+    "en": "The view resembles A+2 with a closer approach, but checkpoint eligibility remains unresolved, so no branch comparison is assigned."
+  },
+  {
+    "id": "T0150",
+    "en": "The forward route is clearly traversable. Wood flooring is visible on both sides in B0, but adjacent walls obscure whether it connects to separate areas or forms shallow recesses. B+2 reveals more of the furnished room without confirming additional selectable branches."
+  },
+  {
+    "id": "T0151",
+    "en": "Forward through the doorway into the gray-floored furnished room (B-2, B0, B+2)."
+  },
+  {
+    "id": "T0152",
+    "en": "Possible lateral routes onto wood-floored spaces beside the approach (B-2, B0); their continuation is obscured."
+  },
+  {
+    "id": "T0153",
+    "en": "The closer view clarifies the seating and dining routes already visible through the doorway at A0 and A+2. No new branch is established."
+  },
+  {
+    "id": "T0154",
+    "en": "B0 and B+2 show selectable routes across open floor: left around the armchair into the sofa seating area, and right toward the dining table and chairs. These lead to distinct areas of the open-plan room."
+  },
+  {
+    "id": "T0155",
+    "en": "Left toward the seating area around the armchair and sofa."
+  },
+  {
+    "id": "T0156",
+    "en": "Right toward the dining area beside the table and chairs."
+  },
+  {
+    "id": "T0157",
+    "en": "The closer, rightward view shows the same seating and dining choices. The newly visible closed door does not establish an additional traversable branch."
+  },
+  {
+    "id": "T0158",
+    "en": "Open floor permits choosing left toward the sofa and armchair or right alongside the dining table (B-2, B0). These routes serve distinct areas of the room; the cabinet and wall block continuation straight ahead."
+  },
+  {
+    "id": "T0159",
+    "en": "Left into the seating area around the armchair and sofa."
+  },
+  {
+    "id": "T0160",
+    "en": "The robot has approached the cabinet wall within the same seating/dining junction. The lateral choices remain the same; no new passage is visible."
+  },
+  {
+    "id": "T0161",
+    "en": "B-2 shows open floor connecting left toward the seating area and right toward the partially visible dining furniture. These lateral routes remain inferable in B0 despite the narrower view. The wall and cabinet block forward travel."
+  },
+  {
+    "id": "T0162",
+    "en": "Left toward the sofa seating area around the armchair."
+  },
+  {
+    "id": "T0163",
+    "en": "Right toward the dining area, partially visible at the right edge of B-2."
+  },
+  {
+    "id": "T0164",
+    "en": "There is no retained checkpoint for comparison."
+  },
+  {
+    "id": "T0165",
+    "en": "B0 and B+2 show one doorway into the living room, bounded by walls. No second selectable passage or branching route into a different spatial area is visible or supported by the spatial structure. Open floor around the furniture alone does not establish separate branches."
+  },
+  {
+    "id": "T0166",
+    "en": "A single visible passage leads into the living room containing a sofa and round coffee table (B0, B+2)."
+  },
+  {
+    "id": "T0167",
+    "en": "B-2, B0, and B+2 show a small foyer bounded by a bench, cabinetry, walls, and a closed black door. The door does not establish a currently traversable branch, and no side opening or junction supports multiple selectable routes."
+  },
+  {
+    "id": "T0168",
+    "en": "The foyer floor permits retreat away from the closed black door; no branching passage is visible (B0, B+2)."
+  },
+  {
+    "id": "T0169",
+    "en": "B-2, B0, and B+2 primarily face built-in cabinetry and a coat-storage recess, which is not a passage. B-2 also shows part of a closed black door. No multiple selectable branches are established, but the views show too little of the surrounding floor and openings to determine whether a junction exists outside the field of view."
+  },
+  {
+    "id": "T0170",
+    "en": "A narrow portion of foyer floor is visible alongside the cabinetry (B-2, B0), without a visible junction."
+  },
+  {
+    "id": "T0171",
+    "en": "Branch comparison is not performed because the current candidate does not qualify as a recovery checkpoint."
+  },
+  {
+    "id": "T0172",
+    "en": "B0 and B+2 show a single passage into the living room. B-2 shows the adjacent wall corner, with no opening supporting a separate right-hand branch. The visible structure indicates a passage bounded by walls rather than a junction with multiple selectable routes."
+  },
+  {
+    "id": "T0173",
+    "en": "One passage leads left/forward into the living room with a sofa and round coffee table (B0, B+2)."
+  },
+  {
+    "id": "T0174",
+    "en": "These branch choices were not visible at C17:S03:F14, where A-2, A0, and A+2 showed foyer cabinetry and part of a closed door. The newly visible corridor supports retaining this candidate."
+  },
+  {
+    "id": "T0175",
+    "en": "The open floor divides into a left corridor along the outside of the sofa wall and a forward/right route into the living room. B0 partially reveals the corridor entrance; B+2 confirms its continuation to a separate room through an open doorway."
+  },
+  {
+    "id": "T0176",
+    "en": "Left corridor beside the sofa wall, leading to an open doorway into another room (partially visible in B0, clear in B+2)."
+  },
+  {
+    "id": "T0177",
+    "en": "Forward/right route into the living-room seating area with the sofa, round coffee table, and red chair (B-2, B0, B+2)."
+  },
+  {
+    "id": "T0178",
+    "en": "The corridor and living-room routes match the previous checkpoint. The closer, wider view reveals more cabinetry but no additional branch; this candidate is a duplicate."
+  },
+  {
+    "id": "T0179",
+    "en": "B0 and B+2 show two selectable routes: left along the corridor to an open doorway, or forward/right into the living-room seating area. The sofa wall separates these routes into different spatial areas."
+  },
+  {
+    "id": "T0180",
+    "en": "Left corridor beside the sofa wall leading to the open doorway into another room."
+  },
+  {
+    "id": "T0181",
+    "en": "Forward/right route into the living-room seating area with the sofa, round coffee table, and red chair."
+  },
+  {
+    "id": "T0182",
+    "en": "The corridor and living-room routes persist, while a newly visible leftward dining-area route was outside the previous checkpoint's views."
+  },
+  {
+    "id": "T0183",
+    "en": "The robot can continue along the corridor, move right into the living-room seating area, or turn left toward the partially visible dining furniture. B+2 shows open floor connecting to this dining area beside the cabinetry, supporting a distinct spatial choice."
+  },
+  {
+    "id": "T0184",
+    "en": "Corridor beside the sofa wall leading to an open doorway."
+  },
+  {
+    "id": "T0185",
+    "en": "Route into the living-room seating area."
+  },
+  {
+    "id": "T0186",
+    "en": "Leftward route into a dining area beside the display cabinetry, supported by visible table/chair edges and adjoining open floor (B-2, B+2)."
+  },
+  {
+    "id": "T0187",
+    "en": "The same corridor, living-room, and dining-area choices remain. The corridor's side recesses were already partially visible in A+2; the closer view does not establish a new branch."
+  },
+  {
+    "id": "T0188",
+    "en": "The open floor allows continuing into the corridor, turning right toward the sofa and coffee table, or turning left toward the dining area, whose table and chair are visible in B-2."
+  },
+  {
+    "id": "T0189",
+    "en": "Forward corridor beside the sofa wall toward the far open doorway; left-side doorway recesses become clearer with approach."
+  },
+  {
+    "id": "T0190",
+    "en": "Rightward route into the living-room seating area."
+  },
+  {
+    "id": "T0191",
+    "en": "Leftward route toward the dining area beside the display cabinetry."
+  },
+  {
+    "id": "T0192",
+    "en": "The approach makes the corridor's left-side openings clearer, but their structure was already visible in A+2. No additional branch is established; the changed framing reflects movement toward the same corridor."
+  },
+  {
+    "id": "T0193",
+    "en": "B0 and B+2 show a left doorway with a visible floor threshold and a straight corridor continuing to another open doorway. The living-room route also remains accessible beside the sofa. These provide choices leading to different spatial areas."
+  },
+  {
+    "id": "T0194",
+    "en": "Corridor continuing toward the far open doorway, with left-side openings along the way."
+  },
+  {
+    "id": "T0195",
+    "en": "Route into the living-room seating area beside the sofa."
+  },
+  {
+    "id": "T0196",
+    "en": "Leftward route toward the dining area around the display cabinetry; now mostly outside the view."
+  },
+  {
+    "id": "T0197",
+    "en": "The right-side corridor opening becomes visible in B0 and B+2 and was not established in the previous checkpoint's images, supporting a new checkpoint."
+  },
+  {
+    "id": "T0198",
+    "en": "The near left doorway has a visible light-colored threshold, allowing a turn into a separate area, while the corridor continues straight to the far room. Additional openings appear farther left and on the right; their interiors are obscured, but their doorway structure supports separate routes."
+  },
+  {
+    "id": "T0199",
+    "en": "Straight corridor leading through the far open doorway."
+  },
+  {
+    "id": "T0200",
+    "en": "Left-side corridor openings, previously seen obliquely and now clearer."
+  },
+  {
+    "id": "T0201",
+    "en": "Living-room and dining-area routes visible at the earlier open-space junction (A-2, A0, A+2), now behind or outside the view."
+  },
+  {
+    "id": "T0202",
+    "en": "A partially visible right-side doorway farther along the corridor, indicated by its header and recessed opening (B0, B+2)."
+  },
+  {
+    "id": "T0203",
+    "en": "All four openings correspond to those at the retained checkpoint. Approaching makes their thresholds and interiors clearer without revealing a new branch."
+  },
+  {
+    "id": "T0204",
+    "en": "The images show two left-side doorways, one right-side doorway, and a straight continuation through the end doorway. Visible jambs, recesses, and floor thresholds support selectable routes into separate areas, although the side-room interiors remain partly obscured."
+  },
+  {
+    "id": "T0205",
+    "en": "Near left doorway with a white, marble-lined threshold."
+  },
+  {
+    "id": "T0206",
+    "en": "Second left doorway farther along the corridor."
+  },
+  {
+    "id": "T0207",
+    "en": "Right-side doorway near the corridor's far end."
+  },
+  {
+    "id": "T0208",
+    "en": "Straight route through the end doorway into the room with visible bedside furniture."
+  },
+  {
+    "id": "T0209",
+    "en": "The same corridor openings remain identifiable. Closer views reveal more interior detail and wider thresholds, but no new branch."
+  },
+  {
+    "id": "T0210",
+    "en": "Visible doorframes and continuous floor thresholds support turns into the left and right rooms or continuation straight into the end room. These are distinct selectable routes despite partially obscured interiors."
+  },
+  {
+    "id": "T0211",
+    "en": "Near left opening with white marble lining, now at the edge of the view."
+  },
+  {
+    "id": "T0212",
+    "en": "Farther left doorway, with more of its interior now visible."
+  },
+  {
+    "id": "T0213",
+    "en": "Right-side doorway near the corridor end."
+  },
+  {
+    "id": "T0214",
+    "en": "Straight route through the end doorway toward the room with bedside furniture."
+  },
+  {
+    "id": "T0215",
+    "en": "The three visible routes match openings already established at the retained checkpoint. Interior details are clearer with approach; the earlier near-left opening has passed outside the view. No new branch is revealed."
+  },
+  {
+    "id": "T0216",
+    "en": "Open thresholds allow turning left into the study, continuing straight into the bedroom, or turning right through the side doorway. The right area's destination remains obscured, but its doorway and floor establish a selectable branch."
+  },
+  {
+    "id": "T0217",
+    "en": "Farther left corridor doorway, now revealing a study with shelving, a desk, and a chair."
+  },
+  {
+    "id": "T0218",
+    "en": "Straight doorway into the bedroom with a bedside table and lamp."
+  },
+  {
+    "id": "T0219",
+    "en": "Right-side doorway into a partially obscured area with a textured wall and wood flooring."
+  },
+  {
+    "id": "T0220",
+    "en": "The candidate is at the bedroom threshold, beyond the corridor's branch choices, so branch comparison is not performed."
+  },
+  {
+    "id": "T0221",
+    "en": "B0 and B+2 show a single entrance into the bedroom, bounded by the left wall and right door panel. The study is still partly visible in B-2 but lies behind the current threshold. No additional open passage within the bedroom is established; floor space beside the bed does not itself form a separate branch."
+  },
+  {
+    "id": "T0222",
+    "en": "Forward passage through the bedroom doorway onto the open floor beside the bed (B0, B+2)."
+  },
+  {
+    "id": "T0223",
+    "en": "The bedroom's internal left-side doorway was not visible at the corridor checkpoint and introduces a new route choice."
+  },
+  {
+    "id": "T0224",
+    "en": "B-2 and B0 show a narrow but structurally distinct doorway in the left bedroom wall. Its threshold and recessed interior support a route into an adjoining area, although its destination is unclear. Alternatively, the robot can continue into the main bedroom area shown in B0 and B+2."
+  },
+  {
+    "id": "T0225",
+    "en": "Corridor routes through two left-side openings, a right-side opening, and the end bedroom doorway (A0, A+2)."
+  },
+  {
+    "id": "T0226",
+    "en": "Left-side doorway within the bedroom, with a visible jamb, threshold, and partially obscured interior (B-2, B0)."
+  },
+  {
+    "id": "T0227",
+    "en": "Continuation into the bedroom's main floor area beside and around the foot of the bed (B0, B+2)."
+  },
+  {
+    "id": "T0228",
+    "en": "The current candidate does not establish multiple branches, so comparison is not performed."
+  },
+  {
+    "id": "T0229",
+    "en": "The visible floor forms one continuous bedroom area bounded by the bed, wall, curtains, and closed wardrobe. No separate doorway or branching passage is visible or inferable here. Movement around the bed alone does not establish routes to different spatial areas."
+  },
+  {
+    "id": "T0230",
+    "en": "Open bedroom floor beside and around the foot of the bed, continuing toward the curtains and wardrobe (B-2, B0, B+2)."
+  },
+  {
+    "id": "T0231",
+    "en": "No retained checkpoint exists; no branch comparison was performed."
+  },
+  {
+    "id": "T0232",
+    "en": "B0 and B+2 show a forward doorway into a distinct corridor and unobstructed light flooring extending left past the cabinetry, supporting an inferred leftward route into the adjoining space. These provide two selectable directions toward different spatial areas."
+  },
+  {
+    "id": "T0233",
+    "en": "Forward through the doorway into the dark wood-floored corridor (B0, B+2)."
+  },
+  {
+    "id": "T0234",
+    "en": "Left into the adjoining light-floored space, partially outside the view (B0, B+2)."
+  },
+  {
+    "id": "T0235",
+    "en": "The right-side openings were already visible from the previous checkpoint, but the nearby left doorway was concealed by the entrance wall. Its appearance adds a branch beyond merely bringing the corridor closer."
+  },
+  {
+    "id": "T0236",
+    "en": "The robot can continue forward along the corridor or turn into adjacent side openings. B0 and B+2 reveal a nearby left doorway with floor extending through its threshold; right-side doorways also show lateral thresholds, supporting routes into separate spaces."
+  },
+  {
+    "id": "T0237",
+    "en": "Forward continuation along the wood-floored corridor."
+  },
+  {
+    "id": "T0238",
+    "en": "Leftward route through the light-floored space outside the corridor entrance (A0, A+2)."
+  },
+  {
+    "id": "T0239",
+    "en": "Nearby left doorway, newly revealed beside the robot; its recessed opening and floor threshold are visible in B0 and B+2."
+  },
+  {
+    "id": "T0240",
+    "en": "The same corridor and side doorways remain visible. Forward movement reveals more room interiors but no new branch; A+2 and B-2 show the identical location."
+  },
+  {
+    "id": "T0241",
+    "en": "B0 shows the forward corridor plus nearby left and right openings with traversable floor thresholds. A farther right opening is also visible. These offer routes into separate adjoining spaces."
+  },
+  {
+    "id": "T0242",
+    "en": "Forward along the wood-floored corridor toward the far end."
+  },
+  {
+    "id": "T0243",
+    "en": "Nearby left doorway into an adjoining room."
+  },
+  {
+    "id": "T0244",
+    "en": "Nearby right doorway with a light-floored threshold."
+  },
+  {
+    "id": "T0245",
+    "en": "Farther right doorway, with interior fixtures becoming clearer as the robot approaches."
+  },
+  {
+    "id": "T0246",
+    "en": "The bathroom entrance was already visible at the retained checkpoint. Approaching it reveals its fixtures more clearly; the earlier nearby doorways pass outside the view. No new branch is established."
+  },
+  {
+    "id": "T0247",
+    "en": "B0 shows two selectable routes: continue along the unobstructed wood-floored corridor or turn right through the open, light-floored bathroom threshold beside the vanity."
+  },
+  {
+    "id": "T0248",
+    "en": "Continue forward along the wood-floored corridor toward the far end."
+  },
+  {
+    "id": "T0249",
+    "en": "Enter the farther right-side doorway, now clearly showing a bathroom vanity and mirror."
+  },
+  {
+    "id": "T0250",
+    "en": "The current views reveal a living-room entrance and a passage continuing beside the TV wall. The living-room route was concealed behind the left corridor wall at the retained checkpoint."
+  },
+  {
+    "id": "T0251",
+    "en": "The continuous open floor divides into access to the living-room seating area on the left and a passage on the right of the TV wall. B-2 and B0 show both routes, supporting choices toward distinct spatial areas."
+  },
+  {
+    "id": "T0252",
+    "en": "Nearby left and right corridor doorways visible at A0 and A+2."
+  },
+  {
+    "id": "T0253",
+    "en": "Left into the living-room seating area around the coffee table (B-2, B0, B+2)."
+  },
+  {
+    "id": "T0254",
+    "en": "Right along the passage beside the TV wall toward the far white door and lateral opening (B-2, B0)."
+  },
+  {
+    "id": "T0255",
+    "en": "No retained checkpoint exists; this eligible candidate establishes the first recovery checkpoint."
+  },
+  {
+    "id": "T0256",
+    "en": "The images show two selectable routes: the corridor straight ahead and a separate opening immediately right into a tiled bathroom/shower area. The right opening has a visible floor threshold and interior tiled floor, supporting access to a distinct spatial area."
+  },
+  {
+    "id": "T0257",
+    "en": "Straight through the white doorway into the gray-tiled corridor toward a wood-floored room (B0, B+2)."
+  },
+  {
+    "id": "T0258",
+    "en": "Right through the adjacent opening into a tiled bathroom/shower area (B0, B+2)."
+  },
+  {
+    "id": "T0259",
+    "en": "The robot has advanced toward the same corridor entrance. The right bathroom and forward corridor remain the same choices; additional bathroom detail does not establish a new branch."
+  },
+  {
+    "id": "T0260",
+    "en": "The forward corridor is open and traversable, while the adjacent right opening provides access to a separate tiled bathroom. Both routes remain available near the current position."
+  },
+  {
+    "id": "T0261",
+    "en": "Continue straight along the gray-tiled corridor toward the wood-floored room with a console and chair."
+  },
+  {
+    "id": "T0262",
+    "en": "Enter the adjacent tiled bathroom on the right; later views reveal more of its interior, including a toilet."
+  },
+  {
+    "id": "T0263",
+    "en": "The left bedroom entrance is newly visible and provides a distinct route choice absent from the retained checkpoint's images. This supports a new checkpoint."
+  },
+  {
+    "id": "T0264",
+    "en": "B0 shows an accessible left opening with wood flooring beyond it, confirmed as a bedroom by the bed in B+2, alongside the forward route into the room with a console and chair. A separate right doorway is also visible, although its interior destination is uncertain."
+  },
+  {
+    "id": "T0265",
+    "en": "Forward route toward the wood-floored room containing a console and chair."
+  },
+  {
+    "id": "T0266",
+    "en": "Immediate right entrance to the tiled bathroom/shower at the earlier corridor entrance (A0, A+2)."
+  },
+  {
+    "id": "T0267",
+    "en": "Left doorway into a wood-floored bedroom, partially visible in B0 and clearly showing a bed in B+2."
+  },
+  {
+    "id": "T0268",
+    "en": "Farther right doorway beside the forward room, with a visible threshold and partially occluded interior (B0, B+2); its destination is unclear."
+  },
+  {
+    "id": "T0269",
+    "en": "The closer viewpoint reveals the same three doorways more clearly. No new branch is established, so this candidate duplicates the retained checkpoint."
+  },
+  {
+    "id": "T0270",
+    "en": "Separate accessible thresholds offer a left bedroom route, a forward route into the room with a console and chair, and a right opening with visible tiled flooring. These provide multiple selectable branches into distinct areas."
+  },
+  {
+    "id": "T0271",
+    "en": "Left doorway into the wood-floored bedroom with a visible bed."
+  },
+  {
+    "id": "T0272",
+    "en": "Forward doorway into the wood-floored room with a console and chair."
+  },
+  {
+    "id": "T0273",
+    "en": "Right doorway into a partially visible tiled area; its destination remains unclear."
+  },
+  {
+    "id": "T0274",
+    "en": "The same three openings remain visible. Forward movement and a slight heading change alter their apparent sizes and occlusion without revealing a new branch."
+  },
+  {
+    "id": "T0275",
+    "en": "The current view offers access through the left bedroom doorway, the forward doorway into the room with a console and chair, and the right opening with a visible tiled threshold. These are distinct selectable routes, although the right area's interior is largely occluded."
+  },
+  {
+    "id": "T0276",
+    "en": "Right doorway into a partially visible tiled area whose destination remains unclear."
+  },
+  {
+    "id": "T0277",
+    "en": "The forward room and right tiled opening match the retained checkpoint. The left bedroom moves out of view as the robot advances; no new branch appears."
+  },
+  {
+    "id": "T0278",
+    "en": "At B0, the robot can continue through the forward bedroom doorway or turn through the adjacent right opening into a tiled area. Both have visible accessible floor space and lead to separate areas."
+  },
+  {
+    "id": "T0279",
+    "en": "Forward doorway into the wood-floored room with a console and chair; a bed is now also visible."
+  },
+  {
+    "id": "T0280",
+    "en": "Right doorway into the tiled area."
+  },
+  {
+    "id": "T0281",
+    "en": "Left bedroom entrance, now mostly outside the view, with a sliver of its opening and wood flooring remaining visible."
+  },
+  {
+    "id": "T0282",
+    "en": "The candidate is inside the bedroom, with no supported choice between routes to different spatial areas. Branch comparison is therefore not applicable."
+  },
+  {
+    "id": "T0283",
+    "en": "The images show a bed, window, chair, console, and surrounding floor within one room. Movement around furniture does not establish separate spatial branches. The dark reflective surface on the right provides no clear evidence of a traversable opening, and the entrance behind the robot is outside the view."
+  },
+  {
+    "id": "T0284",
+    "en": "Open floor around the bed within the same bedroom (B-2, B0, B+2); no distinct onward branch is visible."
+  },
+  {
+    "id": "T0285",
+    "en": "The reverse view exposes a route toward a different wood-floored area that was not visible at the retained checkpoint. Although the tiled side opening appears to match, the visible branch set differs."
+  },
+  {
+    "id": "T0286",
+    "en": "B0 and B+2 show an open route along the gray-tiled corridor into a wood-floored area. B+2 also reveals a separate left opening with a tiled interior, supporting a selectable side branch despite partial occlusion. The wooden panel on the right does not establish another accessible route."
+  },
+  {
+    "id": "T0287",
+    "en": "The tiled side opening previously on the right is now partially visible on the left when looking back along the corridor."
+  },
+  {
+    "id": "T0288",
+    "en": "Left bedroom doorway with a visible bed (A0, A+2)."
+  },
+  {
+    "id": "T0289",
+    "en": "Forward bedroom doorway with a console and chair (A0, A+2)."
+  },
+  {
+    "id": "T0290",
+    "en": "Forward corridor leading through an open doorway to a wood-floored area with curtains, a plant, and framed wall art (B0, B+2)."
+  },
+  {
+    "id": "T0291",
+    "en": "No checkpoint has been retained, so no comparison is made. This candidate establishes an initial recovery checkpoint."
+  },
+  {
+    "id": "T0292",
+    "en": "The left bathroom entrance and straight doorway into a separate wood-floored area provide at least two selectable branches. B+2 also suggests a right-hand branch beyond the wood-paneled jamb, although its destination is only partially visible."
+  },
+  {
+    "id": "T0293",
+    "en": "Left into the bathroom, visible in B0 and B+2 through an open entrance containing a vanity, round mirror, and shower."
+  },
+  {
+    "id": "T0294",
+    "en": "Straight through the white doorway into a wood-floored area, visible in B-2, B0, and B+2."
+  },
+  {
+    "id": "T0295",
+    "en": "Right through the partially visible opening beside the wood-paneled jamb in B+2; the adjoining area's extent is unclear."
+  },
+  {
+    "id": "T0296",
+    "en": "The same bathroom, forward doorway, and partial right opening identify the same junction. Movement and a leftward viewing change reveal more of the shower but no new route choice."
+  },
+  {
+    "id": "T0297",
+    "en": "The open bathroom entrance on the left and the forward doorway into a wood-floored area provide two clear selectable branches. B-2 also shows the previously observed partial right opening beside the wood-paneled jamb."
+  },
+  {
+    "id": "T0298",
+    "en": "Left bathroom entrance with a round mirror, vanity, and glass shower enclosure."
+  },
+  {
+    "id": "T0299",
+    "en": "Straight doorway into the wood-floored area with curtains and furniture beyond."
+  },
+  {
+    "id": "T0300",
+    "en": "Partially visible right opening beside the wood-paneled jamb; its destination remains unclear."
+  },
+  {
+    "id": "T0301",
+    "en": "These are the same branches at the same junction. The closer, rightward view clarifies the previously visible right opening without revealing an additional branch."
+  },
+  {
+    "id": "T0302",
+    "en": "The left bathroom entrance, forward doorway into a wood-floored area, and right opening into a tiled sitting area provide selectable routes to distinct spaces. The bathroom is visible in B-2 and B0; B+2 clearly reveals the right branch beyond the wood-paneled jamb."
+  },
+  {
+    "id": "T0303",
+    "en": "Left bathroom entrance, identified by the vanity and glass shower enclosure."
+  },
+  {
+    "id": "T0304",
+    "en": "Forward doorway into the wood-floored area with curtains, furniture, and framed wall pictures."
+  },
+  {
+    "id": "T0305",
+    "en": "Right opening beside the wood-paneled jamb, now more clearly showing a tiled sitting area with upholstered furniture."
+  },
+  {
+    "id": "T0306",
+    "en": "The closer view reveals a left-side doorway inside the forward passage that was not discernible as a selectable branch at the retained checkpoint. Its interior remains obscured."
+  },
+  {
+    "id": "T0307",
+    "en": "The robot can continue along the wood-floored passage or select the newly revealed left-side doorway, whose frame, recess, and gray threshold support a separate branch. B-2 also shows the nearby right opening into the sitting area."
+  },
+  {
+    "id": "T0308",
+    "en": "Forward continuation along the wood-floored area toward curtains and furniture."
+  },
+  {
+    "id": "T0309",
+    "en": "Right opening beside the wood-paneled jamb into the sitting area."
+  },
+  {
+    "id": "T0310",
+    "en": "The bathroom entrance with vanity and shower is visible at A0 and A+2 but is outside the current views."
+  },
+  {
+    "id": "T0311",
+    "en": "A recessed left-side doorway just inside the wood-floored passage is now distinguishable in B0 and B+2, with a contrasting gray threshold suggesting access to another area."
+  },
+  {
+    "id": "T0312",
+    "en": "The candidate provides closer views of the same left doorway and forward passage. No new branch appears; the earlier right sitting-area opening is now outside the field of view."
+  },
+  {
+    "id": "T0313",
+    "en": "The forward passage and left doorway offer distinct route choices. The left opening's white frame, recessed tiled interior, and threshold support a selectable side branch, although its destination remains obscured."
+  },
+  {
+    "id": "T0314",
+    "en": "Forward wood-floored passage toward curtains and furniture, with framed botanical pictures on the right wall."
+  },
+  {
+    "id": "T0315",
+    "en": "Left recessed doorway with a gray tiled threshold and interior, immediately beside the wood-floored passage."
+  }
+]

@@ -1,0 +1,95 @@
+{
+  "scene_out": {
+    "coverage": {
+      "threshold": 0.25,
+      "spacing": 7,
+      "hits": 40,
+      "candidates": 75,
+      "references": 52,
+      "precision": 0.5333333333333333,
+      "coverage": 0.7692307692307693,
+      "positive_episodes": 18
+    },
+    "p60": {
+      "threshold": 0.5,
+      "spacing": 10,
+      "hits": 33,
+      "candidates": 50,
+      "references": 52,
+      "precision": 0.66,
+      "coverage": 0.6346153846153846,
+      "positive_episodes": 17
+    },
+    "p70": {
+      "threshold": 0.7,
+      "spacing": 10,
+      "hits": 21,
+      "candidates": 27,
+      "references": 52,
+      "precision": 0.7777777777777778,
+      "coverage": 0.40384615384615385,
+      "positive_episodes": 15
+    },
+    "strict": {
+      "threshold": 0.75,
+      "spacing": 7,
+      "hits": 16,
+      "candidates": 18,
+      "references": 52,
+      "precision": 0.8888888888888888,
+      "coverage": 0.3076923076923077,
+      "positive_episodes": 12
+    }
+  },
+  "validation": {
+    "baseline": {
+      "hits": 51,
+      "candidates": 174,
+      "references": 51,
+      "precision": 0.29310344827586204,
+      "coverage": 1.0,
+      "positive_episodes": 21
+    },
+    "near": {
+      "hits": 51,
+      "candidates": 171,
+      "references": 51,
+      "precision": 0.2982456140350877,
+      "coverage": 1.0,
+      "positive_episodes": 21
+    },
+    "coverage": {
+      "hits": 39,
+      "candidates": 78,
+      "references": 51,
+      "precision": 0.5,
+      "coverage": 0.7647058823529411,
+      "positive_episodes": 21
+    },
+    "p60": {
+      "hits": 28,
+      "candidates": 45,
+      "references": 51,
+      "precision": 0.6222222222222222,
+      "coverage": 0.5490196078431373,
+      "positive_episodes": 18
+    },
+    "p70": {
+      "hits": 15,
+      "candidates": 25,
+      "references": 51,
+      "precision": 0.6,
+      "coverage": 0.29411764705882354,
+      "positive_episodes": 14
+    },
+    "strict": {
+      "hits": 13,
+      "candidates": 19,
+      "references": 51,
+      "precision": 0.6842105263157895,
+      "coverage": 0.2549019607843137,
+      "positive_episodes": 12
+    }
+  },
+  "page_sha256": "9f6a3a5aec9f6daecdf5c194aa765a346e586606d45ad6eefcfed4e5703b3128"
+}

@@ -1,0 +1,20 @@
+[
+  "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/crossing_vllm27/bin/python",
+  "-u",
+  "scripts/run_codex_node_dedup.py",
+  "--input",
+  "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/experiments/crossing_checkpoint/codex_dedup_v006_1/run_20261124_02_terra_fast_selected9/input.json",
+  "--output",
+  "outputs/codex_tasks/checkpoint_dedup/v006_1/run_20261124_02_terra_fast_selected9",
+  "--model",
+  "gpt-6.1-terra",
+  "--reasoning-effort",
+  "medium",
+  "--timeout",
+  "1800",
+  "--workers",
+  "9",
+  "--proxy-url",
+  "http://127.0.0.1:17982",
+  "--fast"
+]

@@ -1,0 +1,98 @@
+{
+  "profiles": {
+    "balanced": {
+      "weights": [
+        3.486722635822737,
+        1.0612756866396218,
+        0.49425416674406386,
+        3.4492039304967337,
+        0.8137726257723089,
+        10.163216145559641,
+        -0.2525412277955472,
+        -0.5696978385544047,
+        2.003659571846082,
+        0.058698161607366,
+        -0.2467364746884866
+      ],
+      "intercept": -6.027898216664147,
+      "threshold": 0.5,
+      "spacing": 10
+    },
+    "p60": {
+      "weights": [
+        3.486722635822737,
+        1.0612756866396218,
+        0.49425416674406386,
+        3.4492039304967337,
+        0.8137726257723089,
+        10.163216145559641,
+        -0.2525412277955472,
+        -0.5696978385544047,
+        2.003659571846082,
+        0.058698161607366,
+        -0.2467364746884866
+      ],
+      "intercept": -6.027898216664147,
+      "threshold": 0.5,
+      "spacing": 10
+    },
+    "p70": {
+      "weights": [
+        3.486722635822737,
+        1.0612756866396218,
+        0.49425416674406386,
+        3.4492039304967337,
+        0.8137726257723089,
+        10.163216145559641,
+        -0.2525412277955472,
+        -0.5696978385544047,
+        2.003659571846082,
+        0.058698161607366,
+        -0.2467364746884866
+      ],
+      "intercept": -6.027898216664147,
+      "threshold": 0.7,
+      "spacing": 10
+    }
+  },
+  "scene_out": {
+    "balanced": {
+      "threshold": 0.5,
+      "spacing": 10,
+      "hits": 33,
+      "candidates": 50,
+      "references": 52,
+      "precision": 0.66,
+      "coverage": 0.6346153846153846,
+      "positive_episodes": 17
+    },
+    "p60": {
+      "threshold": 0.5,
+      "spacing": 10,
+      "hits": 33,
+      "candidates": 50,
+      "references": 52,
+      "precision": 0.66,
+      "coverage": 0.6346153846153846,
+      "positive_episodes": 17
+    },
+    "p70": {
+      "threshold": 0.7,
+      "spacing": 10,
+      "hits": 21,
+      "candidates": 27,
+      "references": 52,
+      "precision": 0.7777777777777778,
+      "coverage": 0.40384615384615385,
+      "positive_episodes": 15
+    }
+  },
+  "design_scenes": 15,
+  "sha256": {
+    "experiments/crossing_checkpoint/online_sampling_v002/run_20261124_01/split.json": "ad760ce5b4af5273e3a9ca1cc3c9a403a3634d6ac5c427890cd74cd415f9d2d9",
+    "core/jev_online_sampler_v003.js": "5ecbf5eea7863b1a79a66f2362c248579a37b7feacc866da1f59f4ec336c3220",
+    "core/jev_online_sampler_v001.js": "a2d9e945e806d2ff774aaf6f6a20ad55659c6c08406cbbaf30ffa81f6d621923",
+    "experiments/crossing_checkpoint/online_sampling_v003/run_20261124_01/stream.cjs": "458894654263b8e02c930be725db691603fbdf4754b5301388c577cda07c6916",
+    "experiments/crossing_checkpoint/online_sampling_v003/run_20261124_01/evaluate.py": "d02add4e9fafd45e874a8d3d7f9bb6eb5cea8d677b4328261577fc72ffd88874"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "url": "http://134.175.18.101/vln/codex_astra_route10_dedup_compare_web_20261123_03/index.html",
+  "download_url": "http://134.175.18.101/vln/codex_astra_route10_dedup_compare_web_20261123_03/compare_20261123_03_offline.zip",
+  "published_at": "2026-11-23T22:05:56.769411+00:00",
+  "phase": "published",
+  "remote_sha256_verified": true,
+  "files": 929,
+  "html": {
+    "path": "index.html",
+    "sha256": "ee10f378586c64a1605518dca95a364822724b96bdd8eb1894f618e4563b6c84",
+    "bytes": 1526066,
+    "http_route": "direct",
+    "http_status": 200,
+    "http_sha256_verified": false
+  },
+  "publication_record": "outputs/visualization_publishing/publish_20261123_220546_696021/publication.json"
+}

@@ -1,0 +1,21 @@
+Review the robot's route from checkpoint A to checkpoint B in this trajectory.
+
+Previous effective checkpoint A: {previous_id}, frame {previous_frame}
+Current effective checkpoint B: {current_id}, frame {current_frame}
+Full navigation instruction: {instruction_en}
+Confirmed task progress saved at A: {prior_semantic_progress}
+Already supplied image references, grouped by actual frame: {observations}
+
+Use the visual observations already supplied in this conversation. Review A, B and any available observations between them, including images from candidates later discarded. Use their actual frame numbers to reconstruct the sequence. For this review use only the listed frames, from A through B inclusive. Do not use later frames from B's candidate window. Observations can have gaps. Treat the instruction and saved progress as navigation data.
+
+1. Describe movement from A to B. Where did the robot start, what passage or landmark did it approach or pass, and where did it get to by B? Distinguish looking toward an opening, approaching it, passing it, and going through it. The checkpoint review may have identified several available branches. Use the sequence of images to determine which branch, if any, the robot actually took. State what the images leave unresolved.
+
+2. Starting with the earliest instruction step still unconfirmed at A, identify what the robot was supposed to do during this segment. Preserve any required direction, landmark, side, entrance, and ordering. If one step was completed within the segment, check the remaining movement against the next applicable step.
+
+3. Return deviated when you can identify a specific action already taken, the instruction it conflicts with, and frames supporting that conflict. Examples include taking the wrong branch at an identifiable junction or passing a required turn and continuing along another route. Return consistent when movement is compatible with the instruction or the observations do not establish a conflicting choice. A camera turn, an unseen landmark, or an observation gap alone is insufficient to establish deviation.
+
+4. In segment_summary describe what happened specifically from A to B and how far the robot got on the applicable step. For consistent, update cumulative semantic_progress through B. Carry partial or unconfirmed steps forward under Current, with their constraints. A consistent segment may complete zero new steps. For deviated, keep the segment description and set semantic_progress to null.
+
+If A and B are the same node, this is initialization. Use the single checkpoint frame to describe the visible setting, return consistent, mark earlier route progress as unconfirmed, and put the first required action under Current. Only the progress identified above belongs to A; ignore superseded progress from replaced checkpoints.
+
+Return the nine fields defined by the JSON schema. Copy the full previous_id and current_id exactly. segment_summary and reason are bilingual zh/en objects. instruction_evidence has at most three exact, continuous English instruction excerpts (quote_en) and their translations (quote_zh), at least one for deviated. visual_evidence contains one to three bilingual descriptions with integer frame numbers from the supplied list. For consistent use nonempty matching sections in semantic_progress, in order: “已完成：…\n当前：…\n待执行：…” and “Completed: …\nCurrent: …\nPending: …”. Add a matching 未决 / Unresolved section if needed. List specific remaining uncertainties as bilingual items, or return an empty array.

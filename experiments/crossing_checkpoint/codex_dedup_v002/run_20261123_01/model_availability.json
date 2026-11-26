@@ -1,0 +1,31 @@
+{
+  "cli_binary": "/mnt/nas/gezuhao/PengTianxiang/codex-bin/codex",
+  "cli_version": "0.164.0",
+  "method": "Codex app-server model/list",
+  "visible_models": [
+    "gpt-6.1-terra",
+    "gpt-6.1-sol",
+    "gpt-6-astra",
+    "gpt-6-sol",
+    "gpt-6-luna",
+    "gpt-5.6-sol",
+    "gpt-5.6-terra",
+    "gpt-5.6-luna"
+  ],
+  "hidden_models": [
+    "gpt-reserve",
+    "codex-auto-review"
+  ],
+  "gpt62_minimal_call": "HTTP 400 model_not_found",
+  "cache_conflict": "The shared CODEX_HOME cache was also observed with client_version 0.167.0 and GPT-6.2 entries; it is not reliable evidence for the specified 0.164.0 executable.",
+  "diagnosis": "Client/model availability mismatch suspected; account-wide lack of access is not established.",
+  "source": "outputs/codex_tasks/model_availability/check_20261123_01/model_list.json",
+  "gpt6_minimal_call": {
+    "status": "ok",
+    "response": {
+      "ok": true
+    },
+    "elapsed_seconds": 36.054,
+    "source": "outputs/codex_tasks/model_availability/check_20261123_02_gpt6"
+  }
+}

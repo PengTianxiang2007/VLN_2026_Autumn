@@ -6,7 +6,10 @@ let sampler=new Sampler();
 readline.createInterface({input:process.stdin,crlfDelay:Infinity}).on('line',line=>{
   try {
     const q=JSON.parse(line);
-    if(q.reset) { sampler=new Sampler(q.config||{}); process.stdout.write('{"reset":true}\n'); }
+    if(q.reset) {
+      sampler=q.version==='v002'?new (require('../core/jev_online_sampler_v002.js'))(q.mode):new Sampler(q.config||{});
+      process.stdout.write('{"reset":true}\n');
+    }
     else process.stdout.write(JSON.stringify(sampler.push(q.value,q.frame))+'\n');
   } catch(error) { process.stdout.write(JSON.stringify({error:error.message})+'\n'); }
 });

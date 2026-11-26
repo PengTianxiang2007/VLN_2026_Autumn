@@ -70,8 +70,11 @@ class VlnPeEvaluator(Evaluator):
                                         config.dataset.dataset_settings['base_data_dir'])
         self.jev_live = None
         if config.eval_settings.get('jev_live_output'):
-            from core.jev_live_stream import JevLiveReview
-            self.jev_live = JevLiveReview(
+            if config.eval_settings['jev_live_output'].get('observer') == 'codex_shadow':
+                from core.codex_shadow_capture import ShadowCapture as Observer
+            else:
+                from core.jev_live_stream import JevLiveReview as Observer
+            self.jev_live = Observer(
                 config.eval_settings['jev_live_output'],
                 self.task_name,
                 config.dataset.dataset_settings['base_data_dir'],

@@ -1,0 +1,66 @@
+{
+  "checked_at": "2026-11-23T22:44:37.686Z",
+  "cases": 10,
+  "model_filters": true,
+  "combined_union": true,
+  "raw_candidates": true,
+  "bilingual_model_text": true,
+  "original_json_preserved": true,
+  "synchronized_sliders": true,
+  "native_images_loaded": true,
+  "unavailable_deepseek_explicit": true,
+  "mobile_no_overflow": true,
+  "details": [
+    {
+      "case": 1,
+      "filter_combinations": 6,
+      "deepseek_available": false
+    },
+    {
+      "case": 2,
+      "filter_combinations": 6,
+      "deepseek_available": false
+    },
+    {
+      "case": 3,
+      "filter_combinations": 6,
+      "deepseek_available": false
+    },
+    {
+      "case": 4,
+      "filter_combinations": 6,
+      "deepseek_available": true
+    },
+    {
+      "case": 5,
+      "filter_combinations": 6,
+      "deepseek_available": false
+    },
+    {
+      "case": 6,
+      "filter_combinations": 6,
+      "deepseek_available": false
+    },
+    {
+      "case": 7,
+      "filter_combinations": 6,
+      "deepseek_available": false
+    },
+    {
+      "case": 8,
+      "filter_combinations": 6,
+      "deepseek_available": true
+    },
+    {
+      "case": 9,
+      "filter_combinations": 6,
+      "deepseek_available": false
+    },
+    {
+      "case": 10,
+      "filter_combinations": 6,
+      "deepseek_available": false
+    }
+  ],
+  "errors": []
+}

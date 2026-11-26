@@ -1,0 +1,8 @@
+{
+  "offline": "outputs/codex_tasks/checkpoint_dedup/v006_1/run_20261124_02_terra_fast_selected9/exports/terra_fast_v006_1_selected9",
+  "html_sha256": "1d31857013d8ccc26c2bb3f0c3e60b8577ab3d706fb891d8319285aa1c73bdaa",
+  "zip": "terra_fast_v006_1_selected9_offline.zip",
+  "zip_sha256": "5a97eb73d551b46e879cbd59da3e92a120962b0d21ad7690b7c9b42597d2d0fc",
+  "results_sha256": "b59b380dcdffacd8e1457953744fc4f273d30ab0cc05d5727a72082bcf03be1c",
+  "template_sha256": "ed4a91e90c052cf6b766df4c3c027181e1df2597dfdda00e8e1e5e9876ca9040"
+}

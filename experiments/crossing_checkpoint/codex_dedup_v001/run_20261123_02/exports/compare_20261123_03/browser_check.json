@@ -1,0 +1,74 @@
+{
+  "checked_at": "2026-11-23T22:00:48.996Z",
+  "cases": 10,
+  "model_filters": true,
+  "combined_union": true,
+  "raw_candidates": true,
+  "bilingual_model_text": true,
+  "original_json_preserved": true,
+  "synchronized_sliders": true,
+  "native_images_loaded": true,
+  "unavailable_deepseek_explicit": true,
+  "mobile_no_overflow": true,
+  "details": [
+    {
+      "case": 1,
+      "filter_combinations": 5,
+      "deepseek_available": false
+    },
+    {
+      "case": 2,
+      "filter_combinations": 5,
+      "deepseek_available": false
+    },
+    {
+      "case": 3,
+      "filter_combinations": 5,
+      "deepseek_available": false
+    },
+    {
+      "case": 4,
+      "filter_combinations": 5,
+      "deepseek_available": true
+    },
+    {
+      "case": 5,
+      "filter_combinations": 5,
+      "deepseek_available": false
+    },
+    {
+      "case": 6,
+      "filter_combinations": 5,
+      "deepseek_available": false
+    },
+    {
+      "case": 7,
+      "filter_combinations": 5,
+      "deepseek_available": false
+    },
+    {
+      "case": 8,
+      "filter_combinations": 5,
+      "deepseek_available": true
+    },
+    {
+      "case": 9,
+      "filter_combinations": 5,
+      "deepseek_available": false
+    },
+    {
+      "case": 10,
+      "filter_combinations": 5,
+      "deepseek_available": false
+    }
+  ],
+  "errors": [],
+  "reused_from": "compare_20261123_02/browser_check.json",
+  "only_change": "Embedded font rebuilt to cover every displayed Chinese character",
+  "font_check": {
+    "font_source_sha256": "2420e8078af796b19a3f6ef13de527a1a91c1e7171eea115926c614ced1009b3",
+    "font_license_sha256": "aee4111b1e01dd3d36514ee7d1e5b144f45e72f4dba83045bb9ff6e47fa4e680",
+    "all_display_chinese_characters_covered": true
+  },
+  "html_sha256": "4efaf7b2b0b44785ee4446efa121620ea311e408bd1ac81f15ddede291265f44"
+}

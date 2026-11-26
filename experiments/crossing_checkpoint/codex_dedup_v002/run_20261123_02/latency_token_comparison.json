@@ -1,0 +1,57 @@
+{
+  "protocol": "Same 10 cases, 63 paired comparisons, gpt-6-astra/medium, 10 parallel workers; three versus five front-view observations per endpoint.",
+  "token_accounting": "Confirmed against native token_count total_token_usage and last_token_usage for C01 in both runs: turn.completed usage is cumulative within a case. Sum each case final usage once; per-call values are successive differences.",
+  "metrics": {
+    "three": {
+      "calls": 63,
+      "images": 370,
+      "wall_seconds": 538.649775,
+      "mean_latency": 41.25331746031746,
+      "median_latency": 39.803,
+      "p90_latency": 49.834,
+      "usage": {
+        "input_tokens": 1797833,
+        "cached_input_tokens": 1468928,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 16848,
+        "reasoning_output_tokens": 1489
+      },
+      "uncached_input": 328905
+    },
+    "five": {
+      "calls": 63,
+      "images": 614,
+      "wall_seconds": 607.596699,
+      "mean_latency": 47.55125396825397,
+      "median_latency": 44.272,
+      "p90_latency": 60.716,
+      "usage": {
+        "input_tokens": 2599294,
+        "cached_input_tokens": 2080512,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 19480,
+        "reasoning_output_tokens": 2532
+      },
+      "uncached_input": 518782
+    }
+  },
+  "five_vs_three_percent": {
+    "images": 65.94594594594594,
+    "wall_seconds": 12.799954107471766,
+    "mean_latency": 15.266497085948627,
+    "median_latency": 11.22779689973119,
+    "uncached_input": 57.73004362961949
+  },
+  "input_token_increase_percent": 44.57927961050887,
+  "output_token_increase_percent": 15.62203228869896,
+  "five_slower_paired_calls": 55,
+  "five_faster_paired_calls": 8,
+  "five_slower_cases": 10,
+  "limitations": [
+    "One run per condition at different times; no repeated/randomized timing experiment.",
+    "Latency includes full CLI call overhead; network, server load, cache state and response differences are not controlled.",
+    "Input tokens include prompts, history and cached inputs; image-only token counts are not exposed by these logs.",
+    "No new navigation scores: current and paired original SR/mean SPL unavailable, scored 0."
+  ],
+  "details": "outputs/codex_tasks/checkpoint_dedup/v002/run_20261123_02/latency_token_comparison.json"
+}

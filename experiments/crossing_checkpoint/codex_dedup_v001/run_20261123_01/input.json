@@ -1,0 +1,136 @@
+{
+  "upstream_policy": "existing_raw_sampled_nodes",
+  "image_root": "outputs/reproduction/streamvln_rxr/run_20261123_01",
+  "selection": "episode 837, first three raw candidates only",
+  "trajectory_seed": 2,
+  "source_files": {
+    "outputs/deviation_progress/rxr30_v006/run_20261123_01/dataset/837.json": "311887b52da329a835d4563a791d747cc0fc090243c7a3faaed74baabb77dcfc",
+    "outputs/deviation_progress/rxr30_v006/run_20261123_01/jev/candidates.json": "9ee01899ce8ed14ea18732cc545b253736c7452358f222cc3831ca9c0e4e6276"
+  },
+  "cases": [
+    {
+      "case_number": 1,
+      "case_index": 0,
+      "episode_id": "837",
+      "real_episode_id": "837",
+      "scene": "QUCTc6BB5sX",
+      "nodes": [
+        {
+          "id": "S01",
+          "index": 0,
+          "emittedAt": 5,
+          "ready_at_frame": 5,
+          "candidate_id": "C01:S01:F0",
+          "images": [
+            {
+              "frame": -2,
+              "label": "F-2",
+              "missing": true
+            },
+            {
+              "frame": -1,
+              "label": "F-1",
+              "missing": true
+            },
+            {
+              "frame": 0,
+              "label": "F0",
+              "path": "capture/QUCTc6BB5sX/837/attempt_6mxdqdj6/0000.png",
+              "image_id": "1d23a9247078942fb906203ae57fa42b49f2856e565816bb67b368213465958c"
+            },
+            {
+              "frame": 1,
+              "label": "F+1",
+              "path": "capture/QUCTc6BB5sX/837/attempt_6mxdqdj6/0001.png",
+              "image_id": "9ee0dc27ef379689e164e575277331faadf1d0ad900958d324309e9f8432a8ff"
+            },
+            {
+              "frame": 2,
+              "label": "F+2",
+              "path": "capture/QUCTc6BB5sX/837/attempt_6mxdqdj6/0002.png",
+              "image_id": "d70396051b590fc86b313e6fdac8d3f3d7f9447247b0b4fdda430cd9f3fbd053"
+            }
+          ]
+        },
+        {
+          "id": "S02",
+          "index": 5,
+          "emittedAt": 10,
+          "ready_at_frame": 10,
+          "candidate_id": "C01:S02:F5",
+          "images": [
+            {
+              "frame": 3,
+              "label": "F-2",
+              "path": "capture/QUCTc6BB5sX/837/attempt_6mxdqdj6/0003.png",
+              "image_id": "74c414dcd66325604f1a009d1a26c87e8eabee3572d2ddc4a6d0785b047c51ec"
+            },
+            {
+              "frame": 4,
+              "label": "F-1",
+              "path": "capture/QUCTc6BB5sX/837/attempt_6mxdqdj6/0004.png",
+              "image_id": "b97e9fdaaa16707f9d571af766be1a99c496db426b76cfba4ad2a914bf1199bd"
+            },
+            {
+              "frame": 5,
+              "label": "F0",
+              "path": "capture/QUCTc6BB5sX/837/attempt_6mxdqdj6/0005.png",
+              "image_id": "421e7b7ffc84c520021027807da620e6e4e32293347e111384533ead1a653e6a"
+            },
+            {
+              "frame": 6,
+              "label": "F+1",
+              "path": "capture/QUCTc6BB5sX/837/attempt_6mxdqdj6/0006.png",
+              "image_id": "a421754611c406c1d936c37cdcf8ffc3c03662a407c9185357a19917b8eeb767"
+            },
+            {
+              "frame": 7,
+              "label": "F+2",
+              "path": "capture/QUCTc6BB5sX/837/attempt_6mxdqdj6/0007.png",
+              "image_id": "c0cadd6be14dc5e22580ad82884c440c400aa669929e7dbc9617b188e5fc2c6f"
+            }
+          ]
+        },
+        {
+          "id": "S03",
+          "index": 10,
+          "emittedAt": 15,
+          "ready_at_frame": 15,
+          "candidate_id": "C01:S03:F10",
+          "images": [
+            {
+              "frame": 8,
+              "label": "F-2",
+              "path": "capture/QUCTc6BB5sX/837/attempt_6mxdqdj6/0008.png",
+              "image_id": "6c4531d85020f12f7887d38521ad6b62f7068676c35c3fc19b5d0f169b38d479"
+            },
+            {
+              "frame": 9,
+              "label": "F-1",
+              "path": "capture/QUCTc6BB5sX/837/attempt_6mxdqdj6/0009.png",
+              "image_id": "688b81b087fd96b86dc0ec32bd4273e1822b06add240cf3ad33f3dc9f0e10ef5"
+            },
+            {
+              "frame": 10,
+              "label": "F0",
+              "path": "capture/QUCTc6BB5sX/837/attempt_6mxdqdj6/0010.png",
+              "image_id": "e4a45f99c6524b12621ba8a3f7b10a4c9526181d5f846f48fbc9f16aaeeba106"
+            },
+            {
+              "frame": 11,
+              "label": "F+1",
+              "path": "capture/QUCTc6BB5sX/837/attempt_6mxdqdj6/0011.png",
+              "image_id": "261f671f42722224cd56cd49df432de5db7b785cb9be1de819ea14baba59f89a"
+            },
+            {
+              "frame": 12,
+              "label": "F+2",
+              "path": "capture/QUCTc6BB5sX/837/attempt_6mxdqdj6/0012.png",
+              "image_id": "ef1fe4a238b23bee6a635e73f59770114758810e0f64e46f07e49bed58715e68"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

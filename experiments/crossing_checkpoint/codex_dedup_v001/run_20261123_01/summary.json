@@ -1,0 +1,84 @@
+{
+  "status": "passed",
+  "git_commit": "e40d9a821ee72516261ee819284e36be7be2eff1",
+  "unit_tests": {
+    "passed": 7,
+    "failed": 0
+  },
+  "cli_version": "0.164.0",
+  "auth": "ChatGPT login in user-specified CODEX_HOME",
+  "thread_id": "01a20a4d-0a58-7570-b5d2-f5e38a22613b",
+  "native_session_files": [
+    "/mnt/nas/gezuhao/PengTianxiang/.codex/sessions/2026/11/23/rollout-2026-11-23T21-25-53-01a20a4d-0a58-7570-b5d2-f5e38a22613b.jsonl"
+  ],
+  "native_turn_contexts": [
+    {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    },
+    {
+      "model": "gpt-6-astra",
+      "effort": "medium"
+    }
+  ],
+  "turns": [
+    {
+      "name": "turn_0001_S01_S02",
+      "thread_id": "01a20a4d-0a58-7570-b5d2-f5e38a22613b",
+      "resumed_thread_id": null,
+      "relation": "different",
+      "status": "ok",
+      "returncode": 0,
+      "attachments": 8,
+      "elapsed_seconds": 58.757,
+      "usage": {
+        "input_tokens": 14803,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 380,
+        "reasoning_output_tokens": 96
+      },
+      "tool_items": [],
+      "cli_warnings": [
+        "Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."
+      ]
+    },
+    {
+      "name": "turn_0002_S02_S03",
+      "thread_id": "01a20a4d-0a58-7570-b5d2-f5e38a22613b",
+      "resumed_thread_id": "01a20a4d-0a58-7570-b5d2-f5e38a22613b",
+      "relation": "different",
+      "status": "ok",
+      "returncode": 0,
+      "attachments": 10,
+      "elapsed_seconds": 46.371,
+      "usage": {
+        "input_tokens": 35651,
+        "cached_input_tokens": 14720,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 685,
+        "reasoning_output_tokens": 96
+      },
+      "tool_items": [],
+      "cli_warnings": [
+        "Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."
+      ]
+    }
+  ],
+  "summary": {
+    "candidates": 3,
+    "retained": 3,
+    "removed": 0,
+    "model_calls": 2,
+    "uncertain": 0,
+    "format_errors": 0
+  },
+  "final_active_ids": [
+    "S01",
+    "S02",
+    "S03"
+  ],
+  "started_at": "2026-11-23T21:25:33.238337+00:00",
+  "completed_at": "2026-11-23T21:27:22.081683+00:00",
+  "limitation": "Interface smoke test on 3 raw candidates, not accuracy or navigation evaluation"
+}

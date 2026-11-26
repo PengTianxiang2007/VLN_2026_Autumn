@@ -1,0 +1,296 @@
+{
+  "seed": 2,
+  "attribution_sha256": "ebfbf18fc7730567e2a327ef7fe62c7cb76fe0855800c210485b0f0961ef64ac",
+  "overlap_with_prior42_by_episode_id": 18,
+  "overlap_with_prior53_by_episode_id": 25,
+  "cases": [
+    {
+      "episode_id": "kujiale_0036_0_0",
+      "wrong_frame": 43,
+      "frames": 66,
+      "cached": 66
+    },
+    {
+      "episode_id": "kujiale_0036_11_0",
+      "wrong_frame": 29,
+      "frames": 80,
+      "cached": 80
+    },
+    {
+      "episode_id": "kujiale_0036_37_1",
+      "wrong_frame": 110,
+      "frames": 170,
+      "cached": 0
+    },
+    {
+      "episode_id": "kujiale_0036_3_2",
+      "wrong_frame": 10,
+      "frames": 49,
+      "cached": 49
+    },
+    {
+      "episode_id": "kujiale_0036_43_0",
+      "wrong_frame": 10,
+      "frames": 99,
+      "cached": 99
+    },
+    {
+      "episode_id": "kujiale_0036_50_1",
+      "wrong_frame": 31,
+      "frames": 68,
+      "cached": 68
+    },
+    {
+      "episode_id": "kujiale_0036_52_4",
+      "wrong_frame": 17,
+      "frames": 99,
+      "cached": 99
+    },
+    {
+      "episode_id": "kujiale_0036_7_2",
+      "wrong_frame": 101,
+      "frames": 190,
+      "cached": 0
+    },
+    {
+      "episode_id": "kujiale_0113_18_1",
+      "wrong_frame": 78,
+      "frames": 96,
+      "cached": 96
+    },
+    {
+      "episode_id": "kujiale_0113_1_4",
+      "wrong_frame": 30,
+      "frames": 70,
+      "cached": 70
+    },
+    {
+      "episode_id": "kujiale_0113_37_2",
+      "wrong_frame": 65,
+      "frames": 92,
+      "cached": 0
+    },
+    {
+      "episode_id": "kujiale_0123_fix_13_3",
+      "wrong_frame": 101,
+      "frames": 110,
+      "cached": 0
+    },
+    {
+      "episode_id": "kujiale_0123_fix_17_3",
+      "wrong_frame": 99,
+      "frames": 175,
+      "cached": 175
+    },
+    {
+      "episode_id": "kujiale_0123_fix_19_3",
+      "wrong_frame": 103,
+      "frames": 130,
+      "cached": 130
+    },
+    {
+      "episode_id": "kujiale_0123_fix_26_0",
+      "wrong_frame": 45,
+      "frames": 100,
+      "cached": 0
+    },
+    {
+      "episode_id": "kujiale_0123_fix_30_2",
+      "wrong_frame": 18,
+      "frames": 44,
+      "cached": 44
+    },
+    {
+      "episode_id": "kujiale_0123_fix_43_3",
+      "wrong_frame": 67,
+      "frames": 94,
+      "cached": 94
+    },
+    {
+      "episode_id": "kujiale_0207_41_0",
+      "wrong_frame": 27,
+      "frames": 79,
+      "cached": 79
+    },
+    {
+      "episode_id": "kujiale_0207_60_4",
+      "wrong_frame": 13,
+      "frames": 72,
+      "cached": 72
+    },
+    {
+      "episode_id": "kujiale_0207_69_4",
+      "wrong_frame": 46,
+      "frames": 97,
+      "cached": 0
+    },
+    {
+      "episode_id": "kujiale_0208_21_4",
+      "wrong_frame": 11,
+      "frames": 40,
+      "cached": 40
+    },
+    {
+      "episode_id": "kujiale_0232_13_0",
+      "wrong_frame": 20,
+      "frames": 76,
+      "cached": 76
+    },
+    {
+      "episode_id": "kujiale_0232_23_2",
+      "wrong_frame": 75,
+      "frames": 100,
+      "cached": 100
+    },
+    {
+      "episode_id": "kujiale_0232_2_4",
+      "wrong_frame": 21,
+      "frames": 75,
+      "cached": 75
+    },
+    {
+      "episode_id": "kujiale_0232_33_1",
+      "wrong_frame": 83,
+      "frames": 103,
+      "cached": 0
+    },
+    {
+      "episode_id": "kujiale_0232_68_1",
+      "wrong_frame": 125,
+      "frames": 139,
+      "cached": 139
+    },
+    {
+      "episode_id": "kujiale_0232_72_1",
+      "wrong_frame": 20,
+      "frames": 57,
+      "cached": 57
+    },
+    {
+      "episode_id": "kujiale_0232_75_4",
+      "wrong_frame": 16,
+      "frames": 68,
+      "cached": 0
+    },
+    {
+      "episode_id": "kujiale_0232_9_3",
+      "wrong_frame": 70,
+      "frames": 91,
+      "cached": 0
+    },
+    {
+      "episode_id": "kujiale_0234_23_1",
+      "wrong_frame": 19,
+      "frames": 75,
+      "cached": 75
+    },
+    {
+      "episode_id": "kujiale_0234_27_4",
+      "wrong_frame": 59,
+      "frames": 96,
+      "cached": 0
+    },
+    {
+      "episode_id": "kujiale_0234_28_3",
+      "wrong_frame": 38,
+      "frames": 260,
+      "cached": 260
+    },
+    {
+      "episode_id": "kujiale_0234_31_4",
+      "wrong_frame": 68,
+      "frames": 127,
+      "cached": 127
+    },
+    {
+      "episode_id": "kujiale_0234_34_4",
+      "wrong_frame": 57,
+      "frames": 102,
+      "cached": 102
+    },
+    {
+      "episode_id": "kujiale_0234_55_1",
+      "wrong_frame": 39,
+      "frames": 66,
+      "cached": 66
+    },
+    {
+      "episode_id": "kujiale_0234_58_1",
+      "wrong_frame": 34,
+      "frames": 66,
+      "cached": 66
+    },
+    {
+      "episode_id": "kujiale_0234_63_3",
+      "wrong_frame": 89,
+      "frames": 130,
+      "cached": 130
+    },
+    {
+      "episode_id": "kujiale_0240_50_2",
+      "wrong_frame": 61,
+      "frames": 73,
+      "cached": 0
+    },
+    {
+      "episode_id": "kujiale_0240_7_0",
+      "wrong_frame": 43,
+      "frames": 63,
+      "cached": 63
+    },
+    {
+      "episode_id": "kujiale_0240_8_4",
+      "wrong_frame": 45,
+      "frames": 62,
+      "cached": 62
+    },
+    {
+      "episode_id": "kujiale_0257_41_2",
+      "wrong_frame": 30,
+      "frames": 108,
+      "cached": 0
+    },
+    {
+      "episode_id": "kujiale_0257_4_3",
+      "wrong_frame": 26,
+      "frames": 65,
+      "cached": 65
+    },
+    {
+      "episode_id": "kujiale_0257_53_3",
+      "wrong_frame": 40,
+      "frames": 70,
+      "cached": 0
+    },
+    {
+      "episode_id": "kujiale_0257_73_4",
+      "wrong_frame": 45,
+      "frames": 62,
+      "cached": 62
+    },
+    {
+      "episode_id": "kujiale_0257_82_4",
+      "wrong_frame": 41,
+      "frames": 121,
+      "cached": 121
+    },
+    {
+      "episode_id": "kujiale_0257_8_1",
+      "wrong_frame": 22,
+      "frames": 99,
+      "cached": 99
+    },
+    {
+      "episode_id": "kujiale_0259_55_0",
+      "wrong_frame": 35,
+      "frames": 66,
+      "cached": 0
+    },
+    {
+      "episode_id": "kujiale_0259_65_4",
+      "wrong_frame": 47,
+      "frames": 66,
+      "cached": 0
+    }
+  ]
+}

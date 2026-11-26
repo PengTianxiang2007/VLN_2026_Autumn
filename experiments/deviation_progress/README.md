@@ -1,5 +1,21 @@
 # 节点触发的偏航与语义进度联合评审
 
+2026-11-26 [Terra xhigh 43 例 · 7892](codex_memory_v002/run_20261126_02_terra_xhigh43_7892/README.md) 依用户指令停止剩余评审和自动重试，完成 39/43，取消 C02, C15, C31, C39。
+
+2026-11-26 [Terra xhigh 43 例离线评审](codex_memory_v002/run_20261126_01_terra_xhigh43/README.md) 已按用户要求停止，完成 0/43。
+
+[50 例原生仿真与 Codex 旁路](codex_memory_v002/run_20261125_10_live50/README.md) 仿真 50/50 已评分，依用户指令已停止剩余评审和重试。
+
+2026-11-25 [34 个未跑 case 六帧补图评审](codex_memory_v002/run_20261125_09_gap6_remaining34/README.md)已完成 34/34，31 例报警，1 例到终点未报警，2 例仅终止初始化。当前版与配对原版导航 SR、平均 SPL 均暂无，已评分 0 条。
+
+2026-11-25 [八例六帧间隔偏航重跑](codex_memory_v002/run_20261125_08_gap6_eight/README.md)已完成 8/8，7 例报警（4 例在终止段），C40 仅初始化，累计补图 30 张。JEV v002 active、原 v002 英文偏航规则、8 进程。当前版与配对原版导航 SR、平均 SPL 均暂无，已评分 0 条。
+
+2026-11-25 [C35 英文标志物提示词 v003](codex_memory_v003/run_20261125_01_c35_landmarks4/README.md)按两段各补四张完成，两段均未报警。当前版与配对原版导航 SR、平均 SPL 均暂无，已评分 0 条。
+
+2026-11-25 [Codex 同会话偏航 v002](codex_memory_v002/README.md)接入真实终止节点及 v002 active 候选。
+
+2026-11-25 [Codex 同会话偏航 v001](codex_memory_v001/README.md)，在回退点保留后用纯文本评审 A→B。
+
 2026-11-21 [v006 存档节点180°／360°多视角](v006/exports/node_multiview_20261121_01/README.md)已发布。五版本结果保留，376个保留节点及53个终止节点可查看同帧多视角，47个v006回退目标支持一键定位，附完整离线包。
 
 2026-11-21 [v6 与 v3/v5 五组同页对比](v006/exports/comparison_20261121_01/README.md)已更新原网址，默认显示 Qwen v005、DeepSeek v005、Qwen v006，最多三组选取，附 84.4 MB 精简离线包。

@@ -1,0 +1,144 @@
+{
+  "completed_at": "2026-11-23T21:47:38.718388+00:00",
+  "started_at": "2026-11-23T21:37:31.121689+00:00",
+  "summary": {
+    "candidates": 89,
+    "retained": 56,
+    "removed": 33,
+    "model_calls": 63,
+    "uncertain": 4,
+    "format_errors": 0
+  },
+  "cases": [
+    {
+      "case_number": 1,
+      "episode_id": "kujiale_0036_0_0",
+      "summary": {
+        "candidates": 5,
+        "retained": 3,
+        "removed": 2,
+        "model_calls": 3,
+        "uncertain": 1,
+        "format_errors": 0
+      },
+      "thread_id": "01a20a57-ff3e-7152-abac-d456e8f6336a"
+    },
+    {
+      "case_number": 2,
+      "episode_id": "kujiale_0036_3_2",
+      "summary": {
+        "candidates": 15,
+        "retained": 12,
+        "removed": 3,
+        "model_calls": 12,
+        "uncertain": 1,
+        "format_errors": 0
+      },
+      "thread_id": "01a20a57-febf-76c3-b2d7-685e7de53cac"
+    },
+    {
+      "case_number": 3,
+      "episode_id": "kujiale_0036_52_4",
+      "summary": {
+        "candidates": 6,
+        "retained": 3,
+        "removed": 3,
+        "model_calls": 5,
+        "uncertain": 1,
+        "format_errors": 0
+      },
+      "thread_id": "01a20a57-ff33-7220-96e5-3cff138105f2"
+    },
+    {
+      "case_number": 4,
+      "episode_id": "kujiale_0113_18_1",
+      "summary": {
+        "candidates": 15,
+        "retained": 4,
+        "removed": 11,
+        "model_calls": 13,
+        "uncertain": 0,
+        "format_errors": 0
+      },
+      "thread_id": "01a20a57-ff6d-7531-992a-ae58bfa0c719"
+    },
+    {
+      "case_number": 5,
+      "episode_id": "kujiale_0113_1_4",
+      "summary": {
+        "candidates": 10,
+        "retained": 6,
+        "removed": 4,
+        "model_calls": 8,
+        "uncertain": 0,
+        "format_errors": 0
+      },
+      "thread_id": "01a20a57-ff48-76b1-a071-33ad490a7aa5"
+    },
+    {
+      "case_number": 6,
+      "episode_id": "kujiale_0123_fix_13_3",
+      "summary": {
+        "candidates": 10,
+        "retained": 9,
+        "removed": 1,
+        "model_calls": 4,
+        "uncertain": 0,
+        "format_errors": 0
+      },
+      "thread_id": "01a20a57-ff59-7070-8a07-ad13f4495409"
+    },
+    {
+      "case_number": 7,
+      "episode_id": "kujiale_0123_fix_19_3",
+      "summary": {
+        "candidates": 4,
+        "retained": 4,
+        "removed": 0,
+        "model_calls": 2,
+        "uncertain": 0,
+        "format_errors": 0
+      },
+      "thread_id": "01a20a57-ff52-7602-a104-01719401fd89"
+    },
+    {
+      "case_number": 8,
+      "episode_id": "kujiale_0123_fix_43_3",
+      "summary": {
+        "candidates": 11,
+        "retained": 8,
+        "removed": 3,
+        "model_calls": 6,
+        "uncertain": 1,
+        "format_errors": 0
+      },
+      "thread_id": "01a20a57-ff93-7970-9c51-fda95eca6db7"
+    },
+    {
+      "case_number": 9,
+      "episode_id": "kujiale_0128_fix_12_4",
+      "summary": {
+        "candidates": 6,
+        "retained": 3,
+        "removed": 3,
+        "model_calls": 5,
+        "uncertain": 0,
+        "format_errors": 0
+      },
+      "thread_id": "01a20a57-ff8b-74e3-9909-42d28471561a"
+    },
+    {
+      "case_number": 10,
+      "episode_id": "kujiale_0128_fix_18_1",
+      "summary": {
+        "candidates": 7,
+        "retained": 4,
+        "removed": 3,
+        "model_calls": 5,
+        "uncertain": 0,
+        "format_errors": 0
+      },
+      "thread_id": "01a20a57-ff9b-7b43-817c-c3761d2b2c13"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+This turn provides images for candidate {candidate_id}. Compare it with recovery checkpoint {previous_checkpoint_id}, whose images were supplied earlier in this conversation. Make the following judgments in order.
+
+1. Does the current candidate represent a local route-choice opportunity?
+
+A recovery checkpoint is a location where the robot can choose between multiple branches leading to different spatial areas, either now or within the next few navigation steps.
+
+Count the branches available for this local decision, rather than every opening visible in the images. A branch may be partially visible or inferred from visible spatial structure, but visibility alone does not make it an available choice.
+
+A short approach to a nearby junction is allowed, provided that reaching that junction does not first require choosing and following one branch of another junction.
+
+If reaching a visible branch first requires choosing and following another branch, it is a downstream branch. Do not count it as an additional independent option at the current local decision. When the robot later reaches that downstream decision location, its branches may define a new recovery checkpoint.
+
+Identify the branches that can be selected now or within the next few steps. Explain the evidence supporting them. If a visible opening is excluded because it depends on an earlier branch choice, explain that dependency.
+
+If the current candidate does not provide multiple such branch choices, it should not become a recovery checkpoint.
+
+2. Does the current candidate represent the same local route-choice opportunity as the specified checkpoint?
+
+If the current candidate qualifies and a previous checkpoint exists, compare it with the historical images associated with {previous_checkpoint_id}, using the same definition of locally available branches at both locations.
+
+Use corresponding openings and their visible evidence to judge whether this is the same local decision.
+
+Classify the candidate as a duplicate only when both locations represent the same confirmed or potential local route decision with the same observed branch options. Changes in distance, heading, visibility, or viewing angle alone do not create a new checkpoint.
+
+Do not classify the candidate as a duplicate merely because its openings were visible in the historical images. Determine whether those openings were already direct choices at that earlier local decision, or were downstream openings that required first choosing and following another branch.
+
+If the current candidate reaches a distinct downstream route decision, establish it as a new recovery checkpoint, even if its openings were visible earlier. Also establish a new checkpoint if the current candidate reveals a different or additional independent branch available for the current local decision.
+
+Give the judgment and briefly explain the branch evidence, any relevant dependency between route choices, and why the two candidates represent the same or different local decisions. When evidence is incomplete, briefly describe the limitation in your reason and choose the better-supported of the two applicable judgments.

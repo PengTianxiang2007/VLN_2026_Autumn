@@ -1,0 +1,71 @@
+{
+  "created_at": "2026-11-24T10:07:01.020446+00:00",
+  "source_sha256": {
+    "outputs/codex_tasks/checkpoint_dedup/v003/selected2_20261124_01/results.json": "ea6b896836c36fbc869f24017b9da9fb5c230e588f2ef13d4094f6aa05b3d1ff",
+    "outputs/deviation_progress/v003/run_20261118_01_qwen27b/exports/all53_dedup_01/index.html": "d33d6d7303ad5208df442f9b7712857e629a60eaa299bfadbb240b60a2a1f497",
+    "outputs/deviation_progress/v003/run_20261118_02_deepseek10/exports/dedup_01/index.html": "43b1ae111de51adcc4c6c78fe89a5717252ff6e54ebdb7151b22961624f9cfdc",
+    "outputs/deviation_progress/v003/run_20261118_02_deepseek10/dedup_resume_01/summary.json": "fdf0e4c1d01ed225d1ba410f2d5e949654ffb4a78871300607fbaa5d78e80021",
+    "experiments/crossing_checkpoint/codex_dedup_v003/run_20261124_01/exports/c01_c03_20261124_01/translation_source.json": "9fa765443631cf34b960c8afaa9bf2a9539fc0cd4e1fd7230418393b9d26c384",
+    "experiments/crossing_checkpoint/codex_dedup_v003/run_20261124_01/exports/c01_c03_20261124_01/review_zh.txt": "badf6d7a8712d87f415c7121e4f6c9804ec264262c1c255b2462619e3647ea78",
+    "scripts/export_codex_dedup_comparison.py": "b216ca91aaed6a0b66160da1b81d57e2584305e5fcfdbade1eb56f29e2f7f6e1",
+    "core/codex_dedup_comparison.js": "96b61b1a4ca0cf936e20fb534ec36ba27e92d06aeb3841cba5a79df9960f96d5",
+    "core/codex_checkpoint_prompts_zh.json": "cf487c19445a331d536278b962ef996e9194eff0c08efa27964c9461f172b58b",
+    "outputs/codex_tasks/checkpoint_dedup/v002/run_20261123_03_all53/aggregate_all53/results.json": "ab65c863a6e38227e8ac908915878350c48948e9eee291ee6a3eaad4a0d62e09",
+    "experiments/crossing_checkpoint/codex_dedup_v002/run_20261123_03_all53/exports/all53_20261123_01/translation_source.json": "d3675dfd39e71614cb9431098369ba477d6fbc419bbdc2eab4cbca4e601c4096",
+    "experiments/crossing_checkpoint/codex_dedup_v002/run_20261123_03_all53/exports/all53_20261123_01/review_en.txt": "26a052de9cc7d786aee1b6139054781b54319611c48f4757bbee6cb700a4d0be",
+    "outputs/deviation_progress/v003/run_20261118_01_qwen27b/dedup/cases/C01/result.json": "2aadaf535cbbf2842ffcfb48c9b5ebb8d66ce644211c7655140442c12fabc17e",
+    "outputs/deviation_progress/v003/run_20261118_01_qwen27b/dedup/cases/C03/result.json": "40a9f50ebd1e44b1ad9e0889fa641e2bbb611b4dfa1ffef9c397fa8ed5e646ee"
+  },
+  "cases": [
+    "kujiale_0036_0_0",
+    "kujiale_0036_52_4"
+  ],
+  "models": {
+    "memory": {
+      "coverage": 2,
+      "summary": {
+        "candidates": 11,
+        "retained": 3,
+        "removed": 8,
+        "model_calls": 11,
+        "uncertain": 0
+      }
+    },
+    "astra3": {
+      "coverage": 2,
+      "summary": {
+        "candidates": 11,
+        "retained": 6,
+        "removed": 5,
+        "model_calls": 8,
+        "uncertain": 0
+      }
+    },
+    "qwen": {
+      "coverage": 2,
+      "summary": {
+        "candidates": 11,
+        "retained": 8,
+        "removed": 3,
+        "model_calls": 8,
+        "uncertain": 0
+      }
+    },
+    "deepseek": {
+      "coverage": 0,
+      "summary": {
+        "candidates": 0,
+        "retained": 0,
+        "removed": 0,
+        "model_calls": 0,
+        "uncertain": 0
+      }
+    }
+  },
+  "offline": "outputs/codex_tasks/checkpoint_dedup/v003/selected2_20261124_01/exports/c01_c03",
+  "online": "outputs/visualization_publishing/codex_memory_c01_c03_web_20261124_01",
+  "html_sha256": "20c2e28de94d51b9e2271bc85fa74e86a82e3cf492179f2c0f524071836de929",
+  "zip": "outputs/codex_tasks/checkpoint_dedup/v003/selected2_20261124_01/exports/c01_c03_offline.zip",
+  "zip_sha256": "663b71dfd2385c0d3960468ca36908b06b629fc6f2569eaa9788c5068106b799",
+  "display_translations": "Local assistant translation for display; original responses preserved"
+}

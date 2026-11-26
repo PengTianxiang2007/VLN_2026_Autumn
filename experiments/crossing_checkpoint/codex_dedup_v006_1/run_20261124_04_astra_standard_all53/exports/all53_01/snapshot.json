@@ -1,0 +1,7 @@
+{
+  "offline": "outputs/codex_tasks/checkpoint_dedup/v006_1/run_20261124_04_astra_standard_all53/all53/exports/astra_standard_v006_1_all53",
+  "html_sha256": "d83cf567ae1a4b45477aead244fcf004d5ec8bf31b59712bc46b480e42c4325b",
+  "zip": "astra_standard_v006_1_all53_offline.zip",
+  "zip_sha256": "69b6b8e7f5262b382c7614e9e14f850a390a9c32db3c4ddc8f5443d5f2795b20",
+  "results_sha256": "3e593e4c7e70b7b27c3d46c0cb92c1303100f911cb82c4355bca56d4be09ea38"
+}

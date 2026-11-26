@@ -1,0 +1,709 @@
+{
+  "upstream_policy": "existing_raw_sampled_nodes",
+  "dataset_id": "route_choice_multiview53_seed2_20261118_v001",
+  "image_root": "outputs/offline_route_dataset/v001/run_20261118_01/dataset",
+  "trajectory_seed": 2,
+  "sampler_version": "v002",
+  "sampler_mode": "active",
+  "selection_seed": 20261125,
+  "excluded": [
+    5,
+    9,
+    17,
+    20,
+    23,
+    25,
+    43
+  ],
+  "eligible_pool": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    18,
+    19,
+    21,
+    22,
+    24,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53
+  ],
+  "selected": [
+    1,
+    27,
+    35,
+    42,
+    19
+  ],
+  "cases": [
+    {
+      "case_number": 1,
+      "case_index": 0,
+      "episode_id": "kujiale_0036_0_0",
+      "real_episode_id": "kujiale_0036_0_0",
+      "scene": "kujiale_0036",
+      "nodes": [
+        {
+          "id": "S01",
+          "index": 0,
+          "emittedAt": 5,
+          "ready_at_frame": 5,
+          "candidate_id": "C01:S01:F0",
+          "images": [
+            {
+              "frame": -2,
+              "label": "F-2",
+              "missing": true
+            },
+            {
+              "frame": 0,
+              "label": "F0",
+              "path": "observations/kujiale_0036_0_0/000000/policy_front.png",
+              "image_id": "10131a1f7c7d584b98007bfd648b0d9cd9720805b81f9362d9f613c7270e6e33"
+            },
+            {
+              "frame": 2,
+              "label": "F+2",
+              "path": "observations/kujiale_0036_0_0/000002/policy_front.png",
+              "image_id": "65ec81b0d27e0530538373a6990e9a11255efb9de01877921e067dded08a29d5"
+            }
+          ]
+        },
+        {
+          "id": "S02",
+          "index": 7,
+          "emittedAt": 12,
+          "ready_at_frame": 12,
+          "candidate_id": "C01:S02:F7",
+          "images": [
+            {
+              "frame": 5,
+              "label": "F-2",
+              "path": "observations/kujiale_0036_0_0/000005/policy_front.png",
+              "image_id": "1b5ee8e88cbcf8e8b1de8318e3085ab95d3811023e7ee5162b85afa00720fb3b"
+            },
+            {
+              "frame": 7,
+              "label": "F0",
+              "path": "observations/kujiale_0036_0_0/000007/policy_front.png",
+              "image_id": "02bdf628de075eaa3a78ba4d57f4011f4e0e4f622d602f9ff61ac88eebcc88a3"
+            },
+            {
+              "frame": 9,
+              "label": "F+2",
+              "path": "observations/kujiale_0036_0_0/000009/policy_front.png",
+              "image_id": "5b62c50c0b42225d7628c791fbf90502f397be3107e02e71482df67c081299b3"
+            }
+          ]
+        },
+        {
+          "id": "S03",
+          "index": 28,
+          "emittedAt": 33,
+          "ready_at_frame": 33,
+          "candidate_id": "C01:S03:F28",
+          "images": [
+            {
+              "frame": 26,
+              "label": "F-2",
+              "path": "observations/kujiale_0036_0_0/000026/policy_front.png",
+              "image_id": "2257038256e3c8efeff1a11c6f3ab2750fff959e07b36699cf9498667315cf8f"
+            },
+            {
+              "frame": 28,
+              "label": "F0",
+              "path": "observations/kujiale_0036_0_0/000028/policy_front.png",
+              "image_id": "c0966da4e53e9dcec65b9e53b18d5c853b7a7db87ef0f7f4c6bcd1a6e1882b64"
+            },
+            {
+              "frame": 30,
+              "label": "F+2",
+              "path": "observations/kujiale_0036_0_0/000030/policy_front.png",
+              "image_id": "0e9963e0ae05a10f8007c2d4fd838206517f51079c9eac74d621d9da110a53cb"
+            }
+          ]
+        },
+        {
+          "id": "S04",
+          "index": 38,
+          "emittedAt": 43,
+          "ready_at_frame": 43,
+          "candidate_id": "C01:S04:F38",
+          "images": [
+            {
+              "frame": 36,
+              "label": "F-2",
+              "path": "observations/kujiale_0036_0_0/000036/policy_front.png",
+              "image_id": "2a95c513556882de30ac2fc79748aeb68e8d16eed713291de34ca36b1b458ed1"
+            },
+            {
+              "frame": 38,
+              "label": "F0",
+              "path": "observations/kujiale_0036_0_0/000038/policy_front.png",
+              "image_id": "36ffca0dc599946dc969fcf4d5cea083e32086e3d6f86d383aad3063c4d91267"
+            },
+            {
+              "frame": 40,
+              "label": "F+2",
+              "path": "observations/kujiale_0036_0_0/000040/policy_front.png",
+              "image_id": "fa32f10ed0adeea37dc7139bf88a5599186eadb1b740c5d9635216d3f4cc5e15"
+            }
+          ]
+        }
+      ],
+      "observation_offsets": [
+        -2,
+        0,
+        2
+      ],
+      "mode": "checkpoint_memory_v003",
+      "prompt_revision": "local_route_choice_v006_1",
+      "terminal_node": {
+        "id": "END",
+        "candidate_id": "C01:END:F65",
+        "index": 65,
+        "emittedAt": 65,
+        "ready_at_frame": 65,
+        "terminal_node": true,
+        "images": [
+          {
+            "frame": 65,
+            "label": "F0",
+            "path": "observations/kujiale_0036_0_0/000065/terminal_front.png",
+            "image_id": "74ed33bcc9339f9d2db6eab2c8e483c8b25249e753866eed24f72ff394604a00"
+          }
+        ]
+      },
+      "sampler_version": "v002",
+      "sampler_mode": "active",
+      "instruction_en": "Walk straight through the doorway into the living room, passing a sofa and coffee table on your left and a television on your right. Turn right to go through the next doorway. Continue straight into the bedroom, with a television on your left, and stop in front of the bed and window.",
+      "deviation_review": "codex_memory_v002"
+    },
+    {
+      "case_number": 27,
+      "case_index": 26,
+      "episode_id": "kujiale_0226_38_4",
+      "real_episode_id": "kujiale_0226_38_4",
+      "scene": "kujiale_0226",
+      "nodes": [
+        {
+          "id": "S01",
+          "index": 0,
+          "emittedAt": 5,
+          "ready_at_frame": 5,
+          "candidate_id": "C27:S01:F0",
+          "images": [
+            {
+              "frame": -2,
+              "label": "F-2",
+              "missing": true
+            },
+            {
+              "frame": 0,
+              "label": "F0",
+              "path": "observations/kujiale_0226_38_4/000000/policy_front.png",
+              "image_id": "b01525129f1535e0c631c70bf424af022b7a44e6791b73559edc4571ea0a59f1"
+            },
+            {
+              "frame": 2,
+              "label": "F+2",
+              "path": "observations/kujiale_0226_38_4/000002/policy_front.png",
+              "image_id": "ce5fb84bd51fb190b9c5b5a3d7089cc7b30a67af05c5ed903200ffbda2059e4c"
+            }
+          ]
+        },
+        {
+          "id": "S02",
+          "index": 7,
+          "emittedAt": 12,
+          "ready_at_frame": 12,
+          "candidate_id": "C27:S02:F7",
+          "images": [
+            {
+              "frame": 5,
+              "label": "F-2",
+              "path": "observations/kujiale_0226_38_4/000005/policy_front.png",
+              "image_id": "24cec282644b37658bd270224da8848738d60b3ca7a8ca6a679b6fb830395073"
+            },
+            {
+              "frame": 7,
+              "label": "F0",
+              "path": "observations/kujiale_0226_38_4/000007/policy_front.png",
+              "image_id": "ce6c2067bc77c203f22296d75cacdfe5e6808b8268e61cc461b8cae05bc72b01"
+            },
+            {
+              "frame": 9,
+              "label": "F+2",
+              "path": "observations/kujiale_0226_38_4/000009/policy_front.png",
+              "image_id": "0281ea9b70cb0f9a09935184c70a44127eb9305387a955fa797156d74fd50e8c"
+            }
+          ]
+        }
+      ],
+      "observation_offsets": [
+        -2,
+        0,
+        2
+      ],
+      "prompt_revision": "local_route_choice_v006_1",
+      "mode": "checkpoint_memory_v003",
+      "terminal_node": {
+        "id": "END",
+        "candidate_id": "C27:END:F42",
+        "index": 42,
+        "emittedAt": 42,
+        "ready_at_frame": 42,
+        "terminal_node": true,
+        "images": [
+          {
+            "frame": 42,
+            "label": "F0",
+            "path": "observations/kujiale_0226_38_4/000042/terminal_front.png",
+            "image_id": "3dc523dfc23c250aaa862b87dd7c302cc34d1fd01c913b1dd64a144cde2639e4"
+          }
+        ]
+      },
+      "sampler_version": "v002",
+      "sampler_mode": "active",
+      "instruction_en": "Walk straight through the doorway, entering the hallway. Continue straight, passing a bathroom doorway on your left. Then, pass the entrance to a living room on your left. Turn right to enter the dining room. Walk forward through the dining room, passing the dining table and chairs on your left and the kitchen area on your right. Stop in front of the window.",
+      "deviation_review": "codex_memory_v002"
+    },
+    {
+      "case_number": 35,
+      "case_index": 34,
+      "episode_id": "kujiale_0234_23_1",
+      "real_episode_id": "kujiale_0234_23_1",
+      "scene": "kujiale_0234",
+      "nodes": [
+        {
+          "id": "S01",
+          "index": 0,
+          "emittedAt": 5,
+          "ready_at_frame": 5,
+          "candidate_id": "C35:S01:F0",
+          "images": [
+            {
+              "frame": -2,
+              "label": "F-2",
+              "missing": true
+            },
+            {
+              "frame": 0,
+              "label": "F0",
+              "path": "observations/kujiale_0234_23_1/000000/policy_front.png",
+              "image_id": "9801a6a37ad57666d037624a58e3fb5c567652a549e02d0889fbab8470529f7d"
+            },
+            {
+              "frame": 2,
+              "label": "F+2",
+              "path": "observations/kujiale_0234_23_1/000002/policy_front.png",
+              "image_id": "582212ef05692e54ee9d77fdce43845546aef8523245e2c2a107ffbf63384390"
+            }
+          ]
+        },
+        {
+          "id": "S02",
+          "index": 4,
+          "emittedAt": 9,
+          "ready_at_frame": 9,
+          "candidate_id": "C35:S02:F4",
+          "images": [
+            {
+              "frame": 2,
+              "label": "F-2",
+              "path": "observations/kujiale_0234_23_1/000002/policy_front.png",
+              "image_id": "582212ef05692e54ee9d77fdce43845546aef8523245e2c2a107ffbf63384390"
+            },
+            {
+              "frame": 4,
+              "label": "F0",
+              "path": "observations/kujiale_0234_23_1/000004/policy_front.png",
+              "image_id": "294635c3b2824bcc0dcf12b4c2f7faf9ae2e021dd675d77a42d37b496baae162"
+            },
+            {
+              "frame": 6,
+              "label": "F+2",
+              "path": "observations/kujiale_0234_23_1/000006/policy_front.png",
+              "image_id": "9990791fc70aac7e7a1c7ba58ae79d2848e47fdeac133de6ce99a9aeff812bb1"
+            }
+          ]
+        },
+        {
+          "id": "S03",
+          "index": 14,
+          "emittedAt": 19,
+          "ready_at_frame": 19,
+          "candidate_id": "C35:S03:F14",
+          "images": [
+            {
+              "frame": 12,
+              "label": "F-2",
+              "path": "observations/kujiale_0234_23_1/000012/policy_front.png",
+              "image_id": "861e3c5c8aeb1a22cbd95c13711173cb943d9c5ba3003a226c7d4071c1f3b143"
+            },
+            {
+              "frame": 14,
+              "label": "F0",
+              "path": "observations/kujiale_0234_23_1/000014/policy_front.png",
+              "image_id": "f99e4deaef5bed0d7bb088d002d6cf18dfa11f4ebe16dd62e9f6d4c73e4b3218"
+            },
+            {
+              "frame": 16,
+              "label": "F+2",
+              "path": "observations/kujiale_0234_23_1/000016/policy_front.png",
+              "image_id": "6424a2a175e06594cdafdda45d3f0f51d8c3780a24c9d2505991131e307f3cea"
+            }
+          ]
+        },
+        {
+          "id": "S04",
+          "index": 28,
+          "emittedAt": 33,
+          "ready_at_frame": 33,
+          "candidate_id": "C35:S04:F28",
+          "images": [
+            {
+              "frame": 26,
+              "label": "F-2",
+              "path": "observations/kujiale_0234_23_1/000026/policy_front.png",
+              "image_id": "7d9f7f502a5b564466943d714114f47b0b6c95db8eb3d56359640daaf28f3d99"
+            },
+            {
+              "frame": 28,
+              "label": "F0",
+              "path": "observations/kujiale_0234_23_1/000028/policy_front.png",
+              "image_id": "40e40d648d5343c4deea997b595caf049a5e9d261eb99d096b5879d2b0c0895d"
+            },
+            {
+              "frame": 30,
+              "label": "F+2",
+              "path": "observations/kujiale_0234_23_1/000030/policy_front.png",
+              "image_id": "3a9a2bb152be9a9d411bf402e58ff75c28b2d2d4d91f00cdf81dae56c2c8a8b9"
+            }
+          ]
+        }
+      ],
+      "observation_offsets": [
+        -2,
+        0,
+        2
+      ],
+      "prompt_revision": "local_route_choice_v006_1",
+      "mode": "checkpoint_memory_v003",
+      "terminal_node": {
+        "id": "END",
+        "candidate_id": "C35:END:F44",
+        "index": 44,
+        "emittedAt": 44,
+        "ready_at_frame": 44,
+        "terminal_node": true,
+        "images": [
+          {
+            "frame": 44,
+            "label": "F0",
+            "path": "observations/kujiale_0234_23_1/000044/terminal_front.png",
+            "image_id": "1cf06ad1ebb4b66fad1df1f727288f9638499fca512cf87e5dba82644db2713f"
+          }
+        ]
+      },
+      "sampler_version": "v002",
+      "sampler_mode": "active",
+      "instruction_en": "Walk straight down the hallway, keeping the green decorative panel on your right. As you approach the end of the hallway, with a round, brown wall decoration on your left, turn left to enter the doorway. Walk into the bathroom and stop in front of the shower enclosure, with the toilet and sink on your left and the window directly ahead of you.",
+      "deviation_review": "codex_memory_v002"
+    },
+    {
+      "case_number": 42,
+      "case_index": 41,
+      "episode_id": "kujiale_0243_35_4",
+      "real_episode_id": "kujiale_0243_35_4",
+      "scene": "kujiale_0243",
+      "nodes": [
+        {
+          "id": "S01",
+          "index": 19,
+          "emittedAt": 24,
+          "ready_at_frame": 24,
+          "candidate_id": "C42:S01:F19",
+          "images": [
+            {
+              "frame": 17,
+              "label": "F-2",
+              "path": "observations/kujiale_0243_35_4/000017/policy_front.png",
+              "image_id": "d29cb06bceaf5e4e748503c4c71542e2f9ef788d064cd424af7fb8a1ebf4acc0"
+            },
+            {
+              "frame": 19,
+              "label": "F0",
+              "path": "observations/kujiale_0243_35_4/000019/policy_front.png",
+              "image_id": "b4e4af2f26c04665390c7db2c45a97c1b01d57a3f49e0ffa94d0fd5ea3bc1922"
+            },
+            {
+              "frame": 21,
+              "label": "F+2",
+              "path": "observations/kujiale_0243_35_4/000021/policy_front.png",
+              "image_id": "29906eb06ebbac1d9cc15c6bdc83e0ad6e3f6d7ff8b41d3f1748003cf60a7850"
+            }
+          ]
+        },
+        {
+          "id": "S02",
+          "index": 29,
+          "emittedAt": 34,
+          "ready_at_frame": 34,
+          "candidate_id": "C42:S02:F29",
+          "images": [
+            {
+              "frame": 27,
+              "label": "F-2",
+              "path": "observations/kujiale_0243_35_4/000027/policy_front.png",
+              "image_id": "c360f23a7724ce9ec6a37a749010e0486924dddddfdcd00bac868d7d21b9f1d3"
+            },
+            {
+              "frame": 29,
+              "label": "F0",
+              "path": "observations/kujiale_0243_35_4/000029/policy_front.png",
+              "image_id": "25f54b739593b26d011b2b909e5a3b6af200e00d8aac2854b2dfc1172da231a7"
+            },
+            {
+              "frame": 31,
+              "label": "F+2",
+              "path": "observations/kujiale_0243_35_4/000031/policy_front.png",
+              "image_id": "26f80797a36eac2f1dae3eacd8e81939ec0833c0b4a25ff2eea18d1fd1fc7639"
+            }
+          ]
+        }
+      ],
+      "observation_offsets": [
+        -2,
+        0,
+        2
+      ],
+      "prompt_revision": "local_route_choice_v006_1",
+      "mode": "checkpoint_memory_v003",
+      "terminal_node": {
+        "id": "END",
+        "candidate_id": "C42:END:F56",
+        "index": 56,
+        "emittedAt": 56,
+        "ready_at_frame": 56,
+        "terminal_node": true,
+        "images": [
+          {
+            "frame": 56,
+            "label": "F0",
+            "path": "observations/kujiale_0243_35_4/000056/terminal_front.png",
+            "image_id": "931edc026a618b5b8c87bfdb5634aeabd1fb5dfc2c22e735d8d91633a9adc6ba"
+          }
+        ]
+      },
+      "sampler_version": "v002",
+      "sampler_mode": "active",
+      "instruction_en": "Walk straight forward through the doorway into the wider hallway. Continue straight, passing a bedroom on your right and a dresser on your left. Proceed straight down the hallway, keeping the living room with a sofa on your right. Finally, turn left into the room with tiled walls and stop in front of the window.",
+      "deviation_review": "codex_memory_v002"
+    },
+    {
+      "case_number": 19,
+      "case_index": 18,
+      "episode_id": "kujiale_0165_49_4",
+      "real_episode_id": "kujiale_0165_49_4",
+      "scene": "kujiale_0165",
+      "nodes": [
+        {
+          "id": "S01",
+          "index": 0,
+          "emittedAt": 5,
+          "ready_at_frame": 5,
+          "candidate_id": "C19:S01:F0",
+          "images": [
+            {
+              "frame": -2,
+              "label": "F-2",
+              "missing": true
+            },
+            {
+              "frame": 0,
+              "label": "F0",
+              "path": "observations/kujiale_0165_49_4/000000/policy_front.png",
+              "image_id": "00674a65df0070e1681f765dbdffb266addd3b97d924bf8e7ca48ea5d98b4ca4"
+            },
+            {
+              "frame": 2,
+              "label": "F+2",
+              "path": "observations/kujiale_0165_49_4/000002/policy_front.png",
+              "image_id": "cf7b288cc2d5dda165ada8bbef66ea7c903bded2d8c365e0ecc9740e40021a91"
+            }
+          ]
+        },
+        {
+          "id": "S02",
+          "index": 12,
+          "emittedAt": 17,
+          "ready_at_frame": 17,
+          "candidate_id": "C19:S02:F12",
+          "images": [
+            {
+              "frame": 10,
+              "label": "F-2",
+              "path": "observations/kujiale_0165_49_4/000010/policy_front.png",
+              "image_id": "cd59047b9eed895111465fe2a0c1a2295cf45ec2e76768f66eb426b00d815252"
+            },
+            {
+              "frame": 12,
+              "label": "F0",
+              "path": "observations/kujiale_0165_49_4/000012/policy_front.png",
+              "image_id": "a94068633c24d0245e3656e32cc3950ba11623551fe9b799a1032c6d157b0517"
+            },
+            {
+              "frame": 14,
+              "label": "F+2",
+              "path": "observations/kujiale_0165_49_4/000014/policy_front.png",
+              "image_id": "8f78c2c2f4aecff697e962c56b847ca08ef925c2e9d7014235b3b52a4f2d89ff"
+            }
+          ]
+        },
+        {
+          "id": "S03",
+          "index": 21,
+          "emittedAt": 26,
+          "ready_at_frame": 26,
+          "candidate_id": "C19:S03:F21",
+          "images": [
+            {
+              "frame": 19,
+              "label": "F-2",
+              "path": "observations/kujiale_0165_49_4/000019/policy_front.png",
+              "image_id": "caad954926d7ecadc03a825a3e179ccef870a89c0e0ba1c15625c07187cfc2f7"
+            },
+            {
+              "frame": 21,
+              "label": "F0",
+              "path": "observations/kujiale_0165_49_4/000021/policy_front.png",
+              "image_id": "e79db2bf9080f7d1df7f7551e351d8328260d6a5a90ee6dfa08c327845f41456"
+            },
+            {
+              "frame": 23,
+              "label": "F+2",
+              "path": "observations/kujiale_0165_49_4/000023/policy_front.png",
+              "image_id": "78f6ddc47795a4a7a67104348fec6f76e9e811eb0faa6af7caa3cf37e4cb7aa7"
+            }
+          ]
+        },
+        {
+          "id": "S04",
+          "index": 38,
+          "emittedAt": 43,
+          "ready_at_frame": 43,
+          "candidate_id": "C19:S04:F38",
+          "images": [
+            {
+              "frame": 36,
+              "label": "F-2",
+              "path": "observations/kujiale_0165_49_4/000036/policy_front.png",
+              "image_id": "50fc39e5f6831a1784f8a808b7bbaa928536caa4ab1251935515362652bb43ea"
+            },
+            {
+              "frame": 38,
+              "label": "F0",
+              "path": "observations/kujiale_0165_49_4/000038/policy_front.png",
+              "image_id": "7cd6dd0fa11d9594c93a6e4a36c4280b0e8d06034ae142bae768d057639a3293"
+            },
+            {
+              "frame": 40,
+              "label": "F+2",
+              "path": "observations/kujiale_0165_49_4/000040/policy_front.png",
+              "image_id": "9a788209f449693abfd81a0caf7bf8f5c96046387a001f6b683a1b40ae957df1"
+            }
+          ]
+        }
+      ],
+      "observation_offsets": [
+        -2,
+        0,
+        2
+      ],
+      "prompt_revision": "local_route_choice_v006_1",
+      "mode": "checkpoint_memory_v003",
+      "terminal_node": {
+        "id": "END",
+        "candidate_id": "C19:END:F49",
+        "index": 49,
+        "emittedAt": 49,
+        "ready_at_frame": 49,
+        "terminal_node": true,
+        "images": [
+          {
+            "frame": 49,
+            "label": "F0",
+            "path": "observations/kujiale_0165_49_4/000049/terminal_front.png",
+            "image_id": "f6c9c89a9b7022495190687088ff3fab9cfe9643dda3cfd267f7ef8bcf7ce337"
+          }
+        ]
+      },
+      "sampler_version": "v002",
+      "sampler_mode": "active",
+      "instruction_en": "Walk forward, passing the white wardrobes on your left, and enter the hallway straight ahead. Continue walking straight down the hallway. Then, turn left to enter the bedroom, passing the bed on your right. Walk further into the room, keeping the desk and honeycomb shelves on your left, and stop in front of the desk.",
+      "deviation_review": "codex_memory_v002"
+    }
+  ],
+  "source_sha256": {
+    "experiments/crossing_checkpoint/codex_dedup_v006_1/run_20261124_04_astra_standard_all53/input.json": "343b187b43b43596414db4a62be89f414c74667e36caf9be5e97b04384e34adc",
+    "experiments/crossing_checkpoint/codex_dedup_v006_1/run_20261124_01_astra_c01_c11/input.json": "123c0249ff3ae41d1acd90353fc857377c1280bf0b483a87aeeb25f3ccfd0213",
+    "experiments/deviation_progress/codex_memory_v002/run_20261125_01_terminal4/input.json": "0415ae85fce5789fb8dfe5472daece6d16ed59d67c42ec659da2cf635f910013",
+    "experiments/deviation_progress/codex_memory_v001/run_20261125_01/input.json": "88085bf49157d9346bb9cae4429183adf7d2cfb3f739091eac45e44ba1cbc13a",
+    "experiments/deviation_progress/codex_memory_v002/run_20261125_02_random5/prepare.py": "e33bb81b01992de85e58a49d9101ed28f889a1f3721a595e6427576fe9d400b0",
+    "scripts/replay_jev_online_sampling.cjs": "18566ad537f4f6619dac4de1678b559606139649aa44c832d2a6b958e0a194c7",
+    "core/jev_online_sampler_v002.js": "0662b5064b2d868f5f0215d4439772cc3f89c318f42376ceb61dda5b1a459b0c",
+    "core/jev_online_sampler_v001.js": "a2d9e945e806d2ff774aaf6f6a20ad55659c6c08406cbbaf30ffa81f6d621923",
+    "core/jev_online_sampling_v001.json": "f8e7a94a2633f7484d4bf153798fe6cc245c9217d6cf3a5ccbbb042304ee6bbf",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/inputs/kujiale_0036_0_0/task.json": "adb497fde67cc5280a46576b5a801261e17234f7dad5afdbcd4b43e7591843b4",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/inputs/kujiale_0036_0_0/observations.jsonl": "d79ff15b2110d712de5e1478744606e5de1b5cc7a0aefdfac1dae92fa618a363",
+    "outputs/crossing_checkpoint/online_sampling_v001/run_20261118_01/episodes/kujiale_0036_0_0/scores.json": "3bf2d14573c0978e1d72d8515a728b0de44ded0790f03031f15d76f3595ab1e0",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/inputs/kujiale_0226_38_4/task.json": "7d85df26b0686e3f3df725943a7944b453af1f4c0ab22395039c506bd59e91e0",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/inputs/kujiale_0226_38_4/observations.jsonl": "6bf53d55f00e2407fa6cb9513a49a327dcf545488fc254ecb77e37e1b05f3992",
+    "outputs/crossing_checkpoint/online_sampling_v001/run_20261118_01/episodes/kujiale_0226_38_4/scores.json": "3648dda07c8690906adef5c61260a0d12bb3805a932c6162d263b71ebded41e0",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/inputs/kujiale_0234_23_1/task.json": "34aa812579f046eed51b7f80758e340be900dca97107786c4212a127668b53eb",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/inputs/kujiale_0234_23_1/observations.jsonl": "9b03e4d3ab78e06156061e7813ac5ae33407723d0656d8bb1b0c129cd80a1920",
+    "outputs/crossing_checkpoint/online_sampling_v001/run_20261118_01/episodes/kujiale_0234_23_1/scores.json": "b1ae8f06388f5e3e4490bcca44aacede8cad3bdc3f942c65ef872c61b975a1c1",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/inputs/kujiale_0243_35_4/task.json": "bf7534fa58589821d30c103c537388953b61b471e86ee6b4174ff0681210fbb5",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/inputs/kujiale_0243_35_4/observations.jsonl": "7fb047b0cf9282460f3581eab0b30fda4ee397ea949b85ffcec37a0026835138",
+    "outputs/crossing_checkpoint/online_sampling_v001/run_20261118_01/episodes/kujiale_0243_35_4/scores.json": "60446b736a34b17d395356eae53e38d18dfdc6d817c1dbbf9af110c5637c8752",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/inputs/kujiale_0165_49_4/task.json": "374e1cf2843f23252bec177ad6dac094afbc9d700d185a4586851832ff68dcfa",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/inputs/kujiale_0165_49_4/observations.jsonl": "c277a2f49d158ab9fbcfa1ca84be14f13032ab8468186573dee128e815da26d3",
+    "outputs/crossing_checkpoint/online_sampling_v001/run_20261118_01/episodes/kujiale_0165_49_4/scores.json": "f7ed1c63e1998fe5bdf4f9bfb30f1578f8a878f73f578152bc669fb4b57659f8"
+  }
+}

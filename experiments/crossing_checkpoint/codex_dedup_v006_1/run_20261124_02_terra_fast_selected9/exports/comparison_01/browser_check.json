@@ -1,0 +1,128 @@
+{
+  "checked_at": "2026-11-24T15:26:45.530Z",
+  "cases": 9,
+  "model_filters": true,
+  "combined_union": true,
+  "raw_candidates": true,
+  "bilingual_model_text": true,
+  "original_json_preserved": true,
+  "synchronized_sliders": true,
+  "native_images_loaded": true,
+  "unavailable_deepseek_explicit": true,
+  "mobile_no_overflow": true,
+  "details": [
+    {
+      "case": 1,
+      "filter_combinations": 10,
+      "available_models": [
+        "terra61",
+        "astra61",
+        "terra6",
+        "astra6",
+        "memory",
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 3,
+      "filter_combinations": 10,
+      "available_models": [
+        "terra61",
+        "terra6",
+        "astra6",
+        "memory",
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 4,
+      "filter_combinations": 10,
+      "available_models": [
+        "terra61",
+        "terra6",
+        "astra6",
+        "memory",
+        "astra3",
+        "qwen",
+        "deepseek"
+      ]
+    },
+    {
+      "case": 5,
+      "filter_combinations": 10,
+      "available_models": [
+        "terra61",
+        "terra6",
+        "astra6",
+        "memory",
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 11,
+      "filter_combinations": 10,
+      "available_models": [
+        "terra61",
+        "astra61",
+        "terra6",
+        "astra6",
+        "memory",
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 17,
+      "filter_combinations": 10,
+      "available_models": [
+        "terra61",
+        "terra6",
+        "astra6",
+        "memory",
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 19,
+      "filter_combinations": 10,
+      "available_models": [
+        "terra61",
+        "terra6",
+        "astra6",
+        "memory",
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 32,
+      "filter_combinations": 10,
+      "available_models": [
+        "terra61",
+        "terra6",
+        "astra6",
+        "memory",
+        "astra3",
+        "qwen"
+      ]
+    },
+    {
+      "case": 34,
+      "filter_combinations": 10,
+      "available_models": [
+        "terra61",
+        "terra6",
+        "astra6",
+        "memory",
+        "astra3",
+        "qwen",
+        "deepseek"
+      ]
+    }
+  ],
+  "errors": []
+}

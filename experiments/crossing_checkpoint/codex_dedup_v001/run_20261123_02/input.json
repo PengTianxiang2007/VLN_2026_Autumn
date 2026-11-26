@@ -1,0 +1,3580 @@
+{
+  "upstream_policy": "existing_raw_sampled_nodes",
+  "dataset_id": "route_choice_multiview53_seed2_20261118_v001",
+  "image_root": "outputs/offline_route_dataset/v001/run_20261118_01/dataset",
+  "selection": "First 10 complete episodes in existing all_selected.txt order (C01-C10)",
+  "trajectory_seed": 2,
+  "observation_mode": "native_front",
+  "candidate_count": 89,
+  "expected_comparisons": 63,
+  "source_files": {
+    "outputs/crossing_checkpoint/online_sampling_v001/run_20261118_01/candidates.json": "b2fa79064efca186e48abf6e24a1f64ed395640343a43097ac7a4c0735ca8eff",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/subsets/all_selected.txt": "d3a8175de63ae92252a9308b67b5c9774bc46086f9c4cc81b5ee1cbcae400ffe",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/manifest.json": "bcf64509c87b55cabc667964253509595e1983f188f737d59c907b0f19cdf3c5",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/inputs/kujiale_0036_0_0/task.json": "adb497fde67cc5280a46576b5a801261e17234f7dad5afdbcd4b43e7591843b4",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/inputs/kujiale_0036_0_0/observations.jsonl": "d79ff15b2110d712de5e1478744606e5de1b5cc7a0aefdfac1dae92fa618a363",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/inputs/kujiale_0036_3_2/task.json": "9c8ca28b4594c9043ca0025005bf9d99c4294d054e894c3b92aac11fc1e936c3",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/inputs/kujiale_0036_3_2/observations.jsonl": "dad3f15f557ae7253d23f8f1088a78cad9daf3eb3759fe069596b84752a0f088",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/inputs/kujiale_0036_52_4/task.json": "8a245f2a6df618f14b00941bef2d08b7c6885dad3bf0feb0626d0c6f5aed3a54",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/inputs/kujiale_0036_52_4/observations.jsonl": "d8a47298b44967929c89af9736c5fc19bacec1860b448740150a2ace1ffa80e2",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/inputs/kujiale_0113_18_1/task.json": "b3162541de31ee2e5db7d0b96e98760c3480db6697cff03fbd1ed111f2bedb5a",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/inputs/kujiale_0113_18_1/observations.jsonl": "e05a70c626cd8052bcc7cbd52b50438bef72b93c1a7163d06f5b5cb673290e40",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/inputs/kujiale_0113_1_4/task.json": "0e820a36bf53bd98409d7bbe0d16210c5848b9e75bc886aa2566c75c7e96593c",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/inputs/kujiale_0113_1_4/observations.jsonl": "407b77f6394847faaca23f8878091a9205c70bf25a32f6a3f81ce7c6e80d84fe",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/inputs/kujiale_0123_fix_13_3/task.json": "cf70cbfe7f0169e1738153131d11185b0fe92f30f297f9ff6fb49f83fbc632b3",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/inputs/kujiale_0123_fix_13_3/observations.jsonl": "d306667366859c92c6d8347b24e38202406baa37e509ff492002c0339551a426",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/inputs/kujiale_0123_fix_19_3/task.json": "f59a30dd4dd5a6f8ff3378526f18ee36368555a083699eb9fd05a0263c6f3907",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/inputs/kujiale_0123_fix_19_3/observations.jsonl": "55f5dbe82d97b45752a7703b47fb76fbfebd71cc23041838cbdd2ade9ef28949",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/inputs/kujiale_0123_fix_43_3/task.json": "4ec8c2f1633f843b0c14c93eef78d5d212782708687c8c5062da26941d0d61d6",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/inputs/kujiale_0123_fix_43_3/observations.jsonl": "7a78dc6b93a96ec961981b51887007020b8512bf768b2ccf9a9166a3baaba57b",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/inputs/kujiale_0128_fix_12_4/task.json": "f493f0c32c5540920a41dc6ce4e213dc36891be7bc77a5956138810c6036e894",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/inputs/kujiale_0128_fix_12_4/observations.jsonl": "fd152269a39eeffc2018b577379ee0c1ea74e586eb76852aabba0d35508d2216",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/inputs/kujiale_0128_fix_18_1/task.json": "46d04a8d38f80ff63d58db3a94382fb5028b85e13e9f0f9c73ac27248be31b6f",
+    "outputs/offline_route_dataset/v001/run_20261118_01/dataset/inputs/kujiale_0128_fix_18_1/observations.jsonl": "1bd2431b05f78f96dd3301d7b4e7b80b83566f159d047b7aa1846c2ca02eb1b9"
+  },
+  "cases": [
+    {
+      "case_number": 1,
+      "case_index": 0,
+      "episode_id": "kujiale_0036_0_0",
+      "real_episode_id": "kujiale_0036_0_0",
+      "scene": "kujiale_0036",
+      "nodes": [
+        {
+          "id": "S01",
+          "index": 0,
+          "emittedAt": 5,
+          "ready_at_frame": 5,
+          "candidate_id": "C01:S01:F0",
+          "images": [
+            {
+              "frame": -2,
+              "label": "F-2",
+              "missing": true
+            },
+            {
+              "frame": -1,
+              "label": "F-1",
+              "missing": true
+            },
+            {
+              "frame": 0,
+              "label": "F0",
+              "path": "observations/kujiale_0036_0_0/000000/policy_front.png",
+              "image_id": "10131a1f7c7d584b98007bfd648b0d9cd9720805b81f9362d9f613c7270e6e33"
+            },
+            {
+              "frame": 1,
+              "label": "F+1",
+              "path": "observations/kujiale_0036_0_0/000001/policy_front.png",
+              "image_id": "4138eef843ee911031f669605aedc8fb490457a2f8bc16f561cbc13f3845ef9f"
+            },
+            {
+              "frame": 2,
+              "label": "F+2",
+              "path": "observations/kujiale_0036_0_0/000002/policy_front.png",
+              "image_id": "65ec81b0d27e0530538373a6990e9a11255efb9de01877921e067dded08a29d5"
+            }
+          ]
+        },
+        {
+          "id": "S02",
+          "index": 5,
+          "emittedAt": 10,
+          "ready_at_frame": 10,
+          "candidate_id": "C01:S02:F5",
+          "images": [
+            {
+              "frame": 3,
+              "label": "F-2",
+              "path": "observations/kujiale_0036_0_0/000003/policy_front.png",
+              "image_id": "21c9e4cc63af9aaed80f128dac0f1096cde1c87e1950e89fdc78bbfbf0310937"
+            },
+            {
+              "frame": 4,
+              "label": "F-1",
+              "path": "observations/kujiale_0036_0_0/000004/policy_front.png",
+              "image_id": "f92162abfacb8a85602252020e273dd54dcc91e25b2651ec68f5548588524dc7"
+            },
+            {
+              "frame": 5,
+              "label": "F0",
+              "path": "observations/kujiale_0036_0_0/000005/policy_front.png",
+              "image_id": "1b5ee8e88cbcf8e8b1de8318e3085ab95d3811023e7ee5162b85afa00720fb3b"
+            },
+            {
+              "frame": 6,
+              "label": "F+1",
+              "path": "observations/kujiale_0036_0_0/000006/policy_front.png",
+              "image_id": "12654bd634dd43469231fb69210ccfe5727789a8a633dcd8c046ee1b7231a084"
+            },
+            {
+              "frame": 7,
+              "label": "F+2",
+              "path": "observations/kujiale_0036_0_0/000007/policy_front.png",
+              "image_id": "02bdf628de075eaa3a78ba4d57f4011f4e0e4f622d602f9ff61ac88eebcc88a3"
+            }
+          ]
+        },
+        {
+          "id": "S03",
+          "index": 26,
+          "emittedAt": 31,
+          "ready_at_frame": 31,
+          "candidate_id": "C01:S03:F26",
+          "images": [
+            {
+              "frame": 24,
+              "label": "F-2",
+              "path": "observations/kujiale_0036_0_0/000024/policy_front.png",
+              "image_id": "c2cc4b8f508a5d2b0e2f02c1cfd67717ddb4a8b726c54bf146d4ea7c94b4c8b7"
+            },
+            {
+              "frame": 25,
+              "label": "F-1",
+              "path": "observations/kujiale_0036_0_0/000025/policy_front.png",
+              "image_id": "55cc83dd8e41c76d174d4bc13a7a5acbfa52c709b6bed1dbeab451b8e20e9c7b"
+            },
+            {
+              "frame": 26,
+              "label": "F0",
+              "path": "observations/kujiale_0036_0_0/000026/policy_front.png",
+              "image_id": "2257038256e3c8efeff1a11c6f3ab2750fff959e07b36699cf9498667315cf8f"
+            },
+            {
+              "frame": 27,
+              "label": "F+1",
+              "path": "observations/kujiale_0036_0_0/000027/policy_front.png",
+              "image_id": "843b98344e0f26d6e929587d310071b24eba92689d40012e8f1359e9c78bea7b"
+            },
+            {
+              "frame": 28,
+              "label": "F+2",
+              "path": "observations/kujiale_0036_0_0/000028/policy_front.png",
+              "image_id": "c0966da4e53e9dcec65b9e53b18d5c853b7a7db87ef0f7f4c6bcd1a6e1882b64"
+            }
+          ]
+        },
+        {
+          "id": "S04",
+          "index": 31,
+          "emittedAt": 36,
+          "ready_at_frame": 36,
+          "candidate_id": "C01:S04:F31",
+          "images": [
+            {
+              "frame": 29,
+              "label": "F-2",
+              "path": "observations/kujiale_0036_0_0/000029/policy_front.png",
+              "image_id": "0c8d7c4dd704806f9d3e622c34a4896e5df4bf0bb87d7d933d68eaafc7c26f14"
+            },
+            {
+              "frame": 30,
+              "label": "F-1",
+              "path": "observations/kujiale_0036_0_0/000030/policy_front.png",
+              "image_id": "0e9963e0ae05a10f8007c2d4fd838206517f51079c9eac74d621d9da110a53cb"
+            },
+            {
+              "frame": 31,
+              "label": "F0",
+              "path": "observations/kujiale_0036_0_0/000031/policy_front.png",
+              "image_id": "e27b06599752f6522fae8228ce432c83440960a07ec1b6191966513ebc8d2265"
+            },
+            {
+              "frame": 32,
+              "label": "F+1",
+              "path": "observations/kujiale_0036_0_0/000032/policy_front.png",
+              "image_id": "45200bc8a35d2a382611e552e9b10c0df6b1733daa3640ef29ef3440824adaf2"
+            },
+            {
+              "frame": 33,
+              "label": "F+2",
+              "path": "observations/kujiale_0036_0_0/000033/policy_front.png",
+              "image_id": "ae6058632e70289f4357267adf5484a8dd8c8154ce6d7ca085005497c57dbdba"
+            }
+          ]
+        },
+        {
+          "id": "S05",
+          "index": 36,
+          "emittedAt": 41,
+          "ready_at_frame": 41,
+          "candidate_id": "C01:S05:F36",
+          "images": [
+            {
+              "frame": 34,
+              "label": "F-2",
+              "path": "observations/kujiale_0036_0_0/000034/policy_front.png",
+              "image_id": "414a351031b3fd1d8710a8edf0d081c9911e62345f7e00875f04a5d598a44501"
+            },
+            {
+              "frame": 35,
+              "label": "F-1",
+              "path": "observations/kujiale_0036_0_0/000035/policy_front.png",
+              "image_id": "b3d864f232d43e2d2c9c057e7c49d7dc1b2c5b9596b9b015d882104a61fcdb61"
+            },
+            {
+              "frame": 36,
+              "label": "F0",
+              "path": "observations/kujiale_0036_0_0/000036/policy_front.png",
+              "image_id": "2a95c513556882de30ac2fc79748aeb68e8d16eed713291de34ca36b1b458ed1"
+            },
+            {
+              "frame": 37,
+              "label": "F+1",
+              "path": "observations/kujiale_0036_0_0/000037/policy_front.png",
+              "image_id": "990dff0312b9e359914babec9ac3e14dadb38b3bdca3fba04a853be288b399d5"
+            },
+            {
+              "frame": 38,
+              "label": "F+2",
+              "path": "observations/kujiale_0036_0_0/000038/policy_front.png",
+              "image_id": "36ffca0dc599946dc969fcf4d5cea083e32086e3d6f86d383aad3063c4d91267"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_number": 2,
+      "case_index": 1,
+      "episode_id": "kujiale_0036_3_2",
+      "real_episode_id": "kujiale_0036_3_2",
+      "scene": "kujiale_0036",
+      "nodes": [
+        {
+          "id": "S01",
+          "index": 0,
+          "emittedAt": 5,
+          "ready_at_frame": 5,
+          "candidate_id": "C02:S01:F0",
+          "images": [
+            {
+              "frame": -2,
+              "label": "F-2",
+              "missing": true
+            },
+            {
+              "frame": -1,
+              "label": "F-1",
+              "missing": true
+            },
+            {
+              "frame": 0,
+              "label": "F0",
+              "path": "observations/kujiale_0036_3_2/000000/policy_front.png",
+              "image_id": "effa272fd917c66e58455e0e6c9ef0ab23052dac436a6e4800b7ac2e92e7b0cc"
+            },
+            {
+              "frame": 1,
+              "label": "F+1",
+              "path": "observations/kujiale_0036_3_2/000001/policy_front.png",
+              "image_id": "779a3264995c0e4e551313ecb2a88486da95769ec5686a34beb7bd67601cdf63"
+            },
+            {
+              "frame": 2,
+              "label": "F+2",
+              "path": "observations/kujiale_0036_3_2/000002/policy_front.png",
+              "image_id": "a85e4c39c27ec3991e6efcf47e013098ffe45ad76b0640dfe46c3eda9f9e1b11"
+            }
+          ]
+        },
+        {
+          "id": "S02",
+          "index": 4,
+          "emittedAt": 9,
+          "ready_at_frame": 9,
+          "candidate_id": "C02:S02:F4",
+          "images": [
+            {
+              "frame": 2,
+              "label": "F-2",
+              "path": "observations/kujiale_0036_3_2/000002/policy_front.png",
+              "image_id": "a85e4c39c27ec3991e6efcf47e013098ffe45ad76b0640dfe46c3eda9f9e1b11"
+            },
+            {
+              "frame": 3,
+              "label": "F-1",
+              "path": "observations/kujiale_0036_3_2/000003/policy_front.png",
+              "image_id": "c30d079bc0a7625ac0dfdebf22f95cc716ce2ede5271072e2137049aa48e7764"
+            },
+            {
+              "frame": 4,
+              "label": "F0",
+              "path": "observations/kujiale_0036_3_2/000004/policy_front.png",
+              "image_id": "f7fee40cb015bc7179c4b29ccaadef5c9571df592180fa7f86fe7d4dd78e4db9"
+            },
+            {
+              "frame": 5,
+              "label": "F+1",
+              "path": "observations/kujiale_0036_3_2/000005/policy_front.png",
+              "image_id": "c9a629cda48543f36edeed218d9c13ecb34c955f472cfa6d41b46c1962ac0795"
+            },
+            {
+              "frame": 6,
+              "label": "F+2",
+              "path": "observations/kujiale_0036_3_2/000006/policy_front.png",
+              "image_id": "3581eecb58b740205b045512f0157c454384ef90bb487f7be3910a9621a6325c"
+            }
+          ]
+        },
+        {
+          "id": "S03",
+          "index": 35,
+          "emittedAt": 40,
+          "ready_at_frame": 40,
+          "candidate_id": "C02:S03:F35",
+          "images": [
+            {
+              "frame": 33,
+              "label": "F-2",
+              "path": "observations/kujiale_0036_3_2/000033/policy_front.png",
+              "image_id": "6f6f3faaba9d42dd822cc9061c1e98c5864f1676b0ea14979955d92734ee6719"
+            },
+            {
+              "frame": 34,
+              "label": "F-1",
+              "path": "observations/kujiale_0036_3_2/000034/policy_front.png",
+              "image_id": "200ac986d548360b993b41e51bca17de77949c221f6cb941f7f3ed9682d237eb"
+            },
+            {
+              "frame": 35,
+              "label": "F0",
+              "path": "observations/kujiale_0036_3_2/000035/policy_front.png",
+              "image_id": "029c006124a9074d695a7273b1d3f335593b801d282367d5d49289e904304cbc"
+            },
+            {
+              "frame": 36,
+              "label": "F+1",
+              "path": "observations/kujiale_0036_3_2/000036/policy_front.png",
+              "image_id": "1e0fc37e3f0ee8d16e114711b9968f65f431774713f2254c261692ebe99ae194"
+            },
+            {
+              "frame": 37,
+              "label": "F+2",
+              "path": "observations/kujiale_0036_3_2/000037/policy_front.png",
+              "image_id": "a5bf9280246e310c9d9cf2932a1e8ea6c8b2839bb844f534a32f1ee0b4c5eca3"
+            }
+          ]
+        },
+        {
+          "id": "S04",
+          "index": 40,
+          "emittedAt": 45,
+          "ready_at_frame": 45,
+          "candidate_id": "C02:S04:F40",
+          "images": [
+            {
+              "frame": 38,
+              "label": "F-2",
+              "path": "observations/kujiale_0036_3_2/000038/policy_front.png",
+              "image_id": "938b0e4c116d8b1dd51277fd154647f0717a2fd5ce100f162d2bb3db16dda9ca"
+            },
+            {
+              "frame": 39,
+              "label": "F-1",
+              "path": "observations/kujiale_0036_3_2/000039/policy_front.png",
+              "image_id": "06aa809b3614e672ac0cbed094230b5dc52c58d34b3086ba3f4d5e7cd20956c9"
+            },
+            {
+              "frame": 40,
+              "label": "F0",
+              "path": "observations/kujiale_0036_3_2/000040/policy_front.png",
+              "image_id": "b4a71696e3e28fab47290bc3a5eeb00f774cb787f93e479aa48d8e0c1e545fa4"
+            },
+            {
+              "frame": 41,
+              "label": "F+1",
+              "path": "observations/kujiale_0036_3_2/000041/policy_front.png",
+              "image_id": "c0017936393bcb7ffe449884b1ac4c82b913b33b7c537d4f85cfea1c7e186ae0"
+            },
+            {
+              "frame": 42,
+              "label": "F+2",
+              "path": "observations/kujiale_0036_3_2/000042/policy_front.png",
+              "image_id": "598de64959b12a4ae0e1ba431f5db75e81a503e5d8af243cb9f5b6dd4362daf1"
+            }
+          ]
+        },
+        {
+          "id": "S05",
+          "index": 45,
+          "emittedAt": 50,
+          "ready_at_frame": 50,
+          "candidate_id": "C02:S05:F45",
+          "images": [
+            {
+              "frame": 43,
+              "label": "F-2",
+              "path": "observations/kujiale_0036_3_2/000043/policy_front.png",
+              "image_id": "7524e7095fb296263448f2304b67001f86b20c30162ea49b039ea4a9f9747526"
+            },
+            {
+              "frame": 44,
+              "label": "F-1",
+              "path": "observations/kujiale_0036_3_2/000044/policy_front.png",
+              "image_id": "df4e5f4255abeaa600dd8a8ad52c852425c06ef62232e8bdd4ade000f31018c5"
+            },
+            {
+              "frame": 45,
+              "label": "F0",
+              "path": "observations/kujiale_0036_3_2/000045/policy_front.png",
+              "image_id": "e5f2a7e72533a2fad3e0c94e716064c99e829a2637fc80479670b5c8e72114dd"
+            },
+            {
+              "frame": 46,
+              "label": "F+1",
+              "path": "observations/kujiale_0036_3_2/000046/policy_front.png",
+              "image_id": "c189b1c75684b54ddcd6eabaf543f6a0fc5df0da17c56465519fc5c688d522b2"
+            },
+            {
+              "frame": 47,
+              "label": "F+2",
+              "path": "observations/kujiale_0036_3_2/000047/policy_front.png",
+              "image_id": "aae18c4892ce39c42349f177dabd695e1620a159966a51ee6851af48a2fa08d2"
+            }
+          ]
+        },
+        {
+          "id": "S06",
+          "index": 50,
+          "emittedAt": 55,
+          "ready_at_frame": 55,
+          "candidate_id": "C02:S06:F50",
+          "images": [
+            {
+              "frame": 48,
+              "label": "F-2",
+              "path": "observations/kujiale_0036_3_2/000048/policy_front.png",
+              "image_id": "df8d12773b73c9de8b464c347f06aa1bb09b866e80ed6b99c160571b50fedc18"
+            },
+            {
+              "frame": 49,
+              "label": "F-1",
+              "path": "observations/kujiale_0036_3_2/000049/policy_front.png",
+              "image_id": "deb2c1da749bb11ab7696359f0f1346fdf727a7219667de5f58e26ce6309da0e"
+            },
+            {
+              "frame": 50,
+              "label": "F0",
+              "path": "observations/kujiale_0036_3_2/000050/policy_front.png",
+              "image_id": "569617675efc245094664bce0ba732508d772cfe296de1d953e77edb2ad4c9fb"
+            },
+            {
+              "frame": 51,
+              "label": "F+1",
+              "path": "observations/kujiale_0036_3_2/000051/policy_front.png",
+              "image_id": "ed27ced26f4c8928c6b04c5941fc509c966cf95ce29e61e3e2556723fc52ecf2"
+            },
+            {
+              "frame": 52,
+              "label": "F+2",
+              "path": "observations/kujiale_0036_3_2/000052/policy_front.png",
+              "image_id": "688af85e511a8f56282456071911e973daf5fec8fe4581640efca438306a2982"
+            }
+          ]
+        },
+        {
+          "id": "S07",
+          "index": 55,
+          "emittedAt": 60,
+          "ready_at_frame": 60,
+          "candidate_id": "C02:S07:F55",
+          "images": [
+            {
+              "frame": 53,
+              "label": "F-2",
+              "path": "observations/kujiale_0036_3_2/000053/policy_front.png",
+              "image_id": "b799056e50ba65c7309a2046299004e86c403d8b9e8c2be120ed3173bc282678"
+            },
+            {
+              "frame": 54,
+              "label": "F-1",
+              "path": "observations/kujiale_0036_3_2/000054/policy_front.png",
+              "image_id": "db96e2f042ae272e404b06edca3bbc69d301489a166d753b008cf186f1604b2d"
+            },
+            {
+              "frame": 55,
+              "label": "F0",
+              "path": "observations/kujiale_0036_3_2/000055/policy_front.png",
+              "image_id": "48cfddda095683da015ed965a5e737c3ff75aa7c50ab6a246ece3cf340f17938"
+            },
+            {
+              "frame": 56,
+              "label": "F+1",
+              "path": "observations/kujiale_0036_3_2/000056/policy_front.png",
+              "image_id": "dbf1904c796e60d56359c4e4657142ebbdc279b5b5775a5894d5a278f00aadef"
+            },
+            {
+              "frame": 57,
+              "label": "F+2",
+              "path": "observations/kujiale_0036_3_2/000057/policy_front.png",
+              "image_id": "8f0719d0c7cb6f23b19fb7b0c6a8476dd0aeb62955f918a0c2a38b256c064bc0"
+            }
+          ]
+        },
+        {
+          "id": "S08",
+          "index": 60,
+          "emittedAt": 65,
+          "ready_at_frame": 65,
+          "candidate_id": "C02:S08:F60",
+          "images": [
+            {
+              "frame": 58,
+              "label": "F-2",
+              "path": "observations/kujiale_0036_3_2/000058/policy_front.png",
+              "image_id": "b3df5579566e0b7b3636acee80b2ec81fade6547b1b2a65d86f2c58dff0e0eed"
+            },
+            {
+              "frame": 59,
+              "label": "F-1",
+              "path": "observations/kujiale_0036_3_2/000059/policy_front.png",
+              "image_id": "6579257b7c0845ebebe0f485162f492081c60dcb9771c914f32e9f2ec1e1ed17"
+            },
+            {
+              "frame": 60,
+              "label": "F0",
+              "path": "observations/kujiale_0036_3_2/000060/policy_front.png",
+              "image_id": "b2b1800547fb898938ac3faf0e0a6343608b0708430c89bdb4798f5c731a61e9"
+            },
+            {
+              "frame": 61,
+              "label": "F+1",
+              "path": "observations/kujiale_0036_3_2/000061/policy_front.png",
+              "image_id": "07d6948de2eedc0e8d3196409a3c20a3ee567cb86b2293aa69b04b3dc053e2be"
+            },
+            {
+              "frame": 62,
+              "label": "F+2",
+              "path": "observations/kujiale_0036_3_2/000062/policy_front.png",
+              "image_id": "a9add2aca95dfcf75de14a7a53ff145ae348818b87d9365d809f15f0e4ec8899"
+            }
+          ]
+        },
+        {
+          "id": "S09",
+          "index": 84,
+          "emittedAt": 89,
+          "ready_at_frame": 89,
+          "candidate_id": "C02:S09:F84",
+          "images": [
+            {
+              "frame": 82,
+              "label": "F-2",
+              "path": "observations/kujiale_0036_3_2/000082/policy_front.png",
+              "image_id": "c3e0589db1e80aa5e3405f37c580cc65ee3cc4a03750c3d10f5b9bfbc38c4dda"
+            },
+            {
+              "frame": 83,
+              "label": "F-1",
+              "path": "observations/kujiale_0036_3_2/000083/policy_front.png",
+              "image_id": "365ffb96458b059706cd11b7c80b77015f26111f8caea656ee04bc7b2626e59e"
+            },
+            {
+              "frame": 84,
+              "label": "F0",
+              "path": "observations/kujiale_0036_3_2/000084/policy_front.png",
+              "image_id": "3416e00bed8f11ac9e32f6db5a38f0be2021028b6e9a537b141a0d0bff69f557"
+            },
+            {
+              "frame": 85,
+              "label": "F+1",
+              "path": "observations/kujiale_0036_3_2/000085/policy_front.png",
+              "image_id": "84c153f46ee348ecb5320f0a28cdef4dc6dbc39ec840ba814b9250a75cfef476"
+            },
+            {
+              "frame": 86,
+              "label": "F+2",
+              "path": "observations/kujiale_0036_3_2/000086/policy_front.png",
+              "image_id": "0e50bfec529723801aa993b64dbe34bd68e7a8ee275ad4ed96997caaed5e1cc9"
+            }
+          ]
+        },
+        {
+          "id": "S10",
+          "index": 89,
+          "emittedAt": 94,
+          "ready_at_frame": 94,
+          "candidate_id": "C02:S10:F89",
+          "images": [
+            {
+              "frame": 87,
+              "label": "F-2",
+              "path": "observations/kujiale_0036_3_2/000087/policy_front.png",
+              "image_id": "6ac8818178f5978e60aca2278ae5ef72333fcd00be10d0a3c39de05e9d4dd89d"
+            },
+            {
+              "frame": 88,
+              "label": "F-1",
+              "path": "observations/kujiale_0036_3_2/000088/policy_front.png",
+              "image_id": "d2b160db74c649f52556a313b0db5ae53b45c1fc283bb5c0a315ad6587c13233"
+            },
+            {
+              "frame": 89,
+              "label": "F0",
+              "path": "observations/kujiale_0036_3_2/000089/policy_front.png",
+              "image_id": "4ace26ff24c05619e9c75f9be6bc9b1b22ef6fd4947f40c74118a30d66b3f155"
+            },
+            {
+              "frame": 90,
+              "label": "F+1",
+              "path": "observations/kujiale_0036_3_2/000090/policy_front.png",
+              "image_id": "f25332ddd8d14844ca8f0f19cd0f672ebcbcf3c33e73fb0c9e00643cc23633a1"
+            },
+            {
+              "frame": 91,
+              "label": "F+2",
+              "path": "observations/kujiale_0036_3_2/000091/policy_front.png",
+              "image_id": "753b851eb53a95c9f718bcbc8021cc9a89d6f3824a40ab4e676687b60244bac3"
+            }
+          ]
+        },
+        {
+          "id": "S11",
+          "index": 94,
+          "emittedAt": 99,
+          "ready_at_frame": 99,
+          "candidate_id": "C02:S11:F94",
+          "images": [
+            {
+              "frame": 92,
+              "label": "F-2",
+              "path": "observations/kujiale_0036_3_2/000092/policy_front.png",
+              "image_id": "f9d1e4eadabb5175d94f0d796a0f282e2836a859fd7f001ba1431430cffd5cae"
+            },
+            {
+              "frame": 93,
+              "label": "F-1",
+              "path": "observations/kujiale_0036_3_2/000093/policy_front.png",
+              "image_id": "6d8059f821880a52f8f4eee1f3240df3d06ffa162cd799d9c1009aa7914ddf74"
+            },
+            {
+              "frame": 94,
+              "label": "F0",
+              "path": "observations/kujiale_0036_3_2/000094/policy_front.png",
+              "image_id": "3c305bd3febc1c0391c14cd6d3cf3dfef9cbff232dc63067a8e42f3ab59cec36"
+            },
+            {
+              "frame": 95,
+              "label": "F+1",
+              "path": "observations/kujiale_0036_3_2/000095/policy_front.png",
+              "image_id": "8a9381f97aa847ab2a4d197a68cec014a74c865989f1d772d4f1b83cce634d17"
+            },
+            {
+              "frame": 96,
+              "label": "F+2",
+              "path": "observations/kujiale_0036_3_2/000096/policy_front.png",
+              "image_id": "e78f9b340d800b51602a569d91739b34b9b38242b6a39c663e9c48434ae90063"
+            }
+          ]
+        },
+        {
+          "id": "S12",
+          "index": 99,
+          "emittedAt": 104,
+          "ready_at_frame": 104,
+          "candidate_id": "C02:S12:F99",
+          "images": [
+            {
+              "frame": 97,
+              "label": "F-2",
+              "path": "observations/kujiale_0036_3_2/000097/policy_front.png",
+              "image_id": "228683be98a1a6f7e976c8781a9652c917441668e11c33b5e9cc864f89a58daf"
+            },
+            {
+              "frame": 98,
+              "label": "F-1",
+              "path": "observations/kujiale_0036_3_2/000098/policy_front.png",
+              "image_id": "6460bb91baaeb12836a4626d1f496a6c376916b9e706c719bc9580c384cc9117"
+            },
+            {
+              "frame": 99,
+              "label": "F0",
+              "path": "observations/kujiale_0036_3_2/000099/policy_front.png",
+              "image_id": "8d3382d382c8aed63e9701efb2b945ddd7ba5728fb8aba61ea91bdac9ae55aa0"
+            },
+            {
+              "frame": 100,
+              "label": "F+1",
+              "path": "observations/kujiale_0036_3_2/000100/policy_front.png",
+              "image_id": "6b6247b700870c5d3b0b05c950286864938ea582dee673afc08e9146dfbb65f9"
+            },
+            {
+              "frame": 101,
+              "label": "F+2",
+              "path": "observations/kujiale_0036_3_2/000101/policy_front.png",
+              "image_id": "a8e92556a0b2d63f6588df32fb1089eb3f4cfea915d88fcefa6ba4d8248cd188"
+            }
+          ]
+        },
+        {
+          "id": "S13",
+          "index": 104,
+          "emittedAt": 109,
+          "ready_at_frame": 109,
+          "candidate_id": "C02:S13:F104",
+          "images": [
+            {
+              "frame": 102,
+              "label": "F-2",
+              "path": "observations/kujiale_0036_3_2/000102/policy_front.png",
+              "image_id": "f1639d6b9ce16a1a8f4da1421212147fc458fb15d348ed688773a897b9c2fd4c"
+            },
+            {
+              "frame": 103,
+              "label": "F-1",
+              "path": "observations/kujiale_0036_3_2/000103/policy_front.png",
+              "image_id": "4876915e202ec5ee477d61eec2b68c3290d95a7c78593089465f7ffc7ab6873b"
+            },
+            {
+              "frame": 104,
+              "label": "F0",
+              "path": "observations/kujiale_0036_3_2/000104/policy_front.png",
+              "image_id": "81c9e0cba4605361ec237aa9f732fd2ca0264b503e190844f4944523564066be"
+            },
+            {
+              "frame": 105,
+              "label": "F+1",
+              "path": "observations/kujiale_0036_3_2/000105/policy_front.png",
+              "image_id": "95c676363ae4f4fff43eab7cc3c4e2d790bf75213160b463d595733db51c1a76"
+            },
+            {
+              "frame": 106,
+              "label": "F+2",
+              "path": "observations/kujiale_0036_3_2/000106/policy_front.png",
+              "image_id": "84800c63938d0914a2cf46df58675c695003f51c1c9e110c67ee2ee19dff1d0a"
+            }
+          ]
+        },
+        {
+          "id": "S14",
+          "index": 109,
+          "emittedAt": 114,
+          "ready_at_frame": 114,
+          "candidate_id": "C02:S14:F109",
+          "images": [
+            {
+              "frame": 107,
+              "label": "F-2",
+              "path": "observations/kujiale_0036_3_2/000107/policy_front.png",
+              "image_id": "4e6de784af53b3709161396c4f889ccad0652893cc1b86b361172c16e611f825"
+            },
+            {
+              "frame": 108,
+              "label": "F-1",
+              "path": "observations/kujiale_0036_3_2/000108/policy_front.png",
+              "image_id": "d3a18f574cb24add98fd4009eda0236d3c565cd8ff943ebedc588d67151e102d"
+            },
+            {
+              "frame": 109,
+              "label": "F0",
+              "path": "observations/kujiale_0036_3_2/000109/policy_front.png",
+              "image_id": "329b5f9f80ab1fcf6eb4be18606609e198c61eedcbcf4ec414d12afd7b4743ba"
+            },
+            {
+              "frame": 110,
+              "label": "F+1",
+              "path": "observations/kujiale_0036_3_2/000110/policy_front.png",
+              "image_id": "345768055a622b7bd767972ce536194009f20a240f83dafa40cefa88f7df22b8"
+            },
+            {
+              "frame": 111,
+              "label": "F+2",
+              "path": "observations/kujiale_0036_3_2/000111/policy_front.png",
+              "image_id": "b68b295e9d602b83333959e6bb2cdb9bc098d25c12657933e894b0035f822dbf"
+            }
+          ]
+        },
+        {
+          "id": "S15",
+          "index": 114,
+          "emittedAt": 119,
+          "ready_at_frame": 119,
+          "candidate_id": "C02:S15:F114",
+          "images": [
+            {
+              "frame": 112,
+              "label": "F-2",
+              "path": "observations/kujiale_0036_3_2/000112/policy_front.png",
+              "image_id": "6e81dec76111fed498c1d100c718d530a562d59bd50e180d4534675b3090ec05"
+            },
+            {
+              "frame": 113,
+              "label": "F-1",
+              "path": "observations/kujiale_0036_3_2/000113/policy_front.png",
+              "image_id": "a992984a33386d86cb55bd97f1f4d53e8bfd2fabbaa58cc7f5cad02f5a29da9f"
+            },
+            {
+              "frame": 114,
+              "label": "F0",
+              "path": "observations/kujiale_0036_3_2/000114/policy_front.png",
+              "image_id": "2f05b379a68e15e35306b513621ed83d763c9c90ad3c048861d3647eb2298b8b"
+            },
+            {
+              "frame": 115,
+              "label": "F+1",
+              "path": "observations/kujiale_0036_3_2/000115/policy_front.png",
+              "image_id": "388ffe42bdeb373cf9ee0073d2ce305bfe29e125ad08cfd51197314e2cfc1079"
+            },
+            {
+              "frame": 116,
+              "label": "F+2",
+              "path": "observations/kujiale_0036_3_2/000116/policy_front.png",
+              "image_id": "27c8a06d4b9f65cfaf31a54df97e30f765b6981f1f8b5f4995005ee65040abae"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_number": 3,
+      "case_index": 2,
+      "episode_id": "kujiale_0036_52_4",
+      "real_episode_id": "kujiale_0036_52_4",
+      "scene": "kujiale_0036",
+      "nodes": [
+        {
+          "id": "S01",
+          "index": 0,
+          "emittedAt": 5,
+          "ready_at_frame": 5,
+          "candidate_id": "C03:S01:F0",
+          "images": [
+            {
+              "frame": -2,
+              "label": "F-2",
+              "missing": true
+            },
+            {
+              "frame": -1,
+              "label": "F-1",
+              "missing": true
+            },
+            {
+              "frame": 0,
+              "label": "F0",
+              "path": "observations/kujiale_0036_52_4/000000/policy_front.png",
+              "image_id": "aed3be421bf8eba9c944081781557d5d3b992bb4fabdd51185dd875280483562"
+            },
+            {
+              "frame": 1,
+              "label": "F+1",
+              "path": "observations/kujiale_0036_52_4/000001/policy_front.png",
+              "image_id": "406d5090032d062a8ccecfabbc20cee1f115bf0850ebdc1f6db5e2f7fd74388f"
+            },
+            {
+              "frame": 2,
+              "label": "F+2",
+              "path": "observations/kujiale_0036_52_4/000002/policy_front.png",
+              "image_id": "4d5306e3f1942a7a1c260b0716775bb749e1ad82ab5ada5a3534d0b5a9d5ac91"
+            }
+          ]
+        },
+        {
+          "id": "S02",
+          "index": 5,
+          "emittedAt": 10,
+          "ready_at_frame": 10,
+          "candidate_id": "C03:S02:F5",
+          "images": [
+            {
+              "frame": 3,
+              "label": "F-2",
+              "path": "observations/kujiale_0036_52_4/000003/policy_front.png",
+              "image_id": "c7b01e0261638d988910a35fa80674b5c3c18c47eaa9649f3f2ad91790e5f81a"
+            },
+            {
+              "frame": 4,
+              "label": "F-1",
+              "path": "observations/kujiale_0036_52_4/000004/policy_front.png",
+              "image_id": "59a00a02565018dc1511f71ae42558d507380c8c540ca82658a0f65fb725f8be"
+            },
+            {
+              "frame": 5,
+              "label": "F0",
+              "path": "observations/kujiale_0036_52_4/000005/policy_front.png",
+              "image_id": "6a14a7059fc01f2f3ae8f405fa58bf2023c2bf4a41af2445bb76fb1bcb68d428"
+            },
+            {
+              "frame": 6,
+              "label": "F+1",
+              "path": "observations/kujiale_0036_52_4/000006/policy_front.png",
+              "image_id": "9d3dc90fb087657581e8b5762fffb6d74ed30ccbacd4043f89698e1dea7e8a4c"
+            },
+            {
+              "frame": 7,
+              "label": "F+2",
+              "path": "observations/kujiale_0036_52_4/000007/policy_front.png",
+              "image_id": "69d1e45662b9e718cc4cfc1fde5b9337904a72bfeae7e236382aad491994ff30"
+            }
+          ]
+        },
+        {
+          "id": "S03",
+          "index": 10,
+          "emittedAt": 15,
+          "ready_at_frame": 15,
+          "candidate_id": "C03:S03:F10",
+          "images": [
+            {
+              "frame": 8,
+              "label": "F-2",
+              "path": "observations/kujiale_0036_52_4/000008/policy_front.png",
+              "image_id": "d7b88517b42d69f5d9c6c59057ff00c2855c6761dec4ccac44666f323f9f08ec"
+            },
+            {
+              "frame": 9,
+              "label": "F-1",
+              "path": "observations/kujiale_0036_52_4/000009/policy_front.png",
+              "image_id": "45831de7ca4e3f0cecc510bb770b0be85922539bc2d21ab420a204e1ee9a6e0b"
+            },
+            {
+              "frame": 10,
+              "label": "F0",
+              "path": "observations/kujiale_0036_52_4/000010/policy_front.png",
+              "image_id": "95aa65289dc03a8e16d5b07ac99fd8f8c38ad61192cf9ce0d2268ecee5f2e089"
+            },
+            {
+              "frame": 11,
+              "label": "F+1",
+              "path": "observations/kujiale_0036_52_4/000011/policy_front.png",
+              "image_id": "c2d6b3104929b4cfa79860b6cf367996ad0aaf2e81e47581c825c50fa0f5c6ad"
+            },
+            {
+              "frame": 12,
+              "label": "F+2",
+              "path": "observations/kujiale_0036_52_4/000012/policy_front.png",
+              "image_id": "5e7ad4eec95937c7ff7561ed6eb71d28ed86c9bbf26d59c9389c636b7c73d97d"
+            }
+          ]
+        },
+        {
+          "id": "S04",
+          "index": 15,
+          "emittedAt": 20,
+          "ready_at_frame": 20,
+          "candidate_id": "C03:S04:F15",
+          "images": [
+            {
+              "frame": 13,
+              "label": "F-2",
+              "path": "observations/kujiale_0036_52_4/000013/policy_front.png",
+              "image_id": "bb2f48367781cdb414dee03150ccc39e2d71716970d5c4dbe1468ce8b81bbd86"
+            },
+            {
+              "frame": 14,
+              "label": "F-1",
+              "path": "observations/kujiale_0036_52_4/000014/policy_front.png",
+              "image_id": "c2b641d8b0a85decf726f6aad2c198f242d9760beaf4c28f8ee12a87f7088422"
+            },
+            {
+              "frame": 15,
+              "label": "F0",
+              "path": "observations/kujiale_0036_52_4/000015/policy_front.png",
+              "image_id": "47ace3449fe38c5efe565ee13ee1050ea7aa63256c7a28daa3a3c93e4d1260a0"
+            },
+            {
+              "frame": 16,
+              "label": "F+1",
+              "path": "observations/kujiale_0036_52_4/000016/policy_front.png",
+              "image_id": "308b207d15d40b9d26d1edd99b6d259567bf47e8e69ff0a7631fa6894466d8a8"
+            },
+            {
+              "frame": 17,
+              "label": "F+2",
+              "path": "observations/kujiale_0036_52_4/000017/policy_front.png",
+              "image_id": "df6a4facbb7d18744c348547b5c0315c5e35c474bd392eac68f6ed59c6bc47c2"
+            }
+          ]
+        },
+        {
+          "id": "S05",
+          "index": 20,
+          "emittedAt": 25,
+          "ready_at_frame": 25,
+          "candidate_id": "C03:S05:F20",
+          "images": [
+            {
+              "frame": 18,
+              "label": "F-2",
+              "path": "observations/kujiale_0036_52_4/000018/policy_front.png",
+              "image_id": "b78fa61b9ba6f800411af65183b94a6d69eec20384ace9b9b67f81aa0b6efd10"
+            },
+            {
+              "frame": 19,
+              "label": "F-1",
+              "path": "observations/kujiale_0036_52_4/000019/policy_front.png",
+              "image_id": "9288a592fa67817da34cd30b7c2bcc5edc9c11ff81ec4c69cb9df57bb005d629"
+            },
+            {
+              "frame": 20,
+              "label": "F0",
+              "path": "observations/kujiale_0036_52_4/000020/policy_front.png",
+              "image_id": "a9136b02b07bb6f2bb669627c87c477dbe04cccb64d81db2497f724b6b25925d"
+            },
+            {
+              "frame": 21,
+              "label": "F+1",
+              "path": "observations/kujiale_0036_52_4/000021/policy_front.png",
+              "image_id": "cc1ca7cc2c2269f30c12964416de750bf8641c0a74f47df42574b4d2a27e8cb6"
+            },
+            {
+              "frame": 22,
+              "label": "F+2",
+              "path": "observations/kujiale_0036_52_4/000022/policy_front.png",
+              "image_id": "195c386635776a75cc54014ca171f527eaf53b08e6949481d685fcfce575ce22"
+            }
+          ]
+        },
+        {
+          "id": "S06",
+          "index": 25,
+          "emittedAt": 30,
+          "ready_at_frame": 30,
+          "candidate_id": "C03:S06:F25",
+          "images": [
+            {
+              "frame": 23,
+              "label": "F-2",
+              "path": "observations/kujiale_0036_52_4/000023/policy_front.png",
+              "image_id": "7728b580ac4c27b0bdc7074be2212f2c565c0b88561b58698d265852a8caa261"
+            },
+            {
+              "frame": 24,
+              "label": "F-1",
+              "path": "observations/kujiale_0036_52_4/000024/policy_front.png",
+              "image_id": "0e0ca62a94f9c820af6464e63b58d655728ab0f18b30cdc046c5d68c5b24e205"
+            },
+            {
+              "frame": 25,
+              "label": "F0",
+              "path": "observations/kujiale_0036_52_4/000025/policy_front.png",
+              "image_id": "5e5e30e28e62bf89a813c4ab5341a6eb75257217d69768f3022a75e5d505b008"
+            },
+            {
+              "frame": 26,
+              "label": "F+1",
+              "path": "observations/kujiale_0036_52_4/000026/policy_front.png",
+              "image_id": "f267693fc7457da2d281f10d0decea470e0e048bdd6d7864398911e9890c01cf"
+            },
+            {
+              "frame": 27,
+              "label": "F+2",
+              "path": "observations/kujiale_0036_52_4/000027/policy_front.png",
+              "image_id": "cd2900adad632758f61d785c9126877d2d69946eb44a1ea1f8c4eebdcaf25f67"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_number": 4,
+      "case_index": 3,
+      "episode_id": "kujiale_0113_18_1",
+      "real_episode_id": "kujiale_0113_18_1",
+      "scene": "kujiale_0113",
+      "nodes": [
+        {
+          "id": "S01",
+          "index": 0,
+          "emittedAt": 5,
+          "ready_at_frame": 5,
+          "candidate_id": "C04:S01:F0",
+          "images": [
+            {
+              "frame": -2,
+              "label": "F-2",
+              "missing": true
+            },
+            {
+              "frame": -1,
+              "label": "F-1",
+              "missing": true
+            },
+            {
+              "frame": 0,
+              "label": "F0",
+              "path": "observations/kujiale_0113_18_1/000000/policy_front.png",
+              "image_id": "cc4a0e9fe4686eae8e7d186705240a0625a94c913486759ba3c324ad2f8c3486"
+            },
+            {
+              "frame": 1,
+              "label": "F+1",
+              "path": "observations/kujiale_0113_18_1/000001/policy_front.png",
+              "image_id": "081a8f19cdbff4835ab067468fc2bd647b5f231a80f884f475abddd479b55163"
+            },
+            {
+              "frame": 2,
+              "label": "F+2",
+              "path": "observations/kujiale_0113_18_1/000002/policy_front.png",
+              "image_id": "6bc4ec69aa5dc73b801a0332a2bf897228a7435ca444251f35ae853a11ab07d2"
+            }
+          ]
+        },
+        {
+          "id": "S02",
+          "index": 20,
+          "emittedAt": 25,
+          "ready_at_frame": 25,
+          "candidate_id": "C04:S02:F20",
+          "images": [
+            {
+              "frame": 18,
+              "label": "F-2",
+              "path": "observations/kujiale_0113_18_1/000018/policy_front.png",
+              "image_id": "6f60636f961f3d2a079c53587f2f5a1928f4d5029286388d0f702fcd5af26b85"
+            },
+            {
+              "frame": 19,
+              "label": "F-1",
+              "path": "observations/kujiale_0113_18_1/000019/policy_front.png",
+              "image_id": "54cf90d9b9011fa036e4223cc418620a7bbe215033d79f2a5ddeeda79f98545a"
+            },
+            {
+              "frame": 20,
+              "label": "F0",
+              "path": "observations/kujiale_0113_18_1/000020/policy_front.png",
+              "image_id": "1e107cb3ecd07b812124ab520f5a3f88df76f269b1f17a2f17e7d04201fdab58"
+            },
+            {
+              "frame": 21,
+              "label": "F+1",
+              "path": "observations/kujiale_0113_18_1/000021/policy_front.png",
+              "image_id": "1777fabcd31748705bd0a5a4bc94ff720a2f659ad3acf31831ffd545a265d404"
+            },
+            {
+              "frame": 22,
+              "label": "F+2",
+              "path": "observations/kujiale_0113_18_1/000022/policy_front.png",
+              "image_id": "ebeadda66144659e1e23067ac0893f45d0d466dc8518940237474e49f884d926"
+            }
+          ]
+        },
+        {
+          "id": "S03",
+          "index": 25,
+          "emittedAt": 30,
+          "ready_at_frame": 30,
+          "candidate_id": "C04:S03:F25",
+          "images": [
+            {
+              "frame": 23,
+              "label": "F-2",
+              "path": "observations/kujiale_0113_18_1/000023/policy_front.png",
+              "image_id": "2652488bcd0b9a77110077a54674b38ca0e1308d741cf076c7fbe9c11a1a587a"
+            },
+            {
+              "frame": 24,
+              "label": "F-1",
+              "path": "observations/kujiale_0113_18_1/000024/policy_front.png",
+              "image_id": "94a4d876e6a3bb57e4dbe87a20c26ac6e29f8f99c965e8b16222518534e763c6"
+            },
+            {
+              "frame": 25,
+              "label": "F0",
+              "path": "observations/kujiale_0113_18_1/000025/policy_front.png",
+              "image_id": "ed5c21696adefd2a00b6a44c5969b8d51be9be32cd8f6690b312a30992cfdab1"
+            },
+            {
+              "frame": 26,
+              "label": "F+1",
+              "path": "observations/kujiale_0113_18_1/000026/policy_front.png",
+              "image_id": "86e4ceb95ceeb01a018096387941f9a456c5e97837946cb63c04955b81ca5c6d"
+            },
+            {
+              "frame": 27,
+              "label": "F+2",
+              "path": "observations/kujiale_0113_18_1/000027/policy_front.png",
+              "image_id": "a524a8a5c22f18dfa76ef28338b18972f2ddfa5b5f8e6e637fff2cd882a5f2be"
+            }
+          ]
+        },
+        {
+          "id": "S04",
+          "index": 30,
+          "emittedAt": 35,
+          "ready_at_frame": 35,
+          "candidate_id": "C04:S04:F30",
+          "images": [
+            {
+              "frame": 28,
+              "label": "F-2",
+              "path": "observations/kujiale_0113_18_1/000028/policy_front.png",
+              "image_id": "ccafa211bcf42a6d2729acf8c9c0510ad7cb38019e913df688db3df348d98c46"
+            },
+            {
+              "frame": 29,
+              "label": "F-1",
+              "path": "observations/kujiale_0113_18_1/000029/policy_front.png",
+              "image_id": "01de31c43daf9d9f793a1474986e38b2efef9b89564739cb1ae7e91095a4c174"
+            },
+            {
+              "frame": 30,
+              "label": "F0",
+              "path": "observations/kujiale_0113_18_1/000030/policy_front.png",
+              "image_id": "7f5e21cd700ef7c60b181c378d0cdbabee1361816f6ba53a97adef956b929643"
+            },
+            {
+              "frame": 31,
+              "label": "F+1",
+              "path": "observations/kujiale_0113_18_1/000031/policy_front.png",
+              "image_id": "d76b85f265a8edf409bf8fe3684ca8c0382924f9fe2dd0fffa8dc31822b89d37"
+            },
+            {
+              "frame": 32,
+              "label": "F+2",
+              "path": "observations/kujiale_0113_18_1/000032/policy_front.png",
+              "image_id": "cc5e7aea974d7fe05289b0fff8bc05fbc66723502da3afedda66a8cf39e5ecff"
+            }
+          ]
+        },
+        {
+          "id": "S05",
+          "index": 35,
+          "emittedAt": 40,
+          "ready_at_frame": 40,
+          "candidate_id": "C04:S05:F35",
+          "images": [
+            {
+              "frame": 33,
+              "label": "F-2",
+              "path": "observations/kujiale_0113_18_1/000033/policy_front.png",
+              "image_id": "49fe57be58821f6b319112acbbe5ab30ca2363186125e586c5878e207900a60f"
+            },
+            {
+              "frame": 34,
+              "label": "F-1",
+              "path": "observations/kujiale_0113_18_1/000034/policy_front.png",
+              "image_id": "2d8046d9f04dac40e391d3ee680c51565b369701697a9b977a0e7baa5aa3ffef"
+            },
+            {
+              "frame": 35,
+              "label": "F0",
+              "path": "observations/kujiale_0113_18_1/000035/policy_front.png",
+              "image_id": "6886901be2aee61dced62e46a6dc0cb309b6d4b4a9fd77a5ca5ee9e4f69a0f9a"
+            },
+            {
+              "frame": 36,
+              "label": "F+1",
+              "path": "observations/kujiale_0113_18_1/000036/policy_front.png",
+              "image_id": "70e1838cafd1c3c56776b8c264d447c0de748feb64bdfb0a6be9605e244176ee"
+            },
+            {
+              "frame": 37,
+              "label": "F+2",
+              "path": "observations/kujiale_0113_18_1/000037/policy_front.png",
+              "image_id": "b1eaf784b3e75b0a807ab168b3780577a8857d0bce09b50d5a281df498dd5be7"
+            }
+          ]
+        },
+        {
+          "id": "S06",
+          "index": 40,
+          "emittedAt": 45,
+          "ready_at_frame": 45,
+          "candidate_id": "C04:S06:F40",
+          "images": [
+            {
+              "frame": 38,
+              "label": "F-2",
+              "path": "observations/kujiale_0113_18_1/000038/policy_front.png",
+              "image_id": "5b3000520e8627d538ec4f25bb3ea9f81d18774000e9279c8a4c022ea46c96f8"
+            },
+            {
+              "frame": 39,
+              "label": "F-1",
+              "path": "observations/kujiale_0113_18_1/000039/policy_front.png",
+              "image_id": "68e8dac0a0143838190f4cae3bf3ba13d6075ffaeccb6ce686dbb937b192ace4"
+            },
+            {
+              "frame": 40,
+              "label": "F0",
+              "path": "observations/kujiale_0113_18_1/000040/policy_front.png",
+              "image_id": "840bf4fa3a250c60cfa07fcbd84ad61ee6bc47f487c378078ac90f20160f2d12"
+            },
+            {
+              "frame": 41,
+              "label": "F+1",
+              "path": "observations/kujiale_0113_18_1/000041/policy_front.png",
+              "image_id": "e010a1eea9dd2a2ddec2820b59e9bf38183b45e4ef66eff76bbb501c324936cf"
+            },
+            {
+              "frame": 42,
+              "label": "F+2",
+              "path": "observations/kujiale_0113_18_1/000042/policy_front.png",
+              "image_id": "690d08c8f89828a00d2b9227a3bf70407ffca759a2062d6e4af1937477e2b67c"
+            }
+          ]
+        },
+        {
+          "id": "S07",
+          "index": 45,
+          "emittedAt": 50,
+          "ready_at_frame": 50,
+          "candidate_id": "C04:S07:F45",
+          "images": [
+            {
+              "frame": 43,
+              "label": "F-2",
+              "path": "observations/kujiale_0113_18_1/000043/policy_front.png",
+              "image_id": "ed0c8211aca6847196058e1732f8c3cc02172df84cbab45d8c88a80cc4c592c5"
+            },
+            {
+              "frame": 44,
+              "label": "F-1",
+              "path": "observations/kujiale_0113_18_1/000044/policy_front.png",
+              "image_id": "5b17887924a2c68622c096d6a9d41870d8a033043dcfa78334e29a1831077451"
+            },
+            {
+              "frame": 45,
+              "label": "F0",
+              "path": "observations/kujiale_0113_18_1/000045/policy_front.png",
+              "image_id": "c376acf663dd51474fcabfe524aef9356d27898286800fcd6d32e98e115f9c77"
+            },
+            {
+              "frame": 46,
+              "label": "F+1",
+              "path": "observations/kujiale_0113_18_1/000046/policy_front.png",
+              "image_id": "378dfc097c612b4b85502088a88f20c54089aeef9702f73767f8fd305dda2fde"
+            },
+            {
+              "frame": 47,
+              "label": "F+2",
+              "path": "observations/kujiale_0113_18_1/000047/policy_front.png",
+              "image_id": "e52fbab709431a46aab4576c53cbb07ca3bb7b4dd37afde6d8a804139128b3bb"
+            }
+          ]
+        },
+        {
+          "id": "S08",
+          "index": 50,
+          "emittedAt": 55,
+          "ready_at_frame": 55,
+          "candidate_id": "C04:S08:F50",
+          "images": [
+            {
+              "frame": 48,
+              "label": "F-2",
+              "path": "observations/kujiale_0113_18_1/000048/policy_front.png",
+              "image_id": "021c831d50f6b1524006c78b9c5c6fb0effcf8852d165eb1478d812187856eb8"
+            },
+            {
+              "frame": 49,
+              "label": "F-1",
+              "path": "observations/kujiale_0113_18_1/000049/policy_front.png",
+              "image_id": "a3b0c0550b6f40a91ba25558ff550fcfd4bd978742311aaba9bc2c61b781e80a"
+            },
+            {
+              "frame": 50,
+              "label": "F0",
+              "path": "observations/kujiale_0113_18_1/000050/policy_front.png",
+              "image_id": "bbdbd47b7d4142dd81468880232b98cd7756c8ed9b81cc17913a271d27ffb3e9"
+            },
+            {
+              "frame": 51,
+              "label": "F+1",
+              "path": "observations/kujiale_0113_18_1/000051/policy_front.png",
+              "image_id": "1ad8c0aef4171e3bf272d989f278fbd3d738ef10ec027c143b6c40b686191208"
+            },
+            {
+              "frame": 52,
+              "label": "F+2",
+              "path": "observations/kujiale_0113_18_1/000052/policy_front.png",
+              "image_id": "1ca38d79c2dac0bc91f76860979cb0f5829c41ef4ce36986b976f8327d57eb61"
+            }
+          ]
+        },
+        {
+          "id": "S09",
+          "index": 55,
+          "emittedAt": 60,
+          "ready_at_frame": 60,
+          "candidate_id": "C04:S09:F55",
+          "images": [
+            {
+              "frame": 53,
+              "label": "F-2",
+              "path": "observations/kujiale_0113_18_1/000053/policy_front.png",
+              "image_id": "5a77d315a246a8981763f23a9e4073162a907ed52faa7146d6aabe1e72a40871"
+            },
+            {
+              "frame": 54,
+              "label": "F-1",
+              "path": "observations/kujiale_0113_18_1/000054/policy_front.png",
+              "image_id": "33ee45c3a879c7b99b01f9f3bf285dbc67f194cf866d998d58fb0fe429b6002f"
+            },
+            {
+              "frame": 55,
+              "label": "F0",
+              "path": "observations/kujiale_0113_18_1/000055/policy_front.png",
+              "image_id": "a1d11959a0e0ac782ea5801c2e94295cf7a79088cbbe6a1cba12649f45cf636e"
+            },
+            {
+              "frame": 56,
+              "label": "F+1",
+              "path": "observations/kujiale_0113_18_1/000056/policy_front.png",
+              "image_id": "4af3e4bd94f3bbcfa7acfb4f29c471e2ec0ec1925536ae43960d1b21def79241"
+            },
+            {
+              "frame": 57,
+              "label": "F+2",
+              "path": "observations/kujiale_0113_18_1/000057/policy_front.png",
+              "image_id": "346b70e1e1020ab6f9371f65c794e8927802472a91179ec09858a381e18c89c2"
+            }
+          ]
+        },
+        {
+          "id": "S10",
+          "index": 60,
+          "emittedAt": 65,
+          "ready_at_frame": 65,
+          "candidate_id": "C04:S10:F60",
+          "images": [
+            {
+              "frame": 58,
+              "label": "F-2",
+              "path": "observations/kujiale_0113_18_1/000058/policy_front.png",
+              "image_id": "bc57ee4209afc5c79720f52dd546772e2714596fb8c523fcde50b5efcaed2c22"
+            },
+            {
+              "frame": 59,
+              "label": "F-1",
+              "path": "observations/kujiale_0113_18_1/000059/policy_front.png",
+              "image_id": "ef312a4b7b248a92eeb4de67a4f1d60e1542fe3891a622d0bc44c2e84f4400db"
+            },
+            {
+              "frame": 60,
+              "label": "F0",
+              "path": "observations/kujiale_0113_18_1/000060/policy_front.png",
+              "image_id": "fae4073e60c2a144369b1606feb7e3108698cc04e6a3bcbd0f6734ca80084bf0"
+            },
+            {
+              "frame": 61,
+              "label": "F+1",
+              "path": "observations/kujiale_0113_18_1/000061/policy_front.png",
+              "image_id": "e698cbbbd7b5d9538471da7feba708575cb4e645789df2c396bdd2f756504793"
+            },
+            {
+              "frame": 62,
+              "label": "F+2",
+              "path": "observations/kujiale_0113_18_1/000062/policy_front.png",
+              "image_id": "6915f04a3a383fba780641d7b3088f303a52adaa6e9f2377d89d5f633968c722"
+            }
+          ]
+        },
+        {
+          "id": "S11",
+          "index": 65,
+          "emittedAt": 70,
+          "ready_at_frame": 70,
+          "candidate_id": "C04:S11:F65",
+          "images": [
+            {
+              "frame": 63,
+              "label": "F-2",
+              "path": "observations/kujiale_0113_18_1/000063/policy_front.png",
+              "image_id": "642c96fdf3121793b1c9bfcc3ef15267023204e99ddbf9c10f9e85b404d9daeb"
+            },
+            {
+              "frame": 64,
+              "label": "F-1",
+              "path": "observations/kujiale_0113_18_1/000064/policy_front.png",
+              "image_id": "5e863ff8b7e39703d6787dce8d94b15c5f148c18e5827956916a84475f4a60e7"
+            },
+            {
+              "frame": 65,
+              "label": "F0",
+              "path": "observations/kujiale_0113_18_1/000065/policy_front.png",
+              "image_id": "7171ac1795c1592f4815d3f088f2e74ae6064af64831e5c3eb5c883525a2ce40"
+            },
+            {
+              "frame": 66,
+              "label": "F+1",
+              "path": "observations/kujiale_0113_18_1/000066/policy_front.png",
+              "image_id": "78751401861e1ef50670ebff6de60057dbebcbdd6553a69ec69d099ab8c459b6"
+            },
+            {
+              "frame": 67,
+              "label": "F+2",
+              "path": "observations/kujiale_0113_18_1/000067/policy_front.png",
+              "image_id": "63a85fe1d97bd906273f8222b30e6f69917adb1bd1c6ad7b953c88482bc4e660"
+            }
+          ]
+        },
+        {
+          "id": "S12",
+          "index": 70,
+          "emittedAt": 75,
+          "ready_at_frame": 75,
+          "candidate_id": "C04:S12:F70",
+          "images": [
+            {
+              "frame": 68,
+              "label": "F-2",
+              "path": "observations/kujiale_0113_18_1/000068/policy_front.png",
+              "image_id": "90d3f74a08d5d82235a5b6a6d32baa6f49cb32e18fe6b1ae07b92d7330c3ff55"
+            },
+            {
+              "frame": 69,
+              "label": "F-1",
+              "path": "observations/kujiale_0113_18_1/000069/policy_front.png",
+              "image_id": "edcf5e601f987baf1ea94f769f7a6456677aa8d503c5bea29500197703548e97"
+            },
+            {
+              "frame": 70,
+              "label": "F0",
+              "path": "observations/kujiale_0113_18_1/000070/policy_front.png",
+              "image_id": "74ef62a7f04d672ff2e82f014743b6b5cb185acfa6a6e5fed76331d2fcbdfb79"
+            },
+            {
+              "frame": 71,
+              "label": "F+1",
+              "path": "observations/kujiale_0113_18_1/000071/policy_front.png",
+              "image_id": "6c23d4afa75c811f8136df54538ddf70cf4be283ff32a27101df10755ec74b25"
+            },
+            {
+              "frame": 72,
+              "label": "F+2",
+              "path": "observations/kujiale_0113_18_1/000072/policy_front.png",
+              "image_id": "cad15788992f32a821197f7ee51f156eccb7bd1b3ab2145c7d8917d20bcdf9d3"
+            }
+          ]
+        },
+        {
+          "id": "S13",
+          "index": 75,
+          "emittedAt": 80,
+          "ready_at_frame": 80,
+          "candidate_id": "C04:S13:F75",
+          "images": [
+            {
+              "frame": 73,
+              "label": "F-2",
+              "path": "observations/kujiale_0113_18_1/000073/policy_front.png",
+              "image_id": "14e5e0a2b99caeda4cf5cec730a975b1483781032f8461a545c55819d7e4cb9a"
+            },
+            {
+              "frame": 74,
+              "label": "F-1",
+              "path": "observations/kujiale_0113_18_1/000074/policy_front.png",
+              "image_id": "8255751003843b686547e016c3af2502a112d74838dff22da5a7a07697ed6565"
+            },
+            {
+              "frame": 75,
+              "label": "F0",
+              "path": "observations/kujiale_0113_18_1/000075/policy_front.png",
+              "image_id": "0a88f2afb37acb747852961216981a2dd70bffe94445a2b6d346022f658100fb"
+            },
+            {
+              "frame": 76,
+              "label": "F+1",
+              "path": "observations/kujiale_0113_18_1/000076/policy_front.png",
+              "image_id": "a4aebd1ea9775b07c4a31d59ab12ab14018bf029369fdf146b81d8077169a7ff"
+            },
+            {
+              "frame": 77,
+              "label": "F+2",
+              "path": "observations/kujiale_0113_18_1/000077/policy_front.png",
+              "image_id": "dbe0f8d670357219c3b2e31a605719ca4a65754c148a02dd58451b3c4c1bd91a"
+            }
+          ]
+        },
+        {
+          "id": "S14",
+          "index": 80,
+          "emittedAt": 85,
+          "ready_at_frame": 85,
+          "candidate_id": "C04:S14:F80",
+          "images": [
+            {
+              "frame": 78,
+              "label": "F-2",
+              "path": "observations/kujiale_0113_18_1/000078/policy_front.png",
+              "image_id": "a5bd4ff05588bacc2ca5abb47ce88c01ecc32a77fb8054ce1a3246f9f28dbc37"
+            },
+            {
+              "frame": 79,
+              "label": "F-1",
+              "path": "observations/kujiale_0113_18_1/000079/policy_front.png",
+              "image_id": "ef956500210fcfb63cf1183c8b666b112b7ce6512134fd3231b8e39bc1a9249a"
+            },
+            {
+              "frame": 80,
+              "label": "F0",
+              "path": "observations/kujiale_0113_18_1/000080/policy_front.png",
+              "image_id": "a82bbe49983674aa1c3baedb3d5dc59d7cfc045b84209949fef2f90b8d1e916c"
+            },
+            {
+              "frame": 81,
+              "label": "F+1",
+              "path": "observations/kujiale_0113_18_1/000081/policy_front.png",
+              "image_id": "a13ee98316843c363e879fc981147b23243a5c09ecb3e7bae75891e7de05f80f"
+            },
+            {
+              "frame": 82,
+              "label": "F+2",
+              "path": "observations/kujiale_0113_18_1/000082/policy_front.png",
+              "image_id": "de11696db71ea706b9a7fe943b38c407049996d68d525bfbee33b2a7ecb99dbb"
+            }
+          ]
+        },
+        {
+          "id": "S15",
+          "index": 85,
+          "emittedAt": 90,
+          "ready_at_frame": 90,
+          "candidate_id": "C04:S15:F85",
+          "images": [
+            {
+              "frame": 83,
+              "label": "F-2",
+              "path": "observations/kujiale_0113_18_1/000083/policy_front.png",
+              "image_id": "9fd82a13bcbde7651fbaf358cf21b7d0e3456c0626bd9b82a1cd7068ff125bb7"
+            },
+            {
+              "frame": 84,
+              "label": "F-1",
+              "path": "observations/kujiale_0113_18_1/000084/policy_front.png",
+              "image_id": "0b99ad3f978492af2374308cbce7e704df5406d54bbeabc711268a27da5d105d"
+            },
+            {
+              "frame": 85,
+              "label": "F0",
+              "path": "observations/kujiale_0113_18_1/000085/policy_front.png",
+              "image_id": "d5658015dbf5b72914fd561a91a43f48580676e631479af5d2746ef8110cb2a3"
+            },
+            {
+              "frame": 86,
+              "label": "F+1",
+              "path": "observations/kujiale_0113_18_1/000086/policy_front.png",
+              "image_id": "fa69ad3f5af6f6a88939fb73d541da9daaff2db4878b62479fad50ffc3ba17fc"
+            },
+            {
+              "frame": 87,
+              "label": "F+2",
+              "path": "observations/kujiale_0113_18_1/000087/policy_front.png",
+              "image_id": "908260cb10480f62b744988de09595da9e497db4d83751efe2118f3d6e2673ad"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_number": 5,
+      "case_index": 4,
+      "episode_id": "kujiale_0113_1_4",
+      "real_episode_id": "kujiale_0113_1_4",
+      "scene": "kujiale_0113",
+      "nodes": [
+        {
+          "id": "S01",
+          "index": 0,
+          "emittedAt": 5,
+          "ready_at_frame": 5,
+          "candidate_id": "C05:S01:F0",
+          "images": [
+            {
+              "frame": -2,
+              "label": "F-2",
+              "missing": true
+            },
+            {
+              "frame": -1,
+              "label": "F-1",
+              "missing": true
+            },
+            {
+              "frame": 0,
+              "label": "F0",
+              "path": "observations/kujiale_0113_1_4/000000/policy_front.png",
+              "image_id": "1cca01c1529303531e42575306dbbdb241e7f062860574f3d57b78d2b5b50968"
+            },
+            {
+              "frame": 1,
+              "label": "F+1",
+              "path": "observations/kujiale_0113_1_4/000001/policy_front.png",
+              "image_id": "a1ebb7e571945a35ee4664d506d98f9444827a1eb3b8759495db923bbe7bf8b6"
+            },
+            {
+              "frame": 2,
+              "label": "F+2",
+              "path": "observations/kujiale_0113_1_4/000002/policy_front.png",
+              "image_id": "afc8d26976f2a376719b2fb422575b4f96c2bbfcd6ff759499ffbbf2bb113373"
+            }
+          ]
+        },
+        {
+          "id": "S02",
+          "index": 4,
+          "emittedAt": 9,
+          "ready_at_frame": 9,
+          "candidate_id": "C05:S02:F4",
+          "images": [
+            {
+              "frame": 2,
+              "label": "F-2",
+              "path": "observations/kujiale_0113_1_4/000002/policy_front.png",
+              "image_id": "afc8d26976f2a376719b2fb422575b4f96c2bbfcd6ff759499ffbbf2bb113373"
+            },
+            {
+              "frame": 3,
+              "label": "F-1",
+              "path": "observations/kujiale_0113_1_4/000003/policy_front.png",
+              "image_id": "130dc82a53c457f7067e2d75756719164634e44972d78e65093dc4871b8afbfb"
+            },
+            {
+              "frame": 4,
+              "label": "F0",
+              "path": "observations/kujiale_0113_1_4/000004/policy_front.png",
+              "image_id": "69f605628933135239d6f142a56f65c639304dd199b536108b75224768d1d219"
+            },
+            {
+              "frame": 5,
+              "label": "F+1",
+              "path": "observations/kujiale_0113_1_4/000005/policy_front.png",
+              "image_id": "d838802c7e3b92b0a2fffbeae19d1379a52560919e387fa35fc6a9e558502c5d"
+            },
+            {
+              "frame": 6,
+              "label": "F+2",
+              "path": "observations/kujiale_0113_1_4/000006/policy_front.png",
+              "image_id": "92cb10a62471946878d4c5aadaef77e62d529f65b9a1f931e87626dc70d83e99"
+            }
+          ]
+        },
+        {
+          "id": "S03",
+          "index": 7,
+          "emittedAt": 12,
+          "ready_at_frame": 12,
+          "candidate_id": "C05:S03:F7",
+          "images": [
+            {
+              "frame": 5,
+              "label": "F-2",
+              "path": "observations/kujiale_0113_1_4/000005/policy_front.png",
+              "image_id": "d838802c7e3b92b0a2fffbeae19d1379a52560919e387fa35fc6a9e558502c5d"
+            },
+            {
+              "frame": 6,
+              "label": "F-1",
+              "path": "observations/kujiale_0113_1_4/000006/policy_front.png",
+              "image_id": "92cb10a62471946878d4c5aadaef77e62d529f65b9a1f931e87626dc70d83e99"
+            },
+            {
+              "frame": 7,
+              "label": "F0",
+              "path": "observations/kujiale_0113_1_4/000007/policy_front.png",
+              "image_id": "f7edc5ae4338cb9c765f4c01eb95928e83a4b0f52c808369bf05db3d95b53695"
+            },
+            {
+              "frame": 8,
+              "label": "F+1",
+              "path": "observations/kujiale_0113_1_4/000008/policy_front.png",
+              "image_id": "5977d5b5eea22968081d40f850633b040e0f6bb0aac87e67ddaf23d38c4c79a5"
+            },
+            {
+              "frame": 9,
+              "label": "F+2",
+              "path": "observations/kujiale_0113_1_4/000009/policy_front.png",
+              "image_id": "68dcf7ff54fd21d144fbf2469b4b8a0541fa4c7de8d588850488c5c618da67df"
+            }
+          ]
+        },
+        {
+          "id": "S04",
+          "index": 12,
+          "emittedAt": 17,
+          "ready_at_frame": 17,
+          "candidate_id": "C05:S04:F12",
+          "images": [
+            {
+              "frame": 10,
+              "label": "F-2",
+              "path": "observations/kujiale_0113_1_4/000010/policy_front.png",
+              "image_id": "0fd668b088d84771620eea81090920d58953fd813385eae41bd9b3424e64a3f6"
+            },
+            {
+              "frame": 11,
+              "label": "F-1",
+              "path": "observations/kujiale_0113_1_4/000011/policy_front.png",
+              "image_id": "04ff94b47067aceb94dba06b25e6232ebeeb4eee80f49c49934646d9c3c04f22"
+            },
+            {
+              "frame": 12,
+              "label": "F0",
+              "path": "observations/kujiale_0113_1_4/000012/policy_front.png",
+              "image_id": "47316b4374d4fcd1ce25d5e0ea4d7ff78be7a6bc6ebe1ef51b2a314d95a98f32"
+            },
+            {
+              "frame": 13,
+              "label": "F+1",
+              "path": "observations/kujiale_0113_1_4/000013/policy_front.png",
+              "image_id": "4cacdd0a1b9069e86963ee0eb0c6482ea4b90aedb299e65c7cd41d06d74c05d1"
+            },
+            {
+              "frame": 14,
+              "label": "F+2",
+              "path": "observations/kujiale_0113_1_4/000014/policy_front.png",
+              "image_id": "fea5b9c0ec456c7033c039d112599db265f739f0163203678a962d3bc548852b"
+            }
+          ]
+        },
+        {
+          "id": "S05",
+          "index": 17,
+          "emittedAt": 22,
+          "ready_at_frame": 22,
+          "candidate_id": "C05:S05:F17",
+          "images": [
+            {
+              "frame": 15,
+              "label": "F-2",
+              "path": "observations/kujiale_0113_1_4/000015/policy_front.png",
+              "image_id": "fd2ff01b35eba9c1bd93c0da5688ad20b793c092e80439564ee80fe1f0d903ac"
+            },
+            {
+              "frame": 16,
+              "label": "F-1",
+              "path": "observations/kujiale_0113_1_4/000016/policy_front.png",
+              "image_id": "685db7b644b18ab779c91f512dcbf3e0b9d72874fc937c79213a7bfc224cb9ea"
+            },
+            {
+              "frame": 17,
+              "label": "F0",
+              "path": "observations/kujiale_0113_1_4/000017/policy_front.png",
+              "image_id": "7d057f9737bcd5184cb57afd060bf24d1b2abef56747f78f0ceb18254231eb6a"
+            },
+            {
+              "frame": 18,
+              "label": "F+1",
+              "path": "observations/kujiale_0113_1_4/000018/policy_front.png",
+              "image_id": "f2b1522442d7cbd6a2bb8f38631374e45748aefc3cec3c191c520c2e4530f4c0"
+            },
+            {
+              "frame": 19,
+              "label": "F+2",
+              "path": "observations/kujiale_0113_1_4/000019/policy_front.png",
+              "image_id": "c8f07be9cf4524deed579b4017bb43cd1fd1b54e5f0b0d96a7ad2864e1ddd903"
+            }
+          ]
+        },
+        {
+          "id": "S06",
+          "index": 21,
+          "emittedAt": 26,
+          "ready_at_frame": 26,
+          "candidate_id": "C05:S06:F21",
+          "images": [
+            {
+              "frame": 19,
+              "label": "F-2",
+              "path": "observations/kujiale_0113_1_4/000019/policy_front.png",
+              "image_id": "c8f07be9cf4524deed579b4017bb43cd1fd1b54e5f0b0d96a7ad2864e1ddd903"
+            },
+            {
+              "frame": 20,
+              "label": "F-1",
+              "path": "observations/kujiale_0113_1_4/000020/policy_front.png",
+              "image_id": "b8c20038b9fdf37c9739ad1104abd446e892c6af5cc96f7343303beaf40678ac"
+            },
+            {
+              "frame": 21,
+              "label": "F0",
+              "path": "observations/kujiale_0113_1_4/000021/policy_front.png",
+              "image_id": "29780d4cc8b74fb30b6a9e8902084c799a4e79e6d009a75d20cffd80869bbcf6"
+            },
+            {
+              "frame": 22,
+              "label": "F+1",
+              "path": "observations/kujiale_0113_1_4/000022/policy_front.png",
+              "image_id": "b45ec6fdeb9df3ebac2f83d134cc58a6308afe5d9298515b76bc11a3d8a2c67b"
+            },
+            {
+              "frame": 23,
+              "label": "F+2",
+              "path": "observations/kujiale_0113_1_4/000023/policy_front.png",
+              "image_id": "19e39268368a158ec0b57f1f19afe022fc63af5118645fd1d25cca9a4554df5c"
+            }
+          ]
+        },
+        {
+          "id": "S07",
+          "index": 26,
+          "emittedAt": 31,
+          "ready_at_frame": 31,
+          "candidate_id": "C05:S07:F26",
+          "images": [
+            {
+              "frame": 24,
+              "label": "F-2",
+              "path": "observations/kujiale_0113_1_4/000024/policy_front.png",
+              "image_id": "fb2cf5b58f0da8723e7be2423160c1338106668ee9a96ed854b00a86d3f54470"
+            },
+            {
+              "frame": 25,
+              "label": "F-1",
+              "path": "observations/kujiale_0113_1_4/000025/policy_front.png",
+              "image_id": "f5eac13810bc60d196b21bc0d7ddcd7ff2d044137576e5c44c5b0564703fe3ad"
+            },
+            {
+              "frame": 26,
+              "label": "F0",
+              "path": "observations/kujiale_0113_1_4/000026/policy_front.png",
+              "image_id": "603e970178f2da0f6391130a4d2e3d83d7c35b7acde6c9a00309eb15130907c3"
+            },
+            {
+              "frame": 27,
+              "label": "F+1",
+              "path": "observations/kujiale_0113_1_4/000027/policy_front.png",
+              "image_id": "12348f059b53559440941b463fd8a10992b26ff6842a8ea34dad3f3a94c129c9"
+            },
+            {
+              "frame": 28,
+              "label": "F+2",
+              "path": "observations/kujiale_0113_1_4/000028/policy_front.png",
+              "image_id": "96b4f6df9e602f64e9261f7e544c4215a2312b6c9574049c0d2b1f4092096481"
+            }
+          ]
+        },
+        {
+          "id": "S08",
+          "index": 46,
+          "emittedAt": 51,
+          "ready_at_frame": 51,
+          "candidate_id": "C05:S08:F46",
+          "images": [
+            {
+              "frame": 44,
+              "label": "F-2",
+              "path": "observations/kujiale_0113_1_4/000044/policy_front.png",
+              "image_id": "4e1031a089e5c2e71d10a26528a8d02d32649cfdcee4802eb5f94a3b0d56dab4"
+            },
+            {
+              "frame": 45,
+              "label": "F-1",
+              "path": "observations/kujiale_0113_1_4/000045/policy_front.png",
+              "image_id": "bca8454a679ca8f9d1306182eac8780a95deef856f8723c9baa33d164504947f"
+            },
+            {
+              "frame": 46,
+              "label": "F0",
+              "path": "observations/kujiale_0113_1_4/000046/policy_front.png",
+              "image_id": "cabe82fa2fb18cf9878f4a3716a6938f5eebf40ee009779a74f65c7411469c35"
+            },
+            {
+              "frame": 47,
+              "label": "F+1",
+              "path": "observations/kujiale_0113_1_4/000047/policy_front.png",
+              "image_id": "10673f4321d5bc9d0b95e01efdf883a4a173760e47481655c7c56f7dee244906"
+            },
+            {
+              "frame": 48,
+              "label": "F+2",
+              "path": "observations/kujiale_0113_1_4/000048/policy_front.png",
+              "image_id": "6e0d7a30207d25e444f938cb6cbc1c3f5e1c1cb02738728d4baf4f2aa94fdeaa"
+            }
+          ]
+        },
+        {
+          "id": "S09",
+          "index": 51,
+          "emittedAt": 56,
+          "ready_at_frame": 56,
+          "candidate_id": "C05:S09:F51",
+          "images": [
+            {
+              "frame": 49,
+              "label": "F-2",
+              "path": "observations/kujiale_0113_1_4/000049/policy_front.png",
+              "image_id": "025db796b3a510a1c5cddd86360c9baf848a35641f76e2cf2c9bece2c99ad750"
+            },
+            {
+              "frame": 50,
+              "label": "F-1",
+              "path": "observations/kujiale_0113_1_4/000050/policy_front.png",
+              "image_id": "61e08c3aab176a89382661ee433ad5e3280c99850ff26a7bd30b6798a2e01072"
+            },
+            {
+              "frame": 51,
+              "label": "F0",
+              "path": "observations/kujiale_0113_1_4/000051/policy_front.png",
+              "image_id": "ff15a907d6fa24f9384d44a90bd7e63a607794404fc573667f8ebefaa29c087d"
+            },
+            {
+              "frame": 52,
+              "label": "F+1",
+              "path": "observations/kujiale_0113_1_4/000052/policy_front.png",
+              "image_id": "4ed82ccf276c57d48f8939707db620b58687f21c07152fbd81ac023342dda5f5"
+            },
+            {
+              "frame": 53,
+              "label": "F+2",
+              "path": "observations/kujiale_0113_1_4/000053/policy_front.png",
+              "image_id": "1280de25670bdcebf81c025798c57e92fe3af5d75ad08625d9d27f189082ae6e"
+            }
+          ]
+        },
+        {
+          "id": "S10",
+          "index": 56,
+          "emittedAt": 61,
+          "ready_at_frame": 61,
+          "candidate_id": "C05:S10:F56",
+          "images": [
+            {
+              "frame": 54,
+              "label": "F-2",
+              "path": "observations/kujiale_0113_1_4/000054/policy_front.png",
+              "image_id": "ccb5a012e3850b813d5249aa400b64352d68d1df63236aefb672ebaded20c136"
+            },
+            {
+              "frame": 55,
+              "label": "F-1",
+              "path": "observations/kujiale_0113_1_4/000055/policy_front.png",
+              "image_id": "936b0226ea9bf16c2fd35d2f5e650d3543a6630f0885762b96be378583166096"
+            },
+            {
+              "frame": 56,
+              "label": "F0",
+              "path": "observations/kujiale_0113_1_4/000056/policy_front.png",
+              "image_id": "36f661b6e4cdd1b6523a2e77e7a52bb04da7e296e0ed98a32882eb4b6a3176dd"
+            },
+            {
+              "frame": 57,
+              "label": "F+1",
+              "path": "observations/kujiale_0113_1_4/000057/policy_front.png",
+              "image_id": "6ef6b4b7031279a138dd8690e45eeed33c5e4724b0fe22b59e8b3c8900f4c9db"
+            },
+            {
+              "frame": 58,
+              "label": "F+2",
+              "path": "observations/kujiale_0113_1_4/000058/policy_front.png",
+              "image_id": "095902bd02ba39f27f1f8439beb900a18d3837b7936ed8da04861f9e1ab9efef"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_number": 6,
+      "case_index": 5,
+      "episode_id": "kujiale_0123_fix_13_3",
+      "real_episode_id": "kujiale_0123_fix_13_3",
+      "scene": "kujiale_0123_fix",
+      "nodes": [
+        {
+          "id": "S01",
+          "index": 0,
+          "emittedAt": 5,
+          "ready_at_frame": 5,
+          "candidate_id": "C06:S01:F0",
+          "images": [
+            {
+              "frame": -2,
+              "label": "F-2",
+              "missing": true
+            },
+            {
+              "frame": -1,
+              "label": "F-1",
+              "missing": true
+            },
+            {
+              "frame": 0,
+              "label": "F0",
+              "path": "observations/kujiale_0123_fix_13_3/000000/policy_front.png",
+              "image_id": "e0041c4ad8b9161342649435f4832d99972f51cd2286dd707b1520927322d520"
+            },
+            {
+              "frame": 1,
+              "label": "F+1",
+              "path": "observations/kujiale_0123_fix_13_3/000001/policy_front.png",
+              "image_id": "ecdde14656b4bd98089fab41fea9197b9600b09b0f7fb6cd5b45d5854e108c11"
+            },
+            {
+              "frame": 2,
+              "label": "F+2",
+              "path": "observations/kujiale_0123_fix_13_3/000002/policy_front.png",
+              "image_id": "d4148c6ffb10cd1393b135f1cea2e2250fb91d802673c81126427648a444aa01"
+            }
+          ]
+        },
+        {
+          "id": "S02",
+          "index": 4,
+          "emittedAt": 9,
+          "ready_at_frame": 9,
+          "candidate_id": "C06:S02:F4",
+          "images": [
+            {
+              "frame": 2,
+              "label": "F-2",
+              "path": "observations/kujiale_0123_fix_13_3/000002/policy_front.png",
+              "image_id": "d4148c6ffb10cd1393b135f1cea2e2250fb91d802673c81126427648a444aa01"
+            },
+            {
+              "frame": 3,
+              "label": "F-1",
+              "path": "observations/kujiale_0123_fix_13_3/000003/policy_front.png",
+              "image_id": "55086d4b81e9b2bb8a90e0039ec0bdfe858c603089840b063c599d52bce3b170"
+            },
+            {
+              "frame": 4,
+              "label": "F0",
+              "path": "observations/kujiale_0123_fix_13_3/000004/policy_front.png",
+              "image_id": "a8fdb93efbacde7bd0cf6ca71a3854ed714f13176869ee740217cd159d5218d5"
+            },
+            {
+              "frame": 5,
+              "label": "F+1",
+              "path": "observations/kujiale_0123_fix_13_3/000005/policy_front.png",
+              "image_id": "37c6c1116554b3cb94236725e2c85cc1fa77e361bcdeaa45f46180aeca421758"
+            },
+            {
+              "frame": 6,
+              "label": "F+2",
+              "path": "observations/kujiale_0123_fix_13_3/000006/policy_front.png",
+              "image_id": "dc910f3b1d1a4bc95b5842567341c4fe022f01cde72d363bf3acce5050f27464"
+            }
+          ]
+        },
+        {
+          "id": "S03",
+          "index": 9,
+          "emittedAt": 14,
+          "ready_at_frame": 14,
+          "candidate_id": "C06:S03:F9",
+          "images": [
+            {
+              "frame": 7,
+              "label": "F-2",
+              "path": "observations/kujiale_0123_fix_13_3/000007/policy_front.png",
+              "image_id": "ed1963724bd825ef76c041adab7fe6dd3fed03809b48ba362421e1f60658da16"
+            },
+            {
+              "frame": 8,
+              "label": "F-1",
+              "path": "observations/kujiale_0123_fix_13_3/000008/policy_front.png",
+              "image_id": "1d596190803e0e9e2dbd494adb1a6348ee4eb940813e198bb7e9c87fa6b97f38"
+            },
+            {
+              "frame": 9,
+              "label": "F0",
+              "path": "observations/kujiale_0123_fix_13_3/000009/policy_front.png",
+              "image_id": "510d71cca7646b58a46ef4423f78e02259fa1b2a4b6d7e50f8e4ce64a8479dc4"
+            },
+            {
+              "frame": 10,
+              "label": "F+1",
+              "path": "observations/kujiale_0123_fix_13_3/000010/policy_front.png",
+              "image_id": "ec2992a5559bb21527825dea3517c4be533c280b09583324f9594d927221cd48"
+            },
+            {
+              "frame": 11,
+              "label": "F+2",
+              "path": "observations/kujiale_0123_fix_13_3/000011/policy_front.png",
+              "image_id": "35d87b188d8ac289cdb4383fa7d4f6f508fd467793b5bbb4d6e30fdbac79a3dd"
+            }
+          ]
+        },
+        {
+          "id": "S04",
+          "index": 29,
+          "emittedAt": 34,
+          "ready_at_frame": 34,
+          "candidate_id": "C06:S04:F29",
+          "images": [
+            {
+              "frame": 27,
+              "label": "F-2",
+              "path": "observations/kujiale_0123_fix_13_3/000027/policy_front.png",
+              "image_id": "43b354f2280239d4e8f06742bb0fe4f18055b04d5313fdce43230b9ace42471c"
+            },
+            {
+              "frame": 28,
+              "label": "F-1",
+              "path": "observations/kujiale_0123_fix_13_3/000028/policy_front.png",
+              "image_id": "165bbb5725de9819eb706524c058468bf2415a2b7307426f07dfcb17fcb5ce8e"
+            },
+            {
+              "frame": 29,
+              "label": "F0",
+              "path": "observations/kujiale_0123_fix_13_3/000029/policy_front.png",
+              "image_id": "40ed5ff719ae1907909b6a7b1379c74e461d671c3004c80c0343f3b6dc783fe5"
+            },
+            {
+              "frame": 30,
+              "label": "F+1",
+              "path": "observations/kujiale_0123_fix_13_3/000030/policy_front.png",
+              "image_id": "9ece2cae95ce98b45cc842103e28fda6ebc1fa76542d14dfcf861d33785e8297"
+            },
+            {
+              "frame": 31,
+              "label": "F+2",
+              "path": "observations/kujiale_0123_fix_13_3/000031/policy_front.png",
+              "image_id": "ea4b9017a0f3e562cce45f804f3e99bd56bf16e3035b65a21bfcc10cc2182099"
+            }
+          ]
+        },
+        {
+          "id": "S05",
+          "index": 36,
+          "emittedAt": 41,
+          "ready_at_frame": 41,
+          "candidate_id": "C06:S05:F36",
+          "images": [
+            {
+              "frame": 34,
+              "label": "F-2",
+              "path": "observations/kujiale_0123_fix_13_3/000034/policy_front.png",
+              "image_id": "ec8a854b84b5e44c7903d97e244e455007222a95879547b23aa50a4ffbade4c1"
+            },
+            {
+              "frame": 35,
+              "label": "F-1",
+              "path": "observations/kujiale_0123_fix_13_3/000035/policy_front.png",
+              "image_id": "7ade2429c248cbc0f991b22eb22768eb1d6604ef5222f025ea58c711d2675cce"
+            },
+            {
+              "frame": 36,
+              "label": "F0",
+              "path": "observations/kujiale_0123_fix_13_3/000036/policy_front.png",
+              "image_id": "9c0c9b976da60048cf1a815bd06c47cb9dd74ea1391f83f5a5cfe90e97e3d44e"
+            },
+            {
+              "frame": 37,
+              "label": "F+1",
+              "path": "observations/kujiale_0123_fix_13_3/000037/policy_front.png",
+              "image_id": "f701785446f522550db626b816ae94d9ba645451cf913179bff046124a1e4d81"
+            },
+            {
+              "frame": 38,
+              "label": "F+2",
+              "path": "observations/kujiale_0123_fix_13_3/000038/policy_front.png",
+              "image_id": "e5c0240471a52483134d772192b27c34ffe4959eb79a96d7fd01d3b25af37576"
+            }
+          ]
+        },
+        {
+          "id": "S06",
+          "index": 46,
+          "emittedAt": 51,
+          "ready_at_frame": 51,
+          "candidate_id": "C06:S06:F46",
+          "images": [
+            {
+              "frame": 44,
+              "label": "F-2",
+              "path": "observations/kujiale_0123_fix_13_3/000044/policy_front.png",
+              "image_id": "42f9de400071f7b128ef4bcf423a5b573184986050965954f371db42846c5487"
+            },
+            {
+              "frame": 45,
+              "label": "F-1",
+              "path": "observations/kujiale_0123_fix_13_3/000045/policy_front.png",
+              "image_id": "b6cdcdf559b9272e2aa6185c6ea303dff69660efcbcbeb644e64c17ff2e41394"
+            },
+            {
+              "frame": 46,
+              "label": "F0",
+              "path": "observations/kujiale_0123_fix_13_3/000046/policy_front.png",
+              "image_id": "c44f472a55816ab05e704eaf545562d0a1e93f0b68d5f67c73fc9834f9059124"
+            },
+            {
+              "frame": 47,
+              "label": "F+1",
+              "path": "observations/kujiale_0123_fix_13_3/000047/policy_front.png",
+              "image_id": "fb7e5f081df9f79905debe302e71a9c1325baea19899c19c201ce68c92ee9e52"
+            },
+            {
+              "frame": 48,
+              "label": "F+2",
+              "path": "observations/kujiale_0123_fix_13_3/000048/policy_front.png",
+              "image_id": "29b3520ccf993a5682b5229d57b6717ae4235fa8a1ebbaac1d6f4f92b68b5fef"
+            }
+          ]
+        },
+        {
+          "id": "S07",
+          "index": 70,
+          "emittedAt": 75,
+          "ready_at_frame": 75,
+          "candidate_id": "C06:S07:F70",
+          "images": [
+            {
+              "frame": 68,
+              "label": "F-2",
+              "path": "observations/kujiale_0123_fix_13_3/000068/policy_front.png",
+              "image_id": "10624f4b05f69e416b515719e5d3275baa903717595ce01343f88dff3ab83d09"
+            },
+            {
+              "frame": 69,
+              "label": "F-1",
+              "path": "observations/kujiale_0123_fix_13_3/000069/policy_front.png",
+              "image_id": "a87d98337c937e0afe861412dfa710e5495c60f4e84ecaa7cee0e236299608dc"
+            },
+            {
+              "frame": 70,
+              "label": "F0",
+              "path": "observations/kujiale_0123_fix_13_3/000070/policy_front.png",
+              "image_id": "04ef335a11424ef588d146a55784c745bc905179c6e4f010af0e8919db33d891"
+            },
+            {
+              "frame": 71,
+              "label": "F+1",
+              "path": "observations/kujiale_0123_fix_13_3/000071/policy_front.png",
+              "image_id": "b53c7822a8932669a444f201525ca02b54565588db7f27fa213a8eb0492d025b"
+            },
+            {
+              "frame": 72,
+              "label": "F+2",
+              "path": "observations/kujiale_0123_fix_13_3/000072/policy_front.png",
+              "image_id": "d026d70cacbf77fb7345fa6f4759ad4799f527ffbcfd7c782df7ac77014c57a6"
+            }
+          ]
+        },
+        {
+          "id": "S08",
+          "index": 79,
+          "emittedAt": 84,
+          "ready_at_frame": 84,
+          "candidate_id": "C06:S08:F79",
+          "images": [
+            {
+              "frame": 77,
+              "label": "F-2",
+              "path": "observations/kujiale_0123_fix_13_3/000077/policy_front.png",
+              "image_id": "6960a5f382356990d6ea2c51bf29f9c6bd212104e27dcd156e5fa4cbe6f77c56"
+            },
+            {
+              "frame": 78,
+              "label": "F-1",
+              "path": "observations/kujiale_0123_fix_13_3/000078/policy_front.png",
+              "image_id": "2eddb433924e5d4d5e8759c4bbe01a76d10d912d03434d0d16b4992960ee5636"
+            },
+            {
+              "frame": 79,
+              "label": "F0",
+              "path": "observations/kujiale_0123_fix_13_3/000079/policy_front.png",
+              "image_id": "d64306fe298a8328da307a37aa7dfc2a64c17a6d0a13d52d0a2a857c4a770c7f"
+            },
+            {
+              "frame": 80,
+              "label": "F+1",
+              "path": "observations/kujiale_0123_fix_13_3/000080/policy_front.png",
+              "image_id": "dbf72d91c39bc604f6172ba9e68e21e529d9df3889cf313c247feb6adb2e2140"
+            },
+            {
+              "frame": 81,
+              "label": "F+2",
+              "path": "observations/kujiale_0123_fix_13_3/000081/policy_front.png",
+              "image_id": "e6637051f13f6e91d7a5c1c024c9ed487ea2cab8c7aa71981c035b75ff64d776"
+            }
+          ]
+        },
+        {
+          "id": "S09",
+          "index": 84,
+          "emittedAt": 89,
+          "ready_at_frame": 89,
+          "candidate_id": "C06:S09:F84",
+          "images": [
+            {
+              "frame": 82,
+              "label": "F-2",
+              "path": "observations/kujiale_0123_fix_13_3/000082/policy_front.png",
+              "image_id": "fdac328a12ee604148ee29a048cbcd1629e544a7e3d21c9dd3a01a81c29aac0d"
+            },
+            {
+              "frame": 83,
+              "label": "F-1",
+              "path": "observations/kujiale_0123_fix_13_3/000083/policy_front.png",
+              "image_id": "9b9582c8f26c9bccbf505b12f076b82ac7399da0d779d2443320e6dd320c41e1"
+            },
+            {
+              "frame": 84,
+              "label": "F0",
+              "path": "observations/kujiale_0123_fix_13_3/000084/policy_front.png",
+              "image_id": "da6239b3b3dd1d9b3f67fedc0ac0842059ffdd86aaa2e93778eff204b0410c4d"
+            },
+            {
+              "frame": 85,
+              "label": "F+1",
+              "path": "observations/kujiale_0123_fix_13_3/000085/policy_front.png",
+              "image_id": "b5e8d160e06808753a10dad8f1b80e26310592dcc49edb8088817d603b55c658"
+            },
+            {
+              "frame": 86,
+              "label": "F+2",
+              "path": "observations/kujiale_0123_fix_13_3/000086/policy_front.png",
+              "image_id": "5bfa8a855f47fad9a50c0764a86839fffd2960f880e3105b6afe76ef4acc35dc"
+            }
+          ]
+        },
+        {
+          "id": "S10",
+          "index": 109,
+          "emittedAt": 114,
+          "ready_at_frame": 114,
+          "candidate_id": "C06:S10:F109",
+          "images": [
+            {
+              "frame": 107,
+              "label": "F-2",
+              "path": "observations/kujiale_0123_fix_13_3/000107/policy_front.png",
+              "image_id": "9979b74fbe09d374d05c9de4217e5b6fab680ba00e7e43002265e36cd5dbee51"
+            },
+            {
+              "frame": 108,
+              "label": "F-1",
+              "path": "observations/kujiale_0123_fix_13_3/000108/policy_front.png",
+              "image_id": "b1c0131bcfc1e80e9335e1e6f3ab09eb7f3f43760ccc96f7921954829d20d938"
+            },
+            {
+              "frame": 109,
+              "label": "F0",
+              "path": "observations/kujiale_0123_fix_13_3/000109/policy_front.png",
+              "image_id": "1bec13bf94a57a1be58bfc822aeb4e1e2afb1cb8f97bdb54f221e4fcce733127"
+            },
+            {
+              "frame": 110,
+              "label": "F+1",
+              "path": "observations/kujiale_0123_fix_13_3/000110/policy_front.png",
+              "image_id": "e759203d273d4359517e327beaaac67e658e89d66f604127e6c367f6e7fd9146"
+            },
+            {
+              "frame": 111,
+              "label": "F+2",
+              "path": "observations/kujiale_0123_fix_13_3/000111/policy_front.png",
+              "image_id": "2ee50cc397f8bc307e8fe785265265fc5e6eae4ae9f77fee1220b9944937b8e0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_number": 7,
+      "case_index": 6,
+      "episode_id": "kujiale_0123_fix_19_3",
+      "real_episode_id": "kujiale_0123_fix_19_3",
+      "scene": "kujiale_0123_fix",
+      "nodes": [
+        {
+          "id": "S01",
+          "index": 2,
+          "emittedAt": 7,
+          "ready_at_frame": 7,
+          "candidate_id": "C07:S01:F2",
+          "images": [
+            {
+              "frame": 0,
+              "label": "F-2",
+              "path": "observations/kujiale_0123_fix_19_3/000000/policy_front.png",
+              "image_id": "5a1e2ef14bb02b9b8f82f8f7cd4370b0adf3d1e8d9298763913cdff8eaf0d34d"
+            },
+            {
+              "frame": 1,
+              "label": "F-1",
+              "path": "observations/kujiale_0123_fix_19_3/000001/policy_front.png",
+              "image_id": "c4dd56d5868cd9eca4dc14002c681e32d0f88a9cd4d0b0e4ea3cb4e3882eb193"
+            },
+            {
+              "frame": 2,
+              "label": "F0",
+              "path": "observations/kujiale_0123_fix_19_3/000002/policy_front.png",
+              "image_id": "bb9d5b4a9f22c20364cab200f814e1bd8456c8345e48435fa418e1f3fab4ec7e"
+            },
+            {
+              "frame": 3,
+              "label": "F+1",
+              "path": "observations/kujiale_0123_fix_19_3/000003/policy_front.png",
+              "image_id": "3292e3a82d2a9ed4cb02478e1635b462f18f4de10c1f67e2db8d47ad070d7c79"
+            },
+            {
+              "frame": 4,
+              "label": "F+2",
+              "path": "observations/kujiale_0123_fix_19_3/000004/policy_front.png",
+              "image_id": "9fc1989611322d5a5377296b0ff0574a7baa75a46f0c78416f9222e63c8d31b8"
+            }
+          ]
+        },
+        {
+          "id": "S02",
+          "index": 31,
+          "emittedAt": 36,
+          "ready_at_frame": 36,
+          "candidate_id": "C07:S02:F31",
+          "images": [
+            {
+              "frame": 29,
+              "label": "F-2",
+              "path": "observations/kujiale_0123_fix_19_3/000029/policy_front.png",
+              "image_id": "2bf35ccd2fc44cf10b740b6eb0f24970f6c8c3403729458f1ca1922748150e50"
+            },
+            {
+              "frame": 30,
+              "label": "F-1",
+              "path": "observations/kujiale_0123_fix_19_3/000030/policy_front.png",
+              "image_id": "80b000fb31f064bd83dea33c179305f9a6f057b39dfdaa5d4df33f3924e60398"
+            },
+            {
+              "frame": 31,
+              "label": "F0",
+              "path": "observations/kujiale_0123_fix_19_3/000031/policy_front.png",
+              "image_id": "e07bd724a805d7154f78f2a83c376862b1c2a0b1d33f14942924033b44383567"
+            },
+            {
+              "frame": 32,
+              "label": "F+1",
+              "path": "observations/kujiale_0123_fix_19_3/000032/policy_front.png",
+              "image_id": "0186ccbdf2ff1a58fe6f194cbf4386c46a9cab627bfa290f8e421c12580a5395"
+            },
+            {
+              "frame": 33,
+              "label": "F+2",
+              "path": "observations/kujiale_0123_fix_19_3/000033/policy_front.png",
+              "image_id": "b556c4bfe3c0d96ccf7b1a16f83a971fd8c3fc03c9f476fdd2ca8a7963a892be"
+            }
+          ]
+        },
+        {
+          "id": "S03",
+          "index": 36,
+          "emittedAt": 41,
+          "ready_at_frame": 41,
+          "candidate_id": "C07:S03:F36",
+          "images": [
+            {
+              "frame": 34,
+              "label": "F-2",
+              "path": "observations/kujiale_0123_fix_19_3/000034/policy_front.png",
+              "image_id": "0ee2c3f9e4e133a6298ec22a2bc5265cd066b72465049addf3a61eb0aba58495"
+            },
+            {
+              "frame": 35,
+              "label": "F-1",
+              "path": "observations/kujiale_0123_fix_19_3/000035/policy_front.png",
+              "image_id": "912a2eb9ca7c55685a69a37a7f9e3f590b175021e725587040c7dcc3e0372d90"
+            },
+            {
+              "frame": 36,
+              "label": "F0",
+              "path": "observations/kujiale_0123_fix_19_3/000036/policy_front.png",
+              "image_id": "d81a9bb291bb0c1fbe826dffe8e5c10713cc47f7de5fab7e8fe10a0a4f4f8abd"
+            },
+            {
+              "frame": 37,
+              "label": "F+1",
+              "path": "observations/kujiale_0123_fix_19_3/000037/policy_front.png",
+              "image_id": "b8b80145b7d62d69e0d0b3ae6f40aa66e7c7d878ae34a060d43df90b714be955"
+            },
+            {
+              "frame": 38,
+              "label": "F+2",
+              "path": "observations/kujiale_0123_fix_19_3/000038/policy_front.png",
+              "image_id": "cb7838767f41d344070ae756b46769d2c3674e4f59b3db9394d6c1b053695d2d"
+            }
+          ]
+        },
+        {
+          "id": "S04",
+          "index": 41,
+          "emittedAt": 46,
+          "ready_at_frame": 46,
+          "candidate_id": "C07:S04:F41",
+          "images": [
+            {
+              "frame": 39,
+              "label": "F-2",
+              "path": "observations/kujiale_0123_fix_19_3/000039/policy_front.png",
+              "image_id": "35eced2c294c0cb210bf4d14d6e6f85bc0bf6ab401dc48454c7feede9451420b"
+            },
+            {
+              "frame": 40,
+              "label": "F-1",
+              "path": "observations/kujiale_0123_fix_19_3/000040/policy_front.png",
+              "image_id": "7331f256b70e9f4d01282fc9bd274ec19f34c7ec8f5b98ca3e45c44b29793bbb"
+            },
+            {
+              "frame": 41,
+              "label": "F0",
+              "path": "observations/kujiale_0123_fix_19_3/000041/policy_front.png",
+              "image_id": "69773e490f100aaf746b80279d21ccc5274bb25235235a791b42fb406ce46b1d"
+            },
+            {
+              "frame": 42,
+              "label": "F+1",
+              "path": "observations/kujiale_0123_fix_19_3/000042/policy_front.png",
+              "image_id": "a13b97802061fc5c71d310ad991951827c92b02e4bc2e0c5c3250b3a121eef70"
+            },
+            {
+              "frame": 43,
+              "label": "F+2",
+              "path": "observations/kujiale_0123_fix_19_3/000043/policy_front.png",
+              "image_id": "5f8e7d3345ece82ecc8819322d5810d0ebdacd59ae4417dad36ea6472b75a312"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_number": 8,
+      "case_index": 7,
+      "episode_id": "kujiale_0123_fix_43_3",
+      "real_episode_id": "kujiale_0123_fix_43_3",
+      "scene": "kujiale_0123_fix",
+      "nodes": [
+        {
+          "id": "S01",
+          "index": 0,
+          "emittedAt": 5,
+          "ready_at_frame": 5,
+          "candidate_id": "C08:S01:F0",
+          "images": [
+            {
+              "frame": -2,
+              "label": "F-2",
+              "missing": true
+            },
+            {
+              "frame": -1,
+              "label": "F-1",
+              "missing": true
+            },
+            {
+              "frame": 0,
+              "label": "F0",
+              "path": "observations/kujiale_0123_fix_43_3/000000/policy_front.png",
+              "image_id": "6cb6faeb7d4e71e596aecaa41592605240a30beafa955c46d21b0b1a0cbfd0b1"
+            },
+            {
+              "frame": 1,
+              "label": "F+1",
+              "path": "observations/kujiale_0123_fix_43_3/000001/policy_front.png",
+              "image_id": "15f3753ffce5a3b28f359dea334d80e15618cbfe009f8254d27eef4468f08ebf"
+            },
+            {
+              "frame": 2,
+              "label": "F+2",
+              "path": "observations/kujiale_0123_fix_43_3/000002/policy_front.png",
+              "image_id": "dd022b1af90683d5fe128f48a81c284f84e8a64de8528b3e783ac1a30da9bd78"
+            }
+          ]
+        },
+        {
+          "id": "S02",
+          "index": 4,
+          "emittedAt": 9,
+          "ready_at_frame": 9,
+          "candidate_id": "C08:S02:F4",
+          "images": [
+            {
+              "frame": 2,
+              "label": "F-2",
+              "path": "observations/kujiale_0123_fix_43_3/000002/policy_front.png",
+              "image_id": "dd022b1af90683d5fe128f48a81c284f84e8a64de8528b3e783ac1a30da9bd78"
+            },
+            {
+              "frame": 3,
+              "label": "F-1",
+              "path": "observations/kujiale_0123_fix_43_3/000003/policy_front.png",
+              "image_id": "316482e6a8a82c8e0cb3bac6c182afdaa212740409824fa8dc1edc77aefeba8c"
+            },
+            {
+              "frame": 4,
+              "label": "F0",
+              "path": "observations/kujiale_0123_fix_43_3/000004/policy_front.png",
+              "image_id": "8ac53a53e969afea3b995cc8f39deca62081a261c1d33ea46b6dff9bf35a5dcd"
+            },
+            {
+              "frame": 5,
+              "label": "F+1",
+              "path": "observations/kujiale_0123_fix_43_3/000005/policy_front.png",
+              "image_id": "45fe3056913833d393225d1262534e4d0b5c4688a901ff8771c4383f91b839dd"
+            },
+            {
+              "frame": 6,
+              "label": "F+2",
+              "path": "observations/kujiale_0123_fix_43_3/000006/policy_front.png",
+              "image_id": "56035fd1a2ed8b19bbe7f1f1f30faf93731dc0e85f4f3e40fa8bc080c5e7aa54"
+            }
+          ]
+        },
+        {
+          "id": "S03",
+          "index": 7,
+          "emittedAt": 12,
+          "ready_at_frame": 12,
+          "candidate_id": "C08:S03:F7",
+          "images": [
+            {
+              "frame": 5,
+              "label": "F-2",
+              "path": "observations/kujiale_0123_fix_43_3/000005/policy_front.png",
+              "image_id": "45fe3056913833d393225d1262534e4d0b5c4688a901ff8771c4383f91b839dd"
+            },
+            {
+              "frame": 6,
+              "label": "F-1",
+              "path": "observations/kujiale_0123_fix_43_3/000006/policy_front.png",
+              "image_id": "56035fd1a2ed8b19bbe7f1f1f30faf93731dc0e85f4f3e40fa8bc080c5e7aa54"
+            },
+            {
+              "frame": 7,
+              "label": "F0",
+              "path": "observations/kujiale_0123_fix_43_3/000007/policy_front.png",
+              "image_id": "63d7d96436af6c12b3bde6c5813ec908eff5bf9d04eb1f3e7b01519ccd3b7884"
+            },
+            {
+              "frame": 8,
+              "label": "F+1",
+              "path": "observations/kujiale_0123_fix_43_3/000008/policy_front.png",
+              "image_id": "644f7af98b0a72acb68ef65f61a6a120147b578c5e6fdc695de314a9b7e8d2e1"
+            },
+            {
+              "frame": 9,
+              "label": "F+2",
+              "path": "observations/kujiale_0123_fix_43_3/000009/policy_front.png",
+              "image_id": "fd25383a70b9a1843e6022ab526061a97d3e7e193e7b9ede56636c6d8a80a96a"
+            }
+          ]
+        },
+        {
+          "id": "S04",
+          "index": 20,
+          "emittedAt": 25,
+          "ready_at_frame": 25,
+          "candidate_id": "C08:S04:F20",
+          "images": [
+            {
+              "frame": 18,
+              "label": "F-2",
+              "path": "observations/kujiale_0123_fix_43_3/000018/policy_front.png",
+              "image_id": "1df61cea74113b6ddd5787c36ace871658258b9bc39984d0c7a4c10ed070f11a"
+            },
+            {
+              "frame": 19,
+              "label": "F-1",
+              "path": "observations/kujiale_0123_fix_43_3/000019/policy_front.png",
+              "image_id": "e3ee4e5150783d5314980df54b28662b72f88695f2c2704b20b318d03c874fbb"
+            },
+            {
+              "frame": 20,
+              "label": "F0",
+              "path": "observations/kujiale_0123_fix_43_3/000020/policy_front.png",
+              "image_id": "8caa092995714f938453b9e423c104ef87fc95b966dc367f9e20464b8a0ddb51"
+            },
+            {
+              "frame": 21,
+              "label": "F+1",
+              "path": "observations/kujiale_0123_fix_43_3/000021/policy_front.png",
+              "image_id": "37aeff3012cc05d8846d06cfc5ce5006ab086a538287d8d3ef03f7e3570101da"
+            },
+            {
+              "frame": 22,
+              "label": "F+2",
+              "path": "observations/kujiale_0123_fix_43_3/000022/policy_front.png",
+              "image_id": "fba84d5650df1ea0ff40f5150487b64ce2bfbf6d1e167c807ce23d167a45c61a"
+            }
+          ]
+        },
+        {
+          "id": "S05",
+          "index": 25,
+          "emittedAt": 30,
+          "ready_at_frame": 30,
+          "candidate_id": "C08:S05:F25",
+          "images": [
+            {
+              "frame": 23,
+              "label": "F-2",
+              "path": "observations/kujiale_0123_fix_43_3/000023/policy_front.png",
+              "image_id": "09916a3a274d3718763863dbb4088df5fb9f642c8b7daf03f18ffae5d8033398"
+            },
+            {
+              "frame": 24,
+              "label": "F-1",
+              "path": "observations/kujiale_0123_fix_43_3/000024/policy_front.png",
+              "image_id": "7346b7f9cb5fe329f1e2f29dfbab229cb174b88ee72a46df18abdde0270bd3f0"
+            },
+            {
+              "frame": 25,
+              "label": "F0",
+              "path": "observations/kujiale_0123_fix_43_3/000025/policy_front.png",
+              "image_id": "24dd578d39a8254fead543d9e958da63afffd6b90fdcd800101a3bbb1defdee9"
+            },
+            {
+              "frame": 26,
+              "label": "F+1",
+              "path": "observations/kujiale_0123_fix_43_3/000026/policy_front.png",
+              "image_id": "960ecf78b4ee3ce2f6f7ad96294a1d402fb07eeaa875f657d7137f197fd68ffc"
+            },
+            {
+              "frame": 27,
+              "label": "F+2",
+              "path": "observations/kujiale_0123_fix_43_3/000027/policy_front.png",
+              "image_id": "7bdc19af0b31a254f950dc03992559d2871377739c676bea40ef243cc0bd297d"
+            }
+          ]
+        },
+        {
+          "id": "S06",
+          "index": 30,
+          "emittedAt": 35,
+          "ready_at_frame": 35,
+          "candidate_id": "C08:S06:F30",
+          "images": [
+            {
+              "frame": 28,
+              "label": "F-2",
+              "path": "observations/kujiale_0123_fix_43_3/000028/policy_front.png",
+              "image_id": "eb204120a4ff98074b24d69153736a4a9704396886ff0885a01c4b4befda48c6"
+            },
+            {
+              "frame": 29,
+              "label": "F-1",
+              "path": "observations/kujiale_0123_fix_43_3/000029/policy_front.png",
+              "image_id": "22410a3553c9bb6758c9ca0d18fc6426d1e733b125cc48754811bcac0f264816"
+            },
+            {
+              "frame": 30,
+              "label": "F0",
+              "path": "observations/kujiale_0123_fix_43_3/000030/policy_front.png",
+              "image_id": "05becc679e5ab40772fcd1b456f6f357a7746354af876ee7041cf7b5770a5986"
+            },
+            {
+              "frame": 31,
+              "label": "F+1",
+              "path": "observations/kujiale_0123_fix_43_3/000031/policy_front.png",
+              "image_id": "104bb876ad5e9e4bd6bd38c09be28fde815e6ff85db3176fe4fc0a22abae05ce"
+            },
+            {
+              "frame": 32,
+              "label": "F+2",
+              "path": "observations/kujiale_0123_fix_43_3/000032/policy_front.png",
+              "image_id": "5583423339818bfebed4cddfdbd305f05d8af7e6fa5f4060ddfe9bc6c95caba7"
+            }
+          ]
+        },
+        {
+          "id": "S07",
+          "index": 55,
+          "emittedAt": 60,
+          "ready_at_frame": 60,
+          "candidate_id": "C08:S07:F55",
+          "images": [
+            {
+              "frame": 53,
+              "label": "F-2",
+              "path": "observations/kujiale_0123_fix_43_3/000053/policy_front.png",
+              "image_id": "71e04ca6891656aa4984a525844b36b48a0279dbc1756fc00f0e27f232c96dbb"
+            },
+            {
+              "frame": 54,
+              "label": "F-1",
+              "path": "observations/kujiale_0123_fix_43_3/000054/policy_front.png",
+              "image_id": "b38a4c7410c020647ca6c51b3fa2d3c1fa3d644550dd5833062b741d548c3f37"
+            },
+            {
+              "frame": 55,
+              "label": "F0",
+              "path": "observations/kujiale_0123_fix_43_3/000055/policy_front.png",
+              "image_id": "51ea253a87607c392ee4880144d4b097882b47c545253c132c4724c9bf95604d"
+            },
+            {
+              "frame": 56,
+              "label": "F+1",
+              "path": "observations/kujiale_0123_fix_43_3/000056/policy_front.png",
+              "image_id": "6647981ebdff817bfb3b9007e2baead762123968b568723e13452456e512ae63"
+            },
+            {
+              "frame": 57,
+              "label": "F+2",
+              "path": "observations/kujiale_0123_fix_43_3/000057/policy_front.png",
+              "image_id": "c809a0cc3d29687022db349ac83b7a968fe676fd468c67d18a8a7286e9333db1"
+            }
+          ]
+        },
+        {
+          "id": "S08",
+          "index": 74,
+          "emittedAt": 79,
+          "ready_at_frame": 79,
+          "candidate_id": "C08:S08:F74",
+          "images": [
+            {
+              "frame": 72,
+              "label": "F-2",
+              "path": "observations/kujiale_0123_fix_43_3/000072/policy_front.png",
+              "image_id": "19cb470079fcc7add4ac4e659e751fe3415c619fe080c6813e055c1247767c3b"
+            },
+            {
+              "frame": 73,
+              "label": "F-1",
+              "path": "observations/kujiale_0123_fix_43_3/000073/policy_front.png",
+              "image_id": "f71863c777493afd80dbe0bf15d9cc90e1ffa2027c15094a85a3aa84328a75c6"
+            },
+            {
+              "frame": 74,
+              "label": "F0",
+              "path": "observations/kujiale_0123_fix_43_3/000074/policy_front.png",
+              "image_id": "d8dd6bdf33050d4bfa9ced621952c04af4349dfaf4a388a0385e26b6807931fb"
+            },
+            {
+              "frame": 75,
+              "label": "F+1",
+              "path": "observations/kujiale_0123_fix_43_3/000075/policy_front.png",
+              "image_id": "d700c76621d1935e5755371c5589575bb6af84436f5b03f57485cdb75c7e317b"
+            },
+            {
+              "frame": 76,
+              "label": "F+2",
+              "path": "observations/kujiale_0123_fix_43_3/000076/policy_front.png",
+              "image_id": "b761c93c6db9af90bc485dc3db5ad6c6f59b7bc0299188c80b138bd7a6035741"
+            }
+          ]
+        },
+        {
+          "id": "S09",
+          "index": 118,
+          "emittedAt": 123,
+          "ready_at_frame": 123,
+          "candidate_id": "C08:S09:F118",
+          "images": [
+            {
+              "frame": 116,
+              "label": "F-2",
+              "path": "observations/kujiale_0123_fix_43_3/000116/policy_front.png",
+              "image_id": "7a045973f99f0c68d303242909a916a88e8a8479197bb25197140db85c07ccbd"
+            },
+            {
+              "frame": 117,
+              "label": "F-1",
+              "path": "observations/kujiale_0123_fix_43_3/000117/policy_front.png",
+              "image_id": "7e0275ac962cb15be8fef591854930dd468c44465da505df5845228a73ae8cd2"
+            },
+            {
+              "frame": 118,
+              "label": "F0",
+              "path": "observations/kujiale_0123_fix_43_3/000118/policy_front.png",
+              "image_id": "32462cd69d74c0603e3266f3dd9137feb0f39e1ab012efa9f6ee4ca0d3f26955"
+            },
+            {
+              "frame": 119,
+              "label": "F+1",
+              "path": "observations/kujiale_0123_fix_43_3/000119/policy_front.png",
+              "image_id": "24cb04beae0957ea24265e369dbbb7cd76907581b177acc6ef483e77f138d894"
+            },
+            {
+              "frame": 120,
+              "label": "F+2",
+              "path": "observations/kujiale_0123_fix_43_3/000120/policy_front.png",
+              "image_id": "b2a6108628de575055f3bbdbac85d8cf5ba2d24d271dc0cbe4e8bf4895f069b0"
+            }
+          ]
+        },
+        {
+          "id": "S10",
+          "index": 123,
+          "emittedAt": 128,
+          "ready_at_frame": 128,
+          "candidate_id": "C08:S10:F123",
+          "images": [
+            {
+              "frame": 121,
+              "label": "F-2",
+              "path": "observations/kujiale_0123_fix_43_3/000121/policy_front.png",
+              "image_id": "15253c06b945a4e40865de9159e668e03c171a7e084df1aa143ccad85bc4cbaa"
+            },
+            {
+              "frame": 122,
+              "label": "F-1",
+              "path": "observations/kujiale_0123_fix_43_3/000122/policy_front.png",
+              "image_id": "67b9457db150c0b3ef87cbdaa9c344ee8312d2a2b5f3a110399e184db5f26492"
+            },
+            {
+              "frame": 123,
+              "label": "F0",
+              "path": "observations/kujiale_0123_fix_43_3/000123/policy_front.png",
+              "image_id": "33a13b45535f764e480672a58d711430b61d4b96980c4bd6dc40dff137ff213b"
+            },
+            {
+              "frame": 124,
+              "label": "F+1",
+              "path": "observations/kujiale_0123_fix_43_3/000124/policy_front.png",
+              "image_id": "490bbb499def6c5f06f1882787556d930c1d16cbb2b5891fd0801b379f1979ba"
+            },
+            {
+              "frame": 125,
+              "label": "F+2",
+              "path": "observations/kujiale_0123_fix_43_3/000125/policy_front.png",
+              "image_id": "2faec4b1be1c4e5c17d5ae2fe6024fda4322d5554a491ef994172d482c84d998"
+            }
+          ]
+        },
+        {
+          "id": "S11",
+          "index": 128,
+          "emittedAt": 133,
+          "ready_at_frame": 133,
+          "candidate_id": "C08:S11:F128",
+          "images": [
+            {
+              "frame": 126,
+              "label": "F-2",
+              "path": "observations/kujiale_0123_fix_43_3/000126/policy_front.png",
+              "image_id": "26bf74b0b7d1c784f85ecbc72dd08ac798eea6353520a689ded7835290e79f1b"
+            },
+            {
+              "frame": 127,
+              "label": "F-1",
+              "path": "observations/kujiale_0123_fix_43_3/000127/policy_front.png",
+              "image_id": "ceb95ce41b8357913ec631b7a1ddc64ec3eaacf2da39282f38988a467657b385"
+            },
+            {
+              "frame": 128,
+              "label": "F0",
+              "path": "observations/kujiale_0123_fix_43_3/000128/policy_front.png",
+              "image_id": "7e59ed8251d20877935e8e6b3f2759c62bd184bca01fefc1fbf9620ee2fdadbb"
+            },
+            {
+              "frame": 129,
+              "label": "F+1",
+              "path": "observations/kujiale_0123_fix_43_3/000129/policy_front.png",
+              "image_id": "2c666dfee4ee82db6ad15c1a378a4aa1fcfb2ab0cc67ea121c632709f5b3679c"
+            },
+            {
+              "frame": 130,
+              "label": "F+2",
+              "path": "observations/kujiale_0123_fix_43_3/000130/policy_front.png",
+              "image_id": "97230c6a105b73c0dac77c5c446e918a29de98f54dd4c3e65e6a37b229d255e9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_number": 9,
+      "case_index": 8,
+      "episode_id": "kujiale_0128_fix_12_4",
+      "real_episode_id": "kujiale_0128_fix_12_4",
+      "scene": "kujiale_0128_fix",
+      "nodes": [
+        {
+          "id": "S01",
+          "index": 0,
+          "emittedAt": 5,
+          "ready_at_frame": 5,
+          "candidate_id": "C09:S01:F0",
+          "images": [
+            {
+              "frame": -2,
+              "label": "F-2",
+              "missing": true
+            },
+            {
+              "frame": -1,
+              "label": "F-1",
+              "missing": true
+            },
+            {
+              "frame": 0,
+              "label": "F0",
+              "path": "observations/kujiale_0128_fix_12_4/000000/policy_front.png",
+              "image_id": "8428e4a079e65aeee165bff5f7bc9eaef0e80277463509f98babeaf196243680"
+            },
+            {
+              "frame": 1,
+              "label": "F+1",
+              "path": "observations/kujiale_0128_fix_12_4/000001/policy_front.png",
+              "image_id": "a3456613d8e2089945ca5f09a89175713a2195bbdbb8cc7cbdea23ef2ae07d08"
+            },
+            {
+              "frame": 2,
+              "label": "F+2",
+              "path": "observations/kujiale_0128_fix_12_4/000002/policy_front.png",
+              "image_id": "b734c540691a17900b80624375a58b652d3fd300bfa2c85400889f159366b5a8"
+            }
+          ]
+        },
+        {
+          "id": "S02",
+          "index": 5,
+          "emittedAt": 10,
+          "ready_at_frame": 10,
+          "candidate_id": "C09:S02:F5",
+          "images": [
+            {
+              "frame": 3,
+              "label": "F-2",
+              "path": "observations/kujiale_0128_fix_12_4/000003/policy_front.png",
+              "image_id": "67392e5ac69fe11f8535601973532c9510a1b1f802998b10ea2e50bad652ce9a"
+            },
+            {
+              "frame": 4,
+              "label": "F-1",
+              "path": "observations/kujiale_0128_fix_12_4/000004/policy_front.png",
+              "image_id": "e409f41eaa27340b2a98376b830ff1d60e9cd89145500a83a51a9ef4c87acf16"
+            },
+            {
+              "frame": 5,
+              "label": "F0",
+              "path": "observations/kujiale_0128_fix_12_4/000005/policy_front.png",
+              "image_id": "1717e93b4958df19d7af8f23fcbc1408bd9512aae5e6e2f828acc70b76bd1333"
+            },
+            {
+              "frame": 6,
+              "label": "F+1",
+              "path": "observations/kujiale_0128_fix_12_4/000006/policy_front.png",
+              "image_id": "a64efaebc281a1fcf3d673218ffdc5c542f936a93ade1fdd33b1538af15fc2a5"
+            },
+            {
+              "frame": 7,
+              "label": "F+2",
+              "path": "observations/kujiale_0128_fix_12_4/000007/policy_front.png",
+              "image_id": "1bd7c369a33efdfccd546695c3c3e7bfff206a2e01dc7e901676fa084afeba31"
+            }
+          ]
+        },
+        {
+          "id": "S03",
+          "index": 10,
+          "emittedAt": 15,
+          "ready_at_frame": 15,
+          "candidate_id": "C09:S03:F10",
+          "images": [
+            {
+              "frame": 8,
+              "label": "F-2",
+              "path": "observations/kujiale_0128_fix_12_4/000008/policy_front.png",
+              "image_id": "e8d071c78b65fa0c48e7e52793f57c8444aba5a0f5c9a9e17ffd86737e6899f6"
+            },
+            {
+              "frame": 9,
+              "label": "F-1",
+              "path": "observations/kujiale_0128_fix_12_4/000009/policy_front.png",
+              "image_id": "3b96fdf0708f9159427814e6093c29d591b89314f96d7020c14439419c5f08b1"
+            },
+            {
+              "frame": 10,
+              "label": "F0",
+              "path": "observations/kujiale_0128_fix_12_4/000010/policy_front.png",
+              "image_id": "e174e1b657888bc7656e0c4212a0eb89ae120d50d5f3496bfde80d682ae03fca"
+            },
+            {
+              "frame": 11,
+              "label": "F+1",
+              "path": "observations/kujiale_0128_fix_12_4/000011/policy_front.png",
+              "image_id": "bdb76e6a20a9226e0076f71673d9c9c43de4c7846f3a41762a4bd4752198be5e"
+            },
+            {
+              "frame": 12,
+              "label": "F+2",
+              "path": "observations/kujiale_0128_fix_12_4/000012/policy_front.png",
+              "image_id": "b4e3a4614fb2af6b5f68d546937c0553283ca90c2802cdccc70569d1709085fe"
+            }
+          ]
+        },
+        {
+          "id": "S04",
+          "index": 15,
+          "emittedAt": 20,
+          "ready_at_frame": 20,
+          "candidate_id": "C09:S04:F15",
+          "images": [
+            {
+              "frame": 13,
+              "label": "F-2",
+              "path": "observations/kujiale_0128_fix_12_4/000013/policy_front.png",
+              "image_id": "9079cc6663026f4a57a970a482282039d408decd261e51d5989d52f9fdb53005"
+            },
+            {
+              "frame": 14,
+              "label": "F-1",
+              "path": "observations/kujiale_0128_fix_12_4/000014/policy_front.png",
+              "image_id": "08d1520365f4d85e2c0bf74e4b65062470b506a9574de880b2405b3e26f5c9b9"
+            },
+            {
+              "frame": 15,
+              "label": "F0",
+              "path": "observations/kujiale_0128_fix_12_4/000015/policy_front.png",
+              "image_id": "5ed0403bc47882109b4189f1dfffd8ead58ed99c1641eb4e0c6212163985dc63"
+            },
+            {
+              "frame": 16,
+              "label": "F+1",
+              "path": "observations/kujiale_0128_fix_12_4/000016/policy_front.png",
+              "image_id": "479d91abc1fd5d3cd8a20a4de1822bc15e2a6e663a807b0495c7a3e696936c5f"
+            },
+            {
+              "frame": 17,
+              "label": "F+2",
+              "path": "observations/kujiale_0128_fix_12_4/000017/policy_front.png",
+              "image_id": "436f118167aa6c7985bf2e8f70b792e0db1c77d122b6605ad7db39a70ecdf5c1"
+            }
+          ]
+        },
+        {
+          "id": "S05",
+          "index": 20,
+          "emittedAt": 25,
+          "ready_at_frame": 25,
+          "candidate_id": "C09:S05:F20",
+          "images": [
+            {
+              "frame": 18,
+              "label": "F-2",
+              "path": "observations/kujiale_0128_fix_12_4/000018/policy_front.png",
+              "image_id": "cd7750abc041879f49465364567f25ddfa23ca6aa12038b654337cc5f124df30"
+            },
+            {
+              "frame": 19,
+              "label": "F-1",
+              "path": "observations/kujiale_0128_fix_12_4/000019/policy_front.png",
+              "image_id": "3d658c3c703ee685bc046f152fd17ffb013a097a2f72c3064e78216d25e19ec3"
+            },
+            {
+              "frame": 20,
+              "label": "F0",
+              "path": "observations/kujiale_0128_fix_12_4/000020/policy_front.png",
+              "image_id": "0affef19c9f25f90fd420212e38fe46e095b09bd55265c1088c94d803ad5b09c"
+            },
+            {
+              "frame": 21,
+              "label": "F+1",
+              "path": "observations/kujiale_0128_fix_12_4/000021/policy_front.png",
+              "image_id": "737d871280fade61d7505658c8bf8cad58fcef4f06f814648722289e2028517e"
+            },
+            {
+              "frame": 22,
+              "label": "F+2",
+              "path": "observations/kujiale_0128_fix_12_4/000022/policy_front.png",
+              "image_id": "cc61cb6995c3b2920d01d2c9690883ff31801f2045409d25269d9706a36c9112"
+            }
+          ]
+        },
+        {
+          "id": "S06",
+          "index": 25,
+          "emittedAt": 30,
+          "ready_at_frame": 30,
+          "candidate_id": "C09:S06:F25",
+          "images": [
+            {
+              "frame": 23,
+              "label": "F-2",
+              "path": "observations/kujiale_0128_fix_12_4/000023/policy_front.png",
+              "image_id": "a1d6b9ca69bf7bdc5c7ab7d8ea75ab4e3d270340e232d6b96e015a83a14c7943"
+            },
+            {
+              "frame": 24,
+              "label": "F-1",
+              "path": "observations/kujiale_0128_fix_12_4/000024/policy_front.png",
+              "image_id": "3535395f72e3b80d54dbc9c5559688478b39e84e6547603878a2fd2114d62c75"
+            },
+            {
+              "frame": 25,
+              "label": "F0",
+              "path": "observations/kujiale_0128_fix_12_4/000025/policy_front.png",
+              "image_id": "31c8c3267729000dc15935ecf4acfbaa76f52393bbe5c488c7df4533c9b20af0"
+            },
+            {
+              "frame": 26,
+              "label": "F+1",
+              "path": "observations/kujiale_0128_fix_12_4/000026/policy_front.png",
+              "image_id": "89539cc88f91149824356932e5f84399cdcf45f29d9d5d7ccab199e821c255e5"
+            },
+            {
+              "frame": 27,
+              "label": "F+2",
+              "path": "observations/kujiale_0128_fix_12_4/000027/policy_front.png",
+              "image_id": "92c7f40356dc01c67609760599011816b90a20bfef1f236125bad3229bf3116f"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_number": 10,
+      "case_index": 9,
+      "episode_id": "kujiale_0128_fix_18_1",
+      "real_episode_id": "kujiale_0128_fix_18_1",
+      "scene": "kujiale_0128_fix",
+      "nodes": [
+        {
+          "id": "S01",
+          "index": 0,
+          "emittedAt": 5,
+          "ready_at_frame": 5,
+          "candidate_id": "C10:S01:F0",
+          "images": [
+            {
+              "frame": -2,
+              "label": "F-2",
+              "missing": true
+            },
+            {
+              "frame": -1,
+              "label": "F-1",
+              "missing": true
+            },
+            {
+              "frame": 0,
+              "label": "F0",
+              "path": "observations/kujiale_0128_fix_18_1/000000/policy_front.png",
+              "image_id": "3cd4431b40faa464adf86f10a8556f01eecefa5fcc13e07fa9fe98b340c7ea90"
+            },
+            {
+              "frame": 1,
+              "label": "F+1",
+              "path": "observations/kujiale_0128_fix_18_1/000001/policy_front.png",
+              "image_id": "3f88321a72e8d793dd6bb512d1bc9473f23583cc1f83abc3d4f9daa91e12789f"
+            },
+            {
+              "frame": 2,
+              "label": "F+2",
+              "path": "observations/kujiale_0128_fix_18_1/000002/policy_front.png",
+              "image_id": "77b223a796479d6f2b648c712f9f4c864a11d4785ff1d9144de14f1ded1c9623"
+            }
+          ]
+        },
+        {
+          "id": "S02",
+          "index": 5,
+          "emittedAt": 10,
+          "ready_at_frame": 10,
+          "candidate_id": "C10:S02:F5",
+          "images": [
+            {
+              "frame": 3,
+              "label": "F-2",
+              "path": "observations/kujiale_0128_fix_18_1/000003/policy_front.png",
+              "image_id": "eadb05f4fc5fdca24b4fc3419ccae0107028ac9d64fbbd6c59b9a9d10543673b"
+            },
+            {
+              "frame": 4,
+              "label": "F-1",
+              "path": "observations/kujiale_0128_fix_18_1/000004/policy_front.png",
+              "image_id": "0b9451b28bd043b689ad82379b27adf2cb02aba30f4c1586c10f82fcdfa83cce"
+            },
+            {
+              "frame": 5,
+              "label": "F0",
+              "path": "observations/kujiale_0128_fix_18_1/000005/policy_front.png",
+              "image_id": "e37bb3cb8c9464e6104ab5a2fe264e1528dbf9a9f1214ce1897bcbbb9bfde3a3"
+            },
+            {
+              "frame": 6,
+              "label": "F+1",
+              "path": "observations/kujiale_0128_fix_18_1/000006/policy_front.png",
+              "image_id": "29c0cf30e5944f71071d0fc11532dcfb8c9b7eff2e660eeb72166c7f9ee2d98c"
+            },
+            {
+              "frame": 7,
+              "label": "F+2",
+              "path": "observations/kujiale_0128_fix_18_1/000007/policy_front.png",
+              "image_id": "0dec6bd32605af6d2546696ec27f869cc6ec904f2608e6b29e08ccf0f8c00403"
+            }
+          ]
+        },
+        {
+          "id": "S03",
+          "index": 10,
+          "emittedAt": 15,
+          "ready_at_frame": 15,
+          "candidate_id": "C10:S03:F10",
+          "images": [
+            {
+              "frame": 8,
+              "label": "F-2",
+              "path": "observations/kujiale_0128_fix_18_1/000008/policy_front.png",
+              "image_id": "da91f8cae9600a5af2cbde978139d341c8ce7684099cc1988375423ef5cd13f1"
+            },
+            {
+              "frame": 9,
+              "label": "F-1",
+              "path": "observations/kujiale_0128_fix_18_1/000009/policy_front.png",
+              "image_id": "a95075e256ad584fe13f6ad05816fbd80af5666fdd84a252165a6fef1a3de9ab"
+            },
+            {
+              "frame": 10,
+              "label": "F0",
+              "path": "observations/kujiale_0128_fix_18_1/000010/policy_front.png",
+              "image_id": "85be2c0427e98d2c6f1fad6721ceb4bfb42f7e7a21c3d533f6122bc8618f6bc0"
+            },
+            {
+              "frame": 11,
+              "label": "F+1",
+              "path": "observations/kujiale_0128_fix_18_1/000011/policy_front.png",
+              "image_id": "bb6d4b209b6c67f418dec590d278dcfb3823795e7105d71211fa677563667d63"
+            },
+            {
+              "frame": 12,
+              "label": "F+2",
+              "path": "observations/kujiale_0128_fix_18_1/000012/policy_front.png",
+              "image_id": "de5202ac7a45b05184c2b35e7ba599dcbc8c1a7ea096357369c99830d3416299"
+            }
+          ]
+        },
+        {
+          "id": "S04",
+          "index": 15,
+          "emittedAt": 20,
+          "ready_at_frame": 20,
+          "candidate_id": "C10:S04:F15",
+          "images": [
+            {
+              "frame": 13,
+              "label": "F-2",
+              "path": "observations/kujiale_0128_fix_18_1/000013/policy_front.png",
+              "image_id": "3d0c539df802b5cc83f1fe90473b92af6cecd184efc5d0a7dbfe0f8a5e2222c3"
+            },
+            {
+              "frame": 14,
+              "label": "F-1",
+              "path": "observations/kujiale_0128_fix_18_1/000014/policy_front.png",
+              "image_id": "8f6536c3f869e12f30ee5121bc97635c251f2e57e9db29dd03ecd2e1df4df1f1"
+            },
+            {
+              "frame": 15,
+              "label": "F0",
+              "path": "observations/kujiale_0128_fix_18_1/000015/policy_front.png",
+              "image_id": "b54c796ba97463ee545ef1b790ec9de6df67de91ddeb6b047a9ec432d5e8c37d"
+            },
+            {
+              "frame": 16,
+              "label": "F+1",
+              "path": "observations/kujiale_0128_fix_18_1/000016/policy_front.png",
+              "image_id": "075d127ab43d9ba909ba44faa0696be1750c903927251d1e596d4166d4c5fc48"
+            },
+            {
+              "frame": 17,
+              "label": "F+2",
+              "path": "observations/kujiale_0128_fix_18_1/000017/policy_front.png",
+              "image_id": "3f6f96c0088140e7a463777fa6e4755a6a6c0b9a56c49be352b83b73f7b7ff3b"
+            }
+          ]
+        },
+        {
+          "id": "S05",
+          "index": 20,
+          "emittedAt": 25,
+          "ready_at_frame": 25,
+          "candidate_id": "C10:S05:F20",
+          "images": [
+            {
+              "frame": 18,
+              "label": "F-2",
+              "path": "observations/kujiale_0128_fix_18_1/000018/policy_front.png",
+              "image_id": "3268d4877347c43b85cab4686603300cc77ea1ec975edf473f9a88ac73fbea39"
+            },
+            {
+              "frame": 19,
+              "label": "F-1",
+              "path": "observations/kujiale_0128_fix_18_1/000019/policy_front.png",
+              "image_id": "a98e86c0db39ee343df6e4d67e3d4f463d32f8b48a9409275831d307d1ac84bd"
+            },
+            {
+              "frame": 20,
+              "label": "F0",
+              "path": "observations/kujiale_0128_fix_18_1/000020/policy_front.png",
+              "image_id": "68fa9a6a2e1f4ccab3def0d5d553b146f53fbbd7c8530435b364bbd5c1f41f7d"
+            },
+            {
+              "frame": 21,
+              "label": "F+1",
+              "path": "observations/kujiale_0128_fix_18_1/000021/policy_front.png",
+              "image_id": "8d0d6b3c1bed5687ccc627c2ce22cc7d9cfb3fb56846c902613f4f63dbfa2d80"
+            },
+            {
+              "frame": 22,
+              "label": "F+2",
+              "path": "observations/kujiale_0128_fix_18_1/000022/policy_front.png",
+              "image_id": "47b48b5b9d1554a5d8cb80f90643593ac80b72363b1c09e30b2be68b325c99ce"
+            }
+          ]
+        },
+        {
+          "id": "S06",
+          "index": 25,
+          "emittedAt": 30,
+          "ready_at_frame": 30,
+          "candidate_id": "C10:S06:F25",
+          "images": [
+            {
+              "frame": 23,
+              "label": "F-2",
+              "path": "observations/kujiale_0128_fix_18_1/000023/policy_front.png",
+              "image_id": "22b4528f758970d197c57e4b91927cedfecbf0e97a1859f478d9ace0dfdc9c4f"
+            },
+            {
+              "frame": 24,
+              "label": "F-1",
+              "path": "observations/kujiale_0128_fix_18_1/000024/policy_front.png",
+              "image_id": "80f37b8ea80086ad13a21e4ec08cdb60b032b32df1d24aeb27d961ebd5a378a3"
+            },
+            {
+              "frame": 25,
+              "label": "F0",
+              "path": "observations/kujiale_0128_fix_18_1/000025/policy_front.png",
+              "image_id": "7b805f3e4ea03639b061969f772bfa7b5ce771a5b9ca493e6b089c0c5332b43c"
+            },
+            {
+              "frame": 26,
+              "label": "F+1",
+              "path": "observations/kujiale_0128_fix_18_1/000026/policy_front.png",
+              "image_id": "2ff233f4145bfb3e44b4ce7adacbb120ee4eef87e140db12621fe99ed75b93ee"
+            },
+            {
+              "frame": 27,
+              "label": "F+2",
+              "path": "observations/kujiale_0128_fix_18_1/000027/policy_front.png",
+              "image_id": "c41f58c207a9a20932b718e0a84412c5b1587263101bfa486cd06f916f2cecf1"
+            }
+          ]
+        },
+        {
+          "id": "S07",
+          "index": 34,
+          "emittedAt": 39,
+          "ready_at_frame": 39,
+          "candidate_id": "C10:S07:F34",
+          "images": [
+            {
+              "frame": 32,
+              "label": "F-2",
+              "path": "observations/kujiale_0128_fix_18_1/000032/policy_front.png",
+              "image_id": "1fb2eb56fd4270bdc90262e139ae37c7b9bfd69c971ad307c846efb87430b8df"
+            },
+            {
+              "frame": 33,
+              "label": "F-1",
+              "path": "observations/kujiale_0128_fix_18_1/000033/policy_front.png",
+              "image_id": "42dfce4d134c0dfa46162bc982763f7fffcd6528e7f1ede7443df4b7062cf3f5"
+            },
+            {
+              "frame": 34,
+              "label": "F0",
+              "path": "observations/kujiale_0128_fix_18_1/000034/policy_front.png",
+              "image_id": "5dc831014c7c0990ba060e2c8faa3177144f3df936f59963ae11d43436f0695a"
+            },
+            {
+              "frame": 35,
+              "label": "F+1",
+              "path": "observations/kujiale_0128_fix_18_1/000035/policy_front.png",
+              "image_id": "c3b664198668425c9142e84f94971c04243232abc460174f6a3702b9315ca1ed"
+            },
+            {
+              "frame": 36,
+              "label": "F+2",
+              "path": "observations/kujiale_0128_fix_18_1/000036/policy_front.png",
+              "image_id": "94beb77ab1231b05bab97c0c28fbef86138fd41a582103c419b5eb879f03e1d1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

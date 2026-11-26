@@ -1,0 +1,11 @@
+{
+  "1": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/codex_tasks/checkpoint_dedup/v003/run_20261124_03_retry2/cases/C01_epkujiale_0036_0_0/result.json",
+  "3": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/codex_tasks/checkpoint_dedup/v003/run_20261124_03_retry2/cases/C03_epkujiale_0036_52_4/result.json",
+  "5": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/codex_tasks/checkpoint_dedup/v003/run_20261124_05_restart7/cases/C05_epkujiale_0113_1_4/result.json",
+  "11": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/codex_tasks/checkpoint_dedup/v003/run_20261124_05_restart7/cases/C11_epkujiale_0128_fix_20_0/result.json",
+  "19": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/codex_tasks/checkpoint_dedup/v003/run_20261124_06_parallel4/cases/C19_epkujiale_0165_49_4/result.json",
+  "32": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/codex_tasks/checkpoint_dedup/v003/run_20261124_06_parallel4/cases/C32_epkujiale_0232_2_4/result.json",
+  "34": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/codex_tasks/checkpoint_dedup/v003/run_20261124_06_parallel4/cases/C34_epkujiale_0232_72_1/result.json",
+  "4": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/codex_tasks/checkpoint_dedup/v003/run_20261124_07_proxy17982/cases/C04_epkujiale_0113_18_1/result.json",
+  "17": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/codex_tasks/checkpoint_dedup/v003/run_20261124_07_proxy17982/cases/C17_epkujiale_0165_40_1/result.json"
+}

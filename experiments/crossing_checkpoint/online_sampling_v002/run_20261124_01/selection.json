@@ -1,0 +1,123 @@
+{
+  "selected": "near",
+  "radius": 3,
+  "summary": {
+    "baseline": {
+      "candidates": 171,
+      "reference": 52,
+      "matches": 52
+    },
+    "near": {
+      "candidates": 166,
+      "reference": 52,
+      "matches": 52
+    },
+    "plateau": {
+      "candidates": 120,
+      "reference": 52,
+      "matches": 51
+    },
+    "active": {
+      "candidates": 110,
+      "reference": 52,
+      "matches": 51
+    }
+  },
+  "folds": [
+    {
+      "baseline": {
+        "candidates": 46,
+        "reference": 15,
+        "matches": 15
+      },
+      "near": {
+        "candidates": 45,
+        "reference": 15,
+        "matches": 15
+      },
+      "plateau": {
+        "candidates": 34,
+        "reference": 15,
+        "matches": 15
+      },
+      "active": {
+        "candidates": 31,
+        "reference": 15,
+        "matches": 15
+      }
+    },
+    {
+      "baseline": {
+        "candidates": 49,
+        "reference": 18,
+        "matches": 18
+      },
+      "near": {
+        "candidates": 46,
+        "reference": 18,
+        "matches": 18
+      },
+      "plateau": {
+        "candidates": 35,
+        "reference": 18,
+        "matches": 18
+      },
+      "active": {
+        "candidates": 32,
+        "reference": 18,
+        "matches": 18
+      }
+    },
+    {
+      "baseline": {
+        "candidates": 33,
+        "reference": 6,
+        "matches": 6
+      },
+      "near": {
+        "candidates": 32,
+        "reference": 6,
+        "matches": 6
+      },
+      "plateau": {
+        "candidates": 21,
+        "reference": 6,
+        "matches": 6
+      },
+      "active": {
+        "candidates": 21,
+        "reference": 6,
+        "matches": 6
+      }
+    },
+    {
+      "baseline": {
+        "candidates": 43,
+        "reference": 13,
+        "matches": 13
+      },
+      "near": {
+        "candidates": 43,
+        "reference": 13,
+        "matches": 13
+      },
+      "plateau": {
+        "candidates": 30,
+        "reference": 13,
+        "matches": 12
+      },
+      "active": {
+        "candidates": 26,
+        "reference": 13,
+        "matches": 12
+      }
+    }
+  ],
+  "sha256": {
+    "core/jev_online_sampler_v001.js": "a2d9e945e806d2ff774aaf6f6a20ad55659c6c08406cbbaf30ffa81f6d621923",
+    "core/jev_online_sampler_v002.js": "0662b5064b2d868f5f0215d4439772cc3f89c318f42376ceb61dda5b1a459b0c",
+    "scripts/evaluate_jev_sampling_v002.cjs": "d48668ecb76f70f9a2cd959faa812ef5039824a2a9e3587982a3aca3ce94a52c",
+    "experiments/crossing_checkpoint/online_sampling_v002/run_20261124_01/split.json": "ad760ce5b4af5273e3a9ca1cc3c9a403a3634d6ac5c427890cd74cd415f9d2d9"
+  },
+  "frozenAt": "2026-11-24T17:54:22.781Z"
+}
