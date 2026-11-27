@@ -79,3 +79,7 @@ GPU0/1 分别复用已授权保留的模型 PID 2117878/2117879，不再次加�
 这些是标明时间的中间结果，不能当作完整 73 条最终评分；完整 RGB、模型响应与轨迹仍保留在 outputs/。主 README 已明确同步阻塞、STOP 未单独校验完成、卡住未独立触发接管等限制，本次仅归档同步，没有改变运行协议。
 
 本次 GitHub 同步前验证：`.runtime/crossing_vllm27/bin/python -B -m unittest tests.test_codex_serial_pipeline tests.test_codex_serial_guard tests.test_codex_serial_node tests.test_codex_bridge_native_env tests.test_vlnverse_runtime`，35 项通过（4.430 秒）。这些是 CPU/本地接口检查，未额外启动导航或请求模型。
+
+2026-11-27 07:56 UTC：GitHub main 已成功推送代码提交 d095319。0240 全 23/23 已完成，新仿真正常退出，按用户要求保留模型 2117879 和旧仿真；0036 已完成 25/25。GPU0 继续 0208（12/25），当前 0208_4_1 F12，评审等待。累计 60/73 正式评分：当前 SR 40/60（66.67%）、平均 SPL 0.4781040120；同 episode/seed 2 原版 SR 32/60（53.33%）、平均 SPL 0.4256480911，含失败。失败转成功 14、成功转失败 6。进行中 1、待跑 12，本次续跑无新增技术中断。0240 完整场景当前 SR 14/23（60.87%）、SPL 0.4779280372；原版 11/23（47.83%）、SPL 0.3625347920。
+
+[本次 60 条逐条配对 CSV](reports/paired60_20261127_0756.csv) · [07:56 完整快照](reports/status_summary_20261127_0756.json)。保留此前 56 条快照，不覆盖中间结果。
