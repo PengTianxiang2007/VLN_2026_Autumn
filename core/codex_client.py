@@ -31,6 +31,11 @@ def sha256(path: Path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def process_start_ticks(pid):
+    """Linux process identity; unlike PID alone this survives PID reuse safely."""
+    return int(Path(f"/proc/{pid}/stat").read_text().rsplit(")", 1)[1].split()[19])
+
+
 def require_ready(answer):
     if answer != {"ready": True}:
         raise ValueError("Missing ready acknowledgement")
@@ -155,7 +160,11 @@ class CodexSession:
                 child = subprocess.Popen(command, cwd=self.directory, env=env,
                                          stdin=subprocess.PIPE, stdout=stdout, stderr=stderr,
                                          text=True, encoding="utf-8", start_new_session=True)
-                save(folder / "process.json", dict(pid=child.pid, started_at=now()))
+                try:
+                    start_ticks = process_start_ticks(child.pid)
+                except (OSError, ValueError):
+                    start_ticks = None  # Very short-lived child; never kill an unverified PID later.
+                save(folder / "process.json", dict(pid=child.pid, started_at=now(), start_ticks=start_ticks))
                 child.communicate(prompt, timeout=self.config.timeout_seconds)
         except BaseException as error:
             failure = error

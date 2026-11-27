@@ -322,6 +322,22 @@ class VlnPeEvaluator(Evaluator):
         return False, reset_infos
 
     def eval(self):
+        settings = self.config.eval_settings.get('codex_serial')
+        if not settings:
+            return self._native_eval()
+        from core.codex_serial_runtime import SerialHook
+        hook = SerialHook(self, settings)
+        try:
+            return self._native_eval()
+        except BaseException as error:
+            hook.failed(error)
+            hook.close()
+            self.env.close()
+            raise
+        finally:
+            hook.close()
+
+    def _native_eval(self):
         print('--- VlnPeEvaluator start ---')
         # Chunked-restart mitigation for an accumulated-scene leak: scene/PhysX collision
         # is not freed on env.reset, so host RSS climbs every episode until a physics step

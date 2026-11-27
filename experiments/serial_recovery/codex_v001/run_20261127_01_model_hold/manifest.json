@@ -1,0 +1,66 @@
+{
+  "started_at": "2026-11-27T04:33:37.848218+00:00",
+  "purpose": "User requested detached model services only; no readiness polling or evaluation.",
+  "git_head": "68f16df4d822b0a3ced83d606c320378da2ed729",
+  "seed": 2,
+  "checkpoint": "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/models/StreamVLN_R2R_v1_3",
+  "workers": [
+    {
+      "gpu": 0,
+      "pid": 2117878,
+      "start_ticks": "75784517",
+      "command": [
+        "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/backbone/streamvln/.venv/bin/python",
+        "-u",
+        "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/benchmarks/vlnverse/runner/service.py",
+        "--method",
+        "StreamVLN",
+        "--checkpoint",
+        "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/models/StreamVLN_R2R_v1_3",
+        "--output",
+        "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/serial_recovery/codex_v001/run_20261127_01_model_hold/gpu0",
+        "--smoke-steps",
+        "0",
+        "--compact-trace",
+        "--save-rgb",
+        "2"
+      ],
+      "log": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/serial_recovery/codex_v001/run_20261127_01_model_hold/gpu0/agent.log",
+      "output": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/serial_recovery/codex_v001/run_20261127_01_model_hold/gpu0",
+      "status": "launch_submitted"
+    },
+    {
+      "gpu": 1,
+      "pid": 2117879,
+      "start_ticks": "75784527",
+      "command": [
+        "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/backbone/streamvln/.venv/bin/python",
+        "-u",
+        "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/benchmarks/vlnverse/runner/service.py",
+        "--method",
+        "StreamVLN",
+        "--checkpoint",
+        "/mnt/nas/gezuhao/shared_dataset/Resource_Peng/models/StreamVLN_R2R_v1_3",
+        "--output",
+        "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/serial_recovery/codex_v001/run_20261127_01_model_hold/gpu1",
+        "--smoke-steps",
+        "0",
+        "--compact-trace",
+        "--save-rgb",
+        "2"
+      ],
+      "log": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/serial_recovery/codex_v001/run_20261127_01_model_hold/gpu1/agent.log",
+      "output": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/serial_recovery/codex_v001/run_20261127_01_model_hold/gpu1",
+      "status": "launch_submitted"
+    }
+  ],
+  "retained_simulators": [
+    1548476,
+    1548482
+  ],
+  "source_hashes": {
+    "core/paths.py": "1d4cd4caa700e58bba363e8dcaf16e1df396cd768fb732b998318971e55e22ed",
+    "backbone/streamvln/vlnverse/adapter.py": "7a3a169cb6ee2a524c78e05e6044524779f28f5e3aed4c068f44ac950ec94a41",
+    "benchmarks/vlnverse/runner/service.py": "f52313cf1d5d783cf2af31933b9d3464246afbb3e5023c3cc2a1285d63947864"
+  }
+}

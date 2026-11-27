@@ -1,4 +1,5 @@
 """Load the selected captured episode in the existing single-H1 environment and hold it at F57."""
+from copy import deepcopy
 import json
 import os
 from pathlib import Path
@@ -25,7 +26,7 @@ CONFIG = CAPTURE / ("runs/vlnverse/streamvln/results/peng_fine_multiview104_2026
 
 def switch_and_place(env, previous_episode="kujiale_0036_0_0", destination=OUT, *,
                      source=SOURCE, episode=EPISODE, scene="kujiale_0128_fix", frame=57,
-                     phase="terminal", config=CONFIG):
+                     phase="terminal", config=CONFIG, measure_prefix=None):
     record = json.loads(source.read_bytes())
     if (record["episode_id"], record["scene"], record["seed"], record["step"], record["phase"]) != (
             episode, scene, 2, frame, phase):
@@ -49,12 +50,21 @@ def switch_and_place(env, previous_episode="kujiale_0036_0_0", destination=OUT, 
     if (current.data["episode_id"] != previous_episode or manager.env_num != 1
             or manager.current_task_config_idx != len(manager.task_configs)):
         raise RuntimeError("The retained simulator no longer has the expected single episode")
-    manager.task_configs.append(next_cfg)
+    manager.task_configs.append(deepcopy(next_cfg))
     manager.len_tasks = manager.validate_task_configs()
     env.reset([0])
     task, = runner.current_tasks.values()
     if task.data["episode_id"] != episode or not np.array_equal(task.env_offset, record["environment_offset"]):
         raise RuntimeError("Unexpected episode or world origin after scene reset")
+    if measure_prefix is not None:
+        measure_prefix(env, task)
+        # Start the measured intervention from the same fresh task as every other case.
+        manager.task_configs.append(deepcopy(next_cfg))
+        manager.len_tasks = manager.validate_task_configs()
+        env.reset([0])
+        task, = runner.current_tasks.values()
+        if task.data["episode_id"] != episode or not np.array_equal(task.env_offset, record["environment_offset"]):
+            raise RuntimeError("Unexpected episode after prefix measurement")
     world = runner._world
     art = task.robot.articulation._articulation
     _, ended, warmup = tick_action(env, {"stand_still": []}, 500)

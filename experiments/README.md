@@ -1,5 +1,33 @@
 # 实验总目录
 
+2026-11-27：[0208/0240 未评分 30 条续跑](serial_recovery/codex_v001/run_20261127_02_resume30/README.md)已提交后台队列 PID 2120500，复用双 GPU 已挂起模型，自动验证 JEV；按用户要求不跟踪进度。续跑前累计当前 SR 31/43（72.09%）、平均 SPL 0.4920；配对原版 SR 21/43（48.84%）、平均 SPL 0.3867。
+
+2026-11-27：按用户要求提交 [双 GPU StreamVLN 常驻模型](../experiments/serial_recovery/codex_v001/run_20261127_01_model_hold/README.md)后台启动，GPU0/1 PID 2117878/2117879。仅挂载服务，不等待模型加载、不恢复导航；旧仿真保留。
+
+2026-11-27 04:26 UTC：[run11 0036](serial_recovery/codex_v001/run_20261126_11_scene0036_terminal_rgbfix/README.md)25/25 完成；[run12 0208/0240](serial_recovery/codex_v001/run_20261126_12_scene0208_0240_after_terminalfix/README.md)完成 4/25、14/23 后因 JEV 余额不足 HTTP 402 退出。累计当前 SR 31/43（72.09%）、平均 SPL 0.4920；同批 seed 2 原版 21/43（48.84%）、SPL 0.3867。进行中 0、技术中断 2、未开始 28；任务服务已清理，旧保留仿真仍在。
+
+2026-11-26 21:28 UTC：[run11 首条完整恢复并正式评分](serial_recovery/codex_v001/run_20261126_11_scene0036_terminal_rgbfix/README.md)成功，`kujiale_0036_32_4` recovery 84 步，769.057 秒、118 张 RGB。当前 SR 1/1（100%）、平均 SPL 0.5970；同 seed 原版 SR 1/1（100%）、SPL 0.8171。GPU1 已进下一条，GPU0 继续；1/25 已评分、2 进行中、22 待跑、技术跳过 0。[run12 0208/0240](serial_recovery/codex_v001/run_20261126_12_scene0208_0240_after_terminalfix/README.md)等待接续。
+
+2026-11-26：[run11 终止 RGB 与原生评分衔接修复](serial_recovery/codex_v001/run_20261126_11_scene0036_terminal_rgbfix/README.md)启动，保留之前已完成的真实恢复动作证据但不冒充正式评分，6 项定向验证通过。[run12 后续 0208/0240](serial_recovery/codex_v001/run_20261126_12_scene0208_0240_after_terminalfix/README.md)接本轮。当前版及配对原版 SR、平均 SPL 均暂无，已评分 0 条。
+
+2026-11-26 20:37 UTC：[GPU1 恢复接口导入修复 run07](serial_recovery/codex_v001/run_20261126_07_scene0036_gpu1_bridgefix/README.md)已单独重启，run05 GPU0 继续；最终 [0208/0240 队列 run08](serial_recovery/codex_v001/run_20261126_08_scene0208_0240_high_after_bridgefix/README.md)接各路有效前置。旧运行保留故障证据，当前版及配对原版 SR、平均 SPL 均暂无，已评分 0 条。
+
+2026-11-26：[0036 修复重跑](serial_recovery/codex_v001/run_20261126_05_scene0036_high_dual_nodefix/README.md)已重新双路启动，修复评审子进程 Node 路径丢失；3 项定向检查及实际 worker/JEV/采样器验证通过。[0208/0240 后续队列](serial_recovery/codex_v001/run_20261126_06_scene0208_0240_high_after_nodefix/README.md)接新运行。保留全部旧失败证据，当前版及配对原版 SR、平均 SPL 均暂无，已评分 0 条。
+
+2026-11-26 20:06 UTC，[0208/0240 两场景后续队列](serial_recovery/codex_v001/run_20261126_04_scene0208_0240_high_queued/README.md)已入队，新增 25+23 条，seed 2、Codex high、恢复 180 步，排除 0128 和已被替换的 0234。0208 等待 GPU0 前置；0240 因 GPU1 前置 BrokenPipeError 阻塞。当前版及配对原版 SR、平均 SPL 均暂无，已评分 0 条。
+
+2026-11-26：[kujiale_0036 全 25 条 · 双 GPU · Codex high](serial_recovery/codex_v001/run_20261126_03_scene0036_high_dual/README.md)启动，GPU0/1 各 13/12 条、每卡模型与仿真同卡，seed 2。JEV 真实验证通过；两路处于模型初始化，交后台执行。当前版与配对原版 SR、平均 SPL 均暂无，已评分 0 条。
+
+2026-11-26：[串行 guard1 保护](serial_recovery/codex_v001/run_20261126_02_guards/README.md)完成，最多 10 次请求，累计期限与 Codex 无进展监督，技术中断停止队列；仅 CPU 验证，未启动导航。
+
+2026-11-26：既有双 GPU 恢复队列全部结束。[五例 120 步](inverse_rollback/codex_tools_v001/run_20261126_08_five_goal120/README.md)当前 SR 3/5（60%）、平均 SPL 0.3291，原版 0/5（0%）、SPL 0；[四例 180 步](inverse_rollback/codex_tools_v001/run_20261126_09_four_goal180/README.md)当前 SR 3/4（75%）、平均 SPL 范围 0.4375–0.4399，原版 0/4（0%）、SPL 0。两台仿真继续保留。
+
+2026-11-26：[Codex 在线串行接管 v001](serial_recovery/codex_v001/README.md)已实现并完成 CPU 定向验证；STOP 等待最后一段评审，偏航后 GPT 接管至终点，180 步预算。尚未启动本版导航实验，当前版与配对原版 SR、平均 SPL 均暂无，已评分 0 条。
+
+2026-11-26，[C19、C21、C22、C30 接管至终点 · 180 步](inverse_rollback/codex_tools_v001/run_20261126_09_four_goal180/README.md)追加至既有双 GPU 队列，保留逐步 RGB 和计时。当前版与配对原版 SR、平均 SPL 均暂无，已评分 0 条。
+
+2026-11-26，[五例接管至原始导航终点 · 双 GPU · 120 步](inverse_rollback/codex_tools_v001/run_20261126_08_five_goal120/README.md)已双进程启动，记录第一人称 RGB、计时及同 seed 原版配对评分。当前版与配对原版 SR、平均 SPL 均暂无，已评分 0 条。
+
 2026-11-26，[120 步回退与支路恢复五例可视化](http://134.175.18.101/vln/c11_codex_region60_f57_f45_web_20261126_01/index.html)已发布，同一网页可切换原 60 步回放。
 
 2026-11-26，[五例回退并进入正确支路 · 120 步](inverse_rollback/codex_tools_v001/run_20261126_07_five_branch120/README.md)已结束，整批用时 33 分 40 秒。4 例声明已进入所选支路，C23 在 56 步触发物理终止。C43、C20 报告使用更早回退点。保留 315 张第一人称 RGB 及 C20 仿真停点。

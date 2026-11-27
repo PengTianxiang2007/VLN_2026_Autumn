@@ -35,17 +35,18 @@ def utc():
 
 def run(*, out=OUT, prompt_file=HERE / "prompt.txt", episode=EPISODE, start_frame=57,
         target_frame=45, target_node="S05", parent=PARENT, last_turn=LAST,
-        rollout=ROLLOUT, turns=12, extra_sources=(), move_limit=60, objective="checkpoint_return"):
+        rollout=ROLLOUT, turns=12, extra_sources=(), move_limit=60, objective="checkpoint_return",
+        simulator_pid=3122551, discovery=DISCOVERY):
     live = out / "live"
     endpoint_file = live / "endpoint.json"
     while not endpoint_file.exists():
-        if not Path("/proc/3122551").is_dir():
+        if not Path(f"/proc/{simulator_pid}").is_dir():
             raise RuntimeError("Target simulator exited during setup")
         time.sleep(1)
     endpoint = read(endpoint_file)
     placement = read(out / "placement.json")
     if (endpoint["status"], endpoint["episode_id"], endpoint["start_frame"], endpoint["move_limit"], endpoint["pid"]) != (
-            "ready", episode, start_frame, move_limit, 3122551) or not placement["verified"] or not Path(endpoint["socket"]).is_socket():
+            "ready", episode, start_frame, move_limit, simulator_pid) or not placement["verified"] or not Path(endpoint["socket"]).is_socket():
         raise ValueError(f"Expected a verified recorded placement with a {move_limit}-movement endpoint")
     if (live / "calls.jsonl").exists():
         raise RuntimeError("Endpoint already used")
@@ -54,11 +55,14 @@ def run(*, out=OUT, prompt_file=HERE / "prompt.txt", episode=EPISODE, start_fram
                      e.get("type") == "event_msg" and e["payload"].get("type") == "task_complete"]
     if len(completed) != turns or completed[-1] != last_turn:
         raise RuntimeError("Parent no longer ends on the selected deviation decision")
-    if read(DISCOVERY)["status"] != "detached":
-        raise RuntimeError("Previous controller is still active")
-    link = DISCOVERY.with_name(f"endpoint.to-{os.getpid()}")
-    link.symlink_to(os.path.relpath(endpoint_file, DISCOVERY.parent))
-    os.replace(link, DISCOVERY)
+    if not Path(f"/proc/{simulator_pid}/cwd").resolve().samefile(ROOT):
+        raise RuntimeError("Simulator belongs to another workspace")
+    if discovery is not None:
+        if read(discovery)["status"] != "detached":
+            raise RuntimeError("Previous controller is still active")
+        link = discovery.with_name(f"endpoint.to-{os.getpid()}")
+        link.symlink_to(os.path.relpath(endpoint_file, discovery.parent))
+        os.replace(link, discovery)
     prompt = prompt_file.read_text().strip()
     cmd = ["bash", "scripts/codex_vlnverse_robot.sh", "exec", "--sandbox", "read-only", "--disable", "shell_tool",
            "--disable", "unified_exec", "--enable", "code_mode_host", "-c", "project_doc_max_bytes=0",

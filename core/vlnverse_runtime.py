@@ -3,6 +3,47 @@ import json
 from pathlib import Path
 import time
 
+
+class ExistingModelService:
+    """A registered, externally retained model; runners must never terminate it."""
+    retained = True
+
+    def __init__(self, manifest, gpu, method, seed, project):
+        import os
+        self.project = Path(project).resolve()
+        metadata = json.loads(Path(manifest).read_text())
+        entries = [w for w in metadata['workers'] if w['gpu'] == gpu]
+        if len(entries) != 1 or metadata['seed'] != seed:
+            raise ValueError('Existing model GPU/seed mismatch')
+        self.entry = entries[0]
+        self.pid = int(self.entry['pid'])
+        self.output = Path(self.entry['output']).resolve()
+        self.returncode = None
+        command = self.entry['command']
+        expected = str(self.project / 'benchmarks/vlnverse/runner/service.py')
+        if (expected not in command or command[command.index('--method') + 1] != method
+                or command[command.index('--output') + 1] != str(self.output)):
+            raise ValueError('Existing model command mismatch')
+        if self.poll() is not None:
+            raise RuntimeError('Existing model process is unavailable or changed')
+        proc = Path('/proc') / str(self.pid)
+        actual = proc.joinpath('cmdline').read_bytes().rstrip(b'\0').decode().split('\0')
+        environment = dict(item.split(b'=', 1) for item in proc.joinpath('environ').read_bytes().split(b'\0') if b'=' in item)
+        if (actual != command or proc.joinpath('cwd').resolve() != self.project
+                or proc.stat().st_uid != os.getuid()
+                or environment.get(b'CUDA_VISIBLE_DEVICES') != str(gpu).encode()
+                or environment.get(b'VLN_EVAL_SEED') != str(seed).encode()):
+            raise ValueError('Existing model process ownership/configuration mismatch')
+
+    def poll(self):
+        try:
+            fields = Path(f'/proc/{self.pid}/stat').read_text().split(') ', 1)[1].split()
+            alive = fields[0] != 'Z' and fields[19] == str(self.entry['start_ticks'])
+        except OSError:
+            alive = False
+        self.returncode = None if alive else 1
+        return self.returncode
+
 OOM_MARKERS = ('ERROR_OUT_OF_DEVICE_MEMORY', 'Out of GPU memory', 'CUDA out of memory')
 
 def placement(rows, allowed, busy, separate=False):

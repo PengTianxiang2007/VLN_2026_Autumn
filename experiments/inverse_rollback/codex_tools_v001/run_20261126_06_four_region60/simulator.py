@@ -12,7 +12,7 @@ OUT = ROOT / "outputs/inverse_rollback/codex_tools_v001" / HERE.name
 PLACE = ROOT / "experiments/inverse_rollback/pose_hold/run_20261126_03_f57/switch_scene.py"
 
 
-def attach(env, case_id, previous_episode, *, experiment=HERE, move_limit=60):
+def attach(env, case_id, previous_episode, *, experiment=HERE, move_limit=60, scoring_path=None):
     from run_inverse_rollback import save
     from vlnverse_robot_bridge import serve
     experiment = Path(experiment)
@@ -22,12 +22,22 @@ def attach(env, case_id, previous_episode, *, experiment=HERE, move_limit=60):
     clock = time.monotonic()
     try:
         place = runpy.run_path(str(PLACE))["switch_and_place"]
+        scoring = runpy.run_path(scoring_path) if scoring_path else None
+        measure = None
+        if scoring and case["phase"] != "terminal":
+            def measure(env, task):
+                scoring["measure_prefix"](env, task, case, directory)
         place(env, previous_episode=previous_episode, destination=directory,
               source=ROOT/case["source"], episode=case["episode"], scene=case["scene"],
-              frame=case["start_frame"], phase=case["phase"], config=ROOT/case["config"])
+              frame=case["start_frame"], phase=case["phase"], config=ROOT/case["config"], measure_prefix=measure)
         save(directory / "placement_time.json", dict(started_utc=started,
              finished_utc=datetime.now(timezone.utc).isoformat(), elapsed_s=time.monotonic()-clock))
+        if scoring_path:
+            task, = env.env.runner.current_tasks.values()
+            score = scoring["track_goal"](task, case, directory)
         serve(env, directory / "live", case["start_frame"], move_limit=move_limit)
+        if scoring_path:
+            score()
     except Exception:
         current = [t.data.get("episode_id") for t in env.env.runner.current_tasks.values()]
         save(directory / "simulator_error.json", dict(traceback=traceback.format_exc(),

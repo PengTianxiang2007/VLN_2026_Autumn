@@ -1,0 +1,430 @@
+{
+  "cohort": "05:39 UTC snapshot; six formally scored episodes, seed 2",
+  "metrics": {
+    "scored": 6,
+    "current_success": 2.0,
+    "current_sr": 0.3333333333333333,
+    "current_spl": 0.285784171955667,
+    "baseline_success": 5.0,
+    "baseline_sr": 0.8333333333333334,
+    "baseline_spl": 0.7950972091919758,
+    "recoveries": 3
+  },
+  "cases": [
+    {
+      "episode_id": "kujiale_0208_22_2",
+      "success": 1.0,
+      "spl": 0.7628724796543686,
+      "baseline_success": 1.0,
+      "baseline_spl": 0.9944976071391773,
+      "recovery": {
+        "stop_reason": "physical_terminal",
+        "movements": 78,
+        "model_declared_success": false,
+        "parent_thread": "01a21aab-e036-7113-8af7-94b091ad6ec0",
+        "branch_thread": "01a21ac0-89cd-7383-a1c4-844297f5cfde",
+        "elapsed_seconds": 321.0343476906419,
+        "completed_at": "2026-11-27T02:10:58.872856+00:00"
+      },
+      "source": "outputs/serial_recovery/codex_v001/run_20261126_12_scene0208_0240_after_terminalfix/gpu0/serial/episodes/kujiale_0208_22_2/attempt_1795743786033010556/result.json",
+      "scored_mtime": 1795745462.1158137,
+      "NE": 1.8378993921453795,
+      "fail_reason": "fall",
+      "takeover": [
+        {
+          "kind": "takeover_started",
+          "time": "2026-11-27T02:05:37.560474+00:00",
+          "episode_id": "kujiale_0208_22_2",
+          "frame": 85,
+          "thread_id": "01a21aab-e036-7113-8af7-94b091ad6ec0",
+          "review_turn": 18,
+          "rollback_target": "C01:S05:F37",
+          "original_action_discarded": {
+            "move_by_discrete": [
+              1
+            ]
+          }
+        }
+      ],
+      "reviews": [
+        {
+          "previous_frame": 0,
+          "current_frame": 0,
+          "mode": "initialization",
+          "verdict": "consistent",
+          "reason_zh": "本次为初始化，仅使用帧0。右侧开口与首项指令相容，但尚未确认执行；没有已采取的冲突动作证据。"
+        },
+        {
+          "previous_frame": 7,
+          "current_frame": 7,
+          "mode": "initialization",
+          "verdict": "consistent",
+          "reason_zh": "仅依据帧7及所保存的未确认进度，首项动作仍需确认。可见布局与右转进入开口相容，没有证据表明机器人已采取违反指令的动作。"
+        },
+        {
+          "previous_frame": 17,
+          "current_frame": 17,
+          "mode": "initialization",
+          "verdict": "consistent",
+          "reason_zh": "仅使用帧17，且此前路线进度未确认。单帧无法证明首项右转进入开口的动作已完成，也没有证据表明已采取违反指令的动作。"
+        },
+        {
+          "previous_frame": 17,
+          "current_frame": 27,
+          "mode": "segment",
+          "verdict": "consistent",
+          "reason_zh": "前进时沙发和茶几位于左侧，与指令的初始路线相容。没有证据表明机器人已进入错误分支或错过规定转弯；右转及后续进入客厅的动作仍未确认。"
+        },
+        {
+          "previous_frame": 17,
+          "current_frame": 37,
+          "mode": "segment",
+          "verdict": "consistent",
+          "reason_zh": "序列显示入口附近的前进和视角变化，但未明确显示进入错误分支或越过必须转弯的位置。沙发从画面左侧移至右侧本身不能证明路线偏离。首项右转尚未确认，后续直行经过左侧客厅也仅有部分进展。"
+        },
+        {
+          "previous_frame": 37,
+          "current_frame": 53,
+          "mode": "segment",
+          "verdict": "consistent",
+          "reason_zh": "序列确认前进至新的局部选择位置，但没有确认进入错误分支或错过规定入口。沙发出现在画面右侧使指令要求的左侧经过关系仍待核实，不能单凭视野中的位置认定偏离。最初右转以及随后稍向右进入客厅的动作均未获确认。"
+        },
+        {
+          "previous_frame": 37,
+          "current_frame": 61,
+          "mode": "segment",
+          "verdict": "consistent",
+          "reason_zh": "可确认机器人前进至共享区域并转向餐区，但后段变化包含明显的视角转动，尚不足以证明已沿错误分支离开共享区域或错过规定转弯。首项右转以及按要求从客厅左侧经过的步骤仍未确认；因此本段不判定偏离。"
+        },
+        {
+          "previous_frame": 37,
+          "current_frame": 80,
+          "mode": "segment",
+          "verdict": "deviated",
+          "reason_zh": "帧53—55显示餐区在左、沙发区域在右的局部选择；帧59—71随后显示机器人走入餐桌旁的墙边空间。这是向餐区分支的实际移动，与指令要求直行经过左侧客厅、随后稍向右进入客厅的路线不符。最初右转是否完成仍未确认，但不影响识别这一后续错误选择；帧80重新看向沙发不能撤销已发生的偏离。"
+        }
+      ],
+      "first_action_difference_zero_based": 11,
+      "elapsed_seconds": 1672.9827504567802,
+      "review_seconds": 1284.5659046396613
+    },
+    {
+      "episode_id": "kujiale_0208_27_3",
+      "success": 1.0,
+      "spl": 0.9518325520796335,
+      "baseline_success": 1.0,
+      "baseline_spl": 0.9567340576748063,
+      "recovery": null,
+      "source": "outputs/serial_recovery/codex_v001/run_20261126_12_scene0208_0240_after_terminalfix/gpu0/serial/episodes/kujiale_0208_27_3/attempt_1795745471678419709/result.json",
+      "scored_mtime": 1795746797.7936606,
+      "NE": 0.4137899264984324,
+      "fail_reason": "success",
+      "takeover": [],
+      "reviews": [
+        {
+          "previous_frame": 0,
+          "current_frame": 0,
+          "mode": "initialization",
+          "verdict": "consistent",
+          "reason_zh": "这是初始化，仅使用帧0。可见布局与向前进入客厅的指令相符，没有证据表明机器人已选择任何分支或采取冲突动作。"
+        },
+        {
+          "previous_frame": 7,
+          "current_frame": 7,
+          "mode": "initialization",
+          "verdict": "consistent",
+          "reason_zh": "仅使用帧7，可见布局与要求的前进路线相符。没有证据表明机器人已选择错误分支或采取与指令冲突的动作；此前路线进度仍未确认。"
+        },
+        {
+          "previous_frame": 7,
+          "current_frame": 16,
+          "mode": "segment",
+          "verdict": "consistent",
+          "reason_zh": "序列支持机器人选择向前进入客厅，而非左侧洗衣机区域，并经过起始脚凳。随后移动保持电视在左、座椅区域在右，与下一步直穿客厅的要求一致。尚无证据表明它在前方开口处作出了冲突选择。"
+        },
+        {
+          "previous_frame": 7,
+          "current_frame": 26,
+          "mode": "segment",
+          "verdict": "consistent",
+          "reason_zh": "序列支持完成进入客厅并经过起始脚凳，随后继续向餐区前进，符合指令顺序。机器人尚未显示转入左侧开口或错过右侧厨房入口，因此没有可确认的偏离动作。"
+        },
+        {
+          "previous_frame": 7,
+          "current_frame": 36,
+          "mode": "segment",
+          "verdict": "consistent",
+          "reason_zh": "移动顺序符合先进入客厅、经过脚凳，再直行前往餐厅的要求。后段朝向与稍向右接近厨房的路线相容，但不能仅凭视角变化确认已完成转弯。没有证据显示选择错误开口或错过所需厨房入口。"
+        },
+        {
+          "previous_frame": 36,
+          "current_frame": 81,
+          "mode": "segment",
+          "verdict": "consistent",
+          "reason_zh": "序列支持按要求依次进入餐厅、从餐桌右侧前往厨房、穿过厨房入口，并经过右侧冰箱到达挂有厨具的台面前。未见选择错误分支或其他与指令冲突的动作。到达目标位置已得到支持，但最终停止动作仍待执行。"
+        }
+      ],
+      "first_action_difference_zero_based": 3,
+      "elapsed_seconds": 1322.929408326745,
+      "review_seconds": 1245.5310538113117
+    },
+    {
+      "episode_id": "kujiale_0208_37_0",
+      "success": 0.0,
+      "spl": 0.0,
+      "baseline_success": 0.0,
+      "baseline_spl": 0.0,
+      "recovery": {
+        "stop_reason": "physical_terminal",
+        "movements": 40,
+        "model_declared_success": false,
+        "parent_thread": "01a21ada-07f2-7ed0-910c-51cca371c6d2",
+        "branch_thread": "01a21ae9-290d-7021-8908-725f422aa932",
+        "elapsed_seconds": 146.4357944764197,
+        "completed_at": "2026-11-27T02:52:26.532021+00:00"
+      },
+      "source": "outputs/serial_recovery/codex_v001/run_20261126_12_scene0208_0240_after_terminalfix/gpu0/serial/episodes/kujiale_0208_37_0/attempt_1795746807786580864/result.json",
+      "scored_mtime": 1795747955.9666684,
+      "NE": 8.397188033062895,
+      "fail_reason": "fall",
+      "takeover": [
+        {
+          "kind": "takeover_started",
+          "time": "2026-11-27T02:50:00.020750+00:00",
+          "episode_id": "kujiale_0208_37_0",
+          "frame": 60,
+          "thread_id": "01a21ada-07f2-7ed0-910c-51cca371c6d2",
+          "review_turn": 11,
+          "rollback_target": "C01:S03:F27",
+          "original_action_discarded": {
+            "move_by_discrete": [
+              1
+            ]
+          }
+        }
+      ],
+      "reviews": [
+        {
+          "previous_frame": 0,
+          "current_frame": 0,
+          "mode": "initialization",
+          "verdict": "consistent",
+          "reason_zh": "本次为初始化，仅使用第0帧。画面显示右侧客厅入口，但不能证明机器人已选择或穿过该入口，也没有已采取的动作与指令冲突。"
+        },
+        {
+          "previous_frame": 27,
+          "current_frame": 27,
+          "mode": "initialization",
+          "verdict": "consistent",
+          "reason_zh": "单帧显示机器人面向客厅，但不能证明已转弯、穿过入口或选择了其他路线。此前进度未确认，也没有证据表明已采取与指令冲突的动作，因此判定为一致。"
+        },
+        {
+          "previous_frame": 27,
+          "current_frame": 47,
+          "mode": "segment",
+          "verdict": "consistent",
+          "reason_zh": "序列支持机器人选择进入客厅，而非进入洗衣区域。后续视角中茶几偏左，但尚不能确定机器人已从错误一侧经过茶几；朝向变化本身不足以证明偏航。也没有证据表明机器人进入左侧门口或错过厨房右转，因此判定为一致，保留家具通过侧别的未决状态。"
+        },
+        {
+          "previous_frame": 27,
+          "current_frame": 55,
+          "mode": "segment",
+          "verdict": "deviated",
+          "reason_zh": "进入客厅符合第一步的目的地要求，但接下来应从电视与茶几之间通过，使电视和娱乐柜在左、沙发及鲜花茶几在右。第49、53、55帧显示机器人沿沙发与茶几之间的地面向前推进，茶几逐渐落到近处左侧；这支持实际选择了茶几右侧的通道，而非仅转动视角。因此偏离发生在客厅内经过家具的路线选择上。"
+        }
+      ],
+      "first_action_difference_zero_based": 27,
+      "elapsed_seconds": 1138.9007132463157,
+      "review_seconds": 944.9945972524583
+    },
+    {
+      "episode_id": "kujiale_0208_31_3",
+      "success": 0.0,
+      "spl": 0.0,
+      "baseline_success": 1.0,
+      "baseline_spl": 1.0,
+      "recovery": null,
+      "source": "outputs/serial_recovery/codex_v001/run_20261126_12_scene0208_0240_after_terminalfix/gpu0/serial/episodes/kujiale_0208_31_3/attempt_1795747965574911891/result.json",
+      "scored_mtime": 1795749437.563784,
+      "NE": 3.2244824510833965,
+      "fail_reason": "not_reach_goal",
+      "takeover": [],
+      "reviews": [
+        {
+          "previous_frame": 0,
+          "current_frame": 0,
+          "mode": "initialization",
+          "verdict": "consistent",
+          "reason_zh": "这是初始化，仅有帧0可用于判断。画面未显示与指令冲突的行动，因此判定为一致；此前路线进度仍未确认。"
+        },
+        {
+          "previous_frame": 7,
+          "current_frame": 7,
+          "mode": "initialization",
+          "verdict": "consistent",
+          "reason_zh": "当前可见布局符合向前走、保持餐桌在右侧和厨房炉灶在左侧的要求。没有证据表明机器人已采取冲突行动；此前路线进度仍未确认。"
+        },
+        {
+          "previous_frame": 7,
+          "current_frame": 17,
+          "mode": "segment",
+          "verdict": "consistent",
+          "reason_zh": "帧7至15支持沿指定通道前进并经过厨房和餐桌。帧17仍位于门外，朝右观察与接下来右转进入卧室的要求相容，没有证据表明已错过门口或选择错误分支。"
+        },
+        {
+          "previous_frame": 7,
+          "current_frame": 27,
+          "mode": "segment",
+          "verdict": "consistent",
+          "reason_zh": "该段先沿指定通道前进，再朝右侧门口接近，与指令顺序相符。机器人尚未越过所需入口或进入其他区域，因此没有可确认的偏离；右转穿门这一步仍未完成。"
+        },
+        {
+          "previous_frame": 27,
+          "current_frame": 37,
+          "mode": "segment",
+          "verdict": "consistent",
+          "reason_zh": "当前应完成右转穿门进入卧室。画面支持继续接近并观察该入口，未显示越过入口后沿其他路线离开，也未显示进入错误分支。因此与指令相容，但穿门仍未确认。"
+        },
+        {
+          "previous_frame": 27,
+          "current_frame": 47,
+          "mode": "segment",
+          "verdict": "consistent",
+          "reason_zh": "该段应完成右转穿门进入卧室。连续画面显示接近并朝向卧室入口，床的位置与后续从其左侧经过的要求相容。观察其他入口不等于进入其他分支，未发现与指令冲突的已执行行动。"
+        },
+        {
+          "previous_frame": 47,
+          "current_frame": 80,
+          "mode": "segment",
+          "verdict": "consistent",
+          "reason_zh": "进入卧室入口区域与当前指令相容。后续朝向木板的画面不能单独证明选错分支或错过浴室入口。任务尚未完成，但没有足够证据指出已经执行的路线冲突；未执行的STOP请求不作为已停下的证据。"
+        }
+      ],
+      "first_action_difference_zero_based": 23,
+      "elapsed_seconds": 1462.6591193825006,
+      "review_seconds": 1399.98481843248
+    },
+    {
+      "episode_id": "kujiale_0208_40_0",
+      "success": 0.0,
+      "spl": 0.0,
+      "baseline_success": 1.0,
+      "baseline_spl": 0.8193515903378712,
+      "recovery": null,
+      "source": "outputs/serial_recovery/codex_v001/run_20261127_02_resume30/gpu0/serial/episodes/kujiale_0208_40_0/attempt_1795754691247909279/result.json",
+      "scored_mtime": 1795756358.7172089,
+      "NE": 6.379385261343971,
+      "fail_reason": "stuck",
+      "takeover": [],
+      "reviews": [
+        {
+          "previous_frame": 81,
+          "current_frame": 81,
+          "mode": "initialization",
+          "verdict": "consistent",
+          "reason_zh": "A与B均为帧81，没有可供判断的移动序列。当前视角不能证明机器人已执行任何与指令冲突的动作，因此判为一致，首个动作仍待确认。"
+        },
+        {
+          "previous_frame": 91,
+          "current_frame": 91,
+          "mode": "initialization",
+          "verdict": "consistent",
+          "reason_zh": "A与B均为帧91。看向洗手台并不能证明已经经过它，也不能证明采取了错误路线。没有已执行动作与指令冲突的证据，因此判为一致。"
+        },
+        {
+          "previous_frame": 99,
+          "current_frame": 99,
+          "mode": "initialization",
+          "verdict": "consistent",
+          "reason_zh": "A与B均为帧99，没有移动序列。洗手台位于右侧与指令相容，但不能据此确认已经经过它，也没有证据证明采取了冲突动作，因此判为一致。"
+        },
+        {
+          "previous_frame": 115,
+          "current_frame": 115,
+          "mode": "initialization",
+          "verdict": "consistent",
+          "reason_zh": "A与B均为帧115，没有可判断的移动序列。可见洗手台和开口不代表已经经过或进入，也没有证据表明执行了与指令冲突的动作，因此判为一致。"
+        },
+        {
+          "previous_frame": 129,
+          "current_frame": 129,
+          "mode": "initialization",
+          "verdict": "consistent",
+          "reason_zh": "A与B均为帧129，没有移动序列可供判断。看向洗手台不代表已经经过它，也不能证明选择了错误分支。没有已执行动作与指令冲突的证据，因此判为一致。"
+        },
+        {
+          "previous_frame": 139,
+          "current_frame": 139,
+          "mode": "initialization",
+          "verdict": "consistent",
+          "reason_zh": "A与B均为帧139，没有移动序列可供判断。看向洗手台不能证明已经经过它或选择了错误路线；没有已执行动作与指令冲突的证据，因此判为一致。"
+        }
+      ],
+      "first_action_difference_zero_based": 9,
+      "elapsed_seconds": 1663.9957730434835,
+      "review_seconds": 1558.171702824533
+    },
+    {
+      "episode_id": "kujiale_0208_9_4",
+      "success": 0.0,
+      "spl": 0.0,
+      "baseline_success": 1.0,
+      "baseline_spl": 1.0,
+      "recovery": {
+        "stop_reason": "physical_terminal",
+        "movements": 25,
+        "model_declared_success": false,
+        "parent_thread": "01a21b6b-cd0b-7fb1-9943-b7a274868cb1",
+        "branch_thread": "01a21b7a-6c72-7762-addc-e6b3dc6e56ff",
+        "elapsed_seconds": 137.74966291710734,
+        "completed_at": "2026-11-27T05:30:56.177739+00:00"
+      },
+      "source": "outputs/serial_recovery/codex_v001/run_20261127_02_resume30/gpu0/serial/episodes/kujiale_0208_9_4/attempt_1795756368121132964/result.json",
+      "scored_mtime": 1795757461.7586975,
+      "NE": 7.695215977902195,
+      "fail_reason": "fall",
+      "takeover": [
+        {
+          "kind": "takeover_started",
+          "time": "2026-11-27T05:28:37.971950+00:00",
+          "episode_id": "kujiale_0208_9_4",
+          "frame": 89,
+          "thread_id": "01a21b6b-cd0b-7fb1-9943-b7a274868cb1",
+          "review_turn": 8,
+          "rollback_target": "C01:S02:F7",
+          "original_action_discarded": {
+            "move_by_discrete": [
+              1
+            ]
+          }
+        }
+      ],
+      "reviews": [
+        {
+          "previous_frame": 0,
+          "current_frame": 0,
+          "mode": "initialization",
+          "verdict": "consistent",
+          "reason_zh": "这是初始化，仅凭帧0无法确认此前路线进度。可见布局与指令起始要求相容，没有已采取的冲突动作。"
+        },
+        {
+          "previous_frame": 7,
+          "current_frame": 7,
+          "mode": "initialization",
+          "verdict": "consistent",
+          "reason_zh": "唯一允许使用的帧7未显示可辨认的路线选择或冲突动作。此前进度仍未确认，因此判定为consistent，不确认任何新步骤完成。"
+        },
+        {
+          "previous_frame": 7,
+          "current_frame": 84,
+          "mode": "segment",
+          "verdict": "deviated",
+          "reason_zh": "可确认的冲突动作是进入厨房：帧51至55显示机器人已沿厨房内部地面来到灶台和橱柜前，随后回到餐区。这偏离了经过餐桌与客厅后右转进入短通道、再左转进入卧室的路线。判断依据是实际进入厨房的序列，而非单纯转动视角或未看到卧室。"
+        }
+      ],
+      "first_action_difference_zero_based": 6,
+      "elapsed_seconds": 1088.2082277089357,
+      "review_seconds": 886.2895445227623
+    }
+  ]
+}

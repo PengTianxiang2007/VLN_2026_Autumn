@@ -125,7 +125,11 @@ def review_terminal(session, case, image_root, active, progress_by_node, sampler
     if not path.is_relative_to(image_root.resolve()) or sha256(path) != image["image_id"]:
         raise ValueError("Terminal observation path or hash mismatch")
     ref = terminal["candidate_id"] + "/F0"
-    message = (f"The trajectory has ended. This is the actual final front RGB, {ref}, at action step {t}. "
+    status = ("The navigation policy has requested STOP, but STOP has not been executed. "
+              "The robot is waiting at this action boundary. This is the current front RGB"
+              if terminal.get("stop_requested") else
+              "The trajectory has ended. This is the actual final front RGB")
+    message = (f"{status}, {ref}, at action step {t}. "
                "Record this observation for the next route review. Acknowledge with ready=true.")
     ack, _ = session.ask_checked(require_ready, message, [path], {"type": "object", "additionalProperties": False, "required": ["ready"],
         "properties": {"ready": {"type": "boolean", "enum": [True]}}}, label="terminal_observation",

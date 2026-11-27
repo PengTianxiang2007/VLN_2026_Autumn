@@ -1,0 +1,13 @@
+Return the robot to checkpoint {checkpoint}.
+
+Use the earlier observations to confirm that your current position meets the definition of a rollback checkpoint and that you can see the other branches that were visible from that checkpoint. You do not need to match the original position or orientation exactly. Being in the area near the original position is sufficient.
+
+Once you are in that area, use the original navigation instruction, the route segments already completed, and your current observations to determine which branch matches the next part of the instruction. You may turn to inspect the entrances. Once you identify the correct branch, move through its entrance and use a new first-person observation to confirm that you are inside that branch.
+
+Once inside, keep controlling the robot. Resume the original navigation instruction at the next requirement you have not yet completed. Use first-person observations along the way to check landmarks, turns, and the route you have taken. Continue until you reach the final stopping location specified in the instruction. Satisfy any relative position, orientation, or other stopping conditions the instruction gives.
+
+If, after looking around at a checkpoint, you cannot see a suitable branch or the evidence is insufficient to choose one, retrace the route to the next earlier retained rollback checkpoint in your history. Inspect the alternatives and choose a branch there. If you find that you have gone off route again later, use the same procedure to return, choose a branch again, and resume the remaining instruction. If there are no earlier retained rollback checkpoints left and you still cannot determine how to proceed, end the attempt and explain why.
+
+Use observe() to view the scene ahead. Use step("forward"), step("turn_left"), or step("turn_right") to move or turn. Call step("finish_return") only when your current first-person observation confirms that the robot is at the final stopping location required by the original navigation instruction.
+
+You have a single budget of 120 movement steps for the entire attempt. Each forward move or turn counts as one step. Observing and declaring completion do not count. If you use all 120 steps and cannot confirm arrival at the destination, end the attempt and report the last part of the instruction you completed and what remains.

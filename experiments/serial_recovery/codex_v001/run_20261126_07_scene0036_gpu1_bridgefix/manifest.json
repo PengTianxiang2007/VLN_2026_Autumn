@@ -1,0 +1,111 @@
+{
+  "prepared_at": "2026-11-26T20:35:46.743973+00:00",
+  "seed": 2,
+  "workers": [
+    {
+      "gpu": 1,
+      "episode_ids": [
+        "kujiale_0036_26_3",
+        "kujiale_0036_57_4",
+        "kujiale_0036_33_2",
+        "kujiale_0036_10_0",
+        "kujiale_0036_52_4",
+        "kujiale_0036_36_4",
+        "kujiale_0036_18_3",
+        "kujiale_0036_4_4",
+        "kujiale_0036_17_3",
+        "kujiale_0036_51_4",
+        "kujiale_0036_50_1",
+        "kujiale_0036_32_4"
+      ],
+      "run_id": "peng_fine_codex_serial_0036_high_20261126_retry2_g1",
+      "serial_output": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/serial_recovery/codex_v001/run_20261126_07_scene0036_gpu1_bridgefix/gpu1/serial",
+      "native_output": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/vlnverse/streamvln/results/peng_fine_codex_serial_0036_high_20261126_retry2_g1"
+    }
+  ],
+  "predecessor": {
+    "gpu": 1,
+    "episode_ids": [
+      "kujiale_0036_26_3",
+      "kujiale_0036_57_4",
+      "kujiale_0036_33_2",
+      "kujiale_0036_10_0",
+      "kujiale_0036_52_4",
+      "kujiale_0036_36_4",
+      "kujiale_0036_18_3",
+      "kujiale_0036_4_4",
+      "kujiale_0036_17_3",
+      "kujiale_0036_51_4",
+      "kujiale_0036_50_1",
+      "kujiale_0036_32_4"
+    ],
+    "run_id": "peng_fine_codex_serial_0036_high_20261126_retry1_g1",
+    "serial_output": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/serial_recovery/codex_v001/run_20261126_05_scene0036_high_dual_nodefix/gpu1/serial",
+    "native_output": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/vlnverse/streamvln/results/peng_fine_codex_serial_0036_high_20261126_retry1_g1",
+    "launcher_pid": 1658038,
+    "launcher_start_ticks": 72792626,
+    "command": [
+      "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/.runtime/crossing_vllm27/bin/python",
+      "-Bu",
+      "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/benchmarks/vlnverse/runner/run_full.py",
+      "--method",
+      "StreamVLN",
+      "--mode",
+      "physical",
+      "--seed",
+      "2",
+      "--gpu",
+      "1",
+      "--sim-gpu",
+      "1",
+      "--allow-shared-gpu",
+      "--run-id",
+      "peng_fine_codex_serial_0036_high_20261126_retry1_g1",
+      "--codex-serial-output",
+      "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/serial_recovery/codex_v001/run_20261126_05_scene0036_high_dual_nodefix/gpu1/serial",
+      "--episode-ids",
+      "kujiale_0036_26_3",
+      "kujiale_0036_57_4",
+      "kujiale_0036_33_2",
+      "kujiale_0036_10_0",
+      "kujiale_0036_52_4",
+      "kujiale_0036_36_4",
+      "kujiale_0036_18_3",
+      "kujiale_0036_4_4",
+      "kujiale_0036_17_3",
+      "kujiale_0036_51_4",
+      "kujiale_0036_50_1",
+      "kujiale_0036_32_4"
+    ],
+    "admission": {
+      "gpu": 1,
+      "free_mib": 36048,
+      "utilization": 0,
+      "retained_pids": [
+        1548482
+      ],
+      "host_available_kib": 176686292,
+      "time": "2026-11-26T20:14:59.021731+00:00"
+    },
+    "started_at": "2026-11-26T20:14:59.041243+00:00"
+  },
+  "protocol": {
+    "version": "codex_serial_v001_guard1",
+    "movement_budget": 180,
+    "model": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "proxy_url": "http://127.0.0.1:7892",
+    "timeout_seconds": 300,
+    "jev_endpoint": "https://api.easyjev.online/v1/systemone",
+    "request_attempts": 10,
+    "jev_timeout_seconds": 120,
+    "jev_total_seconds": 420,
+    "codex_total_seconds": 600,
+    "boundary_timeout_seconds": 1800,
+    "recovery_idle_seconds": 300,
+    "recovery_no_move_seconds": 600,
+    "recovery_total_seconds": 2700
+  },
+  "bridge_sha256": "70e8cb948e6d507860dd8d4a690a7d8718d4526d08d4bdf24941ae8a98abdba9",
+  "baseline_sha256": "6032e07632913f363767a2bf7834e566caea5d24cfde4bf3cb3d86af9ff1d5ca"
+}

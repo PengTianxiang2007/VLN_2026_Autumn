@@ -1,0 +1,100 @@
+{
+  "scene": "kujiale_0036",
+  "seed": 2,
+  "episode_ids": [
+    "kujiale_0036_0_0",
+    "kujiale_0036_26_3",
+    "kujiale_0036_30_3",
+    "kujiale_0036_57_4",
+    "kujiale_0036_37_1",
+    "kujiale_0036_33_2",
+    "kujiale_0036_43_0",
+    "kujiale_0036_10_0",
+    "kujiale_0036_8_3",
+    "kujiale_0036_52_4",
+    "kujiale_0036_11_0",
+    "kujiale_0036_36_4",
+    "kujiale_0036_6_2",
+    "kujiale_0036_18_3",
+    "kujiale_0036_7_2",
+    "kujiale_0036_4_4",
+    "kujiale_0036_48_1",
+    "kujiale_0036_17_3",
+    "kujiale_0036_27_1",
+    "kujiale_0036_51_4",
+    "kujiale_0036_3_2",
+    "kujiale_0036_50_1",
+    "kujiale_0036_56_3",
+    "kujiale_0036_32_4",
+    "kujiale_0036_19_4"
+  ],
+  "workers": [
+    {
+      "gpu": 0,
+      "episode_ids": [
+        "kujiale_0036_0_0",
+        "kujiale_0036_30_3",
+        "kujiale_0036_37_1",
+        "kujiale_0036_43_0",
+        "kujiale_0036_8_3",
+        "kujiale_0036_11_0",
+        "kujiale_0036_6_2",
+        "kujiale_0036_7_2",
+        "kujiale_0036_48_1",
+        "kujiale_0036_27_1",
+        "kujiale_0036_3_2",
+        "kujiale_0036_56_3",
+        "kujiale_0036_19_4"
+      ],
+      "run_id": "peng_fine_codex_serial_0036_high_20261126_retry4_g0",
+      "serial_output": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/serial_recovery/codex_v001/run_20261126_11_scene0036_terminal_rgbfix/gpu0/serial",
+      "native_output": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/vlnverse/streamvln/results/peng_fine_codex_serial_0036_high_20261126_retry4_g0"
+    },
+    {
+      "gpu": 1,
+      "episode_ids": [
+        "kujiale_0036_26_3",
+        "kujiale_0036_57_4",
+        "kujiale_0036_33_2",
+        "kujiale_0036_10_0",
+        "kujiale_0036_52_4",
+        "kujiale_0036_36_4",
+        "kujiale_0036_18_3",
+        "kujiale_0036_4_4",
+        "kujiale_0036_17_3",
+        "kujiale_0036_51_4",
+        "kujiale_0036_50_1",
+        "kujiale_0036_32_4"
+      ],
+      "run_id": "peng_fine_codex_serial_0036_high_20261126_retry4_g1",
+      "serial_output": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/serial_recovery/codex_v001/run_20261126_11_scene0036_terminal_rgbfix/gpu1/serial",
+      "native_output": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/vlnverse/streamvln/results/peng_fine_codex_serial_0036_high_20261126_retry4_g1"
+    }
+  ],
+  "protocol": {
+    "version": "codex_serial_v001_guard1",
+    "movement_budget": 180,
+    "model": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "proxy_url": "http://127.0.0.1:7892",
+    "timeout_seconds": 300,
+    "jev_endpoint": "https://api.easyjev.online/v1/systemone",
+    "request_attempts": 10,
+    "jev_timeout_seconds": 120,
+    "jev_total_seconds": 420,
+    "codex_total_seconds": 600,
+    "boundary_timeout_seconds": 1800,
+    "recovery_idle_seconds": 300,
+    "recovery_no_move_seconds": 600,
+    "recovery_total_seconds": 2700
+  },
+  "prepared_at": "2026-11-26T21:08:27.989691+00:00",
+  "dataset_sha256": "15c04c1e842354a824d81213333c7c7e119615f96fd53566510020b2f8145e3b",
+  "baseline_source": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/experiments/serial_recovery/v002/run_20261121_06_scene203/baseline203.csv",
+  "baseline_sha256": "ae14e71012b3d15475e959810726fa418a3629d9f64ca6c200c953ce0df1b5fb",
+  "retained_simulators": [
+    1548476,
+    1548482
+  ],
+  "split_rule": "Alternating original split order: 13/12"
+}

@@ -1,5 +1,43 @@
 # 当前项目状态
 
+2026-11-27 07:09 UTC：两路仍正常运行，无新增 halt/failure。GPU0 运行 0208_36_3 F64，GPU1 运行 0240_30_3 F20；0208 已评分 10/25，0240 已评分 21/23。本轮续跑已评分 13/30（7 成功、6 失败），2 条进行中、15 条待跑。累计 56/73：当前 SR 38/56（67.86%）、平均 SPL 0.4850714567；同 episode/seed 2 原版 SR 29/56（51.79%）、平均 SPL 0.4148159321，含失败。失败转成功 14、成功转失败 5。相较 06:10 新增 6 条（4 成功、2 失败）。
+
+2026-11-27 06:10 UTC：两路正常运行，无新增 halt/failure。GPU0 正在 0208_29_2 F17，GPU1 正在 0240_53_1 F135。本轮续跑已评分 7/30（3 成功、4 失败），2 条进行中、21 条待跑。累计 50/73：当前 SR 34/50（68%）、平均 SPL 0.4713006888；同 episode/seed 2 原版 SR 25/50（50%）、平均 SPL 0.4022165904，含失败。原版失败转当前成功 13 条，成功转失败 4 条。05:39 后新增 0208_19_2 成功（未接管、原版失败）、0208_46_2 成功（已接管、原版成功）、0240_5_3 失败（已接管后 fall、原版成功）。
+
+2026-11-27 05:39 UTC：两路仍正常推进，无新增 halt/failure。本轮已评分 4/30（1 成功、3 失败），2 条进行中、24 条待跑。GPU0 正在 kujiale_0208_19_2 F33，GPU1 正在 kujiale_0240_5_3 F57 的 JEV/评审。累计 47/73 正式评分：当前 SR 32/47（68.09%）、平均 SPL 0.4658363007；同 episode/seed 2 原版 SR 23/47（48.94%）、平均 SPL 0.3924979618，SPL 包含失败。相较 05:10 新增 0208_40_0、0240_7_0、0208_9_4 三条均为导航失败，非技术中断。
+
+2026-11-27 05:10 UTC：双路正常推进，JEV 充值后验证通过且持续评分，无新增 halt/failure。GPU0 正在 0208_40_0 F141；GPU1 新完成 0240_2_4（恢复后正式成功，SPL 0.739855；原版失败、SPL 0），正运行 0240_7_0 F34 的 JEV/评审。本次续跑已评分 1/30，两条进行中、27 条待跑；新一轮技术中断 0。累计 44/73 正式评分：当前 SR 32/44（72.73%）、平均 SPL 0.4975978666；同 episode/seed 2 原版 SR 21/44（47.73%）、平均 SPL 0.3779102867，失败任务计入 SPL。已复用原模型 2117878/2117879。
+
+2026-11-27：用户确认 JEV 已充值，[剩余 30 条双路续跑](../experiments/serial_recovery/codex_v001/run_20261127_02_resume30/README.md)已提交后台队列 PID 2120500。GPU0 接 0208 的 21 条，GPU1 接 0240 的 9 条；复用保留模型 2117878/2117879，后台验证 JEV、等待就绪并启动仿真，不人工跟踪。已评分 43 条保留且不重跑：当前 SR 31/43（72.09%）、平均 SPL 0.4920；同 episode/seed 2 原版 SR 21/43（48.84%）、平均 SPL 0.3867。当前为提交回执，未查询新增评分。
+
+2026-11-27：按用户要求提交 [双 GPU StreamVLN 常驻模型](../experiments/serial_recovery/codex_v001/run_20261127_01_model_hold/README.md)后台启动，GPU0/1 PID 2117878/2117879。仅挂载服务，不等待模型加载、不恢复导航；旧仿真保留。
+
+2026-11-27 04:26 UTC：[0036 run11](../experiments/serial_recovery/codex_v001/run_20261126_11_scene0036_terminal_rgbfix/README.md)全部 25/25 完成，当前 SR 19/25（76%）、平均 SPL 0.4715；原版 12/25（48%）、SPL 0.3624。[后续 run12](../experiments/serial_recovery/codex_v001/run_20261126_12_scene0208_0240_after_terminalfix/README.md)0208 完成 4/25、0240 完成 14/23，均因 JEV HTTP 402 / insufficient_balance（余额不足）于 04:10–04:12 UTC 保护退出；服务已清理，旧保留仿真不动。合计正式评分 43/73：当前 SR 31/43（72.09%）、平均 SPL 0.4920；同 episode/seed 2 原版 SR 21/43（48.84%）、SPL 0.3867。进行中 0、技术中断未评分 2、尚未开始 28。需先恢复 JEV 余额/可用凭据再新建运行接续，不绕过永久错误保护、不重跑已评分任务。
+
+2026-11-26 21:28 UTC，[run11 首条完整恢复正式评分成功](../experiments/serial_recovery/codex_v001/run_20261126_11_scene0036_terminal_rgbfix/README.md)：`kujiale_0036_32_4`，28 个原动作后 GPT recovery 84 步，任务 769.057 秒，保存 118 张 RGB，终止相机读取和原生评分提交正常。当前版 SR **1/1（100%）**、平均 SPL **0.5970**；同 episode/seed 2 原版 SR **1/1（100%）**、平均 SPL **0.8171**。原版也成功，本例不构成 SR 提升证据。GPU1 已续跑下一条，GPU0 正常推进；当前 1/25 已评分、2 条进行中、22 条待跑、技术跳过 0。两路 launcher 1702969/1703002，[run12 后续 0208/0240](../experiments/serial_recovery/codex_v001/run_20261126_12_scene0208_0240_after_terminalfix/README.md)队列 PID 1703531 等待正常完成；按用户要求跟踪到首条后交后台，保留全部旧失败证据。
+
+2026-11-26 21:08 UTC，[run11 双路终止 RGB 修复](../experiments/serial_recovery/codex_v001/run_20261126_11_scene0036_terminal_rgbfix/README.md)正在启动。run05 GPU0 已完成 GPT 150 步恢复并声明完成、实际 STOP terminated=true，但终止观测不带 RGB 导致记录层在原生评分提交前退出；run09 GPU1 普通 STOP 同样触发此问题。现改为 reset 前直接读相机并核对零 tick 推进，6 项定向验证通过，未改评分。旧尝试全部保留，未提交结果不计正式评分；原版及当前版 SR、平均 SPL 均暂无，已评分 0 条。最新后续队列为 [run12 0208/0240](../experiments/serial_recovery/codex_v001/run_20261126_12_scene0208_0240_after_terminalfix/README.md)，接 run11 两路。
+
+2026-11-26 20:53 UTC：GPU0 run05 在 F171 STOP 末段判偏航，已成功 fork 并通过真实 H1 工具观察/移动，恢复链路已实际接通，尚待正式评分。GPU1 run07 的长 NAS TMPDIR 导致 socket 地址过长，已固定 socket 私有目录为本地 /tmp，并完成实际仿真解释器＋同名 scripts 包＋超长 TMPDIR 的真实连接往返验证；GPU1 在 [run09](../experiments/serial_recovery/codex_v001/run_20261126_09_scene0036_gpu1_socketfix/README.md)单独重启（launcher 1692438），GPU0 不重启。最终后续队列为 [run10](../experiments/serial_recovery/codex_v001/run_20261126_10_scene0208_0240_high_after_socketfix/README.md)，旧 run08 已停止等待。当前版及配对原版 SR、平均 SPL 均暂无，已评分 0 条。
+
+2026-11-26 20:37 UTC：run05 GPU0 正常导航；GPU1 在 F28 偏航报警后因上游 `scripts` 包遮蔽恢复接口技术退出，已新增兼容入口并用实际仿真解释器验证，单独在 [run07](../experiments/serial_recovery/codex_v001/run_20261126_07_scene0036_gpu1_bridgefix/README.md)重启（launcher 1677309，模型 1677328，仿真 1677695），GPU0 不重启。最终 [0208/0240 后续队列 run08](../experiments/serial_recovery/codex_v001/run_20261126_08_scene0208_0240_high_after_bridgefix/README.md)PID 1678835，分别接 run05 GPU0 / run07 GPU1；旧 run06 已停止等待。仍按用户要求跟踪首条完整评分。当前版及配对原版 SR、平均 SPL 均暂无，已评分 0 条。
+
+2026-11-26 20:15 UTC，[0036 双路 Node 修复重跑](../experiments/serial_recovery/codex_v001/run_20261126_05_scene0036_high_dual_nodefix/README.md)已启动，launcher 1657996/1658038。run03 两路在首帧因净化 PATH 丢失 Node 而退出，正式评分 0/25；已修复绝对路径传递和 worker 错误上报，3 项定向检查及实际 CPU worker→JEV→采样器往返通过。[后续 0208/0240](../experiments/serial_recovery/codex_v001/run_20261126_06_scene0208_0240_high_after_nodefix/README.md)重新接本轮；旧 run04 已阻塞退出。按用户最新要求持续跟踪至首条正式评分，并确认另一路推进。当前版及配对原版 SR、平均 SPL 均暂无，已评分 0 条。
+
+2026-11-26 20:06 UTC，[0208/0240 两场景后续队列](../experiments/serial_recovery/codex_v001/run_20261126_04_scene0208_0240_high_queued/README.md)已登记，PID 1648990：GPU0 接 0208 全 25 条，GPU1 接 0240 全 23 条，seed 2、Codex high、180 步；按用户最新要求用 0208 替换 0234，明确排除 0128。GPU0 等待前置；GPU1 的 0036 前置出现 BrokenPipeError 技术中断（评分 0/12），0240 被保护机制阻塞，不自动跳过。新增批次当前版及配对原版 SR、平均 SPL 均暂无，已评分 0 条。
+
+2026-11-26 19:35 UTC，[kujiale_0036 全场景 25 条 · Codex high · 双路在线恢复](../experiments/serial_recovery/codex_v001/run_20261126_03_scene0036_high_dual/README.md)已启动：GPU0/1 分配 13/12 条，每卡独立模型+仿真，seed 2。launcher PID 1615677/1615721，模型 PID 1615694/1615734；当前进入模型权重加载，仿真随后自动启动，旧保留仿真不动。JEV 当前 URL/key 已真实验证。当前版与配对原版 SR、平均 SPL 均暂无，已评分 0 条。
+
+2026-11-26，[串行 guard1 故障保护](../experiments/serial_recovery/codex_v001/run_20261126_02_guards/README.md)已补齐：JEV/Codex 最多 10 次请求，分别受 7/10 分钟累计期限约束，永久错误立即停止；接管工具无进展与总时长监督、迟到动作拒绝、技术中断停止队列。仅 CPU 故障注入验证，未启动新导航。
+
+2026-11-26，之前双 GPU 恢复队列全部结束，保留两台最后仿真、无控制任务。[原五例](../experiments/inverse_rollback/codex_tools_v001/run_20261126_08_five_goal120/README.md)：当前 SR 3/5（60%）、平均 SPL 0.3291，配对原版 0/5（0%）、SPL 0。[追加四例](../experiments/inverse_rollback/codex_tools_v001/run_20261126_09_four_goal180/README.md)：当前 SR 3/4（75%）、平均 SPL 范围 0.4375–0.4399，配对原版 0/4（0%）、SPL 0。C30 180 步预算退出，未声明完成但评分成功。
+
+2026-11-26，[Codex 在线串行接管 v001](../experiments/serial_recovery/codex_v001/README.md)实现完成：实时 JEV → 回退点/去重 → 同会话偏航评审 → GPT 实走回退并完成全程。STOP 先等待末段评审，恢复 180 步上限，保留 RGB、计时和原生评分。CPU 定向验证通过，尚未启动真实导航；当前版与配对原版 SR、平均 SPL 均暂无，已评分 0 条。
+
+2026-11-26，[C19、C21、C22、C30 接管至终点 · 180 步](../experiments/inverse_rollback/codex_tools_v001/run_20261126_09_four_goal180/README.md)追加至既有双 GPU 队列，保留逐步 RGB 和计时。当前版与配对原版 SR、平均 SPL 均暂无，已评分 0 条。
+
+2026-11-26，[五例接管至原始导航终点 · 双 GPU · 120 步](../experiments/inverse_rollback/codex_tools_v001/run_20261126_08_five_goal120/README.md)已双进程启动，记录第一人称 RGB、计时及同 seed 原版配对评分。当前版与配对原版 SR、平均 SPL 均暂无，已评分 0 条。
+
 2026-11-26，[120 步回退与支路恢复五例可视化](http://134.175.18.101/vln/c11_codex_region60_f57_f45_web_20261126_01/index.html)已发布，同一网页可切换原 60 步回放。
 
 2026-11-26，[五例回退并进入正确支路 · 120 步](../experiments/inverse_rollback/codex_tools_v001/run_20261126_07_five_branch120/README.md)已结束，整批用时 33 分 40 秒。4 例声明已进入所选支路，C23 在 56 步触发物理终止。C43、C20 报告使用更早回退点。保留 315 张第一人称 RGB 及 C20 仿真停点。

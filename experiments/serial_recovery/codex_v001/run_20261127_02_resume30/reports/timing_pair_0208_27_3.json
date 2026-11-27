@@ -1,0 +1,12 @@
+{
+  "episode_id": "kujiale_0208_27_3",
+  "seed": 2,
+  "baseline_seconds": 72.861463,
+  "current_seconds": 1322.929408326745,
+  "ratio": 18.156777998360326,
+  "extra_seconds": 1250.067945326745,
+  "current_review_seconds": 1245.5310538113117,
+  "current_without_review_seconds": 77.39835451543331,
+  "baseline_source": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/reproduction/streamvln_scene250_5seeds_20261101_v2/visualization/seed_2/kujiale_0208/kujiale_0208_27_3/attempt_1793600325699806355/case.json",
+  "current_source": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/serial_recovery/codex_v001/run_20261126_12_scene0208_0240_after_terminalfix/gpu0/serial/episodes/kujiale_0208_27_3/attempt_1795745471678419709/result.json"
+}

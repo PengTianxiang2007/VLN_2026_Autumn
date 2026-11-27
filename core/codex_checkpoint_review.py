@@ -115,7 +115,7 @@ def validate_review(raw, previous, current, binary=False):
 
 
 def run_case(case, image_root, directory, config, *, candidate_stream=None, live_sampler=None,
-             candidate_template=None, retry_calls=False):
+             candidate_template=None, retry_calls=False, session_factory=None):
     deviation_enabled = "deviation_review" in case
     gap_sampler = None
     if deviation_enabled:
@@ -159,7 +159,9 @@ def run_case(case, image_root, directory, config, *, candidate_stream=None, live
         if not old_session.get("thread_id"):
             raise ValueError("Resume requires an existing Codex thread")
         (directory / "decisions.jsonl").write_text("".join(json.dumps(d, ensure_ascii=False) + "\n" for d in decisions))
-    if live or retry_calls:
+    if session_factory is not None:
+        session = session_factory(directory / "codex", config)
+    elif live or retry_calls:
         from core.codex_shadow_retry import ShadowSession
         session = ShadowSession(directory / "codex", config)
     else:

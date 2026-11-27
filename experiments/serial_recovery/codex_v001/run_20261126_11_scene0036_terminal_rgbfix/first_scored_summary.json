@@ -1,0 +1,67 @@
+{
+  "checked_at": "2026-11-26T21:28:22.321474+00:00",
+  "scored": 1,
+  "current": {
+    "successes": 1.0,
+    "SR": 1.0,
+    "mean_SPL": 0.5969933612085507
+  },
+  "baseline": {
+    "successes": 1.0,
+    "SR": 1.0,
+    "mean_SPL": 0.8171006293776605
+  },
+  "episodes": [
+    {
+      "gpu": 1,
+      "episode_id": "kujiale_0036_32_4",
+      "seed": 2,
+      "success": 1.0,
+      "spl": 0.5969933612085507,
+      "NE": 1.0684869398703265,
+      "elapsed_seconds": 769.0570248179138,
+      "policy_seconds": 4.906185962259769,
+      "review_seconds": 401.5041572637856,
+      "native_action_seconds": 11.834284860640764,
+      "recovery_seconds": 343.7969357408583,
+      "recovery": {
+        "stop_reason": "model_declared_complete",
+        "movements": 84,
+        "model_declared_success": true,
+        "parent_thread": "01a219b5-ad3e-7501-8a68-c42bcb58eb48",
+        "branch_thread": "01a219bc-2212-7f52-bbcb-ea130d968c8c",
+        "elapsed_seconds": 343.7969357408583,
+        "completed_at": "2026-11-26T21:26:56.347716+00:00"
+      },
+      "final_frame": 113,
+      "model_declared_success": true,
+      "native_rgb_count": 30,
+      "recovery_rgb_count": 88,
+      "terminal_image_source": "terminal_camera_read",
+      "terminal_image": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/serial_recovery/codex_v001/run_20261126_11_scene0036_terminal_rgbfix/gpu1/serial/episodes/kujiale_0036_32_4/attempt_1795727647569527699/frames/F000113_terminal.png",
+      "baseline_SR": 1.0,
+      "baseline_SPL": 0.8171006293776605,
+      "result_path": "/mnt/nas/gezuhao/PengTianxiang/VLN-Papers/VLN_2026_Autumn/outputs/serial_recovery/codex_v001/run_20261126_11_scene0036_terminal_rgbfix/gpu1/serial/episodes/kujiale_0036_32_4/attempt_1795727647569527699/result.json"
+    }
+  ],
+  "queue": {
+    "queued_at": "2026-11-26T21:10:13.023467+00:00",
+    "queue_pid": 1703531,
+    "queue_start_ticks": 73123932,
+    "workers": [
+      {
+        "gpu": 0,
+        "scene": "kujiale_0208",
+        "tasks": 25,
+        "phase": "waiting_predecessor"
+      },
+      {
+        "gpu": 1,
+        "scene": "kujiale_0240",
+        "tasks": 23,
+        "phase": "waiting_predecessor"
+      }
+    ],
+    "updated_at": "2026-11-26T21:28:13.939300+00:00"
+  }
+}

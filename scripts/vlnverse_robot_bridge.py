@@ -9,7 +9,10 @@ import uuid
 from datetime import datetime, timezone
 from pathlib import Path
 
-from run_inverse_rollback import save, save_native_rgb, tick_action
+if __package__ == "scripts":
+    from scripts.run_inverse_rollback import save, save_native_rgb, tick_action
+else:
+    from run_inverse_rollback import save, save_native_rgb, tick_action
 
 
 class RobotTools:
@@ -24,6 +27,9 @@ class RobotTools:
         self.moves = 0
         self.phase = "active"
         self.sequence = 0
+        self.completed_calls = 0
+        self.last_observation = None
+        self.ended = False
 
     def state(self):
         position, quaternion = self.task.robot.articulation.get_world_pose()
@@ -62,6 +68,7 @@ class RobotTools:
                 observation, ended, ticks = tick_action(
                     self.env, {"move_by_discrete": [moves[action]]}, self.controller.steps_per_action)
                 self.moves += 1
+                self.last_observation, self.ended = observation, ended
                 self.phase = "physical_terminal" if ended else "active"
                 terminal_reason = observation.get("fail_reason") if ended else None
             elif action == "finish_return":
@@ -81,6 +88,7 @@ class RobotTools:
             if self.move_limit is not None:
                 result["moves_remaining"] = self.move_limit - self.moves
             audit.update(result=result, after=after, rgb=frame)
+            self.completed_calls += 1
             return result
         except Exception as exc:
             audit.update(error=repr(exc), after=self.state())
@@ -93,14 +101,14 @@ class RobotTools:
                 log.write(json.dumps(audit, allow_nan=False) + "\n")
 
 
-def serve(env, directory, start_frame, *, move_limit=None):
+def serve(env, directory, start_frame, *, move_limit=None, on_ready=None, should_detach=None):
     """Attach to a single episode. Each new attachment uses a fresh trace directory."""
     directory = Path(directory).resolve()
     directory.mkdir(parents=True, exist_ok=False)
     (directory / "frames").mkdir()
     robot = RobotTools(env, directory, start_frame, move_limit)
     # Keep sockets on the local host rather than on the project NAS.
-    with tempfile.TemporaryDirectory(prefix="vlnverse-h1-") as private, socket.socket(socket.AF_UNIX) as listener:
+    with tempfile.TemporaryDirectory(prefix="vlnverse-h1-", dir="/tmp") as private, socket.socket(socket.AF_UNIX) as listener:
         address = Path(private) / "robot.sock"
         detach = Path(private) / "detach"
         listener.bind(str(address))
@@ -113,7 +121,11 @@ def serve(env, directory, start_frame, *, move_limit=None):
         receipts = {}
         save(directory / "endpoint.json", dict(endpoint, status="ready"))
         try:
+            if on_ready is not None:
+                on_ready(directory / "endpoint.json")
             while not detach.exists():
+                if should_detach is not None and should_detach(robot):
+                    break
                 try:
                     conn, _ = listener.accept()
                 except socket.timeout:
@@ -124,6 +136,10 @@ def serve(env, directory, start_frame, *, move_limit=None):
                         request = json.loads(stream.readline(2048))
                         key = str(uuid.UUID(request["id"]))
                         args = (request["method"], request.get("action"))
+                        # Recheck after accept/read: a late request must not move
+                        # the robot after the controller's deadline expired.
+                        if should_detach is not None and should_detach(robot):
+                            break
                         if key in receipts:
                             previous, reply = receipts[key]
                             if previous != args:
@@ -142,3 +158,4 @@ def serve(env, directory, start_frame, *, move_limit=None):
                         pass  # The action receipt survives a client disconnect.
         finally:
             save(directory / "endpoint.json", dict(endpoint, status="detached", moves=robot.moves))
+    return robot

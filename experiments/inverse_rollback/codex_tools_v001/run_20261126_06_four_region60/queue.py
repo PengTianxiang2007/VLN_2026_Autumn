@@ -25,7 +25,7 @@ def save(path, value):
 
 
 def main(*, experiment=HERE, initial_episode="kujiale_0128_fix_20_0", move_limit=60,
-         prompt_template=None, objective="checkpoint_return"):
+         prompt_template=None, objective="checkpoint_return", scoring_path=None, on_case=None):
     out = OUT.parent / experiment.name
     cases = read(experiment / "cases.json")
     prompt_text = (prompt_template or PRIOR / "prompt.txt").read_text()
@@ -58,7 +58,7 @@ def main(*, experiment=HERE, initial_episode="kujiale_0128_fix_20_0", move_limit
         prompt = dest / "prompt.txt"
         label = f'{case["target_node"]} (F{case["target_frame"]})'
         prompt.write_text(prompt_text.replace(placeholder, label))
-        cmd = f"task, world, art = __import__('runpy').run_path({str(HERE/'simulator.py')!r})['attach'](env, {case_id!r}, {previous!r}, experiment={str(experiment)!r}, move_limit={move_limit!r})"
+        cmd = f"task, world, art = __import__('runpy').run_path({str(HERE/'simulator.py')!r})['attach'](env, {case_id!r}, {previous!r}, experiment={str(experiment)!r}, move_limit={move_limit!r}, scoring_path={str(scoring_path) if scoring_path else None!r})"
         try:
             tmux = ["tmux","-L","peng_vln_pose_20261126","send-keys","-t","f38:0.0"]
             subprocess.run([*tmux,"-l",cmd],check=True)
@@ -77,7 +77,8 @@ def main(*, experiment=HERE, initial_episode="kujiale_0128_fix_20_0", move_limit
                           last_turn=case["last_turn"], rollout=Path(case["rollout"]), turns=case["turns"],
                           move_limit=move_limit, objective=objective,
                           extra_sources=(experiment/"cases.json", HERE/"queue.py", HERE/"simulator.py",
-                                         *((experiment/"run.py", prompt_template) if prompt_template else ())))
+                                         *((experiment/"run.py", prompt_template) if prompt_template else ()),
+                                         *((scoring_path,) if scoring_path else ())))
             result=read(dest/"result.json")
             stats.update(phase=result["stop_reason"], movements=result["movements"], branch_thread=result["branch_thread"])
         except (Exception,SystemExit):
@@ -104,6 +105,8 @@ def main(*, experiment=HERE, initial_episode="kujiale_0128_fix_20_0", move_limit
             save(dest/"timing.json",stats)
             status["elapsed_s"]=time.monotonic()-batch_start
             save(status_path,status)
+            if on_case:
+                on_case(out, case, stats)
         if not Path("/proc/3122551").exists():
             break
     status.update(phase="finished" if all(c["phase"]!="queued" for c in status["cases"].values()) else "interrupted",
